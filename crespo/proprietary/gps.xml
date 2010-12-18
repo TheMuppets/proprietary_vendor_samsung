@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+  <!--HAL Confguration  -->
+  <hal 
+	   acPortName="/dev/s3c2410_serial1" lBaudRate="115200"  cLogEnabled="false" acLogDirectory="/data/gps/log/" ltoFileName="lto2.dat" 
+       enhanced-assisted="false" cp-enhanced-assisted="false" TISEnabled="false" RILEnabled="true" LPmode="false" cp-cold-start="false" cp-guard-time-sec="2"
+       arp-supl-enable="true" arp-supl-cap-msb="true" arp-supl-cap-msa="true" arp-supl-cap-ecid="false" arp-supl-reaiding-time-sec="1200"
+	   acSuplServer="supl.google.com" SuplPort="7276"
+       LbsEnable="true" LbsLocal="false" LbsServer="bcmls2.glpals.com" LbsPort="7275" LbsSyncTimeSec = "60" LbsSyncLto="true" LbsSyncCells="true"
+       LbsGetGpsAssistance="false"
+       LbsSyncLtoThresholdDays="3"
+       gpioNStdbyPath="/sys/class/sec/gps/GPS_PWR_EN/value"
+       gpioNResetPath="/sys/class/sec/gps/GPS_nRST/value"
+       gpioDelayMs="250"
+       lcsApiSockName="/dev/socket/gps"
+       acNvStoDir="/data/gps/"
+       />
+
+  <!-- Parameters passed to GlEngine   -->
+  <!--gll
+         LogPriMask="LOG_DEBUG"
+         LogFacMask="LOG_GLLAPI | LOG_DEVIA | LOG_NMEA | LOG_RAWDATA | LOG_DEVMS | LOG_ASIC_IO | LOG_BBTEST | LOG_DEVET | LOG_MESM | LOG_DEVKF | LOG_DEVJG | LOG_DEVMR" 
+         FrqPlan="FRQ_PLAN_10MHZ_2PPM_10MHZ_100PPB" FrqPlan="FRQ_PLAN_10MHZ_2PPM" "FRQ_PLAN_16_8MHZ_2PPM"
+         RfType="GL_RF_PALS7" "GL_RF_BARRACUDA" "GL_RF_2075_LN22" "GL_RF_2075_BRCM" "GL_RF_PALS7_BRCM" "GL_RF_BARRACUDA_BRCM" "GL_RF_BARRACUDA_EXT_LNA"
+         NOTE: "GL_RF_BARRACUDA_EXT_LNA" should be used for BAS
+         LbsEnable="true" LbsLocal="true" LbsServer="bcmlbsqa1.glpals.com" LbsPort="7275" LbsSyncTimeSec = "60" LbsSyncLto="true" LbsSyncCells="true"
+  /-->
+
+  <!-- NOTE: BrcmRFwildBase, BrcmRFclkDiv, anBrcmRFclkRefHz only needed for Broadcom RF front end test chips
+            ( i.e. GL_RF_2075_BRCM and GL_RF_PALS7_BRCM ) -->
+
+  <gll 
+       LogPriMask="LOG_DEBUG"
+       LogFacMask="LOG_GLLAPI | LOG_NMEA | LOG_ASIC_IO" 
+       FrqPlan="FRQ_PLAN_26MHZ_2PPM_26MHZ_300PPB"   
+       RfType="GL_RF_4751_DANUBE_EXT_LNA"
+       pps-enable="false" pps-offset-ms="0" pps-width-ns="100"
+       WarmStandbyTimeout1Seconds="5"
+       WarmStandbyTimeout2Seconds="10"
+       CNoSmoothEnable="true"
+    >   
+    <periodic_hor_acc_remap>
+        <remap in="50" out="55" />
+    </periodic_hor_acc_remap>  
+  </gll>
+
+  <!-- List of jobs can be performed by the GPS controller    -->
+
+<!-- The default job  all parameters are set to default values  -->
+<!-- Periodic Position Fix using default settings -->
+<job id="Periodic">
+    <task>
+        <req_pos/>
+    </task>
+</job>
+
+<!-- Periodic Position with the ROM almanac ignored for simulator testing -->
+<job id="Simulator_Periodic">
+    <task id="cont" repeat="1">
+      <startup ignore_rom_alm="true" />
+      <req_pos validfix="2000" duration_sec="4500"/>      
+    </task>
+</job>
+
+<!-- Repetetive cold starts -->
+<job id="Cold_Starts">
+    <task repeat="1000000">
+           <startup
+                     ignore_osc="false"
+                     ignore_rom_alm="false"
+                     ignore_ram_alm="false"
+                     ignore_pos="true"
+                     ignore_nav="true"
+                     ignore_time="true"
+           />
+      <req_pos validfix="1"/>
+    </task>
+</job>
+
+<!-- Repetetive cold starts with the ROM almanac ignored for simulator testing -->
+<job id="Simulator_Cold_Starts">
+    <task repeat="1000000">
+           <startup
+                     ignore_osc="false"
+                     ignore_rom_alm="true"
+                     ignore_ram_alm="false"
+                     ignore_pos="true"
+                     ignore_nav="true"
+                     ignore_time="true"
+           />
+      <req_pos validfix="1"/>
+    </task>
+</job>
+
+<!-- Repetetive warm starts  
+     Stored ephemeris data is discarded before the start begins
+     This simulates GPS receiver start after it was left off for more that 4 hours
+-->
+<job id="Warm_Starts">
+    <task repeat="1000000">
+           <startup ignore_nav="true"/>
+    <req_pos validfix="1"/>
+    </task>
+</job>
+
+<!-- Repetetive warm starts  performed on GPS simulator -->
+<job id="Simulator_Warm_Starts">
+    <task repeat="1000000">
+       <startup 
+                    ignore_rom_alm="true"
+                    ignore_nav="true" 
+       />
+       <req_pos validfix="1"/>
+    </task>
+</job>
+
+<!-- Repetetive hot starts  -->
+<job id="Hot_Starts">
+    <task repeat="1000000">
+        <req_pos validfix="1"/>
+    </task>
+</job>
+
+<!-- This job must be performed every time the GPS simulator scenarion is reset  -->
+<job id="CollectEphemeris">
+    <task repeat="1">
+           <startup
+                     ignore_osc="true"
+                     ignore_rom_alm="true"
+                     ignore_ram_alm="true"
+                     ignore_pos="true"
+                     ignore_nav="true"
+                     ignore_time="true"
+           />
+        <req_pos validfix="200"/>
+    </task>
+</job>
+
+
+<!-- This job performes series of single shot requests using the data stored 
+      in NVRAM to simulate assistance data received from the network 
+      The QoS parameters are set to maxmize the GPS sensitivity 
+-->
+<job id="Assisted_Cold_Starts">
+    <task repeat="1000000">
+        <startup 
+                    ignore_rom_alm="true" 
+                    ignore_ram_alm="true"
+        />
+        <asst>
+                   <!--pos Lat="-30.0" Lon="-50.0" Alt="50" /-->
+                   <pos Lat="33.7691" Lon="-84.4062" Alt="300" />
+                   <!--pos Lat="37.0" Lon="-122.0" Alt="50" /-->
+                   <!--pos Lat="37.26533652" Lon="-121.94128855" Alt="51.4" /-->
+        </asst>
+        <req_pos_single acc="50" timeout="30" />
+    </task>
+</job>
+
+<!-- This job performes series of single shot requests using the data stored 
+      in NVRAM to simulate assistance data received from the network 
+      The QoS parameters are set as it woudld be set by Spirent ULTS executing 
+      3GPP TS performance tests.
+-->
+<job id="3GPP_Assisted_Cold_Starts">
+    <task repeat="1000000">
+        <startup 
+                    ignore_rom_alm="true" 
+                    ignore_ram_alm="true"
+        />
+        <asst>
+                   <!--pos Lat="-30.0" Lon="-50.0" Alt="50" /-->
+                   <pos Lat="33.7691" Lon="-84.4062" Alt="300" />
+                   <!--pos Lat="37.0" Lon="-122.0" Alt="50" /-->
+                   <!--pos Lat="37.26533652" Lon="-121.94128855" Alt="51.4" /-->
+        </asst>
+        <req_pos_single acc="25" timeout="20" />
+    </task>
+</job>
+
+<!-- This job starts signle chanel factory test mode 
+     The signal is expected to be in the range from -125 dBm to -145 dBm 
+     with the frequency offset range from -2 ppm to +2 ppm 
+     for this mode to provide reliable results 
+-->    
+<job id="Factory_High_SNR">
+    <task id="test" repeat="1">
+           <startup
+                     ignore_osc="true"
+                     ignore_rom_alm="true"
+                     ignore_ram_alm="true"
+                     ignore_pos="true"
+                     ignore_nav="true"
+                     ignore_time="true"
+           />
+           <req_ftest
+                    PRN="1"
+                    GL_FACT_TEST_MODE="GL_FACT_TEST_CONT"
+                    GL_FACT_TEST_ITEMS="GL_FACT_TEST_WER" 
+                    avg_int_sec="10" 
+                    duration_sec="60"
+           />
+     </task>
+</job>
+
+<!-- This job is intended to be ran after the Factory_High_SNR job 
+     It uses the TCXO offset stored in NVRAM during the Factory_High_SNR job 
+-->
+<job id="Factory_Low_SNR">
+    <task id="test" repeat="1">
+           <startup
+                     ignore_osc="false"
+                     ignore_rom_alm="true"
+                     ignore_ram_alm="true"
+                     ignore_pos="true"
+                     ignore_nav="true"
+                     ignore_time="true"
+           />
+           <req_ftest
+                   PRN="1"
+                   GL_FACT_TEST_MODE="GL_FACT_TEST_CONT"
+                   GL_FACT_TEST_ITEMS="GL_FACT_TEST_WER" 
+                   avg_int_sec="10" 
+                   duration_sec="200"
+           />
+     </task>
+</job>
+
+</glgps>
