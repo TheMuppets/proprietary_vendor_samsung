@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES := \
 # All the blobs necessary for crespo
 PRODUCT_COPY_FILES += \
     vendor/samsung/crespo/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/crespo/proprietary/libpn544_fw.so:system/lib/libpn544_fw.so \
     vendor/samsung/crespo/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/crespo/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/crespo/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
