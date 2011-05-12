@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/crespo/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
     vendor/samsung/crespo/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/crespo/proprietary/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
+    vendor/samsung/crespo/proprietary/cypress-touchkey.bin:system/vendor/firmware/cypress-touchkey.bin \
     vendor/samsung/crespo/proprietary/nvram_net.txt:system/vendor/firmware/nvram_net.txt \
     vendor/samsung/crespo/proprietary/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin \
     vendor/samsung/crespo/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
