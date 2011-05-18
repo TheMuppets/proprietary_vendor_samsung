@@ -14,12 +14,12 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/galaxys/proprietary/libcamera.so:obj/lib/libcamera.so
+    vendor/samsung/galaxysmtd/proprietary/libcamera.so:obj/lib/libcamera.so
 
 
 # All the blobs necessary for galaxys devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys/proprietary/libcamera.so:system/lib/libcamera.so
+    vendor/samsung/galaxysmtd/proprietary/libcamera.so:system/lib/libcamera.so
 
 
     
