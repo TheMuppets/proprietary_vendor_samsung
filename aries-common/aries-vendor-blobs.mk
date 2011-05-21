@@ -12,17 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \
-    vendor/samsung/aries-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
-
 # All the blobs necessary for galaxys devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/aries-common/proprietary/gps.conf:system/etc/gps.conf \
-    vendor/samsung/aries-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/aries-common/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/aries-common/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
-    vendor/samsung/aries-common/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/aries-common/proprietary/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
     vendor/samsung/aries-common/proprietary/nvram_net.txt:system/vendor/firmware/nvram_net.txt \
     vendor/samsung/aries-common/proprietary/cypress-touchkey.bin:system/vendor/firmware/cypress-touchkey.bin \
@@ -31,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/aries-common/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/aries-common/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/aries-common/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
     vendor/samsung/aries-common/proprietary/gralloc.aries.so:system/vendor/lib/hw/gralloc.aries.so \
     vendor/samsung/aries-common/proprietary/libakm.so:system/vendor/lib/libakm.so \
     vendor/samsung/aries-common/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
@@ -39,7 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
     vendor/samsung/aries-common/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/aries-common/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
-    vendor/samsung/aries-common/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/aries-common/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/aries-common/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/aries-common/proprietary/CE147F02.bin:system/vendor/firmware/CE147F02.bin \

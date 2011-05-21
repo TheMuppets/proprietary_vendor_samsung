@@ -14,13 +14,22 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/galaxysmtd/proprietary/libcamera.so:obj/lib/libcamera.so
+    vendor/samsung/galaxysmtd/proprietary/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/galaxysmtd/proprietary/libril.so:obj/lib/libril.so \
+    vendor/samsung/galaxysmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
 
 # All the blobs necessary for galaxys devices
 PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxysmtd/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/galaxysmtd/proprietary/gpsd:system/vendor/bin/gpsd \
+    vendor/samsung/galaxysmtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
+    vendor/samsung/galaxysmtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
+    vendor/samsung/galaxysmtd/proprietary/libril.so:system/lib/libril.so \
+    vendor/samsung/galaxysmtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/galaxysmtd/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/galaxysmtd/proprietary/rild:system/bin/rild \
     vendor/samsung/galaxysmtd/proprietary/libcamera.so:system/lib/libcamera.so
-
 
     
     

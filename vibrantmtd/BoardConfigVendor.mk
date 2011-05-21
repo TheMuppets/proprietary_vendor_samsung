@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BOARD_GPS_LIBRARIES := libgps
+BOARD_GPS_LIBRARIES := libsecgps libclientgps
 
 USE_CAMERA_STUB := false
 
