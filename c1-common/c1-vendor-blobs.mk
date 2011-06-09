@@ -75,14 +75,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OC.bin:system/etc/firmware/RS_M5LS_OC.bin \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_TB.bin:system/etc/firmware/RS_M5LS_TB.bin
 
+# rename following files to c1 to match platform name
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.GT-I9100.so \
-    vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/gps.GT-I9100.so \
+    vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.c1.so \
+    vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/gps.c1.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.GT-I9100.so \
-    vendor/samsung/c1-common/proprietary/hw/lights.GT-I9100.so:system/lib/hw/lights.GT-I9100.so \
-    vendor/samsung/c1-common/proprietary/hw/overlay.GT-I9100.so:system/lib/hw/overlay.GT-I9100.so \
-    vendor/samsung/c1-common/proprietary/hw/sensors.GT-I9100.so:system/lib/hw/sensors.GT-I9100.so
+    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.c1.so \
+    vendor/samsung/c1-common/proprietary/hw/lights.GT-I9100.so:system/lib/hw/lights.c1.so \
+    vendor/samsung/c1-common/proprietary/hw/overlay.GT-I9100.so:system/lib/hw/overlay.c1.so \
+    vendor/samsung/c1-common/proprietary/hw/sensors.GT-I9100.so:system/lib/hw/sensors.c1.so
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
