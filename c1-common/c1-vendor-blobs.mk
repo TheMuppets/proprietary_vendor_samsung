@@ -57,7 +57,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/bin/BCM4330B1_002.001.003.0043.0077.hcd \
-    vendor/samsung/c1-common/proprietary/rild:system/bin/rild
+    vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
+    vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
