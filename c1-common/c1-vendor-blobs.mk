@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES := \
 # All the blobs necessary for galaxys2 devices
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/c1-common/proprietary/libakm.so:system/lib/libakm.so \
     vendor/samsung/c1-common/proprietary/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/c1-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/c1-common/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
