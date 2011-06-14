@@ -78,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_TB.bin:system/etc/firmware/RS_M5LS_TB.bin \
     vendor/samsung/c1-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
 
-# rename following files to c1 to match platform name
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/gps.GT-I9100.so \
@@ -98,4 +97,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_mfg.bin:system/vendor/firmware/bcm4330_mfg.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_sta.bin:system/vendor/firmware/bcm4330_sta.bin
+
+# alsa utils // only for testing // REMOVEME
+PRODUCT_COPY_FILES += \
+    vendor/samsung/c1-common/proprietary/sound/alsa_amixer:system/bin/alsa_amixer \
+    vendor/samsung/c1-common/proprietary/sound/alsa_aplay:system/bin/alsa_aplay \
+    vendor/samsung/c1-common/proprietary/sound/alsa_ctl:system/bin/alsa_ctl \
+    vendor/samsung/c1-common/proprietary/sound/alsa_ucm:system/bin/alsa_ucm
 
