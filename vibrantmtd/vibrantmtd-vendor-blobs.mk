@@ -15,9 +15,7 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/vibrantmtd/proprietary/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/vibrantmtd/proprietary/libclientgps.so:obj/lib/libclientgps.so \
     vendor/samsung/vibrantmtd/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/vibrantmtd/proprietary/libsecgps.so:obj/lib/libsecgps.so \
     vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
 
@@ -25,9 +23,9 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     vendor/samsung/vibrantmtd/proprietary/libclientgps.so:system/lib/libclientgps.so \
     vendor/samsung/vibrantmtd/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/vibrantmtd/proprietary/libsecgps.so:system/lib/libsecgps.so \
     vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/vibrantmtd/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/vibrantmtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
     vendor/samsung/vibrantmtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/vibrantmtd/proprietary/agpsd:system/bin/agpsd \
+    vendor/samsung/vibrantmtd/proprietary/agpsd:system/vendor/bin/gpsd \
     vendor/samsung/vibrantmtd/proprietary/libcamera.so:system/lib/libcamera.so
