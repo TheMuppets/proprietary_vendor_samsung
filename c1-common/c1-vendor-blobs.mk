@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.GT-I9100.so \
-    vendor/samsung/c1-common/proprietary/hw/lights.GT-I9100.so:system/lib/hw/lights.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/overlay.GT-I9100.so:system/lib/hw/overlay.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/sensors.GT-I9100.so:system/lib/hw/sensors.GT-I9100.so
 
