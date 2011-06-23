@@ -16,7 +16,9 @@
 PRODUCT_COPY_FILES := \
     vendor/samsung/c1-common/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
 
 # All the blobs necessary for galaxys2 devices
 PRODUCT_COPY_FILES += \
@@ -58,6 +60,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/vendor/firmware/bcm4330.hcd \
+    vendor/samsung/c1-common/proprietary/mediaserver:system/bin/mediaserver \
     vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
@@ -79,6 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/c1-common/proprietary/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+    vendor/samsung/c1-common/proprietary/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.GT-I9100.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
@@ -97,10 +102,31 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_mfg.bin:system/vendor/firmware/bcm4330_mfg.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_sta.bin:system/vendor/firmware/bcm4330_sta.bin
 
-# alsa utils // only for testing // REMOVEME
+# blobs necessary for audio
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/sound/alsa_amixer:system/bin/alsa_amixer \
-    vendor/samsung/c1-common/proprietary/sound/alsa_aplay:system/bin/alsa_aplay \
-    vendor/samsung/c1-common/proprietary/sound/alsa_ctl:system/bin/alsa_ctl \
-    vendor/samsung/c1-common/proprietary/sound/alsa_ucm:system/bin/alsa_ucm
+    vendor/samsung/c1-common/proprietary/audio/alsa_amixer:system/bin/alsa_amixer \
+    vendor/samsung/c1-common/proprietary/audio/alsa_aplay:system/bin/alsa_aplay \
+    vendor/samsung/c1-common/proprietary/audio/alsa_ctl:system/bin/alsa_ctl \
+    vendor/samsung/c1-common/proprietary/audio/alsa_ucm:system/bin/alsa_ucm \
+    vendor/samsung/c1-common/proprietary/audio/libasound.so:system/lib/libasound.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudio.so:system/lib/libaudio.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudioflinger.so:system/lib/libaudioflinger.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudiohw_op.so:system/lib/libaudiohw_op.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudiohw_sf.so:system/lib/libaudiohw_sf.so \
+    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+    vendor/samsung/c1-common/proprietary/audio/liblvvefs.so:system/lib/liblvvefs.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamaha.so:system/lib/libmediayamaha.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
+    vendor/samsung/c1-common/proprietary/audio/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
+    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
+    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    vendor/samsung/c1-common/proprietary/audio/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+    vendor/samsung/c1-common/proprietary/audio/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
+    vendor/samsung/c1-common/proprietary/audio/libsoundalive.so:system/lib/libsoundalive.so \
+    vendor/samsung/c1-common/proprietary/audio/libsoundpool.so:system/lib/libsoundpool.so \
+    vendor/samsung/c1-common/proprietary/audio/libSR_AudioIn.so:system/lib/libSR_AudioIn.so \
+    vendor/samsung/c1-common/proprietary/audio/libyamahasrc.so:system/lib/libyamahasrc.so
 
