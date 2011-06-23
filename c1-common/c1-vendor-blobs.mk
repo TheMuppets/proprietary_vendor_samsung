@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/audio/libasound.so:system/lib/libasound.so \
     vendor/samsung/c1-common/proprietary/audio/libaudio.so:system/lib/libaudio.so \
     vendor/samsung/c1-common/proprietary/audio/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudioflinger.so:system/lib/libaudioflinger.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiohw_op.so:system/lib/libaudiohw_op.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiohw_sf.so:system/lib/libaudiohw_sf.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:system/lib/libaudiopolicy.so \
