@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libtvout.so:system/lib/libtvout.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/vendor/firmware/bcm4330.hcd \
+    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/bin/BCM4330B1_002.001.003.0043.0077.hcd \
     vendor/samsung/c1-common/proprietary/mediaserver:system/bin/mediaserver \
     vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
