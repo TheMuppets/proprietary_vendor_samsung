@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
+    vendor/samsung/fascinatemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/fascinatemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
     vendor/samsung/fascinatemtd/proprietary/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
     vendor/samsung/fascinatemtd/proprietary/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
