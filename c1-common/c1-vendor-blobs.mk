@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
+    vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
 
 # All the blobs necessary for galaxys2 devices
@@ -60,7 +61,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/bin/BCM4330B1_002.001.003.0043.0077.hcd \
-    vendor/samsung/c1-common/proprietary/mediaserver:system/bin/mediaserver \
     vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
