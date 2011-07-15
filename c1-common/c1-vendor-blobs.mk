@@ -31,13 +31,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/c1-common/proprietary/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/c1-common/proprietary/libEGL.so:system/lib/libEGL.so \
-    vendor/samsung/c1-common/proprietary/libexifa.so:system/lib/libexifa.so \
     vendor/samsung/c1-common/proprietary/libexif.so:system/lib/libexif.so \
     vendor/samsung/c1-common/proprietary/libfimc.so:system/lib/libfimc.so \
     vendor/samsung/c1-common/proprietary/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/c1-common/proprietary/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
     vendor/samsung/c1-common/proprietary/libGLESv2.so:system/lib/libGLESv2.so \
-    vendor/samsung/c1-common/proprietary/libjpega.so:system/lib/libjpega.so \
     vendor/samsung/c1-common/proprietary/libMali.so:system/lib/libMali.so \
     vendor/samsung/c1-common/proprietary/libOpenSLES.so:system/lib/libOpenSLES.so \
     vendor/samsung/c1-common/proprietary/libPanoraMax3.so:system/lib/libPanoraMax3.so \
@@ -87,8 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so \
-    vendor/samsung/c1-common/proprietary/hw/overlay.GT-I9100.so:system/lib/hw/overlay.smdkv310.so
+    vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
