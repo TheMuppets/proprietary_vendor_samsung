@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/captivatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/captivatemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/captivatemtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
-    vendor/samsung/captivatemtd/proprietary/libcamera.so:system/lib/libcamera.so
-
+    vendor/samsung/captivatemtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so
 
 
     
