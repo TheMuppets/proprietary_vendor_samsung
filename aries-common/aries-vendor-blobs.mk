@@ -33,16 +33,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/aries-common/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/aries-common/proprietary/CE147F02.bin:system/vendor/firmware/CE147F02.bin \
-    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so
-
-# fascinatemtd uses older sensor drivers
-ifndef TARGET_USES_OLD_LIBSENSORS_HAL
-PRODUCT_COPY_FILES += \
+    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so \
     vendor/samsung/aries-common/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so \
-    vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
     vendor/samsung/aries-common/proprietary/orientationd:system/vendor/bin/orientationd \
     vendor/samsung/aries-common/proprietary/geomagneticd:system/vendor/bin/geomagneticd
-endif
 
 # camera and tvout
 PRODUCT_COPY_FILES += \
