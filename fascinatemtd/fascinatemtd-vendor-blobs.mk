@@ -36,6 +36,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
     vendor/samsung/fascinatemtd/proprietary/sensorserver_yamaha:system/bin/sensorserver_yamaha \
     vendor/samsung/fascinatemtd/proprietary/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha \
-    vendor/samsung/fascinatemtd/proprietary/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/fascinatemtd/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \
+    vendor/samsung/fascinatemtd/proprietary/PhoneConfig.apk:system/app/PhoneConfig.apk \
+    vendor/samsung/fascinatemtd/proprietary/ProgramMenu.apk:system/app/ProgramMenu.apk \
+    vendor/samsung/fascinatemtd/proprietary/ProgramMenuSystem.apk:system/app/ProgramMenuSystem.apk
 
 

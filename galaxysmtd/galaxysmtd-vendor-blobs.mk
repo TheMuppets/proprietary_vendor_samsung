@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxysmtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/galaxysmtd/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/galaxysmtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/galaxysmtd/proprietary/libcamera.so:system/lib/libcamera.so
-
+    vendor/samsung/galaxysmtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so
     
     
