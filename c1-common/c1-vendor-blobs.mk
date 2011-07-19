@@ -43,7 +43,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so \
     vendor/samsung/c1-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/c1-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/c1-common/proprietary/libsecjpegencoder.so:system/lib/libsecjpegencoder.so \
+    vendor/samsung/c1-common/proprietary/libsecjpegarcsoft.so:system/lib/libsecjpegarcsoft.so \
+    vendor/samsung/c1-common/proprietary/libsecjpegboard.so:system/lib/libsecjpegboard.so \
+    vendor/samsung/c1-common/proprietary/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/c1-common/proprietary/libtvoutcec.so:system/lib/libtvoutcec.so \
