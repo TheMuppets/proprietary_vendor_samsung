@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libtvout.so:system/lib/libtvout.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0043.0077.hcd:system/bin/BCM4330B1_002.001.003.0043.0077.hcd \
+    vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0128.0162.hcd:system/bin/BCM4330B1_002.001.003.0128.0162.hcd \
     vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/keychars/sec_touchkey.kcm.bin:system/usr/keychars/sec_touchkey.kcm.bin
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/c1-common/proprietary/wifi/bcm4330_aps.bin:system/vendor/firmware/bcm4330_aps.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_mfg.bin:system/vendor/firmware/bcm4330_mfg.bin \
     vendor/samsung/c1-common/proprietary/wifi/bcm4330_sta.bin:system/vendor/firmware/bcm4330_sta.bin
 
