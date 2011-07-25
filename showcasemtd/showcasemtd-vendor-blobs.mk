@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/showcasemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/showcasemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/showcasemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
+    vendor/samsung/showcasemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/showcasemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
     vendor/samsung/showcasemtd/proprietary/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
     vendor/samsung/showcasemtd/proprietary/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
