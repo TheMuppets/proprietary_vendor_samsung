@@ -14,10 +14,10 @@
 # limitations under the License.
 
 (cd vendor/samsung/crespo4g/proprietary/ODB.apk.parts ; zip -r ../ODB.unsigned.apk .)
-java -jar $(find out/host -name signapk.jar) build/target/product/security/testkey.x509.pem build/target/product/security/testkey.pk8 vendor/samsung/crespo4g/proprietary/ODB.unsigned.apk vendor/samsung/crespo4g/proprietary/ODB.apk
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/crespo4g/proprietary/ODB.unsigned.apk vendor/samsung/crespo4g/proprietary/ODB.apk
 (cd vendor/samsung/crespo4g/proprietary/SprintMenu.apk.parts ; zip -r ../SprintMenu.unsigned.apk .)
-java -jar $(find out/host -name signapk.jar) build/target/product/security/testkey.x509.pem build/target/product/security/testkey.pk8 vendor/samsung/crespo4g/proprietary/SprintMenu.unsigned.apk vendor/samsung/crespo4g/proprietary/SprintMenu.apk
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/crespo4g/proprietary/SprintMenu.unsigned.apk vendor/samsung/crespo4g/proprietary/SprintMenu.apk
 (cd vendor/samsung/crespo4g/proprietary/SystemUpdateUI.apk.parts ; zip -r ../SystemUpdateUI.unsigned.apk .)
-java -jar $(find out/host -name signapk.jar) build/target/product/security/testkey.x509.pem build/target/product/security/testkey.pk8 vendor/samsung/crespo4g/proprietary/SystemUpdateUI.unsigned.apk vendor/samsung/crespo4g/proprietary/SystemUpdateUI.apk
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/crespo4g/proprietary/SystemUpdateUI.unsigned.apk vendor/samsung/crespo4g/proprietary/SystemUpdateUI.apk
 (cd vendor/samsung/crespo4g/proprietary/WiMAXSettings.apk.parts ; zip -r ../WiMAXSettings.unsigned.apk .)
-java -jar $(find out/host -name signapk.jar) build/target/product/security/testkey.x509.pem build/target/product/security/testkey.pk8 vendor/samsung/crespo4g/proprietary/WiMAXSettings.unsigned.apk vendor/samsung/crespo4g/proprietary/WiMAXSettings.apk
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/crespo4g/proprietary/WiMAXSettings.unsigned.apk vendor/samsung/crespo4g/proprietary/WiMAXSettings.apk
