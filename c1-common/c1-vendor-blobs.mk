@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/firmware/qt602240.fw:system/etc/firmware/qt602240.fw \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OB.bin:system/etc/firmware/RS_M5LS_OB.bin \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OC.bin:system/etc/firmware/RS_M5LS_OC.bin \
+    vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_OE.bin:system/etc/firmware/RS_M5LS_OE.bin \
     vendor/samsung/c1-common/proprietary/firmware/RS_M5LS_TB.bin:system/etc/firmware/RS_M5LS_TB.bin \
     vendor/samsung/c1-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
 
