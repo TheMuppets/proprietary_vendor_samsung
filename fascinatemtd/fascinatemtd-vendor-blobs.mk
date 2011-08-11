@@ -14,7 +14,6 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/fascinatemtd/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/fascinatemtd/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/fascinatemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
@@ -25,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/fascinatemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/fascinatemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/fascinatemtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/fascinatemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/fascinatemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
@@ -41,5 +40,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/PhoneConfig.apk:system/app/PhoneConfig.apk \
     vendor/samsung/fascinatemtd/proprietary/ProgramMenu.apk:system/app/ProgramMenu.apk \
     vendor/samsung/fascinatemtd/proprietary/ProgramMenuSystem.apk:system/app/ProgramMenuSystem.apk
-
-

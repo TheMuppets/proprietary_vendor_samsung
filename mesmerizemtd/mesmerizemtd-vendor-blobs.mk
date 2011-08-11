@@ -14,7 +14,6 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/mesmerizemtd/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/mesmerizemtd/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/mesmerizemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
@@ -25,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/mesmerizemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/mesmerizemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/mesmerizemtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/mesmerizemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/mesmerizemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/mesmerizemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/mesmerizemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
