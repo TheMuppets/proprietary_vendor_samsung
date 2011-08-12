@@ -64,3 +64,31 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
     vendor/samsung/aries-common/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
     vendor/samsung/aries-common/proprietary/CE147F03.bin:system/firmware/CE147F03.bin
+
+# low power mode
+PRODUCT_COPY_FILES += \
+    vendor/samsung/aries-common/proprietary/charging_mode:system/bin/charging_mode \
+    vendor/samsung/aries-common/proprietary/playlpm:system/bin/playlpm \
+    vendor/samsung/aries-common/proprietary/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/aries-common/proprietary/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/aries-common/proprietary/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/aries-common/proprietary/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/aries-common/proprietary/Disconnected.qmg:system/media/Disconnected.qmg
