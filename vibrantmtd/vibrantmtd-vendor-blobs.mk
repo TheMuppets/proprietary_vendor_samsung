@@ -14,7 +14,6 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/vibrantmtd/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/vibrantmtd/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
@@ -28,7 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/vibrantmtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
     vendor/samsung/vibrantmtd/proprietary/rild:system/bin/rild \
     vendor/samsung/vibrantmtd/proprietary/agpsd:system/vendor/bin/gpsd \
-    vendor/samsung/vibrantmtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/vibrantmtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
     vendor/samsung/aries-common/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so
 

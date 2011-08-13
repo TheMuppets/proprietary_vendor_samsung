@@ -14,7 +14,6 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/showcasemtd/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/showcasemtd/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/showcasemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
@@ -25,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/showcasemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/showcasemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/showcasemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/showcasemtd/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/showcasemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/showcasemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/showcasemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/showcasemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
