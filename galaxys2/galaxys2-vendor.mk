@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES := \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/aries-common/overlay
+DEVICE_PACKAGE_OVERLAYS := vendor/samsung/c1-common/overlay
 
 $(call inherit-product, vendor/samsung/galaxys2/galaxys2-vendor-blobs.mk)
 $(call inherit-product, vendor/samsung/c1-common/c1-vendor-blobs.mk)
