@@ -33,9 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/aries-common/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/aries-common/proprietary/CE147F02.bin:system/vendor/firmware/CE147F02.bin \
-    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so \
-    vendor/samsung/aries-common/proprietary/orientationd:system/vendor/bin/orientationd \
-    vendor/samsung/aries-common/proprietary/geomagneticd:system/vendor/bin/geomagneticd
+    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so
 
 # camera and tvout
 PRODUCT_COPY_FILES += \
