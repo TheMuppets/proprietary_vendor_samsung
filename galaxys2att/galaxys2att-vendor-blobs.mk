@@ -13,16 +13,7 @@
 # limitations under the License.
 
 # Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \
-    vendor/samsung/galaxys2/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/galaxys2/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
-# All the blobs necessary for galaxys2
-
-# RIL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/galaxys2/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/galaxys2/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/galaxys2/proprietary/rild:system/bin/rild
+# All the blobs necessary for galaxys2att
+    
     

@@ -15,8 +15,6 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/c1-common/proprietary/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
     vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
     vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
@@ -39,15 +37,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/libMali.so:system/lib/libMali.so \
     vendor/samsung/c1-common/proprietary/libOpenSLES.so:system/lib/libOpenSLES.so \
     vendor/samsung/c1-common/proprietary/libPanoraMax3.so:system/lib/libPanoraMax3.so \
-    vendor/samsung/c1-common/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/c1-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so \
     vendor/samsung/c1-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/c1-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
     vendor/samsung/c1-common/proprietary/libsecjpegarcsoft.so:system/lib/libsecjpegarcsoft.so \
     vendor/samsung/c1-common/proprietary/libsecjpegboard.so:system/lib/libsecjpegboard.so \
     vendor/samsung/c1-common/proprietary/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
-    vendor/samsung/c1-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/c1-common/proprietary/libtvoutcec.so:system/lib/libtvoutcec.so \
     vendor/samsung/c1-common/proprietary/libtvoutddc.so:system/lib/libtvoutddc.so \
     vendor/samsung/c1-common/proprietary/libtvoutedid.so:system/lib/libtvoutedid.so \
@@ -61,7 +56,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0128.0162.hcd:system/bin/BCM4330B1_002.001.003.0128.0162.hcd \
-    vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
     vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
 
 PRODUCT_COPY_FILES += \

@@ -14,15 +14,14 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/galaxys2/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/galaxys2/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/epic4gtouch/proprietary/libril.so:obj/lib/libril.so \
+    vendor/samsung/epic4gtouch/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
-# All the blobs necessary for galaxys2
-
+# All the blobs necessary for epic4gtouch
+    
 # RIL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/galaxys2/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/galaxys2/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/galaxys2/proprietary/rild:system/bin/rild
-    
+    vendor/samsung/epic4gtouch/proprietary/libril.so:system/lib/libril.so \
+    vendor/samsung/epic4gtouch/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/epic4gtouch/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
+    vendor/samsung/epic4gtouch/proprietary/rild:system/bin/rild
