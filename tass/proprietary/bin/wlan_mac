@@ -1,0 +1,50 @@
+#!/system/bin/sh
+#------------------------------------------------------------------------------
+# <copyright file="makefile" company="Atheros">
+#    Copyright (c) 2005-2010 Atheros Corporation.  All rights reserved.
+# $ATH_LICENSE_HOSTSDK0_C$
+#------------------------------------------------------------------------------
+#==============================================================================
+# Author(s): ="Atheros"
+#==============================================================================
+TAGS="wlan_mac"
+SYSLOG="log -p i -t $TAGS "
+BT_ENABLED="`getprop service.brcm.bt.activation 0`"
+IFNAME=wlan0
+WLAN_ENABLE_CHECK="wmiconfig -i $IFNAME --getRTS"
+
+if ! ls /data/.nvmac.info; then
+    while true; do
+        case `getprop ril.wifi_macaddr` in
+        "")
+#        $SYSLOG "Still waiting for mac property"
+        sleep 1
+        ;;
+        *)
+        break
+        ;;
+        esac            
+    done
+    $SYSLOG "Generate mac file" `getprop ril.wifi_macaddr`
+    echo `getprop ril.wifi_macaddr` > /data/.nvmac.info
+fi
+
+mv /data/log/ar6k.log /data/log/ar6k.previous.log
+recEvent --logfile=/data/log/ar6k.log --binary --reclimit=10000& 
+
+for i in 1 2 3 4 5 6 7 8 9 10; do
+    if $WLAN_ENABLE_CHECK; then
+        break;
+    fi
+    sleep 1
+done
+
+if exp $BT_ENABLED == 1; then
+    $SYSLOG "Setup bt on"
+    wmiconfig -i $IFNAME --bt on
+else
+    $SYSLOG "Setup bt off"
+    wmiconfig -i $IFNAME --bt off
+fi
+
+wmiconfig -i $IFNAME --wlan disable
