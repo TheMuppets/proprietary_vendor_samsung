@@ -26,4 +26,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2att/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/galaxys2att/proprietary/rild:system/bin/rild
     
-    
+# Keychars
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxys2att/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
+    vendor/samsung/galaxys2att/proprietary/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
+    vendor/samsung/galaxys2att/proprietary/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
+    vendor/samsung/galaxys2att/proprietary/keychars/sec_key.kcm.bin:system/usr/keychars/sec_key.kcm.bin \
+    vendor/samsung/galaxys2att/proprietary/keychars/sec_touchkey.kcm.bin:system/usr/keychars/sec_touchkey.kcm.bin
