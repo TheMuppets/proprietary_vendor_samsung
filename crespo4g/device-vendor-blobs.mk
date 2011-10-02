@@ -14,5 +14,4 @@
 
 # All the blobs necessary for crespo4g
 PRODUCT_COPY_FILES += \
-    vendor/samsung/crespo4g/proprietary/cypress-touchkey.bin:system/vendor/firmware/cypress-touchkey.bin \
-    vendor/samsung/crespo4g/proprietary/libakm.so:system/vendor/lib/libakm.so
+    vendor/samsung/crespo4g/proprietary/cypress-touchkey.bin:system/vendor/firmware/cypress-touchkey.bin
