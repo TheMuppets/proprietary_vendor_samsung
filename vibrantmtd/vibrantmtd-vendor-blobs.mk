@@ -29,5 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/vibrantmtd/proprietary/agpsd:system/vendor/bin/gpsd \
     vendor/samsung/vibrantmtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/aries-common/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
+    vendor/samsung/aries-common/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
+    vendor/samsung/aries-common/proprietary/orientationd:system/vendor/bin/orientationd \
     vendor/samsung/aries-common/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so
 
