@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
-    vendor/samsung/fascinatemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/fascinatemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/fascinatemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
     vendor/samsung/fascinatemtd/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
