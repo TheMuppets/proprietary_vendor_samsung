@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/aries-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/aries-common/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
-    vendor/samsung/aries-common/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/aries-common/proprietary/libCaMotion.so:system/lib/libCaMotion.so \
     vendor/samsung/aries-common/proprietary/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/aries-common/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \
