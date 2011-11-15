@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/showcasemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/showcasemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/showcasemtd/proprietary/gpsd:system/vendor/bin/gpsd \
-    vendor/samsung/showcasemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/showcasemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/showcasemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
     vendor/samsung/showcasemtd/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
