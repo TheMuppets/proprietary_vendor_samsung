@@ -19,4 +19,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/fRom:system/bin/fRom \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
-
+    $(LOCAL_PATH)/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
+    $(LOCAL_PATH)/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+    $(LOCAL_PATH)/proprietary/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    $(LOCAL_PATH)/proprietary/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so \
+    $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf
