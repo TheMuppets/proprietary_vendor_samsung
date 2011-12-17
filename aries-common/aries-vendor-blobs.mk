@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/aries-common/proprietary/libsecjpegencoder.so:system/lib/libsecjpegencoder.so \
     vendor/samsung/aries-common/proprietary/libtvout.so:system/lib/libtvout.so \
+    vendor/samsung/aries-common/proprietary/libtvout_jni.so:system/lib/libtvout_jni.so \
     vendor/samsung/aries-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
     vendor/samsung/aries-common/proprietary/libtvoutfimc.so:system/lib/libtvoutfimc.so \
     vendor/samsung/aries-common/proprietary/libtvouthdmi.so:system/lib/libtvouthdmi.so \
