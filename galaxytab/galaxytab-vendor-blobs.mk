@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/galaxytab/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/galaxytab/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/galaxytab/proprietary/gralloc.aries.so:system/vendor/lib/hw/gralloc.s5pc110.so \
+    vendor/samsung/galaxytab/proprietary/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
     vendor/samsung/galaxytab/proprietary/libakm.so:system/vendor/lib/libakm.so \
     vendor/samsung/galaxytab/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
     vendor/samsung/galaxytab/proprietary/libIMGegl.so:system/vendor/lib/libIMGegl.so \
@@ -64,11 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \
     vendor/samsung/galaxytab/proprietary/samsung_mfc_fw.bin:/system/vendor/firmware/samsung_mfc_fw.bin \
     vendor/samsung/galaxytab/proprietary/fw_bcmdhd.bin:/system/vendor/firmware/fw_bcmdhd.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcmdhd.bin_apsta.bin:/system/vendor/firmware/fw_bcmdhd.bin_apsta.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcmdhd.bin_p2p.bin:/system/vendor/firmware/fw_bcmdhd.bin_p2p.bin \
-....vendor/samsung/galaxytab/propreitary/cypress-touchkey.bin:/system/vendor/firmware/cypress-touchkey.bin \
-....vendor/samsung/galaxytab/propreitary/CE147F02.bin:/system/vendor/firmware/CE147F02.bin \
-....vendor/samsung/galaxytab/propreitarybcm4329.hcd/:/system/vendor/firmware/bcm4329.hcd
+    vendor/samsung/galaxytab/proprietary/fw_bcmdhd_apsta.bin:/system/vendor/firmware/fw_bcmdhd_apsta.bin \
+    vendor/samsung/galaxytab/proprietary/fw_bcmdhd_p2p.bin:/system/vendor/firmware/fw_bcmdhd_p2p.bin \
 
 # low power mode
 PRODUCT_COPY_FILES += \
@@ -101,4 +98,4 @@ PRODUCT_COPY_FILES += \
 
 # bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/BCM4329B1_002.002.023.0534.0571.hcd:system/bin/BCM4329B1_002.002.023.0534.0571.hcd
+    vendor/samsung/galaxytab/proprietary/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd
