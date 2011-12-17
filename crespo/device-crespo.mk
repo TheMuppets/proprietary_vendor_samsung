@@ -12,12 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+LOCAL_PATH := vendor/samsung/crespo
+
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/crespo/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    $(LOCAL_PATH)/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
-# Samsung blobs necessary for crespo
+# Samsung blobs necessary for Nexus S hardware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/crespo/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/crespo/proprietary/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin \
-    vendor/samsung/crespo/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so
+    $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so
