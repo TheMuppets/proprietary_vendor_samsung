@@ -21,20 +21,25 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/fRom:system/bin/fRom \
     $(LOCAL_PATH)/proprietary/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \
-    $(LOCAL_PATH)/proprietary/libims_jni.so:system/vendor/lib/libims_jni.so \
-    $(LOCAL_PATH)/proprietary/libims.so:system/vendor/lib/libims.so \
     $(LOCAL_PATH)/proprietary/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so \
     $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/libsec-ril_lte.so:system/vendor/lib/libsec-ril_lte.so \
-    $(LOCAL_PATH)/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
-    $(LOCAL_PATH)/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \
     $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf
 
+# Disabled Samsung blob(s)
+#    $(LOCAL_PATH)/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
+#    $(LOCAL_PATH)/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \
+#    $(LOCAL_PATH)/proprietary/libims_jni.so:system/vendor/lib/libims_jni.so \
+#    $(LOCAL_PATH)/proprietary/libims.so:system/vendor/lib/libims.so \
+
+
 PRODUCT_PACKAGES += \
-    BIP \
-    IMSFramework \
-    RTN \
-    SDM \
-    SPG \
-    SyncMLSvc
+    RTN #Cell information. Dial *#*#786#*#*
+
+# Disabled PRODUCT_PACKAGES
+#    BIP #Onboot SIM Service?
+#    IMSFramework #Onboot listener?
+#    SDM #Samsung software update
+#    SPG #Wireless tether authorization service
+#    SyncMLSvc #SyncML Service for communication to VZW. Required for SPG.
