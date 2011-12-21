@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/akm/crespo4g/device-crespo4g.mk)
-$(call inherit-product-if-exists, vendor/broadcom/crespo4g/device-crespo4g.mk)
-$(call inherit-product-if-exists, vendor/cypress/crespo4g/device-crespo4g.mk)
-$(call inherit-product-if-exists, vendor/imgtec/crespo4g/device-crespo4g.mk)
-$(call inherit-product-if-exists, vendor/nxp/crespo4g/device-crespo4g.mk)
-$(call inherit-product-if-exists, vendor/samsung/crespo4g/device-crespo4g.mk)
+LOCAL_STEM := crespo4g/device-crespo4g.mk
+
+$(call inherit-product-if-exists, vendor/akm/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/cypress/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/imgtec/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))

@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include vendor/akm/crespo/BoardConfigCrespo.mk
--include vendor/broadcom/crespo/BoardConfigCrespo.mk
--include vendor/cypress/crespo/BoardConfigCrespo.mk
--include vendor/imgtec/crespo/BoardConfigCrespo.mk
--include vendor/nxp/crespo/BoardConfigCrespo.mk
--include vendor/samsung/crespo/BoardConfigCrespo.mk
+LOCAL_STEM := crespo/BoardConfigCrespo.mk
+
+-include vendor/akm/$(LOCAL_STEM)
+-include vendor/broadcom/$(LOCAL_STEM)
+-include vendor/cypress/$(LOCAL_STEM)
+-include vendor/imgtec/$(LOCAL_STEM)
+-include vendor/nxp/$(LOCAL_STEM)
+-include vendor/samsung/$(LOCAL_STEM)
