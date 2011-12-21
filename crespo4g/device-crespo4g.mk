@@ -12,29 +12,32 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+LOCAL_PATH := vendor/samsung/crespo4g
+
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/crespo4g/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    $(LOCAL_PATH)/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
-# Samsung blobs necessary for crespo4g
+# Samsung blobs necessary for Nexus S hardware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/crespo4g/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/crespo4g/proprietary/libWiMAXNativeODB.so:system/lib/libWiMAXNativeODB.so \
-    vendor/samsung/crespo4g/proprietary/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin \
-    vendor/samsung/crespo4g/proprietary/wimaxfw.bin:system/vendor/firmware/wimaxfw.bin \
-    vendor/samsung/crespo4g/proprietary/wimaxloader.bin:system/vendor/firmware/wimaxloader.bin \
-    vendor/samsung/crespo4g/proprietary/wimax_boot.bin:system/vendor/firmware/wimax_boot.bin \
-    vendor/samsung/crespo4g/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
-    vendor/samsung/crespo4g/proprietary/libSECmWiMAXcAPI.so:system/vendor/lib/libSECmWiMAXcAPI.so \
-    vendor/samsung/crespo4g/proprietary/wimax_service.jar:system/vendor/lib/wimax_service.jar
+    $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so
 
+# Samsung blobs necessary for CDMA/WiMAX on Nexus S hardware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/libWiMAXNative.so:system/lib/libWiMAXNative.so \
+    $(LOCAL_PATH)/proprietary/wimaxfw.bin:system/vendor/firmware/wimaxfw.bin \
+    $(LOCAL_PATH)/proprietary/wimaxloader.bin:system/vendor/firmware/wimaxloader.bin \
+    $(LOCAL_PATH)/proprietary/wimax_boot.bin:system/vendor/firmware/wimax_boot.bin \
+    $(LOCAL_PATH)/proprietary/libSECmWiMAXcAPI.so:system/vendor/lib/libSECmWiMAXcAPI.so \
+    $(LOCAL_PATH)/proprietary/wimax_service.jar:system/vendor/lib/wimax_service.jar
 
 # Samsung proprietary applications to support WiMAX, CDMA and Sprint
-PRODUCT_PACKAGES += \
-                WiMAXSettings \
-                SprintMenu \
-                ODB \
-                SystemUpdateUI
+PRODUCT_PACKAGES := \
+    WiMAXSettings \
+    SprintMenu \
+    WiMAXHiddenMenu \
+    SystemUpdateUI
 
 # Overlay for WiMAX-related settings
-DEVICE_PACKAGE_OVERLAYS := device/samsung/crespo4g/crespo4g_overlay
+DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/crespo4g_overlay
