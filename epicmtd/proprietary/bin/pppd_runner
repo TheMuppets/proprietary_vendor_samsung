@@ -1,0 +1,5 @@
+#!/system/bin/sh
+setprop net.dns1 8.8.8.8
+setprop net.dns2 8.8.4.4
+/system/bin/pppd /dev/ttyCDMA0 115200 user SprintNextel nodetach usepeerdns defaultroute
+
