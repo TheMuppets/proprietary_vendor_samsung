@@ -1,0 +1,97 @@
+# SAMSUNG P1 R0.5 board
+# r0.5n0.2  2010/04/15 13:00
+
+sromrev=3
+vendid=0x14e4
+devid=0x432e
+# board type
+boardtype=0x4ff
+boardrev=0x19
+
+boardflags=0x200
+
+xtalfreq=26000
+
+aa2g=1
+aa5g=1
+
+ag0=255
+
+# 11g paparams 
+# 100415, P1 R0.5 CSM; 15E7, FAF3, FECD
+pa0b0=5607,5607,5112
+pa0b1=64243,64243,64229
+pa0b2=65229,65229,65081
+pa0itssit=62
+pa0maxpwr=74
+opo=0
+mcs2gpo0=0x8888
+mcs2gpo1=0x8888
+ofdmpo=0x88888888
+
+cckdigfilttype=6
+ofdmdigfilttype=1
+
+# 11a paparams low-band : CH.36 (5180M) - CH.64 (5320M)
+# 100415, P1 R0.5 CSM; 14E1, FB09, FEE1
+pa1lob0=5345
+pa1lob1=64265
+pa1lob2=65249
+# 11a paparams mid-band : CH.100 (5500M) - CH.140 (5700M)
+# 100415, P1 R0.5 CSM; 142E, FAFF, FEAA
+pa1b0=5166
+pa1b1=64255
+pa1b2=65194
+# 11a paparams high-band : CH.149 (5745M) - CH.165 (5825M)
+# 100415, P1 R0.5 CSM; 14C9, FAFC, FEC5
+pa1hib0=5321
+pa1hib1=64252
+pa1hib2=65221
+pa1itssit=62
+pa1maxpwr=50
+opo=0
+mcs5gpo=0x0
+
+# 11g rssi params
+rssismf2g=0xa
+rssismc2g=0xb
+rssisav2g=0x3
+bxa2g=0
+
+# 11a rssi params
+rssismf5g=0xa
+rssismc5g=0xa
+rssisav5g=0x3
+bxa2g=0
+
+# country code
+ccode=ALL
+cctl=0x0
+
+rxpo2g=0
+rxpo5g=0
+rxpo2gchnflg=0x1FFF
+
+boardnum=2048
+macaddr=00:90:4c:c5:34:23
+
+#######
+nocrc=1
+
+#for mfgc
+otpimagesize=182
+
+# sdio extra configs
+hwhdr=0x05ffff031030031003100000
+
+#This generates empty F1, F2 and F3 tuple chains, and may be used if the host SDIO stack does not require the standard tuples.
+RAW1=80 02 fe ff
+
+#This includes the standard FUNCID and FUNCE tuples in the F1, F2, F3 and common CIS.
+#RAW1=80 32 fe 21 02 0c 00 22 2a 01 01 00 00 c5 0 e6 00 00 00 00 00 40 00 00 ff ff 80 00 00 00 00 00 00 00 00 00 00 c8 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 20 04 D0 2 29 43 21 02 0c 00 22 04 00 20 00 5A
+
+btc_params80=0
+
+sd_gpout=0
+sd_gpval=1
+sd_oobonly=1
