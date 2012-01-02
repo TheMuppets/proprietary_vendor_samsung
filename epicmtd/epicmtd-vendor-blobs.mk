@@ -20,7 +20,8 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/epicmtd/proprietary/lib/libsecril-client.so:obj/lib/libsecrilclient.so \
-    vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:obj/lib/libsec-ril40.so
+    vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:obj/lib/libsec-ril40.so \
+    vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:obj/lib/libsec-ril.so
 
 #
 # Wifi
@@ -108,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/bin/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/epicmtd/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
+    vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/epicmtd/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/epicmtd/proprietary/lib/libril.so:system/lib/libril.so
 
@@ -118,6 +120,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/vendor/bin/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/epicmtd/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/epicmtd/proprietary/lib/hw/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so
+
+#
+# WiMAX
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/epicmtd/proprietary/ODB.apk:system/app/ODB.apk \
+    vendor/samsung/epicmtd/proprietary/SprintMenu.apk:system/app/SprintMenu.apk \
+    vendor/samsung/epicmtd/proprietary/SystemUpdateUI.apk:system/app/SystemUpdateUI.apk \
+    vendor/samsung/epicmtd/proprietary/WiMAXSettings.apk:system/app/WiMAXSettings.apk \
+    vendor/samsung/epicmtd/proprietary/libWiMAXNativeODB.so:system/lib/libWiMAXNativeODB.so \
+    vendor/samsung/epicmtd/proprietary/wimaxfw.bin:system/etc/wimaxfw.bin \
+    vendor/samsung/epicmtd/proprietary/wimaxloader.bin:system/etc/wimaxloader.bin \
+    vendor/samsung/epicmtd/proprietary/wimax_boot.bin:system/etc/wimax_boot.bin \
+    vendor/samsung/epicmtd/proprietary/libSECmWiMAXcAPI.so:system/vendor/lib/libSECmWiMAXcAPI.so \
+    vendor/samsung/epicmtd/proprietary/wimax_service.jar:system/vendor/lib/wimax_service.jar
+
+PRODUCT_PACKAGES += \
+                WiMAXSettings \
+                SprintMenu \
+                ODB \
+                SystemUpdateUI
+
+DEVICE_PACKAGE_OVERLAYS := device/samsung/epicmtd/overlay
 
 #
 # Files for battery charging screen
