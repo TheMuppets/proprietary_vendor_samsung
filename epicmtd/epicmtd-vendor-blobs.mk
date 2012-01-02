@@ -26,11 +26,8 @@ PRODUCT_COPY_FILES += \
 # Wifi
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epicmtd/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/epicmtd/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/epicmtd/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-    vendor/samsung/epicmtd/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
-    vendor/samsung/epicmtd/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin
+    vendor/samsung/epicmtd/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
+
 
 #
 # Display (3D)
@@ -50,7 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
     vendor/samsung/epicmtd/proprietary/lib/libusc.so:system/lib/libusc.so \
     vendor/samsung/epicmtd/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
-    vendor/samsung/epicmtd/proprietary/vendor/firmware/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin 
+    vendor/samsung/epicmtd/proprietary/vendor/firmware/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin
 
 #
 # Sensors, Lights etc
@@ -97,11 +94,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/lib/libtvoutfimc.so:system/lib/libtvoutfimc.so \
     vendor/samsung/epicmtd/proprietary/lib/libtvouthdmi.so:system/lib/libtvouthdmi.so \
     vendor/samsung/epicmtd/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
-    vendor/samsung/epicmtd/proprietary/CE147F00.bin:system/firmware/CE147F00.bin \
-    vendor/samsung/epicmtd/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
-    vendor/samsung/epicmtd/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
-    vendor/samsung/epicmtd/proprietary/CE147F03.bin:system/firmware/CE147F03.bin \
-    vendor/samsung/epicmtd/proprietary/CE147F02.bin:system/vendor/firmware/CE147F02.bin 
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F00.bin:system/firmware/CE147F00.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F01.bin:system/firmware/CE147F01.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F02.bin:system/firmware/CE147F02.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin \
+    vendor/samsung/epicmtd/proprietary/vendor/firmware/CE147F02.bin:system/vendor/firmware/CE147F02.bin
+
 
 #
 # RIL
