@@ -18,7 +18,6 @@
 # prelink
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epicmtd/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/epicmtd/proprietary/lib/libsecril-client.so:obj/lib/libsecrilclient.so \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:obj/lib/libsec-ril40.so \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:obj/lib/libsec-ril.so
@@ -76,12 +75,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/epicmtd/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/epicmtd/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
-    vendor/samsung/epicmtd/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/epicmtd/proprietary/lib/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/epicmtd/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/epicmtd/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/epicmtd/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
     vendor/samsung/epicmtd/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/samsung/epicmtd/proprietary/lib/libCamera_gingerbread.so:system/lib/libCamera_gingerbread.so \
     vendor/samsung/epicmtd/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
     vendor/samsung/epicmtd/proprietary/lib/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/epicmtd/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
