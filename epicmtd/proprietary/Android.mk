@@ -14,7 +14,7 @@
 
 LOCAL_PATH:=$(call my-dir)
 
-ifeq ($(TARGET_DEVICE),crespo4g)
+ifeq ($(TARGET_DEVICE),epicmtd)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := WiMAXSettings
@@ -35,7 +35,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := WiMAXHiddenMenu
+LOCAL_MODULE := ODB
 LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
