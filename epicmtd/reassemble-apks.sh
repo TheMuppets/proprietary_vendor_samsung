@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-(cd vendor/samsung/epicmtd/proprietary/ODB.apk.parts ; zip -r ../ODB.unsigned.apk .)
-java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epicmtd/proprietary/ODB.unsigned.apk vendor/samsung/epicmtd/proprietary/ODB.apk
+(cd vendor/samsung/epicmtd/proprietary/WiMAXHiddenMenu.apk.parts ; zip -r ../WiMAXHiddenMenu.unsigned.apk .)
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epicmtd/proprietary/WiMAXHiddenMenu.unsigned.apk vendor/samsung/epicmtd/proprietary/WiMAXHiddenMenu.apk
 (cd vendor/samsung/epicmtd/proprietary/SprintMenu.apk.parts ; zip -r ../SprintMenu.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epicmtd/proprietary/SprintMenu.unsigned.apk vendor/samsung/epicmtd/proprietary/SprintMenu.apk
 (cd vendor/samsung/epicmtd/proprietary/SystemUpdateUI.apk.parts ; zip -r ../SystemUpdateUI.unsigned.apk .)

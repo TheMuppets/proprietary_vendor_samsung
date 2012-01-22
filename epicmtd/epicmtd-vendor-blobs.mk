@@ -89,11 +89,7 @@ PRODUCT_COPY_FILES += \
 # WiMAX
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epicmtd/proprietary/ODB.apk:system/app/ODB.apk \
-    vendor/samsung/epicmtd/proprietary/SprintMenu.apk:system/app/SprintMenu.apk \
-    vendor/samsung/epicmtd/proprietary/SystemUpdateUI.apk:system/app/SystemUpdateUI.apk \
-    vendor/samsung/epicmtd/proprietary/WiMAXSettings.apk:system/app/WiMAXSettings.apk \
-    vendor/samsung/epicmtd/proprietary/libWiMAXNativeODB.so:system/lib/libWiMAXNativeODB.so \
+    vendor/samsung/epicmtd/proprietary/libWiMAXNative.so:system/lib/libWiMAXNative.so \
     vendor/samsung/epicmtd/proprietary/wimaxfw.bin:system/etc/wimaxfw.bin \
     vendor/samsung/epicmtd/proprietary/wimaxloader.bin:system/etc/wimaxloader.bin \
     vendor/samsung/epicmtd/proprietary/wimax_boot.bin:system/etc/wimax_boot.bin \
@@ -103,7 +99,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
                 WiMAXSettings \
                 SprintMenu \
-                ODB \
+                WiMAXHiddenMenu \
                 SystemUpdateUI
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/epicmtd/overlay
