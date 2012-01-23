@@ -52,7 +52,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/firmware/CE147F01.bin:system/firmware/CE147F01.bin \
     vendor/samsung/epicmtd/proprietary/firmware/CE147F02.bin:system/firmware/CE147F02.bin \
     vendor/samsung/epicmtd/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin \
-    vendor/samsung/epicmtd/proprietary/vendor/firmware/CE147F02.bin:system/vendor/firmware/CE147F02.bin
+    vendor/samsung/epicmtd/proprietary/vendor/firmware/CE147F02.bin:system/vendor/firmware/CE147F02.bin \
+    vendor/samsung/epicmtd/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/epicmtd/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv 
 #
 # Sensors, Lights etc
 #
