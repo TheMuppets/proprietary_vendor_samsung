@@ -47,8 +47,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/vendor/lib/libIMGegl.so:system/vendor/lib/libIMGegl.so \
     vendor/samsung/epicmtd/proprietary/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
     vendor/samsung/epicmtd/proprietary/vendor/lib/libpvr2d.so:system/vendor/lib/libpvr2d.so \
-    vendor/samsung/epicmtd/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so
-
+    vendor/samsung/epicmtd/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F00.bin:system/firmware/CE147F00.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F01.bin:system/firmware/CE147F01.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F02.bin:system/firmware/CE147F02.bin \
+    vendor/samsung/epicmtd/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin \
+    vendor/samsung/epicmtd/proprietary/vendor/firmware/CE147F02.bin:system/vendor/firmware/CE147F02.bin
 #
 # Sensors, Lights etc
 #
