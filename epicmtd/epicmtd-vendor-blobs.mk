@@ -19,8 +19,7 @@
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/lib/libsecril-client.so:obj/lib/libsecrilclient.so \
-    vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:obj/lib/libsec-ril40.so \
-    vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:obj/lib/libsec-ril.so
+    vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:obj/lib/libsec-ril40.so
 
 #
 # Wifi
@@ -76,7 +75,6 @@ PRODUCT_COPY_FILES += \
 # RIL
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epicmtd/proprietary/bin/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/epicmtd/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
