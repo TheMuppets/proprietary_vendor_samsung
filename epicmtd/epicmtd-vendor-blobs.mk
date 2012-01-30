@@ -77,7 +77,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/epicmtd/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/epicmtd/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
-    vendor/samsung/epicmtd/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/epicmtd/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/epicmtd/proprietary/lib/libril.so:system/lib/libril.so
 
