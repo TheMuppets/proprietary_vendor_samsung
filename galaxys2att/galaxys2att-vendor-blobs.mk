@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2att/proprietary/rild:system/bin/rild
 
 # NFC
-PRODUCT_COPY_FILES += \ 
+PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2att/proprietary/libpn544_fw.so:system/lib/libpn544_fw.so
 
 # Keychars
