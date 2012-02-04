@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2att/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/galaxys2att/proprietary/rild:system/bin/rild
 
+# NFC
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxys2att/proprietary/libpn544_fw.so:system/lib/libpn544_fw.so
+
 # Keychars
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2att/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \
