@@ -14,7 +14,7 @@
 
 LOCAL_PATH:=$(call my-dir)
 
-ifeq ($(TARGET_DEVICE),crespo4g)
+ifeq ($(TARGET_DEVICE),epicmtd)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := WiMAXSettings
