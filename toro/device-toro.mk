@@ -25,7 +25,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/libsec-ril_lte.so:system/vendor/lib/libsec-ril_lte.so \
-    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf
+    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
+    $(LOCAL_PATH)/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    $(LOCAL_PATH)/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    $(LOCAL_PATH)/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml
+
 
 # Disabled Samsung blob(s)
 #    $(LOCAL_PATH)/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
@@ -35,7 +39,14 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
-    RTN #Cell information. Dial *#*#786#*#*
+    RTN \
+    VZWAPNLib \
+    VZWAPNService
+
+# PRODUCT_PACKAGES descriptions
+#    RTN #Cell information. Dial *#*#786#*#*
+#    VZWAPNLib
+#    VZWAPNService
 
 # Disabled PRODUCT_PACKAGES
 #    BIP #Onboot SIM Service?
