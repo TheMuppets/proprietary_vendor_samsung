@@ -12,20 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Live wallpaper packages and Themes
-PRODUCT_PACKAGES := \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    VisualizationWallpapers \
-    librs_jni
-
-# Publish that we support the live wallpaper feature.
-PRODUCT_COPY_FILES := \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
-
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/c1-common/overlay
+DEVICE_PACKAGE_OVERLAYS := vendor/samsung/galaxys2-common/overlay
 
+$(call inherit-product, vendor/samsung/galaxys2-common/common-vendor-blobs.mk)
 $(call inherit-product, vendor/samsung/galaxys2/galaxys2-vendor-blobs.mk)
-$(call inherit-product, vendor/samsung/c1-common/c1-vendor-blobs.mk)
+
