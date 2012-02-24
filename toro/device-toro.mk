@@ -38,10 +38,14 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
-    RTN \ #Cell information. Dial *#*#786#*#*
+    RTN \
     VZWAPNLib \
     VZWAPNService
-    
+
+# PRODUCT_PACKAGE descriptions
+#    RTN #Cell information. Dial *#*#786#*#*    
+#    VZWAPNLib
+#    VZWAPNService
 
 # Disabled PRODUCT_PACKAGES
 #    BIP #Onboot SIM Service?
