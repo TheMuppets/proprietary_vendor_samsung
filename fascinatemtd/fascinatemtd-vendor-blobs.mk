@@ -24,16 +24,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/fascinatemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/fascinatemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/fascinatemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/fascinatemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/fascinatemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
-    vendor/samsung/fascinatemtd/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
     vendor/samsung/fascinatemtd/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so \
     vendor/samsung/fascinatemtd/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
     vendor/samsung/fascinatemtd/proprietary/orientationd:system/vendor/bin/orientationd \
-    vendor/samsung/fascinatemtd/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/fascinatemtd/proprietary/PhoneConfig.apk:system/app/PhoneConfig.apk \
-    vendor/samsung/fascinatemtd/proprietary/ProgramMenu.apk:system/app/ProgramMenu.apk \
-    vendor/samsung/fascinatemtd/proprietary/ProgramMenuSystem.apk:system/app/ProgramMenuSystem.apk
+    vendor/samsung/fascinatemtd/proprietary/sensors.aries.so:system/lib/hw/sensors.aries.so

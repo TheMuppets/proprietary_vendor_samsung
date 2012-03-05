@@ -32,36 +32,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aries-common/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
     vendor/samsung/aries-common/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/aries-common/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/samsung/aries-common/proprietary/CE147F02.bin:system/vendor/firmware/CE147F02.bin \
-    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so
-
-# camera and tvout
-PRODUCT_COPY_FILES += \
-    vendor/samsung/aries-common/proprietary/libActionShot.so:system/lib/libActionShot.so \
-    vendor/samsung/aries-common/proprietary/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/aries-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
-    vendor/samsung/aries-common/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
-    vendor/samsung/aries-common/proprietary/libCaMotion.so:system/lib/libCaMotion.so \
-    vendor/samsung/aries-common/proprietary/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/aries-common/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-    vendor/samsung/aries-common/proprietary/libPlusMe.so:system/lib/libPlusMe.so \
-    vendor/samsung/aries-common/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
-    vendor/samsung/aries-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/aries-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-    vendor/samsung/aries-common/proprietary/libsecjpegencoder.so:system/lib/libsecjpegencoder.so \
+    vendor/samsung/aries-common/proprietary/libusc.so:system/vendor/lib/libusc.so \
+    vendor/samsung/aries-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
     vendor/samsung/aries-common/proprietary/libtvout.so:system/lib/libtvout.so \
     vendor/samsung/aries-common/proprietary/libtvout_jni.so:system/lib/libtvout_jni.so \
-    vendor/samsung/aries-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
     vendor/samsung/aries-common/proprietary/libtvoutfimc.so:system/lib/libtvoutfimc.so \
     vendor/samsung/aries-common/proprietary/libtvouthdmi.so:system/lib/libtvouthdmi.so \
     vendor/samsung/aries-common/proprietary/libtvoutservice.so:system/lib/libtvoutservice.so \
-    vendor/samsung/aries-common/proprietary/tvoutserver:system/bin/tvoutserver \
-    vendor/samsung/aries-common/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/aries-common/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-    vendor/samsung/aries-common/proprietary/CE147F00.bin:system/firmware/CE147F00.bin \
-    vendor/samsung/aries-common/proprietary/CE147F01.bin:system/firmware/CE147F01.bin \
-    vendor/samsung/aries-common/proprietary/CE147F02.bin:system/firmware/CE147F02.bin \
-    vendor/samsung/aries-common/proprietary/CE147F03.bin:system/firmware/CE147F03.bin
+    vendor/samsung/aries-common/proprietary/tvoutserver:system/bin/tvoutserver
 
 # low power mode
 PRODUCT_COPY_FILES += \
