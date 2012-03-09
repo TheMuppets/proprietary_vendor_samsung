@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES := \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/c1-common/overlay
+DEVICE_PACKAGE_OVERLAYS := vendor/samsung/epic4gtouch-common/overlay
 
 $(call inherit-product, vendor/samsung/epic4gtouch/epic4gtouch-vendor-blobs.mk)
-$(call inherit-product, vendor/samsung/c1-common/c1-vendor-blobs.mk)
+$(call inherit-product, vendor/samsung/epic4gtouch-common/epic4gtouch-common-vendor-blobs.mk)
