@@ -42,11 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p1-common/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/p1-common/proprietary/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/p1-common/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-    vendor/samsung/p1-common/proprietary/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
-    vendor/samsung/p1-common/proprietary/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin
+    vendor/samsung/p1-common/proprietary/nvram_net.txt:system/vendor/firmware/nvram_net.txt
 
 # Low Power Mode
 PRODUCT_COPY_FILES += \
