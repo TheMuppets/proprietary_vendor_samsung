@@ -39,17 +39,18 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
+    BIP \
     RTN \
     VZWAPNLib \
     VZWAPNService
 
 # PRODUCT_PACKAGES descriptions
+#    BIP #Onboot SIM Service?
 #    RTN #Cell information. Dial *#*#786#*#*
-#    VZWAPNLib
-#    VZWAPNService
+#    VZWAPNLib #Required for VZW apps
+#    VZWAPNService #Required for VZW apps
 
 # Disabled PRODUCT_PACKAGES
-#    BIP #Onboot SIM Service?
 #    IMSFramework #Onboot listener?
 #    SDM #Samsung software update
 #    SPG #Wireless tether authorization service
