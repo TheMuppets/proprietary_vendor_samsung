@@ -90,11 +90,11 @@ PRODUCT_COPY_FILES += \
 # SENSORS
 PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/libakm.so:system/lib/libakm.so \
-    vendor/samsung/epic4gtouch-common/proprietary/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so
+    vendor/samsung/epic4gtouch-common/proprietary/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so 
 
 # GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epic4gtouch-common/proprietary/gps.exynos4.so:system/lib/hw/gps.exynos4.so\
+    vendor/samsung/epic4gtouch-common/proprietary/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
     vendor/samsung/epic4gtouch-common/proprietary/gpsd:system/bin/gpsd
 
 # WIFI
@@ -114,17 +114,25 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/wimax_boot.bin:system/etc/wimax_boot.bin \
     vendor/samsung/epic4gtouch-common/proprietary/libSECmWiMAXcAPI.so:system/lib/libSECmWiMAXcAPI.so \
     vendor/samsung/epic4gtouch-common/proprietary/wimax_service.jar:system/framework/wimax_service.jar \
+    vendor/samsung/epic4gtouch-common/proprietary/WiMAXSettings.apk:system/app/WiMAXSettings.apk \
+    vendor/samsung/epic4gtouch-common/proprietary/SprintMenu.apk:system/app/SprintMenu.apk \
     vendor/samsung/epic4gtouch-common/proprietary/WiMAXHiddenMenu.apk:system/app/WiMAXHiddenMenu.apk \
-    vendor/samsung/epic4gtouch-common/proprietary/WiMAXSettings.apk:system/app/WiMAXSettings.apk\
-    vendor/samsung/epic4gtouch-common/proprietary/SprintMenu.apk:system/app/SprintMenu.apk
     vendor/samsung/epic4gtouch-common/proprietary/SystemUpdateUI.apk:system/app/SystemUpdateUI.apk
-
 
 PRODUCT_PACKAGES += \
                 WiMAXSettings \
                 SprintMenu \
                 WiMAXHiddenMenu \
                 SystemUpdateUI
+
+#Sprint VVM
+
+PRODUCT_COPY_FILES += \
+   vendor/samsung/epic4gtouch-common/proprietary/vtt-sprint.apk:system/app/vtt-sprint.apk
+
+PRODUCT_PACKAGES += \
+		vtt-sprint
+
 # LPM
 PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/immvibed:system/bin/immvibed \
