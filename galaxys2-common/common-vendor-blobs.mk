@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libddc.so:system/lib/libddc.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libedid.so:system/lib/libedid.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:system/lib/libfimc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:system/lib/libhdmi.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:system/lib/libhdmiclient.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libTVOut.so:system/lib/libTVOut.so \
@@ -47,44 +46,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libtvoutservice.so:system/lib/libtvoutservice.so
 
-# OMX
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/omx/etc/secomxregistry:system/etc/secomxregistry \
-    vendor/samsung/galaxys2-common/proprietary/omx/etc/somxreg.conf:system/etc/somxreg.conf \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libhwconverter.so:system/lib/libhwconverter.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsavsac.so:system/lib/libsavsac.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsavscmn.so:system/lib/libsavscmn.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsavsff.so:system/lib/libsavsff.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsecmfcdecapi.so:system/lib/libsecmfcdecapi.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsecmfcencapi.so:system/lib/libsecmfcencapi.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomx263d.so:system/lib/libsomx263d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomx264d.so:system/lib/libsomx264d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxaace.so:system/lib/libsomxaace.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxac3d.so:system/lib/libsomxac3d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxamre.so:system/lib/libsomxamre.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxcore.so:system/lib/libsomxcore.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxmp4vd.so:system/lib/libsomxmp4vd.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxvc1d.so:system/lib/libsomxvc1d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxvenc.so:system/lib/libsomxvenc.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    vendor/samsung/galaxys2-common/proprietary/omx/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so
-
 # CAMERA
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/camera/lib/hw/camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so \
     vendor/samsung/galaxys2-common/proprietary/camera/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/galaxys2-common/proprietary/camera/lib/libs5pjpeg.so:system/lib/libs5pjpeg.so \
     vendor/samsung/galaxys2-common/proprietary/camera/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/galaxys2-common/proprietary/camera/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
