@@ -16,5 +16,5 @@
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/galaxys2-common/overlay
 
 $(call inherit-product, vendor/samsung/galaxys2-common/common-vendor-blobs.mk)
-$(call inherit-product, vendor/samsung/galaxys2att/galaxys2att-vendor-blobs.mk)
+$(call inherit-product, vendor/samsung/i777/i777-vendor-blobs.mk)
 
