@@ -16,7 +16,8 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epic4gtouch-common/proprietary/libTVOut.so:obj/lib/libTVOut.so 
+    vendor/samsung/epic4gtouch-common/proprietary/libTVOut.so:obj/lib/libTVOut.so \
+    vendor/samsung/epic4gtouch-common/proprietary/libfimc.so:obj/lib/libfimc.so 
 
 # EGL
 PRODUCT_COPY_FILES += \
@@ -40,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/libddc.so:system/lib/libddc.so \
     vendor/samsung/epic4gtouch-common/proprietary/libedid.so:system/lib/libedid.so \
     vendor/samsung/epic4gtouch-common/proprietary/libfimc.so:system/lib/libfimc.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/epic4gtouch-common/proprietary/libhdmi.so:system/lib/libhdmi.so \
     vendor/samsung/epic4gtouch-common/proprietary/libhdmiclient.so:system/lib/libhdmiclient.so \
     vendor/samsung/epic4gtouch-common/proprietary/libTVOut.so:system/lib/libTVOut.so \
@@ -48,49 +48,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/epic4gtouch-common/proprietary/libtvoutservice.so:system/lib/libtvoutservice.so
 
-# OMX
-PRODUCT_COPY_FILES += \
-    vendor/samsung/epic4gtouch-common/proprietary/secomxregistry:system/etc/secomxregistry \
-    vendor/samsung/epic4gtouch-common/proprietary/somxreg.conf:system/etc/somxreg.conf \
-    vendor/samsung/epic4gtouch-common/proprietary/libhwconverter.so:system/lib/libhwconverter.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsavsac.so:system/lib/libsavsac.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsavscmn.so:system/lib/libsavscmn.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsavsff.so:system/lib/libsavsff.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsavsmeta.so:system/lib/libsavsmeta.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsecmfcdecapi.so:system/lib/libsecmfcdecapi.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsecmfcencapi.so:system/lib/libsecmfcencapi.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomx263d.so:system/lib/libsomx263d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomx264d.so:system/lib/libsomx264d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxaacd.so:system/lib/libsomxaacd.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxaace.so:system/lib/libsomxaace.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxac3d.so:system/lib/libsomxac3d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxamrd.so:system/lib/libsomxamrd.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxamre.so:system/lib/libsomxamre.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxcmn.so:system/lib/libsomxcmn.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxcore.so:system/lib/libsomxcore.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxflacd.so:system/lib/libsomxflacd.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxmp4vd.so:system/lib/libsomxmp4vd.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxvc1d.so:system/lib/libsomxvc1d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxvenc.so:system/lib/libsomxvenc.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxwmad.so:system/lib/libsomxwmad.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libsomxwmv8d.so:system/lib/libsomxwmv8d.so
-
 # CAMERA
 PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/epic4gtouch-common/proprietary/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/epic4gtouch-common/proprietary/camera.exynos4.so:system/lib/hw/camera.exynos4.so \
-    vendor/samsung/epic4gtouch-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so
+    vendor/samsung/epic4gtouch-common/proprietary/camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so 
 
 # SENSORS
 PRODUCT_COPY_FILES += \
     vendor/samsung/epic4gtouch-common/proprietary/libakm.so:system/lib/libakm.so \
     vendor/samsung/epic4gtouch-common/proprietary/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so 
+
 
 # GPS
 PRODUCT_COPY_FILES += \

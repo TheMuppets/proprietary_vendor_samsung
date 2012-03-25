@@ -30,7 +30,7 @@ LVVEFS_ABSOLUTE_PATH
 1
 4
 
-0
+0                                                 // enable debug
 0
 /data/LVVEFS_Tx_LVHF_Status.bin
 /data/LVVEFS_Tx_LVNV_Status.bin
@@ -39,7 +39,7 @@ LVVEFS_ABSOLUTE_PATH
 0
 0
 
-0
+1
 120000
 /data/Tx_in_mic.pcm
 
@@ -47,7 +47,7 @@ LVVEFS_ABSOLUTE_PATH
 120000
 /data/WhiteNoise_delayed.pcm
 
-0
+1
 120000
 /data/Tx_in_ref.pcm
 
@@ -55,13 +55,13 @@ LVVEFS_ABSOLUTE_PATH
 120000
 /data/WhiteNoise.pcm
 
-0
+1
 120000
 /data/Tx_out.pcm
 
 0
 120000
-/data/Fs44100_FemaleSpeech_St.pcm
+/data/TestVoice_VoIP_441ST_voice-6.pcm
 
 0
 120000

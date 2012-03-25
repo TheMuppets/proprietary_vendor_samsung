@@ -1,364 +1,364 @@
-342
-7
-2
-
-1
-1
-6
-
-
-
-1
-0
-1
--18
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-0
-1
--15
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-0
-1
--12
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-0
-1
--9
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-0
-1
--6
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-0
-1
--3
-1
-10362
-0
-0
-0
-0
-100
-0
-0
-26
-1024
-20000
-23198
-256
-2048
-512
-12055
-32604
-32441
-28000
-1024
-0
-5
--72
--55
--45
--3
-0
--72
--55
--45
--3
--3
-50
-400
-0
-0
-0
--90
-0
-100
-
-
-
-1
-32
-102
-74
--44
-4
-107
-68
--25
--121
--279
--160
-290
-404
--18
--204
--5
-3
-3980
-2
--6
--204
--20
-405
-293
--160
--277
--118
--27
-65
-107
-4
--47
-75
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0								
+342                                               // Number of arguments                                    
+7                                                 // Version of Parser                                      
+2                                                 // Parameter type of Rx Control                           
+                                                                                                            
+1                                                 // Device ID                                              
+1                                                 // Voice Mode                                             
+6                                                 // Number of Rx Volume Levels                             
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-18                                                // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-15                                                // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-12                                                // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-9                                                 // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-6                                                 // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+1                                                  // RxOperatingMode                                       
+0                                                  // RxMute                                                
+1                                                  // RxVOL_OperatingMode                                   
+-3                                                 // RxVOL_Gain                                            
+1                                                  // RxFENS_ControlParams_OperatingMode                    
+10362                                              // RxFENS_ControlParams_FENS_limit_NS                    
+0                                                  // RxFENS_ControlParams_Mode                             
+0                                                  // RxHS_ControlParams_OperatingMode                      
+0                                                  // RxHS_ControlParams_Mode                               
+0                                                  // RxNLPP_OperatingMode                                  
+100                                                // RxNLPP_ControlParams_NLPP_HPF_CornerFreq              
+0                                                  // RxNLPP_ControlParams_NLPP_Limit                       
+0                                                  // RxVC_ControlParams_OperatingMode                      
+26                                                 // RxVC_ControlParams_mode                               
+1024                                               // RxVC_ControlParams_Gain_Lin_Max                       
+20000                                              // RxVC_ControlParams_Noise_Sensitivity                  
+23198                                              // RxVC_ControlParams_AVL_Target_level_lin               
+256                                                // RxVC_ControlParams_AVL_MinGainLin                     
+2048                                               // RxVC_ControlParams_AVL_MaxGainLin                     
+512                                                // RxVC_ControlParams_AVL_NominalGain                    
+12055                                              // RxVC_ControlParams_AVL_Attack                         
+32604                                              // RxVC_ControlParams_AVL_Release                        
+32441                                              // RxVC_ControlParams_AVL_ReleaseMax                     
+28000                                              // RxVC_ControlParams_AVL_Limit_MaxOutputLin             
+1024                                               // RxVC_ControlParams_SpDetect_Threshold                 
+0                                                  // RxDRC_ControlParams_OperatingMode                     
+5                                                  // RxDRC_ControlParams_NumKnees                          
+-72                                                // RxDRC_ControlParams_CurveInputLevel[0]                
+-55                                                // RxDRC_ControlParams_CurveInputLevel[1]                
+-45                                                // RxDRC_ControlParams_CurveInputLevel[2]                
+-3                                                 // RxDRC_ControlParams_CurveInputLevel[3]                
+0                                                  // RxDRC_ControlParams_CurveInputLevel[4]                
+-72                                                // RxDRC_ControlParams_CurveOutputLevel[0]               
+-55                                                // RxDRC_ControlParams_CurveOutputLevel[1]               
+-45                                                // RxDRC_ControlParams_CurveOutputLevel[2]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[3]               
+-3                                                 // RxDRC_ControlParams_CurveOutputLevel[4]               
+50                                                 // RxDRC_ControlParams_AttackTime                        
+400                                                // RxDRC_ControlParams_ReleaseTime                       
+0                                                  // RxDRC_ControlParams_LimiterOperatingMode              
+0                                                  // RxDRC_ControlParams_LimiterLevel                      
+0                                                  // RxCNG_OperatingMode                                   
+-90                                                // RxLMfV_CNG_Volume                                     
+0                                                  // RxHPF_ControlParams_OperatingMode                     
+100                                                // RxHPF_ControlParams_CornerFreq                        
+                                                                                                            
+                                                                                                            
+                                                                                                            
+0                                                 // RxEQ_OperatingMode                                     
+32                                                // RxEQ_Length                                            
+102                                               // RxEQ_ControlParams_EQ_Coefs[0]                         
+74                                                // RxEQ_ControlParams_EQ_Coefs[1]                         
+-44                                               // RxEQ_ControlParams_EQ_Coefs[2]                         
+4                                                 // RxEQ_ControlParams_EQ_Coefs[3]                         
+107                                               // RxEQ_ControlParams_EQ_Coefs[4]                         
+68                                                // RxEQ_ControlParams_EQ_Coefs[5]                         
+-25                                               // RxEQ_ControlParams_EQ_Coefs[6]                         
+-121                                              // RxEQ_ControlParams_EQ_Coefs[7]                         
+-279                                              // RxEQ_ControlParams_EQ_Coefs[8]                         
+-160                                              // RxEQ_ControlParams_EQ_Coefs[9]                         
+290                                               // RxEQ_ControlParams_EQ_Coefs[10]                        
+404                                               // RxEQ_ControlParams_EQ_Coefs[11]                        
+-18                                               // RxEQ_ControlParams_EQ_Coefs[12]                        
+-204                                              // RxEQ_ControlParams_EQ_Coefs[13]                        
+-5                                                // RxEQ_ControlParams_EQ_Coefs[14]                        
+3                                                 // RxEQ_ControlParams_EQ_Coefs[15]                        
+3980                                              // RxEQ_ControlParams_EQ_Coefs[16]                        
+2                                                 // RxEQ_ControlParams_EQ_Coefs[17]                        
+-6                                                // RxEQ_ControlParams_EQ_Coefs[18]                        
+-204                                              // RxEQ_ControlParams_EQ_Coefs[19]                        
+-20                                               // RxEQ_ControlParams_EQ_Coefs[20]                        
+405                                               // RxEQ_ControlParams_EQ_Coefs[21]                        
+293                                               // RxEQ_ControlParams_EQ_Coefs[22]                        
+-160                                              // RxEQ_ControlParams_EQ_Coefs[23]                        
+-277                                              // RxEQ_ControlParams_EQ_Coefs[24]                        
+-118                                              // RxEQ_ControlParams_EQ_Coefs[25]                        
+-27                                               // RxEQ_ControlParams_EQ_Coefs[26]                        
+65                                                // RxEQ_ControlParams_EQ_Coefs[27]                        
+107                                               // RxEQ_ControlParams_EQ_Coefs[28]                        
+4                                                 // RxEQ_ControlParams_EQ_Coefs[29]                        
+-47                                               // RxEQ_ControlParams_EQ_Coefs[30]                        
+75                                                // RxEQ_ControlParams_EQ_Coefs[31]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[32]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[33]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[34]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[35]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[36]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[37]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[38]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[39]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[40]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[41]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[42]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[43]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[44]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[45]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[46]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[47]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[48]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[49]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[50]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[51]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[52]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[53]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[54]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[55]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[56]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[57]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[58]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[59]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[60]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[61]                        
+0                                                 // RxEQ_ControlParams_EQ_Coefs[62]                        
+0								                                  // RxEQ_ControlParams_EQ_Coefs[63]                        

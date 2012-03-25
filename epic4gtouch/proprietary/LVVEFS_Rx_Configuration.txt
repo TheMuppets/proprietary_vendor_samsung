@@ -19,19 +19,19 @@ LVVEFS_ABSOLUTE_PATH
 0
 0
 
-0
+0                                                         // enable debug
 0
 /data/LVVEFS_Rx_Status.bin
 
-0
+1
 120000
 /data/Rx_in.pcm
 
 0
 120000
-/data/WN30s44.1kWBNBSt.pcm
+/data/TestVoice_VoIP_441ST_voice.pcm
 
-0
+1
 120000
 /data/Rx_out.pcm
 
