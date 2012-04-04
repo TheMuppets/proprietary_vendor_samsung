@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES := \
 
 # All the blobs necessary for vibrantmtd devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/vibrantmtd/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/vibrantmtd/proprietary/secgps.conf:system/etc/vendor/samsung-agps/secgps.conf \
     vendor/samsung/vibrantmtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
     vendor/samsung/vibrantmtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/vibrantmtd/proprietary/libclientgps.so:system/lib/libclientgps.so \
