@@ -46,7 +46,25 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooper/proprietary/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/cooper/proprietary/libPlusMe.so:system/lib/libPlusMe.so \
     vendor/samsung/cooper/proprietary/BCM2049C0_003.001.031.0088.0094.hcd:system/bin/BCM2049C0_003.001.031.0088.0094.hcd \
-    vendor/samsung/cooper/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so
+    vendor/samsung/cooper/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so\
+    vendor/samsung/cooper/proprietary/memsicd:system/vendor/bin/memsicd
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/cooper/proprietary/firmware/cfg.dat:system/etc/firmware/wlan/cfg.dat \
+    vendor/samsung/cooper/proprietary/firmware/qcom_cfg.ini:system/etc/firmware/wlan/qcom_cfg.ini \
+    vendor/samsung/cooper/proprietary/firmware/qcom_fw.bin:system/etc/firmware/wlan/qcom_fw.bin \
+    vendor/samsung/cooper/proprietary/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    vendor/samsung/cooper/proprietary/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/cooper/proprietary/wifi/ar6000.ko:system/wifi/ar6000.ko \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04 \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
+    vendor/samsung/cooper/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77
+
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/cooper/proprietary/OMX/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
