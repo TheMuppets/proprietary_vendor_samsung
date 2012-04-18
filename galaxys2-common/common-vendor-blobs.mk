@@ -84,7 +84,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common//proprietary/nfc/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
+    vendor/samsung/galaxys2-common/proprietary/nfc/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
 
 # LPM
 PRODUCT_COPY_FILES += \
