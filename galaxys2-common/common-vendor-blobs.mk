@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_SG:system/etc/wifi/nvram_net.txt_SG \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_TN:system/etc/wifi/nvram_net.txt_TN
 
+# NFC
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxys2-common//proprietary/nfc/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
+
 # LPM
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/lpm/bin/immvibed:system/bin/immvibed \
