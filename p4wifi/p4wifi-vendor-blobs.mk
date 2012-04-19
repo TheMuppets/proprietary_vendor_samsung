@@ -36,17 +36,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p4wifi/proprietary/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
     vendor/samsung/p4wifi/proprietary/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
     vendor/samsung/p4wifi/proprietary/etc/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd \
-    vendor/samsung/p4wifi/proprietary/etc/firmware/nvddk_audiofx_core.axf:system/etc/firmware/nvddk_audiofx_core.axf \
-    vendor/samsung/p4wifi/proprietary/etc/firmware/nvddk_audiofx_transport.axf:system/etc/firmware/nvddk_audiofx_transport.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_aacdec.axf:system/etc/firmware/nvmm_aacdec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_adtsdec.axf:system/etc/firmware/nvmm_adtsdec.axf \
-    vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_audiomixer.axf:system/etc/firmware/nvmm_audiomixer.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_h264dec2x.axf:system/etc/firmware/nvmm_h264dec2x.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_h264dec.axf:system/etc/firmware/nvmm_h264dec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_jpegdec.axf:system/etc/firmware/nvmm_jpegdec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_jpegenc.axf:system/etc/firmware/nvmm_jpegenc.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_manager.axf:system/etc/firmware/nvmm_manager.axf \
-    vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_mp2dec.axf:system/etc/firmware/nvmm_mp2dec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_mp3dec.axf:system/etc/firmware/nvmm_mp3dec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_mpeg2dec.axf:system/etc/firmware/nvmm_mpeg2dec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_mpeg4dec.axf:system/etc/firmware/nvmm_mpeg4dec.axf \
@@ -59,13 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_wmadec.axf:system/etc/firmware/nvmm_wmadec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_wmaprodec.axf:system/etc/firmware/nvmm_wmaprodec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvrm_avp.bin:system/etc/firmware/nvrm_avp.bin \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/bcm4330_sta.bin_b0:system/etc/wifi/bcm4330_sta.bin_b0 \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_net.txt_b0:system/etc/wifi/nvram_net.txt_b0 \
-    vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_net.txt_us:system/etc/wifi/nvram_net.txt_us \
     vendor/samsung/p4wifi/proprietary/etc/wifi/wl:system/etc/wifi/wl \
     vendor/samsung/p4wifi/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/p4wifi/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
@@ -98,12 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p4wifi/proprietary/lib/libnvcpud.so:system/lib/libnvcpud.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvddk_aes_user.so:system/lib/libnvddk_aes_user.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvddk_audiofx.so:system/lib/libnvddk_audiofx.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvddk_vmr.so:system/lib/libnvddk_vmr.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvdispatch_helper.so:system/lib/libnvdispatch_helper.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvdispmgr_d.so:system/lib/libnvdispmgr_d.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvec.so:system/lib/libnvec.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvhdmi3dplay_jni.so:system/lib/libnvhdmi3dplay_jni.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_asfparser.so:system/lib/libnvmm_asfparser.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_audio.so:system/lib/libnvmm_audio.so \
@@ -123,10 +108,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_parser.so:system/lib/libnvmm_parser.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_service.so:system/lib/libnvmm_service.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm.so:system/lib/libnvmm.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvmm_tracklist.so:system/lib/libnvmm_tracklist.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_vc1_video.so:system/lib/libnvmm_vc1_video.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_video.so:system/lib/libnvmm_video.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvmm_writer.so:system/lib/libnvmm_writer.so \
@@ -140,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p4wifi/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvos.so:system/lib/libnvos.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvparser.so:system/lib/libnvparser.so \
-    vendor/samsung/p4wifi/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \
     vendor/samsung/p4wifi/proprietary/lib/libnvsm.so:system/lib/libnvsm.so \

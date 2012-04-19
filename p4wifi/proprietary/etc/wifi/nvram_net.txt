@@ -16,7 +16,7 @@ ag0=0
 # aa2g=1 means by default only one antenna, MAIN RF.
 aa2g=1
 aa5g=1
-ccode=GB
+ccode=ALL
 # 2.4GHz PA parameters are preliminary
 pa0b0=0x13CA
 pa0b1=0xFDC4
