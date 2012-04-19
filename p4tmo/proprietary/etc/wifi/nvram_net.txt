@@ -1,5 +1,5 @@
-# TSSI parameters are preliminary set on 05/25/2011
-# P4 B1 FCBGA RC100.25
+# P4_TMO 4330X B1 FCBGA Rev0.3
+# P4 TMO 100.25 nvram
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -16,11 +16,16 @@ ag0=0
 # aa2g=1 means by default only one antenna, MAIN RF.
 aa2g=1
 aa5g=1
-ccode=GB
+ccode=US
+regrev=5
 # 2.4GHz PA parameters are preliminary
-pa0b0=0x13CA
-pa0b1=0xFDC4
-pa0b2=0xFF7A
+
+pa0b0=5379
+pa0b1=-605
+pa0b2=-139
+#pa0b0=0x13CA
+#pa0b1=0xFDC4
+#pa0b2=0xFF7A
 cckPwrOffset=4
 # rssi params for 2.4GHz
 rssismf2g=0xa
@@ -48,27 +53,27 @@ pa1hib2=0xFF5F
 sromrev=3
 
 # 2.4G Tx Power
-maxp2ga0=60
-ofdm2gpo=0x00000000
+maxp2ga0=62
+ofdm2gpo=0x11111111
 mcs2gpo0=0x2222
 mcs2gpo1=0x2222
 
 # 5G Tx Power
 
-maxp5gla0=68
+maxp5gla0=70
 ofdm5glpo=0x77777777
 mcs5glpo0=0x7777
 mcs5glpo1=0x7777
 
-maxp5ga0=66
+maxp5ga0=67
 ofdm5gpo=0x55555555
 mcs5gpo0=0x6666
 mcs5gpo1=0x6666
 
-maxp5gha0=67
+maxp5gha0=68
 ofdm5ghpo=0x77777777
-mcs5ghpo0=0x7777
-mcs5ghpo1=0x7777
+mcs5ghpo0=0x8888
+mcs5ghpo1=0x8888
 
 #il0macaddr=00:90:4c:c5:12:38
 #wl0id=0x431b
@@ -104,7 +109,6 @@ noise_cal_ref_2g=52
 # muxenab: 0x1 for UART enable, 0x2 for GPIOs, 0x8 for JTAG
 # muxenab=0x2
 
-
 txiqlopapu5g=1
 txiqlopag5g=0x10
 iqlocalidx5g=32
@@ -113,7 +117,3 @@ noise_cal_po_5g=5
 noise_cal_enable_5g=0
 
 txgaintbl5g=1
-
-btc_params80=0
-btc_params6=10
-btc_params8=10000
