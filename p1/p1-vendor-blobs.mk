@@ -24,3 +24,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p1/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p1/proprietary/rild:system/bin/rild \
     vendor/samsung/p1/proprietary/modem.bin:modem.bin
+
+# GPS (GSM)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p1/proprietary/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
+    vendor/samsung/p1/proprietary/gps.xml:system/vendor/etc/gps.xml \
+    vendor/samsung/p1/proprietary/gpsd:system/vendor/bin/gpsd
