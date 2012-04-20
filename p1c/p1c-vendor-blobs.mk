@@ -24,3 +24,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p1c/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/p1c/proprietary/rild:system/bin/rild \
     vendor/samsung/p1c/proprietary/pppd_runner:system/bin/pppd_runner
+
+# GPS (CDMA)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p1c/proprietary/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
+    vendor/samsung/p1c/proprietary/gpsd:system/vendor/bin/gpsd

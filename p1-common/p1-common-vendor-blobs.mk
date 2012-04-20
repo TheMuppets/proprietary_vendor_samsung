@@ -14,8 +14,6 @@
 
 # GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p1-common/proprietary/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
-    vendor/samsung/p1-common/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/p1-common/proprietary/gps.conf:system/etc/gps.conf
 
 # Sensors
@@ -79,6 +77,7 @@ PRODUCT_COPY_FILES += \
 
 # TVout
 PRODUCT_COPY_FILES += \
+    vendor/samsung/p1-common/proprietary/libddc.so:system/lib/libddc.so \
     vendor/samsung/p1-common/proprietary/libedid.so:system/lib/libedid.so \
     vendor/samsung/p1-common/proprietary/libtvout.so:system/lib/libtvout.so \
     vendor/samsung/p1-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
