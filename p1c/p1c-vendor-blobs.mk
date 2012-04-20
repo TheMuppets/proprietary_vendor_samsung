@@ -27,5 +27,6 @@ PRODUCT_COPY_FILES += \
 
 # GPS (CDMA)
 PRODUCT_COPY_FILES += \
+    vendor/samsung/p1c/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/p1c/proprietary/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
     vendor/samsung/p1c/proprietary/gpsd:system/vendor/bin/gpsd
