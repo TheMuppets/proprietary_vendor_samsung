@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toroplus/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/toroplus/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/toroplus/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/toroplus/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so
 
 # All the apks necessary for toroplus
 PRODUCT_PACKAGES += \
