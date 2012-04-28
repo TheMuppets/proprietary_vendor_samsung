@@ -56,7 +56,9 @@ PRODUCT_COPY_FILES += \
 
 # All the apks necessary for toroplus
 PRODUCT_PACKAGES += \
+    HiddenMenu \
     BIP \
-    RTN \
-    SDM
+    SDM \
+    SecPhone \
+    SyncMLSvc
 
