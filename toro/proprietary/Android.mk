@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq (,$(findstring $(TARGET_DEVICE),toro torospr))
+
 LOCAL_PATH:=$(call my-dir)
 
 include $(CLEAR_VARS)
@@ -86,3 +88,4 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
+endif
