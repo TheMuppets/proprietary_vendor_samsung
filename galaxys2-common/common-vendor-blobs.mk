@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/nfc/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
 
+# MFC Firmware
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxys2-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
+
 # LPM
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/lpm/bin/immvibed:system/bin/immvibed \
