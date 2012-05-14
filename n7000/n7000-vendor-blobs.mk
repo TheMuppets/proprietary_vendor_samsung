@@ -91,6 +91,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/ril/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/ril/lib/libsecril-client.so:system/lib/libsecril-client.so
 
+# MFC Firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
+
 # low power mode
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lpm/bin/immvibed:system/bin/immvibed \
