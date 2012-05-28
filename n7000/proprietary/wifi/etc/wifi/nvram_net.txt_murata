@@ -12,7 +12,7 @@ macaddr=00:90:4c:c5:12:38
 ag0=252
 aa2g=1
 aa5g=1
-ccode=US
+ccode=ALL
 # 2G PA parameters
 pa0b0=0x1538
 pa0b1=0xfd90
