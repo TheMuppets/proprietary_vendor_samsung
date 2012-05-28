@@ -89,36 +89,3 @@ PRODUCT_COPY_FILES += \
 # MFC Firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
-
-# LPM
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/lpm/bin/immvibed:system/bin/immvibed \
-    vendor/samsung/galaxys2-common/proprietary/lpm/bin/lpmkey:system/bin/lpmkey \
-    vendor/samsung/galaxys2-common/proprietary/lpm/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/galaxys2-common/proprietary/lpm/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/samsung/galaxys2-common/proprietary/lpm/media/PFFprec_600.emd:system/media/PFFprec_600.emd
