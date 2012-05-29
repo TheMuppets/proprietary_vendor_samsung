@@ -14,7 +14,7 @@ macaddr=00:90:4c:c5:12:38
 ag0=255
 ag1=255
 aa2g=1
-ccode=GB
+ccode=ALL
 
 btc_params80=0
 btc_params6=10
