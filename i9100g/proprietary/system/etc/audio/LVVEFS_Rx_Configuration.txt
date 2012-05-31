@@ -1,0 +1,44 @@
+35																																	                  // Number of arguments                                                                               
+7                                                                                     // Version of Parser                                                                                 
+0                                                                                     // File Type                                                                                         
+                                                                                                                                                                                           
+1                                                                                     // Include Rx Voice Engine Processing                                                                
+5                                                                                     // Number of Audio Profiles                                                                          
+LVVEFS_ABSOLUTE_PATH                                                                  // Defintion of the path                                                                             
+/system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt                              // Control Parameters 1                                                                              
+/system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt                               // Control Parameters 2                                                                              
+/system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt                       // Control Parameters 3                                                                              
+/system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt                         // Control Parameters 4                                                                              
+/system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt                                                                                                                                   
+                                                                                      
+17640                                                                                 // RxIn FIFO Size                                                                                      
+0                                                                                     // RxIn FIFO Offset                                                                                    
+0                                                                                     // RxIn FIFO Threshold                                                                                 
+                                                                                                                                                                                             
+17640                                                                                 // RxOut FIFO Size                                                                                     
+0                                                                                     // RxOut FIFO Offset                                                                                   
+0                                                                                     // RxOut FIFO Threshold                                                                                
+                                                                                                                                                                                             
+0                                                                                     // Enable Debugging                                                                                    
+0                                                                                     // Rx Status Reporting                                                                                 
+/data/LVVEFS_Rx_Status.bin                                                            // Rx Status File                                                                                      
+                                                                                                                                                                                             
+0                                                                                     // Rx In PCM Saving Mode                                                                               
+120000                                                                                // Rx In PCM Saving Buffer Size in samples                                                             
+/data/Rx_in.pcm                                                                       // Rx Dump filename for Rx Input                                                                       
+                                                                                                                                                                                             
+1                                                                                     // Rx In PCM Injection Mode                                                                            
+120000                                                                                // Rx In PCM Injection Buffer Size in samples                                                          
+/data/WhiteNoiseBursts_St.pcm                                                  // EnglishVoice_VoIP_441ST  // Rx Inject filename for Rx Input       TestVoice_VoIP_441MN_voice         
+                                                                                                                                                                                             
+1                                                                                     // Rx Out PCM Saving Mode                                                                              
+120000                                                                                // Rx Out PCM Saving Buffer Size in samples                                                            
+/data/Rx_out.pcm                                                                      // Rx Dump filename for Rx Output                                                                      
+                                                                                                                                                                                             
+0                                                                                     // Rx Out PCM Injection Mode                                                                           
+120000                                                                                // Rx Out PCM Injection Buffer Size in samples                                                         
+/data/WNB30s441kSt.pcm					                                                      // Rx Inject filename for Rx Out                                                                       
+                                                                                                                                                                                             
+0                                                                                     // Rx Internal PCM Saving Mode                                                                         
+120000                                                                                // Rx Internal PCM Saving Buffer Size in samples                                                       
+/data/Fs44100_WhiteNoiseBursts_St.pcm                                                 // Rx Saving filename for Rx Out                                                                       

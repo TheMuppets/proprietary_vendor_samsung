@@ -1,0 +1,113 @@
+manfid=0x2d0
+prodid=0x0532
+vendid=0x14e4
+devid=0x4360
+boardtype=0x0532
+boardrev=0x40
+boardflags=0x10080a01
+regrev=3
+nocrc=1
+xtalfreq=37400
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+ag0=255
+aa2g=1
+aa5g=1
+ccode=ALL
+pa0b0=0x1531
+pa0b1=0xfd93
+pa0b2=0xff6b
+cckPwrOffset=4
+
+# rssi params for 2.4GHz
+rssismf2g=0xa
+rssismc2g=0x3
+rssisav2g=0x7
+
+# rssi params for 5GHz
+rssismf5g=0xa
+rssismc5g=0x7
+rssisav5g=0x1
+
+#PA parameters for lower a-band
+pa1lob0=0x150c
+pa1lob1=0xfd53
+pa1lob2=0xff42
+
+#PA parameters for midband
+pa1b0=0x1515
+pa1b1=0xfd58
+pa1b2=0xff4a
+
+#PA parameters for high band
+pa1hib0=0x149b
+pa1hib1=0xfd64
+pa1hib2=0xff4f
+
+sromrev=3
+maxp2ga0=0x48
+ofdm2gpo=0x55555555
+mcs2gpo0=0x7777
+mcs2gpo1=0x7777
+maxp5ga0=0x48
+maxp5gla0=0x48
+maxp5gha0=0x48
+ofdm5gpo=0x55555555
+ofdm5glpo=0x55555555
+ofdm5ghpo=0x55555555
+mcs5gpo0=0x7777
+mcs5gpo1=0x7777
+mcs5glpo0=0x7777
+mcs5glpo1=0x7777
+mcs5ghpo0=0x7777
+mcs5ghpo1=0x7777
+
+extpagain5g=2
+
+#to help 2.4GHz Tx EVM/SM.
+rfreg033=0x19
+rfreg033_cck=0x1f
+txalpfbyp2g=1
+bphyscale=17
+pacalidx2g=65
+dacrate2g=160
+
+swctrlmap_2g=0x04040404,0x02020202,0x04040404,0x010202,0x1ff
+swctrlmap_5g=0x50505050,0x28282020,0x20202020,0x010202,0x2f8
+
+#adjust the value for the max input level on 5GHz-band
+triso5g=9
+
+xtalmode=0x20,0x4,0
+
+#to help 5GHz RxPER at low rates.
+noise_cal_po_5g=5
+#noise_cal_enable_5g=0
+
+pa0itssit=0x20
+
+#to help with TX power control, especially temp.
+tssitime=1
+
+#adjust the value for CCK SM/EVM.
+cckdigfilttype=21
+
+sd_gpout=0
+sd_oobonly=1
+btc_params80=0
+btc_params6=10
+btc_params8=10000
+
+#to help 5GHz LOFT (carrier suppression) and IQ CAL.
+txgaintbl5g=1
+txiqlopapu5g=1
+txiqlopag5g=0x10
+iqlocalidx5g=24
+
+#to help 2.4G RxPER at low rates.
+noise_cal_enable_2g=1
+noise_cal_po_2g=-3
+noise_cal_ref_2g=52
+
+#to enhance maximum input power performance on 5GHz-band.
+tridx5g=0

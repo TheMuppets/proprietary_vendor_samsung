@@ -1,0 +1,36 @@
+key 1     ENTER              WAKE_DROPPED
+key 2     DPAD_UP           WAKE_DROPPED
+key 3     DPAD_DOWN         WAKE_DROPPED
+key 4     DPAD_LEFT         WAKE_DROPPED
+key 5     DPAD_RIGHT        WAKE_DROPPED
+
+key 10   MENU              WAKE_DROPPED
+
+key 14   BACK              WAKE_DROPPED
+
+key 33    0
+key 34    1
+key 35    2
+key 36    3
+key 37    4
+key 38    5
+key 39    6
+key 40    7
+key 41    8
+key 42    9
+
+key 45    DEL
+
+key 69    MEDIA_PLAY        WAKE_DROPPED
+key 70    MEDIA_STOP        WAKE_DROPPED
+key 71    MEDIA_PAUSE        WAKE_DROPPED
+
+key 73    MEDIA_REWIND            WAKE_DROPPED
+key 74    MEDIA_FAST_FORWARD      WAKE_DROPPED
+
+key 76     MEDIA_NEXT               WAKE_DROPPED
+key 77     MEDIA_PREVIOUS        WAKE_DROPPED
+
+key 97    MEDIA_PLAY        WAKE_DROPPED
+key 98    MEDIA_STOP        WAKE_DROPPED
+key 101   MEDIA_PAUSE       WAKE_DROPPED
