@@ -1,4 +1,4 @@
-35																																	
+35																																		
 7
 0
 
@@ -23,15 +23,15 @@ LVVEFS_ABSOLUTE_PATH
 0
 /data/LVVEFS_Rx_Status.bin
 
-1
+0
 120000
 /data/Rx_in.pcm
 
 0
 120000
-/data/WN30s44.1kWBNBSt.pcm
+/data/FemaleSpeechWhiteBurst_44100St.pcm
 
-1
+0
 120000
 /data/Rx_out.pcm
 
