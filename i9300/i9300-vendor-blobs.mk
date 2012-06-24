@@ -27,6 +27,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
+    $(LOCAL_PATH)/proprietary/system/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
+    $(LOCAL_PATH)/proprietary/system/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/gps.cer:system/bin/gps.cer \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
@@ -92,8 +94,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt_murata_b2:system/etc/wifi/nvram_mfg.txt_murata_b2 \
+    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt_semcosh:system/etc/wifi/nvram_mfg.txt_semcosh \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata
+    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_murata_b2:system/etc/wifi/nvram_net.txt_murata_b2 \
+    $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/srm.bin:system/etc/srm.bin \
@@ -132,9 +138,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libtmserver.so:system/lib/libtmserver.so \
     $(LOCAL_PATH)/proprietary/system/lib/libtmsjni.so:system/lib/libtmsjni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libGLESv2.so:system/lib/libGLESv2.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libGLESv2_dbg.so:system/lib/libGLESv2_dbg.so \
     $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
