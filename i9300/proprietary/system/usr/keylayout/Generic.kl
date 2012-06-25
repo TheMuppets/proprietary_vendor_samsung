@@ -141,7 +141,7 @@ key 117   NUMPAD_EQUALS
 key 119   BREAK
 # key 120 (undefined)
 key 121   NUMPAD_COMMA
-key 122   LANG
+# key 122 "KEY_HANGEUL"
 # key 123 "KEY_HANJA"
 # key 124 "KEY_YEN"
 key 125   META_LEFT

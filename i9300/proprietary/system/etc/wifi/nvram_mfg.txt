@@ -62,10 +62,10 @@ maxp2ga0=73
 ofdm2gpo=0x77777777
 mcs2gpo0=0x9999
 mcs2gpo1=0x9999
-cckdigfilttype=21
+cckdigfilttype=24
 ofdmdigfilttype2g=2
 ofdmdigfilttype5g=3
-ofdm40digfilttype=4
+ofdm40digfilttype=5
 
 maxp5gla0=71
 maxp5gla0.fab.4=70
