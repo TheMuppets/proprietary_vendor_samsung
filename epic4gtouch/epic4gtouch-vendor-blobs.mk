@@ -144,4 +144,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/epic4gtouch/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
 	vendor/samsung/epic4gtouch/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
 	vendor/samsung/epic4gtouch/proprietary/media/LMprec_508.emd:system/media/LMprec_508.emd \
-	vendor/samsung/epic4gtouch/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+	vendor/samsung/epic4gtouch/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+   	vendor/samsung/epic4gtouch/proprietary/firmware/mfc_fw.bin:root/vendor/firmware/mfc_fw.bin \
+	vendor/samsung/epic4gtouch/proprietary/firmware/wimaxfw.bin:root/vendor/firmware/wimaxfw.bin \
+	vendor/samsung/epic4gtouch/proprietary/firmware/wimaxloader.bin:root/vendor/firmware/wimaxloader.bin
