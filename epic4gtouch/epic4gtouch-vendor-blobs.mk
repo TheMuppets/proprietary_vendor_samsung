@@ -116,8 +116,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/epic4gtouch/proprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
 	vendor/samsung/epic4gtouch/proprietary/framework/wimax_service.jar:system/framework/wimax_service.jar \
 	vendor/samsung/epic4gtouch/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/epic4gtouch/proprietary/media/LMprec_508.emd:system/media/LMprec_508.emd \
-	vendor/samsung/epic4gtouch/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-   	vendor/samsung/epic4gtouch/proprietary/firmware/mfc_fw.bin:root/vendor/firmware/mfc_fw.bin \
-	vendor/samsung/epic4gtouch/proprietary/firmware/wimaxfw.bin:root/vendor/firmware/wimaxfw.bin \
-	vendor/samsung/epic4gtouch/proprietary/firmware/wimaxloader.bin:root/vendor/firmware/wimaxloader.bin
+	vendor/samsung/epic4gtouch/proprietary/bin/lpmkey:system/bin/lpmkey \
+	vendor/samsung/epic4gtouch/proprietary/bin/playlpm:system/bin/playlpm \
+	vendor/samsung/epic4gtouch/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so 
