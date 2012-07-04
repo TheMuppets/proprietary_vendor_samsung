@@ -19,7 +19,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/hwcomposer/lib/libTVOut.so:obj/lib/libTVOut.so \
     $(LOCAL_PATH)/proprietary/audio/lib/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
     $(LOCAL_PATH)/proprietary/ril/lib/libril.so:obj/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/ril/lib/libsecril-client.so:obj/lib/libsecril-client.so
+    $(LOCAL_PATH)/proprietary/ril/lib/libsecril-client.so:obj/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so
 
 # EGL
 PRODUCT_COPY_FILES += \
