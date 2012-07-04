@@ -16,7 +16,8 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libTVOut.so:obj/lib/libTVOut.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:obj/lib/libfimc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so
+    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so \
+    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:obj/lib/libhdmiclient.so
 
 # EGL
 PRODUCT_COPY_FILES += \
