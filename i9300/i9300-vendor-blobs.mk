@@ -130,7 +130,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib_SamsungRec_V01005.so:system/lib/lib_SamsungRec_V01005.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_SB_AM_for_ICS_v03005.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03005.so \
+    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_SB_AM_for_ICS_v03004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03004.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
@@ -145,6 +145,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libvdis.so:system/lib/libvdis.so \
     $(LOCAL_PATH)/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     $(LOCAL_PATH)/proprietary/system/lib/libquramimagecodec.so:system/lib/libquramimagecodec.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libviewracledf.so:system/lib/libviewracledf.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libviewracledf_client.so:system/lib/libviewracledf_client.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libviewracle_option_client.so:system/lib/libviewracle_option_client.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libviewracle_option_server.so:system/lib/libviewracle_option_server.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libviewraclesc.so:system/lib/libviewraclesc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfimg.so:system/lib/libfimg.so \
     $(LOCAL_PATH)/proprietary/system/lib/libhwconverter.so:system/lib/libhwconverter.so \
     $(LOCAL_PATH)/proprietary/system/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
