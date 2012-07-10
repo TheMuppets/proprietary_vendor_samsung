@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/galaxys2-common/overlay
-
-$(call inherit-product, vendor/samsung/galaxys2-common/common-vendor-blobs.mk)
-$(call inherit-product, vendor/samsung/galaxys2/galaxys2-vendor-blobs.mk)
-
+USE_CAMERA_STUB := false
+BOARD_USES_GENERIC_AUDIO := false
+BOARD_USES_LIBSECRIL_STUB := false
