@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/device-maguro.mk
+LOCAL_STEM := maguro/device-partial.mk
 
 $(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))

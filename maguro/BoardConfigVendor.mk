@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/BoardConfigMaguro.mk
+LOCAL_STEM := maguro/BoardConfigPartial.mk
 
 -include vendor/broadcom/$(LOCAL_STEM)
 -include vendor/csr/$(LOCAL_STEM)
