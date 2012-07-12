@@ -196,7 +196,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/pvrsrvctl:system/vendor/bin/pvrsrvctl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
