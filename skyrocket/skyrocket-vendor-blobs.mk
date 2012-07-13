@@ -21,6 +21,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/skyrocket/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
 	vendor/samsung/skyrocket/proprietary/lib/libv8.so:obj/lib/libv8.so
 
+# Device-specific proprietary files
+PRODUCT_COPY_FILES += \
+	vendor/samsung/skyrocket/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
+	vendor/samsung/skyrocket/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
+	vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+	vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata
+
+# Device family proprietary files
 PRODUCT_COPY_FILES += \
         vendor/samsung/skyrocket/proprietary/bin/immvibed:system/bin/immvibed \
         vendor/samsung/skyrocket/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -75,8 +83,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/skyrocket/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
         vendor/samsung/skyrocket/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
         vendor/samsung/skyrocket/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
-        vendor/samsung/skyrocket/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
-        vendor/samsung/skyrocket/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
         vendor/samsung/skyrocket/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
         vendor/samsung/skyrocket/proprietary/lib/libakm.so:system/lib/libakm.so \
         vendor/samsung/skyrocket/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
@@ -91,9 +97,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/skyrocket/proprietary/lib/libv8.so:system/lib/libv8.so \
         vendor/samsung/skyrocket/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
         vendor/samsung/skyrocket/proprietary/etc/wifi/wl:system/etc/wifi/wl \
-        vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-        vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
         vendor/samsung/skyrocket/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
         vendor/samsung/skyrocket/proprietary/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
         vendor/samsung/skyrocket/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
