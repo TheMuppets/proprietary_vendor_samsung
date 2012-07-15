@@ -105,15 +105,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
 #    $(LOCAL_PATH)/proprietary/system/lib/libgrallocmapper.so:system/lib/libgrallocmapper.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libhdcp.so:system/lib/libhdcp.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/liblvvefs.so:system/lib/liblvvefs.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libmllite.so:system/lib/libmllite.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libmpl.so:system/lib/libmpl.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
@@ -136,8 +130,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so
-#    $(LOCAL_PATH)/proprietary/system/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/hw/audio_policy.omap4.so:system/lib/hw/audio_policy.omap4.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 PRODUCT_COPY_FILES += \
@@ -197,7 +189,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/bin/pvrsrvctl:system/vendor/bin/pvrsrvctl
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
@@ -225,4 +217,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/hw/gralloc.omap4.so:system/vendor/lib/hw/gralloc.omap4.so
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/hw/gralloc.omap4.so:system/vendor/lib/hw/gralloc.omap4.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/hw/hwcomposer.omap4.so:system/vendor/lib/hw/hwcomposer.omap4.so
