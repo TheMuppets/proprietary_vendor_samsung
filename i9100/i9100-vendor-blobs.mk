@@ -12,11 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_PACKAGES += \
+	libmediayamahaservice
+
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/i9100/proprietary/ril/lib/libril.so:obj/lib/libril.so \
-    vendor/samsung/i9100/proprietary/ril/lib/libsecril-client.so:obj/lib/libsecril-client.so \
-    vendor/samsung/i9100/proprietary/audio/lib/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so
+    vendor/samsung/i9100/proprietary/ril/lib/libsecril-client.so:obj/lib/libsecril-client.so
 
 # RIL
 PRODUCT_COPY_FILES += \

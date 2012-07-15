@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libTVOut.so:obj/lib/libTVOut.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:obj/lib/libfimc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:obj/lib/libhdmiclient.so
+PRODUCT_PACKAGES += \
+	libTVOut \
+	libfimc \
+	libhdmi \
+	libhdmiclient
 
 # EGL
 PRODUCT_COPY_FILES += \
