@@ -22,12 +22,11 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/fRom:system/bin/fRom \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
+    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/system/bin/immvibed:system/bin/immvibed \
+    $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
+    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm
 #    $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
-#    $(LOCAL_PATH)/proprietary/system/bin/immvibed:system/bin/immvibed \
-#    $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
-#    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm \
-
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
@@ -39,55 +38,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/RS_M5LS_T.bin:system/cameradata/RS_M5LS_T.bin
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/LVVEFS_Rx_Configuration.txt:system/etc/audio/LVVEFS_Rx_Configuration.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/LVVEFS_Tx_Configuration.txt:system/etc/audio/LVVEFS_Tx_Configuration.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/Factory3pEar.ini:system/etc/audio/codec/Factory3pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/Factory4pEar.ini:system/etc/audio/codec/Factory4pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/FactoryBT.ini:system/etc/audio/codec/FactoryBT.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/FactoryRcv.ini:system/etc/audio/codec/FactoryRcv.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/FactorySpk.ini:system/etc/audio/codec/FactorySpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/FMRadioEar.ini:system/etc/audio/codec/FMRadioEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/FMRadioSpk.ini:system/etc/audio/codec/FMRadioSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/GVoipCall3pEar.ini:system/etc/audio/codec/GVoipCall3pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/GVoipCall4pEar.ini:system/etc/audio/codec/GVoipCall4pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/GVoipCallBT.ini:system/etc/audio/codec/GVoipCallBT.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/GVoipCallRcv.ini:system/etc/audio/codec/GVoipCallRcv.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/GVoipCallSpk.ini:system/etc/audio/codec/GVoipCallSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/MusicEar.ini:system/etc/audio/codec/MusicEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/MusicSpk.ini:system/etc/audio/codec/MusicSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/RecHeadSetMic.ini:system/etc/audio/codec/RecHeadSetMic.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/RecMainMic.ini:system/etc/audio/codec/RecMainMic.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/RecSubMic.ini:system/etc/audio/codec/RecSubMic.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/RingtoneEar.ini:system/etc/audio/codec/RingtoneEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/RingtoneSpk.ini:system/etc/audio/codec/RingtoneSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/SpkLineOut.ini:system/etc/audio/codec/SpkLineOut.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceCall3pEar.ini:system/etc/audio/codec/VoiceCall3pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceCall4pEar.ini:system/etc/audio/codec/VoiceCall4pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceCallBT.ini:system/etc/audio/codec/VoiceCallBT.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceCallRcv.ini:system/etc/audio/codec/VoiceCallRcv.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceCallSpk.ini:system/etc/audio/codec/VoiceCallSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceRecHeadSetMic.ini:system/etc/audio/codec/VoiceRecHeadSetMic.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoiceRecMainMic.ini:system/etc/audio/codec/VoiceRecMainMic.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoipCall3pEar.ini:system/etc/audio/codec/VoipCall3pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoipCall4pEar.ini:system/etc/audio/codec/VoipCall4pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoipCallBT.ini:system/etc/audio/codec/VoipCallBT.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoipCallRcv.ini:system/etc/audio/codec/VoipCallRcv.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VoipCallSpk.ini:system/etc/audio/codec/VoipCallSpk.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VtCall3pEar.ini:system/etc/audio/codec/VtCall3pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VtCall4pEar.ini:system/etc/audio/codec/VtCall4pEar.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VtCallBT.ini:system/etc/audio/codec/VtCallBT.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VtCallRcv.ini:system/etc/audio/codec/VtCallRcv.ini \
-    $(LOCAL_PATH)/proprietary/system/etc/audio/codec/VtCallSpk.ini:system/etc/audio/codec/VtCallSpk.ini \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
@@ -102,12 +52,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
+    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmllite.so:system/lib/libmllite.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmpl.so:system/lib/libmpl.so
 #    $(LOCAL_PATH)/proprietary/system/lib/libgrallocmapper.so:system/lib/libgrallocmapper.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libhdcp.so:system/lib/libhdcp.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libmllite.so:system/lib/libmllite.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libmpl.so:system/lib/libmpl.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
@@ -129,8 +79,8 @@ PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/proprietary/system/lib/libtiutils.so:system/lib/libtiutils.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so
-#    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
