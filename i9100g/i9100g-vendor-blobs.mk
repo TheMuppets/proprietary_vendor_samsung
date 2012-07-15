@@ -25,8 +25,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
     $(LOCAL_PATH)/proprietary/system/bin/immvibed:system/bin/immvibed \
     $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
-    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm
-#    $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
+    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm \
+    $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
@@ -55,11 +55,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmllite.so:system/lib/libmllite.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libmpl.so:system/lib/libmpl.so
+    $(LOCAL_PATH)/proprietary/system/lib/libmpl.so:system/lib/libmpl.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
 #    $(LOCAL_PATH)/proprietary/system/lib/libhdcp.so:system/lib/libhdcp.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
-#    $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/camera.t1.so:system/lib/hw/camera.t1.so \
