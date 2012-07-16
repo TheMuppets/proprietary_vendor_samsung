@@ -30,7 +30,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsamsungion
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := hwcomposer/lib/libion.so
+LOCAL_SRC_FILES := graphics/lib/libion.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
