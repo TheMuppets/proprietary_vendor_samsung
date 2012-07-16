@@ -29,9 +29,9 @@ PRODUCT_COPY_FILES += \
 
 # AUDIO
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i9100/proprietary/audio/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-    vendor/samsung/i9100/proprietary/audio/lib/hw/audio.primary.exynos4.so:system/lib/hw/audio.primary.exynos4.so \
-    vendor/samsung/i9100/proprietary/audio/lib/hw/audio_policy.exynos4.so:system/lib/hw/audio_policy.exynos4.so \
+    vendor/samsung/i9100/proprietary/audio/lib/hw/alsa.default.so:system/lib/hw/vendor-alsa.default.so \
+    vendor/samsung/i9100/proprietary/audio/lib/hw/audio.primary.exynos4.so:system/lib/hw/vendor-audio.primary.exynos4.so \
+    vendor/samsung/i9100/proprietary/audio/lib/hw/audio_policy.exynos4.so:system/lib/hw/vendor-audio_policy.exynos4.so \
     vendor/samsung/i9100/proprietary/audio/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
     vendor/samsung/i9100/proprietary/audio/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/i9100/proprietary/audio/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
