@@ -14,13 +14,10 @@
 
 LOCAL_PATH := vendor/samsung/i9300
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/system/lib/libril.so:obj/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libion.so:obj/lib/libion.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:obj/lib/libUMP.so \
-	$(LOCAL_PATH)/proprietary/system/lib/libTVOut.so:obj/lib/libTVOut.so
+PRODUCT_PACKAGES += \
+	libTVOut \
+	libUMP \
+	libfimc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
