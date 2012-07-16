@@ -16,7 +16,8 @@ PRODUCT_PACKAGES += \
 	libTVOut \
 	libfimc \
 	libhdmi \
-	libhdmiclient
+	libhdmiclient \
+	libsamsungion
 
 # EGL
 PRODUCT_COPY_FILES += \
@@ -26,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libsamsungion.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libMali.so:system/lib/libMali.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libUMP.so:system/lib/libUMP.so
 
