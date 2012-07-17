@@ -22,12 +22,16 @@ PRODUCT_PACKAGES := \
     fRom \
     gps.omap4 \
     IMSFramework \
+    libdrmwvmplugin \
     lib_gsd4t \
     libims_jni \
     libims \
     libpn544_fw \
     libsecril-client \
     libsec-ril_lte \
+    libwvdrm_L1 \
+    libwvm \
+    libWVStreamControlAPI_L1 \
     RTN \
     SDM \
     sirfgps \
