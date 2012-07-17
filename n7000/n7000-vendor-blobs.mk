@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
 
 # EGL
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/graphics/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
-    $(LOCAL_PATH)/proprietary/graphics/lib/libGLESv2.so:system/lib/libGLESv2.so \
-    $(LOCAL_PATH)/proprietary/graphics/lib/libGLESv2_dbg.so:system/lib/libGLESv2_dbg.so \
     $(LOCAL_PATH)/proprietary/graphics/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/graphics/lib/libUMP.so:system/lib/libUMP.so \
     $(LOCAL_PATH)/proprietary/graphics/lib/libion.so:system/lib/libion.so \
