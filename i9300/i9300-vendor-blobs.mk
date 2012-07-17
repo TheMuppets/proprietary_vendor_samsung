@@ -134,7 +134,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libtmserver.so:system/lib/libtmserver.so \
     $(LOCAL_PATH)/proprietary/system/lib/libtmsjni.so:system/lib/libtmsjni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsamsungion.so:system/lib/libsamsungion.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
