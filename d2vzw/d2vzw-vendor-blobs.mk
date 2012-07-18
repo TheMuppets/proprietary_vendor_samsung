@@ -16,9 +16,9 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-	vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-	vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-	vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
+        vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+        vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -170,3 +170,11 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
+
+# Proprietary VZW blobs for LTE
+
+PRODUCT_PACKAGES += \
+	VZWAPNLib \
+	vzwapnpermission \
+	VZWAPNService
+	
