@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     $(LOCAL_PATH)/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
-    $(LOCAL_PATH)/common/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/common/system/lib/libtiutils.so:system/lib/libtiutils.so
 
 PRODUCT_COPY_FILES += \
