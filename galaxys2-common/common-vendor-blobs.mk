@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libTVOut.so:obj/lib/libTVOut.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:obj/lib/libfimc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:obj/lib/libhdmiclient.so
+PRODUCT_PACKAGES += \
+	libTVOut \
+	libfimc \
+	libhdmi \
+	libhdmiclient \
+	libsamsungion
 
 # EGL
 PRODUCT_COPY_FILES += \
@@ -26,16 +26,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libGLESv2.so:system/lib/libGLESv2.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libGLESv2_dbg.so:system/lib/libGLESv2_dbg.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libsamsungion.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libMali.so:system/lib/libMali.so \
     vendor/samsung/galaxys2-common/proprietary/graphics/lib/libUMP.so:system/lib/libUMP.so
 
 # HWCOMPOSER
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/hw/hwcomposer.exynos4.so:system/lib/hw/hwcomposer.exynos4.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/bin/bintvoutservice:system/bin/bintvoutservice \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libcec.so:system/lib/libcec.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libddc.so:system/lib/libddc.so \
