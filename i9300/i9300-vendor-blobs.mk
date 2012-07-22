@@ -18,7 +18,7 @@ PRODUCT_PACKAGES += \
 	libTVOut \
 	libUMP \
 	libfimc \
-        libsamsungion
+	libsamsungion
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
@@ -80,20 +80,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libMcClient.so:system/lib/libMcClient.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
     $(LOCAL_PATH)/proprietary/system/lib/libvdis.so:system/lib/libvdis.so \
     $(LOCAL_PATH)/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     $(LOCAL_PATH)/proprietary/system/lib/libquramimagecodec.so:system/lib/libquramimagecodec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libviewracledf.so:system/lib/libviewracledf.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libviewracledf_client.so:system/lib/libviewracledf_client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libviewracle_option_client.so:system/lib/libviewracle_option_client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libviewracle_option_server.so:system/lib/libviewracle_option_server.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libviewraclesc.so:system/lib/libviewraclesc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfimg.so:system/lib/libfimg.so \
     $(LOCAL_PATH)/proprietary/system/lib/libhwconverter.so:system/lib/libhwconverter.so \
     $(LOCAL_PATH)/proprietary/system/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
