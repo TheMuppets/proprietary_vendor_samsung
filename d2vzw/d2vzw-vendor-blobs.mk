@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
         vendor/samsung/d2vzw/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2vzw/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
