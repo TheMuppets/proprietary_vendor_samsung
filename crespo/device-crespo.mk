@@ -21,4 +21,7 @@ PRODUCT_COPY_FILES := \
 # Samsung blobs necessary for Nexus S hardware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so
+    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    $(LOCAL_PATH)/proprietary/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    $(LOCAL_PATH)/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
