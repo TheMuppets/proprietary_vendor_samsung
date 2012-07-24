@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
 
 # HWCOMPOSER
 PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/bin/bintvoutservice:system/bin/bintvoutservice \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libcec.so:system/lib/libcec.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libddc.so:system/lib/libddc.so \
