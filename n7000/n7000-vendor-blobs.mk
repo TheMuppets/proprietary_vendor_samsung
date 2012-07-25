@@ -62,8 +62,8 @@ PRODUCT_COPY_FILES += \
 	
 # SENSORS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/sensors/lib/hw/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so \
     $(LOCAL_PATH)/proprietary/sensors/lib/libakm.so:system/lib/libakm.so
+    #$(LOCAL_PATH)/proprietary/sensors/lib/hw/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so
 	
 # GPS
 PRODUCT_COPY_FILES += \
