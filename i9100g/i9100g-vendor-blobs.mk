@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/camera.t1.so:system/lib/hw/camera.t1.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/camera.t1.so:system/lib/hw/vendor-camera.t1.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdomx.so:system/lib/libdomx.so \
     $(LOCAL_PATH)/proprietary/system/lib/libgrallocmapper.so:system/lib/libgrallocmapper.so \
     $(LOCAL_PATH)/proprietary/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
