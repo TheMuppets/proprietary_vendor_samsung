@@ -33,7 +33,6 @@ PRODUCT_PACKAGES := \
     libwvm \
     libWVStreamControlAPI_L1 \
     RTN \
-    SDM \
     sirfgps \
     VZWAPNLib \
     VZWAPNService

@@ -80,6 +80,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client-sap.so:system/lib/libsecril-client-sap.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \

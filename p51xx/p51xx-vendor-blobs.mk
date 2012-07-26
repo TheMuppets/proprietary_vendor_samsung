@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     $(LOCAL_PATH)/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
-    $(LOCAL_PATH)/common/system/lib/hw/hwcomposer.piranha.so:system/lib/hw/hwcomposer.piranha.so \
     $(LOCAL_PATH)/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
     $(LOCAL_PATH)/common/system/lib/libtiutils.so:system/lib/libtiutils.so
 
@@ -50,7 +49,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
+    $(LOCAL_PATH)/common/system/vendor/bin/pvrsrvctl:system/vendor/bin/pvrsrvctl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \

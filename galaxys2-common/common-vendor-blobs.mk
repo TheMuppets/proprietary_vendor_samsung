@@ -17,74 +17,79 @@ PRODUCT_PACKAGES += \
 	libfimc \
 	libhdmi \
 	libhdmiclient \
-	libsamsungion
+	libsamsungion \
+	libmediayamahaservice
 
-# EGL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/hw/gralloc.exynos4.so:system/lib/hw/gralloc.exynos4.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libion.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libion.so:system/lib/libsamsungion.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/galaxys2-common/proprietary/graphics/lib/libUMP.so:system/lib/libUMP.so
-
-# HWCOMPOSER
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/bin/bintvoutservice:system/bin/bintvoutservice \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libcec.so:system/lib/libcec.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libddc.so:system/lib/libddc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libedid.so:system/lib/libedid.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:system/lib/libfimc.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:system/lib/libhdmi.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:system/lib/libhdmiclient.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libTVOut.so:system/lib/libTVOut.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
-    vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libtvoutservice.so:system/lib/libtvoutservice.so
-
-# CAMERA
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/camera/lib/hw/camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so \
-    vendor/samsung/galaxys2-common/proprietary/camera/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/galaxys2-common/proprietary/camera/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/galaxys2-common/proprietary/camera/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
-
-# SENSORS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/sensors/lib/hw/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so \
-    vendor/samsung/galaxys2-common/proprietary/sensors/lib/libakm.so:system/lib/libakm.so
-
-# GPS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/gps/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so
-
-# WIFI
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/wifi/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_AU:system/etc/wifi/nvram_net.txt_AU \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_IL:system/etc/wifi/nvram_net.txt_IL \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata_AU:system/etc/wifi/nvram_net.txt_murata_AU \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata_IL:system/etc/wifi/nvram_net.txt_murata_IL \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata_SG:system/etc/wifi/nvram_net.txt_murata_SG \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_SG:system/etc/wifi/nvram_net.txt_SG \
-    vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_TN:system/etc/wifi/nvram_net.txt_TN
-
-# NFC
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/nfc/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
-
-# MFC Firmware
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxys2-common/proprietary/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/LVVEFS_Rx_Configuration.txt:system/etc/audio/LVVEFS_Rx_Configuration.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/LVVEFS_Tx_Configuration.txt:system/etc/audio/LVVEFS_Tx_Configuration.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/audio.primary.exynos4.so:system/lib/hw/audio.primary.exynos4.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/audio_policy.exynos4.so:system/lib/hw/audio_policy.exynos4.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libasound.so:system/lib/libasound.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/liblvvefs.so:system/lib/liblvvefs.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libmediayamaha.so:system/lib/libmediayamaha.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libyamahasrc.so:system/lib/libyamahasrc.so \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/default.conf:system/usr/share/alsa/pcm/default.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/dpl.conf:system/usr/share/alsa/pcm/dpl.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/front.conf:system/usr/share/alsa/pcm/front.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/iec958.conf:system/usr/share/alsa/pcm/iec958.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/modem.conf:system/usr/share/alsa/pcm/modem.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/rear.conf:system/usr/share/alsa/pcm/rear.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/side.conf:system/usr/share/alsa/pcm/side.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/surround40.conf:system/usr/share/alsa/pcm/surround40.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+    vendor/samsung/galaxys2-common/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/galaxys2-common/proprietary/system/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/galaxys2-common/proprietary/system/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/gralloc.exynos4.so:system/lib/hw/gralloc.exynos4.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libMali.so:system/lib/libMali.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/galaxys2-common/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libTVOut.so:system/lib/libTVOut.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libcec.so:system/lib/libcec.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libddc.so:system/lib/libddc.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libedid.so:system/lib/libedid.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libfimc.so:system/lib/libfimc.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libhdmi.so:system/lib/libhdmi.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libhdmiclient.so:system/lib/libhdmiclient.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
+    vendor/samsung/galaxys2-common/proprietary/system/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    vendor/samsung/galaxys2-common/proprietary/system/lib/libakm.so:system/lib/libakm.so
