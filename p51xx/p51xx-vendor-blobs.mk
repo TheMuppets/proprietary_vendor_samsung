@@ -72,3 +72,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     $(LOCAL_PATH)/common/system/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     $(LOCAL_PATH)/common/system/vendor/lib/libusc.so:system/vendor/lib/libusc.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
