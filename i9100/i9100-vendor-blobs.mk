@@ -19,9 +19,6 @@ PRODUCT_COPY_FILES := \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/i9100/proprietary/system/bin/rild:system/bin/rild \
-    vendor/samsung/i9100/proprietary/system/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/i9100/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/i9100/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/i9100/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     vendor/samsung/i9100/proprietary/system/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
     vendor/samsung/i9100/proprietary/system/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
@@ -38,4 +35,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9100/proprietary/system/etc/wifi/nvram_net.txt_murata_AU:system/etc/wifi/nvram_net.txt_murata_AU \
     vendor/samsung/i9100/proprietary/system/etc/wifi/nvram_net.txt_murata_IL:system/etc/wifi/nvram_net.txt_murata_IL \
     vendor/samsung/i9100/proprietary/system/etc/wifi/nvram_net.txt_murata_SG:system/etc/wifi/nvram_net.txt_murata_SG \
-    vendor/samsung/i9100/proprietary/system/etc/wifi/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN
+    vendor/samsung/i9100/proprietary/system/etc/wifi/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN \
+    vendor/samsung/i9100/proprietary/system/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/i9100/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/i9100/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/i9100/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so
