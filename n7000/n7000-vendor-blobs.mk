@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/n7000/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/n7000/proprietary/system/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
     vendor/samsung/n7000/proprietary/system/etc/wifi/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
+    vendor/samsung/n7000/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/n7000/proprietary/system/lib/libril.so:system/lib/libril.so \
     vendor/samsung/n7000/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/n7000/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \

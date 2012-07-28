@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i777/proprietary/system/etc/wifi/nvram_net.txt_murata_IL:system/etc/wifi/nvram_net.txt_murata_IL \
     vendor/samsung/i777/proprietary/system/etc/wifi/nvram_net.txt_murata_SG:system/etc/wifi/nvram_net.txt_murata_SG \
     vendor/samsung/i777/proprietary/system/etc/wifi/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN \
+    vendor/samsung/i777/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/i777/proprietary/system/lib/libril.so:system/lib/libril.so \
     vendor/samsung/i777/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/i777/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
