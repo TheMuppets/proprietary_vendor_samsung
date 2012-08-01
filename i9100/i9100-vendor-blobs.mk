@@ -40,4 +40,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9100/proprietary/system/lib/libril.so:system/lib/libril.so \
     vendor/samsung/i9100/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/i9100/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/i9100/proprietary/system/lib/libsecril-client-sap.so:system/lib/libsecril-client-sap.so \
     vendor/samsung/i9100/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so
