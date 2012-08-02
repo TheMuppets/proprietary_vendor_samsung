@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
         vendor/samsung/d2vzw/proprietary/lib/lib_SamsungRec_V01005.so:system/lib/lib_SamsungRec_V01005.so \
         vendor/samsung/d2vzw/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
+        vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2vzw/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
