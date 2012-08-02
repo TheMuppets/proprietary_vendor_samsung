@@ -15,24 +15,24 @@
 # Samsung blob(s) necessary for Toro hardware
 PRODUCT_PACKAGES := \
     BIP \
+    IMSFramework \
+    RTN \
+    fRom \
+    libsecril-client \
+    lib_gsd4t \
+    libims \
+    libims_jni \
+    libsec-ril_lte \
     com.vzw.hardware.ehrpd.xml \
     com.vzw.hardware.lte.xml \
     com.vzw.vzwapnlib.xml \
     ducati-m3 \
-    fRom \
     gps.omap4 \
-    IMSFramework \
     libdrmwvmplugin \
-    lib_gsd4t \
-    libims_jni \
-    libims \
     libpn544_fw \
-    libsecril-client \
-    libsec-ril_lte \
     libwvdrm_L1 \
     libwvm \
     libWVStreamControlAPI_L1 \
-    RTN \
     sirfgps \
     VZWAPNLib \
     VZWAPNService
