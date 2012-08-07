@@ -23,7 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2/proprietary/ril/bin/rild:system/bin/rild \
     vendor/samsung/galaxys2/proprietary/ril/lib/libril.so:system/lib/libril.so \
     vendor/samsung/galaxys2/proprietary/ril/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/galaxys2/proprietary/ril/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/galaxys2/proprietary/ril/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/galaxys2/proprietary/ril/lib/libsecril-client-sap.so:system/lib/libsecril-client-sap.so 
 
 # AUDIO
 PRODUCT_COPY_FILES += \
