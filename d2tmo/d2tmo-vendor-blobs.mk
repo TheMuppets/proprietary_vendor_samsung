@@ -170,4 +170,5 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2tmo/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2tmo/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
         vendor/samsung/d2tmo/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
-        vendor/samsung/d2tmo/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
+        vendor/samsung/d2tmo/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+        vendor/samsung/d2tmo/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
