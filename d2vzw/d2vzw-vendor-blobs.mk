@@ -17,8 +17,7 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-        vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
+        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -146,7 +145,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
         vendor/samsung/d2vzw/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
         vendor/samsung/d2vzw/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-        vendor/samsung/d2vzw/proprietary/lib/libv8.so:system/lib/libv8.so \
         vendor/samsung/d2vzw/proprietary/bin/macloader:system/bin/macloader \
         vendor/samsung/d2vzw/proprietary/bin/brcm_poke_helper:system/bin/brcm_poke_helper \
         vendor/samsung/d2vzw/proprietary/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
