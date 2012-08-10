@@ -14,6 +14,8 @@
 
 LOCAL_PATH:=\$(call my-dir)
 
+ifeq ($(TARGET_DEVICE),d2vzw)
+
 include \$(CLEAR_VARS)
 
 LOCAL_MODULE := VZWAPNLib
@@ -43,3 +45,5 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
 include \$(BUILD_PREBUILT)
+
+endif
