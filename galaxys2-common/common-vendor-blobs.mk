@@ -80,6 +80,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
     $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
     $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
+    $(LOCAL_PATH)/proprietary/system/bin/hostapd:system/bin/hostapd \
     $(LOCAL_PATH)/proprietary/system/lib/libTVOut.so:system/lib/libTVOut.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcec.so:system/lib/libcec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libddc.so:system/lib/libddc.so \
