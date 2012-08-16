@@ -19,4 +19,4 @@ PRODUCT_PACKAGES += \
     libsamsungril \
     libsecril-client \
 
-$(call inherit-product, vendor/samsung/p6810/p6810_blobs.mk)
+$(call inherit-product, vendor/samsung/p6810/blobs.mk)
