@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
 	libfimc \
 	libhdmi \
 	libhdmiclient \
-	libsamsungion \
+	libsecion \
 	libmediayamahaservice
 
 LOCAL_PATH := vendor/samsung/galaxys2-common

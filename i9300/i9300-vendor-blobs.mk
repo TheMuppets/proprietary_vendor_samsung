@@ -18,7 +18,7 @@ PRODUCT_PACKAGES += \
 	libTVOut \
 	libUMP \
 	libfimc \
-	libsamsungion
+	libsecion
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
