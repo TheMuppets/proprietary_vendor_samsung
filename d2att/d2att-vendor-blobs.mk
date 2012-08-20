@@ -36,19 +36,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
         vendor/samsung/d2att/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2att/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
-        vendor/samsung/d2att/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
-        vendor/samsung/d2att/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
-        vendor/samsung/d2att/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2att/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-        vendor/samsung/d2att/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
         vendor/samsung/d2att/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/d2att/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-        vendor/samsung/d2att/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-        vendor/samsung/d2att/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-        vendor/samsung/d2att/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-        vendor/samsung/d2att/proprietary/lib/lib_SamsungRec_V01005.so:system/lib/lib_SamsungRec_V01005.so \
-        vendor/samsung/d2att/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
-        vendor/samsung/d2att/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2att/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2att/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2att/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
@@ -63,6 +53,14 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2att/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2att/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2att/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+        vendor/samsung/d2att/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2att/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2att/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2att/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -160,13 +158,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2att/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2att/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
-        vendor/samsung/d2att/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2att/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
