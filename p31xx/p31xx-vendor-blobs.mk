@@ -17,7 +17,6 @@ LOCAL_PATH := vendor/samsung/p31xx
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/bin/geomagneticd:system/bin/geomagneticd \
     $(LOCAL_PATH)/common/system/bin/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/common/system/bin/hostapd:system/bin/hostapd \
     $(LOCAL_PATH)/common/system/bin/orientationd:system/bin/orientationd
 
 PRODUCT_COPY_FILES += \
