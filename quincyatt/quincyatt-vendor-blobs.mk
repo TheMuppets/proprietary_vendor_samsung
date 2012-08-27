@@ -41,8 +41,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
 	vendor/samsung/quincyatt/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
 	vendor/samsung/quincyatt/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-	vendor/samsung/quincyatt/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-	vendor/samsung/quincyatt/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
 	vendor/samsung/quincyatt/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
