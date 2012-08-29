@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-(cd vendor/samsung/epic4gtouch/proprietary/WiMAXHiddenMenu.apk.parts ; zip -r ../WiMAXHiddenMenu.unsigned.apk .)
+(cd vendor/samsung/d710/proprietary/WiMAXHiddenMenu.apk.parts ; zip -r ../WiMAXHiddenMenu.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epic4gtouch/proprietary/WiMAXHiddenMenu.unsigned.apk vendor/samsung/epic4gtouch/proprietary/WiMAXHiddenMenu.apk
-(cd vendor/samsung/epic4gtouch/proprietary/SprintMenu.apk.parts ; zip -r ../SprintMenu.unsigned.apk .)
+(cd vendor/samsung/d710/proprietary/SprintMenu.apk.parts ; zip -r ../SprintMenu.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epic4gtouch/proprietary/SprintMenu.unsigned.apk vendor/samsung/epic4gtouch/proprietary/SprintMenu.apk
-(cd vendor/samsung/epic4gtouch/proprietary/SystemUpdateUI.apk.parts ; zip -r ../SystemUpdateUI.unsigned.apk .)
+(cd vendor/samsung/d710/proprietary/SystemUpdateUI.apk.parts ; zip -r ../SystemUpdateUI.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epic4gtouch/proprietary/SystemUpdateUI.unsigned.apk vendor/samsung/epic4gtouch/proprietary/SystemUpdateUI.apk
-(cd vendor/samsung/epic4gtouch/proprietary/WiMAXSettings.apk.parts ; zip -r ../WiMAXSettings.unsigned.apk .)
+(cd vendor/samsung/d710/proprietary/WiMAXSettings.apk.parts ; zip -r ../WiMAXSettings.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/epic4gtouch/proprietary/WiMAXSettings.unsigned.apk vendor/samsung/epic4gtouch/proprietary/WiMAXSettings.apk
