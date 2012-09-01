@@ -24,18 +24,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/mesmerizemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
     vendor/samsung/mesmerizemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/mesmerizemtd/proprietary/libcamera.so:system/lib/libsamsungcamera.so \
     vendor/samsung/mesmerizemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/mesmerizemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/mesmerizemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/mesmerizemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
-    vendor/samsung/mesmerizemtd/proprietary/libsensorservice.so:system/vendor/lib/libsensorservice.so \
     vendor/samsung/mesmerizemtd/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so \
     vendor/samsung/mesmerizemtd/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
-    vendor/samsung/mesmerizemtd/proprietary/orientationd:system/vendor/bin/orientationd \
-    vendor/samsung/mesmerizemtd/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/mesmerizemtd/proprietary/PhoneConfig.apk:system/app/PhoneConfig.apk \
-    vendor/samsung/mesmerizemtd/proprietary/ProgramMenu.apk:system/app/ProgramMenu.apk \
-    vendor/samsung/mesmerizemtd/proprietary/ProgramMenuSystem.apk:system/app/ProgramMenuSystem.apk
-
+    vendor/samsung/mesmerizemtd/proprietary/orientationd:system/vendor/bin/orientationd
 
