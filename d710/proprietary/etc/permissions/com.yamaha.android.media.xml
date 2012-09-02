@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.yamaha.android.media"
+            file="/system/framework/com.yamaha.android.media.jar"/>
+</permissions>
