@@ -49,6 +49,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/etc/firmware/RS_M5LS_TB.bin:system/etc/firmware/RS_M5LS_TB.bin \
     vendor/samsung/d710/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/samsung/d710/proprietary/etc/permissions/com.yamaha.android.media.xml:system/etc/permissions/com.yamaha.android.media.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     vendor/samsung/d710/proprietary/etc/permissions/wimax_library.xml:system/etc/permissions/wimax_library.xml \
     vendor/samsung/d710/proprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
@@ -76,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/lib/hw/audio_policy.exynos4.so:system/lib/hw/audio_policy.exynos4.so \
     vendor/samsung/d710/proprietary/lib/hw/audio.primary.exynos4.so:system/lib/hw/audio.primary.exynos4.so \
     vendor/samsung/d710/proprietary/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
+    vendor/samsung/d710/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/samsung/d710/proprietary/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/d710/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/d710/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
