@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libfimc.so:obj/lib/libfimc.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmi.so:obj/lib/libhdmi.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libhdmiclient.so:obj/lib/libhdmiclient.so
-    
+
 PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/app/WiMAXHiddenMenu.apk:system/app/WiMAXHiddenMenu.apk \
     vendor/samsung/d710/proprietary/app/WiMAXSettings.apk:system/app/WiMAXSettings.apk \
@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/etc/permissions/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     vendor/samsung/d710/proprietary/etc/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     vendor/samsung/d710/proprietary/etc/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+    vendor/samsung/d710/proprietary/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
     vendor/samsung/d710/proprietary/etc/permissions/wimax_library.xml:system/etc/permissions/wimax_library.xml \
     vendor/samsung/d710/proprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
@@ -73,8 +74,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_murata_TN:system/etc/wifi/nvram_net.txt_murata_TN \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_SG:system/etc/wifi/nvram_net.txt_SG \
     vendor/samsung/galaxys2-common/proprietary/wifi/etc/wifi/nvram_net.txt_TN:system/etc/wifi/nvram_net.txt_TN \
+    vendor/samsung/d710/proprietary/framework/sec_feature.jar:system/framework/sec_feature.jar \
+    vendor/samsung/d710/proprietary/framework/sechardware.jar:system/framework/sechardware.jar \
     vendor/samsung/d710/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/samsung/d710/proprietary/framework/com.yamaha.android.media.jar:system/framework/com.yamaha.android.media.jar \
+    vendor/samsung/d710/proprietary/framework/com.samsung.device.jar:system/framework/com.samsung.device.jar \
     vendor/samsung/d710/proprietary/framework/wimax_service.jar:system/framework/wimax_service.jar \
     vendor/samsung/d710/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/d710/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
@@ -157,15 +161,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/firmware/wimaxfw.bin:system/vendor/firmware/wimaxfw.bin \
     vendor/samsung/d710/proprietary/firmware/wimaxloader.bin:system/vendor/firmware/wimaxloader.bin
 
-# Samsung Update Props    
+# Samsung Update Props
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/d710/proprietary/app/SDM.apk:system/app/SDM.apk \
 #    vendor/samsung/d710/proprietary/app/SprintMenu.apk:system/app/SprintMenu.apk \
 #    vendor/samsung/d710/proprietary/app/SyncMLSvc.apk:system/app/SyncMLSvc.apk \
 #    vendor/samsung/d710/proprietary/app/SystemUpdateUI.apk:system/app/SystemUpdateUI.apk \
-#    vendor/samsung/d710/proprietary/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
-#    vendor/samsung/d710/proprietary/framework/com.samsung.device.jar:system/framework/com.samsung.device.jar \    
-#    vendor/samsung/d710/proprietary/framework/sec_feature.jar:system/framework/sec_feature.jar \
-#    vendor/samsung/d710/proprietary/framework/sechardware.jar:system/framework/sechardware.jar \    
 #    vendor/samsung/d710/proprietary/lib/libsyncml_core.so:system/lib/libsyncml_core.so \
-#    vendor/samsung/d710/proprietary/lib/libsyncml_port.so:system/lib/libsyncml_port.so 
+#    vendor/samsung/d710/proprietary/lib/libsyncml_port.so:system/lib/libsyncml_port.so

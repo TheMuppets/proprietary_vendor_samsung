@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
-    <library name="wimax" file="/system/framework/wimax.jar"/>
+    <library name="wimax" file="/system/framework/wimax_service.jar"/>
 </permissions>
