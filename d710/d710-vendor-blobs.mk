@@ -86,10 +86,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/lib/hw/audio_policy.exynos4.so:system/lib/hw/audio_policy.exynos4.so \
     vendor/samsung/d710/proprietary/lib/hw/audio.primary.exynos4.so:system/lib/hw/audio.primary.exynos4.so \
     vendor/samsung/d710/proprietary/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
-    vendor/samsung/d710/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/samsung/d710/proprietary/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/d710/proprietary/lib/libasound.so:system/lib/libasound.so \
-    vendor/samsung/d710/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/d710/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
     vendor/samsung/d710/proprietary/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
     vendor/samsung/d710/proprietary/lib/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
@@ -109,7 +107,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/lib/libWiMAXNative.so:system/lib/libWiMAXNative.so \
     vendor/samsung/d710/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
     vendor/samsung/d710/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/d710/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/samsung/d710/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/d710/proprietary/lib/libyamahasrc.so:system/lib/libyamahasrc.so \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/lib/libcec.so:system/lib/libcec.so \
@@ -171,3 +168,6 @@ PRODUCT_COPY_FILES += \
 # Removed for debugging
 #    vendor/samsung/d710/proprietary/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
 #    vendor/samsung/d710/proprietary/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
+#    vendor/samsung/d710/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+#    vendor/samsung/d710/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+#    vendor/samsung/d710/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
