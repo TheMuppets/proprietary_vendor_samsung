@@ -95,8 +95,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/lib/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
     vendor/samsung/d710/proprietary/lib/libmediayamaha.so:system/lib/libmediayamaha.so \
     vendor/samsung/d710/proprietary/lib/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
-    vendor/samsung/d710/proprietary/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
-    vendor/samsung/d710/proprietary/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
     vendor/samsung/d710/proprietary/lib/libmtp.so:system/lib/libmtp.so \
     vendor/samsung/d710/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     vendor/samsung/d710/proprietary/lib/libril.so:system/lib/libril.so \
@@ -169,3 +167,7 @@ PRODUCT_COPY_FILES += \
 #    vendor/samsung/d710/proprietary/app/SystemUpdateUI.apk:system/app/SystemUpdateUI.apk \
 #    vendor/samsung/d710/proprietary/lib/libsyncml_core.so:system/lib/libsyncml_core.so \
 #    vendor/samsung/d710/proprietary/lib/libsyncml_port.so:system/lib/libsyncml_port.so
+
+# Removed for debugging
+#    vendor/samsung/d710/proprietary/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
+#    vendor/samsung/d710/proprietary/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
