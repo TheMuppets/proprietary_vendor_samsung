@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p1/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p1/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p1/proprietary/rild:system/bin/rild \
-    vendor/samsung/p1/proprietary/modem.bin:modem.bin
+    vendor/samsung/p1/proprietary/modem.bin:system/vendor/modem.bin
 
 # GPS (GSM)
 PRODUCT_COPY_FILES += \
