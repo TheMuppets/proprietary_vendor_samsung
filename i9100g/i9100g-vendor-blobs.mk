@@ -74,8 +74,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
     $(LOCAL_PATH)/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
     $(LOCAL_PATH)/proprietary/system/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
+	$(LOCAL_PATH)/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     $(LOCAL_PATH)/proprietary/system/lib/libtiutils.so:system/lib/libtiutils.so
-    $(LOCAL_PATH)/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
