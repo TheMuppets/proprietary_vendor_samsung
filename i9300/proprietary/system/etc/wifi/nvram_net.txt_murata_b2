@@ -118,5 +118,6 @@ loflag=1
 #for Co-Ex
 btc_params80=0
 btc_params6=10
+btc_params95=53
 
 dlocalidx5g=75
