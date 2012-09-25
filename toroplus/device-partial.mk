@@ -24,7 +24,6 @@ PRODUCT_PACKAGES := \
     gps.omap4 \
     lib_gsd4t \
     libpn544_fw \
-    libsec-ril \
     libsec-ril_lte \
     libsecril-client \
     libsyncml_core \
