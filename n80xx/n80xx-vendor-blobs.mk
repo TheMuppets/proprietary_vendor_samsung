@@ -18,6 +18,8 @@ PRODUCT_PACKAGES += \
 	libTVOut \
 	libUMP \
 	libfimc 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
@@ -26,7 +28,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
-    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm
+    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm \
+    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
