@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter i777 i9100 n7000 d710,$(TARGET_DEVICE)),)
+ifneq ($(filter i777 i9100 n7000 d710 r760,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTVOut
