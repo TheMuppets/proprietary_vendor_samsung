@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d710/proprietary/app/WiMAXSettings.apk:system/app/WiMAXSettings.apk \
     vendor/samsung/d710/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/d710/proprietary/bin/immvibed:system/bin/immvibed \
+    vendor/samsung/d710/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/d710/proprietary/bin/wlandutservice:system/bin/wlandutservice \
     vendor/samsung/galaxys2-common/proprietary/hwcomposer/bin/bintvoutservice:system/bin/bintvoutservice \
     vendor/samsung/galaxys2-common/proprietary/wifi/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
