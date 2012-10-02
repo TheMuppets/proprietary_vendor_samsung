@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
     vendor/samsung/smdk4210-tab/props/system/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/smdk4210-tab/props/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    vendor/samsung/smdk4210-tab/props/system/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libsecion.so:system/lib/libsecion.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libfimc.so:system/lib/libfimc.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmpl.so:system/lib/libmpl.so \
@@ -65,4 +65,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libMali.so:system/lib/libMali.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libsync.so:system/lib/libsync.so \
 
