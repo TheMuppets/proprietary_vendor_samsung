@@ -64,6 +64,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/libsync.so:system/lib/libsync.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so
 
