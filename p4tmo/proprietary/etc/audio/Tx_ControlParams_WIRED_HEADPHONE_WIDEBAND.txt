@@ -1,193 +1,193 @@
-191                                      // Number of arguments             
-4                                           // Version of Parser
-3                                        // Parameter type of Tx Control 
+191
+4
+3
 
-8                                        // Device ID                    
-1                                        // Voice Mode                   
+8
+1
 
-LVVE_TX_MODE_ON                           // TxOperatingMode
-LVM_MODE_OFF                              // TxMute
-LVM_MODE_OFF                              // TxBD_OperatingMode
-100                                       // TxBulkDelay
-LVM_MODE_ON                               // TxVOL_OperatingMode
-17                                       // TxVOL_Gain
-LVM_MODE_ON                               // TxHPF_OperatingMode
-150                                       // TxHPF_CornerFreq
-LVM_MODE_ON                                // TxHF_ControlParams_OperatingMode
-63                                     // TxHF_ControlParams_MODE
-0                                      // TxHF_ControlParams_TUNING_MODE
-8192                                   // TxHF_ControlParams_InputGain
-2048                                   // TxHF_ControlParams_OutputGain
-0                                      // TxHF_ControlParams_NLMS_limit
-64                                     // TxHF_ControlParams_NLMS_LB_taps
-8192                                   // TxHF_ControlParams_NLMS_LB_two_alpha
-1024                                    // TxHF_ControlParams_NLMS_LB_erl
-64                                     // TxHF_ControlParams_NLMS_HB_taps
-8192                                   // TxHF_ControlParams_NLMS_HB_two_alpha
-1024                                    // TxHF_ControlParams_NLMS_HB_erl
-1                                      // TxHF_ControlParams_NLMS_preset_coefs
-776                                    // TxHF_ControlParams_NLMS_offset
-2000                                  // TxHF_ControlParams_DENS_tail_alpha
-1000                                   // TxHF_ControlParams_DENS_tail_portion
-256                                    // TxHF_ControlParams_DENS_gamma_e_high
-256                                    // TxHF_ControlParams_DENS_gamma_e_dt
-256                                    // TxHF_ControlParams_DENS_gamma_e_low
-2000                                  // TxHF_ControlParams_DENS_gamma_e_alpha
-280                                    // TxHF_ControlParams_DENS_gamma_n
-5832                                  // TxHF_ControlParams_DENS_limit_ns
-14000                                  // TxHF_ControlParams_DENS_CNI_Gain
-64                                    // TxHF_ControlParams_DENS_NL_atten
-512                                    // TxHF_ControlParams_DENS_spdet_near
-512                                    // TxHF_ControlParams_DENS_spdet_act
-150                                    // TxHF_ControlParams_DENS_NFE_blocksize
-28000                                  // TxHF_ControlParams_SPDET_far
-16384                                  // TxHF_ControlParams_SPDET_mic
-1                                      // TxHF_ControlParams_SPDET_x_clip
-1                                      // TxHF_ControlParams_PCD_threshold
-32                                     // TxHF_ControlParams_PCD_taps
-64                                     // TxHF_ControlParams_PCD_erl
-64                                     // TxHF_ControlParams_PCD_minimum_erl
-16800                                  // TxHF_ControlParams_PCD_erl_step
-4096                                   // TxHF_ControlParams_PCD_gamma_e_rescue
-LVM_MODE_OFF                              // TxNV_ControlParams_OperatingMode
-2549                                      // TxNV_ControlParams_Mode
-14                                        // TxNV_ControlParams_Mode2
-0                                         // TxNV_ControlParams_Tuning_mode
-8192                                      // TxNV_ControlParams_Input_Gain_Mic0
-8192                                      // TxNV_ControlParams_Input_Gain_Mic1
-2048                                      // TxNV_ControlParams_Output_Gain
-40                                        // TxNV_ControlParams_NLMS0_LB_taps
-2048                                      // TxNV_ControlParams_NLMS0_LB_twoalpha
-1568                                      // TxNV_ControlParams_NLMS0_LB_erl
-40                                        // TxNV_ControlParams_NLMS0_HB_taps
-2048                                      // TxNV_ControlParams_NLMS0_HB_twoalpha
-1568                                      // TxNV_ControlParams_NLMS0_HB_erl
-1                                         // TxNV_ControlParams_NLMS0_preset_coefs
-776                                       // TxNV_ControlParams_NLMS0_offset
-32                                        // TxNV_ControlParams_NLMS1_LB_taps
-1024                                      // TxNV_ControlParams_NLMS1_LB_twoalpha
-800                                       // TxNV_ControlParams_NLMS1_LB_erl
-32                                        // TxNV_ControlParams_NLMS1_HB_taps
-1024                                      // TxNV_ControlParams_NLMS1_HB_twoalpha
-800                                       // TxNV_ControlParams_NLMS1_HB_erl
-1                                         // TxNV_ControlParams_NLMS1_preset_coefs
-776                                       // TxNV_ControlParams_NLMS1_offset
-1                                         // TxNV_ControlParams_CAL_micPowFloorMin
-32767                                     // TxNV_ControlParams_WgThreshold
-8192                                      // TxNV_ControlParams_MpThreshold
-23062                                     // TxNV_ControlParams_FSB_init_table0[0]
--11398                                    // TxNV_ControlParams_FSB_init_table0[1]
--2622                                     // TxNV_ControlParams_FSB_init_table0[2]
-4704                                      // TxNV_ControlParams_FSB_init_table0[3]
-8698                                      // TxNV_ControlParams_FSB_init_table0[4]
-8807                                      // TxNV_ControlParams_FSB_init_table0[5]
-4494                                      // TxNV_ControlParams_FSB_init_table0[6]
-835                                       // TxNV_ControlParams_FSB_init_table0[7]
-481                                       // TxNV_ControlParams_FSB_init_table1[0]
-209                                       // TxNV_ControlParams_FSB_init_table1[1]
-6655                                      // TxNV_ControlParams_FSB_init_table1[2]
-7358                                      // TxNV_ControlParams_FSB_init_table1[3]
--1669                                     // TxNV_ControlParams_FSB_init_table1[4]
-4806                                      // TxNV_ControlParams_FSB_init_table1[5]
--598                                      // TxNV_ControlParams_FSB_init_table1[6]
--880                                      // TxNV_ControlParams_FSB_init_table1[7]
-16                                        // TxNV_ControlParams_FSB_taps
-655                                       // TxNV_ControlParams_FSB_twoalpha
-1024                                      // TxNV_ControlParams_FSB_ref_gain
-16                                        // TxNV_ControlParams_GSC_taps
-1638                                      // TxNV_ControlParams_GSC_twoalpha
-181                                       // TxNV_ControlParams_GSC_erl
-10                                        // TxNV_ControlParams_GSC_offset
-16384                                     // TxNV_ControlParams_DNNS_EchoGammaHi
-10000                                     // TxNV_ControlParams_DNNS_EchoGammaLo
-16000                                     // TxNV_ControlParams_DNNS_EchoAlphaRev
-5000                                      // TxNV_ControlParams_DNNS_EchoTailPortion
-128                                       // TxNV_ControlParams_DNNS_NlAtten
-9830                                      // TxNV_ControlParams_DNNS_NoiseGammaS
-16384                                     // TxNV_ControlParams_DNNS_NoiseGammaN
-6554                                      // TxNV_ControlParams_DNNS_NoiseGainMinS
-6554                                      // TxNV_ControlParams_DNNS_NoiseGainMinN
-9830                                      // TxNV_ControlParams_DNNS_NoiseBiasComp
-512                                       // TxNV_ControlParams_DNNS_GainEta
-12288                                     // TxNV_ControlParams_DNNS_AcThreshold
-10240                                     // TxNV_ControlParams_DNNS_WbThreshold
-400                                       // TxNV_ControlParams_DNNS_LostBeamThreshold
-230                                       // TxNV_ControlParams_PCD_beta
-26213                                     // TxNV_ControlParams_PCD_Threshold
-LVM_MODE_OFF                              // TxWM_ControlParams_OperatingMode
-7                                         // TxWM_ControlParams_mode
-16384                                     // TxWM_ControlParams_AVL_Target_level_lin
-256                                       // TxWM_ControlParams_AVL_MinGainLin
-4096                                      // TxWM_ControlParams_AVL_MaxGainLin
-12055                                     // TxWM_ControlParams_AVL_Attack
-32442                                     // TxWM_ControlParams_AVL_Release
-23170                                     // TxWM_ControlParams_AVL_Limit_MaxOutputLin
-4096                                      // TxWM_ControlParams_SpDetect_Threshold
-LVM_MODE_OFF                              // TxHR_ControlParams_OperatingMode
-0                                         // TxHR_ControlParams_Mode
-LVM_MODE_OFF                               // TxEQ_OperatingMode
-64                                        // TxEQ_Length
-3438                                    // TxEQ_ControlParams_EQ_Coefs[0]
-1365                                   // TxEQ_ControlParams_EQ_Coefs[1]
-697                                   // TxEQ_ControlParams_EQ_Coefs[2]
--603                                    // TxEQ_ControlParams_EQ_Coefs[3]
-42                                   // TxEQ_ControlParams_EQ_Coefs[4]
--118                                  // TxEQ_ControlParams_EQ_Coefs[5]
--57                                  // TxEQ_ControlParams_EQ_Coefs[6]
--383                                    // TxEQ_ControlParams_EQ_Coefs[7]
--134                                   // TxEQ_ControlParams_EQ_Coefs[8]
--239                                  // TxEQ_ControlParams_EQ_Coefs[9]
--315                                   // TxEQ_ControlParams_EQ_Coefs[10]
--292                                   // TxEQ_ControlParams_EQ_Coefs[11]
-15                                  // TxEQ_ControlParams_EQ_Coefs[12]
-174                                  // TxEQ_ControlParams_EQ_Coefs[13]
-174                                   // TxEQ_ControlParams_EQ_Coefs[14]
-163                                   // TxEQ_ControlParams_EQ_Coefs[15]
-144                                  // TxEQ_ControlParams_EQ_Coefs[16]
-92                                 // TxEQ_ControlParams_EQ_Coefs[17]
-50                                  // TxEQ_ControlParams_EQ_Coefs[18]
-32                                  // TxEQ_ControlParams_EQ_Coefs[19]
-25                                 // TxEQ_ControlParams_EQ_Coefs[20]
--2                                 // TxEQ_ControlParams_EQ_Coefs[21]
--30                                 // TxEQ_ControlParams_EQ_Coefs[22]
--43                                  // TxEQ_ControlParams_EQ_Coefs[23]
--35                                 // TxEQ_ControlParams_EQ_Coefs[24]
--23                                 // TxEQ_ControlParams_EQ_Coefs[25]
--11                                 // TxEQ_ControlParams_EQ_Coefs[26]
--3                                 // TxEQ_ControlParams_EQ_Coefs[27]
-0                                      // TxEQ_ControlParams_EQ_Coefs[28]
-0                                      // TxEQ_ControlParams_EQ_Coefs[29]
-0                                         // TxEQ_ControlParams_EQ_Coefs[30]
-0                                         // TxEQ_ControlParams_EQ_Coefs[31]
-0                                         // RxEQ_ControlParams_EQ_Coefs[32]
-0                                         // RxEQ_ControlParams_EQ_Coefs[33]
-0                                         // RxEQ_ControlParams_EQ_Coefs[34]
-0                                         // RxEQ_ControlParams_EQ_Coefs[35]
-0                                         // RxEQ_ControlParams_EQ_Coefs[36]
-0                                         // RxEQ_ControlParams_EQ_Coefs[37]
-0                                         // RxEQ_ControlParams_EQ_Coefs[38]
-0                                         // RxEQ_ControlParams_EQ_Coefs[39]
-0                                         // RxEQ_ControlParams_EQ_Coefs[40]
-0                                         // RxEQ_ControlParams_EQ_Coefs[41]
-0                                         // RxEQ_ControlParams_EQ_Coefs[42]
-0                                         // RxEQ_ControlParams_EQ_Coefs[43]
-0                                         // RxEQ_ControlParams_EQ_Coefs[44]
-0                                         // RxEQ_ControlParams_EQ_Coefs[45]
-0                                         // RxEQ_ControlParams_EQ_Coefs[46]
-0                                         // RxEQ_ControlParams_EQ_Coefs[47]
-0                                         // RxEQ_ControlParams_EQ_Coefs[48]
-0                                         // RxEQ_ControlParams_EQ_Coefs[49]
-0                                         // RxEQ_ControlParams_EQ_Coefs[50]
-0                                         // RxEQ_ControlParams_EQ_Coefs[51]
-0                                         // RxEQ_ControlParams_EQ_Coefs[52]
-0                                         // RxEQ_ControlParams_EQ_Coefs[53]
-0                                         // RxEQ_ControlParams_EQ_Coefs[54]
-0                                         // RxEQ_ControlParams_EQ_Coefs[55]
-0                                         // RxEQ_ControlParams_EQ_Coefs[56]
-0                                         // RxEQ_ControlParams_EQ_Coefs[57]
-0                                         // RxEQ_ControlParams_EQ_Coefs[58]
-0                                         // RxEQ_ControlParams_EQ_Coefs[59]
-0                                         // RxEQ_ControlParams_EQ_Coefs[60]
-0                                         // RxEQ_ControlParams_EQ_Coefs[61]
-0                                         // RxEQ_ControlParams_EQ_Coefs[62]
-0                                         // RxEQ_ControlParams_EQ_Coefs[63]
+1
+0
+0
+110
+1
+7
+1
+150
+1
+63
+0
+8192
+2048
+0
+96
+2048
+256
+128
+2048
+256
+2
+767
+21000
+16000
+640
+256
+640
+21000
+280
+1000
+7000
+160
+512
+512
+150
+28000
+16384
+1
+1
+64
+64
+64
+16800
+4096
+0
+2549
+14
+0
+8192
+8192
+2048
+40
+2048
+1568
+40
+2048
+1568
+1
+776
+32
+1024
+800
+32
+1024
+800
+1
+776
+1
+32767
+8192
+23062
+-11398
+-2622
+4704
+8698
+8807
+4494
+835
+481
+209
+6655
+7358
+-1669
+4806
+-598
+-880
+16
+655
+1024
+16
+1638
+181
+10
+16384
+10000
+16000
+5000
+128
+9830
+16384
+6554
+6554
+9830
+512
+12288
+10240
+400
+230
+26213
+0
+7
+16384
+256
+4096
+12055
+32442
+23170
+4096
+0
+0
+0
+64
+2616
+1584
+259
+-885
+-689
+-884
+-335
+-255
+156
+111
+304
+185
+233
+104
+108
+4
+28
+-49
+-8
+-51
+-15
+-41
+13
+-5
+31
+6
+36
+9
+30
+5
+26
+7
+25
+3
+12
+-10
+-1
+-12
+7
+5
+21
+13
+19
+8
+14
+10
+18
+14
+18
+11
+9
+2
+2
+0
+1
+0
+2
+1
+1
+0
+0
+0
+0
+0
