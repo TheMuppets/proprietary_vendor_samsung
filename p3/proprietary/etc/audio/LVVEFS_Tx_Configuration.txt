@@ -1,14 +1,13 @@
-46
+45
 4
 1
 
 1
-5
+4
 /system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt
 /system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt
 /system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt
 /system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt
-/system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt
 
 17640
 0
@@ -34,7 +33,7 @@
 0
 0
 
-1
+0
 2048
 /data/Tx_in_mic.pcm
 
@@ -42,7 +41,7 @@
 2048
 /data/Fs44100_Sine_1000Hz_St.pcm
 
-1
+0
 2048
 /data/Tx_in_ref.pcm
 
@@ -50,7 +49,7 @@
 2048
 /data/Fs44100_Sine_1000Hz_St.pcm
 
-1		
+0		
 2048
 /data/Tx_out.pcm
 
