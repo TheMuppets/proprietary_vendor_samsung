@@ -35,13 +35,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
     $(LOCAL_PATH)/proprietary/system/etc/security/otacerts.zip:system/security/otacerts.zip \
-    $(LOCAL_PATH)/proprietary/system/framework/wimax_service.jar:system/framework/wimax_service.jar	\
+    $(LOCAL_PATH)/proprietary/system/framework/com.samsung.device.jar:system/framework/com.samsung.device.jar \
+    $(LOCAL_PATH)/proprietary/system/framework/sec_feature.jar:system/framework/sec_feature.jar \
+    $(LOCAL_PATH)/proprietary/system/framework/wimax_service.jar:system/framework/wimax_service.jar \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsyncml_core.so:system/lib/libsyncml_core.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsyncml_port.so:system/lib/libsyncml_port.so \
     $(LOCAL_PATH)/proprietary/system/lib/libWiMAXNative.so:system/lib/libWiMAXNative.so \
     $(LOCAL_PATH)/proprietary/system/lib/libSECmWiMAXcAPI.so:system/lib/libSECmWiMAXcAPI.so \
