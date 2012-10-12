@@ -27,16 +27,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm_dut:system/bin/bcm_dut \
-    $(LOCAL_PATH)/proprietary/system/etc/ppp/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/proprietary/system/etc/ppp/ip-down:system/etc/ppp/ip-down \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/proprietary/system/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
+    $(LOCAL_PATH)/proprietary/system/etc/security/otacerts.zip:system/security/otacerts.zip \
     $(LOCAL_PATH)/proprietary/system/framework/wimax_service.jar:system/framework/wimax_service.jar	\
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
