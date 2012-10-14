@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter i777 i9100 n7000 d710,$(TARGET_DEVICE)),)
+ifneq ($(filter i777 i9100 n7000 d710 r760,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTVOut
@@ -29,7 +29,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsecion
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libion.so
+LOCAL_SRC_FILES := system/lib/libsecion.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES

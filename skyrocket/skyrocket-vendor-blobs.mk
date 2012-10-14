@@ -91,6 +91,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/skyrocket/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
 	vendor/samsung/skyrocket/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/skyrocket/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+	vendor/samsung/skyrocket/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
 	vendor/samsung/skyrocket/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
 	vendor/samsung/skyrocket/proprietary/etc/wifi/wl:system/etc/wifi/wl \
 	vendor/samsung/skyrocket/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \

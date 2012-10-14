@@ -91,6 +91,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
 	vendor/samsung/quincyatt/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/quincyatt/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+	vendor/samsung/quincyatt/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/wl:system/etc/wifi/wl \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
@@ -99,7 +100,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
 	vendor/samsung/quincyatt/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-	vendor/samsung/quincyatt/proprietary/bin/hostapd:system/bin/hostapd \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
 	vendor/samsung/quincyatt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \

@@ -30,29 +30,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
     $(LOCAL_PATH)/proprietary/system/bin/gps.cer:system/bin/gps.cer \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/proprietary/system/bin/hostapd:system/bin/hostapd \
     $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
     $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
+    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/system/bin/hostapd:system/bin/hostapd
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/etc/firmware/RS_M9MO.bin:system/etc/firmware/RS_M9MO.bin
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_mfg.bin_b0:system/etc/wifi/bcmdhd_mfg.bin_b0 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_mfg.bin_b1:system/etc/wifi/bcmdhd_mfg.bin_b1 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_mfg.bin_b2:system/etc/wifi/bcmdhd_mfg.bin_b2 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_p2p.bin_b0:system/etc/wifi/bcmdhd_p2p.bin_b0 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_p2p.bin_b1:system/etc/wifi/bcmdhd_p2p.bin_b1 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_sta.bin_b0:system/etc/wifi/bcmdhd_sta.bin_b0 \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_sta.bin_b1:system/etc/wifi/bcmdhd_sta.bin_b1 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
@@ -82,10 +72,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libion.so:system/lib/libion.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:system/lib/libsecion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMcClient.so:system/lib/libMcClient.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libMcVersion.so:system/lib/libMcVersion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
     $(LOCAL_PATH)/proprietary/system/lib/libvdis.so:system/lib/libvdis.so \
@@ -147,9 +138,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/proprietary/system/usr/keylayout/max77693-muic.kl:system/usr/keylayout/max77693-muic.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-    $(LOCAL_PATH)/proprietary/system/usr/keylayout/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \

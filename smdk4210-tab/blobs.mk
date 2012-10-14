@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/smdk4210-tab/props/system/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
+    vendor/samsung/smdk4210-tab/props/system/bin/sec_keyboard:system/bin/sec_keyboard \
     vendor/samsung/smdk4210-tab/props/system/bin/macloader:system/bin/macloader \
     vendor/samsung/smdk4210-tab/props/system/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libUMP.so:system/lib/libUMP.so \
@@ -56,7 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
     vendor/samsung/smdk4210-tab/props/system/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/smdk4210-tab/props/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    vendor/samsung/smdk4210-tab/props/system/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libsecion.so:system/lib/libsecion.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libfimc.so:system/lib/libfimc.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmpl.so:system/lib/libmpl.so \
@@ -64,5 +65,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so
 

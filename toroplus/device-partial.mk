@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Samsung blob(s) necessary for Toroplus hardware
+# Samsung blob(s) necessary for ToroPlus hardware
 PRODUCT_PACKAGES := \
     BIP \
 	HiddenMenu \
@@ -24,7 +24,6 @@ PRODUCT_PACKAGES := \
     gps.omap4 \
     lib_gsd4t \
     libpn544_fw \
-    libsec-ril \
     libsec-ril_lte \
     libsecril-client \
     libsyncml_core \
