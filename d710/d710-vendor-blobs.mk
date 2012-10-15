@@ -34,9 +34,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
     $(LOCAL_PATH)/proprietary/system/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
-    $(LOCAL_PATH)/proprietary/system/etc/security/otacerts.zip:system/security/otacerts.zip \
-    $(LOCAL_PATH)/proprietary/system/framework/com.samsung.device.jar:system/framework/com.samsung.device.jar \
-    $(LOCAL_PATH)/proprietary/system/framework/sec_feature.jar:system/framework/sec_feature.jar \
+    $(LOCAL_PATH)/proprietary/system/etc/security/otacerts.zip:system/etc/security/otacerts.zip \
     $(LOCAL_PATH)/proprietary/system/framework/wimax_service.jar:system/framework/wimax_service.jar \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
