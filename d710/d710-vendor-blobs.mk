@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/pppd_runner:system/bin/pppd_runner \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/system/bin/immvibed:system/bin/immvibed \
+    $(LOCAL_PATH)/proprietary/system/bin/wlandutservice:system/bin/wlandutservice \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm_dut:system/bin/bcm_dut \
