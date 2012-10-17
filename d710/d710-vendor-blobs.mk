@@ -17,9 +17,11 @@ LOCAL_PATH := vendor/samsung/d710
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:obj/lib/libril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:obj/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:obj/lib/libsecion.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libfimc.so:obj/lib/libfimc.so
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:obj/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril40.so:obj/lib/libsec-ril40.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:obj/lib/libsecion.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm_dut:system/bin/bcm_dut \
@@ -85,6 +87,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libasound.so:system/lib/libasound.so \
     $(LOCAL_PATH)/proprietary/system/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcec.so:system/lib/libcec.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libddc.so:system/lib/libddc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libedid.so:system/lib/libedid.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfimc.so:system/lib/libfimc.so \
@@ -96,8 +99,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmediayamahaservice.so:system/lib/libmediayamahaservice.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
