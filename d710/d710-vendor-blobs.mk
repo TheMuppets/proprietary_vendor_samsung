@@ -18,8 +18,7 @@ LOCAL_PATH := vendor/samsung/d710
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:obj/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so \
-    vendor/samsung/galaxys2-common/proprietary/system/lib/libsecion.so:obj/lib/libsecion.so \
-    vendor/samsung/galaxys2-common/proprietary/system/lib/libfimc.so:obj/lib/libfimc.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:obj/lib/libsecion.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gralloc.exynos4.so:system/lib/hw/gralloc.exynos4.so
 
@@ -29,6 +28,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/macloader:system/bin/macloader \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
     $(LOCAL_PATH)/proprietary/system/bin/immvibed:system/bin/immvibed \
+    $(LOCAL_PATH)/proprietary/system/bin/drexe:system/bin/drexe \
     $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
@@ -92,4 +92,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     $(LOCAL_PATH)/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so
+    $(LOCAL_PATH)/proprietary/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:system/lib/libsecion.so
