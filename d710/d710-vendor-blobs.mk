@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:obj/lib/libsecion.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/hwcomposer.smdk4210.so:obj/lib/hwcomposer.smdk4210.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gralloc.smdk4210.so:obj/lib/gralloc.smdk4210.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gralloc.smdk4210.so:obj/lib/gralloc.exynos4.so \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:obj/lib/libUMP.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:obj/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfimc.so:obj/lib/libfimc.so
@@ -61,11 +61,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/audio_policy.smdk4210.so:system/lib/hw/audio_policy.smdk4210.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/audio.primary.smdk4210.so:system/lib/hw/audio.primary.smdk4210.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/audio_policy.smdk4210.so:system/lib/hw/audio_policy.exynos4.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/audio.primary.smdk4210.so:system/lib/hw/audio.primary.exynos4.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/camera.exynos4.so:system/lib/hw/vendor-camera.exynos4.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gralloc.smdk4210.so:system/lib/hw/gralloc.smdk4210.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gralloc.smdk4210.so:system/lib/hw/gralloc.exynos4.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
