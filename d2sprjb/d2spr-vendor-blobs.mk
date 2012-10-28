@@ -85,6 +85,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2sprjb/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
         vendor/samsung/d2sprjb/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
         vendor/samsung/d2sprjb/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+        vendor/samsung/d2sprjb/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+        vendor/samsung/d2sprjb/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/d2sprjb/proprietary/bin/wiperiface_v02:system/bin/wiperiface_v02 \
         vendor/samsung/d2sprjb/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
         vendor/samsung/d2sprjb/proprietary/bin/quipc_main:system/bin/quipc_main \
@@ -151,7 +153,5 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2sprjb/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2sprjb/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2sprjb/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2sprjb/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-        vendor/samsung/d2sprjb/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2sprjb/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2sprjb/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
