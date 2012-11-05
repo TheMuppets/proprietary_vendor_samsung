@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmediayamaha_tuning_jni.so:system/lib/libmediayamaha_tuning_jni.so \
     vendor/samsung/smdk4210-tab/props/system/bin/sec_keyboard:system/bin/sec_keyboard \
-    vendor/samsung/smdk4210-tab/props/system/bin/macloader:system/bin/macloader \
     vendor/samsung/smdk4210-tab/props/system/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libUMP.so:system/lib/libUMP.so \
     vendor/samsung/smdk4210-tab/props/system/lib/liblvvefs.so:system/lib/liblvvefs.so \
