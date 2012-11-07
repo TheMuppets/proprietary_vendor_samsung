@@ -37,6 +37,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
     $(LOCAL_PATH)/proprietary/system/framework/wimax.jar:system/framework/wimax.jar \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4210.so:system/lib/hw/sensors.exynos4.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
