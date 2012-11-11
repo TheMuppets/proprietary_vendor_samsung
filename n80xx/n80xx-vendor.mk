@@ -13,6 +13,6 @@
 # limitations under the License.
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/n80xx/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/samsung/n80xx/overlay
 
 $(call inherit-product, vendor/samsung/n80xx/n80xx-vendor-blobs.mk)
