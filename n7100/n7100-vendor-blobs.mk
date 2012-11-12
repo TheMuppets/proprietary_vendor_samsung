@@ -12,22 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/i9300
+LOCAL_PATH := vendor/samsung/n7100
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/bin/sensorservice:system/bin/sensorservice \
+    $(LOCAL_PATH)/proprietary/system/bin/sensorhubservice:system/bin/sensorhubservice \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsensorservice.so:system/lib/libsensorservice.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/camera.smdk4x12.so:system/lib/hw/vendor-camera.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensorhubs.smdk4x12.so:system/lib/hw/sensorhubs.smdk4x12.so
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/usr/idc/sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_e-pen.kl:system/usr/keylayout/sec_e-pen.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_GD.bin:system/vendor/firmware/SlimISP_GD.bin \
-    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_ZD.bin:system/vendor/firmware/SlimISP_ZD.bin
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_GK.bin:system/vendor/firmware/SlimISP_GK.bin \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_ZK.bin:system/vendor/firmware/SlimISP_ZK.bin
