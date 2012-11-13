@@ -29,7 +29,6 @@ PRODUCT_PACKAGES := \
     ducati-m3 \
     gps.omap4 \
     libdrmwvmplugin \
-    libpn544_fw \
     libwvdrm_L1 \
     libwvm \
     libWVStreamControlAPI_L1 \
