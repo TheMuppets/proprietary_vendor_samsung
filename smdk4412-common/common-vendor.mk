@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS += vendor/samsung/i9300/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/samsung/smdk4412-common/overlay
 
-$(call inherit-product, vendor/samsung/i9300/i9300-vendor-blobs.mk)
+$(call inherit-product, vendor/samsung/smdk4412-common/common-vendor-blobs.mk)
 
