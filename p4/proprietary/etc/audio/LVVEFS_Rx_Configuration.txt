@@ -22,7 +22,7 @@
 0
 /data/LVVEFS_Rx_Status.bin
 
-1
+0
 2048
 /data/Rx_in.pcm
 
@@ -30,7 +30,7 @@
 2048
 /data/Fs44100_FemaleSpeech_St.pcm
 
-1
+0
 2048
 /data/Rx_out.pcm
 
