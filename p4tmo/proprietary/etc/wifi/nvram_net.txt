@@ -1,5 +1,5 @@
-# P4_TMO 4330X B1 FCBGA Rev0.3
-# P4 TMO 100.25 nvram
+# 4330X B1 FCBGA P4_TMO Rev0.3 08/26/2011
+# P4 TMO 100.27 nvram
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -16,10 +16,8 @@ ag0=0
 # aa2g=1 means by default only one antenna, MAIN RF.
 aa2g=1
 aa5g=1
-ccode=US
-regrev=5
+ccode=USregrev=5
 # 2.4GHz PA parameters are preliminary
-
 pa0b0=5379
 pa0b1=-605
 pa0b2=-139
@@ -60,17 +58,17 @@ mcs2gpo1=0x2222
 
 # 5G Tx Power
 
-maxp5gla0=70
+maxp5gla0=62
 ofdm5glpo=0x77777777
-mcs5glpo0=0x7777
-mcs5glpo1=0x7777
+mcs5glpo0=0x8888
+mcs5glpo1=0x8888
 
-maxp5ga0=67
+maxp5ga0=58
 ofdm5gpo=0x55555555
 mcs5gpo0=0x6666
 mcs5gpo1=0x6666
 
-maxp5gha0=68
+maxp5gha0=60
 ofdm5ghpo=0x77777777
 mcs5ghpo0=0x8888
 mcs5ghpo1=0x8888
@@ -95,7 +93,8 @@ swctrlmap_2g=0x04040404,0x0a0a0202,0x0c0c0404,0x010a02,0x1ff
 swctrlmap_5g=0x90909090,0x60602020,0x50502020,0x010a02,0x2f8
 xtalmode=0x20,0x4,0
 pa0itssit=0x20
-tssitime=1
+#tssitime=1
+loidacmode5g=1
 triso5g=9
 
 tridx5g=0
@@ -117,3 +116,8 @@ noise_cal_po_5g=5
 noise_cal_enable_5g=0
 
 txgaintbl5g=1
+
+# for BT-coexistence
+btc_params80=0
+btc_params6=10
+btc_params8=10000
