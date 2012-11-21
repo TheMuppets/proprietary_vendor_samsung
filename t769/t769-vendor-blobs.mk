@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/t769/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
         vendor/samsung/t769/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
         vendor/samsung/t769/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
-        vendor/samsung/t769/proprietary/lib/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+        vendor/samsung/t769/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
         vendor/samsung/t769/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
         vendor/samsung/t769/proprietary/lib/libakm.so:system/lib/libakm.so \
         vendor/samsung/t769/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
