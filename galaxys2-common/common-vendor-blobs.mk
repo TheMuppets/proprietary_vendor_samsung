@@ -13,10 +13,7 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-	libTVOut \
 	libfimc \
-	libhdmi \
-	libhdmiclient \
 	libsecion \
 	libmediayamahaservice
 
@@ -43,6 +40,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
     $(LOCAL_PATH)/proprietary/system/lib/libasound.so:system/lib/libasound.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libhdmi.so:system/lib/libhdmi.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libhdmiclient.so:system/lib/libhdmiclient.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libTVOut.so:system/lib/libTVOut.so \
     $(LOCAL_PATH)/proprietary/system/lib/liblvvefs.so:system/lib/liblvvefs.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmediayamaha.so:system/lib/libmediayamaha.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmediayamaha_jni.so:system/lib/libmediayamaha_jni.so \
