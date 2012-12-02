@@ -15,18 +15,17 @@
 # Samsung blob(s) necessary for ToroPlus hardware
 PRODUCT_PACKAGES := \
     BIP \
-	HiddenMenu \
+    HiddenMenu \
     SDM \
-	SecPhone \
-	SyncMLSvc \
-	ducati-m3 \
+    SecPhone \
+    SyncMLSvc \
+    ducati-m3 \
     fRom \
     gps.omap4 \
     lib_gsd4t \
-    libpn544_fw \
     libsec-ril_lte \
     libsecril-client \
     libsyncml_core \
-	libsyncml_port \
-	libwvm \
+    libsyncml_port \
+    libwvm \
     sirfgps
