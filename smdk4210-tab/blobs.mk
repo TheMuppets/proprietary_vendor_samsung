@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libddc.so:system/lib/libddc.so \
     vendor/samsung/smdk4210-tab/props/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     vendor/samsung/smdk4210-tab/props/system/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/hw/gralloc.exynos4.so:system/lib/hw/gralloc.exynos4.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libedid.so:system/lib/libedid.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libakm.so:system/lib/libakm.so \
@@ -39,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.tcmd.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.tcmd.bin \
     vendor/samsung/smdk4210-tab/props/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/hw/hwcomposer.smdk4210.so:system/lib/hw/hwcomposer.smdk4210.so \
     vendor/samsung/smdk4210-tab/props/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmediayamaha.so:system/lib/libmediayamaha.so \
     vendor/samsung/smdk4210-tab/props/system/bin/gpsd:system/bin/gpsd \
