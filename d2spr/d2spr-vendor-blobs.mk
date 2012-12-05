@@ -47,11 +47,17 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2spr/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/d2spr/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
         vendor/samsung/d2spr/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+        vendor/samsung/d2spr/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
         vendor/samsung/d2spr/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
         vendor/samsung/d2spr/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2spr/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2spr/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+        vendor/samsung/d2spr/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2spr/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2spr/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
+        vendor/samsung/d2spr/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
+        vendor/samsung/d2spr/proprietary/lib/libllvm-arm.so:system/lib/libllvm-arm.so \
+        vendor/samsung/d2spr/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
         vendor/samsung/d2spr/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2spr/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2spr/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
@@ -59,6 +65,16 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2spr/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/d2spr/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2spr/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+        vendor/samsung/d2spr/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+        vendor/samsung/d2spr/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+        vendor/samsung/d2spr/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
+        vendor/samsung/d2spr/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
         vendor/samsung/d2spr/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2spr/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2spr/proprietary/bin/sec-ril:system/bin/sec-ril \
@@ -153,5 +169,4 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2spr/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2spr/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2spr/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2spr/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2spr/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
