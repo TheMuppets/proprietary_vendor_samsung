@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
-        vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
@@ -68,19 +67,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libatparser.so:system/lib/libatparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
         vendor/samsung/d2vzw/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-        vendor/samsung/d2vzw/proprietary/bin/wiperiface_v02:system/bin/wiperiface_v02 \
-        vendor/samsung/d2vzw/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
-        vendor/samsung/d2vzw/proprietary/bin/quipc_main:system/bin/quipc_main \
-        vendor/samsung/d2vzw/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-        vendor/samsung/d2vzw/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-        vendor/samsung/d2vzw/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-        vendor/samsung/d2vzw/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
         vendor/samsung/d2vzw/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-        vendor/samsung/d2vzw/proprietary/lib/libcurl.so:system/lib/libcurl.so \
-        vendor/samsung/d2vzw/proprietary/lib/libbson.so:system/lib/libbson.so \
-        vendor/samsung/d2vzw/proprietary/lib/libquipc_os_api.so:system/lib/libquipc_os_api.so \
-        vendor/samsung/d2vzw/proprietary/lib/libquipc_ulp_adapter.so:system/lib/libquipc_ulp_adapter.so \
-        vendor/samsung/d2vzw/proprietary/lib/libwifiscanner.so:system/lib/libwifiscanner.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2vzw/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
