@@ -75,19 +75,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2spr/proprietary/lib/libatparser.so:system/lib/libatparser.so \
         vendor/samsung/d2spr/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
         vendor/samsung/d2spr/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-        vendor/samsung/d2spr/proprietary/bin/wiperiface_v02:system/bin/wiperiface_v02 \
-        vendor/samsung/d2spr/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
-        vendor/samsung/d2spr/proprietary/bin/quipc_main:system/bin/quipc_main \
-        vendor/samsung/d2spr/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-        vendor/samsung/d2spr/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-        vendor/samsung/d2spr/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-        vendor/samsung/d2spr/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
         vendor/samsung/d2spr/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-        vendor/samsung/d2spr/proprietary/lib/libcurl.so:system/lib/libcurl.so \
-        vendor/samsung/d2spr/proprietary/lib/libbson.so:system/lib/libbson.so \
-        vendor/samsung/d2spr/proprietary/lib/libquipc_os_api.so:system/lib/libquipc_os_api.so \
-        vendor/samsung/d2spr/proprietary/lib/libquipc_ulp_adapter.so:system/lib/libquipc_ulp_adapter.so \
-        vendor/samsung/d2spr/proprietary/lib/libwifiscanner.so:system/lib/libwifiscanner.so \
         vendor/samsung/d2spr/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2spr/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
         vendor/samsung/d2spr/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
