@@ -19,7 +19,6 @@ PRODUCT_PACKAGES += \
     libTVOut \
     libhdmiclient \
     libfimc \
-    libmediayamahaservice \
     libhdmi \
     libsamsungion \
 
