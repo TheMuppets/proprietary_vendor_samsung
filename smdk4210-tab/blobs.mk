@@ -44,5 +44,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin \
     vendor/samsung/smdk4210-tab/props/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so
+    vendor/samsung/smdk4210-tab/props/system/lib/libTVOut.so:system/lib/libTVOut.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/smdk4210-tab/props/system/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
 
