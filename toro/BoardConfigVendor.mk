@@ -21,3 +21,4 @@ LOCAL_STEM := toro/BoardConfigPartial.mk
 -include vendor/nxp/$(LOCAL_STEM)
 -include vendor/samsung/$(LOCAL_STEM)
 -include vendor/ti/$(LOCAL_STEM)
+-include vendor/widevine/$(LOCAL_STEM)
