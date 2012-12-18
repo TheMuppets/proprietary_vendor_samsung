@@ -15,7 +15,8 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/captivatemtd/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/captivatemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/captivatemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+    vendor/samsung/captivatemtd/proprietary/modem.bin:modem.bin
 
 
 # All the blobs necessary for galaxys devices
