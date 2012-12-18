@@ -15,7 +15,8 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/vibrantmtd/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+    vendor/samsung/vibrantmtd/proprietary/modem.bin:modem.bin
 
 
 # All the blobs necessary for vibrantmtd devices
