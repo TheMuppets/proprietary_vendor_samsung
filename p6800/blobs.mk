@@ -17,7 +17,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/p6800/props/system/bin/rild:system/bin/rild \
-    vendor/samsung/p6800/props/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p6800/props/system/lib/hw/camera.exynos4.so:system/lib/hw/camera.exynos4.so \
     vendor/samsung/p6800/props/system/lib/libril.so:system/lib/libril.so \
     vendor/samsung/p6800/props/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
