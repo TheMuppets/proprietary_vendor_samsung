@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libquipc_ulp_adapter.so:system/lib/libquipc_ulp_adapter.so \
         vendor/samsung/d2att/proprietary/lib/libwifiscanner.so:system/lib/libwifiscanner.so \
         vendor/samsung/d2att/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
-        vendor/samsung/d2att/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
         vendor/samsung/d2att/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
         vendor/samsung/d2att/proprietary/lib/libakmd.so:system/lib/libakmd.so \
         vendor/samsung/d2att/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
