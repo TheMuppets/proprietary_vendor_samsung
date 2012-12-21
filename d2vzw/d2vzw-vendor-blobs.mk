@@ -124,24 +124,4 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-        vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
-
-# Blobs necessary for drm
-PRODUCT_COPY_FILES +=  \
-    vendor/samsung/d2vzw/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
-# Proprietary VZW blobs for LTE
-
-PRODUCT_PACKAGES += \
-	VZWAPNLib \
-	vzwapnpermission \
-	VZWAPNService
-	
+        vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so	
