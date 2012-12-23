@@ -39,5 +39,5 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2r530/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
         vendor/samsung/d2r530/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
         vendor/samsung/d2r530/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-        vendor/samsung/d2r530/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \ 
+        vendor/samsung/d2r530/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
         vendor/samsung/d2r530/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so
