@@ -41,21 +41,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
-        vendor/samsung/d2-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-        vendor/samsung/d2-common/proprietary/bin/rild:system/bin/rild \
-        vendor/samsung/d2-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
-        vendor/samsung/d2-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-        vendor/samsung/d2-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-        vendor/samsung/d2-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-        vendor/samsung/d2-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
-        vendor/samsung/d2-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-        vendor/samsung/d2-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-        vendor/samsung/d2-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-        vendor/samsung/d2-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-        vendor/samsung/d2-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
-        vendor/samsung/d2-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-        vendor/samsung/d2-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-        vendor/samsung/d2-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/d2-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/d2-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \

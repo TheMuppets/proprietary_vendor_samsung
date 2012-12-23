@@ -24,5 +24,19 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
         vendor/samsung/d2att/proprietary/lib/libril.so:system/lib/libril.so \
         vendor/samsung/d2att/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+        vendor/samsung/d2att/proprietary/lib/libidl.so:system/lib/libidl.so \
+        vendor/samsung/d2att/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+        vendor/samsung/d2att/proprietary/bin/rild:system/bin/rild \
+        vendor/samsung/d2att/proprietary/lib/libqdi.so:system/lib/libqdi.so \
         vendor/samsung/d2att/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-        vendor/samsung/d2att/proprietary/lib/libidl.so:system/lib/libidl.so
+        vendor/samsung/d2att/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+        vendor/samsung/d2att/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
+        vendor/samsung/d2att/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+        vendor/samsung/d2att/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+        vendor/samsung/d2att/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
+        vendor/samsung/d2att/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+        vendor/samsung/d2att/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
+        vendor/samsung/d2att/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
+        vendor/samsung/d2att/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+        vendor/samsung/d2att/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \ 
+        vendor/samsung/d2att/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so
