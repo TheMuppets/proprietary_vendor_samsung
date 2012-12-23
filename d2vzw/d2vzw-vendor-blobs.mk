@@ -18,8 +18,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2vzw/proprietary/bin/qmiproxy:system/bin/qmiproxy \
         vendor/samsung/d2vzw/proprietary/bin/qmuxd:system/bin/qmuxd \
-        vendor/samsung/d2vzw/proprietary/bin/rild:system/bin/rild
-        vendor/samsung/d2vzw/proprietary/bin/rmt_storage:system/bin/rmt_storage
+        vendor/samsung/d2vzw/proprietary/bin/rild:system/bin/rild \
+        vendor/samsung/d2vzw/proprietary/bin/rmt_storage:system/bin/rmt_storage \
         vendor/samsung/d2vzw/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2vzw/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/d2vzw/proprietary/lib/libqmi.so:system/lib/libqmi.so \
