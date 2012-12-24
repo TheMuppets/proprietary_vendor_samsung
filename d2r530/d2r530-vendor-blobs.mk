@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2r530/proprietary/bin/rmt_storage:system/bin/rmt_storage \
         vendor/samsung/d2r530/proprietary/bin/rild:system/bin/rild \
         vendor/samsung/d2r530/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+        vendor/samsung/d2r530/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/d2r530/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/d2r530/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/d2r530/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \

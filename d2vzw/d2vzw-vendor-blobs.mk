@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
         vendor/samsung/d2vzw/proprietary/lib/libidl.so:system/lib/libidl.so \
         vendor/samsung/d2vzw/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+        vendor/samsung/d2vzw/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/d2vzw/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/d2vzw/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/d2vzw/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
