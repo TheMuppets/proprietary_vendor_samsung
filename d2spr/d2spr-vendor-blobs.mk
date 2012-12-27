@@ -19,20 +19,20 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2spr/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2spr/proprietary/bin/qmiproxy:system/bin/qmiproxy \
         vendor/samsung/d2spr/proprietary/bin/qmuxd:system/bin/qmuxd \
+        vendor/samsung/d2spr/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+        vendor/samsung/d2spr/proprietary/bin/rild:system/bin/rild \
         vendor/samsung/d2spr/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/d2spr/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+        vendor/samsung/d2spr/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+        vendor/samsung/d2spr/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/d2spr/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
         vendor/samsung/d2spr/proprietary/lib/libril.so:system/lib/libril.so \
         vendor/samsung/d2spr/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
         vendor/samsung/d2spr/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-        vendor/samsung/d2spr/proprietary/lib/libidl.so:system/lib/libidl.so \
-        vendor/samsung/d2spr/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-        vendor/samsung/d2spr/proprietary/bin/rild:system/bin/rild \
-        vendor/samsung/d2spr/proprietary/lib/libqdi.so:system/lib/libqdi.so \
-        vendor/samsung/d2spr/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/d2spr/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/d2spr/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/d2spr/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+        vendor/samsung/d2spr/proprietary/lib/libidl.so:system/lib/libidl.so \
         vendor/samsung/d2spr/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
         vendor/samsung/d2spr/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
         vendor/samsung/d2spr/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \

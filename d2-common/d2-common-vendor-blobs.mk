@@ -23,24 +23,32 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
         vendor/samsung/d2-common/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2-common/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
+        vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-        vendor/samsung/d2-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-        vendor/samsung/d2-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+        vendor/samsung/d2-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
         vendor/samsung/d2-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-        vendor/samsung/d2-common/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+        vendor/samsung/d2-common/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
         vendor/samsung/d2-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+        vendor/samsung/d2-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+        vendor/samsung/d2-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/d2-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
@@ -92,10 +100,4 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-        vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-        vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        vendor/samsung/d2-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-        vendor/samsung/d2-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-        vendor/samsung/d2-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-        vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so	
+        vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
