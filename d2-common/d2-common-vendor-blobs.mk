@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2-common/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2-common/proprietary/bin/sec-ril:system/bin/sec-ril \
+        vendor/samsung/d2-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
         vendor/samsung/d2-common/proprietary/bin/qmuxd:system/bin/qmuxd \
         vendor/samsung/d2-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
         vendor/samsung/d2-common/proprietary/bin/rild:system/bin/rild \
