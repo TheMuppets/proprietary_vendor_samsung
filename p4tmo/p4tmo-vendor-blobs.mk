@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4tmo/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/samsung/p4tmo/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
     vendor/samsung/p4tmo/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
-    vendor/samsung/p4tmo/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
     vendor/samsung/p4tmo/proprietary/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
     vendor/samsung/p4tmo/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/samsung/p4tmo/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
@@ -62,9 +61,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4tmo/proprietary/lib/hw/lights.p3.so:system/lib/hw/lights.p3.so \
     vendor/samsung/p4tmo/proprietary/lib/hw/sensors.p3.so:system/lib/hw/sensors.p3.so \
     vendor/samsung/p4tmo/proprietary/lib/libakm.so:system/lib/libakm.so \
-    vendor/samsung/p4tmo/proprietary/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
     vendor/samsung/p4tmo/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    vendor/samsung/p4tmo/proprietary/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
     vendor/samsung/p4tmo/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/samsung/p4tmo/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
     vendor/samsung/p4tmo/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
@@ -118,8 +115,6 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4tmo/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/samsung/p4tmo/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/samsung/p4tmo/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
-    vendor/samsung/p4tmo/proprietary/lib/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
-    vendor/samsung/p4tmo/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     vendor/samsung/p4tmo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p4tmo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p4tmo/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
