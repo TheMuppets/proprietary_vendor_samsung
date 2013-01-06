@@ -34,7 +34,8 @@ PRODUCT_PACKAGES := \
     libWVStreamControlAPI_L1 \
     sirfgps \
     VZWAPNLib \
-    VZWAPNService
+    VZWAPNService \
+    CellBroadcastReceiver
 
 # Disabled PRODUCT_PACKAGES
 #    SDM #Samsung software update
