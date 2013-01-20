@@ -19,24 +19,4 @@ ifeq ($(TARGET_DEVICE), i815)
 
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsamsungril
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libril.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsecril-client
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libsecril-client.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
 endif
