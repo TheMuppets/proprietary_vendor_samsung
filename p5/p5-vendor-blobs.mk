@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p5/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/p5/proprietary/bin/gps.cer:system/bin/gps.cer \
     vendor/samsung/p5/proprietary/bin/macloader:system/bin/macloader \
+    vendor/samsung/p5/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/p5/proprietary/bin/tegrastats:system/bin/tegrastats \
     vendor/samsung/p5/proprietary/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt \
     vendor/samsung/p5/proprietary/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt \
@@ -116,6 +117,8 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p5/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/samsung/p5/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/samsung/p5/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
+    vendor/samsung/p5/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/p5/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/p5/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p5/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p5/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
