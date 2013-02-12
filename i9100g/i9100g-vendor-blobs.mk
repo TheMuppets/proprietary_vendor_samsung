@@ -20,6 +20,9 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4330B1.hcd:system/bin/bcm4330B1.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
     $(LOCAL_PATH)/proprietary/system/bin/fRom:system/bin/fRom \
@@ -50,8 +53,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmllite.so:system/lib/libmllite.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
