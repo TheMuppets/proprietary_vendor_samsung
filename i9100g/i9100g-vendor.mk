@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
 # limitations under the License.
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/samsung/i9100g/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/samsung/i9100g/overlay
 
 $(call inherit-product, vendor/samsung/i9100g/i9100g-vendor-blobs.mk)
-

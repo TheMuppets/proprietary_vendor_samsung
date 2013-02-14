@@ -15,7 +15,7 @@ ag0=253
 ag1=255
 aa2g=1
 aa5g=1
-ccode=MY
+ccode=CN
 
 btc_params80=0
 btc_params6=10
