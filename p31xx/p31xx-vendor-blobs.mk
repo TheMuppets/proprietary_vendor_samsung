@@ -18,7 +18,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/bin/dock_kbd_attach:system/bin/dock_kbd_attach \
     $(LOCAL_PATH)/common/system/bin/geomagneticd:system/bin/geomagneticd \
     $(LOCAL_PATH)/common/system/bin/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/common/system/bin/orientationd:system/bin/orientationd
+    $(LOCAL_PATH)/common/system/bin/orientationd:system/bin/orientationd \
+    $(LOCAL_PATH)/common/system/bin/smc.ini:system/bin/smc.ini \
+    $(LOCAL_PATH)/common/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
