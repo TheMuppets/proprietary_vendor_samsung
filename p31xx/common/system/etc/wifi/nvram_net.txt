@@ -1,4 +1,3 @@
-#SS 4330F B2 WLBGA Espresso Rev02 02/09/2012
 manfid=0x2d0
 prodid=0x0547
 vendid=0x14e4
@@ -16,22 +15,22 @@ aa2g=1
 ccode=GB
 
 pa0itssit=0x20
-#pa0b0=0x1516
-#pa0b1=0xFD95
+pa0b0=0x1496
+pa0b1=0xFDA8
+pa0b2=0xFF66
+#pa0b0=0x1596
+#pa0b1=0xFD8B
 #pa0b2=0xFF66
-pa0b0=0x1568
-pa0b1=0xFD93
-pa0b2=0xFF69
 rssismf2g=0xa
 rssismc2g=0x3
 rssisav2g=0x7
 
 
 #2.4G Max Power and Offsets
-maxp2ga0=66
-ofdm2gpo=0x55555555
-mcs2gpo0=0x9999
-mcs2gpo1=0x9999
+maxp2ga0=62
+ofdm2gpo=0x11111111
+mcs2gpo0=0x1111
+mcs2gpo1=0x1111
 
 
 sromrev=3

@@ -20,6 +20,9 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/p3100/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/p3100/sbin/cbd:root/sbin/cbd
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/p3100/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/p3100/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/p3100/system/lib/libsecril-client.so:system/lib/libsecril-client.so

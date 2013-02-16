@@ -15,9 +15,12 @@
 LOCAL_PATH := vendor/samsung/p51xx
 
 # Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/p5100/system/lib/libril.so:obj/lib/libril.so \
     $(LOCAL_PATH)/p5100/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/p5100/sbin/cbd:root/sbin/cbd
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/p5100/system/lib/libril.so:system/lib/libril.so \
