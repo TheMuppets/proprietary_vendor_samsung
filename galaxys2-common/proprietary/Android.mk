@@ -17,16 +17,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter i777 i9100 n7000 d710 r760,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libTVOut
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libTVOut.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libUMP
 LOCAL_MODULE_OWNER := samsung
 LOCAL_SRC_FILES := system/lib/libUMP.so
@@ -50,26 +40,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libfimc
 LOCAL_MODULE_OWNER := samsung
 LOCAL_SRC_FILES := system/lib/libfimc.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libhdmi
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libhdmi.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libhdmiclient
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libhdmiclient.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
