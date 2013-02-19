@@ -14,14 +14,11 @@ macaddr=00:90:4c:c5:12:38
 ag0=252
 ag1=255
 aa2g=1
-ccode=ALL
+ccode=GB
 
 btc_params80=0
 btc_params6=10
 btc_params8=10000
-
-sd_gpout=0
-sd_oobonly=1
 
 # 2G PA para B42G_R08_110729
 pa0b0=0x14CF
@@ -110,3 +107,4 @@ tssitime=1
 swctrlmap_2g=0x84048404, 0x82028202, 0x84048404, 0x010202, 0x1ff
 swctrlmap_5g=0xC040C040, 0xB030A020, 0xA020C040, 0x010A02, 0x2F8
 
+muxenab=0x10

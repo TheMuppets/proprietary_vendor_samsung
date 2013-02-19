@@ -14,19 +14,16 @@ macaddr=00:90:4c:c5:12:38
 ag0=252
 ag1=255
 aa2g=1
-ccode=ALL
+ccode=GB
 
 btc_params80=0
 btc_params6=10
 btc_params8=10000
 
-sd_gpout=0
-sd_oobonly=1
-
-# 2G PA para B42G_R08_110729
-pa0b0=0x14CF
-pa0b1=0xFD9F
-pa0b2=0xFF6D
+# 2G PA para B42H_120405
+pa0b0=0x1442
+pa0b1=0xFD9B
+pa0b2=0xFF50
 #pa0itssit=62
 rssismf2g=0xa
 rssismc2g=0x3
@@ -50,18 +47,18 @@ pa1hib0=6015
 pa1hib1=64782
 pa1hib2=65321
 
-# 2G PA offset B42G_R08_110825
+# 2G PA offset B42G_R08_110729
 maxp2ga0=80
 sromrev=3
 cckpo=0
-ofdm2gpo=0x66666666
-mcs2gpo0=0x8888
-mcs2gpo1=0x8888
+ofdm2gpo=0x55555555
+mcs2gpo0=0x6666
+mcs2gpo1=0x6666
 
-# 5G PA offset B42G_R08_110825
-maxp5ga0=66
-maxp5gla0=66
-maxp5gha0=66
+# 5G PA offset B42G_R08_110729
+maxp5ga0=70
+maxp5gla0=70
+maxp5gha0=70
 ofdm5gpo=0x00000000
 ofdm5glpo=0x11111111
 ofdm5ghpo=0x11111111
@@ -73,20 +70,20 @@ mcs5ghpo0=0x3333
 mcs5ghpo1=0x3333
 
 cckPwrOffset=4
-cckdigfilttype=21
+cckdigfilttype=20
 ofdmdigfilttype=2
 extpagain5g=2
 #wl0id=0x431b
 
 # For 2GHz Tx EVM/SM
 rfreg033=0x19
-rfreg033_cck=0x1f
+rfreg033_cck=0x3f
 pacalidx2g=65
 dacrate2g=160
 txalpfbyp2g=1
 bphyscale=17
 
-#5GHz LOFT and IQ CAL
+# 5GHz LOFT and IQ CAL
 txgaintbl5g=1
 txiqlopapu5g=1
 txiqlopag5g=0x10
@@ -103,10 +100,29 @@ noise_cal_enable_2g=1
 
 # Max input level on a-band
 triso5g=1
+tridx5g=1
 
 # Tx power control, especially temp.
 tssitime=1
 
+# fc+1.7GHz Spur Elimination
+loidacmode5g=1
+
+# Power control for the most optimal value
+initxidx5g=96
+
+# Turns on code to dynamically calcuate the gain
+pacalath2g=192
+
+# Used AM-AM-threshold
+pacalidx2g1=55
+
+# 2GHz LOFT and IQ CAL
+txiqlopapu2g=1
+txiqlopag2g=0x10
+iqlocalidxg=96
+
 swctrlmap_2g=0x84048404, 0x82028202, 0x84048404, 0x010202, 0x1ff
 swctrlmap_5g=0xC040C040, 0xB030A020, 0xA020C040, 0x010A02, 0x2F8
 
+muxenab=0x10
