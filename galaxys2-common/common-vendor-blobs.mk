@@ -14,7 +14,6 @@
 
 PRODUCT_PACKAGES += \
 	libfimc \
-	libsecion \
 	libUMP
 
 LOCAL_PATH := vendor/samsung/galaxys2-common
@@ -43,7 +42,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfimc.so:system/lib/libfimc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecion.so:system/lib/libsecion.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
 
 PRODUCT_COPY_FILES += \
