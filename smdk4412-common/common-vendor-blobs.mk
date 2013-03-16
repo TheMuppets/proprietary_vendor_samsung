@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334_semcosh.hcd:system/bin/bcm4334_semcosh.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
     $(LOCAL_PATH)/proprietary/system/bin/gps.cer:system/bin/gps.cer \
-    $(LOCAL_PATH)/proprietary/system/bin/hostapd:system/bin/hostapd \
     $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
     $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm
 
