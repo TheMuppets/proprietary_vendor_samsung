@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4210-tab/props/system/lib/libhdmi.so:system/lib/libhdmi.so \
     vendor/samsung/smdk4210-tab/props/vendor/firmware/mfc_fw.bin:root/vendor/firmware/mfc_fw.bin \
     vendor/samsung/smdk4210-tab/props/system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin \
-    vendor/samsung/smdk4210-tab/props/system/lib/libsecion.so:system/lib/libsecion.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libmllite.so:system/lib/libmllite.so \
     vendor/samsung/smdk4210-tab/props/system/lib/libwvm.so:system/lib/libwvm.so \
