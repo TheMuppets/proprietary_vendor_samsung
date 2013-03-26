@@ -53,19 +53,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
     $(LOCAL_PATH)/proprietary/system/lib/liblvverx.so:system/lib/liblvverx.so \
     $(LOCAL_PATH)/proprietary/system/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(LOCAL_PATH)/proprietary/system/lib/libloc_ext.so:system/lib/libloc_ext.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libgps.so:system/lib/libgps.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libgps.utils.so:system/lib/libgps.utils.so \
     $(LOCAL_PATH)/proprietary/system/lib/liblvvetx.so:system/lib/liblvvetx.so \
     $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/camera.smdk4x12.so:system/lib/hw/vendor-camera.exynos4.so \
