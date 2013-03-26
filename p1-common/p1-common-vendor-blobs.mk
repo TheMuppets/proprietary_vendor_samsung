@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
 # GPU
 PRODUCT_COPY_FILES += \
     vendor/samsung/p1-common/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/p1-common/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/p1-common/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/p1-common/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/p1-common/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
