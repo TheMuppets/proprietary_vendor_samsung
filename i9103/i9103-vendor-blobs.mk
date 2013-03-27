@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 
 # HAL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/lib/hw/vendor-camera.tegra.so:system/lib/hw/vendor-camera.tegra.so \
+    vendor/samsung/i9103/proprietary/system/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
@@ -171,40 +171,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9103/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
     vendor/samsung/i9103/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so
 
-# IDC files
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/usr/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-    vendor/samsung/i9103/proprietary/system/usr/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
-
-# Keychars
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/usr/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
-    vendor/samsung/i9103/proprietary/system/usr/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-    vendor/samsung/i9103/proprietary/system/usr/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
-    vendor/samsung/i9103/proprietary/system/usr/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
-
 # Keylayout
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Bluetooth_00_06_66_42.kl:system/usr/keylayout/Bluetooth_00_06_66_42.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_044f_Product_d007.kl:system/usr/keylayout/Vendor_044f_Product_d007.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_045e_Product_0719.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c21d.kl:system/usr/keylayout/Vendor_046d_Product_c21d.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c21f.kl:system/usr/keylayout/Vendor_046d_Product_c21f.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
-    vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_057e_Product_0306.kl:system/usr/keylayout/Vendor_057e_Product_0306.kl \
     vendor/samsung/i9103/proprietary/system/usr/keylayout/Vendor_2378_Product_100a.kl:system/usr/keylayout/Vendor_2378_Product_100a.kl
 
