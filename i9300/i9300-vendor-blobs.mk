@@ -15,13 +15,13 @@
 LOCAL_PATH := vendor/samsung/i9300
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
+    $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd
+#    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
+#    $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/camera.smdk4x12.so:system/lib/hw/vendor-camera.exynos4.so \
