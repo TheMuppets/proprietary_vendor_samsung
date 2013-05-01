@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p1-common/proprietary/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
+    vendor/samsung/p1-common/proprietary/BCM4329B1.hcd:system/vendor/firmware/BCM4329B1.hcd
 
 # TVout
 PRODUCT_COPY_FILES += \
