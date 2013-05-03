@@ -23,17 +23,10 @@ PRODUCT_COPY_FILES += \
 # Proprietary files
 PRODUCT_COPY_FILES += \
 	vendor/samsung/hercules/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
-	vendor/samsung/hercules/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
+	vendor/samsung/hercules/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 	vendor/samsung/hercules/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
 	vendor/samsung/hercules/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-	vendor/samsung/hercules/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/hercules/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-	vendor/samsung/hercules/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-	vendor/samsung/hercules/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/hercules/proprietary/bin/mpdecision:system/bin/mpdecision \
-	vendor/samsung/hercules/proprietary/bin/port-bridge:system/bin/port-bridge \
-	vendor/samsung/hercules/proprietary/bin/usbhub:system/bin/usbhub \
-	vendor/samsung/hercules/proprietary/bin/usbhub_init:system/bin/usbhub_init \
 	vendor/samsung/hercules/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
 	vendor/samsung/hercules/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
 	vendor/samsung/hercules/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -76,13 +69,16 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hercules/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
 	vendor/samsung/hercules/proprietary/lib/libidl.so:system/lib/libidl.so \
 	vendor/samsung/hercules/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+	vendor/samsung/hercules/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+	vendor/samsung/hercules/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+	vendor/samsung/hercules/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+	vendor/samsung/hercules/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+	vendor/samsung/hercules/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/hercules/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-	vendor/samsung/hercules/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	vendor/samsung/hercules/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
 	vendor/samsung/hercules/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
-	vendor/samsung/hercules/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	vendor/samsung/hercules/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
-	vendor/samsung/hercules/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+	vendor/samsung/hercules/proprietary/lib/librpc.so:system/lib/librpc.so \
+	vendor/samsung/hercules/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
 	vendor/samsung/hercules/proprietary/lib/libakm.so:system/lib/libakm.so \
 	vendor/samsung/hercules/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
 	vendor/samsung/hercules/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -94,17 +90,13 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hercules/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/hercules/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/hercules/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-	vendor/samsung/hercules/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-	vendor/samsung/hercules/proprietary/etc/wifi/wl:system/etc/wifi/wl \
+	vendor/samsung/hercules/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
 	vendor/samsung/hercules/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 	vendor/samsung/hercules/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/samsung/hercules/proprietary/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-	vendor/samsung/hercules/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-	vendor/samsung/hercules/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
+	vendor/samsung/hercules/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+	vendor/samsung/hercules/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/hercules/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
 	vendor/samsung/hercules/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-	vendor/samsung/hercules/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
-	vendor/samsung/hercules/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	vendor/samsung/hercules/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
 	vendor/samsung/hercules/proprietary/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
 	vendor/samsung/hercules/proprietary/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
 	vendor/samsung/hercules/proprietary/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
@@ -114,4 +106,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hercules/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
 	vendor/samsung/hercules/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/hercules/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-	vendor/samsung/hercules/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+	vendor/samsung/hercules/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+	vendor/samsung/hercules/proprietary/bin/thermald:system/bin/thermald \
+	vendor/samsung/hercules/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+	vendor/samsung/hercules/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+	vendor/samsung/hercules/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
+	vendor/samsung/hercules/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so
