@@ -1,0 +1,106 @@
+# bcm94335wlcspMS_ES42_RC171p6_12082012_TM_aft_Cal.txt -- 12/08/2012 by Broadcom Corporation
+# Use with AARDVARK_REL_6_30_171_6 -- Murata BCM4335 WLCSP 11AC Module ES4.2
+# Sample variables file for Murata Type-XJ ES4.2
+NVRAMRev=$Rev: 366780 $
+sromrev=11
+#boardrev updated from 0x1100
+boardrev=0x1305
+boardtype=0x064b
+boardflags=0x10401001
+boardflags2=0x0
+#boardflags3 changes
+boardflags3=0x8b
+macaddr=00:90:4c:c5:12:38
+subband5gver=4
+ccode=US
+regrev=0
+antswitch=0
+pdgain5g=1
+pdgain2g=1
+tworangetssi2g=0
+tworangetssi5g=0
+femctrl=4
+vendid=0x14e4
+devid=0x43ae
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=502
+xtalfreq=37400
+extpagain2g=1
+extpagain5g=1
+rxgains2gelnagaina0=2
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+#rxgains5gelnagaina0 2->3
+rxgains5gelnagaina0=3
+rxgains5gtrisoa0=5
+rxgains5gtrelnabypa0=1
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+tssipos5g=1
+tssipos2g=1
+#PA parameters (2G20M/2G40M/5G20M/5G40M/5G80M)
+pa2ga0=0xff3d,0x19e8,0xfce4
+pa2ga1=-208,6009,-745
+pa5ga0=0xff4a,0x19ed,0xfcdb,0xff51,0x1a0c,0xfcdb,0xff5d,0x1a73,0xfcda,0xff71,0x1a99,0xfce3
+pa5ga1=0xff49,0x1a5a,0xfcce,0xff51,0x1ab3,0xfcc7,0xff60,0x1aa8,0xfcd7,0xff60,0x1a9d,0xfccf
+pa5ga2=0xff3f,0x19f4,0xfcca,0xff4f,0x1a7e,0xfccd,0xff56,0x1a4a,0xfcd8,0xff5b,0x199f,0xfcf1
+#pa2ga0=0xff68,0x199a,0xfd16
+#pa5ga0=0xff87,0x1787,0xfd5f,0xffbc,0x18bb,0xfd74,0xffcc,0x17da,0xfd9a,0xff67,0x14ab,0xfd77 
+pdoffsetcckma0=0x000e
+pdoffset40ma0=0
+# No need from the version (Offset for 80MHz -> -1dB
+pdoffset80ma0=0
+# Default Target Power for 2G -- 17dBm(11)/14dBm(54)/13dBm(MCS7,MCS8)/16dBm(6,MCS0)
+maxp2ga0=74
+cckbw202gpo=0
+cckbw20ul2gpo=0
+dot11agofdmhrbw202gpo=0x6666
+ofdmlrbw202gpo=0x0022
+mcsbw202gpo=0x88866662
+# Default Target Power for 5G -- 14dBm(54)/13dBm(HT20-MCS7,VHT20-MCS8)/12dBm(HT40-MCS7,VHT40-MCS9)/11dBm(VHT80-MCS8/MCS9)/16dBm(6,20HT-MCS0)
+maxp5ga0=74,74,74,74
+# Low
+mcslr5glpo=0
+mcsbw205glpo=0xA8866662
+mcsbw405glpo=0xAAA66664
+mcsbw805glpo=0xCCA66664
+# Mid
+mcslr5gmpo=0
+mcsbw205gmpo=0xA8866662
+mcsbw405gmpo=0xAAA66664
+mcsbw805gmpo=0xCCA66664
+# High
+mcslr5ghpo=0
+mcsbw205ghpo=0xA8866662
+mcsbw405ghpo=0xAAA66664
+mcsbw805ghpo=0xCCA66664
+sb20in40hrrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb40and80lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb40and80lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb40and80lr5ghpo=0x0
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+#cckdigfilttype[0-7] 0:default
+cckdigfilttype=2
+#femtable
+femtable2=0x00FF1600
+femtable1=0x40042200
+femtable0=0x80814010
+#GPIO 0 for SDIO HW OOB interruption
+muxenab=0x10
+#sd_gpout=0
+#sd_oobonly=1
