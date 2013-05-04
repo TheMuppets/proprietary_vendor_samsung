@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/jf-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
         vendor/samsung/jf-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-        vendor/samsung/jf-common/proprietary/lib/hw/nfc_nci.MSM8960.so:system/lib/hw/nfc_nci.MSM8960.so \
         vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
         vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
         vendor/samsung/jf-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
