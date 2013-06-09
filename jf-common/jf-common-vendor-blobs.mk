@@ -164,7 +164,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
         vendor/samsung/jf-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
         vendor/samsung/jf-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
-        vendor/samsung/jf-common/proprietary/bin/macloader:system/bin/macloader \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_apsta.bin_a0:system/etc/wifi/bcmdhd_apsta.bin_a0 \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
