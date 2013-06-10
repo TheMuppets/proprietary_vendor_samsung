@@ -119,7 +119,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
         vendor/samsung/d2-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
         vendor/samsung/d2-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-        vendor/samsung/d2-common/proprietary/bin/macloader:system/bin/macloader \
         vendor/samsung/d2-common/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
         vendor/samsung/d2-common/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
         vendor/samsung/d2-common/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
