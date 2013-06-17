@@ -61,9 +61,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/samsung/p4/proprietary/lib/hw/lights.p3.so:system/lib/hw/lights.p3.so \
     vendor/samsung/p4/proprietary/lib/hw/sensors.p3.so:system/lib/hw/sensors.p3.so \
-    vendor/samsung/p4/proprietary/lib/lib_Samsung_Acoustic_Module_Llite.so:system/lib/lib_Samsung_Acoustic_Module_Llite.so \
     vendor/samsung/p4/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    vendor/samsung/p4/proprietary/lib/lib_Samsung_Sound_Booster.so:system/lib/lib_Samsung_Sound_Booster.so \
     vendor/samsung/p4/proprietary/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/p4/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/samsung/p4/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
@@ -118,8 +116,6 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/samsung/p4/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/samsung/p4/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
-    vendor/samsung/p4/proprietary/lib/libsamsungAcousticeq.so:system/lib/libsamsungAcousticeq.so \
-    vendor/samsung/p4/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     vendor/samsung/p4/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p4/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p4/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
