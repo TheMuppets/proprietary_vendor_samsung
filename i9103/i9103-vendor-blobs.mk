@@ -16,8 +16,7 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/i9103/proprietary/system/lib/libril.so:obj/lib/libril.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/i9103/proprietary/system/lib/libril.so:obj/lib/libril.so
 
 # CBD
 PRODUCT_COPY_FILES += \
@@ -25,7 +24,7 @@ PRODUCT_COPY_FILES += \
 
 # HAL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
+    vendor/samsung/i9103/proprietary/system/lib/hw/vendor-camera.tegra.so:system/lib/hw/vendor-camera.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/samsung/i9103/proprietary/system/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
@@ -43,8 +42,7 @@ PRODUCT_COPY_FILES += \
 # RIL files
 PRODUCT_COPY_FILES += \
     vendor/samsung/i9103/proprietary/system/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/i9103/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -130,32 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9103/proprietary/system/etc/firmware/nvmm_wmaprodec.axf:system/etc/firmware/nvmm_wmaprodec.axf \
     vendor/samsung/i9103/proprietary/system/etc/firmware/nvrm_avp.bin:system/etc/firmware/nvrm_avp.bin
 
-# OMX
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxcore.so:system/lib/libsomxcore.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxaace.so:system/lib/libsomxaace.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxac3d.so:system/lib/libsomxac3d.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/lib/libsavsac.so:system/lib/libsavsac.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsavscmn.so:system/lib/libsavscmn.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsavsff.so:system/lib/libsavsff.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsAMRWB.so:system/lib/libsAMRWB.so \
-    vendor/samsung/i9103/proprietary/system/lib/libsthmb.so:system/lib/libsthmb.so
-
 PRODUCT_COPY_FILES += \
     vendor/samsung/i9103/proprietary/system/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so
 
@@ -163,13 +135,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/i9103/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/i9103/proprietary/system/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
-
-# TVOut
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i9103/proprietary/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    vendor/samsung/i9103/proprietary/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
-    vendor/samsung/i9103/proprietary/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
-    vendor/samsung/i9103/proprietary/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so
 
 # Keylayout
 PRODUCT_COPY_FILES += \
