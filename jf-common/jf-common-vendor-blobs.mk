@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-        vendor/samsung/jf-common/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh \
         vendor/samsung/jf-common/proprietary/bin/thermald:system/bin/thermald \
         vendor/samsung/jf-common/proprietary/etc/thermald-8064.conf:system/etc/thermald-8064.conf \
         vendor/samsung/jf-common/proprietary/etc/thermald-8930.conf:system/etc/thermald-8930.conf \
@@ -39,12 +38,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
         vendor/samsung/jf-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/jf-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-        vendor/samsung/jf-common/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
         vendor/samsung/jf-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
         vendor/samsung/jf-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
         vendor/samsung/jf-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/jf-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
-        vendor/samsung/jf-common/proprietary/lib/libllvm-arm.so:system/lib/libllvm-arm.so \
         vendor/samsung/jf-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/jf-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/jf-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
@@ -58,8 +55,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-        vendor/samsung/jf-common/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-        vendor/samsung/jf-common/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/jf-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
         vendor/samsung/jf-common/proprietary/bin/efsks:system/bin/efsks \
@@ -77,19 +72,19 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/jf-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
         vendor/samsung/jf-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-        vendor/samsung/jf-common/proprietary/lib/libidl.so:system/lib/libidl.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
         vendor/samsung/jf-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
         vendor/samsung/jf-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
         vendor/samsung/jf-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
         vendor/samsung/jf-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
-        vendor/samsung/jf-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
         vendor/samsung/jf-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
         vendor/samsung/jf-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
@@ -173,7 +168,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_a0:system/etc/wifi/nvram_mfg.txt_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_murata_a0:system/etc/wifi/nvram_mfg.txt_murata_a0 \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_muratafem1:system/etc/wifi/nvram_mfg.txt_muratafem1 \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_muratafem2:system/etc/wifi/nvram_mfg.txt_muratafem2 \
@@ -182,7 +176,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_semcosh:system/etc/wifi/nvram_mfg.txt_semcosh \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_a0:system/etc/wifi/nvram_net.txt_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_murata_a0:system/etc/wifi/nvram_net.txt_murata_a0 \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_muratafem1:system/etc/wifi/nvram_net.txt_muratafem1 \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_muratafem2:system/etc/wifi/nvram_net.txt_muratafem2 \
@@ -192,7 +185,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
         vendor/samsung/jf-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
         vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-        vendor/samsung/jf-common/proprietary/bin/scranton_RD:system/bin/scranton_RD \
         vendor/samsung/jf-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
         vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
         vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
