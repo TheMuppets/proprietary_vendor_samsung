@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
         vendor/samsung/jf-common/proprietary/bin/thermald:system/bin/thermald \
+        vendor/samsung/jf-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
@@ -26,8 +27,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
-        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_anc.bin:etc/firmware/wcd9310/wcd9310_anc.bin \
-        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_mbhc.bin:etc/firmware/wcd9310/wcd9310_mbhc.bin \
+        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_anc.bin:system/etc/firmware/wcd9310/wcd9310_anc.bin \
+        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_mbhc.bin:system/etc/firmware/wcd9310/wcd9310_mbhc.bin \
         vendor/samsung/jf-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/jf-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
