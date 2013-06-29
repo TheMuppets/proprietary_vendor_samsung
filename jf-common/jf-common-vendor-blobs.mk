@@ -29,6 +29,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
+        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_anc.bin:etc/firmware/wcd9310/wcd9310_anc.bin \
+        vendor/samsung/jf-common/proprietary/etc/firmware/wcd9310/wcd9310_mbhc.bin:etc/firmware/wcd9310/wcd9310_mbhc.bin \
         vendor/samsung/jf-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/jf-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
