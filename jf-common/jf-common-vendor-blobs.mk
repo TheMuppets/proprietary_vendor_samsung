@@ -17,9 +17,6 @@
 PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
         vendor/samsung/jf-common/proprietary/bin/thermald:system/bin/thermald \
-        vendor/samsung/jf-common/proprietary/etc/thermald-8064.conf:system/etc/thermald-8064.conf \
-        vendor/samsung/jf-common/proprietary/etc/thermald-8930.conf:system/etc/thermald-8930.conf \
-        vendor/samsung/jf-common/proprietary/etc/thermald-8960.conf:system/etc/thermald-8960.conf \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
