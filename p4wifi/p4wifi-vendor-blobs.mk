@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvmm_wmaprodec.axf:system/etc/firmware/nvmm_wmaprodec.axf \
     vendor/samsung/p4wifi/proprietary/etc/firmware/nvrm_avp.bin:system/etc/firmware/nvrm_avp.bin \
     vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/p4wifi/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/p4wifi/proprietary/etc/wifi/wl:system/etc/wifi/wl \
     vendor/samsung/p4wifi/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/samsung/p4wifi/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
