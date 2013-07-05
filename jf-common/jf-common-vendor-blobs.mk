@@ -72,25 +72,23 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/jf-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
         vendor/samsung/jf-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+        vendor/samsung/jf-common/proprietary/lib/libidl.so:system/lib/libidl.so \
         vendor/samsung/jf-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
         vendor/samsung/jf-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
         vendor/samsung/jf-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
         vendor/samsung/jf-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmiservices.so:system//lib/libqmiservices.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
+        vendor/samsung/jf-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
         vendor/samsung/jf-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
         vendor/samsung/jf-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/jf-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
-        vendor/samsung/jf-common/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-        vendor/samsung/jf-common/proprietary/lib/libril.so:system/lib/libril.so \
         vendor/samsung/jf-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
         vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
