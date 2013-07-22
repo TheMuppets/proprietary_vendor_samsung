@@ -78,13 +78,13 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
         vendor/samsung/jf-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmiservices.so:system//lib/libqmiservices.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
         vendor/samsung/jf-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+        vendor/samsung/jf-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/jf-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
         vendor/samsung/jf-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
@@ -192,5 +192,5 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
         vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
         vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-        vendor/samsung/jf-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so
+        vendor/samsung/jf-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so
