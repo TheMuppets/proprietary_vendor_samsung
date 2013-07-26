@@ -40,8 +40,8 @@ PRODUCT_COPY_FILES += \
 
 # RIL files
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i927/proprietary/libsec-ril.so:system/lib/libsec-ril.so 
-#    vendor/samsung/i927/proprietary/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/i927/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/i927/proprietary/libsecril-client.so:system/lib/libsecril-client.so
 #    vendor/samsung/i927/proprietary/libril.so:system/lib/libril.so \
 
 
