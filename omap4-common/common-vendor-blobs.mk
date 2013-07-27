@@ -14,6 +14,11 @@
 
 LOCAL_PATH := vendor/samsung/omap4-common
 
+PRODUCT_PACKAGES += \
+	gralloc.omap4430 \
+	gralloc.omap4460 \
+	gralloc.omap4470
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/powervr.ini:system/etc/powervr.ini \
     $(LOCAL_PATH)/proprietary/system/vendor/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
