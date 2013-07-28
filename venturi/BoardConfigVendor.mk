@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,5 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#BOARD_GPS_LIBRARIES := libgps
+
 USE_CAMERA_STUB := false
+
 BOARD_USES_GENERIC_AUDIO := false
+
+BOARD_USES_LIBSECRIL_STUB := false
+
+BOARD_NO_PAGE_FLIPPING := false
+BOARD_NO_32BPP := false
