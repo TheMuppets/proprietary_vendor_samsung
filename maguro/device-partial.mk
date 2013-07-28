@@ -20,6 +20,8 @@ PRODUCT_PACKAGES := \
     libsecril-client \
     ducati-m3 \
     libdrmwvmplugin \
+    libfrsdk \
+    libwvdrmengine \
     libWVStreamControlAPI_L1 \
     libwvdrm_L1 \
     libwvm \
