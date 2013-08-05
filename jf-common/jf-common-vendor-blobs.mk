@@ -40,6 +40,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/jf-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
         vendor/samsung/jf-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+        vendor/samsung/jf-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+        vendor/samsung/jf-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/jf-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
