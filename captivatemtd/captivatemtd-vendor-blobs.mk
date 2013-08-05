@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/captivatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/captivatemtd/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/captivatemtd/proprietary/gps.aries.so:system/vendor/lib/hw/gps.aries.so \
+    vendor/samsung/captivatemtd/proprietary/Certification.cer:system/vendor/bin/Certification.cer \
     vendor/samsung/captivatemtd/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/captivatemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/captivatemtd/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
