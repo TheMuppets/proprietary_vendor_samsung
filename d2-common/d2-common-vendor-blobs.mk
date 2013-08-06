@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
