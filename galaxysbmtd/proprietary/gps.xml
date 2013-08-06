@@ -2,11 +2,12 @@
 <glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
   <!--HAL Confguration  -->
   <hal 
-	   acPortName="/dev/s3c2410_serial1" lBaudRate="115200"  cLogEnabled="false" cLogEnableInitState="false" acLogDirectory="/data/gps/log/" ltoFileName="lto2.dat" 
-       enhanced-assisted="false" cp-enhanced-assisted="true" TISEnabled="false" RILEnabled="true" LPmode="false" cp-cold-start="false" cp-guard-time-sec="2"
-       arp-supl-enable="true" arp-supl-cap-msb="true" arp-supl-cap-msa="true" arp-supl-cap-ecid="false"
-	   acSuplServer="supl.google.com" SuplPort="7276"
-       LbsEnable="true" LbsLocal="false" LbsServer="bcmls2.glpals.com" LbsPort="7275" LbsSyncLto="true" LbsSyncCells="true" LbsWlanEnable="false"       
+	   acPortName="/dev/s3c2410_serial1" lBaudRate="115200"  cLogEnabled="false" acLogDirectory="/data/gps/log/" ltoFileName="lto2.dat" 
+       enhanced-assisted="false" cp-enhanced-assisted="true" TISEnabled="true" RILEnabled="true" LPmode="false" cp-cold-start="false" cp-guard-time-sec="1"
+       arp-supl-enable="true" arp-supl-cap-msb="true" arp-supl-cap-msa="true" arp-supl-cap-ecid="false" arp-supl-reaiding-time-sec="1200"
+	   acSuplServer="supl.google.com" SuplPort="7276" tlsCertPath="/system/vendor/bin/Certification.cer"
+       LbsEnable="true" LbsLocal="false" LbsServer="bcmls2.glpals.com" LbsPort="7275" LbsSyncTimeSec = "60" LbsSyncLto="true" LbsSyncCells="true"
+       LbsGetGpsAssistance="true"
        LbsSyncLtoThresholdDays="3"
        gpioNStdbyPath="/sys/class/sec/gps/GPS_PWR_EN/value"
        gpioNResetPath="/sys/class/sec/gps/GPS_nRST/value"
@@ -33,8 +34,10 @@
        LogFacMask="LOG_GLLAPI | LOG_DEVIA | LOG_NMEA | LOG_RAWDATA | LOG_DEVMS | LOG_ASIC_IO | LOG_BBTEST | LOG_DEVET | LOG_MESM | LOG_DEVKF | LOG_DEVJG | LOG_DEVMR" 
        FrqPlan="FRQ_PLAN_26MHZ_2PPM_26MHZ_300PPB"   
        RfType="GL_RF_4751_DANUBE_EXT_LNA"
-       WarmStandbyTimeout1Seconds="5"
-       WarmStandbyTimeout2Seconds="10"       
+       CNoSmoothEnable="true"
     >   
+    <periodic_hor_acc_remap>
+        <remap in="50" out="50" />
+    </periodic_hor_acc_remap>  
   </gll>
 </glgps>

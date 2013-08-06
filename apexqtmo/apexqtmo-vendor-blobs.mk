@@ -19,14 +19,17 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
+	vendor/samsung/apexqtmo/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+	vendor/samsung/apexqtmo/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
+	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_ \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
@@ -39,6 +42,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/apexqtmo/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-    vendor/samsung/apexqtmo/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    vendor/samsung/apexqtmo/proprietary/lib/libril.so:system/lib/libril.so
+	vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+	vendor/samsung/apexqtmo/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+	vendor/samsung/apexqtmo/proprietary/lib/libril.so:system/lib/libril.so
