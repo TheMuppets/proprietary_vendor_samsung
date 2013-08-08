@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
         vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+        vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
@@ -37,7 +38,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
-        vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
@@ -122,7 +122,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/etc/wifi/bcmdhd_mfg.bin_b2:system/etc/wifi/bcmdhd_mfg.bin_b2 \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+        vendor/samsung/d2-common/proprietary/etc/wifi/nvram_mfg.txt_semcosh:system/etc/wifi/nvram_mfg.txt_semcosh \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+        vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
         vendor/samsung/d2-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
         vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
