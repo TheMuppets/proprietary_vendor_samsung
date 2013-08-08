@@ -16,9 +16,10 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/i927/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
-    vendor/samsung/i927/proprietary/cbd:root/sbin/cbd
+     vendor/samsung/i927/proprietary/cbd:root/sbin/cbd
+#    vendor/samsung/i927/proprietary/libril.so:obj/lib/libril.so \
+#    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+ 
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -39,9 +40,11 @@ PRODUCT_COPY_FILES += \
 
 # RIL files
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i927/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/i927/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/i927/proprietary/libsecril-client.so:system/lib/libsecril-client.so
+#    vendor/samsung/i927/proprietary/libril.so:system/lib/libril.so \
+
+
 
 # SENSORS
 PRODUCT_COPY_FILES += \
