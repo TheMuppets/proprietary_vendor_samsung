@@ -24,5 +24,7 @@ PRODUCT_PACKAGES :=     fimc_is_fw \
     020a0000000000000000000000000000 \
     07060000000000000000000000000000 \
     ffffffff000000000000000000000005 \
+    libGLES_mali \
+    libmalicore \
     libRSDriverArm \
-    libGLES_mali
+    libstagefright_hdcp
