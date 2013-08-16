@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_ \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+	vendor/samsung/apexqtmo/proprietary/bin/sec-ril:system/bin/sec-ril \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
