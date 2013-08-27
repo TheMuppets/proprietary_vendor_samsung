@@ -61,5 +61,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/infuse4g/proprietary/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/infuse4g/proprietary/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/infuse4g/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so \
-    vendor/samsung/infuse4g/proprietary/prebuilt/apk/GooManager.apk:system/app/GooManager.apk \
     vendor/samsung/infuse4g/proprietary/modem.bin:modem.bin
