@@ -27,9 +27,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
-	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-	vendor/samsung/apexqtmo/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_ \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/apexqtmo/proprietary/bin/sec-ril:system/bin/sec-ril \
