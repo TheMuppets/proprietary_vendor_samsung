@@ -90,12 +90,12 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/exhilarate/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/exhilarate/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/exhilarate/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-	vendor/samsung/exhilarate/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
+	vendor/samsung/exhilarate/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
 	vendor/samsung/exhilarate/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 	vendor/samsung/exhilarate/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/samsung/exhilarate/proprietary/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-	vendor/samsung/exhilarate/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-	vendor/samsung/exhilarate/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
+	vendor/samsung/exhilarate/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+	vendor/samsung/exhilarate/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/exhilarate/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
 	vendor/samsung/exhilarate/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
 	vendor/samsung/exhilarate/proprietary/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
 	vendor/samsung/exhilarate/proprietary/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
