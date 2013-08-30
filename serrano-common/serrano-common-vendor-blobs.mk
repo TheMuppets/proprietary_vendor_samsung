@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/serrano-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/serrano-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/serrano-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/serrano-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
