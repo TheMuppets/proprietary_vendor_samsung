@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GD.bin:system/cameradata/SlimISP_GD.bin \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GE.bin:system/cameradata/SlimISP_GE.bin \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GH.bin:system/cameradata/SlimISP_GH.bin \
+        vendor/samsung/d2-common/proprietary/cameradata/SlimISP_WH.bin:system/cameradata/SlimISP_WH.bin \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZC.bin:system/cameradata/SlimISP_ZC.bin \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZD.bin:system/cameradata/SlimISP_ZD.bin \
         vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZE.bin:system/cameradata/SlimISP_ZE.bin \
