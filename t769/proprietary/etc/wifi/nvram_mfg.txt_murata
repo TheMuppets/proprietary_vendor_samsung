@@ -78,7 +78,7 @@ btc_params8=10000
 loidacmode5g=1
 #tssitime=1
 noise_cal_ref_2g=52
-#noise_cal_po_bias_2g=-4
+#noise_cal_po_bias_2g=-4 
 bphyscale=17
 txgaintbl5g=1
 # added parameters
