@@ -14,5 +14,3 @@
 
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS += vendor/samsung/p31xx/p3110/overlay
-
-$(call inherit-product, vendor/samsung/p31xx/p3110-vendor-blobs.mk)
