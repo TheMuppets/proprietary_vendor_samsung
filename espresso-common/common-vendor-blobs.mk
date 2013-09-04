@@ -14,8 +14,6 @@
 
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
-    vendor/samsung/espresso-common/proprietary/system/bin/orientationd:system/bin/orientationd \
     vendor/samsung/espresso-common/proprietary/system/bin/smc.ini:system/bin/smc.ini \
     vendor/samsung/espresso-common/proprietary/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 
