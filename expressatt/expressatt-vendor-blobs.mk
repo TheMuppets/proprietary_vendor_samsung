@@ -66,9 +66,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
-	vendor/samsung/expressatt/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-	vendor/samsung/expressatt/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-	vendor/samsung/expressatt/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin_ \
 	vendor/samsung/expressatt/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/expressatt/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/expressatt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
