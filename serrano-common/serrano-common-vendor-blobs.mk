@@ -134,8 +134,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libtzplayready.so:system/lib/libtzplayready.so \
     vendor/samsung/serrano-common/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/serrano-common/proprietary/bin/charger:root/charger \
-    vendor/samsung/serrano-common/proprietary/bin/charger:recovery/root/charger \
     vendor/samsung/serrano-common/proprietary/bin/playlpm:system/bin/playlpm \
     vendor/samsung/serrano-common/proprietary/bin/lpmkey:system/bin/lpmkey \
     vendor/samsung/serrano-common/proprietary/lib/libQmageAndroidDecoderPaddingSo.so:system/lib/libQmageAndroidDecoderPaddingSo.so \
