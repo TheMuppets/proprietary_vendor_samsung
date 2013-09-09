@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/p5/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/samsung/p5/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/samsung/p5/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
+    vendor/samsung/p5/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/p5/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/p5/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/samsung/p5/proprietary/lib/libwvm.so:system/lib/libwvm.so \
