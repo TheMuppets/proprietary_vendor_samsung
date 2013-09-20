@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 # Display (3D)
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/epicmtd/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/epicmtd/proprietary/vendor/lib/hw/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
     vendor/samsung/epicmtd/proprietary/vendor/lib/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
     vendor/samsung/epicmtd/proprietary/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
