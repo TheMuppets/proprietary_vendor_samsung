@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
-	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/apexqtmo/proprietary/bin/sec-ril:system/bin/sec-ril \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
