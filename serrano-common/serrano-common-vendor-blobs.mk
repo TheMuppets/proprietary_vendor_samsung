@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/serrano-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/serrano-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/serrano-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/serrano-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -75,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/samsung/serrano-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/samsung/serrano-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/serrano-common/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/serrano-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
@@ -124,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
-    vendor/samsung/serrano-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/serrano-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
@@ -135,8 +134,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libtzplayready.so:system/lib/libtzplayready.so \
     vendor/samsung/serrano-common/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/serrano-common/proprietary/bin/charger:root/charger \
-    vendor/samsung/serrano-common/proprietary/bin/charger:recovery/root/charger \
     vendor/samsung/serrano-common/proprietary/bin/playlpm:system/bin/playlpm \
     vendor/samsung/serrano-common/proprietary/bin/lpmkey:system/bin/lpmkey \
     vendor/samsung/serrano-common/proprietary/lib/libQmageAndroidDecoderPaddingSo.so:system/lib/libQmageAndroidDecoderPaddingSo.so \
