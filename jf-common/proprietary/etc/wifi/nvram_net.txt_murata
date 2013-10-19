@@ -9,8 +9,8 @@ boardflags2=0x0
 boardflags3=0x800c48c
 #boardnum=57410 
 macaddr=00:90:4c:c5:12:38()
-ccode=US
-regrev=0
+ccode=GB
+regrev=6
 antswitch=0
 
 pdgain2g=6

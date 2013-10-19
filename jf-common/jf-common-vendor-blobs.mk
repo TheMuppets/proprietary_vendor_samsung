@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_A0.hcd:system/vendor/firmware/bcm4335_A0.hcd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_murata.hcd:system/vendor/firmware/bcm4335_murata.hcd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
+        vendor/samsung/jf-common/proprietary/vendor/firmware/bcmdhd_ibss.bin:system/vendor/firmware/bcmdhd_ibss.bin
         vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -32,10 +33,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/jf-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
         vendor/samsung/jf-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
-        vendor/samsung/jf-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-        vendor/samsung/jf-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-        vendor/samsung/jf-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-        vendor/samsung/jf-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+        vendor/samsung/jf-common/proprietary/lib/egl/libEGL_adreno.so:system/lib/egl/libEGL_adreno.so \
+        vendor/samsung/jf-common/proprietary/lib/egl/libGLESv1_CM_adreno.so:system/lib/egl/libGLESv1_CM_adreno.so \
+        vendor/samsung/jf-common/proprietary/lib/egl/libGLESv2_adreno.so:system/lib/egl/libGLESv2_adreno.so \
+        vendor/samsung/jf-common/proprietary/lib/egl/libq3dtools_adreno.so:system/lib/egl/libq3dtools_adreno.so \
         vendor/samsung/jf-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
         vendor/samsung/jf-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/jf-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
