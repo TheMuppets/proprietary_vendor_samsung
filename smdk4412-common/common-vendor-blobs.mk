@@ -127,6 +127,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_GD.bin:system/vendor/firmware/SlimISP_GD.bin \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_GH.bin:system/vendor/firmware/SlimISP_GH.bin \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_GK.bin:system/vendor/firmware/SlimISP_GK.bin \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_WH.bin:system/vendor/firmware/SlimISP_WH.bin \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_JH.bin:system/vendor/firmware/SlimISP_JH.bin \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_ZD.bin:system/vendor/firmware/SlimISP_ZD.bin \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_ZH.bin:system/vendor/firmware/SlimISP_ZH.bin \
     $(LOCAL_PATH)/proprietary/system/vendor/firmware/SlimISP_ZK.bin:system/vendor/firmware/SlimISP_ZK.bin \

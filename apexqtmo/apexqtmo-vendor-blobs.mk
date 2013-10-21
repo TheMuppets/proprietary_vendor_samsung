@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
-	vendor/samsung/apexqtmo/proprietary/etc/thermald.conf:system/etc/thermald.conf \
 	vendor/samsung/apexqtmo/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
@@ -27,6 +26,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/apexqtmo/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/apexqtmo/proprietary/bin/sec-ril:system/bin/sec-ril \
