@@ -46,4 +46,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libril.so:system/lib/libril.so \ 
 	vendor/samsung/apexqtmo/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
-        vendor/samsung/apexqtmo/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so
+	vendor/samsung/apexqtmo/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so
