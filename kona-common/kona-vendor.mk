@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/n5110
+# Pick up overlay for features that depend on non-open-source files
+DEVICE_PACKAGE_OVERLAYS += vendor/samsung/kona-common/overlay
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+$(call inherit-product, vendor/samsung/kona-common/kona-vendor-blobs.mk)
