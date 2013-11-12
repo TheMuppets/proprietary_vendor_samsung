@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/exhilarate/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
 	vendor/samsung/exhilarate/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
 	vendor/samsung/exhilarate/proprietary/lib/librpc.so:system/lib/librpc.so \
-	vendor/samsung/exhilarate/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
+	vendor/samsung/exhilarate/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
 	vendor/samsung/exhilarate/proprietary/lib/libakm.so:system/lib/libakm.so \
 	vendor/samsung/exhilarate/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
 	vendor/samsung/exhilarate/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \

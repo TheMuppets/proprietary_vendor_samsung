@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/serrano-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/serrano-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/serrano-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/serrano-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -34,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/samsung/serrano-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/samsung/serrano-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/samsung/serrano-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
     vendor/samsung/serrano-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     vendor/samsung/serrano-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/samsung/serrano-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
@@ -44,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     vendor/samsung/serrano-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/samsung/serrano-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
+    vendor/samsung/serrano-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/samsung/serrano-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/serrano-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/serrano-common/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -75,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/samsung/serrano-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/samsung/serrano-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/serrano-common/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/serrano-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
@@ -124,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
-    vendor/samsung/serrano-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/serrano-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
@@ -134,33 +133,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/serrano-common/proprietary/lib/libtzplayready.so:system/lib/libtzplayready.so \
     vendor/samsung/serrano-common/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
-    vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/serrano-common/proprietary/bin/charger:root/charger \
-    vendor/samsung/serrano-common/proprietary/bin/charger:recovery/root/charger \
-    vendor/samsung/serrano-common/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/serrano-common/proprietary/bin/lpmkey:system/bin/lpmkey \
-    vendor/samsung/serrano-common/proprietary/lib/libQmageAndroidDecoderPaddingSo.so:system/lib/libQmageAndroidDecoderPaddingSo.so \
-    vendor/samsung/serrano-common/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/serrano-common/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/serrano-common/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg
+    vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so
