@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     vendor/samsung/serrano-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/samsung/serrano-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
+    vendor/samsung/serrano-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/samsung/serrano-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/serrano-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/serrano-common/proprietary/bin/netmgrd:system/bin/netmgrd \
