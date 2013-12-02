@@ -38,6 +38,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
