@@ -66,7 +66,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 	vendor/samsung/expressatt/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/expressatt/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-	vendor/samsung/expressatt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
 	vendor/samsung/expressatt/proprietary/lib/libdiag.so:system/lib/libdiag.so
