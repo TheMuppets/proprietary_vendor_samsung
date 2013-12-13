@@ -12,13 +12,50 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := toro/device-partial.mk
+# Samsung blob(s) necessary for Toro hardware
+PRODUCT_PACKAGES := \
+    BIP \
+    IMSFramework \
+    RTN \
+    fRom \
+    libsecril-client \
+    lib_gsd4t \
+    libims \
+    libims_jni \
+    libsec-ril_lte \
+    com.vzw.hardware.ehrpd.xml \
+    com.vzw.hardware.lte.xml \
+    com.vzw.vzwapnlib.xml \
+    ducati-m3 \
+    gps.omap4 \
+    libdrmwvmplugin \
+    libwvdrm_L1 \
+    libwvm \
+    libWVStreamControlAPI_L1 \
+    sirfgps \
+    VZWAPNLib \
+    VZWAPNService \
+    bcm4330 \
+    pvrsrvctl \
+    libEGL_POWERVR_SGX540_120 \
+    libGLESv1_CM_POWERVR_SGX540_120 \
+    libGLESv2_POWERVR_SGX540_120 \
+    gralloc.omap4 \
+    libglslcompiler \
+    libIMGegl \
+    libpvr2d \
+    libpvrANDROID_WSEGL \
+    libPVRScopeServices \
+    libsrv_init \
+    libsrv_um \
+    libusc \
+    libinvensense_mpl \
+    libpn544_fw \
+    libdrmdecrypt
 
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/imgtec/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/invensense/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/widevine/$(LOCAL_STEM))
+# Disabled PRODUCT_PACKAGES
+#    SDM #Samsung software update
+#    SPG #Wireless tether authorization service
+#    SyncMLSvc #SyncML Service for communication to VZW. Required for SPG.
+#    libsyncml_core #SyncML Service for communication to VZW. Required for SPG.
+#    libsyncml_port #SyncML Service for communication to VZW. Required for SPG.
