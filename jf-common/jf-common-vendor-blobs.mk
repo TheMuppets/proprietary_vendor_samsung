@@ -106,6 +106,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
         vendor/samsung/jf-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
         vendor/samsung/jf-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+        vendor/samsung/jf-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
         vendor/samsung/jf-common/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
         vendor/samsung/jf-common/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
         vendor/samsung/jf-common/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \
