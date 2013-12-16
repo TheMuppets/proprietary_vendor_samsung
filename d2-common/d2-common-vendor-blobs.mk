@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-        vendor/samsung/d2-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
+        vendor/samsung/d2-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
         vendor/samsung/d2-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
@@ -129,4 +129,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
         vendor/samsung/d2-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
+        vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
+        vendor/samsung/d2-common/proprietary/lib/libCB.so:system/lib/libCB.so \
+        vendor/samsung/d2-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
+        vendor/samsung/d2-common/proprietary/lib/libc2dcolorconvert.so:system/lib/libc2dcolorconvert.so
