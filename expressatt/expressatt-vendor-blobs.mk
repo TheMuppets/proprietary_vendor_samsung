@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/expressatt/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
 	vendor/samsung/expressatt/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-	vendor/samsung/expressatt/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
+	vendor/samsung/expressatt/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
 	vendor/samsung/expressatt/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/expressatt/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
 	vendor/samsung/expressatt/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
