@@ -91,7 +91,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/hlte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-        vendor/samsung/hlte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
         vendor/samsung/hlte-common/proprietary/lib/hw/sensorhubs.msm8974.so:system/lib/hw/sensorhubs.msm8974.so \
         vendor/samsung/hlte-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
         vendor/samsung/hlte-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
