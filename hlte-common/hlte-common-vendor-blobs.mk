@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/bin/thermald:system/bin/thermald \
         vendor/samsung/hlte-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4339.hcd:system/vendor/firmware/bcm4339.hcd \
+        vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4339_A0.hcd:system/vendor/firmware/bcm4339_A0.hcd \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4339_semco.hcd:system/vendor/firmware/bcm4339_semco.hcd \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4339_wisol.hcd:system/vendor/firmware/bcm4339_wisol.hcd \
