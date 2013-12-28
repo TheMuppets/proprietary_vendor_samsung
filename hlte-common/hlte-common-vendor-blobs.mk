@@ -203,7 +203,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/lib/libmmqjpeg_codec.so:system/lib/libmmqjpeg_codec.so \
         vendor/samsung/hlte-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
         vendor/samsung/hlte-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-        vendor/samsung/hlte-common/proprietary/lib/libxml2.so:system/lib/libxml2.so \
         vendor/samsung/hlte-common/proprietary/lib/libmmcamera_s5k6b2yx.so:system/lib/libmmcamera_s5k6b2yx.so \
         vendor/samsung/hlte-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
         vendor/samsung/hlte-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
