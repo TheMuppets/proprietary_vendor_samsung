@@ -270,4 +270,4 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/bin/irsc_util:system/bin/irsc_util \
         vendor/samsung/hlte-common/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
         vendor/samsung/hlte-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-        vendor/samsung/hlte-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw
+        vendor/samsung/hlte-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw
