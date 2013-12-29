@@ -17,8 +17,9 @@
 PRODUCT_COPY_FILES += \
 	vendor/samsung/hltexx/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
 	vendor/samsung/hltexx/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
-	vendor/samsung/hltexx/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so \
-        vendor/samsung/hltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-        vendor/samsung/hltexx/proprietary/lib/libril.so:system/lib/libril.so \
-        vendor/samsung/hltexx/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so
+	vendor/samsung/hltexx/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so
 
+PRODUCT_COPY_FILES += \
+    vendor/samsung/hltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/hltexx/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/hltexx/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so
