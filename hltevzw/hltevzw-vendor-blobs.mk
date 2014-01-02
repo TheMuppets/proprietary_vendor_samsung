@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hltevzw/proprietary/vendor/firmware/libpn547_fw_pku.so:system/vendor/firmware/libpn547_fw_pku.so \
 	vendor/samsung/hltevzw/proprietary/vendor/firmware/libpn547_fw_platform.so:system/vendor/firmware/libpn547_fw_platform.so \
 	vendor/samsung/hltevzw/proprietary/lib/libsensirion_h_5.so:system/lib/libsensirion_h_5.so \
+	vendor/samsung/hltevzw/proprietary/lib/libnf1.so:system/lib/libnf1.so \
+	vendor/samsung/hltevzw/proprietary/lib/libnfc_log.so:system/lib/libnfc_log.so \
 	vendor/samsung/hltevzw/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
 	vendor/samsung/hltevzw/proprietary/lib/libril.so:system/lib/libril.so \
-        vendor/samsung/hltevzw/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so
+	vendor/samsung/hltevzw/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so
