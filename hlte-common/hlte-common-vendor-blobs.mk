@@ -109,6 +109,50 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/lib/libqomx_jpegenc.so:system/lib/libqomx_jpegenc.so \
         vendor/samsung/hlte-common/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
         vendor/samsung/hlte-common/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libTsAe.so:system/lib/C13QL_libTsAe.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libTsAf.so:system/lib/C13QL_libTsAf.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libTs_J_Accm.so:system/lib/C13QL_libTs_J_Accm.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libTs_J_Awb.so:system/lib/C13QL_libTs_J_Awb.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common.so:system/lib/C13QL_libchromatix_s5k3l2xx_common.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_b.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_b.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_s.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_s.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_res0.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_res0.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_res1.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_res1.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_res2.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_res2.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_common_res3.so:system/lib/C13QL_libchromatix_s5k3l2xx_common_res3.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_default_video.so:system/lib/C13QL_libchromatix_s5k3l2xx_default_video.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_golfshot.so:system/lib/C13QL_libchromatix_s5k3l2xx_golfshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so:system/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so:system/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_hfr_120.so:system/lib/C13QL_libchromatix_s5k3l2xx_hfr_120.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_liveshot.so:system/lib/C13QL_libchromatix_s5k3l2xx_liveshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_pip.so:system/lib/C13QL_libchromatix_s5k3l2xx_pip.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_preview.so:system/lib/C13QL_libchromatix_s5k3l2xx_preview.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_snapshot.so:system/lib/C13QL_libchromatix_s5k3l2xx_snapshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_uhd_video.so:system/lib/C13QL_libchromatix_s5k3l2xx_uhd_video.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QL_libchromatix_s5k3l2xx_zslshot.so:system/lib/C13QL_libchromatix_s5k3l2xx_zslshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libTsAe.so:system/lib/C13QS_libTsAe.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libTsAf.so:system/lib/C13QS_libTsAf.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libTs_J_Accm.so:system/lib/C13QS_libTs_J_Accm.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libTs_J_Awb.so:system/lib/C13QS_libTs_J_Awb.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common.so:system/lib/C13QS_libchromatix_imx135_common.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_1080p_b.so:system/lib/C13QS_libchromatix_imx135_common_1080p_b.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_1080p_s.so:system/lib/C13QS_libchromatix_imx135_common_1080p_s.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_res0.so:system/lib/C13QS_libchromatix_imx135_common_res0.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_res1.so:system/lib/C13QS_libchromatix_imx135_common_res1.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_res2.so:system/lib/C13QS_libchromatix_imx135_common_res2.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_common_res3.so:system/lib/C13QS_libchromatix_imx135_common_res3.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_default_video.so:system/lib/C13QS_libchromatix_imx135_default_video.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_golfshot.so:system/lib/C13QS_libchromatix_imx135_golfshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_hfr_1080p_b.so:system/lib/C13QS_libchromatix_imx135_hfr_1080p_b.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_hfr_1080p_s.so:system/lib/C13QS_libchromatix_imx135_hfr_1080p_s.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_hfr_120.so:system/lib/C13QS_libchromatix_imx135_hfr_120.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_liveshot.so:system/lib/C13QS_libchromatix_imx135_liveshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_pip.so:system/lib/C13QS_libchromatix_imx135_pip.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_preview.so:system/lib/C13QS_libchromatix_imx135_preview.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_snapshot.so:system/lib/C13QS_libchromatix_imx135_snapshot.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_uhd_video.so:system/lib/C13QS_libchromatix_imx135_uhd_video.so \
+        vendor/samsung/hlte-common/proprietary/lib/C13QS_libchromatix_imx135_zslshot.so:system/lib/C13QS_libchromatix_imx135_zslshot.so \
         vendor/samsung/hlte-common/proprietary/lib/D13QL_libTsAe.so:system/lib/D13QL_libTsAe.so \
         vendor/samsung/hlte-common/proprietary/lib/D13QL_libTsAf.so:system/lib/D13QL_libTsAf.so \
         vendor/samsung/hlte-common/proprietary/lib/D13QL_libTs_J_Accm.so:system/lib/D13QL_libTs_J_Accm.so \
