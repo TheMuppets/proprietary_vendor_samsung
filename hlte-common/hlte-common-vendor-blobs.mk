@@ -54,14 +54,16 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+        vendor/samsung/hlte-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+        vendor/samsung/hlte-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-        vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-        vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+        vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
+        vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
         vendor/samsung/hlte-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
         vendor/samsung/hlte-common/proprietary/bin/efsks:system/bin/efsks \
