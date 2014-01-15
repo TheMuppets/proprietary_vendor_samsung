@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/expressatt/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
 	vendor/samsung/expressatt/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-	vendor/samsung/expressatt/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
+	vendor/samsung/expressatt/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
 	vendor/samsung/expressatt/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/expressatt/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
 	vendor/samsung/expressatt/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
@@ -66,7 +66,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
 	vendor/samsung/expressatt/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+	vendor/samsung/expressatt/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 	vendor/samsung/expressatt/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/expressatt/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-	vendor/samsung/expressatt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
 	vendor/samsung/expressatt/proprietary/lib/libdiag.so:system/lib/libdiag.so

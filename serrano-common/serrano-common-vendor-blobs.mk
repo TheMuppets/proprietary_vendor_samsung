@@ -33,11 +33,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d2_a3xx.so:system/vendor/lib/libc2d2_a3xx.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
@@ -48,12 +50,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/serrano-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/serrano-common/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/samsung/serrano-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/samsung/serrano-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/serrano-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/serrano-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/serrano-common/proprietary/bin/sec-ril:system/bin/sec-ril \
-    vendor/samsung/serrano-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/serrano-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/serrano-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/samsung/serrano-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
@@ -81,9 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/serrano-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/serrano-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/samsung/serrano-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/serrano-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-    vendor/samsung/serrano-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/samsung/serrano-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/samsung/serrano-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/samsung/serrano-common/proprietary/lib/libchromatix_imx175_antishake.so:system/lib/libchromatix_imx175_antishake.so \
     vendor/samsung/serrano-common/proprietary/lib/libchromatix_imx175_default_video.so:system/lib/libchromatix_imx175_default_video.so \
@@ -131,7 +129,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/samsung/serrano-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/serrano-common/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so

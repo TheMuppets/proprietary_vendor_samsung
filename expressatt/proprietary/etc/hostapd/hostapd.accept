@@ -1,0 +1,3 @@
+# List of MAC addresses that are allowed to authenticate (IEEE 802.11)
+# with the AP. Optional VLAN ID can be assigned for clients based on the
+# MAC address if dynamic VLANs (hostapd.conf dynamic_vlan option) are used.
