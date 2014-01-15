@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
         vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+        vendor/samsung/jf-common/proprietary/lib/libCB.so:system/lib/libCB.so \
         vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
         vendor/samsung/jf-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/jf-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
