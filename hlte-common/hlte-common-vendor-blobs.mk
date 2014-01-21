@@ -305,6 +305,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+        vendor/samsung/hlte-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
         vendor/samsung/hlte-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
         vendor/samsung/hlte-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
