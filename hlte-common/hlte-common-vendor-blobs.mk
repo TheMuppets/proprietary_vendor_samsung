@@ -65,6 +65,12 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
         vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+        vendor/samsung/hlte-common/proprietary/lib/cdma/libsec-ril.so:system/lib/cdma/libsec-ril.so \
+        vendor/samsung/hlte-common/proprietary/lib/cdma/libril.so:system/lib/cdma/libril.so \
+        vendor/samsung/hlte-common/proprietary/lib/gsm/libsec-ril.so:system/lib/gsm/libsec-ril.so \
+        vendor/samsung/hlte-common/proprietary/lib/gsm/libril.so:system/lib/gsm/libril.so \
+        vendor/samsung/hlte-common/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so \
+        vendor/samsung/hlte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
         vendor/samsung/hlte-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
         vendor/samsung/hlte-common/proprietary/bin/efsks:system/bin/efsks \
         vendor/samsung/hlte-common/proprietary/bin/ks:system/bin/ks \

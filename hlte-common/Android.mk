@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hltexx hltetmo hltespr hltevzw hltecan,$(TARGET_DEVICE)),)
+ifneq ($(filter hltenci hltenxp,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
