@@ -1,4 +1,4 @@
-https://github.com/CyanogenMod/android_kernel_samsung_hlte/commits/wip# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2011 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -46,7 +46,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
@@ -54,16 +53,12 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-        vendor/samsung/hlte-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
-        vendor/samsung/hlte-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
+        vendor/samsung/hlte-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
+        vendor/samsung/hlte-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-        vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
-        vendor/samsung/hlte-common/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
+        vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+        vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
         vendor/samsung/hlte-common/proprietary/lib/cdma/libsec-ril.so:system/lib/cdma/libsec-ril.so \
         vendor/samsung/hlte-common/proprietary/lib/cdma/libril.so:system/lib/cdma/libril.so \
