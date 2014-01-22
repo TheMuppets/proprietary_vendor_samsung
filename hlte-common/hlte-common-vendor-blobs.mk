@@ -60,8 +60,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
         vendor/samsung/hlte-common/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-        vendor/samsung/hlte-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-        vendor/samsung/hlte-common/proprietary/lib/libril.so:system/lib/libril.so \
+        vendor/samsung/hlte-common/proprietary/lib/cdma/libsec-ril.so:system/lib/cdma/libsec-ril.so \
+        vendor/samsung/hlte-common/proprietary/lib/cdma/libril.so:system/lib/cdma/libril.so \
+        vendor/samsung/hlte-common/proprietary/lib/gsm/libsec-ril.so:system/lib/gsm/libsec-ril.so \
+        vendor/samsung/hlte-common/proprietary/lib/gsm/libril.so:system/lib/gsm/libril.so \
         vendor/samsung/hlte-common/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so \
         vendor/samsung/hlte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
         vendor/samsung/hlte-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
@@ -75,10 +77,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
         vendor/samsung/hlte-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+        vendor/samsung/hlte-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/hlte-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+        vendor/samsung/hlte-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
         vendor/samsung/hlte-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
@@ -89,7 +91,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
         vendor/samsung/hlte-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-        vendor/samsung/hlte-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+        vendor/samsung/hlte-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/hlte-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/hlte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
         vendor/samsung/hlte-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
