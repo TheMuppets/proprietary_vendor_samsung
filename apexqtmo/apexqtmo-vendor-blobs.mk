@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
 	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
 	vendor/samsung/apexqtmo/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+	vendor/samsung/apexqtmo/proprietary/bin/geomagneticd:system/bin/geomagneticd \
 	vendor/samsung/apexqtmo/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/apexqtmo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 	vendor/samsung/apexqtmo/proprietary/bin/sec-ril:system/bin/sec-ril \
