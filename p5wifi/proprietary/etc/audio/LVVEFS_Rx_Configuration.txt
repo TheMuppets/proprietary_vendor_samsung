@@ -2,7 +2,7 @@
 4
 0
 
-1
+LVM_MODE_ON
 5
 /system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt
 /system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt
@@ -22,15 +22,15 @@
 0
 /data/LVVEFS_Rx_Status.bin
 
-1
+0
 2048
 /data/Rx_in.pcm
 
 0
 2048
-/data/Fs44100_FemaleSpeech_St.pcm
+/data/Fs44100_FemaleSpeech_St_12.pcm
 
-1
+0
 2048
 /data/Rx_out.pcm
 

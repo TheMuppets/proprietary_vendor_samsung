@@ -2,7 +2,7 @@
 4
 1
 
-1
+LVM_MODE_ON
 5
 /system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt
 /system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt
@@ -26,34 +26,34 @@
 0
 0
 
-0
-0
+LVM_MODE_OFF
+LVM_MODE_OFF
 /data/LVVEFS_Tx_Status.bin
 
-0
+LVM_MODE_OFF
 0
 0
 
-1
+LVVEFS_PCM_MODE_OFF
 2048
 /data/Tx_in_mic.pcm
 
-0
+LVVEFS_PCM_MODE_OFF
 2048
-/data/Fs44100_Sine_1000Hz_St.pcm
+/data/WhiteNoise_delayed.pcm
 
-1
+LVVEFS_PCM_MODE_OFF
 2048
 /data/Tx_in_ref.pcm
 
-0
+LVVEFS_PCM_MODE_OFF
 2048
-/data/Fs44100_Sine_1000Hz_St.pcm
+/data/WhiteNoise.pcm
 
-1		
+LVVEFS_PCM_MODE_OFF
 2048
 /data/Tx_out.pcm
 
-0
+LVVEFS_PCM_MODE_OFF
 2048
-/data/Fs44100_Sine_1000Hz_St.pcm
+/data/Fs44100_FemaleSpeech_St.pcm
