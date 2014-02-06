@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqdi.so:system/lib/libqdi.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqdp.so:system/lib/libqdp.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi.so:system/lib/libqmi.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
