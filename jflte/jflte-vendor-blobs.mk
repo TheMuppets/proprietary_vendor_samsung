@@ -207,4 +207,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b04:system/blobs/vzw/etc/firmware/q6.b04 \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b05:system/blobs/vzw/etc/firmware/q6.b05 \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b06:system/blobs/vzw/etc/firmware/q6.b06 \
-        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.mdt:system/blobs/vzw/etc/firmware/q6.mdt
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.mdt:system/blobs/vzw/etc/firmware/q6.mdt \
+        vendor/samsung/jflte/proprietary/blobs/cdma/lib/libril-qc-qmi-1.so:system/blobs/cdma/lib/libril-qc-qmi-1.so \
+        vendor/samsung/jflte/proprietary/blobs/cdma/lib/libril.so:system/blobs/cdma/lib/libril.so \
+        vendor/samsung/jflte/proprietary/blobs/gsm/lib/libril-qc-qmi-1.so:system/blobs/gsm/lib/libril-qc-qmi-1.so \
+        vendor/samsung/jflte/proprietary/blobs/gsm/lib/libril.so:system/blobs/gsm/lib/libril.so
