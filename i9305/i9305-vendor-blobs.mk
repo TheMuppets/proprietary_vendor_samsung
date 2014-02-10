@@ -17,14 +17,11 @@ LOCAL_PATH := vendor/samsung/i9305
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
     $(LOCAL_PATH)/proprietary/system/bin/efsks:system/bin/efsks \
-    $(LOCAL_PATH)/proprietary/system/bin/gsiff_daemon:system/bin/gsiff_daemon \
     $(LOCAL_PATH)/proprietary/system/bin/ks:system/bin/ks \
-    $(LOCAL_PATH)/proprietary/system/bin/netmgrd:system/bin/netmgrd \
     $(LOCAL_PATH)/proprietary/system/bin/qcks:system/bin/qcks \
     $(LOCAL_PATH)/proprietary/system/bin/qmiproxy:system/bin/qmiproxy \
     $(LOCAL_PATH)/proprietary/system/bin/qmuxd:system/bin/qmuxd \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
-    $(LOCAL_PATH)/proprietary/system/bin/sec-ril:system/bin/sec-ril \
     $(LOCAL_PATH)/proprietary/system/bin/smdexe:system/bin/smdexe
 
 PRODUCT_COPY_FILES += \
@@ -37,6 +34,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libcsd-client.so:system/lib/libcsd-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdiag.so:system/lib/libdiag.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libdss.so:system/lib/libdss.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdsutils.so:system/lib/libdsutils.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/system/lib/libidl.so:system/lib/libidl.so \
@@ -54,13 +52,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libqmiservices.so:system/lib/libqmiservices.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
-
-PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
