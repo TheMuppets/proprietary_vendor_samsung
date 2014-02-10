@@ -33,11 +33,13 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+        vendor/samsung/d2-common/proprietary/lib/libCB.so:system/lib/libCB.so \
         vendor/samsung/d2-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
