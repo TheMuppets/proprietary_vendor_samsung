@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
     $(LOCAL_PATH)/common/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     $(LOCAL_PATH)/common/system/lib/libion.omap4.so:system/lib/libion.omap4.so \
+    $(LOCAL_PATH)/common/system/lib/libion_ti.so:system/lib/libion_ti.so \
     $(LOCAL_PATH)/common/system/lib/libmm_osal.so:system/lib/libmm_osal.so \
     $(LOCAL_PATH)/common/system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
     $(LOCAL_PATH)/common/system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
