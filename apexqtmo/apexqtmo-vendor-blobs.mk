@@ -43,6 +43,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/apexqtmo/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-	vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-	vendor/samsung/apexqtmo/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-	vendor/samsung/apexqtmo/proprietary/lib/libril.so:system/lib/libril.so
+	vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
