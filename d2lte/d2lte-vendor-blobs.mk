@@ -135,6 +135,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2lte/proprietary/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
         vendor/samsung/d2lte/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
         vendor/samsung/d2lte/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-        vendor/samsung/d2lte/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-        vendor/samsung/d2lte/proprietary/lib/libril.so:system/lib/libril.so
+        vendor/samsung/d2lte/proprietary/blobs/cdma/lib/libril-qc-qmi-1.so:system/blobs/cdma/lib/libril-qc-qmi-1.so \
+        vendor/samsung/d2lte/proprietary/blobs/gsm/lib/libril-qc-qmi-1.so:system/blobs/gsm/lib/libril-qc-qmi-1.so \
+        vendor/samsung/d2lte/proprietary/blobs/cdma/lib/libril.so:system/blobs/cdma/lib/libril.so \
+        vendor/samsung/d2lte/proprietary/blobs/gsm/lib/libril.so:system/blobs/gsm/lib/libril.so
 
