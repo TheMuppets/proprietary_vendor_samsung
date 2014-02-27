@@ -199,8 +199,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jflte/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
         vendor/samsung/jflte/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jflte/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-        vendor/samsung/jflte/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-        vendor/samsung/jflte/proprietary/lib/libril.so:system/lib/libril.so \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b00:system/blobs/vzw/etc/firmware/q6.b00 \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b01:system/blobs/vzw/etc/firmware/q6.b01 \
         vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b03:system/blobs/vzw/etc/firmware/q6.b03 \
