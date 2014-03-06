@@ -1,0 +1,51 @@
+#!/system/bin/sh
+#
+# Copyright (C) ST-Ericsson SA 2010. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+PATH=${PATH}:/system/bin
+
+LEASE="12h"
+resolv_file=/data/misc/psdata/resolv.conf
+dhcp_leasefile=/data/misc/psdata/dnsmasq.leases
+pid_file=/data/misc/psdata/pidfile-pid
+
+# configure lan network interface
+ifconfig ${lan_device} ${lan_own_ip#*:} netmask ${lan_netmask#*:}
+
+# setup dns addresses file
+dns1=$dns_addresses
+dns2="";
+echo nameserver ${dns1} > ${resolv_file}
+echo nameserver ${dns2} >> ${resolv_file}
+
+
+# configure and start dnsmasq
+kill $(cat ${pid_file})
+rm ${pid_file}
+echo "interface=${lan_device}">${dnsmasq_config_file}
+echo "dhcp-range=${lan_dhcp_range_first#*:},${lan_dhcp_range_last#*:},${lan_netmask#*:},${lan_dhcp_lease#*:}">>${dnsmasq_config_file}
+echo "dhcp-leasefile=${dhcp_leasefile}">>${dnsmasq_config_file}
+echo "pid-file=${pid_file}">>${dnsmasq_config_file}
+echo "resolv-file="${resolv_file} >> ${dnsmasq_config_file}
+echo "group=radio" >> ${dnsmasq_config_file}
+dnsmasq -C ${dnsmasq_config_file}
+
+# configure iptables
+# flush filters and set up rules for forwarding and masquerading
+iptables -t filter -F FORWARD
+iptables -t nat -F
+iptables -t filter -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -t filter -A FORWARD -s ${lan_dhcp_range_first#*:}/${lan_netmask#*:} -o ${wan_device} -j ACCEPT
+iptables -t nat -I POSTROUTING -s ${lan_dhcp_range_first#*:}/${lan_netmask#*:} -j MASQUERADE
+
+# resetting device for dhcp renewal
+ifconfig ${lan_device} down
+ifconfig ${lan_device} up
+
+# enable ip forwarding in kernel
+echo 1 > /proc/sys/net/ipv4/ip_forward
+

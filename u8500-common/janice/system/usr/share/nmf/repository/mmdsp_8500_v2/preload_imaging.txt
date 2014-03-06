@@ -1,0 +1,41 @@
+#
+# Copyright (C) ST-Ericsson SA 2010. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+_ev.grab.api.alert
+_ev.grabctl.api.returnbuffer
+_sk.api.set_debug
+_sk.grab.api.cmd
+_sk.grabctl.api.configure
+_sk.ispctl.api.cfg
+_sk.ispctl.api.cmd
+#_sk.memgrabctl.api.configure
+_st.grab.api.alert
+_st.grabctl.api.error
+_st.grabctl.api.reportcurves
+_st.grabctl.api.acknowledges
+_st.ispctl.api.alert
+grab
+grabctl
+ispctl
+#memgrabctl
+_ev.ext_grab.api.alert
+_ev.ext_grabctl.api.returnbuffer
+_sk.ext.api.set_debug
+_sk.ext_grab.api.cmd
+_sk.ext_grabctl.api.configure
+_sk.ext_ispctl.api.cmd
+_sk.ext_ispctl.api.cfg
+_st.ext_ispctl.api.alert
+_st.ext_grabctl.api.error
+_st.ext_grabctl.api.acknowledges
+_st.ext_grabctl.api.reportcurves
+_st.ext_ispctl.api.alert
+ext_grab
+ext_grabctl
+ext_ispctl
+
+

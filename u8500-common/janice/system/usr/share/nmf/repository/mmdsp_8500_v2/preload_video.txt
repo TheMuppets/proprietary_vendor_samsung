@@ -1,0 +1,30 @@
+#
+# Copyright (C) ST-Ericsson SA 2010. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+_ev.jpegenc.mpc.api.algo
+_ev.jpegenc.mpc.api.end_algo
+_ev.jpegenc.mpc.api.log_event
+_sk.jpegenc.mpc.api.ddep
+_st.jpegenc.mpc.api.portSettings
+jpegenc
+jpegenc.mpc.ddep
+_ev.resource_manager.api.buffer
+_ev.resource_manager.api.inform_resource_status
+_ev.resource_manager.api.interrupt
+_ev.resource_manager.api.mtf
+_ev.resource_manager.api.mtf_resource
+_ev.resource_manager.api.resource
+_ev.resource_manager.api.signal
+_ev.resource_manager.api.sleep
+_ev.resource_manager.api.tcm_mem_alloc
+_sk.resource_manager.api.common_interface_exports
+_sk.resource_manager.api.mtf_resource
+_st.resource_manager.api.inform_resource_status
+resource_manager
+
+
+

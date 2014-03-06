@@ -1,0 +1,3453 @@
+//=========================================================
+//Revision history
+//=========================================================
+
+// 0.1 First version of S5K6AAFX config file based on ISX005 config file example
+
+//=========================================================
+//Information section
+//=========================================================
+info_name      = S5K6AAFX;
+info_vendor    = SAMSUNG;
+info_major_ver = 0;
+info_minor_ver = 1;
+
+//=========================================================
+// Camera characteristics section
+//=========================================================
+cam_ccp2_enabled = 0 ;
+
+cam_frame_skip = 0;
+
+cam_i2c_address = 78;
+cam_i2c_clock_freq = 0190;
+
+// Pipe configuration
+cam_pipe_number = 2;
+
+//cam_isp_config = 0 ; //bypass internal(U8500) isp
+
+//TODO cam_isp_config = 0;
+//TODO cam_ccp2_enabled = 0;
+// Port configuration on Ux500? This one uses MIPI CSI-2.
+//  cam_interface - 16bit number
+//  [Bit 0] = 0: Primary interface, 1: Secondry interface
+//  [Bit 1] = 0: CCP2 output, 1: CSI2 output
+//  [Bit 2:3] = Number of lanes
+//  [Bit 4] = 0:v.81b DPHY, 1: v.90 DPHY spec
+//  [Bit 5] = 0:continuous MIPI clock , 1:non-continuous MIPI clock
+//  [Rest] = Unused
+cam_interface = 37;
+
+//CSI bit rate - needed to programmed IPP for 8500
+//cam_csi_bitrate = DC;  // 648Mbps to do
+
+cam_csi_bitrate = 2BC;  // 700Mbps
+
+// Datatype 0 for preview config
+//    1 byte: [byte 0] datatype 0
+cam_csi_datatype0 = 1E;
+
+// Datatype 1 for still config
+//    1 byte: [byte 0] datatype 1
+cam_csi_datatype1 = 1E;
+
+// Datatype 2 for non-image data
+//    1 byte: [byte 0] datatype 2
+cam_csi_datatype2 = 10;
+
+// Pixwidth for datatype 0
+//    1 byte: [byte 0] pix width for datatype 0
+cam_csi_datatype0_pix_wd = 08;
+
+// Pixwidth for datatype 1
+//    1 byte: [byte 0] pix width for datatype 1
+cam_csi_datatype1_pix_wd = 08;
+
+// Pixwidth for datatype 2
+//    1 byte: [byte 0] pix width for datatype 2
+cam_csi_datatype2_pix_wd = 08;
+
+/ Watchdog timeout in ms
+cam_watchdog_timeout = 3E8; // 1000 ms
+
+//=========================================================
+// Supported resolutions
+//=========================================================
+sup_sizes =
+ 0[280, 1E0, 1],  // Preview,  640 * 480, 
+ 1[140, 0F0, 1],  // Preview,  320 * 240, 
+ 2[280, 1E0, 0],  // Capture, 640 * 480,
+ 3[500, 3C0, 0],  // Capture, 1280 * 960  1.3M
+ 4[0B0, 090, 1],  // Preview,  176 * 144, 
+ 5[280, 1E0, 2],  // movie, 640 * 480 , 
+ 6[0B0, 090, 2],  // movie,  176 * 144, 
+ 7[160, 120, 2],  // movie  352 * 288,  
+ 8[140, 0F0, 2],  // movie,  320 * 240, 
+ 9[160, 120, 2],  // Preview  352 * 288,   
+;
+//=========================================================
+// Supported properties
+//=========================================================
+sup_properties =
+// 0[0,  0,   0], // EXPOSURE = 0
+// 1[1,  7,   1],	// WHITE_BALANCE = 1
+// 2[0,  0,   0], // FLICKER_MODE = 2
+// 3[0,  0,   0], // VERTICAL_MIRROR = 3
+// 4[0,  0,   0], // HORIZONTAL_MIRROR = 4
+// 5[0,  0,   0], // JPEG_COMPRESSION_LEVEL = 5
+// 6[0,  0,   0], // FOCUS_MODES = 6
+// 7[0,  0,   0], // FOCUS_MACRO = 7
+// 8[0,  0,   0], // MANUAL_FOCUS_CONTROL = 8
+// 9[0,  0,   0], // OPTICAL_ZOOM = 9
+// a[0,  4,   0], // IMAGE_EFFECT = 10
+// b[0,  0,   0], // CONTRAST_MODE = 11,
+// c[0,  0,   0], // CONTRAST = 12,
+// d[0,  0,   0], // BRIGHTNESS_MODE = 13,
+// e[0,  0,   0], // BRIGHTNESS = 14,
+// f[0,  0,   0], // GAMMA_MODE = 15,
+// 10[0,  0,   0], // GAMMA = 16,
+// 11[0,  0,   0], // FLASH_LIGHT = 17,
+// 12[0,  0,   0], // MECHANICAL_SHUTTER = 18,
+// 13[0,  0,   0], // SATURATION = 19,
+ 14[0,  8,   4], // EXPOSURE_COMPENSATION = 20,
+// 15[0,  f,   0], // SCENE_MODE = 21,
+// 16[0,  0,   0], // SHARPNESS = 22,
+ 17[0,  0,   0], // ISO = 23,
+ 18[0,  0,   0], // METERING_EXPOSURE = 24,
+ 1a[0, 1e,  1e], // FRAME_RATE = 26,
+// 1e[0,  4,   0], // SEC_AF_DRIVING = 30,
+;
+
+
+//=========================================================
+// Macro definition accessing I2C MIPI interface (0x78)
+// => No inversion while reading and writing
+//=========================================================
+GET_REG=
+FCFC D000 $f
+002c 7000 $f
+002e !0 $f
+0f12 $r2 0 1 $f
+$"GET_REG byte 1 %1, byte 0 %0"
+;
+
+//=========================================================
+// Check that the device is alive by reading the device id
+//=========================================================
+
+
+REG_ARM_GO =
+$"[S5K6AAFX] >> REG_ARM_GO"
+//================================================================
+// Device : S5K6AAFX
+// MIPI Interface for Noncontious Clock
+//================================================================
+
+//================================================================
+// History
+// 20101214 Hyungseok.Yoon T&P Update from SIRC(ISP06AA00C00000.ASIC.TNP)
+//================================================================
+
+//================================================================
+// ARM GO and Delay
+//================================================================
+FCFC D000 $f
+0010 0001 $f	// Reset
+0004 0000 $f	// Disable Auto Address Increment : 0 Chunghwan Park
+1030 0000 $f	// Clear host interrupt so main will wait
+0014 0001 $f	// ARM Go
+$d0064  // delay 100ms
+
+//================================================================
+// Trap and Patch
+//================================================================
+// svn://transrdsrv/svn/svnroot/System/Software/tcevb/SDK+FW/ISP_Oscar/Firmware
+// Rev: 33110-33110
+// Signature:
+// md5 f0ba942df15b96de5c09e6cf13fed9c9 .btp
+// md5 8bc59f72129cb36e6f6db4be5ddca1f6 .htp
+// md5 954ec97efcabad291d89f63e29f32490 .RegsMap.h
+// md5 5c29fe50b51e7e860313f5b3b6452bfd .RegsMap.bin
+// md5 6211407baaa234b753431cde4ba32402 .base.RegsMap.h
+// md5 90cc21d42cc5f02eb80b2586e5c46d9b .base.RegsMap.bin
+FCFC D000 $f        
+0004 0001 $f	// ensable Auto Address Increment : 1
+0028 7000 $f
+002A 1D60 $f
+0F12 B570
+     4936
+     4836
+     2205
+     F000
+     FA4E
+     4935
+     2002
+     83C8
+     2001
+     3120
+     8088
+     4933
+     0200
+     8008
+     4933
+     8048
+     4933
+     4833
+     2204
+     F000
+     FA3E
+     4932
+     4833
+     2206
+     F000
+     FA39
+     4932
+     4832
+     2207
+     F000
+     FA34
+     4931
+     4832
+     2208
+     F000
+     FA2F
+     4931
+     4831
+     2209
+     F000
+     FA2A
+     4930
+     4831
+     220A
+     F000
+     FA25
+     4930
+     4830
+     220B
+     F000
+     FA20
+     482F
+     4930
+     6108
+     4830
+     39FF
+     3901
+     6748
+     482F
+     1C0A
+     32C0
+     6390
+     482E
+     6708
+     491A
+     482D
+     3108
+     60C1
+     6882
+     1A51
+     8201
+     4C2B
+     2607
+     6821
+     0736
+     42B1
+     DA05
+     4829
+     22D8
+     1C05
+     F000
+     FA09
+     6025
+     68A1
+     42B1
+     DA07
+     4825
+     2224
+     3824
+     F000
+     FA00
+     4822
+     3824
+     60A0
+     4D22
+     6D29
+     42B1
+     DA07
+     481F
+     228F
+     00D2
+     30D8
+     1C04
+     F000
+     F9F2
+     652C
+     BC70
+     BC08
+     4718
+     218B
+     7000
+     127B
+     0000
+     0398
+     7000
+     1376
+     7000
+     2370
+     7000
+     1F0D
+     7000
+     890D
+     0000
+     1F2F
+     7000
+     27A9
+     0000
+     1FE1
+     7000
+     27C5
+     0000
+     2043
+     7000
+     285F
+     0000
+     2003
+     7000
+     28FF
+     0000
+     20CD
+     7000
+     6181
+     0000
+     20EF
+     7000
+     6663
+     0000
+     2123
+     7000
+     0100
+     7000
+     1EC1
+     7000
+     1EAD
+     7000
+     1F79
+     7000
+     04AC
+     7000
+     06CC
+     7000
+     23A4
+     7000
+     0704
+     7000
+     B510
+     F000
+     F9B9
+     48C3
+     49C3
+     8800
+     8048
+     BC10
+     BC08
+     4718
+     B5F8
+     1C06
+     4DC0
+     68AC
+     1C30
+     F000
+     F9B3
+     68A9
+     4ABC
+     42A1
+     D003
+     4BBD
+     8A1B
+     3301
+     8013
+     8813
+     1C14
+     2B00
+     D00F
+     2201
+     4281
+     D003
+     8C2F
+     42B9
+     D300
+     2200
+     60AE
+     2A00
+     D003
+     8C28
+     42B0
+     D800
+     1C30
+     1E59
+     8021
+     BCF8
+     BC08
+     4718
+     B510
+     1C04
+     48AF
+     F000
+     F997
+     4AAD
+     4BAE
+     8811
+     885B
+     8852
+     4359
+     1889
+     4288
+     D800
+     1C08
+     6020
+     E7C5
+     B570
+     1C05
+     F000
+     F98F
+     49A5
+     8989
+     4348
+     0200
+     0C00
+     2101
+     0349
+     F000
+     F98E
+     1C04
+     489F
+     8F80
+     F000
+     F991
+     1C01
+     20FF
+     43C0
+     F000
+     F994
+     F000
+     F998
+     1C01
+     4898
+     8840
+     4360
+     0200
+     0C00
+     F000
+     F97A
+     6028
+     BC70
+     BC08
+     4718
+     B5F1
+     B082
+     4D96
+     4E91
+     88A8
+     1C2C
+     3420
+     4F90
+     2800
+     D018
+     F000
+     F988
+     9001
+     9802
+     6B39
+     0200
+     F000
+     F974
+     F000
+     F978
+     9901
+     F000
+     F95F
+     8020
+     8871
+     0200
+     F000
+     F96A
+     0400
+     0C00
+     21FF
+     3101
+     F000
+     F97A
+     8020
+     88E8 $f
+	 
+0F12 2800
+     D00A
+     4980
+     8820
+     3128
+     F000
+     F979
+     8D38
+     8871
+     4348
+     0200
+     0C00
+     8538
+     BCFE
+     BC08
+     4718
+     B510
+     1C04
+     F000
+     F974
+     6821
+     0409
+     0C09
+     1A40
+     4976
+     6849
+     4281
+     D800
+     1C08
+     F000
+     F971
+     6020
+     E75B
+     B570
+     6801
+     040D
+     0C2D
+     6844
+     486F
+     8981
+     1C28
+     F000
+     F927
+     8060
+     4970
+     69C9
+     F000
+     F968
+     1C01
+     80A0
+     0228
+     F000
+     F92D
+     0400
+     0C00
+     8020
+     496B
+     2300
+     5EC9
+     4288
+     DA02
+     20FF
+     3001
+     8020
+     E797
+     B5F8
+     1C04
+     4867
+     4E65
+     7800
+     6AB7
+     2800
+     D100
+     6A37
+     495D
+     2800
+     688D
+     D100
+     684D
+     4859
+     8841
+     6820
+     0200
+     F000
+     F94B
+     8DF1
+     434F
+     0A3A
+     4282
+     D30C
+     4D5C
+     26FF
+     8829
+     3601
+     43B1
+     8029
+     F000
+     F944
+     6020
+     8828
+     4330
+     8028
+     E73B
+     1C0A
+     436A
+     0A12
+     4282
+     D304
+     0200
+     F000
+     F8F3
+     6020
+     E7F4
+     6025
+     E7F2
+     B410
+     4848
+     4950
+     89C0
+     2316
+     5ECC
+     1C02
+     42A0
+     DC00
+     1C22
+     82CA
+     2318
+     5ECA
+     4290
+     DC00
+     1C10
+     8308
+     BC10
+     4770
+     B570
+     1C06
+     4C45
+     2501
+     8820
+     02AD
+     43A8
+     8020
+     F000
+     F91E
+     6030
+     F7FF
+     FFE0
+     8820
+     4328
+     8020
+     E741
+     B570
+     4C3D
+     2501
+     8820
+     02ED
+     43A8
+     8020
+     F000
+     F916
+     F7FF
+     FFD1
+     8820
+     4328
+     8020
+     E732
+     230D
+     071B
+     18C3
+     8818
+     2A00
+     D001
+     4308
+     E000
+     4388
+     8018
+     4770
+     B570
+     2402
+     4932
+     8809
+     078A
+     D500
+     2406
+     2900
+     D01F
+     1C02
+     207D
+     00C0
+     2600
+     4D2D
+     2A00
+     D019
+     2101
+     8229
+     F000
+     F8F9
+     2200
+     2101
+     482A
+     0309
+     F7FF
+     FFDB
+     2008
+     4304
+     1C21
+     4C26
+     2200
+     3C14
+     1C20
+     F7FF
+     FFD2
+     2200
+     2121
+     1C20
+     F7FF
+     FFCD
+     802E
+     E6FD
+     822E
+     0789
+     0FC9
+     0089
+     223B
+     4311
+     8029
+     F000
+     F8DA
+     E7F4
+     B510
+     491B
+     8FC8
+     2800
+     D007
+     2000
+     87C8
+     8F88
+     4C19
+     2800
+     D002
+     2008
+     8020
+     E689
+     4815
+     3060
+     8900
+     2800
+     D103
+     4814
+     2101
+     F000
+     F8CA
+     2010
+     8020
+     E7F2
+     0000
+     1376
+     7000
+     2370
+     7000
+     14D8
+     7000
+     235C
+     7000
+     F4B0
+     0000
+     1554
+     7000
+     1AB8
+     7000
+     0080
+     7000
+     046C
+     7000
+     0468
+     7000
+     1100
+     D000
+     198C
+     7000
+     0AC4
+     7000
+     B0A0
+     D000
+     B0B4
+     0000
+     01B8
+     7000
+     044E
+     7000
+     0450
+     7000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     9CE7
+     0000
+     4778
+     46C0
+     F004
+     E51F
+     9FB8
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     14C1
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     27E1
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     88DF
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     275D
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     1ED3
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     27C5
+     0000
+     4778
+     46C0
+     F004
+     E51F
+     A144
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     1F87
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     27A9
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     1ECB
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     28FF
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     26F9
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     4027
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     9F03
+     0000
+     4778
+     46C0
+     F004
+     E51F
+     9D9C
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     285F
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     6181
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     6663
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     85D9
+     0000
+     4778
+     46C0
+     C000
+     E59F
+     FF1C
+     E12F
+     2001
+     0000
+     0000
+     0000
+     E848
+     0001
+     E848
+     0001
+     0500
+     0064
+     0002
+     0000
+     0000
+     0000
+     0000
+     0000 $f
+//Parameters Defined in T&P:
+//REG_SF_USER_IsoVal                        2 700003EE SHORT
+//REG_SF_USER_IsoChanged                    2 700003F0 SHORT
+//AWBBTune_EVT4                            20 7000235C STRUCT
+//AWBBTune_EVT4_uMinCoarse                  2 7000235C SHORT
+//AWBBTune_EVT4_uMinFine                    2 7000235E SHORT
+//AWBBTune_EVT4_uMaxExp3                    4 70002360 LONG
+//AWBBTune_EVT4_uCapMaxExp3                 4 70002364 LONG
+//AWBBTune_EVT4_uMaxAnGain3                 2 70002368 SHORT
+//AWBBTune_EVT4_uMinFinalPt                 2 7000236A SHORT
+//AWBBTune_EVT4_uInitPostToleranceCnt       2 7000236C SHORT
+//AWBB_Mon_EVT3                             4 70002370 STRUCT
+//AWBB_Mon_EVT3_uPostToleranceCnt           2 70002370 SHORT
+//AWBB_Mon_EVT3_usIsoFixedDigitalGain88     2 70002372 SHORT
+//End T&P part
+;
+
+REG_ANALOG =
+$"[S5K6AAFX] >> REG_ANALOG"
+//================================================================
+// Analog Setting
+//================================================================
+0004 0000 $f	//Disable Auto Address Increment : 0
+F454 0001 $f	//ADC sat = 750mV(50h), NTG = -0.8V(10h), Saturation margin low limit = 732LSB
+F418 0050 $f	//aig_adc_sat[7:4]
+F43E 0010 $f	//aig_reg_tune_ntg[7:0]
+0004 0001 $f	//Disable Auto Address Increment : 1
+002A 112A $f	//senHal_SenRegsModes3_pSenModesRegsArray3[8]
+0F12 0000 $f
+002A 1132 $f	//senHal_SenRegsModes3_pSenModesRegsArray3[12]
+0F12 0000 $f
+002A 113E $f	//senHal_SenRegsModes3_pSenModesRegsArray3[18]
+0F12 0000 $f
+002A 115C $f	//senHal_SenRegsModes3_pSenModesRegsArray3[33]
+0F12 0000 $f
+002A 1164 $f	//senHal_SenRegsModes3_pSenModesRegsArray3[37]
+0F12 0000 $f
+002A 1174 $f	//senHal_SenRegsModes3_pSenModesRegsArray3[45]
+0F12 0000 $f
+002A 1178 $f	//senHal_SenRegsModes3_pSenModesRegsArray3[47]
+0F12 0000 $f
+002A 077A $f	//msm_uOffsetNoBin
+0F12 0000   
+     0000   
+     0000   
+     0000   
+     0000   
+     0000   
+     0000   
+     0000 $f
+002A 07A2 $f	//msm_sAnalogOffset
+0F12 0000   
+     0000   
+     0000   
+     0000 $f
+002A 07B6 $f	//msm_NonLinearOfsOutput
+0F12 0000   	//msm_NonLinearOfsOutput[0]
+     0002   	//msm_NonLinearOfsOutput[1]
+     0004   	//msm_NonLinearOfsOutput[2]
+     0004   	//msm_NonLinearOfsOutput[3]
+     0005   	//msm_NonLinearOfsOutput[4]
+     0005 $f	//msm_NonLinearOfsOutput[5]              
+
+//================================================================
+// ESD Check Code add_100505
+//================================================================
+0028 7000 $f
+002A 0132 $f
+0F12 AAAA $f	//REG_FWpid
+
+//================================================================
+// AE & AE Weight
+//================================================================
+002A 1000 $f	//TVAR_ae_BrAve
+0F12 003a $f	//35
+
+002A 0474 $f
+0F12 0112   	//lt_uLimitHigh  //010F  //0114
+     00EF $f	//lt_uLimitLow   //00F1  //00F9
+
+002A 1006 $f
+0F12 001F $f	//ae_StatMode
+
+002A 108E $f	//SARR_IllumType
+0F12 00C7   
+     00F7   
+     0107   
+     0142   
+     017A   
+     01A0   
+     01B6   
+
+     0100   	//SARR_IllumTypeF	// 0112
+     0100   	//0122
+     0100   	//0136
+     0100   	//00F6
+     0100   	//0100
+     0100   	//00FE
+     0100 $f	//0100
+
+002A 0488 $f
+0F12 410A   	//416E //33.3m  //lt_uMaxExp1
+     0000   
+     A316   	//lt_uMaxExp2
+     0000 $f
+002A 2360 $f	//AWBBTune_EVT4_uMaxExp3
+0F12 F424   
+     0000 $f
+
+002A 0490 $f	//lt_uCapMaxExp1
+0F12 410A   	//416E // 33.3m
+     0000   
+     A316   	//lt_uCapMaxExp2
+     0000 $f
+002A 2364 $f	//AWBBTune_EVT4_uCapMaxExp3
+0F12 F424   
+     0000 $f
+
+002A 0498 $f
+0F12 0210   	//01E8	//lt_uMaxAnGain1       700luxshutter
+     0330 $f	//lt_uMaxAnGain2
+002A 2368 $f
+0F12 06d0 $f	//700//800//900//990//A00	//AWBBTune_EVT4_uMaxAnGain3
+002A 049C $f
+0F12 0100 $f	//lt_uMaxDigGain
+
+002A 235C $f
+0F12 0002   	//0001	//AWBBTune_EVT4_uMinCoarse
+     0090 $f	//AWBBTune_EVT4_uMinFine
+
+//================================================================
+// AE WeightTable
+//================================================================
+002A 1C72 $f	//ae_WeightTbl_16
+0F12 0000   
+     0000   
+     0000   
+     0101   
+     0101   
+     0101   
+     0101   
+     0101   
+     0101   
+     0302   
+     0203   
+     0101   
+     0101   
+     0403   
+     0304   
+     0101   
+     0101   
+     0403   
+     0304   
+     0101   
+     0101   
+     0302   
+     0203   
+     0101   
+     0101   
+     0101   
+     0101   
+     0101   
+     0101   
+     0000   
+     0000   
+     0000 $f
+
+002A 0F4C $f	//brightness
+0F12 02B0 $f	//180
+002A 0F52 $f
+0F12 02F0 $f	//180   
+;
+
+
+REG_GAS =
+$"[S5K6AAFX] >> REG_GAS"
+//================================================================
+// GAS (Shading)
+//================================================================
+002A 0754 $f	//TVAR_ash_pGAS
+0F12 247C   
+     7000 $f
+
+002A 247C $f	
+0F12 01D2   	//TVAR_ash_pGAS[0]
+     0186   	//TVAR_ash_pGAS[1]
+     012A   	//TVAR_ash_pGAS[2]
+     00E6   	//TVAR_ash_pGAS[3]
+     00BC   	//TVAR_ash_pGAS[4]
+     00A2   	//TVAR_ash_pGAS[5]
+     009B   	//TVAR_ash_pGAS[6]
+     00A1   	//TVAR_ash_pGAS[7]
+     00B7   	//TVAR_ash_pGAS[8]
+     00E2   	//TVAR_ash_pGAS[9]
+     0122   	//TVAR_ash_pGAS[10]
+     017E   	//TVAR_ash_pGAS[11]
+     01BF   	//TVAR_ash_pGAS[12]
+     019C   	//TVAR_ash_pGAS[13]
+     013C   	//TVAR_ash_pGAS[14]
+     00E1   	//TVAR_ash_pGAS[15]
+     00A7   	//TVAR_ash_pGAS[16]
+     0082   	//TVAR_ash_pGAS[17]
+     006D   	//TVAR_ash_pGAS[18]
+     0065   	//TVAR_ash_pGAS[19]
+     006B   	//TVAR_ash_pGAS[20]
+     007E   	//TVAR_ash_pGAS[21]
+     00A1   	//TVAR_ash_pGAS[22]
+     00DB   	//TVAR_ash_pGAS[23]
+     0133   	//TVAR_ash_pGAS[24]
+     018B   	//TVAR_ash_pGAS[25]
+     015A   	//TVAR_ash_pGAS[26]
+     00FA   	//TVAR_ash_pGAS[27]
+     00A7   	//TVAR_ash_pGAS[28]
+     0075   	//TVAR_ash_pGAS[29]
+     0053   	//TVAR_ash_pGAS[30]
+     0040   	//TVAR_ash_pGAS[31]
+     0038   	//TVAR_ash_pGAS[32]
+     003D   	//TVAR_ash_pGAS[33]
+     004F   	//TVAR_ash_pGAS[34]
+     006D   	//TVAR_ash_pGAS[35]
+     009F   	//TVAR_ash_pGAS[36]
+     00EE   	//TVAR_ash_pGAS[37]
+     0147   	//TVAR_ash_pGAS[38]
+     0129   	//TVAR_ash_pGAS[39]
+     00CE   	//TVAR_ash_pGAS[40]
+     0085   	//TVAR_ash_pGAS[41]
+     0055   	//TVAR_ash_pGAS[42]
+     0035   	//TVAR_ash_pGAS[43]
+     0020   	//TVAR_ash_pGAS[44]
+     0018   	//TVAR_ash_pGAS[45]
+     001E   	//TVAR_ash_pGAS[46]
+     0030   	//TVAR_ash_pGAS[47]
+     004F   	//TVAR_ash_pGAS[48]
+     007B   	//TVAR_ash_pGAS[49]
+     00C3   	//TVAR_ash_pGAS[50]
+     0119   	//TVAR_ash_pGAS[51]
+     010E   	//TVAR_ash_pGAS[52]
+     00B8   	//TVAR_ash_pGAS[53]
+     0072   	//TVAR_ash_pGAS[54]
+     0044   	//TVAR_ash_pGAS[55]
+     0023   	//TVAR_ash_pGAS[56]
+     000E   	//TVAR_ash_pGAS[57]
+     0005   	//TVAR_ash_pGAS[58]
+     000C   	//TVAR_ash_pGAS[59]
+     001F   	//TVAR_ash_pGAS[60]
+     003E   	//TVAR_ash_pGAS[61]
+     0069   	//TVAR_ash_pGAS[62]
+     00AC   	//TVAR_ash_pGAS[63]
+     0101   	//TVAR_ash_pGAS[64]
+     0107   	//TVAR_ash_pGAS[65]
+     00B2   	//TVAR_ash_pGAS[66]
+     006F   	//TVAR_ash_pGAS[67]
+     0040   	//TVAR_ash_pGAS[68]
+     001E   	//TVAR_ash_pGAS[69]
+     0008   	//TVAR_ash_pGAS[70]
+     0000   	//TVAR_ash_pGAS[71]
+     0007   	//TVAR_ash_pGAS[72]
+     001B   	//TVAR_ash_pGAS[73]
+     003A   	//TVAR_ash_pGAS[74]
+     0065   	//TVAR_ash_pGAS[75]
+     00A8   	//TVAR_ash_pGAS[76]
+     00FB   	//TVAR_ash_pGAS[77]
+     0115   	//TVAR_ash_pGAS[78]
+     00BC   	//TVAR_ash_pGAS[79]
+     0077   	//TVAR_ash_pGAS[80]
+     0048   	//TVAR_ash_pGAS[81]
+     0027   	//TVAR_ash_pGAS[82]
+     0011   	//TVAR_ash_pGAS[83]
+     0009   	//TVAR_ash_pGAS[84]
+     000F   	//TVAR_ash_pGAS[85]
+     0023   	//TVAR_ash_pGAS[86]
+     0043   	//TVAR_ash_pGAS[87]
+     0070   	//TVAR_ash_pGAS[88]
+     00B5   	//TVAR_ash_pGAS[89]
+     010A   	//TVAR_ash_pGAS[90]
+     0138   	//TVAR_ash_pGAS[91]
+     00D9   	//TVAR_ash_pGAS[92]
+     008E   	//TVAR_ash_pGAS[93]
+     005E   	//TVAR_ash_pGAS[94]
+     003C   	//TVAR_ash_pGAS[95]
+     0027   	//TVAR_ash_pGAS[96]
+     001F   	//TVAR_ash_pGAS[97]
+     0024   	//TVAR_ash_pGAS[98]
+     0038   	//TVAR_ash_pGAS[99]
+     0058   	//TVAR_ash_pGAS[100]
+     0088   	//TVAR_ash_pGAS[101]
+     00D3   	//TVAR_ash_pGAS[102]
+     012D   	//TVAR_ash_pGAS[103]
+     0171   	//TVAR_ash_pGAS[104]
+     010C   	//TVAR_ash_pGAS[105]
+     00B5   	//TVAR_ash_pGAS[106]
+     007F   	//TVAR_ash_pGAS[107]
+     005D   	//TVAR_ash_pGAS[108]
+     0048   	//TVAR_ash_pGAS[109]
+     0040   	//TVAR_ash_pGAS[110]
+     0045   	//TVAR_ash_pGAS[111]
+     0059   	//TVAR_ash_pGAS[112]
+     007B   	//TVAR_ash_pGAS[113]
+     00B1   	//TVAR_ash_pGAS[114]
+     0104   	//TVAR_ash_pGAS[115]
+     0166   	//TVAR_ash_pGAS[116]
+     01B9   	//TVAR_ash_pGAS[117]
+     0152   	//TVAR_ash_pGAS[118]
+     00F3   	//TVAR_ash_pGAS[119]
+     00B5   	//TVAR_ash_pGAS[120]
+     008C   	//TVAR_ash_pGAS[121]
+     0075   	//TVAR_ash_pGAS[122]
+     006E   	//TVAR_ash_pGAS[123]
+     0073   	//TVAR_ash_pGAS[124]
+     0089   	//TVAR_ash_pGAS[125]
+     00B2   	//TVAR_ash_pGAS[126]
+     00F1   	//TVAR_ash_pGAS[127]
+     014E   	//TVAR_ash_pGAS[128]
+     01A8   	//TVAR_ash_pGAS[129]
+     01E4   	//TVAR_ash_pGAS[130]
+     019F   	//TVAR_ash_pGAS[131]
+     013E   	//TVAR_ash_pGAS[132]
+     00F5   	//TVAR_ash_pGAS[133]
+     00C6   	//TVAR_ash_pGAS[134]
+     00AC   	//TVAR_ash_pGAS[135]
+     00A2   	//TVAR_ash_pGAS[136]
+     00AA   	//TVAR_ash_pGAS[137]
+     00C3   	//TVAR_ash_pGAS[138]
+     00F3   	//TVAR_ash_pGAS[139]
+     0138   	//TVAR_ash_pGAS[140]
+     0193   	//TVAR_ash_pGAS[141]
+     01DE   	//TVAR_ash_pGAS[142]
+     017C   	//TVAR_ash_pGAS[143]
+     0139   	//TVAR_ash_pGAS[144]
+     00EC   	//TVAR_ash_pGAS[145]
+     00B5   	//TVAR_ash_pGAS[146]
+     0092   	//TVAR_ash_pGAS[147]
+     007E   	//TVAR_ash_pGAS[148]
+     0077   	//TVAR_ash_pGAS[149]
+     007B   	//TVAR_ash_pGAS[150]
+     008A   	//TVAR_ash_pGAS[151]
+     00A7   	//TVAR_ash_pGAS[152]
+     00D8   	//TVAR_ash_pGAS[153]
+     011F   	//TVAR_ash_pGAS[154]
+     015A   	//TVAR_ash_pGAS[155]
+     014B   	//TVAR_ash_pGAS[156]
+     00F9   	//TVAR_ash_pGAS[157]
+     00AF   	//TVAR_ash_pGAS[158]
+     0081   	//TVAR_ash_pGAS[159]
+     0064   	//TVAR_ash_pGAS[160]
+     0054   	//TVAR_ash_pGAS[161]
+     004E   	//TVAR_ash_pGAS[162]
+     0050   	//TVAR_ash_pGAS[163]
+     005D   	//TVAR_ash_pGAS[164]
+     0075   	//TVAR_ash_pGAS[165]
+     009F   	//TVAR_ash_pGAS[166]
+     00E1   	//TVAR_ash_pGAS[167]
+     012C   	//TVAR_ash_pGAS[168]
+     0116   	//TVAR_ash_pGAS[169]
+     00C4   	//TVAR_ash_pGAS[170]
+     0084   	//TVAR_ash_pGAS[171]
+     005B   	//TVAR_ash_pGAS[172]
+     0042   	//TVAR_ash_pGAS[173]
+     0032   	//TVAR_ash_pGAS[174]
+     002B   	//TVAR_ash_pGAS[175]
+     002E   	//TVAR_ash_pGAS[176]
+     003A   	//TVAR_ash_pGAS[177]
+     004F   	//TVAR_ash_pGAS[178]
+     0072   	//TVAR_ash_pGAS[179]
+     00AD   	//TVAR_ash_pGAS[180]
+     00F8   	//TVAR_ash_pGAS[181]
+     00EC   	//TVAR_ash_pGAS[182]
+     00A2   	//TVAR_ash_pGAS[183]
+     0069   	//TVAR_ash_pGAS[184]
+     0044   	//TVAR_ash_pGAS[185]
+     002A   	//TVAR_ash_pGAS[186]
+     0019   	//TVAR_ash_pGAS[187]
+     0012   	//TVAR_ash_pGAS[188]
+     0015   	//TVAR_ash_pGAS[189]
+     0022   	//TVAR_ash_pGAS[190]
+     0037   	//TVAR_ash_pGAS[191]
+     0057   	//TVAR_ash_pGAS[192]
+     008C   	//TVAR_ash_pGAS[193]
+     00D2   	//TVAR_ash_pGAS[194]
+     00D6   	//TVAR_ash_pGAS[195]
+     0090   	//TVAR_ash_pGAS[196]
+     005A   	//TVAR_ash_pGAS[197]
+     0036   	//TVAR_ash_pGAS[198]
+     001C   	//TVAR_ash_pGAS[199]
+     000A   	//TVAR_ash_pGAS[200]
+     0003   	//TVAR_ash_pGAS[201]
+     0007   	//TVAR_ash_pGAS[202]
+     0015   	//TVAR_ash_pGAS[203]
+     002B   	//TVAR_ash_pGAS[204]
+     004A   	//TVAR_ash_pGAS[205]
+     007C   	//TVAR_ash_pGAS[206]
+     00BF   	//TVAR_ash_pGAS[207]
+     00CF   	//TVAR_ash_pGAS[208]
+     008C   	//TVAR_ash_pGAS[209]
+     0057   	//TVAR_ash_pGAS[210]
+     0033   	//TVAR_ash_pGAS[211]
+     0019   	//TVAR_ash_pGAS[212]
+     0007   	//TVAR_ash_pGAS[213]
+     0000   	//TVAR_ash_pGAS[214]
+     0004   	//TVAR_ash_pGAS[215]
+     0012   	//TVAR_ash_pGAS[216]
+     0029   	//TVAR_ash_pGAS[217]
+     0048   	//TVAR_ash_pGAS[218]
+     007A   	//TVAR_ash_pGAS[219]
+     00BC   	//TVAR_ash_pGAS[220]
+     00DB   	//TVAR_ash_pGAS[221]
+     0093   	//TVAR_ash_pGAS[222]
+     005E   	//TVAR_ash_pGAS[223]
+     003B   	//TVAR_ash_pGAS[224]
+     0021   	//TVAR_ash_pGAS[225]
+     000F   	//TVAR_ash_pGAS[226]
+     0008   	//TVAR_ash_pGAS[227]
+     000C   	//TVAR_ash_pGAS[228]
+     001B   	//TVAR_ash_pGAS[229]
+     0031   	//TVAR_ash_pGAS[230]
+     0052   	//TVAR_ash_pGAS[231]
+     0084   	//TVAR_ash_pGAS[232]
+     00C8   	//TVAR_ash_pGAS[233]
+     00F8   	//TVAR_ash_pGAS[234]
+     00AB   	//TVAR_ash_pGAS[235]
+     0071   	//TVAR_ash_pGAS[236]
+     004D   	//TVAR_ash_pGAS[237]
+     0034   	//TVAR_ash_pGAS[238]
+     0023   	//TVAR_ash_pGAS[239]
+     001C   	//TVAR_ash_pGAS[240]
+     0020   	//TVAR_ash_pGAS[241]
+     002E   	//TVAR_ash_pGAS[242]
+     0044   	//TVAR_ash_pGAS[243]
+     0066   	//TVAR_ash_pGAS[244]
+     009D   	//TVAR_ash_pGAS[245]
+     00E7   	//TVAR_ash_pGAS[246]
+     0125   	//TVAR_ash_pGAS[247]
+     00D2   	//TVAR_ash_pGAS[248]
+     0090   	//TVAR_ash_pGAS[249]
+     0069   	//TVAR_ash_pGAS[250]
+     004F   	//TVAR_ash_pGAS[251]
+     003F   	//TVAR_ash_pGAS[252]
+     0038   	//TVAR_ash_pGAS[253]
+     003C   	//TVAR_ash_pGAS[254]
+     0049   	//TVAR_ash_pGAS[255]
+     0061   	//TVAR_ash_pGAS[256]
+     0087   	//TVAR_ash_pGAS[257]
+     00C4   	//TVAR_ash_pGAS[258]
+     0114   	//TVAR_ash_pGAS[259]
+     0162   	//TVAR_ash_pGAS[260]
+     010C   	//TVAR_ash_pGAS[261]
+     00C3   	//TVAR_ash_pGAS[262]
+     0093   	//TVAR_ash_pGAS[263]
+     0074   	//TVAR_ash_pGAS[264]
+     0064   	//TVAR_ash_pGAS[265]
+     005D   	//TVAR_ash_pGAS[266]
+     0061   	//TVAR_ash_pGAS[267]
+     0071   	//TVAR_ash_pGAS[268]
+     008C   	//TVAR_ash_pGAS[269]
+     00BB   	//TVAR_ash_pGAS[270]
+     0102   	//TVAR_ash_pGAS[271]
+     014D   	//TVAR_ash_pGAS[272]
+     018A   	//TVAR_ash_pGAS[273]
+     014F   	//TVAR_ash_pGAS[274]
+     00FE   	//TVAR_ash_pGAS[275]
+     00C5   	//TVAR_ash_pGAS[276]
+     00A2   	//TVAR_ash_pGAS[277]
+     008E   	//TVAR_ash_pGAS[278]
+     0087   	//TVAR_ash_pGAS[279]
+     008C   	//TVAR_ash_pGAS[280]
+     009E   	//TVAR_ash_pGAS[281]
+     00C0   	//TVAR_ash_pGAS[282]
+     00F5   	//TVAR_ash_pGAS[283]
+     013E   	//TVAR_ash_pGAS[284]
+     017D   	//TVAR_ash_pGAS[285]
+     0192   	//TVAR_ash_pGAS[286]
+     0148   	//TVAR_ash_pGAS[287]
+     00F5   	//TVAR_ash_pGAS[288]
+     00BA   	//TVAR_ash_pGAS[289]
+     0095   	//TVAR_ash_pGAS[290]
+     007F   	//TVAR_ash_pGAS[291]
+     0078   	//TVAR_ash_pGAS[292]
+     007C   	//TVAR_ash_pGAS[293]
+     008F   	//TVAR_ash_pGAS[294]
+     00B3   	//TVAR_ash_pGAS[295]
+     00E9   	//TVAR_ash_pGAS[296]
+     013B   	//TVAR_ash_pGAS[297]
+     017E   	//TVAR_ash_pGAS[298]
+     015F   	//TVAR_ash_pGAS[299]
+     0108   	//TVAR_ash_pGAS[300]
+     00B9   	//TVAR_ash_pGAS[301]
+     0087   	//TVAR_ash_pGAS[302]
+     0069   	//TVAR_ash_pGAS[303]
+     0056   	//TVAR_ash_pGAS[304]
+     004F   	//TVAR_ash_pGAS[305]
+     0053   	//TVAR_ash_pGAS[306]
+     0062   	//TVAR_ash_pGAS[307]
+     007F   	//TVAR_ash_pGAS[308]
+     00AE   	//TVAR_ash_pGAS[309]
+     00F8   	//TVAR_ash_pGAS[310]
+     014C   	//TVAR_ash_pGAS[311]
+     0129   	//TVAR_ash_pGAS[312]
+     00D4   	//TVAR_ash_pGAS[313]
+     008F   	//TVAR_ash_pGAS[314]
+     0063   	//TVAR_ash_pGAS[315]
+     0047   	//TVAR_ash_pGAS[316]
+     0034   	//TVAR_ash_pGAS[317]
+     002D   	//TVAR_ash_pGAS[318]
+     0030   	//TVAR_ash_pGAS[319]
+     003E   	//TVAR_ash_pGAS[320]
+     0057   	//TVAR_ash_pGAS[321]
+     007F   	//TVAR_ash_pGAS[322]
+     00BF   	//TVAR_ash_pGAS[323]
+     0111   	//TVAR_ash_pGAS[324]
+     0100   	//TVAR_ash_pGAS[325]
+     00B1   	//TVAR_ash_pGAS[326]
+     0074   	//TVAR_ash_pGAS[327]
+     004C   	//TVAR_ash_pGAS[328]
+     002F   	//TVAR_ash_pGAS[329]
+     001C   	//TVAR_ash_pGAS[330]
+     0013   	//TVAR_ash_pGAS[331]
+     0017   	//TVAR_ash_pGAS[332]
+     0026   	//TVAR_ash_pGAS[333]
+     003E   	//TVAR_ash_pGAS[334]
+     0062   	//TVAR_ash_pGAS[335]
+     0099   	//TVAR_ash_pGAS[336]
+     00E5   	//TVAR_ash_pGAS[337]
+     00E6   	//TVAR_ash_pGAS[338]
+     009F   	//TVAR_ash_pGAS[339]
+     0066   	//TVAR_ash_pGAS[340]
+     003F   	//TVAR_ash_pGAS[341]
+     0021   	//TVAR_ash_pGAS[342]
+     000D   	//TVAR_ash_pGAS[343]
+     0004   	//TVAR_ash_pGAS[344]
+     0008   	//TVAR_ash_pGAS[345]
+     0016   	//TVAR_ash_pGAS[346]
+     002F   	//TVAR_ash_pGAS[347]
+     0050   	//TVAR_ash_pGAS[348]
+     0085   	//TVAR_ash_pGAS[349]
+     00CA   	//TVAR_ash_pGAS[350]
+     00E2   	//TVAR_ash_pGAS[351]
+     009A   	//TVAR_ash_pGAS[352]
+     0062   	//TVAR_ash_pGAS[353]
+     003B   	//TVAR_ash_pGAS[354]
+     001D   	//TVAR_ash_pGAS[355]
+     0009   	//TVAR_ash_pGAS[356]
+     0000   	//TVAR_ash_pGAS[357]
+     0003   	//TVAR_ash_pGAS[358]
+     0011   	//TVAR_ash_pGAS[359]
+     0029   	//TVAR_ash_pGAS[360]
+     0049   	//TVAR_ash_pGAS[361]
+     007D   	//TVAR_ash_pGAS[362]
+     00C0   	//TVAR_ash_pGAS[363]
+     00EE   	//TVAR_ash_pGAS[364]
+     00A1   	//TVAR_ash_pGAS[365]
+     0069   	//TVAR_ash_pGAS[366]
+     0043   	//TVAR_ash_pGAS[367]
+     0025   	//TVAR_ash_pGAS[368]
+     0010   	//TVAR_ash_pGAS[369]
+     0007   	//TVAR_ash_pGAS[370]
+     000A   	//TVAR_ash_pGAS[371]
+     0017   	//TVAR_ash_pGAS[372]
+     002E   	//TVAR_ash_pGAS[373]
+     004F   	//TVAR_ash_pGAS[374]
+     0083   	//TVAR_ash_pGAS[375]
+     00C7   	//TVAR_ash_pGAS[376]
+     010B   	//TVAR_ash_pGAS[377]
+     00BA   	//TVAR_ash_pGAS[378]
+     007B   	//TVAR_ash_pGAS[379]
+     0054   	//TVAR_ash_pGAS[380]
+     0037   	//TVAR_ash_pGAS[381]
+     0023   	//TVAR_ash_pGAS[382]
+     001A   	//TVAR_ash_pGAS[383]
+     001B   	//TVAR_ash_pGAS[384]
+     0027   	//TVAR_ash_pGAS[385]
+     003D   	//TVAR_ash_pGAS[386]
+     005F   	//TVAR_ash_pGAS[387]
+     0095   	//TVAR_ash_pGAS[388]
+     00DE   	//TVAR_ash_pGAS[389]
+     013A   	//TVAR_ash_pGAS[390]
+     00E1   	//TVAR_ash_pGAS[391]
+     009C   	//TVAR_ash_pGAS[392]
+     006F   	//TVAR_ash_pGAS[393]
+     0053   	//TVAR_ash_pGAS[394]
+     003F   	//TVAR_ash_pGAS[395]
+     0035   	//TVAR_ash_pGAS[396]
+     0036   	//TVAR_ash_pGAS[397]
+     0042   	//TVAR_ash_pGAS[398]
+     0058   	//TVAR_ash_pGAS[399]
+     007D   	//TVAR_ash_pGAS[400]
+     00B9   	//TVAR_ash_pGAS[401]
+     0105   	//TVAR_ash_pGAS[402]
+     0177   	//TVAR_ash_pGAS[403]
+     011D   	//TVAR_ash_pGAS[404]
+     00CE   	//TVAR_ash_pGAS[405]
+     009A   	//TVAR_ash_pGAS[406]
+     0078   	//TVAR_ash_pGAS[407]
+     0064   	//TVAR_ash_pGAS[408]
+     005B   	//TVAR_ash_pGAS[409]
+     005C   	//TVAR_ash_pGAS[410]
+     0068   	//TVAR_ash_pGAS[411]
+     0082   	//TVAR_ash_pGAS[412]
+     00AD   	//TVAR_ash_pGAS[413]
+     00F1   	//TVAR_ash_pGAS[414]
+     0137   	//TVAR_ash_pGAS[415]
+     019F   	//TVAR_ash_pGAS[416]
+     0160   	//TVAR_ash_pGAS[417]
+     010D   	//TVAR_ash_pGAS[418]
+     00CF   	//TVAR_ash_pGAS[419]
+     00A7   	//TVAR_ash_pGAS[420]
+     0090   	//TVAR_ash_pGAS[421]
+     0085   	//TVAR_ash_pGAS[422]
+     0087   	//TVAR_ash_pGAS[423]
+     0097   	//TVAR_ash_pGAS[424]
+     00B6   	//TVAR_ash_pGAS[425]
+     00E7   	//TVAR_ash_pGAS[426]
+     0129   	//TVAR_ash_pGAS[427]
+     0166   	//TVAR_ash_pGAS[428]
+     013A   	//TVAR_ash_pGAS[429]
+     0102   	//TVAR_ash_pGAS[430]
+     00C1   	//TVAR_ash_pGAS[431]
+     0092   	//TVAR_ash_pGAS[432]
+     0075   	//TVAR_ash_pGAS[433]
+     0065   	//TVAR_ash_pGAS[434]
+     0061   	//TVAR_ash_pGAS[435]
+     0068   	//TVAR_ash_pGAS[436]
+     007A   	//TVAR_ash_pGAS[437]
+     009C   	//TVAR_ash_pGAS[438]
+     00CD   	//TVAR_ash_pGAS[439]
+     0116   	//TVAR_ash_pGAS[440]
+     014D   	//TVAR_ash_pGAS[441]
+     0116   	//TVAR_ash_pGAS[442]
+     00CE   	//TVAR_ash_pGAS[443]
+     008E   	//TVAR_ash_pGAS[444]
+     0068   	//TVAR_ash_pGAS[445]
+     0050   	//TVAR_ash_pGAS[446]
+     0044   	//TVAR_ash_pGAS[447]
+     0040   	//TVAR_ash_pGAS[448]
+     0045   	//TVAR_ash_pGAS[449]
+     0054   	//TVAR_ash_pGAS[450]
+     006F   	//TVAR_ash_pGAS[451]
+     009A   	//TVAR_ash_pGAS[452]
+     00DC   	//TVAR_ash_pGAS[453]
+     0127   	//TVAR_ash_pGAS[454]
+     00E5   	//TVAR_ash_pGAS[455]
+     00A0   	//TVAR_ash_pGAS[456]
+     0068   	//TVAR_ash_pGAS[457]
+     0047   	//TVAR_ash_pGAS[458]
+     0033   	//TVAR_ash_pGAS[459]
+     0027   	//TVAR_ash_pGAS[460]
+     0023   	//TVAR_ash_pGAS[461]
+     0028   	//TVAR_ash_pGAS[462]
+     0036   	//TVAR_ash_pGAS[463]
+     004B   	//TVAR_ash_pGAS[464]
+     006E   	//TVAR_ash_pGAS[465]
+     00A7   	//TVAR_ash_pGAS[466]
+     00EE   	//TVAR_ash_pGAS[467]
+     00C0   	//TVAR_ash_pGAS[468]
+     0081   	//TVAR_ash_pGAS[469]
+     0051   	//TVAR_ash_pGAS[470]
+     0034   	//TVAR_ash_pGAS[471]
+     0020   	//TVAR_ash_pGAS[472]
+     0014   	//TVAR_ash_pGAS[473]
+     000F   	//TVAR_ash_pGAS[474]
+     0014   	//TVAR_ash_pGAS[475]
+     0020   	//TVAR_ash_pGAS[476]
+     0034   	//TVAR_ash_pGAS[477]
+     0052   	//TVAR_ash_pGAS[478]
+     0083   	//TVAR_ash_pGAS[479]
+     00C3   	//TVAR_ash_pGAS[480]
+     00AD   	//TVAR_ash_pGAS[481]
+     0073   	//TVAR_ash_pGAS[482]
+     0046   	//TVAR_ash_pGAS[483]
+     002A   	//TVAR_ash_pGAS[484]
+     0016   	//TVAR_ash_pGAS[485]
+     0008   	//TVAR_ash_pGAS[486]
+     0004   	//TVAR_ash_pGAS[487]
+     0008   	//TVAR_ash_pGAS[488]
+     0014   	//TVAR_ash_pGAS[489]
+     0026   	//TVAR_ash_pGAS[490]
+     0040   	//TVAR_ash_pGAS[491]
+     006D   	//TVAR_ash_pGAS[492]
+     00AA   	//TVAR_ash_pGAS[493]
+     00A8   	//TVAR_ash_pGAS[494]
+     006F   	//TVAR_ash_pGAS[495]
+     0044   	//TVAR_ash_pGAS[496]
+     0027   	//TVAR_ash_pGAS[497]
+     0013   	//TVAR_ash_pGAS[498]
+     0005   	//TVAR_ash_pGAS[499]
+     0000   	//TVAR_ash_pGAS[500]
+     0004   	//TVAR_ash_pGAS[501]
+     000F   	//TVAR_ash_pGAS[502]
+     0020   	//TVAR_ash_pGAS[503]
+     003A   	//TVAR_ash_pGAS[504]
+     0065   	//TVAR_ash_pGAS[505]
+     009F   	//TVAR_ash_pGAS[506]
+     00B4   	//TVAR_ash_pGAS[507]
+     0076   	//TVAR_ash_pGAS[508]
+     004B   	//TVAR_ash_pGAS[509]
+     002E   	//TVAR_ash_pGAS[510]
+     001A   	//TVAR_ash_pGAS[511]
+     000D   	//TVAR_ash_pGAS[512]
+     0006   	//TVAR_ash_pGAS[513]
+     000A   	//TVAR_ash_pGAS[514]
+     0014   	//TVAR_ash_pGAS[515]
+     0024   	//TVAR_ash_pGAS[516]
+     003E   	//TVAR_ash_pGAS[517]
+     0069   	//TVAR_ash_pGAS[518]
+     00A3   	//TVAR_ash_pGAS[519]
+     00CE   	//TVAR_ash_pGAS[520]
+     008D   	//TVAR_ash_pGAS[521]
+     005D   	//TVAR_ash_pGAS[522]
+     003E   	//TVAR_ash_pGAS[523]
+     002C   	//TVAR_ash_pGAS[524]
+     001D   	//TVAR_ash_pGAS[525]
+     0017   	//TVAR_ash_pGAS[526]
+     0019   	//TVAR_ash_pGAS[527]
+     0022   	//TVAR_ash_pGAS[528]
+     0031   	//TVAR_ash_pGAS[529]
+     004C   	//TVAR_ash_pGAS[530]
+     007B   	//TVAR_ash_pGAS[531]
+     00B8   	//TVAR_ash_pGAS[532]
+     00F9   	//TVAR_ash_pGAS[533]
+     00B2   	//TVAR_ash_pGAS[534]
+     0079   	//TVAR_ash_pGAS[535]
+     0059   	//TVAR_ash_pGAS[536]
+     0044   	//TVAR_ash_pGAS[537]
+     0036   	//TVAR_ash_pGAS[538]
+     0030   	//TVAR_ash_pGAS[539]
+     0031   	//TVAR_ash_pGAS[540]
+     0039   	//TVAR_ash_pGAS[541]
+     004A   	//TVAR_ash_pGAS[542]
+     0068   	//TVAR_ash_pGAS[543]
+     009D   	//TVAR_ash_pGAS[544]
+     00DD   	//TVAR_ash_pGAS[545]
+     0131   	//TVAR_ash_pGAS[546]
+     00E9   	//TVAR_ash_pGAS[547]
+     00A9   	//TVAR_ash_pGAS[548]
+     0080   	//TVAR_ash_pGAS[549]
+     0066   	//TVAR_ash_pGAS[550]
+     0058   	//TVAR_ash_pGAS[551]
+     0052   	//TVAR_ash_pGAS[552]
+     0053   	//TVAR_ash_pGAS[553]
+     005E   	//TVAR_ash_pGAS[554]
+     0073   	//TVAR_ash_pGAS[555]
+     0097   	//TVAR_ash_pGAS[556]
+     00D2   	//TVAR_ash_pGAS[557]
+     0110   	//TVAR_ash_pGAS[558]
+     0150   	//TVAR_ash_pGAS[559]
+     0124   	//TVAR_ash_pGAS[560]
+     00E0   	//TVAR_ash_pGAS[561]
+     00B0   	//TVAR_ash_pGAS[562]
+     0090   	//TVAR_ash_pGAS[563]
+     007E   	//TVAR_ash_pGAS[564]
+     0077   	//TVAR_ash_pGAS[565]
+     0079   	//TVAR_ash_pGAS[566]
+     0087   	//TVAR_ash_pGAS[567]
+     00A2   	//TVAR_ash_pGAS[568]
+     00CD   	//TVAR_ash_pGAS[569]
+     0106   	//TVAR_ash_pGAS[570]
+     0137 $f	//TVAR_ash_pGAS[571]     
+;
+
+
+REG_SHADING =
+$"[S5K6AAFX] >> REG_SHADING"
+//================================================================
+// Shading Alpha
+//================================================================
+002A 0704 $f
+0F12 00ED   	//TVAR_ash_AwbAshCord[0]
+     0124   	//TVAR_ash_AwbAshCord[1]
+     012B   	//TVAR_ash_AwbAshCord[2]
+     014A   	//TVAR_ash_AwbAshCord[3]
+     0190   	//TVAR_ash_AwbAshCord[4]
+     01B2   	//TVAR_ash_AwbAshCord[5]
+     01C4   	//TVAR_ash_AwbAshCord[6]
+
+     012B   	//TVAR_ash_GASAlpha[0]
+     0106   	//TVAR_ash_GASAlpha[1]
+     010A   	//TVAR_ash_GASAlpha[2]
+     00EE   	//TVAR_ash_GASAlpha[3]
+
+     00C8   	//TVAR_ash_GASAlpha[4]
+     00FC   	//TVAR_ash_GASAlpha[5]
+     00FE   	//TVAR_ash_GASAlpha[6]
+     00A0   	//TVAR_ash_GASAlpha[7]
+
+     011B   	//TVAR_ash_GASAlpha[8]
+     0107   	//TVAR_ash_GASAlpha[9]
+     0109   	//TVAR_ash_GASAlpha[10]
+     00FF   	//TVAR_ash_GASAlpha[11]
+
+     00DB   	//TVAR_ash_GASAlpha[12]
+     00FF   	//TVAR_ash_GASAlpha[13]
+     0100   	//TVAR_ash_GASAlpha[14]
+     00FB   	//TVAR_ash_GASAlpha[15]
+
+     0100   	//TVAR_ash_GASAlpha[16]
+     0103   	//TVAR_ash_GASAlpha[17]
+     0101   	//TVAR_ash_GASAlpha[18]
+     0100   	//TVAR_ash_GASAlpha[19]
+
+     0110   	//TVAR_ash_GASAlpha[20]
+     00FD   	//TVAR_ash_GASAlpha[21]
+     00FD   	//TVAR_ash_GASAlpha[22]
+     0100   	//TVAR_ash_GASAlpha[23]
+
+     00D4   	//TVAR_ash_GASAlpha[24]
+     00FB   	//TVAR_ash_GASAlpha[25]
+     00F8   	//TVAR_ash_GASAlpha[26]
+     0100   	//TVAR_ash_GASAlpha[27]
+
+     00F5   	//TVAR_ash_GASOutdoorAlpha[0]
+     0103   	//TVAR_ash_GAsOutdoorAlpha[1]
+     0101   	//TVAR_ash_GAsOutdoorAlpha[2]
+     00E4 $f	//TVAR_ash_GAsOutdoorAlpha[3]
+
+002A 075A $f
+0F12 0000   	//ash_bParabolicEstimation
+     0280   	//ash_uParabolicCenterX
+     0200   	//ash_uParabolicCenterY
+     000E   	//ash_uParabolicscalingA
+     000F $f	//ash_uParabolicscalingB       
+
+002A 04C8 $f
+0F12 0000	    //SARR_usGammaLutRGBIndoor_0__0_ 
+     0001	   	//SARR_usGammaLutRGBIndoor_0__1_ 
+     0005	   	//SARR_usGammaLutRGBIndoor_0__2_ 
+     000B	   	//SARR_usGammaLutRGBIndoor_0__3_ 
+     0071	   	//SARR_usGammaLutRGBIndoor_0__4_ 
+     00FE	    //SARR_usGammaLutRGBIndoor_0__5_ 
+     0159	    //SARR_usGammaLutRGBIndoor_0__6_ 
+     01A1	    //SARR_usGammaLutRGBIndoor_0__7_ 
+     0210	    //SARR_usGammaLutRGBIndoor_0__8_ 
+     0263	    //SARR_usGammaLutRGBIndoor_0__9_ 
+     02D5	    //SARR_usGammaLutRGBIndoor_0__10_
+     0330	    //SARR_usGammaLutRGBIndoor_0__11_
+     0377	   	//SARR_usGammaLutRGBIndoor_0__12_
+     03BE	    //SARR_usGammaLutRGBIndoor_0__13_
+     03F0	   	//SARR_usGammaLutRGBIndoor_0__14_
+     0400	    //SARR_usGammaLutRGBIndoor_0__15_
+      
+     0000	    //SARR_usGammaLutRGBIndoor_1__0_ 
+     0001	   	//SARR_usGammaLutRGBIndoor_1__1_ 
+     0005	   	//SARR_usGammaLutRGBIndoor_1__2_ 
+     000B	   	//SARR_usGammaLutRGBIndoor_1__3_ 
+     0071	   	//SARR_usGammaLutRGBIndoor_1__4_ 
+     00FE	    //SARR_usGammaLutRGBIndoor_1__5_ 
+     0159	    //SARR_usGammaLutRGBIndoor_1__6_ 
+     01A1	    //SARR_usGammaLutRGBIndoor_1__7_ 
+     0210	    //SARR_usGammaLutRGBIndoor_1__8_ 
+     0263	    //SARR_usGammaLutRGBIndoor_1__9_ 
+     02D5	    //SARR_usGammaLutRGBIndoor_1__10_
+     0330	    //SARR_usGammaLutRGBIndoor_1__11_
+     0377	   	//SARR_usGammaLutRGBIndoor_1__12_
+     03BE	    //SARR_usGammaLutRGBIndoor_1__13_
+     03F0	   	//SARR_usGammaLutRGBIndoor_1__14_
+     0400	    //SARR_usGammaLutRGBIndoor_1__15_
+
+     0000	    //SARR_usGammaLutRGBIndoor_2__0_ 
+     0001	   	//SARR_usGammaLutRGBIndoor_2__1_ 
+     0005	   	//SARR_usGammaLutRGBIndoor_2__2_ 
+     000B	   	//SARR_usGammaLutRGBIndoor_2__3_ 
+     0071	   	//SARR_usGammaLutRGBIndoor_2__4_ 
+     00FE	    //SARR_usGammaLutRGBIndoor_2__5_ 
+     0159	    //SARR_usGammaLutRGBIndoor_2__6_ 
+     01A1	    //SARR_usGammaLutRGBIndoor_2__7_ 
+     0210	    //SARR_usGammaLutRGBIndoor_2__8_ 
+     0263	    //SARR_usGammaLutRGBIndoor_2__9_ 
+     02D5	    //SARR_usGammaLutRGBIndoor_2__10_
+     0330	    //SARR_usGammaLutRGBIndoor_2__11_
+     0377	   	//SARR_usGammaLutRGBIndoor_2__12_
+     03BE	    //SARR_usGammaLutRGBIndoor_2__13_
+     03F0	   	//SARR_usGammaLutRGBIndoor_2__14_
+     0400 $f	    //SARR_usGammaLutRGBIndoor_2__15_
+
+//================================================================
+// AWB
+//================================================================
+002A 0C50 $f	//awbb_IndoorGrZones_m_BGrid
+0F12 03B8   	//03B8	//awbb_IndoorGrZones_m_Bgrid[0]	70000C50
+     03C8   	//03C8  //awbb_IndoorGrZones_m_Bgrid[0] 
+     0384   	//0384  //awbb_IndoorGrZones_m_Bgrid[1] 
+     03D0   	//03D0  //awbb_IndoorGrZones_m_Bgrid[1] 
+     035E   	//035E  //awbb_IndoorGrZones_m_Bgrid[2] 
+     03CC   	//03CC  //awbb_IndoorGrZones_m_Bgrid[2] 
+     033E   	//033E  //awbb_IndoorGrZones_m_Bgrid[3] 
+     03B2   	//03B2  //awbb_IndoorGrZones_m_Bgrid[3] 
+     0322   	//0322  //awbb_IndoorGrZones_m_Bgrid[4] 
+     0396   	//0396  //awbb_IndoorGrZones_m_Bgrid[4] 
+     030C   	//030C  //awbb_IndoorGrZones_m_Bgrid[5] 
+     0380   	//0380  //awbb_IndoorGrZones_m_Bgrid[5] 
+     02F8   	//02F8  //awbb_IndoorGrZones_m_Bgrid[6] 
+     0368   	//0368  //awbb_IndoorGrZones_m_Bgrid[6] 
+     02DC   	//02DC  //awbb_IndoorGrZones_m_Bgrid[7] 
+     0352   	//034A  //awbb_IndoorGrZones_m_Bgrid[7] 
+     02C2   	//02C2  //awbb_IndoorGrZones_m_Bgrid[8] 
+     033C   	//0336  //awbb_IndoorGrZones_m_Bgrid[8] 
+     02AE   	//02AE  //awbb_IndoorGrZones_m_Bgrid[9] 
+     032A   	//031E  //awbb_IndoorGrZones_m_Bgrid[9] 
+     029A   	//029A  //awbb_IndoorGrZones_m_Bgrid[10]
+     031C   	//0306  //awbb_IndoorGrZones_m_Bgrid[10]
+     028C   	//028C  //awbb_IndoorGrZones_m_Bgrid[11]
+     030A   	//02F4  //awbb_IndoorGrZones_m_Bgrid[11]
+     027C   	//027C  //awbb_IndoorGrZones_m_Bgrid[12]
+     02FC   	//02DC  //awbb_IndoorGrZones_m_Bgrid[12]
+     0264   	//0264  //awbb_IndoorGrZones_m_Bgrid[13]
+     02EC   	//02C2  //awbb_IndoorGrZones_m_Bgrid[13]
+     0252   	//0252  //awbb_IndoorGrZones_m_Bgrid[14]
+     02DE   	//02AE  //awbb_IndoorGrZones_m_Bgrid[14]
+     0246   	//0246  //awbb_IndoorGrZones_m_Bgrid[15]
+     02CC   	//029C  //awbb_IndoorGrZones_m_Bgrid[15]
+     023C   	//023C  //awbb_IndoorGrZones_m_Bgrid[16]
+     02C2   	//028A  //awbb_IndoorGrZones_m_Bgrid[16]
+     022E   	//022E  //awbb_IndoorGrZones_m_Bgrid[17]
+     02B4   	//027E  //awbb_IndoorGrZones_m_Bgrid[17]
+     0222   	//0222  //awbb_IndoorGrZones_m_Bgrid[18]
+     02A8   	//0272  //awbb_IndoorGrZones_m_Bgrid[18]
+     0212   	//0212  //awbb_IndoorGrZones_m_Bgrid[19]
+     029C   	//0266  //awbb_IndoorGrZones_m_Bgrid[19]
+     0202   	//0202  //awbb_IndoorGrZones_m_Bgrid[20]
+     0292   	//025A  //awbb_IndoorGrZones_m_Bgrid[20]
+     01FA   	//01FA  //awbb_IndoorGrZones_m_Bgrid[21]
+     0288   	//0250  //awbb_IndoorGrZones_m_Bgrid[21]
+     01EC   	//01EC  //awbb_IndoorGrZones_m_Bgrid[22]
+     027E   	//0246  //awbb_IndoorGrZones_m_Bgrid[22]
+     01E6   	//01E6  //awbb_IndoorGrZones_m_Bgrid[23]
+     0272   	//023C  //awbb_IndoorGrZones_m_Bgrid[23]
+     01DC   	//01DC  //awbb_IndoorGrZones_m_Bgrid[24]
+     0264   	//0234  //awbb_IndoorGrZones_m_Bgrid[24]
+     01D4   	//01D4  //awbb_IndoorGrZones_m_Bgrid[25]
+     0256   	//0228  //awbb_IndoorGrZones_m_Bgrid[25]
+     01CE   	//01CE  //awbb_IndoorGrZones_m_Bgrid[26]
+     0248   	//0220  //awbb_IndoorGrZones_m_Bgrid[26]
+     01C6   	//01C6  //awbb_IndoorGrZones_m_Bgrid[27]
+     023E   	//0216  //awbb_IndoorGrZones_m_Bgrid[27]
+     01C0   	//01C0  //awbb_IndoorGrZones_m_Bgrid[28]
+     022E   	//020C  //awbb_IndoorGrZones_m_Bgrid[28]
+     01BE   	//01BE  //awbb_IndoorGrZones_m_Bgrid[29]
+     0222   	//01FC  //awbb_IndoorGrZones_m_Bgrid[29]
+     01C4   	//01C4  //awbb_IndoorGrZones_m_Bgrid[30]
+     020E   	//01EE  //awbb_IndoorGrZones_m_Bgrid[30]
+     01D0   	//01D0  //awbb_IndoorGrZones_m_Bgrid[31]
+     01E0   	//01E0  //awbb_IndoorGrZones_m_Bgrid[31]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[32]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[32]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[33]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[33]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[34]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[34]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[35]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[35]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[36]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[36]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[37]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[37]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[38]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[38]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[39]
+     0000                  //awbb_IndoorGrZones_m_Bgrid[39]
+
+     0004   	//awbb_IndoorGrZones_m_GridStep
+     0000 $f	//awbb_IndoorGrZones_m_GridSz
+
+002A 0CF8 $f
+0F12 010F   	//awbb_IndoorGrZones_m_Boffs
+     0000 $f	//awbb_IndoorGrZones_m_Boffs
+
+002A 0D84 $f	//awbb_LowBrGrZones_m_BGrid
+0F12 0406   	//awbb_LowBrGrZones_m_BGrid[0] 
+     0467          //awbb_LowBrGrZones_m_BGrid[0] 
+     0371          //awbb_LowBrGrZones_m_BGrid[1] 
+     04B0          //awbb_LowBrGrZones_m_BGrid[1] 
+     02E5          //awbb_LowBrGrZones_m_BGrid[2] 
+     0481          //awbb_LowBrGrZones_m_BGrid[2] 
+     0298          //awbb_LowBrGrZones_m_BGrid[3] 
+     042E          //awbb_LowBrGrZones_m_BGrid[3] 
+     0260          //awbb_LowBrGrZones_m_BGrid[4] 
+     03DE          //awbb_LowBrGrZones_m_BGrid[4] 
+     022F          //awbb_LowBrGrZones_m_BGrid[5] 
+     0391          //awbb_LowBrGrZones_m_BGrid[5] 
+     0201          //awbb_LowBrGrZones_m_BGrid[6] 
+     034D          //awbb_LowBrGrZones_m_BGrid[6] 
+     01DA          //awbb_LowBrGrZones_m_BGrid[7] 
+     0310          //awbb_LowBrGrZones_m_BGrid[7] 
+     01B3          //awbb_LowBrGrZones_m_BGrid[8] 
+     02D4          //awbb_LowBrGrZones_m_BGrid[8] 
+     018F          //awbb_LowBrGrZones_m_BGrid[9] 
+     0297          //awbb_LowBrGrZones_m_BGrid[9] 
+     0181          //awbb_LowBrGrZones_m_BGrid[10]
+     0271          //awbb_LowBrGrZones_m_BGrid[10]
+     0181          //awbb_LowBrGrZones_m_BGrid[11]
+     022A          //awbb_LowBrGrZones_m_BGrid[11]
+     0000          //awbb_LowBrGrZones_m_BGrid[12]
+     0000          //awbb_LowBrGrZones_m_BGrid[12]
+     0000          //awbb_LowBrGrZones_m_BGrid[13]
+     0000          //awbb_LowBrGrZones_m_BGrid[13]
+     0000          //awbb_LowBrGrZones_m_BGrid[14]
+     0000          //awbb_LowBrGrZones_m_BGrid[14]
+     0000          //awbb_LowBrGrZones_m_BGrid[15]
+     0000          //awbb_LowBrGrZones_m_BGrid[15]
+     0000          //awbb_LowBrGrZones_m_BGrid[16]
+     0000          //awbb_LowBrGrZones_m_BGrid[16]
+     0000          //awbb_LowBrGrZones_m_BGrid[17]
+     0000          //awbb_LowBrGrZones_m_BGrid[17]
+     0000          //awbb_LowBrGrZones_m_BGrid[18]
+     0000          //awbb_LowBrGrZones_m_BGrid[18]
+     0000          //awbb_LowBrGrZones_m_BGrid[19]
+     0000          //awbb_LowBrGrZones_m_BGrid[19]
+     0000          //awbb_LowBrGrZones_m_BGrid[20]
+     0000          //awbb_LowBrGrZones_m_BGrid[20]
+     0000          //awbb_LowBrGrZones_m_BGrid[21]
+     0000          //awbb_LowBrGrZones_m_BGrid[21]
+     0000          //awbb_LowBrGrZones_m_BGrid[22]
+     0000          //awbb_LowBrGrZones_m_BGrid[22]
+     0000          //awbb_LowBrGrZones_m_BGrid[23]
+     0000          //awbb_LowBrGrZones_m_BGrid[23]
+     0000          //awbb_LowBrGrZones_m_BGrid[24]
+     0000   	//awbb_LowBrGrZones_m_BGrid[24]
+                
+     0006   	//awbb_LowBrGrZones_m_GridStep
+     0000 $f	//awbb_LowBrGrZones_m_GridSz
+
+002A 0DF0 $f
+0F12 0081   	//awbb_LowBrGrZones_m_Boffs
+     0000 $f	//awbb_LowBrGrZones_m_Boffs
+
+002A 0D08 $f
+0F12 026A   	//0264 //0250	//awbb_OutdoorGrZones_m_BGrid[0]
+     0280   	//0274 //0260	//awbb_OutdoorGrZones_m_BGrid[1]
+     025E   	//0259 //0245	//awbb_OutdoorGrZones_m_BGrid[2]
+     028C   	//027F //026B	//awbb_OutdoorGrZones_m_BGrid[3]
+     0250   	//024E //023A	//awbb_OutdoorGrZones_m_BGrid[4]
+     0290   	//0281 //026D	//awbb_OutdoorGrZones_m_BGrid[5]
+     0246   	//0244 //0230	//awbb_OutdoorGrZones_m_BGrid[6]
+     0290   	//0283 //026F	//awbb_OutdoorGrZones_m_BGrid[7]
+     023C   	//023A //0226	//awbb_OutdoorGrZones_m_BGrid[8]
+     0290   	//0283 //026F	//awbb_OutdoorGrZones_m_BGrid[9]
+     0234   	//0235 //0221	//awbb_OutdoorGrZones_m_BGrid[10]
+     028E   	//027E //026A	//awbb_OutdoorGrZones_m_BGrid[11]
+     022A   	//0231 //021D	//awbb_OutdoorGrZones_m_BGrid[12]
+     028C   	//0278 //0264	//awbb_OutdoorGrZones_m_BGrid[13]
+     021E   	//022B //0217	//awbb_OutdoorGrZones_m_BGrid[14]
+     0286   	//0274 //0260	//awbb_OutdoorGrZones_m_BGrid[15]
+     0214   	//0224 //0210	//awbb_OutdoorGrZones_m_BGrid[16]
+     0280   	//026D //0259	//awbb_OutdoorGrZones_m_BGrid[17]
+     020E   	//021E //020A	//awbb_OutdoorGrZones_m_BGrid[18]
+     0278   	//0265 //0251	//awbb_OutdoorGrZones_m_BGrid[19]
+     020A   	//0218 //0204	//awbb_OutdoorGrZones_m_BGrid[20]
+     0272   	//025F //024B	//awbb_OutdoorGrZones_m_BGrid[21]
+     0204   	//0211 //01FD	//awbb_OutdoorGrZones_m_BGrid[22]
+     026C   	//0259 //0245	//awbb_OutdoorGrZones_m_BGrid[23]
+     0200   	//020A //01F6	//awbb_OutdoorGrZones_m_BGrid[24]
+     0264   	//0252 //023E	//awbb_OutdoorGrZones_m_BGrid[25]
+     01FE   	//0207 //01F1	//awbb_OutdoorGrZones_m_BGrid[26]
+     025E   	//0239 //0238	//awbb_OutdoorGrZones_m_BGrid[27]
+     01FE   	//0204 //01EC	//awbb_OutdoorGrZones_m_BGrid[28]
+     0258   	//0224 //022F	//awbb_OutdoorGrZones_m_BGrid[29]
+     01FE   	//0000 //01E9	//awbb_OutdoorGrZones_m_BGrid[30]
+     0252   	//0000 //0219	//awbb_OutdoorGrZones_m_BGrid[31]
+     0200   	//0000 //01EF	//awbb_OutdoorGrZones_m_BGrid[32]
+     0238   	//0000 //01F8	//awbb_OutdoorGrZones_m_BGrid[33]
+     0204   	//0000	//awbb_OutdoorGrZones_m_BGrid[34]
+     0224   	//0000	//awbb_OutdoorGrZones_m_BGrid[35]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[36]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[37]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[38]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[39]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[40]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[41]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[42]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[43]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[44]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[45]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[46]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[47]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[48]
+     0000   	//0000	//awbb_OutdoorGrZones_m_BGrid[49]
+     0003   	//0003	/awbb_OutdoorGrZones_m_Gridstep
+     0000 $f	//0000
+
+002A 0D70 $f
+0F12 0011   	//awbb_OutdoorGrZones_m_GridSz
+     0000 $f
+
+002A 0D74 $f
+0F12 020E   	//021F	//2F	//awbb_OutdoorGrZones_m_Boffs   Don't modify
+     0000 $f
+002A 0E00 $f
+0F12 034A   	//awbb_CrclLowT_R_c
+     0000   
+     0176   	//awbb_CrclLowT_B_c
+     0000   
+     71B8   	//awbb_CrclLowT_Rad_c
+     0000 $f
+002A 0E1A $f
+0F12 012F   
+     0120 $f
+002A 0E68 $f
+0F12 04F2 $f	// awbb_LowTempRB
+002A 0D78 $f
+0F12 0020 $f	//AWB min.
+002A 0D80 $f
+0F12 00E0 $f	//AWB Max.
+002A 0E40 $f	//awbb_Use_Filters
+0F12 0061 $f	//AWB option
+002A 0EE4 $f
+0F12 0003 $f	//awbb_OutdoorFltrsz
+002A 0E3C $f
+0F12 0001 $f	//awbb_Use_InvalidOutDoor
+002A 0F3A $f
+0F12 024C   	//awbb_OutdoorWP_r	//0240  //0218  // 0226
+     0290 $f	//awbb_OutdoorWP_b	//2B2  // 0280
+
+002A 0E46 $f
+0F12 0BB7   	//FA0	//awbb_sunnyBr
+     0096   	//awbb_sunny_NBzone
+     0BB8 $f	//awbb_CloudyBr
+
+002A 0E5E $f
+0F12 071A   	//awbb_GamutWidthThr1
+     03A4 $f
+
+002A 0E50 $f
+0F12 001B   	//awbb_MacbethGamut_WidthZone
+     000E   
+     0008   
+     0004 $f
+
+002A 0E36 $f
+0F12 0001 $f	//awbb_ByPass_LowTempMode
+
+002A 0E18 $f
+0F12 0000 $f	// 32 awbb_dark
+
+002A 0E3A $f
+0F12 02C2 $f	//awbb_Alpha_Comp_Mode
+002A 0F12 $f
+0F12 02C9   	//awbb_GLocusR
+     033F $f	//awbb_GLocusB
+002A 0E1A $f
+0F12 0138 $f	//awbb_IntcR
+
+002A 236C $f
+0F12 0000 $f	//AWBBTune_EVT4_uInitPostToleranceCnt
+
+
+002A 0C48 $f	//awbb_GainsInit
+0F12 04e7   	//R Gain
+     03B0   	//400
+     07ef $f	//B Gain
+002A 0e7c $f
+0F12 012c $f	//AWBBTune_EVT4_uInitPostToleranceCnt
+
+//================================================================
+// Grid Correction
+//================================================================
+002A 0E42 $f
+0F12 0002 $f
+002A 0EE0 $f
+0F12 00B5   	//awbb_GridCoeff_R_2
+     00B5 $f	//awbb_GridCoeff_B_2
+002A 0ED0 $f
+0F12 0EC8   	//awbb_GridConst_2[0]
+     1022   	//awbb_GridConst_2[1]
+     10BB   	//awbb_GridConst_2[2]
+     10C9   	//awbb_GridConst_2[3]
+     1149   	//awbb_GridConst_2[4]
+     11FD   	//awbb_GridConst_2[5]
+     00B8   	//awbb_GridCoeff_R_1
+     00B2 $f	//awbb_GridCoeff_B_1
+002A 0ECA $f
+0F12 029A   	//awbb_GridConst_1[0]
+     0344   	//awbb_GridConst_1[1]
+     03FB $f	//awbb_GridConst_1[2]
+
+002A 0E82 $f 
+0F12 FFEa   	//awbb_GridCorr_R[0][0]	//d65
+     fffb   	//awbb_GridCorr_R[0][1] //d50
+     fffb   	//awbb_GridCorr_R[0][2] //cw
+     0000   	//awbb_GridCorr_R[0][3] //ww
+     0010   	//awbb_GridCorr_R[0][4] //a
+     003f   	//awbb_GridCorr_R[0][5] //h
+     FFEa   	//awbb_GridCorr_R[1][0]	//d65
+     fffb   	//awbb_GridCorr_R[1][1] //d50
+     fffb   	//awbb_GridCorr_R[1][2] //cw
+     0000   	//awbb_GridCorr_R[1][3] //ww
+     0010   	//awbb_GridCorr_R[1][4] //a
+     003f   	//awbb_GridCorr_R[1][5] //h
+     FFEA   	//awbb_GridCorr_R[2][0]	//d65
+     fffb   	//awbb_GridCorr_R[2][1] //d50
+     fffb   	//awbb_GridCorr_R[2][2] //cw
+     0000   	//awbb_GridCorr_R[2][3] //ww
+     0010   	//awbb_GridCorr_R[2][4] //a
+     003F   	//awbb_GridCorr_R[2][5] //h
+
+     0010   	//awbb_GridCorr_B[0][0]	//d65
+     0010   	//awbb_GridCorr_B[0][1] //d50
+     0010   	//awbb_GridCorr_B[0][2] //cw
+     0000   	//awbb_GridCorr_B[0][3] //ww
+     FF7D   	//awbb_GridCorr_B[0][4] //a
+     FDE6   	//awbb_GridCorr_B[0][5] //h
+     0010   	//awbb_GridCorr_B[1][0]	//d65
+     0010   	//awbb_GridCorr_B[1][1] //d50                         
+     0010   	//awbb_GridCorr_B[1][2] //cw                         
+     0000   	//awbb_GridCorr_B[1][3] //ww                           
+     FF7D   	//awbb_GridCorr_B[1][4] //a                       
+     FDE6   	//awbb_GridCorr_B[0][5] //h              
+     0010   	//awbb_GridCorr_B[2][0]	//d65
+     0010   	//awbb_GridCorr_B[2][1] //d50                         
+     0010   	//awbb_GridCorr_B[2][2] //cw                         
+     0000   	//awbb_GridCorr_B[2][3] //ww                           
+     FF7D   	//awbb_GridCorr_B[2][4] //a                       
+     FDE6 $f	//awbb_GridCorr_B[0][5] //h
+;
+
+
+REG_CCM =
+$"[S5K6AAFX] >> REG_CCM"
+//================================================================
+// CCM                                                            
+//================================================================                                        
+002A 06D4 $f
+0F12 2380   	//TVAR_wbt_pOutdoorCcm         
+     7000 $f                               
+002A 06CC $f                               
+0F12 23A4   	//TVAR_wbt_pBaseCcms           
+     7000 $f                               
+002A 06E8 $f
+0F12 23A4   
+     7000   
+     23C8   
+     7000   
+     23EC   
+     7000   
+     2410   
+     7000   
+     2434   
+     7000   
+     2458   
+     7000 $f
+002A 06DA $f
+0F12 00BF   	//SARR_AwbCcmCord[0]  2   700006DA
+     00E6   	//SARR_AwbCcmCord[1]  2   700006DC
+     00F2   	//SARR_AwbCcmCord[2]  2   700006DE
+     0143   	//SARR_AwbCcmCord[3]  2   700006E0
+     0178   	//SARR_AwbCcmCord[4]  2   700006E2
+     01A3 $f	//SARR_AwbCcmCord[5]
+002A 23A4 $f
+0F12 01FA   	//01FA	  	//H//23A4
+     FFB9   	//FFB9
+     FFF8   	//FFF8
+     0116   	//00EC
+     00BD   	//00EB
+     FF38   	//FF33
+     FF23   	//FF23
+     01AB   	//01AB
+     FF81   	//FF81
+     FF0D   	//FF0D
+     0169   	//0169
+     00DE   	//00DE
+     FFEF   	//FFEF
+     FFCA   	//FFCA
+     014D   	//014D
+     01C3   	//01C3
+     FF7E   	//FF7E
+     016F   	//016F
+
+     01FA   	//01FA    //A//23C8
+     FFB9   	//FFB9
+     FFF8   	//FFF8
+     0116   	//00EC
+     00BD   	//00EB
+     FF38   	//FF33
+     FF23   	//FF23
+     01AB   	//01AB
+     FF81   	//FF81
+     FF0D   	//FF0D
+     0169   	//0169
+     00DE   	//00DE
+     FFEF   	//FFEF
+     FFCA   	//FFCA
+     014D   	//014D
+     01C3   	//01C3
+     FF7E   	//FF7E
+     016F   	//016F
+
+     01FA   	//01FA	//WW//23EC
+     FFB9   	//FFB9
+     FFF8   	//FFF8
+     0116   	//00EC
+     00BD   	//00EB
+     FF38   	//FF33
+     FF23   	//FF23
+     01AB   	//01AB
+     FF81   	//FF81
+     FF0D   	//FF0D
+     0169   	//0169
+     00DE   	//00DE
+     FFEF   	//FFEF
+     FFCA   	//FFCA
+     014D   	//014D
+     01C3   	//01C3
+     FF7E   	//FF7E
+     016F   	//016F
+
+     01B1   	//01B6 ////0198 ////01D6 ////01E0 ////01B7	//CW//2410
+     FFCD   	//FFDE ////FFF1 ////FFBD ////FFB9 ////FFD0
+     0016   	//0003 ////0012 ////000D ////000C ////0019
+     00E6   	//00C5
+     00D6   	//00E3
+     FF4A   	//FF5D
+     FF33   	//FF3E
+     019C   	//0186
+     FF85   	//FF8C
+     FF0E   	//FF0E
+     016A   	//016A
+     00DF   	//00DF
+     FFEE   	//FFEE
+     FFC9   	//FFC9
+     014C   	//014C
+     01C1   	//01C1
+     FF7C   	//FF7C
+     016D   	//016D
+
+     01B3   	//01B6 ////01AC ////0198 ////01D6 ////01E2 ////01E0 ////01B7	//D50//2434
+     FFE7   	//FFDE ////FFE4 ////FFF1 ////FFBD ////FFB8 ////FFB9 ////FFD0
+     FFF9   	//0003 ////0008 ////0012 ////000D ////000B ////000C ////0019
+     00CB   	//00CB ////00C5
+     00F3   	//00F3 ////00E3
+     FF4C   	//FF4C ////FF5D
+     FF66   	//ff20 ////FF33 ////FF3E
+     01AB   	//01bb ////019C ////0186
+     FF43   	//ff79 ////FF85 ////FF8C
+     FF0E   	//FF0E ////FF0E
+     016A   	//016A ////016A
+     00DF   	//00DF ////00DF
+     FFE8   	//FFEE ////FFEE
+     FFC1   	//FFC9 ////FFC9
+     015A   	//014C ////014C
+     01C1   	//01C1 ////01C1
+     FF7C   	//FF7C ////FF7C
+     016D   	//016D ////016D
+
+     01E6   	//01E6	
+     FFB7   	//FFB7	
+     FFE2   	//FFE2
+
+     00CC   	//00CC	
+     00F4   	//00F4	
+     FF4D   	//FF4D
+
+     FF1E   	//FF46	
+     01E6   	//01D2	
+     FF2C   	//FF1C
+
+     FF09   	//FF09	
+     0164   	//0164	
+     00DA   	//00DA	
+
+     FFD8   	//FFD8	
+     FFB2   	//FFB2	
+     014B   	//014B
+
+     01B4   	//01B4	
+     FF6E   	//FF6E	
+     0160 $f	//0160	
+
+002A 2380 $f	//TVAR_wbt_pOutdoorCcm
+0F12 01AE   	//01AA //01B9 //01DD	//TVAR_wbt_pOutdoorCcm[0]  ߿ܾ󱼻       ϴ
+     FFB9   	//FFB9 //FFBC //FFA8	//TVAR_wbt_pOutdoorCcm[1]
+     0017   	//001E //0012 //0008	//TVAR_wbt_pOutdoorCcm[2]
+     00FC   	//00FB //00FD	//TVAR_wbt_pOutdoorCcm[3]
+     013B   	//013B //0141	//TVAR_wbt_pOutdoorCcm[4]
+     FF84   	//FF82 //FF74	//TVAR_wbt_pOutdoorCcm[5]
+     FED9   	//FED6 //FEC6	//TVAR_wbt_pOutdoorCcm[6]
+     01E6   	//01E6 //01F6	//TVAR_wbt_pOutdoorCcm[7]
+     FF16   	//FF13 //FF05	//TVAR_wbt_pOutdoorCcm[8]
+     FF4A   	//FF48 //FF38	//TVAR_wbt_pOutdoorCcm[9]
+     0179   	//0179 //017F	//TVAR_wbt_pOutdoorCcm[10]
+     014F   	//014F //0153	//TVAR_wbt_pOutdoorCcm[11]
+     FFC2   	//FFCB //FFCC	//TVAR_wbt_pOutdoorCcm[12]
+     FF99   	//FFA4 //FFA6	//TVAR_wbt_pOutdoorCcm[13]
+     0219   	//0207 //020A	//TVAR_wbt_pOutdoorCcm[14]
+     0172   	//0174 //017E	//TVAR_wbt_pOutdoorCcm[15]
+     FF51   	//FF51 //FF45	//TVAR_wbt_pOutdoorCcm[16]
+     019B $f	//019E //01AA	//TVAR_wbt_pOutdoorCcm[17]
+
+//================================================================
+// AFIT
+//================================================================
+002A 07E8 $f	//SARR_uNormBrInDoor
+0F12 0016   	//000A	//SARR_uNormBrInDoor[0]
+     0028   	//0019	//SARR_uNormBrInDoor[1]
+     0096   	//0096	//SARR_uNormBrInDoor[2]
+     01F4   	//01F4	//SARR_uNormBrInDoor[3]
+     07D0 $f	//07D0	//SARR_uNormBrInDoor[4]
+002A 07D0 $f	//afit_uNoiseIndInDoor
+0F12 0030   	//afit_uNoiseIndInDoor[0]
+     0046   	//afit_uNoiseIndInDoor[1]
+     0088   	//afit_uNoiseIndInDoor[2]
+     0205   	//afit_uNoiseIndInDoor[3]
+     02BC $f	//afit_uNoiseIndInDoor[4]
+002A 07E6 $f	  
+0F12 0000 $f	//afit_bUseNoiseInd
+002A 0828 $f	             
+0F12 0008   	//10	  //TVAR_afit_pBaseVals[0]     70000828  //BRIGHTNESS                                                                
+     FFEC   	//TVAR_afit_pBaseVals[1]     7000082A  //CONTRAST                                                                  
+     0000   	//TVAR_afit_pBaseVals[2]     7000082C  //SATURATION                                                                
+     0000   	//TVAR_afit_pBaseVals[3]     7000082E  //SHARP_BLUR                                                                
+     0000   	//TVAR_afit_pBaseVals[4]     70000830  //GLAMOUR
+     03FF   	//TVAR_afit_pBaseVals[5]     70000832  //Disparity_iSatSat                                                         
+     0021   	//TVAR_afit_pBaseVals[6]     70000834  //Denoise1_iYDenThreshLow
+     0028   	//TVAR_afit_pBaseVals[7]     70000836  //Denoise1_iYDenThreshLow_Bin
+     0050   	//TVAR_afit_pBaseVals[8]     70000838  //Denoise1_iYDenThreshHigh
+     00FF   	//TVAR_afit_pBaseVals[9]     7000083A  //Denoise1_iYDenThreshHigh_Bin
+     0129   	//TVAR_afit_pBaseVals[10]    7000083C  //Denoise1_iLowWWideThresh
+     000A   	//TVAR_afit_pBaseVals[11]    7000083E  //Denoise1_iHighWWideThresh
+     0028   	//TVAR_afit_pBaseVals[12]    70000840  //Denoise1_iLowWideThresh
+     0028   	//TVAR_afit_pBaseVals[13]    70000842  //Denoise1_iHighWideThresh
+     03FF   	//TVAR_afit_pBaseVals[14]    70000844  //Denoise1_iSatSat                                                          
+     03FF   	//TVAR_afit_pBaseVals[15]    70000846  //Demosaic4_iHystGrayLow
+     0000   	//TVAR_afit_pBaseVals[16]    70000848  //Demosaic4_iHystGrayHigh
+     0344   	//TVAR_afit_pBaseVals[17]    7000084A  //UVDenoise_iYLowThresh
+     033A   	//TVAR_afit_pBaseVals[18]    7000084C  //UVDenoise_iYHighThresh
+     03FF   	//TVAR_afit_pBaseVals[19]    7000084E  //UVDenoise_iUVLowThresh
+     03FF   	//TVAR_afit_pBaseVals[20]    70000850  //UVDenoise_iUVHighThresh
+     000A   	//TVAR_afit_pBaseVals[21]    70000852  //DSMix1_iLowLimit_Wide                                                     
+     0032   	//TVAR_afit_pBaseVals[22]    70000854  //DSMix1_iLowLimit_Wide_Bin                                                 
+     001E   	//TVAR_afit_pBaseVals[23]    70000856  //DSMix1_iHighLimit_Wide                                                    
+     0032   	//TVAR_afit_pBaseVals[24]    70000858  //DSMix1_iHighLimit_Wide_Bin                                                
+     0032   	//TVAR_afit_pBaseVals[25]    7000085A  //DSMix1_iLowLimit_Fine                                                     
+     0032   	//TVAR_afit_pBaseVals[26]    7000085C  //DSMix1_iLowLimit_Fine_Bin                                                 
+     0010   	//TVAR_afit_pBaseVals[27]    7000085E  //DSMix1_iHighLimit_Fine                                                    
+     0032   	//TVAR_afit_pBaseVals[28]    70000860  //DSMix1_iHighLimit_Fine_Bin                                                
+     0106   	//TVAR_afit_pBaseVals[29]    70000862  //DSMix1_iRGBOffset                                                         
+     006F   	//TVAR_afit_pBaseVals[30]    70000864  //DSMix1_iDemClamp                                                          
+     0C0F   	//TVAR_afit_pBaseVals[31]    70000866  //"Disparity_iDispTH_LowDisparity_iDispTH_Low_Bin"
+     0C0F   	//TVAR_afit_pBaseVals[32]    70000868  //"Disparity_iDispTH_High Disparity_iDispTH_High_Bin"
+     0303   	//TVAR_afit_pBaseVals[33]    7000086A  //"Despeckle_iCorrectionLevelColdDespeckle_iCorrectionLevelCold_Bin"
+     0303   	//TVAR_afit_pBaseVals[34]    7000086C  //Despeckle_iCorrectionLevelHotDespeckle_iCorrectionLevelHot_Bin
+     140A   	//TVAR_afit_pBaseVals[35]    7000086E  //"Despeckle_iColdThreshLowDespeckle_iColdThreshHigh"
+     140A   	//TVAR_afit_pBaseVals[36]    70000870  //"Despeckle_iHotThreshLowDespeckle_iHotThreshHigh"
+     2828   	//TVAR_afit_pBaseVals[37]    70000872  //"Denoise1_iLowMaxSlopeAllowedDenoise1_iHighMaxSlopeAllowed"               
+     0000   	//TVAR_afit_pBaseVals[38]    70000874  //"Denoise1_iLowSlopeThreshDenoise1_iHighSlopeThresh"                       
+     020A   	//TVAR_afit_pBaseVals[39]    70000876  //"Denoise1_iRadialPowerDenoise1_iRadialDivideShift"                        
+     0480   	//TVAR_afit_pBaseVals[40]    70000878  //"Denoise1_iRadialLimitDenoise1_iLWBNoise"
+     0E08   	//TVAR_afit_pBaseVals[41]    7000087A  //"Denoise1_iWideDenoise1_iWideWide"
+     030A   	//TVAR_afit_pBaseVals[42]    7000087C  //"Demosaic4_iHystGrayRangeUVDenoise_iYSupport"                             
+     0A03   	//TVAR_afit_pBaseVals[43]    7000087E  //"UVDenoise_iUVSupportDSMix1_iLowPower_Wide"                               
+     0A11   	//TVAR_afit_pBaseVals[44]    70000880  //"DSMix1_iLowPower_Wide_BinDSMix1_iHighPower_Wide"                         
+     000F   	//TVAR_afit_pBaseVals[45]    70000882  //"DSMix1_iHighPower_Wide_BinDSMix1_iLowThresh_Wide"                        
+     0500   	//TVAR_afit_pBaseVals[46]    70000884  //"DSMix1_iHighThresh_WideDSMix1_iReduceNegativeWide"                       
+     0914   	//TVAR_afit_pBaseVals[47]    70000886  //"DSMix1_iLowPower_FineDSMix1_iLowPower_Fine_Bin"                          
+     0012   	//TVAR_afit_pBaseVals[48]    70000888  //"DSMix1_iHighPower_FineDSMix1_iHighPower_Fine_Bin"                        
+     0000   	//TVAR_afit_pBaseVals[49]    7000088A  //"DSMix1_iLowThresh_FineDSMix1_iHighThresh_Fine"                           
+     0005   	//TVAR_afit_pBaseVals[50]    7000088C  //"DSMix1_iReduceNegativeFineDSMix1_iRGBMultiplier"                         
+     0000   	//TVAR_afit_pBaseVals[51]    7000088E  //"Mixer1_iNLowNoisePowerMixer1_iNLowNoisePower_Bin"
+     0000   	//TVAR_afit_pBaseVals[52]    70000890  //"Mixer1_iNVeryLowNoisePowerMixer1_iNVeryLowNoisePower_Bin"
+     0000   	//TVAR_afit_pBaseVals[53]    70000892  //"Mixer1_iNHighNoisePowerMixer1_iNHighNoisePower_Bin"
+     0000   	//TVAR_afit_pBaseVals[54]    70000894  //"Mixer1_iWLowNoisePowerMixer1_iWVeryLowNoisePower"
+     0A00   	//TVAR_afit_pBaseVals[55]    70000896  //"Mixer1_iWHighNoisePowerMixer1_iWLowNoiseCeilGain"
+     000A   	//TVAR_afit_pBaseVals[56]    70000898  //"Mixer1_iWHighNoiseCeilGainMixer1_iWNoiseCeilGain"
+     0180   	//014C	//TVAR_afit_pBaseVals[57]    7000089A  //"CCM_Oscar_iSaturationCCM_Oscar_bSaturation"                              
+     014D   	//TVAR_afit_pBaseVals[58]    7000089C  //"RGBGamma2_iLinearityRGBGamma2_bLinearity"
+     0100   	//TVAR_afit_pBaseVals[59]    7000089E  //"RGBGamma2_iDarkReduceRGBGamma2_bDarkReduce"
+     8020   	//TVAR_afit_pBaseVals[60]    700008A0  //"byr_gas2_iShadingPowerRGB2YUV_iRGBGain"                                  
+     0180   	//TVAR_afit_pBaseVals[61]    700008A2  //"RGB2YUV_iSaturationRGB2YUV_bGainOffset"                                  
+     0013   	//15 //18 //001a //05 //A	//TVAR_afit_pBaseVals[62]    700008A4  //RGB2YUV_iYOffset
+     0000   	//TVAR_afit_pBaseVals[63]    700008A6            //BRIGHTNESS                                                                
+     0000   	//TVAR_afit_pBaseVals[64]    700008A8            //CONTRAST                                                                  
+     0000   	//TVAR_afit_pBaseVals[65]    700008AA            //SATURATION                                                                
+     0000   	//TVAR_afit_pBaseVals[66]    700008AC            //SHARP_BLUR                                                                
+     0000   	//TVAR_afit_pBaseVals[67]    700008AE            //GLAMOUR
+     03FF   	//03FF	//TVAR_afit_pBaseVals[68]    700008B0    //Disparity_iSatSat                                                         
+     000C   	//0E //0C	//0020	//TVAR_afit_pBaseVals[69]    700008B2    //Denoise1_iYDenThreshLow
+     000E   	//000E	//TVAR_afit_pBaseVals[70]    700008B4    //Denoise1_iYDenThreshLow_Bin
+     0050   	//0080	//TVAR_afit_pBaseVals[71]    700008B6    //Denoise1_iYDenThreshHigh
+     00FF   	//00FF	//TVAR_afit_pBaseVals[72]    700008B8    //Denoise1_iYDenThreshHigh_Bin
+     0129   	//0129	//TVAR_afit_pBaseVals[73]    700008BA    //Denoise1_iLowWWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[74]    700008BC    //Denoise1_iHighWWideThresh
+     0028   	//0028	//TVAR_afit_pBaseVals[75]    700008BE    //Denoise1_iLowWideThresh
+     0028   	//0028	//TVAR_afit_pBaseVals[76]    700008C0    //Denoise1_iHighWideThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[77]    700008C2    //Denoise1_iSatSat                                                          
+     03FF   	//03FF	//TVAR_afit_pBaseVals[78]    700008C4    //Demosaic4_iHystGrayLow
+     0000   	//0000	//TVAR_afit_pBaseVals[79]    700008C6    //Demosaic4_iHystGrayHigh
+     0114   	//0014	//TVAR_afit_pBaseVals[80]    700008C8    //UVDenoise_iYLowThresh
+     020A   	//000A	//TVAR_afit_pBaseVals[81]    700008CA    //UVDenoise_iYHighThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[82]    700008CC    //UVDenoise_iUVLowThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[83]    700008CE    //UVDenoise_iUVHighThresh
+     0018   	//000a	//TVAR_afit_pBaseVals[84]    700008D0    //DSMix1_iLowLimit_Wide                                                     
+     0032   	//0000	//TVAR_afit_pBaseVals[85]    700008D2    //DSMix1_iLowLimit_Wide_Bin                                                 
+     000A   	//0014	//TVAR_afit_pBaseVals[86]    700008D4    //DSMix1_iHighLimit_Wide                                                    
+     0032   	//0032	//TVAR_afit_pBaseVals[87]    700008D6    //DSMix1_iHighLimit_Wide_Bin                                                
+     0028   	//0000	//TVAR_afit_pBaseVals[88]    700008D8    //DSMix1_iLowLimit_Fine                                                     
+     0032   	//0000	//TVAR_afit_pBaseVals[89]    700008DA    //DSMix1_iLowLimit_Fine_Bin                                                 
+     0010   	//00A0	//TVAR_afit_pBaseVals[90]    700008DC    //DSMix1_iHighLimit_Fine                                                    
+     0032   	//0000	//TVAR_afit_pBaseVals[91]    700008DE    //DSMix1_iHighLimit_Fine_Bin                                                
+     0106   	//0106	//TVAR_afit_pBaseVals[92]    700008E0    //DSMix1_iRGBOffset                                                         
+     006F   	//006F	//TVAR_afit_pBaseVals[93]    700008E2    //DSMix1_iDemClamp                                                          
+     050F   	//050F	//TVAR_afit_pBaseVals[94]    700008E4    //"Disparity_iDispTH_LowDisparity_iDispTH_Low_Bin"
+     0A0F   	//0A0F	//TVAR_afit_pBaseVals[95]    700008E6    //"Disparity_iDispTH_High Disparity_iDispTH_High_Bin"
+     0203   	//0203	//TVAR_afit_pBaseVals[96]    700008E8    //"Despeckle_iCorrectionLevelColdDespeckle_iCorrectionLevelCold_Bin"
+     0303   	//0203	//TVAR_afit_pBaseVals[97]    700008EA    //Despeckle_iCorrectionLevelHotDespeckle_iCorrectionLevelHot_Bin
+     140A   	//140A	//TVAR_afit_pBaseVals[98]    700008EC    //"Despeckle_iColdThreshLowDespeckle_iColdThreshHigh"
+     140A   	//140A	//TVAR_afit_pBaseVals[99]    700008EE    //"Despeckle_iHotThreshLowDespeckle_iHotThreshHigh"
+     2828   	//2828	//TVAR_afit_pBaseVals[100]   700008F0    //"Denoise1_iLowMaxSlopeAllowedDenoise1_iHighMaxSlopeAllowed"               
+     0000   	//0000	//TVAR_afit_pBaseVals[101]   700008F2    //"Denoise1_iLowSlopeThreshDenoise1_iHighSlopeThresh"                       
+     020A   	//020A	//TVAR_afit_pBaseVals[102]   700008F4    //"Denoise1_iRadialPowerDenoise1_iRadialDivideShift"                        
+     0480   	//0480	//TVAR_afit_pBaseVals[103]   700008F6    //"Denoise1_iRadialLimitDenoise1_iLWBNoise"
+     0E08   	//0E08	//TVAR_afit_pBaseVals[104]   700008F8    //"Denoise1_iWideDenoise1_iWideWide"
+     030A   	//020A	//TVAR_afit_pBaseVals[105]   700008FA    //"Demosaic4_iHystGrayRangeUVDenoise_iYSupport"                             
+     1403   	//0A03	//TVAR_afit_pBaseVals[106]   700008FC    //"UVDenoise_iUVSupportDSMix1_iLowPower_Wide"                               
+     0A11   	//0A11	//TVAR_afit_pBaseVals[107]   700008FE    //"DSMix1_iLowPower_Wide_BinDSMix1_iHighPower_Wide"                         
+     0A0F   	//0A0F	//TVAR_afit_pBaseVals[108]   70000900    //"DSMix1_iHighPower_Wide_BinDSMix1_iLowThresh_Wide"                        
+     050A   	//050A	//TVAR_afit_pBaseVals[109]   70000902    //"DSMix1_iHighThresh_WideDSMix1_iReduceNegativeWide"                       
+     101E   	//14 //1E //101E	//TVAR_afit_pBaseVals[110]   70000904    //"DSMix1_iLowPower_FineDSMix1_iLowPower_Fine_Bin"                          
+     101E   	//101E	//TVAR_afit_pBaseVals[111]   70000906    //"DSMix1_iHighPower_FineDSMix1_iHighPower_Fine_Bin"                        
+     0A08   	//3030	//TVAR_afit_pBaseVals[112]   70000908    //"DSMix1_iLowThresh_FineDSMix1_iHighThresh_Fine"                           
+     0005   	//0005	//TVAR_afit_pBaseVals[113]   7000090A    //"DSMix1_iReduceNegativeFineDSMix1_iRGBMultiplier"                         
+     0400   	//0400	//TVAR_afit_pBaseVals[114]   7000090C    //"Mixer1_iNLowNoisePowerMixer1_iNLowNoisePower_Bin"
+     0400   	//0400	//TVAR_afit_pBaseVals[115]   7000090E    //"Mixer1_iNVeryLowNoisePowerMixer1_iNVeryLowNoisePower_Bin"
+     0000   	//0000	//TVAR_afit_pBaseVals[116]   70000910    //"Mixer1_iNHighNoisePowerMixer1_iNHighNoisePower_Bin"
+     0000   	//0000	//TVAR_afit_pBaseVals[117]   70000912    //"Mixer1_iWLowNoisePowerMixer1_iWVeryLowNoisePower"
+     0A00   	//0A00	//TVAR_afit_pBaseVals[118]   70000914    //"Mixer1_iWHighNoisePowerMixer1_iWLowNoiseCeilGain"
+     000A   	//100A	//TVAR_afit_pBaseVals[119]   70000916    //"Mixer1_iWHighNoiseCeilGainMixer1_iWNoiseCeilGain"
+     0180   	//TVAR_afit_pBaseVals[120]   70000918            //"CCM_Oscar_iSaturationCCM_Oscar_bSaturation"                              
+     0154   	//TVAR_afit_pBaseVals[121]   7000091A            //"RGBGamma2_iLinearityRGBGamma2_bLinearity"
+     0100   	//TVAR_afit_pBaseVals[122]   7000091C            //"RGBGamma2_iDarkReduceRGBGamma2_bDarkReduce"
+     8020   	//TVAR_afit_pBaseVals[123]   7000091E            //"byr_gas2_iShadingPowerRGB2YUV_iRGBGain"                                  
+     0180   	//TVAR_afit_pBaseVals[124]   70000920            //"RGB2YUV_iSaturationRGB2YUV_bGainOffset"                                  
+     000A   	//07 //0 	//TVAR_afit_pBaseVals[125]   70000922            //RGB2YUV_iYOffset
+     0000   	//TVAR_afit_pBaseVals[126]   70000924            //BRIGHTNESS                                                                
+     FFFC //0024   	//TVAR_afit_pBaseVals[127]   70000926            //CONTRAST                                                                  
+     0000   	//TVAR_afit_pBaseVals[128]   70000928            //SATURATION                                                                
+     0000   	//TVAR_afit_pBaseVals[129]   7000092A            //SHARP_BLUR                                                                
+     0000   	//TVAR_afit_pBaseVals[130]   7000092C            //GLAMOUR
+     03FF   	//03FF	//TVAR_afit_pBaseVals[131]   7000092E    //Disparity_iSatSat                                                         
+     000A   	//0e //08 //000E	//TVAR_afit_pBaseVals[132]   70000930    //Denoise1_iYDenThreshLow
+     0006   	//0006	//TVAR_afit_pBaseVals[133]   70000932    //Denoise1_iYDenThreshLow_Bin
+     0040   	//50 //0064	//TVAR_afit_pBaseVals[134]   70000934    //Denoise1_iYDenThreshHigh
+     0050   	//0050	//TVAR_afit_pBaseVals[135]   70000936    //Denoise1_iYDenThreshHigh_Bin
+     0002   	//0002	//TVAR_afit_pBaseVals[136]   70000938    //Denoise1_iLowWWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[137]   7000093A    //Denoise1_iHighWWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[138]   7000093C    //Denoise1_iLowWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[139]   7000093E    //Denoise1_iHighWideThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[140]   70000940    //Denoise1_iSatSat                                                          
+     03FF   	//03FF	//TVAR_afit_pBaseVals[141]   70000942    //Demosaic4_iHystGrayLow
+     0000   	//0000	//TVAR_afit_pBaseVals[142]   70000944    //Demosaic4_iHystGrayHigh
+     0014   	//0014	//TVAR_afit_pBaseVals[143]   70000946    //UVDenoise_iYLowThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[144]   70000948    //UVDenoise_iYHighThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[145]   7000094A    //UVDenoise_iUVLowThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[146]   7000094C    //UVDenoise_iUVHighThresh
+     001C   	//000a	//TVAR_afit_pBaseVals[147]   7000094E    //DSMix1_iLowLimit_Wide                                                     
+     0032   	//0032	//TVAR_afit_pBaseVals[148]   70000950    //DSMix1_iLowLimit_Wide_Bin                                                 
+     000A   	//0014	//TVAR_afit_pBaseVals[149]   70000952    //DSMix1_iHighLimit_Wide                                                    
+     0032   	//0032	//TVAR_afit_pBaseVals[150]   70000954    //DSMix1_iHighLimit_Wide_Bin                                                
+     0028   	//0050	//TVAR_afit_pBaseVals[151]   70000956    //DSMix1_iLowLimit_Fine                                                     
+     0032   	//0032	//TVAR_afit_pBaseVals[152]   70000958    //DSMix1_iLowLimit_Fine_Bin                                                 
+     0010   	//0010	//TVAR_afit_pBaseVals[153]   7000095A    //DSMix1_iHighLimit_Fine                                                    
+     0032   	//0032	//TVAR_afit_pBaseVals[154]   7000095C    //DSMix1_iHighLimit_Fine_Bin                                                
+     0106   	//0106	//TVAR_afit_pBaseVals[155]   7000095E    //DSMix1_iRGBOffset                                                         
+     006F   	//006F	//TVAR_afit_pBaseVals[156]   70000960    //DSMix1_iDemClamp                                                          
+     0205   	//020A	//TVAR_afit_pBaseVals[157]   70000962    //"Disparity_iDispTH_LowDisparity_iDispTH_Low_Bin"
+     0505   	//050A	//TVAR_afit_pBaseVals[158]   70000964    //"Disparity_iDispTH_High Disparity_iDispTH_High_Bin"
+     0101   	//0101	//TVAR_afit_pBaseVals[159]   70000966    //"Despeckle_iCorrectionLevelColdDespeckle_iCorrectionLevelCold_Bin"
+     0202   	//0102	//TVAR_afit_pBaseVals[160]   70000968    //Despeckle_iCorrectionLevelHotDespeckle_iCorrectionLevelHot_Bin
+     140A   	//140A	//TVAR_afit_pBaseVals[161]   7000096A    //"Despeckle_iColdThreshLowDespeckle_iColdThreshHigh"
+     140A   	//140A	//TVAR_afit_pBaseVals[162]   7000096C    //"Despeckle_iHotThreshLowDespeckle_iHotThreshHigh"
+     2828   	//2828	//TVAR_afit_pBaseVals[163]   7000096E    //"Denoise1_iLowMaxSlopeAllowedDenoise1_iHighMaxSlopeAllowed"               
+     0606   	//0606	//TVAR_afit_pBaseVals[164]   70000970    //"Denoise1_iLowSlopeThreshDenoise1_iHighSlopeThresh"                       
+     0205   	//0205	//TVAR_afit_pBaseVals[165]   70000972    //"Denoise1_iRadialPowerDenoise1_iRadialDivideShift"                        
+     0480   	//0480	//TVAR_afit_pBaseVals[166]   70000974    //"Denoise1_iRadialLimitDenoise1_iLWBNoise"
+     000A   	//000F	//TVAR_afit_pBaseVals[167]   70000976    //"Denoise1_iWideDenoise1_iWideWide"
+     0005   	//0005	//TVAR_afit_pBaseVals[168]   70000978    //"Demosaic4_iHystGrayRangeUVDenoise_iYSupport"                             
+     1903   	//1903	//TVAR_afit_pBaseVals[169]   7000097A    //"UVDenoise_iUVSupportDSMix1_iLowPower_Wide"   
+     1611   	//0f11 //1911	//1911	//TVAR_afit_pBaseVals[170]   7000097C    //"DSMix1_iLowPower_Wide_BinDSMix1_iHighPower_Wide"                         
+     0A0F   	//0A0F	//TVAR_afit_pBaseVals[171]   7000097E    //"DSMix1_iHighPower_Wide_BinDSMix1_iLowThresh_Wide"                        
+     050A   	//050A	//TVAR_afit_pBaseVals[172]   70000980    //"DSMix1_iHighThresh_WideDSMix1_iReduceNegativeWide"                                                   
+     2025   	//14 //28	//2028	//TVAR_afit_pBaseVals[173]   70000982    //"DSMix1_iLowPower_FineDSMix1_iLowPower_Fine_Bin"                          
+     2025   	//1e //28	//2028	//TVAR_afit_pBaseVals[174]   70000984    //"DSMix1_iHighPower_FineDSMix1_iHighPower_Fine_Bin"                        
+     0A08   	//2000	//TVAR_afit_pBaseVals[175]   70000986    //"DSMix1_iLowThresh_FineDSMix1_iHighThresh_Fine"                           
+     0007   	//0007	//TVAR_afit_pBaseVals[176]   70000988    //"DSMix1_iReduceNegativeFineDSMix1_iRGBMultiplier"                         
+     0403   	//0403	//TVAR_afit_pBaseVals[177]   7000098A    //"Mixer1_iNLowNoisePowerMixer1_iNLowNoisePower_Bin"
+     0402   	//0402	//TVAR_afit_pBaseVals[178]   7000098C    //"Mixer1_iNVeryLowNoisePowerMixer1_iNVeryLowNoisePower_Bin"
+     0000   	//0000	//TVAR_afit_pBaseVals[179]   7000098E    //"Mixer1_iNHighNoisePowerMixer1_iNHighNoisePower_Bin"
+     0203   	//0203	//TVAR_afit_pBaseVals[180]   70000990    //"Mixer1_iWLowNoisePowerMixer1_iWVeryLowNoisePower"
+     0000   	//0000	//TVAR_afit_pBaseVals[181]   70000992    //"Mixer1_iWHighNoisePowerMixer1_iWLowNoiseCeilGain"
+     0006   	//1006	//TVAR_afit_pBaseVals[182]   70000994    //"Mixer1_iWHighNoiseCeilGainMixer1_iWNoiseCeilGain"
+     0180   	//TVAR_afit_pBaseVals[183]   70000996            //"CCM_Oscar_iSaturationCCM_Oscar_bSaturation"                              
+     0173   	//TVAR_afit_pBaseVals[184]   70000998            //"RGBGamma2_iLinearityRGBGamma2_bLinearity"
+     0100   	//TVAR_afit_pBaseVals[185]   7000099A            //"RGBGamma2_iDarkReduceRGBGamma2_bDarkReduce"
+     8032   	//TVAR_afit_pBaseVals[186]   7000099C            //"byr_gas2_iShadingPowerRGB2YUV_iRGBGain"                                  
+     0180   	//TVAR_afit_pBaseVals[187]   7000099E            //"RGB2YUV_iSaturationRGB2YUV_bGainOffset"                                  
+     0000   	//TVAR_afit_pBaseVals[188]   700009A0            //RGB2YUV_iYOffset
+     0000   	//TVAR_afit_pBaseVals[189]   700009A2            //BRIGHTNESS                                                                
+     FFF7 //0014   	//TVAR_afit_pBaseVals[190]   700009A4            //CONTRAST                                                                  
+     0000   	//TVAR_afit_pBaseVals[191]   700009A6            //SATURATION                                                                
+     0000   	//TVAR_afit_pBaseVals[192]   700009A8            //SHARP_BLUR                                                                
+     0000   	//TVAR_afit_pBaseVals[193]   700009AA            //GLAMOUR
+     03FF   	//03FF	//TVAR_afit_pBaseVals[194]   700009AC    //Disparity_iSatSat                                                         
+     000A   	//0e //08	//000E	//TVAR_afit_pBaseVals[195]   700009AE    //Denoise1_iYDenThreshLow                                                   
+     0006   	//0006	//TVAR_afit_pBaseVals[196]   700009B0    //Denoise1_iYDenThreshLow_Bin
+     0040   	//50	//0064	//TVAR_afit_pBaseVals[197]   700009B2    //Denoise1_iYDenThreshHigh                                                  
+     0050   	//0050	//TVAR_afit_pBaseVals[198]   700009B4    //Denoise1_iYDenThreshHigh_Bin
+     0002   	//0002	//TVAR_afit_pBaseVals[199]   700009B6    //Denoise1_iLowWWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[200]   700009B8    //Denoise1_iHighWWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[201]   700009BA    //Denoise1_iLowWideThresh
+     000A   	//000A	//TVAR_afit_pBaseVals[202]   700009BC    //Denoise1_iHighWideThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[203]   700009BE    //Denoise1_iSatSat                                                          
+     03FF   	//03FF	//TVAR_afit_pBaseVals[204]   700009C0    //Demosaic4_iHystGrayLow
+     0000   	//0000	//TVAR_afit_pBaseVals[205]   700009C2    //Demosaic4_iHystGrayHigh
+     0014   	//0014	//TVAR_afit_pBaseVals[206]   700009C4    //UVDenoise_iYLowThresh
+     0032   	//000A	//TVAR_afit_pBaseVals[207]   700009C6    //UVDenoise_iYHighThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[208]   700009C8    //UVDenoise_iUVLowThresh
+     03FF   	//03FF	//TVAR_afit_pBaseVals[209]   700009CA    //UVDenoise_iUVHighThresh
+     001C   	//000a	//TVAR_afit_pBaseVals[210]   700009CC    //DSMix1_iLowLimit_Wide                                                     
+     0032   	//0032	//TVAR_afit_pBaseVals[211]   700009CE    //DSMix1_iLowLimit_Wide_Bin                                                 
+     000A   	//0014	//TVAR_afit_pBaseVals[212]   700009D0    //DSMix1_iHighLimit_Wide                                                    
+     0032   	//0032	//TVAR_afit_pBaseVals[213]   700009D2    //DSMix1_iHighLimit_Wide_Bin                                                
+     0028   	//0050	//TVAR_afit_pBaseVals[214]   700009D4    //DSMix1_iLowLimit_Fine                                                     
+     0032   	//0032	//TVAR_afit_pBaseVals[215]   700009D6    //DSMix1_iLowLimit_Fine_Bin                                                 
+     0010   	//0010	//TVAR_afit_pBaseVals[216]   700009D8    //DSMix1_iHighLimit_Fine                                                    
+     0032   	//0032	//TVAR_afit_pBaseVals[217]   700009DA    //DSMix1_iHighLimit_Fine_Bin                                                
+     0106   	//0106	//TVAR_afit_pBaseVals[218]   700009DC    //DSMix1_iRGBOffset                                                         
+     006F   	//006F	//TVAR_afit_pBaseVals[219]   700009DE    //DSMix1_iDemClamp                                                          
+     0205   	//0205	//TVAR_afit_pBaseVals[220]   700009E0    //"Disparity_iDispTH_LowDisparity_iDispTH_Low_Bin"
+     0505   	//0505	//TVAR_afit_pBaseVals[221]   700009E2    //"Disparity_iDispTH_High Disparity_iDispTH_High_Bin"
+     0101   	//0101	//TVAR_afit_pBaseVals[222]   700009E4    //"Despeckle_iCorrectionLevelColdDespeckle_iCorrectionLevelCold_Bin"
+     0202   	//0102	//TVAR_afit_pBaseVals[223]   700009E6    //Despeckle_iCorrectionLevelHotDespeckle_iCorrectionLevelHot_Bin
+     140A   	//140A	//TVAR_afit_pBaseVals[224]   700009E8    //"Despeckle_iColdThreshLowDespeckle_iColdThreshHigh"
+     140A   	//140A	//TVAR_afit_pBaseVals[225]   700009EA    //"Despeckle_iHotThreshLowDespeckle_iHotThreshHigh"
+     2828   	//2828	//TVAR_afit_pBaseVals[226]   700009EC    //"Denoise1_iLowMaxSlopeAllowedDenoise1_iHighMaxSlopeAllowed"               
+     0606   	//0606	//TVAR_afit_pBaseVals[227]   700009EE    //"Denoise1_iLowSlopeThreshDenoise1_iHighSlopeThresh"                       
+     0205   	//0205	//TVAR_afit_pBaseVals[228]   700009F0    //"Denoise1_iRadialPowerDenoise1_iRadialDivideShift"                        
+     0480   	//0480	//TVAR_afit_pBaseVals[229]   700009F2    //"Denoise1_iRadialLimitDenoise1_iLWBNoise"
+     000A   	//000F	//TVAR_afit_pBaseVals[230]   700009F4    //"Denoise1_iWideDenoise1_iWideWide"
+     0005   	//0005	//TVAR_afit_pBaseVals[231]   700009F6    //"Demosaic4_iHystGrayRangeUVDenoise_iYSupport"                             
+     1903   	//1903	//TVAR_afit_pBaseVals[232]   700009F8    //"UVDenoise_iUVSupportDSMix1_iLowPower_Wide"                               
+     1611   	//0f11 //1911	//1911	//TVAR_afit_pBaseVals[233]   700009FA    //"DSMix1_iLowPower_Wide_BinDSMix1_iHighPower_Wide"                         
+     0A0F   	//0A0F	//TVAR_afit_pBaseVals[234]   700009FC    //"DSMix1_iHighPower_Wide_BinDSMix1_iLowThresh_Wide"                        
+     050A   	//050A	//TVAR_afit_pBaseVals[235]   700009FE    //"DSMix1_iHighThresh_WideDSMix1_iReduceNegativeWide"                       
+     2025   	//14 //28	//2028	//TVAR_afit_pBaseVals[236]   70000A00    //"DSMix1_iLowPower_FineDSMix1_iLowPower_Fine_Bin"                          
+     2025   	//1E //28	//2028	//TVAR_afit_pBaseVals[237]   70000A02    //"DSMix1_iHighPower_FineDSMix1_iHighPower_Fine_Bin"                        
+     0A08   	//2000	//TVAR_afit_pBaseVals[238]   70000A04    //"DSMix1_iLowThresh_FineDSMix1_iHighThresh_Fine"                           
+     0007   	//0007	//TVAR_afit_pBaseVals[239]   70000A06    //"DSMix1_iReduceNegativeFineDSMix1_iRGBMultiplier"                         
+     0403   	//0403	//TVAR_afit_pBaseVals[240]   70000A08    //"Mixer1_iNLowNoisePowerMixer1_iNLowNoisePower_Bin"
+     0402   	//0402	//TVAR_afit_pBaseVals[241]   70000A0A    //"Mixer1_iNVeryLowNoisePowerMixer1_iNVeryLowNoisePower_Bin"
+     0000   	//0000	//TVAR_afit_pBaseVals[242]   70000A0C    //"Mixer1_iNHighNoisePowerMixer1_iNHighNoisePower_Bin"
+     0203   	//0203	//TVAR_afit_pBaseVals[243]   70000A0E    //"Mixer1_iWLowNoisePowerMixer1_iWVeryLowNoisePower"
+     0000   	//0000	//TVAR_afit_pBaseVals[244]   70000A10    //"Mixer1_iWHighNoisePowerMixer1_iWLowNoiseCeilGain"
+     0006   	//1006	//TVAR_afit_pBaseVals[245]   70000A12    //"Mixer1_iWHighNoiseCeilGainMixer1_iWNoiseCeilGain"
+     0180   	//TVAR_afit_pBaseVals[246]   70000A14            //"CCM_Oscar_iSaturationCCM_Oscar_bSaturation"                              
+     0180   	//TVAR_afit_pBaseVals[247]   70000A16            //"RGBGamma2_iLinearityRGBGamma2_bLinearity"
+     0100   	//TVAR_afit_pBaseVals[248]   70000A18            //"RGBGamma2_iDarkReduceRGBGamma2_bDarkReduce"
+     803C   	//TVAR_afit_pBaseVals[249]   70000A1A            //"byr_gas2_iShadingPowerRGB2YUV_iRGBGain"                                  
+     0180   	//TVAR_afit_pBaseVals[250]   70000A1C            //"RGB2YUV_iSaturationRGB2YUV_bGainOffset"                                  
+     0000   	//TVAR_afit_pBaseVals[251]   70000A1E            //RGB2YUV_iYOffset
+     0000   	//TVAR_afit_pBaseVals[252]   70000A20                //BRIGHTNESS                                                                
+     FFE2 //0000   	//TVAR_afit_pBaseVals[253]   70000A22                //CONTRAST                                                                  
+     0000   	//TVAR_afit_pBaseVals[254]   70000A24                //SATURATION                                                                
+     0014   	//TVAR_afit_pBaseVals[255]   70000A26                //SHARP_BLUR                                                                
+     0000   	//TVAR_afit_pBaseVals[256]   70000A28                //GLAMOUR
+     03FF   	//TVAR_afit_pBaseVals[257]   70000A2A                //Disparity_iSatSat                                                         
+     000E   	//TVAR_afit_pBaseVals[258]   70000A2C                //Denoise1_iYDenThreshLow
+     0006   	//TVAR_afit_pBaseVals[259]   70000A2E                //Denoise1_iYDenThreshLow_Bin
+     0020   	//TVAR_afit_pBaseVals[260]   70000A30                //Denoise1_iYDenThreshHigh
+     0050   	//TVAR_afit_pBaseVals[261]   70000A32                //Denoise1_iYDenThreshHigh_Bin
+     0002   	//TVAR_afit_pBaseVals[262]   70000A34                //Denoise1_iLowWWideThresh
+     000A   	//TVAR_afit_pBaseVals[263]   70000A36                //Denoise1_iHighWWideThresh
+     000A   	//TVAR_afit_pBaseVals[264]   70000A38                //Denoise1_iLowWideThresh
+     000A   	//TVAR_afit_pBaseVals[265]   70000A3A                //Denoise1_iHighWideThresh
+     03FF   	//TVAR_afit_pBaseVals[266]   70000A3C                //Denoise1_iSatSat                                                          
+     03FF   	//TVAR_afit_pBaseVals[267]   70000A3E                //Demosaic4_iHystGrayLow
+     0000   	//TVAR_afit_pBaseVals[268]   70000A40                //Demosaic4_iHystGrayHigh
+     0000   	//TVAR_afit_pBaseVals[269]   70000A42                //UVDenoise_iYLowThresh
+     0000   	//TVAR_afit_pBaseVals[270]   70000A44                //UVDenoise_iYHighThresh
+     03FF   	//TVAR_afit_pBaseVals[271]   70000A46                //UVDenoise_iUVLowThresh
+     03FF   	//TVAR_afit_pBaseVals[272]   70000A48                //UVDenoise_iUVHighThresh
+     0014   	//TVAR_afit_pBaseVals[273]   70000A4A                //DSMix1_iLowLimit_Wide                                                     
+     0032   	//TVAR_afit_pBaseVals[274]   70000A4C                //DSMix1_iLowLimit_Wide_Bin                                                 
+     0000   	//TVAR_afit_pBaseVals[275]   70000A4E                //DSMix1_iHighLimit_Wide                                                    
+     0032   	//TVAR_afit_pBaseVals[276]   70000A50                //DSMix1_iHighLimit_Wide_Bin                                                
+     0020   	//TVAR_afit_pBaseVals[277]   70000A52                //DSMix1_iLowLimit_Fine                                                     
+     0032   	//TVAR_afit_pBaseVals[278]   70000A54                //DSMix1_iLowLimit_Fine_Bin                                                 
+     0000   	//TVAR_afit_pBaseVals[279]   70000A56                //DSMix1_iHighLimit_Fine                                                    
+     0032   	//TVAR_afit_pBaseVals[280]   70000A58                //DSMix1_iHighLimit_Fine_Bin                                                
+     0106   	//TVAR_afit_pBaseVals[281]   70000A5A                //DSMix1_iRGBOffset                                                         
+     006F   	//TVAR_afit_pBaseVals[282]   70000A5C                //DSMix1_iDemClamp                                                          
+     0202   	//TVAR_afit_pBaseVals[283]   70000A5E                //"Disparity_iDispTH_LowDisparity_iDispTH_Low_Bin"
+     0502   	//TVAR_afit_pBaseVals[284]   70000A60                //"Disparity_iDispTH_High Disparity_iDispTH_High_Bin"
+     0101   	//TVAR_afit_pBaseVals[285]   70000A62                //"Despeckle_iCorrectionLevelColdDespeckle_iCorrectionLevelCold_Bin"
+     0202   	//TVAR_afit_pBaseVals[286]   70000A64                //Despeckle_iCorrectionLevelHotDespeckle_iCorrectionLevelHot_Bin
+     140A   	//TVAR_afit_pBaseVals[287]   70000A66                //"Despeckle_iColdThreshLowDespeckle_iColdThreshHigh"
+     140A   	//TVAR_afit_pBaseVals[288]   70000A68                //"Despeckle_iHotThreshLowDespeckle_iHotThreshHigh"
+     2828   	//TVAR_afit_pBaseVals[289]   70000A6A                //"Denoise1_iLowMaxSlopeAllowedDenoise1_iHighMaxSlopeAllowed"               
+     0606   	//TVAR_afit_pBaseVals[290]   70000A6C                //"Denoise1_iLowSlopeThreshDenoise1_iHighSlopeThresh"                       
+     0205   	//TVAR_afit_pBaseVals[291]   70000A6E                //"Denoise1_iRadialPowerDenoise1_iRadialDivideShift"                        
+     0880   	//TVAR_afit_pBaseVals[292]   70000A70                //"Denoise1_iRadialLimitDenoise1_iLWBNoise"
+     000F   	//TVAR_afit_pBaseVals[293]   70000A72                //"Denoise1_iWideDenoise1_iWideWide"
+     0005   	//TVAR_afit_pBaseVals[294]   70000A74                //"Demosaic4_iHystGrayRangeUVDenoise_iYSupport"                             
+     1903   	//TVAR_afit_pBaseVals[295]   70000A76                //"UVDenoise_iUVSupportDSMix1_iLowPower_Wide"                               
+     1611   	//0f11 //1911	//TVAR_afit_pBaseVals[296]   70000A78                //"DSMix1_iLowPower_Wide_BinDSMix1_iHighPower_Wide"                         
+     0A0F   	//TVAR_afit_pBaseVals[297]   70000A7A                //"DSMix1_iHighPower_Wide_BinDSMix1_iLowThresh_Wide"                        
+     050A   	//TVAR_afit_pBaseVals[298]   70000A7C                //"DSMix1_iHighThresh_WideDSMix1_iReduceNegativeWide"                       
+     2020   	//14 //20	//TVAR_afit_pBaseVals[299]   70000A7E                //"DSMix1_iLowPower_FineDSMix1_iLowPower_Fine_Bin"                          
+     2020   	//1e //20	//TVAR_afit_pBaseVals[300]   70000A80                //"DSMix1_iHighPower_FineDSMix1_iHighPower_Fine_Bin"                        
+     0A08   	//TVAR_afit_pBaseVals[301]   70000A82                //"DSMix1_iLowThresh_FineDSMix1_iHighThresh_Fine"                           
+     0007   	//TVAR_afit_pBaseVals[302]   70000A84                //"DSMix1_iReduceNegativeFineDSMix1_iRGBMultiplier"                         
+     0408   	//TVAR_afit_pBaseVals[303]   70000A86                //"Mixer1_iNLowNoisePowerMixer1_iNLowNoisePower_Bin"
+     0406   	//TVAR_afit_pBaseVals[304]   70000A88                //"Mixer1_iNVeryLowNoisePowerMixer1_iNVeryLowNoisePower_Bin"
+     0000   	//TVAR_afit_pBaseVals[305]   70000A8A                //"Mixer1_iNHighNoisePowerMixer1_iNHighNoisePower_Bin"
+     0608   	//TVAR_afit_pBaseVals[306]   70000A8C                //"Mixer1_iWLowNoisePowerMixer1_iWVeryLowNoisePower"
+     0000   	//TVAR_afit_pBaseVals[307]   70000A8E                //"Mixer1_iWHighNoisePowerMixer1_iWLowNoiseCeilGain"
+     0006   	//TVAR_afit_pBaseVals[308]   70000A90                //"Mixer1_iWHighNoiseCeilGainMixer1_iWNoiseCeilGain"
+     0180   	//TVAR_afit_pBaseVals[309]   70000A92 //180 173 164  //"CCM_Oscar_iSaturationCCM_Oscar_bSaturation"                              
+     0180   	//TVAR_afit_pBaseVals[310]   70000A94 //Linearity    //"RGBGamma2_iLinearityRGBGamma2_bLinearity"
+     0100   	//TVAR_afit_pBaseVals[311]   70000A96                //"RGBGamma2_iDarkReduceRGBGamma2_bDarkReduce"
+     804A   	//TVAR_afit_pBaseVals[312]   70000A98                //"byr_gas2_iShadingPowerRGB2YUV_iRGBGain"                                  
+     0180   	//TVAR_afit_pBaseVals[313]   70000A9A                //"RGB2YUV_iSaturationRGB2YUV_bGainOffset"                                  
+     0000   	//TVAR_afit_pBaseVals[314]   70000A9C                //RGB2YUV_iYOffset
+     00FF   	//afit_pConstBaseVals[0]                            //Denoise1_iUVDenThreshLow
+     00FF   	//afit_pConstBaseVals[1]                            //Denoise1_iUVDenThreshHigh
+     0800   	//afit_pConstBaseVals[2]                            //Denoise1_sensor_width
+     0600   	//afit_pConstBaseVals[3]                            //Denoise1_sensor_height
+     0000   	//afit_pConstBaseVals[4]                            //Denoise1_start_x
+     0000   	//afit_pConstBaseVals[5]                            //Denoise1_start_y
+     0000   	//afit_pConstBaseVals[6]                            //"Denoise1_iYDenSmoothDenoise1_iWSharp  "             
+     0300   	//afit_pConstBaseVals[7]                            //"Denoise1_iWWSharp Denoise1_iRadialTune  "           
+     0002   	//afit_pConstBaseVals[8]                            //"Denoise1_iOutputBrightnessDenoise1_binning_x  "
+     0400   	//afit_pConstBaseVals[9]                            //"Denoise1_binning_yDemosaic4_iFDeriv  "
+     0106   	//afit_pConstBaseVals[10]                           //"Demosaic4_iFDerivNeiDemosaic4_iSDeriv  "            
+     0005   	//afit_pConstBaseVals[11]                           //"Demosaic4_iSDerivNeiDemosaic4_iEnhancerG  "         
+     0000   	//afit_pConstBaseVals[12]                           //"Demosaic4_iEnhancerRBDemosaic4_iEnhancerV  "
+     0703   	//afit_pConstBaseVals[13]                           //"Demosaic4_iDecisionThreshDemosaic4_iDesatThresh"
+     0000   	//afit_pConstBaseVals[14]                           //Demosaic4_iBypassSelect                              
+     FFD6   	//afit_pConstBaseVals[15]
+     53C1   	//afit_pConstBaseVals[16]//hys off : 4341
+     E1FE   	//afit_pConstBaseVals[17]//mixer on :E0FA
+     0001 $f	//afit_pConstBaseVals[18]
+;
+
+
+REG_ETC =
+$"[S5K6AAFX] >> REG_ETC"
+//================================================================
+// Flicker
+//================================================================
+1000 0001 $f	//Set host interrupt so main start run
+$d000a 		//Wait 10mSec
+
+002A 0400 $f
+0F12 005F $f	//REG_TC_DBG_AutoAlgEnBits
+002A 03DC $f
+0F12 0001   	//REG_SF_USER_FlickerQuant	1:50hz, 2:60hz 
+     0001 $f	//REG_SF_USER_FlickerQuantChanged
+
+//================================================================
+// Clock Settings
+//================================================================
+// External Clock : 25Mhz
+002A 01B8 $f
+0F12 61A8       //5DC0 $f	//REG_TC_IPRM_InClockLSBs		//700001B8	//5DC0:24Mhz
+     0000 $f	//REG_TC_IPRM_InClockMSBs		//700001BA
+
+// Pararrel & MIPI Clock Setting
+002A 01C6 $f
+0F12 0001   	//REG_TC_IPRM_UseNPviClocks		//700001C6	//1 Parallel Configurations
+     0001 $f	//REG_TC_IPRM_UseNMipiClocks		//700001C8	//1 MIPI Configurations
+
+// System Clock0 : 28Mhz, PCLK : 48Mhz
+002A 01CC $f
+0F12 1770   	//REG_TC_IPRM_OpClk4KHz_0	//700001CC
+     2EE0   	//REG_TC_IPRM_MinOutRate4KHz_0	//700001CE
+     2EE0 $f	//REG_TC_IPRM_MaxOutRate4KHz_0	//700001D0
+
+ //System clock1 : 25Mhz, PCLK : 50Mhz
+002A 01D2 $f
+0F12 186A   	//REG_TC_IPRM_OpClk4KHz_1	//700001D2
+     30D4   	//REG_TC_IPRM_MinOutRate4KHz_1	//700001D4
+     30D4 $f	//REG_TC_IPRM_MaxOutRate4KHz_1	//700001D6
+
+// System clock2 : 24Mhz, PCLK : 24Mhz                                      
+//s002A01D8                                                                 
+//s0F121770	//REG_TC_IPRM_OpClk4KHz_2	//700001D8	//1770:24Mhz
+//s0F121770  	//REG_TC_IPRM_MinOutRate4KHz_2	//700001DA	//1770:24Mhz
+//s0F121770	//REG_TC_IPRM_MaxOutRate4KHz_2	//700001DC	//1770:24Mhz
+
+002A 01E0 $f
+0F12 0001 $f	//REG_TC_IPRM_InitParamsUpdated	//700001E0
+$d0064 		//Delay 100ms
+
+
+//================================================================ 
+// Capture Configuration                                           
+//================================================================ 
+// Capture 0 for 1280x960                                        
+//s002A030C
+//s0F120001	//AE ON
+002A 030E $f
+0F12 0500       //500 $f	//REG_0TC_CCFG_usWidth
+     03C0       //3C0 $f	//REG_0TC_CCFG_usHeight
+     0005 $f	//REG_0TC_CCFG_Format
+002A 031A $f
+0F12 0001 $f	//REG_0TC_CCFG_uClockInd
+002A 0314 $f
+0F12 30D4   	//REG_0TC_CCFG_usMaxOut4KHzRate
+     30D4   	//REG_0TC_CCFG_usMinOut4KHzRate
+     0052 $f	//REG_0TC_CCFG_PVIMask
+002A 031E $f
+0F12 0002 $f	//REG_0TC_CCFG_FrRateQualityType
+002A 031C $f
+0F12 0002 $f	//REG_0TC_CCFG_usFrTimeType
+002A 0320 $f
+0F12 0593       //535 $f	//REG_0TC_CCFG_usMaxFrTimeMsecMult10
+     0000 $f	//REG_0TC_CCFG_usMinFrTimeMsecMult10
+
+002A 0224 $f
+0F12 0000 $f	// REG_TC_GP_ActiveCapConfig 
+
+002A 01F8 $f
+0F12 0001 $f	// REG_TC_GP_NewConfigSync 
+002A 0226 $f
+0F12 0001 $f	//REG_TC_GP_CapConfigChanged
+
+
+//================================================================
+// Preview Configuration
+//================================================================
+// Preview 0 for 640x480, 8-15fps
+002A 0242 $f
+0F12 0280   	//REG_0TC_PCFG_usWidth  400
+     01E0   	//REG_0TC_PCFG_usHeight  300
+     0005 $f	//REG_0TC_PCFG_Format  5
+002A 024E $f
+0F12 0001 $f	//REG_0TC_PCFG_uClockInd
+002A 0248 $f
+0F12 30D4   	//REG_0TC_PCFG_usMaxOut4KHzRate
+     30D4   	//REG_0TC_PCFG_usMinOut4KHzRate
+     0052 $f	//REG_0TC_PCFG_PVIMask   42
+002A 0252 $f
+0F12 0001 $f	//REG_0TC_PCFG_FrRateQualityType
+002A 0250 $f
+0F12 0000 $f	//REG_0TC_PCFG_usFrTimeType
+002A 0262 $f
+0F12 0003   	//REG_0TC_PCFG_uPrevMirror   [0]x [1]y [2]xy
+     0003 $f	//REG_0TC_PCFG_uCaptureMirror
+002A 0254 $f
+0F12 0535   	//REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02BC $f	//REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+//================================================================
+// Factory Only No Delete                                         
+//================================================================
+002A 10EE $f
+0F12 097A $f	// senHal_uMinColsNoBin *FACTORY ONLY *No Delete//
+
+
+//================================================================
+// REG TC FLS
+//================================================================
+002A 03B6 $f
+0F12 0000 $f	//REG_TC_FLS
+
+
+//================================================================
+// MIPI Lane
+//================================================================
+002A 03FA $f
+0F12 0001   	//REG_TC_OIF_EnMipiLanes		//700003FA
+     00C3   	//REG_TC_OIF_EnPackets			//700003FC
+     0001 $f	//REG_TC_OIF_CfgChanged			//700003FE
+
+
+//================================================================
+//PREVIEW Command                                                 
+//================================================================
+002A 021C $f
+0F12 0000 $f	//REG_TC_GP_ActivePrevConfig		//7000021C
+002A 0220 $f
+0F12 0001 $f	//REG_TC_GP_PrevOpenAfterChange		//70000220
+002A 01F8 $f
+0F12 0001 $f	//REG_TC_GP_NewConfigSync		//700001F8
+002A 021E $f
+0F12 0001 $f	//REG_TC_GP_PrevConfigChanged		//7000021E
+002A 01F0 $f
+0F12 0001   	//REG_TC_GP_EnablePreview		//700001F0
+     0001 $f	//REG_TC_GP_EnablePreviewChanged	//700001F2
+$d0096 		// Wait150ms//
+
+
+//================================================================
+//Input size Change (CROP)
+//================================================================
+002A 020A $f
+0F12 0500   	// REG_TC_GP_PrevZoomReqInputWidth
+     03C0   	// REG_TC_GP_PrevZoomReqInputHeight
+     0000   	// REG_TC_GP_PrevZoomReqInputWidthOfs
+     0020   	// REG_TC_GP_PrevZoomReqInputHeightOfs
+
+     0500   	// REG_TC_GP_CapZoomReqInputWidth
+     03C0   	// REG_TC_GP_CapZoomReqInputHeight
+     0000   	// REG_TC_GP_CapZoomReqInputWidthOfs
+     0020   	// REG_TC_GP_CapZoomReqInputHeightOfs
+     0001 $f	// REG_TC_GP_InputsChangeRequest//
+
+$d0064		// Wait100ms//
+
+//================================================================
+// Non Continuous Mode
+//================================================================
+0028 D000 $f
+002A B0CC $f
+0F12 0036 $f	//Non Continuous mode
+
+;
+
+
+REG_MAIN_INIT =
+$"[S5K6AAFX] >> REG_MAIN_INIT"
+#REG_ARM_GO
+#REG_ANALOG
+#REG_GAS
+#REG_SHADING
+#REG_CCM
+#REG_ETC
+;
+
+
+//=========================================================
+// INIT SEQUENCE
+//=========================================================
+seq_init =
+$"[S5K6AAFX] >> Initial setting start"
+
+#GET_REG(0130)
+
+$c0 01
+	$c1 07  // Ok if value read is 0x0107
+		$"[S5K6AAFX] CHECK_DEVICE: Device OK! => %1 %0"
+		#REG_MAIN_INIT
+		$s0 FF // Set flag to FF
+	$cl
+		$"[S5K6AAFX] CHECK_DEVICE: Device not responding! => %1 %0 "
+		$s0 00 // Set flag to 00
+	$cx
+$cl
+	$"[S5K6AAFX] CHECK_DEVICE: Device not responding! => %1 %0 "
+	$s0 00 // Set flag to 00
+$cx
+ 
+$"[S5K6AAFX] << Initial setting start"
+;
+
+cam_init_result = FF;
+
+//=========================================================
+// PING SEQUENCE
+//=========================================================
+seq_ping =
+$"[S5K6AAFX] >> seq_ping"
+
+$"[S5K6AAFX] >> POWER ON"
+$gp 4 1   //2.8V
+$d0001
+$gp 1 1   //1.5V
+$d0001
+$gp 2 1   //1.8V
+$d0001
+$gp 0 1   //1.2V buck.
+$d0001
+$gp 0 0   //1.2V buck.
+$d0001 
+$go 40 1  //1.3 stby
+$d0001
+$gt 0 1		//0 clock on
+$d0010
+$go 41 1  //1.3 rst
+$d0010
+$"[S5K6AAFX] << POWER ON"
+
+  #GET_REG(0130)   // read S5K6AAFX Device ID number. 
+$"[S5K6AAFX] << seq_ping"
+;
+
+cam_ping_result =  01,07;
+
+//=========================================================
+// DEINIT SEQUENCE
+//=========================================================
+seq_deinit =
+$"[S5K6AAFX] >> De Initial "
+
+$"[S5K6AAFX] >> POWER OFF"
+$go 41 0  //1.3 rst low
+$d0001 
+$gt 0 0		//0 clock off
+$d0001
+$go 40 0  //1.3 stby low
+$d0001 
+$gp 2 0   //1.8V
+$d0001 
+$gp 1 0   //1.5V
+$d0001 
+$gp 4 0   //2.8V
+$"[S5K6AAFX] << POWER OFF"
+
+$"[S5K6AAFX] << De Initial  "
+;
+
+
+//=========================================================
+// VIEWFINDER
+//=========================================================
+seq_vf_config_0 =
+$"[S5K6AAFX] seq_vf_config_0 Monitoring 640 * 480  "
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0280 	   //REG_0TC_PCFG_usWidth
+     01E0 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 0535     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02BC $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+
+;
+
+
+seq_vf_config_1 =
+$"[S5K6AAFX] seq_vf_config_1 Monitoring 320 * 240  "
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0140 	   //REG_0TC_PCFG_usWidth
+     00F0 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 0535     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02BC $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+
+seq_vf_config_4 =
+$"[S5K6AAFX] seq_vf_config_4 Monitoring 176 * 144  "
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 00B0 	   //REG_0TC_PCFG_usWidth
+     0090 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 0535     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02BC $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+seq_vf_config_5 =
+$"[S5K6AAFX] seq_vf_config_5 Video 640x480 15fps"
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0280 	   //REG_0TC_PCFG_usWidth
+     01E0 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 02A8     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02A8 $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+seq_vf_config_6 =
+$"[S5K6AAFX] seq_vf_config_6 Video 176 * 144  15fps"
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 00B0 	   //REG_0TC_PCFG_usWidth
+     0090 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 02A8     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02A8 $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+seq_vf_config_7 =
+$"[S5K6AAFX] seq_vf_config_7 Video 352 * 288  15fps"
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0160 	   //REG_0TC_PCFG_usWidth
+     0120 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 02A8     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02A8 $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+seq_vf_config_8 =
+$"[S5K6AAFX] seq_vf_config_8 Video 320 * 240 15fps "
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0140 	   //REG_0TC_PCFG_usWidth
+     00F0 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 02A8     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02A8 $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+seq_vf_config_9 =
+$"[S5K6AAFX] seq_vf_config_9 Monitoring 352 * 288  "
+FCFC D000 $f
+0028 7000 $f
+
+002A 0242 $f
+0F12 0160 	   //REG_0TC_PCFG_usWidth
+     0120 	   //REG_0TC_PCFG_usHeight
+     0005 $f  //REG_0TC_PCFG_Format
+
+002A 0254 $f
+0F12 0535     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02BC $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+$d000A 
+
+;
+
+
+
+seq_vf_start =
+$"[S5K6AAFX] >> seq_vf_start"
+FCFC D000 $f
+0028 7000 $f
+
+002A 10EE $f
+0F12 097A $f	// senHal_uMinColsNoBin *FACTORY ONLY *No Delete//
+
+002A 021C $f
+0F12 0000 $f	// REG_TC_GP_ActivePrevConfig
+
+002A 0220 $f
+0F12 0001 $f	// REG_TC_GP_PrevOpenAfterChange
+
+002A 01F8 $f
+0F12 0001 $f	// REG_TC_GP_NewConfigSync
+
+002A 021E $f
+0F12 0001 $f	// REG_TC_GP_PrevConfigChanged
+002A 01F0 $f
+0F12 0001   	// REG_TC_GP_EnablePreview
+     0001 $f	// REG_TC_GP_EnablePreviewChanged
+
+$d0096		// Wait150ms//
+
+
+0028 D000 $f	// MIPI
+002A B0CC $f
+0F12 0036 $f
+
+
+$"[S5K6AAFX] << seq_vf_start"
+;
+
+seq_vf_stop =
+$"[S5K6AAFX] >> seq_vf_stop"
+
+$"[S5K6AAFX] << seq_vf_stop"
+;
+
+
+seq_vf_return =
+$"[S5K6AAFX] >> seq_vf_return"
+FCFC D000 $f
+0028 7000 $f
+
+002A 10EE $f
+0F12 097A $f	// senHal_uMinColsNoBin *FACTORY ONLY *No Delete//
+
+002A 021C $f
+0F12 0000 $f	// REG_TC_GP_ActivePrevConfig
+
+002A 0220 $f
+0F12 0001 $f	// REG_TC_GP_PrevOpenAfterChange
+
+002A 01F8 $f
+0F12 0001 $f	// REG_TC_GP_NewConfigSync
+
+002A 021E $f
+0F12 0001 $f	// REG_TC_GP_PrevConfigChanged
+002A 01F0 $f
+0F12 0001   	// REG_TC_GP_EnablePreview
+     0001 $f	// REG_TC_GP_EnablePreviewChanged
+
+$d0096		// Wait150ms//
+
+
+0028 D000 $f	// MIPI
+002A B0CC $f
+0F12 0036 $f
+
+$"[S5K6AAFX] << seq_vf_return"
+;
+
+//=========================================================
+// SnapShot Configuration
+//=========================================================
+
+seq_ss_config_2 =
+$"[S5K6AAFX] seq_ss_config_2 Monitoring VGA "
+//FCFC D000 $f
+//0028 7000 $f
+
+//002A 030E $f
+//0F12 0280       //500 $f	//REG_0TC_CCFG_usWidth
+//     01E0       //3C0 $f	//REG_0TC_CCFG_usHeight
+//     0005 $f	//REG_0TC_CCFG_Format
+
+//002A 0318 $f
+//0F12 0052 $f	//REG_0TC_CCFG_PVIMask
+	 
+//$d000A 
+;
+
+seq_ss_config_3 =
+$"[S5K6AAFX] seq_ss_config_3 Monitoring 1280 x 960 "
+//FCFC D000 $f
+//0028 7000 $f
+
+//002A 030E $f
+//0F12 0500       //500 $f	//REG_0TC_CCFG_usWidth
+//     03C0       //3C0 $f	//REG_0TC_CCFG_usHeight
+//     0005 $f	//REG_0TC_CCFG_Format
+
+//002A 0318 $f
+//0F12 0052 $f	//REG_0TC_CCFG_PVIMask	 
+	 
+//$d000A 
+;
+
+seq_ss_start =
+$"[S5K6AAFX] >> seq_ss_start"
+
+FCFC D000 $f
+0028 7000 $f
+
+002A 10EE $f
+0F12 0D7A $f	// senHal_uMinColsNoBin *FACTORY ONLY *No Delete//
+
+002A 0224 $f
+0F12 0000 $f	// REG_TC_GP_ActiveCapConfig 
+
+002A 01F8 $f
+0F12 0001 $f	// REG_TC_GP_NewConfigSync 
+002A 0226 $f
+0F12 0001 $f	// REG_TC_GP_CapConfigChanged 
+
+002A 01F4 $f
+0F12 0001   	// REG_TC_GP_EnableCapture 
+     0001 $f	// REG_TC_GP_EnableCaptureChanged 
+$d0096 		// Wait150ms//
+
+
+0028 D000 $f	// MIPI
+002A B0CC $f
+0F12 0036 $f
+
+$"[S5K6AAFX] << seq_ss_start"
+;
+
+seq_ss_stop =
+$"[S5K6AAFX] >> seq_ss_stop"
+
+$"[S5K6AAFX] << seq_ss_stop"
+;
+
+seq_ss_take =
+$"[S5K6AAFX] >> seq_ss_take"
+$"[S5K6AAFX] << seq_ss_take"
+;
+
+seq_ss_verify =
+$"[S5K6AAFX] >> seq_ss_verify"
+
+
+$"[S5K6AAFX] << seq_ss_verify"
+;
+
+//==========================================================
+// Property Configurtion
+//==========================================================
+seq_set_prop_14_0 =
+$"[S5K6AAFX] >> Exposure compensation -4"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 FF94 $f
+;
+
+seq_set_prop_14_1 =
+$"[S5K6AAFX] >> Exposure compensation -3"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 FFA0 $f
+;
+
+seq_set_prop_14_2 =
+$"[S5K6AAFX] >> Exposure compensation -2"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 FFC9 $f
+;
+
+seq_set_prop_14_3 =
+$"[S5K6AAFX] >> Exposure compensation -1"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 FFE9 $f
+;
+
+seq_set_prop_14_4 =
+$"[S5K6AAFX] >> Exposure compensation 0"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 0000 $f
+;
+
+seq_set_prop_14_5 =
+$"[S5K6AAFX] >> Exposure compensation +1"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 002A $f
+;
+
+seq_set_prop_14_6 =
+$"[S5K6AAFX] >> Exposure compensation +2"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 003c $f
+;
+
+seq_set_prop_14_7 =
+$"[S5K6AAFX] >> Exposure compensation +3"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 0050 $f
+;
+
+seq_set_prop_14_8 =
+$"[S5K6AAFX] >> Exposure compensation +4"
+FCFC D000 $f
+0028 7000 $f
+002A 0F4C $f
+0F12 02B0 $f
+002A 0F52 $f
+0F12 02F0 $f
+002A 01E4 $f
+0F12 0089 $f
+;
+
+seq_set_prop_1a_0 =
+$"[S5K6AAFX] >> seq_framerate auto "
+
+;
+
+REG_FPS_14 =
+FCFC D000 $f
+0028 7000 $f
+
+002A 0254 $f
+0F12 02A8     //2bd //REG_0TC_PCFG_usMaxFrTimeMsecMult10
+     02A8 $f  //2bd //REG_0TC_PCFG_usMinFrTimeMsecMult10
+
+002A 021C $f
+0F12 0000 $f  //REG_TC_GP_ActivePrevConfig
+002A 0220 $f
+0F12 0001 $f  //REG_TC_GP_PrevOpenAfterChange
+002A 01F8 $f
+0F12 0001 $f  //REG_TC_GP_NewConfigSync
+002A 021E $f
+0F12 0001 $f  //REG_TC_GP_PrevConfigChanged
+002A 01F0 $f
+0F12 0001 $f  //REG_TC_GP_EnablePreview
+0F12 0001 $f  //REG_TC_GP_EnablePreviewChanged
+;
+
+seq_set_prop_1a_e =
+$"[S5K6AAFX] >> seq_framerate 14 none"
+//#REG_FPS_14
+;
+
+seq_set_prop_1a_f =
+$"[S5K6AAFX] >> seq_framerate 15 none"
+//#REG_FPS_14
+;
+
+seq_set_prop_1a_1e =
+$"[S5K6AAFX] >> seq_framerate 30 none "
+;
+
+seq_set_prop_17_0 = 
+
+;
+
+seq_set_prop_18_0 = 
+
+;
+
+seq_get_prop_17 = 
+$"[S5K6AAFX] << get iso data"
+FCFC D000 $f
+002C 7000 $f
+002E 14FC $f
+0F12 $r2 1 0 $f
+$"iso  byte 1 %1, byte 0 %0"
+;
+
+
+seq_get_prop_27 = 
+$"[S5K6AAFX] << get exposure time"
+FCFC D000 $f
+002C 7000 $f
+002E 1508 $f
+0F12 $r2 1 0 $f 
+0F12 $r2 3 2 $f
+$"exposure value 3 %3, byte 2 %2  byte 1 %1, byte 0 %0"
+;

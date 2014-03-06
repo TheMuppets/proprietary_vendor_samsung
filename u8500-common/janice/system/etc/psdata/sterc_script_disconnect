@@ -1,0 +1,26 @@
+#!/system/bin/sh
+#
+# Copyright (C) ST-Ericsson SA 2010. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+PATH=${PATH}:/system/bin
+
+LEASE="12h"
+resolv_file=/data/misc/psdata/resolv.conf
+dhcp_leasefile=/data/misc/psdata/dnsmasq.leases
+pid_file=/data/misc/psdata/pidfile-pid
+
+# Kill dnsmasq
+kill $(cat ${pid_file})
+rm ${pid_file}
+
+echo "" > ${resolv_file}
+iptables -t filter -F FORWARD
+iptables -t nat -F
+echo 0 > /proc/sys/net/ipv4/ip_forward
+
+# take down network interface
+ifconfig ${lan_device} down
