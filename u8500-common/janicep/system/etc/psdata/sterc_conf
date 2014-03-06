@@ -1,0 +1,5 @@
+lan_netmask=*:255.255.255.0
+lan_dhcp_range_first=*:192.168.42.100
+lan_dhcp_range_last=*:192.168.42.200
+lan_dhcp_lease=*:12h
+lan_own_ip=*:192.168.42.129

@@ -1,0 +1,1208 @@
+//=========================================================
+//Revision history
+//=========================================================
+	
+// 0.1 First version of ISX006 config file based on ISX005 config file example
+
+//=========================================================
+//Information section
+//=========================================================
+info_name      = ISX006;
+info_vendor    = SONY;
+info_major_ver = 1;  // TBC
+info_minor_ver = 2;  // TBC
+
+//=========================================================
+// Camera characteristics section
+//=========================================================
+cam_frame_skip = 0;
+cam_i2c_address = 34;
+
+//  cam_interface - 16bit number
+//  [Bit 0] = 0: Primary interface, 1: Secondry interface
+//  [Bit 1] = 0: CCP2 output, 1: CSI2 output
+//  [Bit 2:3] = Number of lanes
+//  [Bit 4] = 0:v.81b DPHY spec, 1: v.90 DPHY spec
+//  [Bit 5] = 0:EOT_bypass disable , 1:EOT_bypass enable
+//  [Rest] = Unused
+cam_interface = 1A;
+
+//CSI bit rate - needed to programmed IPP for 8500
+cam_csi_bitrate = 288;  // 648Mbps
+
+// Datatype 0 for preview config
+//    1 byte: [byte 0] datatype 0 
+cam_csi_datatype0 = 1E;
+
+// Datatype 1 for still config
+//    1 byte: [byte 0] datatype 1
+cam_csi_datatype1 = 31;
+
+// Datatype 2 for non-image data
+//    1 byte: [byte 0] datatype 2
+cam_csi_datatype2 = 10;
+
+// Pixwidth for datatype 0
+//    1 byte: [byte 0] pix width for datatype 0
+cam_csi_datatype0_pix_wd = 08;
+
+// Pixwidth for datatype 1
+//    1 byte: [byte 0] pix width for datatype 1
+cam_csi_datatype1_pix_wd = 08;
+
+// Pixwidth for datatype 2
+//    1 byte: [byte 0] pix width for datatype 2
+cam_csi_datatype2_pix_wd = 08;
+
+// Watchdog timeout in ms
+cam_watchdog_timeout = 190; // 400 ms
+
+// Pipe configuration
+cam_pipe_number = 2;
+
+//=========================================================
+// Supported resolutions
+//=========================================================
+sup_sizes =
+ 0[140,  F0, BB8],  // Preview,  320 * 240, 30 fps
+ 1[280, 1E0, BB8],  // Preview,  640 * 480, 30 fps
+ 2[500, 2D0, BB8],  // Preview, 1280 * 720, 30 fps
+ 3[140,  F0,   0],  // Capture,  320 * 240
+ 4[280, 1E0,   0],  // Capture,  640 * 480
+ 5[2D0, 1E0,   0],  // Capture,  720 * 480
+ 6[320, 1E0,   0],  // Capture,  800 * 480
+ 7[500, 2D0,   0],  // Capture, 1280 * 720
+ 8[500, 3C0,   0],  // Capture, 1280 * 960
+ 9[640, 4B0,   0],  // Capture, 1600 * 1200
+ a[800, 600,   0],  // Capture, 2048 * 1536
+ b[A20, 790,   0],  // Capture, 2592 * 1936
+ c[780, 438, BB8],  // HD movie 1920 * 1080, 30fps
+ d[780, 440, BB8],  // HD movie 1920 * 1088, 30fps
+;
+
+//=========================================================
+// Supported properties
+//=========================================================
+sup_properties =
+ 0[1,  9,   5],	// EV compensationt
+ 1[1,  6,   1],	// Image Effect
+ 2[1,  5,   1],	// White Balance
+ 3[1,  2,   1],	// Wide dynamic range
+ 4[1,  4,   1],	// Iso
+ 5[1,  5,   3],	// Saturation
+ 6[1,  7,   7],	// Sharpness
+ 7[1,  7,   4],	// Contrast
+ 8[1,  3,   1],	// Photometry
+ 9[10, 10, 10],	// Zoom
+ a[1,  14,  1],	// Scene mode
+ b[1,   3,  1],	// Jpeg quality
+ c[1,   8,  1],	// Framerate
+ d[0,   1,  0],	// Face detection
+;
+
+//=========================================================
+// Macro definition accessing I2C // interface (0x34)
+// => !! invert byte 1 and 0 while reading and writing !!
+//=========================================================
+CHECK_DEVICE =
+0000 $r2 0 1 $f
+$"[ISX006] CHECK_DEVICE: %1 %0"
+
+$c1 30
+	$c0 12  // Ok if value read is 0x3012
+		$"[ISX006] CHECK_DEVICE: Device OK! => %1 %0"
+		$s0 FF // Set flag to FF
+	$cl
+		$c0 13 // Ok if value read is 0x3013
+			$"[ISX006] CHECK_DEVICE: Device OK! => %1 %0"
+			$s0 FF // Set flag to FF
+		$cl
+			$"[ISX006] CHECK_DEVICE: Device not responding! => %1 %0 "
+			$s0 00 // Set flag to 00
+		$cx
+	$cx
+$cl
+	$"[ISX006] CHECK_DEVICE: Device not responding! => %1 %0 "
+	$s0 00 // Set flag to 00
+$cx
+;
+
+CHECK_OTP = 
+0368 $r4 0 1 2 3 $f
+$"[ISX006] CHECK_OTP reg Ox368: %3 %2 %1 %0"
+
+$>3 2
+$"[ISX006] CHECK_OTP: %3"
+
+$c3 21
+	$s0 01 // Set flag to 01
+$cl
+	$c3 24
+		$s0 04 // Set flag to 04
+	$cl
+		$s0 00 // Set flag to 00
+	$cx
+$cx
+;
+
+ISX006_AP001_REG =
+$"[ISX006] >> ISX006_AP001_REG"
+
+B000	8B8B	$f
+B002	2DA7	$f
+B004	5590	$f
+B006	B300	$f
+B008	74F1	$f
+B00A	58FE	$f
+B00C	55C8	$f
+B00E	9A00	$f
+B010	76F1	$f
+B012	C2FA	$f
+B014	0000	$f
+B016	0000	$f
+B018	0000	$f
+B01A	0000	$f
+B01C	0000	$f
+B01E	0000	$f
+B020	0000	$f
+B022	0000	$f
+B024	0000	$f
+B026	0000	$f
+B028	0000	$f
+B02A	0000	$f
+B02C	0000	$f
+B02E	0000	$f
+B030	0000	$f
+B032	0000	$f
+B034	0000	$f
+B036	0000	$f
+B038	0000	$f
+B03A	0000	$f
+B03C	0000	$f
+B03E	0000	$f
+B040	0000	$f
+B042	0000	$f
+B044	8BF6	$f
+B046	32FD	$f
+B048	00F0	$f
+B04A	08F8	$f
+B04C	8BF6	$f
+B04E	A2F9	$f
+B050	8AF6	$f
+B052	C8FB	$f
+B054	00F0	$f
+B056	16F8	$f
+B058	89F6	$f
+B05A	38FD	$f
+B05C	80B4	$f
+B05E	0020	$f
+B060	064A	$f
+B062	0749	$f
+B064	8300	$f
+B066	5B18	$f
+B068	9B69	$f
+B06A	5B05	$f
+B06C	5B0D	$f
+B06E	4700	$f
+B070	D353	$f
+B072	0130	$f
+B074	1428	$f
+B076	F5DB	$f
+B078	80BC	$f
+B07A	F746	$f
+B07C	1C01	$f
+B07E	1800	$f
+B080	40EC	$f
+B082	3000	$f
+B084	00B5	$f
+B086	0548	$f
+B088	8079	$f
+B08A	0128	$f
+B08C	03D1	$f
+B08E	0448	$f
+B090	0078	$f
+B092	0228	$f
+B094	01D1	$f
+B096	00F0	$f
+B098	05F8	$f
+B09A	00BD	$f
+B09C	0C31	$f
+B09E	1800	$f
+B0A0	483E	$f
+B0A2	1800	$f
+B0A4	F0B4	$f
+B0A6	0021	$f
+B0A8	1948	$f
+B0AA	1A4A	$f
+B0AC	0478	$f
+B0AE	C078	$f
+B0B0	1768	$f
+B0B2	164D	$f
+B0B4	C307	$f
+B0B6	DB0F	$f
+B0B8	4800	$f
+B0BA	285A	$f
+B0BC	002C	$f
+B0BE	17D0	$f
+B0C0	7A69	$f
+B0C2	5202	$f
+B0C4	D20F	$f
+B0C6	012A	$f
+B0C8	12D1	$f
+B0CA	134E	$f
+B0CC	8A00	$f
+B0CE	9219	$f
+B0D0	D27E	$f
+B0D2	012A	$f
+B0D4	0CD1	$f
+B0D6	002B	$f
+B0D8	03D0	$f
+B0DA	8207	$f
+B0DC	08D1	$f
+B0DE	0230	$f
+B0E0	04E0	$f
+B0E2	8207	$f
+B0E4	04D0	$f
+B0E6	0128	$f
+B0E8	02DD	$f
+B0EA	0238	$f
+B0EC	0004	$f
+B0EE	000C	$f
+B0F0	094E	$f
+B0F2	8A00	$f
+B0F4	9219	$f
+B0F6	9669	$f
+B0F8	F60A	$f
+B0FA	F602	$f
+B0FC	3043	$f
+B0FE	9061	$f
+B100	0131	$f
+B102	1429	$f
+B104	D8DB	$f
+B106	F0BC	$f
+B108	F746	$f
+B10A	0000	$f
+B10C	1C01	$f
+B10E	1800	$f
+B110	4E3E	$f
+B112	1800	$f
+B114	F41A	$f
+B116	1800	$f
+B118	40EC	$f
+B11A	3000	$f
+
+$"[ISX006] << ISX006_AP001_REG"
+;
+
+ISX006_AP003_REG =
+$"[ISX006] >> ISX006_AP003_REG "
+
+B000	9C9C	$f
+B002	9685	$f
+B004	5504	$f
+B006	3300	$f
+B008	7CF1	$f
+B00A	9EFE	$f
+B00C	5584	$f
+B00E	D200	$f
+B010	72F1	$f
+B012	E8FE	$f
+B014	5510	$f
+B016	B200	$f
+B018	74F1	$f
+B01A	40FF	$f
+B01C	5568	$f
+B01E	9900	$f
+B020	76F1	$f
+B022	9AFB	$f
+B024	0000	$f
+B026	0000	$f
+B028	0000	$f
+B02A	0000	$f
+B02C	0000	$f
+B02E	0000	$f
+B030	0000	$f
+B032	0000	$f
+B034	0000	$f
+B036	0000	$f
+B038	0000	$f
+B03A	0000	$f
+B03C	0000	$f
+B03E	0000	$f
+B040	0000	$f
+B042	0000	$f
+B044	84F6	$f
+B046	B0F8	$f
+B048	0249	$f
+B04A	0122	$f
+B04C	0A70	$f
+B04E	83F6	$f
+B050	5BF9	$f
+B052	C046	$f
+B054	00E0	$f
+B056	3000	$f
+B058	4000	$f
+B05A	085A	$f
+B05C	5080	$f
+B05E	0948	$f
+B060	0068	$f
+B062	0949	$f
+B064	0840	$f
+B066	0028	$f
+B068	09D0	$f
+B06A	0848	$f
+B06C	0078	$f
+B06E	0221	$f
+B070	0840	$f
+B072	0228	$f
+B074	03D1	$f
+B076	0648	$f
+B078	0188	$f
+B07A	0D31	$f
+B07C	0180	$f
+B07E	8DF6	$f
+B080	04F9	$f
+B082	C046	$f
+B084	04C0	$f
+B086	3000	$f
+B088	0018	$f
+B08A	0000	$f
+B08C	3E3E	$f
+B08E	1800	$f
+B090	3EE0	$f
+B092	3000	$f
+B094	8BF6	$f
+B096	4AFC	$f
+B098	00F0	$f
+B09A	08F8	$f
+B09C	8BF6	$f
+B09E	BAF8	$f
+B0A0	8AF6	$f
+B0A2	F0FA	$f
+B0A4	00F0	$f
+B0A6	16F8	$f
+B0A8	89F6	$f
+B0AA	60FC	$f
+B0AC	80B4	$f
+B0AE	0020	$f
+B0B0	064A	$f
+B0B2	0749	$f
+B0B4	8300	$f
+B0B6	5B18	$f
+B0B8	9B69	$f
+B0BA	5B05	$f
+B0BC	5B0D	$f
+B0BE	4700	$f
+B0C0	D353	$f
+B0C2	0130	$f
+B0C4	1428	$f
+B0C6	F5DB	$f
+B0C8	80BC	$f
+B0CA	F746	$f
+B0CC	6C01	$f
+B0CE	1800	$f
+B0D0	40EC	$f
+B0D2	3000	$f
+B0D4	00B5	$f
+B0D6	0548	$f
+B0D8	8079	$f
+B0DA	0128	$f
+B0DC	03D1	$f
+B0DE	0448	$f
+B0E0	0078	$f
+B0E2	0228	$f
+B0E4	01D1	$f
+B0E6	00F0	$f
+B0E8	05F8	$f
+B0EA	00BD	$f
+B0EC	0031	$f
+B0EE	1800	$f
+B0F0	383E	$f
+B0F2	1800	$f
+B0F4	F0B4	$f
+B0F6	0021	$f
+B0F8	1948	$f
+B0FA	1A4A	$f
+B0FC	0478	$f
+B0FE	C078	$f
+B100	1768	$f
+B102	164D	$f
+B104	C307	$f
+B106	DB0F	$f
+B108	4800	$f
+B10A	285A	$f
+B10C	002C	$f
+B10E	17D0	$f
+B110	7A69	$f
+B112	5202	$f
+B114	D20F	$f
+B116	012A	$f
+B118	12D1	$f
+B11A	134E	$f
+B11C	8A00	$f
+B11E	9219	$f
+B120	D27E	$f
+B122	012A	$f
+B124	0CD1	$f
+B126	002B	$f
+B128	03D0	$f
+B12A	8207	$f
+B12C	08D1	$f
+B12E	0230	$f
+B130	04E0	$f
+B132	8207	$f
+B134	04D0	$f
+B136	0128	$f
+B138	02DD	$f
+B13A	0238	$f
+B13C	0004	$f
+B13E	000C	$f
+B140	094E	$f
+B142	8A00	$f
+B144	9219	$f
+B146	9669	$f
+B148	F60A	$f
+B14A	F602	$f
+B14C	3043	$f
+B14E	9061	$f
+B150	0131	$f
+B152	1429	$f
+B154	D8DB	$f
+B156	F0BC	$f
+B158	F746	$f
+B15A	0000	$f
+B15C	6C01	$f
+B15E	1800	$f
+B160	3E3E	$f
+B162	1800	$f
+B164	F41A	$f
+B166	1800	$f
+B168	40EC	$f
+B16A	3000	$f
+
+$"[ISX006] << ISX006_AP003_REG "
+;
+
+ISX006_INIT_REG =
+$"[ISX006] >> ISX006_INIT_REG"
+
+// ISX006-1 (FW 3013)
+//   MIPI 2 lanes 1.3Gbps
+//   PLL    648MHz
+000B 01		$f	// PLL_CKSEL
+02C7 03		$f	// SRCCK_DIV
+02B8 10		$f	// VIF_CLKCONFIG1    
+02B9 10		$f	// VIF_CLKCONFIG2    
+02BA 10		$f	// VIF_CLKCONFIG3
+02BB 10		$f	// VIF_CLKCONFIG4    
+02BC 10		$f	// VIF_CLKCONFIG5    
+02BD 10		$f	// VIF_CLKCONFIG6    
+02BE 10		$f	// VIF_CLKCONFIG7    
+033E 01		$f	// HD_PLL_CKSEL      
+0348 10		$f	// VIF_CLKCONFIG_HD1 
+0349 10		$f	// VIF_CLKCONFIG_HD2 
+034A 10		$f	// VIF_CLKCONFIG_HD3 
+034B 10		$f	// VIF_CLKCONFIG_HD4 
+034C 10		$f	// VIF_CLKCONFIG_HD5 
+034D 10		$f	// VIF_CLKCONFIG_HD6 
+4044 A41F	$f	// 1SECCLK_ALL
+4046 302A	$f	// 1SECCLK_HD_1_1
+4048 A032	$f	// 1SECCLK_HD_1_2
+402B 8F		$f	// FPS_SENSALL
+402C FF		$f	// FPS_SENS_HD_1_1
+402D FF		$f	// FPS_SENS_HD_1_2
+4060 A41F	$f	// PIXEL_CLK
+4062 302A	$f	// PIXEL_CLK_HD_1_1
+4064 A032	$f	// PIXEL_CLK_HD_1_2
+403E FA21	$f	// FLSHT50
+4074 2D24	$f	// FLSHT50_HD_1_1
+4078 3A25	$f	// FLSHT50_HD_1_2
+4040 EC20	$f	// FLSHT60
+4076 2023	$f	// FLSHT60_HD_1_1
+407A 2D24	$f	// FLSHT60_HD_1_2
+02A2 0000	$f	// VADJ_SENS_1_1
+0364 2700	$f	// VADJ_SENS_HD_1_1
+02A4 0000	$f	// VADJ_SENS_1_2
+0366 0000	$f	// VADJ_SENS_HD_1_2
+02A6 0000	$f	// VADJ_SENS_1_4
+02A8 0000	$f	// VADJ_SENS_1_8
+4C14 0040	$f	// FLC_OPD_HEIGHT_NORMAL_1_1
+4C1C 2004	$f	// FLC_OPD_HEIGHT_HD_1_1
+4C16 C003	$f	// FLC_OPD_HEIGHT_NORMAL_1_2
+4C1E C002	$f	// FLC_OPD_HEIGHT_HD_1_2
+4C18 E001   $f	// FLC_OPD_HEIGHT_NORMAL_1_4
+4C1A E000	$f	// FLC_OPD_HEIGHT_NORMAL_1_8
+4039 22		$f	// FLCNUMTHRE
+02C4 0A01	$f	// GPIO_FUNCSEL      : AF PWM & UART enable
+4C86 01		$f	// VIF_DATA_MODE     : USESRAM=1, ASYNCHS=0, RGBCCENTOR=0
+3E02 04		$f	// RGIMTIMER (MIPI)
+3E04 06		$f	// RGTLPX  
+3E05 05		$f	// RGTCLKPREPARE  
+3E06 14		$f	// RGTCLKZERO  
+3E07 02		$f	// RGTCLKPRE  
+3E08 0D		$f	// RGTCLKPOST  
+3E09 07		$f	// RGTCLKTRAIL  
+3E0A 0A		$f	// RGTHSEXIT  
+3E0B 05		$f	// RGTHSPREPARE  
+3E0C 08		$f	// RGTHSZERO  
+3E0D 07		$f	// RGTHSTRAIL
+0009	15		$f	// INCK_SET  19.2MHz
+
+$"[ISX006] << ISX006_INIT_REG"
+;
+
+//=========================================================
+// Macro definition accessing I2C MIPI interface (0x78)
+// => No inversion while reading and writing
+//=========================================================
+GET_REG=
+  $f !0 $r2 1 0	// read 2 byte from cam reg !0 into internal 0 and 1
+$"GET_REG byte 1 %1, byte 0 %0"
+;
+
+CHECK_OM_CHANGED_BIT =
+$"[ISX006] >> CHECK_OM_CHANGED_BIT"
+$d000A	// Delay 10ms
+
+00F8 $r1 6 $f
+
+$c6.00 1
+ $"   [ISX006] INTSTS0 status after transition: %6"
+ 00FC 03 $f	// Clear CM_CHANGE_CLR & OM_CHANGE_CLR
+ $d0002	
+ 00F8 $r1 6 $f
+ $"   [ISX006] INTSTS0 status after clearing OM_CHANGE_CLR bit: %6"
+ $s5 00
+$cl
+$"   [ISX006] INTSTS0 status on transition: %6"
+$cx
+$"[ISX006] << CHECK_OM_CHANGED_BIT"
+;
+
+WAIT_FOR_OPERATION_MODE_TRANSITION = 
+$"[ISX006] >> WAIT_FOR_OPERATION_MODE_TRANSITION"
+
+[5 14 #CHECK_OM_CHANGED_BIT]
+
+$"[ISX006] << WAIT_FOR_OPERATION_MODE_TRANSITION"
+; 
+
+GO_IN_STANDBY_STATE =
+$"[ISX006] >> GO_IN_STANDBY_STATE"
+
+0008 01 $f
+
+// Wait 140ms
+$d008C
+
+$s5 ff
+#WAIT_FOR_OPERATION_MODE_TRANSITION
+
+$"[ISX006] << GO_IN_STANDBY_STATE"
+;
+
+GO_IN_ACTIVE_STATE =
+$"[ISX006] >> GO_IN_ACTIVE_STATE"
+
+0008 00 $f
+
+// Wait 80ms
+$d0050
+
+$s5 ff
+#WAIT_FOR_OPERATION_MODE_TRANSITION
+
+$"[ISX006] << GO_IN_ACTIVE_STATE"
+;
+
+CHANGE_I2C_ADDRESS_FOR_MIPI = 
+$"[ISX006] >> CHANGE_I2C_ADDRESS_FOR_MIPI"
+
+$a78
+
+$"[ISX006] << CHANGE_I2C_ADDRESS_FOR_MIPI"
+;
+
+
+//=========================================================
+// INIT SEQUENCE
+//=========================================================
+seq_init =
+$"[ISX006] >> Initial setting start"
+
+#CHECK_DEVICE
+
+//Select MIPI I2C
+0350 02 $f
+
+$c0 00
+	$"    [ISX006] INIT: Impossible to acces the device! Stop init!"
+$cl
+	$"    [ISX006] INIT: Communication with device OK! Continue init ..."
+
+	$s5 ff
+	#WAIT_FOR_OPERATION_MODE_TRANSITION
+
+	#CHECK_OTP
+	$c0 01
+			$"    [ISX006] INIT: Execute isx006_ap003_reg sequence"		
+			#ISX006_AP003_REG
+	$cl
+		$c0 04
+			$"    [ISX006] INIT: Execute isx006_ap001_reg sequence"
+			#ISX006_AP001_REG
+		$cl
+			// Nothing to do
+		$cx
+	$cx
+
+	$"    [ISX006] INIT: Execute isx006_init_reg sequence"
+
+	#ISX006_INIT_REG
+
+	//Change I2C address from 0x34 to 0x78
+	#CHANGE_I2C_ADDRESS_FOR_MIPI
+
+	// Wait 50ms
+	$d0032
+
+	$s5 ff
+	#WAIT_FOR_OPERATION_MODE_TRANSITION
+
+	#GO_IN_STANDBY_STATE
+$cx
+
+#GET_REG(0000)   // read ISX006 Device ID number. (0x3013)
+
+$"[ISX006] << Initial setting start"
+;
+
+cam_init_result = 13,30;
+
+//=========================================================
+// PING SEQUENCE
+//=========================================================
+seq_ping =
+$"[ISX006] >> seq_ping"
+
+  #GET_REG(0000)   // read ISX006 Device ID number. (0x3013)
+
+$"[ISX006] << seq_ping"
+;
+
+cam_ping_result = 13,30;
+
+//=========================================================
+// Macro definition accessing I2C MIPI interface (0x78)
+// => No inversion while reading and writing
+//=========================================================
+//////////////////////////////
+// ISX006 TUNING PARAMETERS //
+//////////////////////////////
+
+
+
+//=========================================================
+// Macro definition accessing I2C MIPI interface (0x78)
+// => No inversion while reading and writing
+//=========================================================
+LOW_LIGHT_MODE_CAPTURE_OFF =
+$"[ISX006] LOW_LIGHT_MODE_CAPTURE_OFF setting"
+01F8 55 $f    // PICT3_GAMMA0 : 
+0061 80 $f    //CONTRAST
+02D7 00 $f    // MATRIX TYPE1
+4020 FC04 $f  // agcmaxscl_l : 16.42db 
+     
+4F2C 0000 $f  // IR_DS_ADGRADCORE                         =        8// A   
+4F32 0000 $f  // IR_DS_HVGRADCORE                         =        8// A
+4F38 0A $f    // IR_DS_ADGRADLIM                          =       10// A  
+4F3B 0A $f    // IR_DS_HVGRADLIM                          =       20// A 
+5888 1900 $f  // IR_YN_LUMTH                              =       32// A
+588E 1900 $f  // IR_LN_CTH                                =       32// A
+596C 30 $f    // IR_AP_PRE_GAIN_L                         =       64// A 
+596F 29 $f    // IR_AP_PRE_GAIN_M                         =       64// A 
+5972 0A $f    // IR_AP_PRE_GAIN_H                         =       64// A 
+5975 0E $f    // IR_AP_POST_GAIN_L                        =        0// A 
+5978 65 $f    // IR_AP_POST_GAIN_M                        =       64// A 
+597B 10 $f    // IR_AP_POST_GAIN_H                        =        0// A 
+;
+
+LOW_LIGHT_MODE_CAPTURE_ON =
+$"[ISX006] LOW_LIGHT_MODE_CAPTURE_ON setting"
+01F8 56 $f    // PICT3_GAMMA0 : 
+0061 9C $f    //CONTRAST
+02D7 15 $f    // MATRIX TYPE1
+4020 9802 $f  // agcmaxscl_l : 14.36db 
+     
+4F2C 0000 $f  // IR_DS_ADGRADCORE                         =        8// A   
+4F32 0000 $f  // IR_DS_HVGRADCORE                         =        8// A
+4F38 0A $f    // IR_DS_ADGRADLIM                          =       10// A  
+4F3B 0A $f    // IR_DS_HVGRADLIM                          =       20// A 
+5888 2800 $f  // IR_YN_LUMTH                              =       32// A
+588E 2000 $f  // IR_LN_CTH                                =       32// A
+596C 20 $f    // IR_AP_PRE_GAIN_L                         =       64// A 
+596F 1E $f    // IR_AP_PRE_GAIN_M                         =       64// A 
+5972 08 $f    // IR_AP_PRE_GAIN_H                         =       64// A 
+5975 0A $f    // IR_AP_POST_GAIN_L                        =        0// A 
+5978 40 $f    // IR_AP_POST_GAIN_M                        =       64// A 
+597B 0B $f    // IR_AP_POST_GAIN_H                        =        0// A 
+;
+
+NIGHT_MODE_CAPTURE_OFF =
+$"[ISX006] NIGHT_MODE_CAPTURE_OFF setting"
+01FA 55 $f    // PICT3_GAMMA0 : 
+0061 80 $f    //CONTRAST
+02DB 00 $f    // MATRIX TYPE1
+    
+4F2C 0000 $f  // IR_DS_ADGRADCORE                         =        8// A   
+4F32 0000 $f  // IR_DS_HVGRADCORE                         =        8// A
+4F38 05 $f    // IR_DS_ADGRADLIM                          =       10// A  
+4F3B 08 $f    // IR_DS_HVGRADLIM                          =       20// A 
+5888 1600 $f  // IR_YN_LUMTH                              =       32// A
+588E 1600 $f  // IR_LN_CTH                                =       32// A
+596C 40 $f    // IR_AP_PRE_GAIN_L                         =       64// A 
+596F 31 $f    // IR_AP_PRE_GAIN_M                         =       64// A 
+5972 0C $f    // IR_AP_PRE_GAIN_H                         =       64// A 
+5975 0E $f    // IR_AP_POST_GAIN_L                        =        0// A 
+5978 43 $f    // IR_AP_POST_GAIN_M                        =       64// A 
+597B 12 $f    // IR_AP_POST_GAIN_H                        =        0// A
+;
+
+NIGHT_MODE_CAPTURE_ON =
+$"[ISX006] NIGHT_MODE_CAPTURE_ON setting"
+01FA 59 $f    // PICT3_GAMMA0 : 
+0061 9C $f    //CONTRAST
+02DB 11 $f    // MATRIX TYPE1
+  
+4F2C 0400 $f  // IR_DS_ADGRADCORE                         =        8// A   
+4F32 0400 $f  // IR_DS_HVGRADCORE                         =        8// A
+4F38 08 $f    // IR_DS_ADGRADLIM                          =       10// A  
+4F3B 08 $f    // IR_DS_HVGRADLIM                          =       20// A 
+5888 2800 $f  // IR_YN_LUMTH                              =       32// A
+588E 2000 $f  // IR_LN_CTH                                =       32// A
+596C 10 $f    // IR_AP_PRE_GAIN_L                         =       64// A 
+596F 10 $f    // IR_AP_PRE_GAIN_M                         =       64// A 
+5972 00 $f    // IR_AP_PRE_GAIN_H                         =       64// A 
+5975 05 $f    // IR_AP_POST_GAIN_L                        =        0// A 
+5978 18 $f    // IR_AP_POST_GAIN_M                        =       64// A 
+597B 00 $f    // IR_AP_POST_GAIN_H                        =        0// A 
+;
+
+OUTPUTDOOR_OFF =
+$"[ISX006] OUTPUTDOOR_OFF setting" 
+4E0B 01 $f
+01F8 55 $f    // outdoor gamma 3
+;
+
+OUTPUTDOOR_ON = 
+$"[ISX006] OUTPUTDOOR_ON setting"
+4E0B 02 $f
+01F8 57 $f    // pict3_gamma0 : 
+;
+
+CHECK_AGC_SCL_NOW =
+0278 $r2 7 8 $f
+
+$cs8 0b
+ $<8 8
+ $+8 r7
+ $"[ISX006] Normal light, %8"
+$cl
+ $c8 0b
+  $cs7 33
+   $<8 8
+   $+8 r7
+   $"[ISX006] Normal light, %8"
+  $cl
+   $<8 8
+   $+8 r7
+   $sb 01 // Low light capture mode flag: 1
+   $cc 01 // Night mode capture?
+    $"[ISX006] Night mode capture, %8"
+    #NIGHT_MODE_CAPTURE_ON
+   $cl
+    $"[ISX006] Low light mode capture, %8"
+    #LOW_LIGHT_MODE_CAPTURE_ON
+   $cx
+  $cx
+ $cl
+  $<8 8
+  $+8 r7
+  $sb 01 // Low light capture mode flag: 1
+  $cc 01 // Night mode capture?
+   $"[ISX006] Night mode capture, %8"
+   #NIGHT_MODE_CAPTURE_ON
+  $cl
+   $"[ISX006] Low light mode capture, %8"
+   #LOW_LIGHT_MODE_CAPTURE_ON
+  $cx
+ $cx
+$cx
+;
+
+CHECK_CM_CHANGED_BIT =
+$d000A	// Delay 10ms
+
+00F8 $r1 6 $f
+
+$c6.01 1
+ $"[ISX006] INTSTS0 status after transition: %6"
+ 00FC 02 $f	// Clear CM_CHANGE_CLR
+ $d0002	
+ 00F8 $r1 6 $f
+ $"[ISX006] INTSTS0 status after clearing CM_CHANGE_CLR bit: %6"
+ $s5 00
+$cl
+$"[ISX006] INTSTS0 status on transition: %6"
+$cx
+;
+
+CHECK_JPEG_UPDATE_BIT =
+$d000A	// Delay 10ms
+
+00F8 $r1 6 $f
+
+$c6.02 1
+ $"[ISX006] INTSTS0 status after updating JPEG: %6"
+ 00FC 04 $f	// Clear JPEG_UPDATE_EN
+ $d0002	
+ 00F8 $r1 6 $f
+ $"[ISX006] INTSTS0 status after clearing JPEG_UPDATE_EN bit: %6"
+ $s5 00
+$cl
+$"[ISX006] INTSTS0 status on updating JPEG: %6"
+$cx
+;
+
+CHECK_OUTDOOR_F =
+6c21 $r1 a $f
+
+$ca 01
+ $"[ISX006] Out door mode on: %a"
+ #OUTPUTDOOR_ON
+$cl
+ $"[ISX006] Out door mode off: %a"
+$cx
+;
+
+CLEAR_ALL_INTERRUPT =
+00FC FF $f
+00F8 $r1 6 $f	
+;
+
+WAIT_FOR_JPEG_UPDATE =
+$"[ISX006] >> WAIT_FOR_JPEG_UPDATE"
+
+[5 14 #CHECK_JPEG_UPDATE_BIT]
+
+$"[ISX006] << WAIT_FOR_JPEG_UPDATE"
+;
+
+WAIT_FOR_MODE_TRANSITION =
+$"[ISX006] >> WAIT_FOR_MODE_TRANSITION"
+
+[5 14 #CHECK_CM_CHANGED_BIT]
+
+$"[ISX006] << WAIT_FOR_MODE_TRANSITION"
+; 
+
+ENABLE_MONITOR_MODE_IF_NOT_ALREADY_DONE =
+$"[ISX006] >> ENABLE_MONITOR_MODE_IF_NOT_ALREADY_DONE"
+
+0004 $r1 a $f
+
+$ca.00 0
+	$ca.01 0
+		// Already in monitoring mode => nothing to do
+		$"    [ISX006] Monitoring mode already set => nothing to do."
+	$cl
+		$"    [ISX006] Monitoring mode not set => enable it."
+		0011 00 $f	// Monitor mode start
+
+		$s5 ff
+		#WAIT_FOR_MODE_TRANSITION
+	$cx
+$cl
+	$"    [ISX006] Monitoring mode not set => enable it."
+	0011 00 $f	// Monitor mode start
+
+	$s5 ff
+	#WAIT_FOR_MODE_TRANSITION
+$cx
+
+$"[ISX006] << ENABLE_MONITOR_MODE_IF_NOT_ALREADY_DONE"
+;
+
+ENABLE_MOVIE_MODE_IF_NOT_ALREADY_DONE =
+$"[ISX006] >> ENABLE_MOVIE_MODE_IF_NOT_ALREADY_DONE"
+
+0004 $r1 a $f
+
+$ca.00 1
+	$ca.01 1
+		// Already in movie mode => nothing to do
+		$"    [ISX006] Movie mode already set => nothing to do."
+	$cl
+		$"    [ISX006] Movie mode not set => enable it."
+		0011 03 $f	// Movie mode start
+
+		$s5 ff
+		#WAIT_FOR_MODE_TRANSITION
+	$cx
+$cl
+	$"    [ISX006] Movie mode not set => enable it."
+	0011 03 $f	// Movie mode start
+
+	$s5 ff
+	#WAIT_FOR_MODE_TRANSITION
+$cx
+
+$"[ISX006] << ENABLE_MOVIE_MODE_IF_NOT_ALREADY_DONE"
+;
+
+ENABLE_CAPTURE_MODE_IF_NOT_ALREADY_DONE =
+$"[ISX006] >> ENABLE_CAPTURE_MODE_IF_NOT_ALREADY_DONE"
+
+0004 $r1 a $f
+
+$ca.00 0
+	$ca.01 1
+		// Already in capturing mode => nothing to do
+		$"    [ISX006] Capturing mode already set => nothing to do."
+	$cl
+		$"    [ISX006] Capturing mode not set => enable it."
+		0011 02 $f	// Capturing mode start
+
+		$s5 ff
+		#WAIT_FOR_MODE_TRANSITION
+	$cx
+$cl
+	$"    [ISX006] Capturing mode not set => enable it."
+	0011 02 $f	// Capturing mode start
+
+	$s5 ff
+	#WAIT_FOR_MODE_TRANSITION
+$cx
+
+$"[ISX006] << ENABLE_CAPTURE_MODE_IF_NOT_ALREADY_DONE"
+;
+
+CHECK_CURRENT_IMAGE_MODE =
+$"[ISX006] >> CHECK_CURRENT_IMAGE_MODE"
+
+//Check current image mode
+0004 $r1 a $f
+$"    [ISX006] reg0x0004 = %a"
+$ca.00 0
+	$ca.01 0
+		$"    [ISX006] Monitoring image output"
+	$cl
+		$"    [ISX006] Capture image output"
+	$cx
+$cl
+	$ca.01 0
+		$"    [ISX006] Half-release image output"
+	$cl
+		$"    [ISX006] Movie image output"
+	$cx
+$cx
+
+$"[ISX006] << CHECK_CURRENT_IMAGE_MODE"
+;
+
+//=========================================================
+// VIEWFINDER 
+//=========================================================
+seq_vf_config_0 =
+$"[ISX006] seq_vf_config_0, Monitoring 320 * 240  30fps"
+0022 0140 $f	// 320
+0028 00F0 $f	// 240
+0380   01 $f    // elimination V 1/2
+0103   00 $f    // Fix framerate AE normal mode
+0383   02 $f    // 30fps monitor mode
+02E2   00 $f    // HD_MODE_SEL = monitor
+$sn    00 $f    //Set flag for monitor mode (n=0x00)
+;
+seq_vf_config_1 =
+$"[ISX006] seq_vf_config_1, Monitoring 640 * 480  30fps"
+0022 0280 $f	// 640
+0028 01E0 $f	// 480
+0380   01 $f    // elimination V 1/2
+0103   00 $f    // Fix framerate AE normal mode
+0383   02 $f    // 30fps monitor mode
+02E2   00 $f    // HD_MODE_SEL = monitor
+$sn    00 $f    //Set flag for monitor mode (n=0x00)
+;
+seq_vf_config_2 =
+$"[ISX006] seq_vf_config_2, Monitoring 1280 * 720  30fps"
+0022 0500 $f	// 1280
+0028 02D0 $f	// 720
+0380   01 $f    // elimination V 1/2
+0103   00 $f    // Fix framerate AE normal mode
+0383   02 $f    // 30fps monitor mode
+02E2   00 $f    // HD_MODE_SEL = monitor
+$sn    00 $f    //Set flag for monitor mode (n=0x00)
+;
+seq_vf_config_c =
+$"[ISX006] seq_vf_config_c, HD movie 1920 * 1080  30fps"
+0026 0780 $f	// 1920
+002C 0438 $f	// 1080
+0382   00 $f    // HD subsampling
+0103   00 $f    // Fix framerate AE normal mode
+0385   02 $f    // 30fps movie mode
+02E2   04 $f    // HD_MODE_SEL = movie
+$sn    ff $f    //Set flag for movie mode (n=0xff)
+;
+seq_vf_config_d =
+$"[ISX006] seq_vf_config_d, HD movie 1920 * 1088  30fps"
+0026 0780 $f	// 1920
+002C 0440 $f	// 1088
+0382   00 $f    // HD subsampling
+0103   00 $f    // Fix framerate AE normal mode
+0385   02 $f    // 30fps movie mode
+$sn    ff $f    //Set flag for movie mode (n=0xff)
+;
+
+seq_vf_start =	
+$"[ISX006] >> seq_vf_start"
+
+#GO_IN_ACTIVE_STATE
+
+//Make sure we are in monitor mode
+#ENABLE_MONITOR_MODE_IF_NOT_ALREADY_DONE
+
+//Test if movie or movie is requested
+$cn ff
+	//Go in movie mode
+	#ENABLE_MOVIE_MODE_IF_NOT_ALREADY_DONE
+$cl
+	//Stay in monitor mode => Nothing to do
+$cx
+
+#CHECK_CURRENT_IMAGE_MODE
+
+$"[ISX006] << seq_vf_start"
+;
+
+seq_vf_stop =
+$"[ISX006] >> seq_vf_stop"
+
+#GO_IN_STANDBY_STATE
+
+$"[ISX006] << seq_vf_stop"
+;
+
+
+//=========================================================
+// SnapShot Configuration  
+//========================================================= 
+seq_ss_config_3 =
+$"[ISX006] seq_ss_config_3, 320 * 240"
+0024 0140 $f	// 320
+002A 00F0 $f	// 240
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;  
+seq_ss_config_4 =
+$"[ISX006] seq_ss_config_4, 640 * 480"
+0024 0280 $f	// 640
+002A 01E0 $f	// 480
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_5 =
+$"[ISX006] seq_ss_config_5, 720 * 480"
+0024 02D0 $f	// 720
+002A 01E0 $f	// 480
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_6 =
+$"[ISX006] seq_ss_config_6, 800 * 480"
+0024 0320 $f	// 800
+002A 01E0 $f	// 480
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_7 =
+$"[ISX006] seq_ss_config_7, 1280 * 720"
+0024 0500 $f	// 1280
+002A 02D0 $f	// 720
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_8 =
+$"[ISX006] seq_ss_config_8, 1280 * 960"
+0024 0500 $f	// 1280
+002A 03C0 $f	// 960
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_9 =
+$"[ISX006] seq_ss_config_9, 1600 * 1200"
+0024 0640 $f	// 1600
+002A 04B0 $f	// 1200
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_a =
+$"[ISX006] seq_ss_config_a, 2048 * 1536"
+0024 0800 $f	// 2048
+002A 0600 $f	// 1536
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mode
+;
+seq_ss_config_b=
+$"[ISX006] seq_ss_config_b, 2592 * 1936"
+0024 0A20 $f	// 2592
+002A 0790 $f	// 1936
+0381   00 $f    // subsampling => full frame pixel output
+001D   08 $f    // Jpeg shot free running mod
+;
+
+
+seq_ss_start =
+$"[ISX006] >> seq_ss_start"
+
+0204 00 $f      // Low Jpeg quality
+
+#GO_IN_ACTIVE_STATE
+
+//Make sure we are in capture mode
+#ENABLE_CAPTURE_MODE_IF_NOT_ALREADY_DONE
+
+#CHECK_CURRENT_IMAGE_MODE
+
+$"[ISX006] << seq_ss_start"
+;	 
+       
+seq_ss_stop =
+$"[ISX006] >> seq_ss_stop"
+
+#GO_IN_STANDBY_STATE
+
+$"[ISX006] << seq_ss_stop"
+;
+
+seq_ss_take =  
+$"[ISX006] >> seq_ss_take"
+
+$"[ISX006] << seq_ss_take"
+;
+ 
+seq_ss_verify =  
+$"[ISX006] >> seq_ss_verify"
+
+0200 $r1 6 $f	
+$"[ISX006] JPG_STS: %6"
+
+$c6 00
+ $"[ISX006] JPG_STS OK"
+ $s0 01 
+$cl 
+ $"[ISX006] JPG_STS NG"
+ $s0 00
+$cx
+
+$"[ISX006] << seq_ss_verify"
+;

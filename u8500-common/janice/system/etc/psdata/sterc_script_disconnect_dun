@@ -1,0 +1,16 @@
+#!/system/bin/sh
+#
+# Copyright (C) ST-Ericsson SA 2011. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+PATH=${PATH}:/system/bin
+
+# remove routing rules
+ip rule del iif ${wan_device} table ${rt_table_name}
+ip rule del iif ${lan_device} table ${rt_table_name}
+
+# disable ip forwarding
+echo 0 > /proc/sys/net/ipv4/ip_forward
