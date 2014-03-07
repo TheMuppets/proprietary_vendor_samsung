@@ -1,0 +1,2208 @@
+//=========================================================
+//Revision history
+// Date : 12. 04. 22 (Analog 5.0)
+// Base : Sum 1
+// 25MHz
+//=========================================================
+
+// 0.1 First version of Dongbu config file based on DB8131M config file example
+
+//=========================================================
+//Information section
+//=========================================================
+info_name      = DB8131M;
+info_vendor    = Dongbu;
+info_major_ver = 0;
+info_minor_ver = 1;
+
+//=========================================================
+// Camera characteristics section
+//=========================================================
+cam_ccp2_enabled = 0 ;
+cam_frame_skip = 0;
+
+cam_i2c_address = 8a; // DB8131M I2C Slave Address
+//cam_i2c_clock_freq = 0190;
+
+i2c_read_address_type = 8; // DB8131M I2C Address Type : 1 Byte Read Type
+
+// Pipe configuration
+cam_pipe_number = 2;
+
+//cam_isp_config = 0 ; // bypass internal(U8500) isp
+
+// TODO cam_isp_config = 0;
+// TODO cam_ccp2_enabled = 0;
+
+//  Port configuration on Ux500? This one uses MIPI CSI-2.
+//  cam_interface - 16bit number
+//  [Bit 0] = 0: Primary interface, 1: Secondry interface
+//  [Bit 1] = 0: CCP2 output, 1: CSI2 output
+//  [Bit 2:3] = Number of lanes
+//  [Bit 4] = 0:v.81b DPHY, 1: v.90 DPHY spec
+//  [Rest] = Unused
+cam_interface = 17;
+
+//CSI bit rate - needed to programmed IPP for 8500
+cam_csi_bitrate = 190;  // DB8131M MIPI Clk : 400MHz
+
+// Datatype 0 for preview config
+//    1 byte: [byte 0] datatype 0
+cam_csi_datatype0 = 1E;
+
+// Datatype 1 for still config
+//    1 byte: [byte 0] datatype 1
+cam_csi_datatype1 = 1E;
+
+// Datatype 2 for non-image data
+//    1 byte: [byte 0] datatype 2
+cam_csi_datatype2 = 10;
+
+// Pixwidth for datatype 0
+//    1 byte: [byte 0] pix width for datatype 0
+cam_csi_datatype0_pix_wd = 08;
+
+// Pixwidth for datatype 1
+//    1 byte: [byte 0] pix width for datatype 1
+cam_csi_datatype1_pix_wd = 08;
+
+// Pixwidth for datatype 2
+//    1 byte: [byte 0] pix width for datatype 2
+cam_csi_datatype2_pix_wd = 08;
+
+// Watchdog timeout in ms
+cam_watchdog_timeout = 3E8; // 1000 ms
+
+//=========================================================
+// Supported resolutions
+//=========================================================
+sup_sizes =
+ 0[280, 1E0, 1],  // Preview,  640 * 480, 
+ 1[140, 0F0, 1],  // Preview,  320 * 240, 
+ 2[280, 1E0, 0],  // Capture, 640 * 480,
+ 3[500, 3C0, 0],  // Capture, 1280 * 960  1.3M
+ 4[0B0, 090, 1],  // Preview,  176 * 144, 
+ 5[280, 1E0, 2],  // movie, 640 * 480 , 
+ 6[0B0, 090, 2],  // movie,  176 * 144, 
+ 7[160, 120, 2],  // movie  352 * 288,  
+ 8[140, 0F0, 2],  // movie,  320 * 240, 
+ 9[160, 120, 2],  // Preview  352 * 288,   
+;
+
+//=========================================================
+// Supported properties
+//=========================================================
+sup_properties =
+// 0[0,  0,   0], // EXPOSURE = 0
+// 1[1,  7,   1],	// WHITE_BALANCE = 1
+// 2[0,  0,   0], // FLICKER_MODE = 2
+// 3[0,  0,   0], // VERTICAL_MIRROR = 3
+// 4[0,  0,   0], // HORIZONTAL_MIRROR = 4
+// 5[0,  0,   0], // JPEG_COMPRESSION_LEVEL = 5
+// 6[0,  0,   0], // FOCUS_MODES = 6
+// 7[0,  0,   0], // FOCUS_MACRO = 7
+// 8[0,  0,   0], // MANUAL_FOCUS_CONTROL = 8
+// 9[0,  0,   0], // OPTICAL_ZOOM = 9
+// a[0,  4,   0], // IMAGE_EFFECT = 10
+// b[0,  0,   0], // CONTRAST_MODE = 11,
+// c[0,  0,   0], // CONTRAST = 12,
+// d[0,  0,   0], // BRIGHTNESS_MODE = 13,
+// e[0,  0,   0], // BRIGHTNESS = 14,
+// f[0,  0,   0], // GAMMA_MODE = 15,
+// 10[0,  0,   0], // GAMMA = 16,
+// 11[0,  0,   0], // FLASH_LIGHT = 17,
+// 12[0,  0,   0], // MECHANICAL_SHUTTER = 18,
+// 13[0,  0,   0], // SATURATION = 19,
+ 14[0,  8,   4], // EXPOSURE_COMPENSATION = 20,
+// 15[0,  f,   0], // SCENE_MODE = 21,
+// 16[0,  0,   0], // SHARPNESS = 22,
+ 17[0,  0,   0], // ISO = 23,
+ 18[0,  0,   0], // METERING_EXPOSURE = 24,
+ 1a[0, 1e,  1e], // FRAME_RATE = 26,
+// 1e[0,  4,   0], // SEC_AF_DRIVING = 30,
+;
+
+
+//=========================================================
+// Macro definition accessing I2C MIPI interface (0x78)
+// => No inversion while reading and writing
+//=========================================================
+GET_REG=
+
+  $"[DB8131M] >> GET_REG"
+
+  $f FF !0 $f // Set Page Mode
+  $f !1 $r2 0 1 $f // Read Address
+  $"GET_REG byte byte 0 %0 1 %1"
+  
+  $"[DB8131M] << GET_REG"
+;
+
+//=========================================================
+// Check that the device is alive by reading the device id
+//=========================================================
+
+REG_FLICKER_50HZ =
+$"[DB8131M] >> REG_FLICKER_50HZ"
+FF 82 $f //Page mode
+92 59 $f //AeCtrl
+;
+
+REG_FLICKER_60HZ =
+$"[DB8131M] >> REG_FLICKER_60HZ"
+FF 82 $f //Page mode
+92 5D $f //AeCtrl
+;
+
+
+
+//=========================================================
+// DB8131S INIT SEQUENCE
+//=========================================================
+REG_INIT = 
+$"[DB8131S] >> REG_INIT"
+//==================================
+// Format
+//==================================        
+
+FF C0 $f //Page mode
+10 01 $f
+$d0096
+FF A1 $f //Page mode    
+70 01 $f
+71 0D $f 
+
+
+//==================================
+// SensorCon
+//==================================
+FF D0 $f
+0E 0A $f
+0F 0D $f
+13 00 $f
+15 00 $f
+18 34 $f
+19 21 $f
+1A 07 $f
+20 0F $f
+23 00 $f
+24 00 $f
+39 9F $f
+51 1F $f
+83 65 $f
+85 67 $f
+87 65 $f
+89 67 $f
+8B 27 $f
+8D 6c $f
+91 14 $f
+D7 40 $f
+F8 40 $f
+C5 09 $f
+D1 96 $f
+DB 9F $f
+ED 01 $f
+EE 0F $f
+EF 00 $f
+F9 00 $f
+FB 50 $f
+
+//==================================
+// Analog ADF
+//==================================
+FF 85 $f
+89 C2 $f
+8A 0C $f
+8C 07 $f
+8D 40 $f
+8F 0C $f
+91 11 $f
+92 1F $f
+93 78 $f	
+95 19 $f
+96 1A $f	
+97 0E $f
+98 0F $f
+99 07 $f
+9A 00 $f
+9C 0C $f
+9D 7E $f
+9E 29 $f
+9F 7F $f
+A0 79 $f
+A1 75 $f
+A2 18 $f
+A3 33 $f
+A4 0F $f
+FE 20 $f
+8E 01 $f
+9B 00 $f
+FF 86 $f
+15 00 $f
+16 FA $f
+17 00 $f
+18 00 $f
+19 00 $f
+//1A 07 $f
+//1B 10 $f
+1D 0C $f
+1F 09 $f
+20 3A $f
+22 18 $f
+23 2A $f
+24 0E $f
+25 77 $f
+2D EB $f
+1B F6 $f
+1C 00 $f
+FF 87 $f
+E1 20 $f
+EA 41 $f
+DD B0 $f
+F1 39 $f
+FF 83 $f
+63 28 $f
+64 10 $f
+65 A8 $f
+66 50 $f
+67 28 $f
+68 14 $f
+FF 82 $f
+B9 09 $f
+BA 80 $f
+BB 09 $f
+BC 80 $f
+BD 09 $f
+BE 80 $f
+FF D0 $f
+20 11 $f
+
+//Analog UR
+FF D1 $f
+07 00 $f
+0B 00 $f
+03 01 $f
+D1 96 $f
+FF B0 $f
+3C 81 $f
+50 01 $f
+
+
+
+
+//==================================						
+// AE						
+//==================================		
+FF 82 $f //Page mode				
+95 55 $f
+96 55 $f     
+97 F5 $f     
+98 5F $f     
+99 F5 $f     
+9A 5F $f     
+9B 55 $f     
+9C 55 $f   
+A9 3B $f     //42 OTarget	SAT 1 CCM 1 40
+AA 3C $f     // ITarget
+9D 88 $f     // AE Speed
+9F 06 $f     // AE HoldBnd
+A8 40 $f     // STarget
+C5 02 $f     // PeakMvStep
+C6 38 $f     // PeakTgMin
+C7 24 $f     // PeakRatioTh1
+C8 10 $f     // PeakRatioTh0
+C9 05 $f     // PeakLuTh
+D5 60 $f     // LuxGainTB_2
+
+FF 83 $f //Page mode
+2F 04 $f     // TimeNum0
+30 05 $f     // TimeNum1
+4F 05 $f     // FrameOffset
+5D 00 $f     // Lower Fine
+5E 8F $f     //
+
+FF 82 $f //Page mode
+A1 0A $f     // AnalogGainMax
+F3 09 $f     // SCLK		// 25MHz
+F4 76 $f     
+F9 00 $f     // GainMax
+FA B0 $f     // GainMax B0
+FB 55 $f     // Gain3Lut
+FC 30 $f     // Gain2Lut
+FD 14 $f     // Gain1Lut
+FE 12 $f     // GainMin
+D3 12 $f     // LuxTBGainStep0  
+D4 50 $f     // LuxTBGainStep1  
+D5 60 $f     // LuxTBGainStep2  
+D6 01 $f     // LuxTBTimeStep0H
+D7 00 $f     // LuxTBTimeStep0L
+D8 01 $f     // LuxTBTimeStep1H
+D9 90 $f     // LuxTBTimeStep1L
+DA 05 $f     // LuxTBTimeStep2H
+DB 00 $f     // LuxTBTimeStep2L
+FF 83 $f     //Page mode  
+03 0F $f     // TimeMax60Hz  : 8fps
+04 08 $f     // Time3Lux60Hz : 15fps
+05 04 $f     // Time2Lut60Hz : 30fps
+06 04 $f     // Time1Lut60Hz : 30fps
+07 0C $f     // TimeMax50Hz  : 8fps
+08 07 $f     // Time3Lux50Hz : 14fps
+09 03 $f     // Time2Lut50Hz : 30fps
+0A 03 $f     // Time1Lut50Hz : 30fps
+0B 04 $f 
+0C 76 $f 	 // Frame Rate
+11 04 $f
+12 8A $f	// 50Hz Frame rate
+
+FF 85 $f //Page mode
+C8 03 $f
+C9 21 $f
+
+FF 82 $f //Page mode
+92 59 $f
+						
+//==================================						
+// AWB					
+//==================================						
+FF 83 $f //Page mode						
+79 83 $f	// AWBCtrl	
+82 00 $f	// LockRatio	
+86 01 $f	// MinGrayCnt	
+87 80 $f	// MinGrayCnt	
+90 05 $f	// RGain	
+94 05 $f	// BGain	
+98 D4 $f	// SkinWinCntTh	
+A2 28 $f	// SkinYTh	
+A3 00 $f	// SkinHoldHitCnt	
+A4 0F $f	// SkinHoldHitCnt	
+AD 65 $f	// SkinTop2	
+AE 80 $f	// SkinTop2LS1Ratio	
+AF 20 $f	// SkinTop2LS2Ratio	
+B4 10 $f	// SkinTop2LSHys	
+B5 54 $f	 // SkinLTx	
+B6 BD $f	 // SkinLTy	
+B7 74 $f	 // SkinLBx	
+B8 9D $f	 // SkinLBy	
+BA 4F $f	// UniCThrY	
+BF 0C $f	// UniCGrayCntThr_0	
+C0 80 $f	// UniCGrayCntThr_1	
+
+FF 84 $f //Page mode						
+3D 00 $f		// AWB_LuxConst1_0	
+3E 00 $f		// AWB_LuxConst1_1	
+3F 06 $f		// AWB_LuxConst1_2	
+40 20 $f		// AWB_LuxConst1_3	
+41 07 $f		// AWB_LuxConst2_0	
+42 53 $f		// AWB_LuxConst2_1	
+43 00 $f		// AWB_LuxConst2_2	
+44 00 $f		// AWB_LuxConst2_3	
+49 01 $f		// Threshold_indoor	
+4A 00 $f			
+4B 01 $f		// Threshold_outdoor	
+4C 80 $f			
+55 03 $f		// AWB_Weight_Genernal_0	
+56 10 $f		// AWB_Weight_Genernal_1	
+57 14 $f		// AWB_Weight_Genernal_2	
+58 07 $f		// AWB_Weight_Genernal_3	
+59 04 $f		// AWB_Weight_Genernal_4	
+5A 00 $f		// AWB_Weight_Genernal_5	
+5B 01 $f		// AWB_Weight_Genernal_6	
+5C 01 $f		// AWB_Weight_Genernal_7	
+5D 01 $f		// AWB_Weight_Indoor_0	
+5E 08 $f		// AWB_Weight_Indoor_1	
+5F 10 $f		// AWB_Weight_Indoor_2	
+60 08 $f		// AWB_Weight_Indoor_3	
+61 20 $f		// AWB_Weight_Indoor_4	
+62 00 $f		// AWB_Weight_Indoor_5	
+63 18 $f		// AWB_Weight_Indoor_6	
+64 14 $f		// AWB_Weight_Indoor_7	
+65 03 $f		// AWB_Weight_Outdoor_0	
+66 10 $f		// AWB_Weight_Outdoor_1	
+67 10 $f		// AWB_Weight_Outdoor_2	
+68 30 $f		// AWB_Weight_Outdoor_3	
+69 01 $f		// AWB_Weight_Outdoor_4	
+6A 02 $f		// AWB_Weight_Outdoor_5	
+6B 01 $f		// AWB_Weight_Outdoor_6	
+6C 01 $f		// AWB_Weight_Outdoor_7	
+FF 85 $f //Page mode			
+E2 0C $f			// AWB_unicolorzone	
+
+FF 83 $f //Page mode
+CB 04 $f	 // Min Rgain	
+CC 58 $f
+CD 07 $f	 //Max Rgain
+CE 00 $f
+CF 04 $f	 //Min Bgain
+D0 50 $f
+D1 06 $f	 //Max BGain 690
+d2 68 $f
+	
+//==================================						
+// AWB STE						
+//==================================
+FF A1 $f //Page mode
+9C 18 $f		// AWBLuThL
+9D F0 $f		// AWBLuThH						
+A0 63 $f		// AWBZone0LTx - Flash	
+A1 7A $f		// AWBZone0LTy	
+A2 69 $f		// AWBZone0RBx	
+A3 6F $f		// AWBZone0RBy	
+A4 72 $f		// AWBZone1LTx - Cloudy	
+A5 48 $f		// AWBZone1LTy	
+A6 84 $f		// AWBZone1RBx	
+A7 34 $f		// AWBZone1RBy	
+A8 68 $f		// AWBZone2LTx - D65	
+A9 56 $f		// AWBZone2LTy	
+AA 7D $f		// AWBZone2RBx	
+AB 37 $f		// AWBZone2RBy	
+AC 60 $f		// AWBZone3LTx - Fluorecent	
+AD 64 $f		// AWBZone3LTy	
+AE 78 $f		// AWBZone3RBx	
+AF 4B $f		// AWBZone3RBy	
+B0 48 $f		// AWBZone4LTx - CWF	
+B1 68 $f		// AWBZone4LTy	
+B2 64 $f		// AWBZone4RBx	
+B3 4D $f		// AWBZone4RBy	
+B4 00 $f		// AWBZone5LTx - TL84	
+B5 00 $f		// AWBZone5LTy	
+B6 00 $f		// AWBZone5RBx	
+B7 00 $f		// AWBZone5RBy	
+B8 41 $f		// AWBZone6LTx - A	
+B9 7B $f		// AWBZone6LTy	
+BA 54 $f		// AWBZone6RBx	
+BB 6A $f		// AWBZone6RBy	
+BC 3C $f		// AWBZone7LTx - Horizon	
+BD 90 $f		// AWBZone7LTy	
+BE 4C $f		// AWBZone7RBx	
+BF 73 $f		// AWBZone7RBy	
+C0 5B $f		// AWBZone8LTx - Skin	
+C1 85 $f		// AWBZone8LTy	
+C2 60 $f		// AWBZone8RBx	
+C3 7F $f		// AWBZone8RBy	
+
+//==================================
+// UR
+//==================================
+FF 87 $f  //Page mode
+C9 22 $f  // AWBTrim
+FF 86 $f  //Page mode
+14 3E $f  // CCM sum 1
+FF 85 $f  //Page mode
+06 05 $f  // Saturation CCM 1
+86 40 $f  // saturation level
+07 00 $f  // sup hysteresis
+
+//==================================						
+// CCM D65						
+//==================================	
+FF 83 $f //Page mode
+EA 00 $f //gAwb_s16AdapCCMTbl_0
+EB 5D $f //gAwb_s16AdapCCMTbl_1 
+EC FF $f //gAwb_s16AdapCCMTbl_2
+ED EE $f //gAwb_s16AdapCCMTbl_3 
+EE FF $f //gAwb_s16AdapCCMTbl_4
+EF F5 $f //gAwb_s16AdapCCMTbl_5
+F0 FF $f //gAwb_s16AdapCCMTbl_6
+F1 F5 $f //gAwb_s16AdapCCMTbl_7
+F2 00 $f //gAwb_s16AdapCCMTbl_8
+F3 57 $f //gAwb_s16AdapCCMTbl_9
+F4 FF $f //gAwb_s16AdapCCMTbl_10
+F5 F4 $f //gAwb_s16AdapCCMTbl_11
+F6 FF $f //gAwb_s16AdapCCMTbl_12
+F7 FC $f //gAwb_s16AdapCCMTbl_13
+F8 FF $f //gAwb_s16AdapCCMTbl_14
+F9 C4 $f //gAwb_s16AdapCCMTbl_15
+FA 00 $f //gAwb_s16AdapCCMTbl_16
+FB 78 $f //gAwb_s16AdapCCMTbl_17
+
+	
+//CWF lgiht         
+FC 00 $f     // gAwb_s16AdapCCMTbl_18     
+FD 6B $f     // gAwb_s16AdapCCMTbl_19    
+FF 85 $f //Page mode 
+E0 FF $f // gAwb_s16AdapCCMTbl_20
+E1 DB $f // gAwb_s16AdapCCMTbl_21
+FF 84 $f //Page mode
+00 FF $f     // gAwb_s16AdapCCMTbl_22     
+01 FA $f     // gAwb_s16AdapCCMTbl_23     
+02 FF $f     // gAwb_s16AdapCCMTbl_24     
+03 F3 $f     // gAwb_s16AdapCCMTbl_25    
+04 00 $f     // gAwb_s16AdapCCMTbl_26     
+05 54 $f     // gAwb_s16AdapCCMTbl_27     
+06 FF $f     // gAwb_s16AdapCCMTbl_28     
+07 F9 $f     // gAwb_s16AdapCCMTbl_29   
+08 FF $f     // gAwb_s16AdapCCMTbl_30     
+09 FA $f     // gAwb_s16AdapCCMTbl_31     
+0A FF $f     // gAwb_s16AdapCCMTbl_32     
+0B C4 $f     // gAwb_s16AdapCCMTbl_33     
+0C 00 $f     // gAwb_s16AdapCCMTbl_34     
+0D 82 $f     // gAwb_s16AdapCCMTbl_35 
+
+//A light Green  
+FF 84 $f //Page mode
+0E 00 $f     // gAwb_s16AdapCCMTbl_36 
+0F 70 $f     // gAwb_s16AdapCCMTbl_37 
+10 FF $f     // gAwb_s16AdapCCMTbl_38 
+11 D8 $f     // gAwb_s16AdapCCMTbl_39 
+12 FF $f     // gAwb_s16AdapCCMTbl_40 
+13 F8 $f     // gAwb_s16AdapCCMTbl_41 
+14 FF $f     // gAwb_s16AdapCCMTbl_42 
+15 FB $f     // gAwb_s16AdapCCMTbl_43 
+16 00 $f     // gAwb_s16AdapCCMTbl_44 
+17 48 $f     // gAwb_s16AdapCCMTbl_45 
+18 FF $f     // gAwb_s16AdapCCMTbl_46 
+19 FD $f     // gAwb_s16AdapCCMTbl_47 
+1A 00 $f     // gAwb_s16AdapCCMTbl_48 
+1B 00 $f     // gAwb_s16AdapCCMTbl_49 
+1C FF $f     // gAwb_s16AdapCCMTbl_50 
+1D D0 $f     // gAwb_s16AdapCCMTbl_51 
+1E 00 $f     // gAwb_s16AdapCCMTbl_52 
+1F 70 $f     // gAwb_s16AdapCCMTbl_53 
+
+ 
+
+//Out door CCM        
+FF 86 $f    //Page mode
+45 00 $f    // CCM LuxThreshold
+46 98 $f    // CCM LuxThreshold
+FF 85 $f    //Page mode
+FE 35 $f    // Outdoor CCM On 
+EC 00 $f     // gAwb_s16AdapCCMTbl_0 
+ED 75 $f     // gAwb_s16AdapCCMTbl_1 
+EE FF $f     // gAwb_s16AdapCCMTbl_2 
+EF B9 $f     // gAwb_s16AdapCCMTbl_3 
+F0 00 $f     // gAwb_s16AdapCCMTbl_4 
+F1 12 $f     // gAwb_s16AdapCCMTbl_5 
+F2 FF $f     // gAwb_s16AdapCCMTbl_6 
+F3 F3 $f     // gAwb_s16AdapCCMTbl_7 
+F4 00 $f     // gAwb_s16AdapCCMTbl_8 
+F5 50 $f     // gAwb_s16AdapCCMTbl_9 
+F6 FF $f     // gAwb_s16AdapCCMTbl_10
+F7 FD $f     // gAwb_s16AdapCCMTbl_11
+F8 FF $f     // gAwb_s16AdapCCMTbl_12
+F9 F4 $f     // gAwb_s16AdapCCMTbl_13
+FA FF $f     // gAwb_s16AdapCCMTbl_14
+FB CC $f     // gAwb_s16AdapCCMTbl_15
+FC 00 $f     // gAwb_s16AdapCCMTbl_16
+FD 80 $f     // gAwb_s16AdapCCMTbl_17
+
+
+
+
+//==================================
+// ADF
+//==================================
+// ISP setting
+FF A0 $f //Page mode
+10 80 $f	  // BLC Th	
+11 09 $f	  // BLC Separator	
+60 73 $f 	  // CDC: Dark CDC ON  
+61 1F $f      // Six CDC_Edge En, Slash EN
+69 0C $f      // Slash direction Line threshold
+6A 60 $f      // Slash direction Pixel threshold
+C2 04 $f	  // NSF: directional smoothing
+D0 51 $f	  // DEM: pattern detection
+FF A1 $f //Page mode
+30 00 $f	  // EDE: Luminane adaptation off
+32 00 $f	  // EDE: Adaptation slope 
+34 00 $f	  // EDE: x1 point 
+35 16 $f	  // EDE: x1 point 
+36 00 $f	  // EDE: x2 point 
+37 30 $f	  // EDE: x2 point 
+3A 00 $f	  // EDE: Adaptation left margin
+3B C0 $f	  // EDE: Adaptation right margin
+3C FF $f	  // EDE: rgb edge threshol
+  
+// Adaptive Setting
+FF 85 $f //Page mode
+// BGT
+17 21 $f	  // BGT lux level threshold
+26 0C $f      // MinVal 
+3c 00 $f      // MaxVal 
+
+// BGT2     
+FF 86 $f //Page mode
+68 0C $f  // BGTLux1
+69 0B $f  // BGTLux2 
+6a 09 $f  // BGTLux3
+6b 00 $f  // Value1
+6c 00 $f  // Value2
+6d 05 $f  // Value3
+
+// SAT
+6F 0A $f	  //SATLux1
+70 0C $f	  //SATLux2
+71 02 $f	  //SATZone
+72 02 $f	  //SATZone
+73 01 $f	  //SATValue1
+74 0A $f	  //SATValue2
+
+// CNT 
+FF 85 $f //Page mode
+18 98 $f	  // CNT lux level threshold
+27 02 $f      // MinVal 
+3d 02 $f      // MaxVal 
+
+// NSF 
+12 A5 $f	  // NSF lux level threshold 
+22 1A $f	  // u8MinVal_NSF1 //28
+23 40 $f	  // u8MinVal_NSF2 //70
+38 0E $f    	// u8MaxVal_NSF1
+39 28 $f    	// u8MaxVal_NSF2
+FF 86 $f //Page mode
+12 06 $f	  // u8MinVal_NSF3
+13 06 $f	  // u8MaxVal_NSF3
+
+// NSF NEW thresold  
+FF 85 $f //Page mode
+E8 22 $f 
+E9 50 $f
+EA 0E $f
+EB 18 $f
+// GDC
+FF 85 $f //Page mode
+15 F4 $f	  // GDC lux level threshold 
+2D 20 $f	  // u8MinVal_GDC1
+2E 30 $f	  // u8MinVal_GDC2
+43 10 $f	  // u8MaxVal_GDC1
+44 20 $f	  // u8MaxVal_GDC2
+
+// ISP  Edge   
+FF 85 $f //Page mode
+04 FB $f	  // FuncCtlr_ADF
+14 A5 $f	  // u8ThrLevel_EDE
+28 08 $f	  // u8MinVal_EDE_CP
+29 07 $f	  // u8MinVal_EDE1
+2A 08 $f	  // u8MinVal_EDE2
+2B 05 $f	  // u8MinVal_EDE_OFS
+2C 22 $f	  // u8MinVal_SG
+3E 02 $f	  // u8MaxVal_EDE_CP
+3F 08 $f	  // u8MaxVal_EDE1 Edge 
+40 09 $f	  // u8MaxVal_EDE2
+41 07 $f	  // u8MaxVal_EDE_OFS
+42 22 $f	  // u8MaxVal_SG
+
+// Gamma Adaptive
+FF 85 $f //Page mode
+16 70 $f    
+47 00 $f	  // Min_Gamma_0
+48 16 $f	  // Min_Gamma_1
+49 25 $f	  // Min_Gamma_2
+4A 37 $f	  // Min_Gamma_3
+4B 45 $f	  // Min_Gamma_4
+4C 51 $f	  // Min_Gamma_5
+4D 65 $f	  // Min_Gamma_6
+4E 77 $f	  // Min_Gamma_7
+4F 87 $f	  // Min_Gamma_8
+50 95 $f	  // Min_Gamma_9
+51 AF $f	  // Min_Gamma_10
+52 C6 $f	  // Min_Gamma_11
+53 DB $f	  // Min_Gamma_12
+54 E5 $f	  // Min_Gamma_13
+55 EE $f	  // Min_Gamma_14
+56 F7 $f	  // Min_Gamma_15
+57 FF $f	  // Min_Gamma_16
+
+58 00 $f	  // Max_Gamma_0  
+59 08 $f	  // Max_Gamma_1  
+5a 16 $f	  // Max_Gamma_2  
+5b 30 $f	  // Max_Gamma_3  
+5c 46 $f	  // Max_Gamma_4  
+5d 58 $f	  // Max_Gamma_5  
+5e 6E $f	  // Max_Gamma_6  
+5f 7F $f	  // Max_Gamma_7  
+60 8F $f	  // Max_Gamma_8  
+61 9F $f	  // Max_Gamma_9  
+62 B7 $f	  // Max_Gamma_10 
+63 CC $f	  // Max_Gamma_11 
+64 DE $f	  // Max_Gamma_12 
+65 E7 $f	  // Max_Gamma_13 
+66 F0 $f	  // Max_Gamma_14 
+67 F8 $f	  // Max_Gamma_15 
+68 FF $f	  // Max_Gamma_16 
+
+ 
+// CCM Saturation Level
+FF 85 $f //Page mode
+1A 21 $f	  //64 SUP Threshold	
+30 70 $f  // MinSUP	 
+
+// LSC
+0F 43 $f	  // LVLSC lux level threshold
+10 E3 $f	  // LSLSC Light source , threshold lux
+//0x8531  0xF0	  // Max LSC
+
+// Lens Shading
+FF A0 $f //Page mode
+43 80 $f 	  // RH7 rrhrhh
+44 80 $f 	  // RV
+45 80 $f 	  // RH	
+46 80 $f 	  // RV
+47 80 $f 	  // GH
+48 80 $f 	  // GV
+49 80 $f 	  // GH
+4A 80 $f 	  // GV	
+4B 80 $f 	  // BH
+4C 80 $f	  // BV
+4D 80 $f 	  // BH
+4E 80 $f 	  // BV  
+
+52 90 $f	  // GGain
+53 20 $f	  // GGain
+54 00 $f	  // GGain
+
+//Max Shading       
+FF 86 $f //Page mode
+51 B8 $f	//Rgain1
+52 30 $f 	//Rgain2
+53 00 $f	//Rgain3
+54 90 $f 	//Bgain1
+55 10 $f 	//Bgain2
+56 00 $f	//Bgain3
+57 90 $f 	// GGain1
+58 20 $f 	// GGain2
+59 00 $f 	// GGain3
+
+//Min Shading
+48 C0 $f  //Rgain1
+49 20 $f  //Rgain2
+4A 00 $f  //Rgain3
+4B 80 $f	  //Bgain1
+4C 18 $f	  //Bgain2	
+4D 00 $f	  //Bgain3
+4E 90 $f	  // GGain1
+4F 20 $f	  // GGain2
+50 00 $f	  // GGain3
+
+FF 87 $f	// Page Mode
+DC 05 $f        // by Yong In Han 091511
+DD b0 $f        // by Yong In Han 091511
+D5 00 $f		// Y-Flip
+
+FF B0 $f	 //Page mode
+54 02 $f	// MIPI PHY_HS_TX_CTRL
+38 05 $f	// MIPI DPHY_CTRL_SET
+
+// SXGA PR
+FF 85 $f //Page mode 
+B7 1e $f  // gPT_u8PR_Active_SXGA_DATA_TYPE_Addr
+B8 0A $f  // gPT_u8PR_Active_SXGA_WORD_COUNT_Addr0
+B9 00 $f  // gPT_u8PR_Active_SXGA_WORD_COUNT_Addr1
+BC 04 $f  // gPT_u8PR_Active_SXGA_DPHY_CLK_TIME_Addr3
+FF 87 $f //Page mode 
+0C 00 $f  // start Y
+0D 20 $f  // start Y   
+10 03 $f  // end Y
+11 E0 $f  // end Y   
+
+// Recoding 
+FF 86 $f //Page mode 
+37 1e $f  // gPT_u8PR_Active_720P_DATA_TYPE_Addr
+38 05 $f  // gPT_u8PR_Active_720P_WORD_COUNT_Addr0
+39 00 $f  // gPT_u8PR_Active_720P_WORD_COUNT_Addr1
+3C 04 $f  // gPT_u8PR_Active_720P_DPHY_CLK_TIME_Addr3
+
+FF 87 $f                                               
+23 02 $f	//gPR_Active_720P_u8SensorCtrl_Addr           
+24 72 $f	//binning on      
+25 01 $f	//gPR_Active_720P_u8PLL_P_Addr                
+26 0F $f	//gPR_Active_720P_u8PLL_M_Addr                
+27 00 $f	//gPR_Active_720P_u8PLL_S_Addr                
+28 00 $f	//gPR_Active_720P_u8PLL_Ctrl_Addr             
+29 01 $f	//gPR_Active_720P_u8src_clk_sel_Addr          
+2A 00 $f	//gPR_Active_720P_u8output_pad_status_Addr    
+2B 3F $f	//gPR_Active_720P_u8ablk_ctrl_10_Addr         
+2C FF $f	//gPR_Active_720P_u8BayerFunc_Addr            
+2D FF $f	//gPR_Active_720P_u8RgbYcFunc_Addr            
+2E 00 $f	//gPR_Active_720P_u8ISPMode_Addr              
+2F 02 $f	//gPR_Active_720P_u8SCLCtrl_Addr              
+30 01 $f	//gPR_Active_720P_u8SCLHorScale_Addr0         
+31 FF $f	//gPR_Active_720P_u8SCLHorScale_Addr1         
+32 03 $f	//gPR_Active_720P_u8SCLVerScale_Addr0         
+33 FF $f	//gPR_Active_720P_u8SCLVerScale_Addr1         
+34 00 $f	//gPR_Active_720P_u8SCLCropStartX_Addr0       
+35 00 $f	//gPR_Active_720P_u8SCLCropStartX_Addr1       
+36 00 $f	//gPR_Active_720P_u8SCLCropStartY_Addr0       
+37 10 $f	//gPR_Active_720P_u8SCLCropStartY_Addr1       
+38 02 $f	//gPR_Active_720P_u8SCLCropEndX_Addr0         
+39 80 $f	//gPR_Active_720P_u8SCLCropEndX_Addr1         
+3A 01 $f	//gPR_Active_720P_u8SCLCropEndY_Addr0         
+3B F0 $f	//gPR_Active_720P_u8SCLCropEndY_Addr1         
+3C 01 $f	//gPR_Active_720P_u8OutForm_Addr              
+3D 0C $f	//gPR_Active_720P_u8OutCtrl_Addr              
+3E 04 $f	//gPR_Active_720P_u8AEWinStartX_Addr          
+3F 04 $f	//gPR_Active_720P_u8AEWinStartY_Addr          
+40 66 $f	//gPR_Active_720P_u8MergedWinWidth_Addr       
+41 5E $f	//gPR_Active_720P_u8MergedWinHeight_Addr      
+42 04 $f	//gPR_Active_720P_u8AEHistWinAx_Addr          
+43 04 $f	//gPR_Active_720P_u8AEHistWinAy_Addr          
+44 98 $f	//gPR_Active_720P_u8AEHistWinBx_Addr          
+45 78 $f	//gPR_Active_720P_u8AEHistWinBy_Addr          
+46 22 $f	//gPR_Active_720P_u8AWBTrim_Addr              
+47 28 $f	//gPR_Active_720P_u8AWBCTWinAx_Addr           
+48 20 $f	//gPR_Active_720P_u8AWBCTWinAy_Addr           
+49 78 $f	//gPR_Active_720P_u8AWBCTWinBx_Addr           
+4A 60 $f	//gPR_Active_720P_u8AWBCTWinBy_Addr           
+4B 03 $f	//gPR_Active_720P_u16AFCFrameLength_0         
+4C 00 $f	//gPR_Active_720P_u16AFCFrameLength_1         
+
+// VGA PR     
+FF 86 $f //Page mode 
+2E 1e $f  // gPT_u8PR_Active_VGA_DATA_TYPE_Addr
+2F 05 $f  // gPT_u8PR_Active_VGA_WORD_COUNT_Addr0
+30 00 $f  // gPT_u8PR_Active_VGA_WORD_COUNT_Addr1
+33 04 $f  // gPT_u8PR_Active_VGA_DPHY_CLK_TIME_Addr3
+    
+FF 87 $f //Page mode 
+4D 00 $f	//gPR_Active_VGA_u8SensorCtrl_Addr
+4E 72 $f	//gPR_Active_VGA_u8SensorMode_Addr
+4F 01 $f	//gPR_Active_VGA_u8PLL_P_Addr
+50 0F $f	//gPR_Active_VGA_u8PLL_M_Addr
+51 00 $f	//gPR_Active_VGA_u8PLL_S_Addr
+52 00 $f	//gPR_Active_VGA_u8PLL_Ctrl_Addr
+53 01 $f	//gPR_Active_VGA_u8src_clk_sel_Addr
+54 00 $f	//gPR_Active_VGA_u8output_pad_status_Addr
+55 3F $f	//gPR_Active_VGA_u8ablk_ctrl_10_Addr
+56 FF $f	//gPR_Active_VGA_u8BayerFunc_Addr
+57 FF $f	//gPR_Active_VGA_u8RgbYcFunc_Addr
+58 00 $f	//gPR_Active_VGA_u8ISPMode_Addr
+59 02 $f	//gPR_Active_VGA_u8SCLCtrl_Addr
+5A 01 $f	//gPR_Active_VGA_u8SCLHorScale_Addr0
+5B FF $f	//gPR_Active_VGA_u8SCLHorScale_Addr1
+5C 01 $f	//gPR_Active_VGA_u8SCLVerScale_Addr0
+5D FF $f	//gPR_Active_VGA_u8SCLVerScale_Addr1
+5E 00 $f	//gPR_Active_VGA_u8SCLCropStartX_Addr0
+5F 00 $f	//gPR_Active_VGA_u8SCLCropStartX_Addr1
+60 00 $f	//gPR_Active_VGA_u8SCLCropStartY_Addr0
+61 10 $f	//gPR_Active_VGA_u8SCLCropStartY_Addr1
+62 05 $f	//gPR_Active_VGA_u8SCLCropEndX_Addr0
+63 00 $f	//gPR_Active_VGA_u8SCLCropEndX_Addr1
+64 03 $f	//gPR_Active_VGA_u8SCLCropEndY_Addr0
+65 E0 $f	//gPR_Active_VGA_u8SCLCropEndY_Addr1
+
+// For 25MHz
+FF 86 $f	// Active_SXGA_PLL
+FB 03 $f
+FC 1E $f
+
+FF 87 $f	// Active_VGA_PLL
+4F 03 $f
+50 1E $f
+
+
+FF 86 $f
+1A 01 $f	// Update
+
+FF C0 $f      
+10 41 $f
+$d0096      
+FF D1 $f      
+03 01 $f      
+      
+FF D0 $f	// Page Mode  
+20 0E $f  
+20 0F $f      
+
+FF 83 $f	// Page Mode  
+90 05 $f  		// Final R
+91 40 $f      
+94 04 $f  		// Final B
+95 C0 $f     
+
+$"[DB8131S] << REG_INIT"
+;   
+ 
+
+//=========================================================
+// DB8131M INIT SEQUENCE
+//=========================================================
+REG_INIT_M = 
+$"[DB8131M] >> REG_INIT"
+//==================================
+// Format
+//==================================        
+
+FF C0 $f //Page mode
+10 01 $f
+$d0096
+FF A1 $f //Page mode    
+70 01 $f
+71 0D $f 
+
+
+//==================================
+// SensorCon
+//==================================
+FF D0 $f
+0E 0A $f
+0F 0D $f
+13 00 $f
+15 00 $f
+18 34 $f
+19 21 $f
+1A 07 $f
+20 0F $f
+23 00 $f
+24 00 $f
+39 9F $f
+51 1F $f
+83 65 $f
+85 67 $f
+87 65 $f
+89 67 $f
+8B 27 $f
+8D 6c $f
+91 14 $f
+D7 40 $f
+F8 40 $f
+C5 09 $f
+D1 96 $f
+DB 9F $f
+ED 01 $f
+EE 0F $f
+EF 00 $f
+F9 00 $f
+FB 50 $f
+
+//==================================
+// Analog ADF
+//==================================
+FF 85 $f
+89 C2 $f
+8A 0C $f
+8C 07 $f
+8D 40 $f
+8F 0C $f
+91 11 $f
+92 1F $f
+93 78 $f	
+95 19 $f
+96 1A $f	
+97 0E $f
+98 0F $f
+99 07 $f
+9A 00 $f
+9C 0C $f
+9D 7E $f
+9E 29 $f
+9F 7F $f
+A0 79 $f
+A1 75 $f
+A2 18 $f
+A3 33 $f
+A4 0F $f
+FE 20 $f
+8E 01 $f
+9B 00 $f
+FF 86 $f
+15 00 $f
+16 FA $f
+17 00 $f
+18 00 $f
+19 00 $f
+//1A 07 $f
+//1B 10 $f
+1D 0C $f
+1F 09 $f
+20 3A $f
+22 18 $f
+23 2A $f
+24 0E $f
+25 77 $f
+2D EB $f
+1B F6 $f
+1C 00 $f
+FF 87 $f
+E1 20 $f
+EA 41 $f
+DD B0 $f
+F1 39 $f
+FF 83 $f
+63 28 $f
+64 10 $f
+65 A8 $f
+66 50 $f
+67 28 $f
+68 14 $f
+FF 82 $f
+B9 09 $f
+BA 80 $f
+BB 09 $f
+BC 80 $f
+BD 09 $f
+BE 80 $f
+FF D0 $f
+20 11 $f
+
+//Analog UR
+FF D1 $f
+07 00 $f
+0B 00 $f
+03 01 $f
+D1 96 $f
+FF B0 $f
+3C 81 $f
+50 01 $f
+
+
+
+
+//==================================						
+// AE						
+//==================================		
+FF 82 $f //Page mode				
+95 55 $f
+96 55 $f     
+97 F5 $f     
+98 5F $f     
+99 F5 $f     
+9A 5F $f     
+9B 55 $f     
+9C 55 $f   
+A9 40 $f     //42 OTarget	SAT 1 CCM 1 40
+AA 3C $f     // ITarget
+9D 88 $f     // AE Speed
+9F 06 $f     // AE HoldBnd
+A8 40 $f     // STarget
+C5 02 $f     // PeakMvStep
+C6 38 $f     // PeakTgMin
+C7 24 $f     // PeakRatioTh1
+C8 10 $f     // PeakRatioTh0
+C9 05 $f     // PeakLuTh
+D5 60 $f     // LuxGainTB_2
+
+FF 83 $f //Page mode
+2F 04 $f     // TimeNum0
+30 05 $f     // TimeNum1
+4F 05 $f     // FrameOffset
+5D 00 $f     // Lower Fine
+5E 8F $f     //
+
+FF 82 $f //Page mode
+A1 0A $f     // AnalogGainMax
+F3 09 $f     // SCLK		// 25MHz
+F4 76 $f     
+F9 00 $f     // GainMax
+FA C0 $f     // GainMax B0
+FB 55 $f     // Gain3Lut
+FC 30 $f     // Gain2Lut
+FD 14 $f     // Gain1Lut
+FE 12 $f     // GainMin
+D3 12 $f     // LuxTBGainStep0  
+D4 50 $f     // LuxTBGainStep1  
+D5 60 $f     // LuxTBGainStep2  
+D6 01 $f     // LuxTBTimeStep0H
+D7 00 $f     // LuxTBTimeStep0L
+D8 01 $f     // LuxTBTimeStep1H
+D9 90 $f     // LuxTBTimeStep1L
+DA 05 $f     // LuxTBTimeStep2H
+DB 00 $f     // LuxTBTimeStep2L
+FF 83 $f     //Page mode  
+03 0F $f     // TimeMax60Hz  : 8fps
+04 08 $f     // Time3Lux60Hz : 15fps
+05 04 $f     // Time2Lut60Hz : 24fps
+06 04 $f     // Time1Lut60Hz : 24fps
+07 0C $f     // TimeMax50Hz  : 8fps
+08 07 $f     // Time3Lux50Hz : 14fps
+09 04 $f     // Time2Lut50Hz : 24fps
+0A 04 $f     // Time1Lut50Hz : 24fps
+0B 04 $f 
+0C 76 $f 	 // Frame Rate
+11 04 $f
+12 8A $f	// 50Hz Frame rate
+
+FF 85 $f //Page mode
+C8 03 $f
+C9 21 $f
+
+FF 82 $f //Page mode
+92 59 $f
+						
+//==================================						
+// AWB					
+//==================================						
+FF 83 $f //Page mode						
+79 83 $f	// AWBCtrl	
+82 00 $f	// LockRatio	
+86 03 $f	// MinGrayCnt	
+87 00 $f	// MinGrayCnt	
+90 05 $f	// RGain	
+94 05 $f	// BGain	
+98 D4 $f	// SkinWinCntTh	
+A2 28 $f	// SkinYTh	
+A3 00 $f	// SkinHoldHitCnt	
+A4 0F $f	// SkinHoldHitCnt	
+AD 65 $f	// SkinTop2	
+AE 80 $f	// SkinTop2LS1Ratio	
+AF 20 $f	// SkinTop2LS2Ratio	
+B4 10 $f	// SkinTop2LSHys	
+B5 54 $f	 // SkinLTx	
+B6 BD $f	 // SkinLTy	
+B7 74 $f	 // SkinLBx	
+B8 9D $f	 // SkinLBy	
+BA 4F $f	// UniCThrY	
+BF 0C $f	// UniCGrayCntThr_0	
+C0 80 $f	// UniCGrayCntThr_1	
+
+FF 84 $f //Page mode						
+3D 00 $f		// AWB_LuxConst1_0	
+3E 00 $f		// AWB_LuxConst1_1	
+3F 06 $f		// AWB_LuxConst1_2	
+40 20 $f		// AWB_LuxConst1_3	
+41 07 $f		// AWB_LuxConst2_0	
+42 53 $f		// AWB_LuxConst2_1	
+43 00 $f		// AWB_LuxConst2_2	
+44 00 $f		// AWB_LuxConst2_3	
+49 01 $f		// Threshold_indoor	
+4A 00 $f			
+4B 01 $f		// Threshold_outdoor	
+4C 80 $f			
+55 03 $f		// AWB_Weight_Genernal_0	
+56 10 $f		// AWB_Weight_Genernal_1	
+57 14 $f		// AWB_Weight_Genernal_2	
+58 07 $f		// AWB_Weight_Genernal_3	
+59 04 $f		// AWB_Weight_Genernal_4	
+5A 00 $f		// AWB_Weight_Genernal_5	
+5B 01 $f		// AWB_Weight_Genernal_6	
+5C 01 $f		// AWB_Weight_Genernal_7	
+5D 01 $f		// AWB_Weight_Indoor_0	
+5E 08 $f		// AWB_Weight_Indoor_1	
+5F 08 $f		// AWB_Weight_Indoor_2	
+60 10 $f		// AWB_Weight_Indoor_3	
+61 40 $f		// AWB_Weight_Indoor_4	
+62 00 $f		// AWB_Weight_Indoor_5	
+63 10 $f		// AWB_Weight_Indoor_6	
+64 10 $f		// AWB_Weight_Indoor_7	
+65 03 $f		// AWB_Weight_Outdoor_0	
+66 20 $f		// AWB_Weight_Outdoor_1	
+67 20 $f		// AWB_Weight_Outdoor_2	
+68 10 $f		// AWB_Weight_Outdoor_3	
+69 01 $f		// AWB_Weight_Outdoor_4	
+6A 02 $f		// AWB_Weight_Outdoor_5	
+6B 01 $f		// AWB_Weight_Outdoor_6	
+6C 01 $f		// AWB_Weight_Outdoor_7	
+FF 85 $f //Page mode			
+E2 0C $f			// AWB_unicolorzone	
+
+FF 83 $f //Page mode
+CB 04 $f	 // Min Rgain	
+CC 00 $f
+CD 06 $f	 //Max Rgain
+CE A0 $f
+CF 04 $f	 //Min Bgain
+D0 80 $f
+D1 06 $f	 //Max BGain 690
+d2 90 $f
+	
+//==================================						
+// AWB STE						
+//==================================
+FF A1 $f //Page mode
+9C 20 $f		// AWBLuThL
+9D F0 $f		// AWBLuThH						
+A0 63 $f		// AWBZone0LTx - Flash	
+A1 7A $f		// AWBZone0LTy	
+A2 69 $f		// AWBZone0RBx	
+A3 6F $f		// AWBZone0RBy	
+A4 72 $f		// AWBZone1LTx - Cloudy	
+A5 48 $f		// AWBZone1LTy	
+A6 84 $f		// AWBZone1RBx	
+A7 34 $f		// AWBZone1RBy	
+A8 68 $f		// AWBZone2LTx - D65	
+A9 50 $f		// AWBZone2LTy	
+AA 7D $f		// AWBZone2RBx	
+AB 37 $f		// AWBZone2RBy	
+AC 60 $f		// AWBZone3LTx - Fluorecent	
+AD 5D $f		// AWBZone3LTy	
+AE 73 $f		// AWBZone3RBx	
+AF 4B $f		// AWBZone3RBy	
+B0 4A $f		// AWBZone4LTx - CWF	
+B1 64 $f		// AWBZone4LTy	
+B2 64 $f		// AWBZone4RBx	
+B3 4D $f		// AWBZone4RBy	
+B4 00 $f		// AWBZone5LTx - TL84	
+B5 00 $f		// AWBZone5LTy	
+B6 00 $f		// AWBZone5RBx	
+B7 00 $f		// AWBZone5RBy	
+B8 41 $f		// AWBZone6LTx - A	
+B9 7B $f		// AWBZone6LTy	
+BA 54 $f		// AWBZone6RBx	
+BB 6D $f		// AWBZone6RBy	
+BC 3C $f		// AWBZone7LTx - Horizon	
+BD 96 $f		// AWBZone7LTy	
+BE 4C $f		// AWBZone7RBx	
+BF 7D $f		// AWBZone7RBy	
+C0 5B $f		// AWBZone8LTx - Skin	
+C1 85 $f		// AWBZone8LTy	
+C2 60 $f		// AWBZone8RBx	
+C3 7F $f		// AWBZone8RBy	
+
+//==================================
+// UR
+//==================================
+FF 87 $f  //Page mode
+C9 22 $f  // AWBTrim
+FF 86 $f  //Page mode
+14 3E $f  // CCM sum 1
+FF 85 $f  //Page mode
+06 05 $f  // Saturation CCM 1
+86 40 $f  // saturation level
+07 00 $f  // sup hysteresis
+
+//==================================						
+// CCM D65						
+//==================================	
+FF 83 $f //Page mode
+EA 00 $f //gAwb_s16AdapCCMTbl_0
+EB 67 $f //gAwb_s16AdapCCMTbl_1 
+EC FF $f //gAwb_s16AdapCCMTbl_2
+ED E5 $f //gAwb_s16AdapCCMTbl_3 
+EE FF $f //gAwb_s16AdapCCMTbl_4
+EF F3 $f //gAwb_s16AdapCCMTbl_5
+F0 FF $f //gAwb_s16AdapCCMTbl_6
+F1 F0 $f //gAwb_s16AdapCCMTbl_7
+F2 00 $f //gAwb_s16AdapCCMTbl_8
+F3 49 $f //gAwb_s16AdapCCMTbl_9
+F4 FF $f //gAwb_s16AdapCCMTbl_10
+F5 F4 $f //gAwb_s16AdapCCMTbl_11
+F6 FF $f //gAwb_s16AdapCCMTbl_12
+F7 FB $f //gAwb_s16AdapCCMTbl_13
+F8 FF $f //gAwb_s16AdapCCMTbl_14
+F9 C6 $f //gAwb_s16AdapCCMTbl_15
+FA 00 $f //gAwb_s16AdapCCMTbl_16
+FB 7E $f //gAwb_s16AdapCCMTbl_17
+
+	
+//CWF lgiht         
+FC 00 $f     // gAwb_s16AdapCCMTbl_18     
+FD 63 $f     // gAwb_s16AdapCCMTbl_19    
+FF 85 $f //Page mode 
+E0 FF $f // gAwb_s16AdapCCMTbl_20
+E1 E2 $f // gAwb_s16AdapCCMTbl_21
+FF 84 $f //Page mode
+00 FF $f     // gAwb_s16AdapCCMTbl_22     
+01 FB $f     // gAwb_s16AdapCCMTbl_23     
+02 FF $f     // gAwb_s16AdapCCMTbl_24     
+03 F6 $f     // gAwb_s16AdapCCMTbl_25    
+04 00 $f     // gAwb_s16AdapCCMTbl_26     
+05 4C $f     // gAwb_s16AdapCCMTbl_27     
+06 FF $f     // gAwb_s16AdapCCMTbl_28     
+07 FA $f     // gAwb_s16AdapCCMTbl_29   
+08 FF $f     // gAwb_s16AdapCCMTbl_30     
+09 FC $f     // gAwb_s16AdapCCMTbl_31     
+0A FF $f     // gAwb_s16AdapCCMTbl_32     
+0B CC $f     // gAwb_s16AdapCCMTbl_33     
+0C 00 $f     // gAwb_s16AdapCCMTbl_34     
+0D 6F $f     // gAwb_s16AdapCCMTbl_35 
+
+//A light Green  
+FF 84 $f //Page mode
+0E 00 $f     // gAwb_s16AdapCCMTbl_36 
+0F 6B $f     // gAwb_s16AdapCCMTbl_37 
+10 FF $f     // gAwb_s16AdapCCMTbl_38 
+11 DA $f     // gAwb_s16AdapCCMTbl_39 
+12 FF $f     // gAwb_s16AdapCCMTbl_40 
+13 FC $f     // gAwb_s16AdapCCMTbl_41 
+14 FF $f     // gAwb_s16AdapCCMTbl_42 
+15 F5 $f     // gAwb_s16AdapCCMTbl_43 
+16 00 $f     // gAwb_s16AdapCCMTbl_44 
+17 5B $f     // gAwb_s16AdapCCMTbl_45 
+18 FF $f     // gAwb_s16AdapCCMTbl_46 
+19 F0 $f     // gAwb_s16AdapCCMTbl_47 
+1A FF $f     // gAwb_s16AdapCCMTbl_48 
+1B FA $f     // gAwb_s16AdapCCMTbl_49 
+1C FF $f     // gAwb_s16AdapCCMTbl_50 
+1D C4 $f     // gAwb_s16AdapCCMTbl_51 
+1E 00 $f     // gAwb_s16AdapCCMTbl_52 
+1F 82 $f     // gAwb_s16AdapCCMTbl_53 
+
+ 
+
+//Out door CCM        
+FF 86 $f    //Page mode
+45 00 $f    // CCM LuxThreshold
+46 80 $f    // CCM LuxThreshold
+FF 85 $f    //Page mode
+FE 35 $f    // Outdoor CCM On 
+EC 00 $f     // gAwb_s16AdapCCMTbl_0 
+ED 75 $f     // gAwb_s16AdapCCMTbl_1 
+EE FF $f     // gAwb_s16AdapCCMTbl_2 
+EF B9 $f     // gAwb_s16AdapCCMTbl_3 
+F0 00 $f     // gAwb_s16AdapCCMTbl_4 
+F1 12 $f     // gAwb_s16AdapCCMTbl_5 
+F2 FF $f     // gAwb_s16AdapCCMTbl_6 
+F3 F3 $f     // gAwb_s16AdapCCMTbl_7 
+F4 00 $f     // gAwb_s16AdapCCMTbl_8 
+F5 50 $f     // gAwb_s16AdapCCMTbl_9 
+F6 FF $f     // gAwb_s16AdapCCMTbl_10
+F7 FD $f     // gAwb_s16AdapCCMTbl_11
+F8 FF $f     // gAwb_s16AdapCCMTbl_12
+F9 F4 $f     // gAwb_s16AdapCCMTbl_13
+FA FF $f     // gAwb_s16AdapCCMTbl_14
+FB CC $f     // gAwb_s16AdapCCMTbl_15
+FC 00 $f     // gAwb_s16AdapCCMTbl_16
+FD 80 $f     // gAwb_s16AdapCCMTbl_17
+
+
+
+
+//==================================
+// ADF
+//==================================
+// ISP setting
+FF A0 $f //Page mode
+10 80 $f	  // BLC Th	
+11 09 $f	  // BLC Separator	
+60 73 $f 	  // CDC: Dark CDC ON  
+61 1F $f      // Six CDC_Edge En, Slash EN
+69 0C $f      // Slash direction Line threshold
+6A 60 $f      // Slash direction Pixel threshold
+C2 04 $f	  // NSF: directional smoothing
+D0 51 $f	  // DEM: pattern detection
+FF A1 $f //Page mode
+30 00 $f	  // EDE: Luminane adaptation off
+32 00 $f	  // EDE: Adaptation slope 
+34 00 $f	  // EDE: x1 point 
+35 16 $f	  // EDE: x1 point 
+36 00 $f	  // EDE: x2 point 
+37 30 $f	  // EDE: x2 point 
+3A 00 $f	  // EDE: Adaptation left margin
+3B C0 $f	  // EDE: Adaptation right margin
+3C FF $f	  // EDE: rgb edge threshol
+  
+// Adaptive Setting
+FF 85 $f //Page mode
+// BGT
+17 21 $f	  // BGT lux level threshold
+26 0C $f      // MinVal 
+3c 00 $f      // MaxVal 
+
+// BGT2     
+FF 86 $f //Page mode
+68 0C $f  // BGTLux1
+69 0A $f  // BGTLux2 
+6a 09 $f  // BGTLux3
+6b 00 $f  // Value1
+6c 04 $f  // Value2
+6d 07 $f  // Value3
+
+// SAT
+6F 0A $f	  //SATLux1
+70 08 $f	  //SATLux2
+71 02 $f	  //SATZone
+72 03 $f	  //SATZone
+73 04 $f	  //SATValue1
+74 00 $f	  //SATValue2
+
+// CNT 
+FF 85 $f //Page mode
+18 98 $f	  // CNT lux level threshold
+27 02 $f      // MinVal 
+3d 02 $f      // MaxVal 
+
+// NSF 
+12 A5 $f	  // NSF lux level threshold 
+22 1A $f	  // u8MinVal_NSF1 //28
+23 40 $f	  // u8MinVal_NSF2 //70
+38 0E $f    	// u8MaxVal_NSF1
+39 28 $f    	// u8MaxVal_NSF2
+FF 86 $f //Page mode
+12 06 $f	  // u8MinVal_NSF3
+13 06 $f	  // u8MaxVal_NSF3
+
+// NSF NEW thresold  
+FF 85 $f //Page mode
+E8 22 $f 
+E9 50 $f
+EA 0E $f
+EB 18 $f
+// GDC
+FF 85 $f //Page mode
+15 F4 $f	  // GDC lux level threshold 
+2D 20 $f	  // u8MinVal_GDC1
+2E 30 $f	  // u8MinVal_GDC2
+43 40 $f	  // u8MaxVal_GDC1
+44 80 $f	  // u8MaxVal_GDC2
+
+// ISP  Edge   
+FF 85 $f //Page mode
+04 FB $f	  // FuncCtlr_ADF
+14 A5 $f	  // u8ThrLevel_EDE
+28 08 $f	  // u8MinVal_EDE_CP
+29 07 $f	  // u8MinVal_EDE1
+2A 08 $f	  // u8MinVal_EDE2
+2B 05 $f	  // u8MinVal_EDE_OFS
+2C 22 $f	  // u8MinVal_SG
+3E 02 $f	  // u8MaxVal_EDE_CP
+3F 08 $f	  // u8MaxVal_EDE1 Edge 
+40 09 $f	  // u8MaxVal_EDE2
+41 07 $f	  // u8MaxVal_EDE_OFS
+42 22 $f	  // u8MaxVal_SG
+
+// Gamma Adaptive
+FF 85 $f //Page mode
+16 70 $f    
+47 00 $f	  // Min_Gamma_0
+48 16 $f	  // Min_Gamma_1
+49 25 $f	  // Min_Gamma_2
+4A 37 $f	  // Min_Gamma_3
+4B 45 $f	  // Min_Gamma_4
+4C 51 $f	  // Min_Gamma_5
+4D 65 $f	  // Min_Gamma_6
+4E 77 $f	  // Min_Gamma_7
+4F 87 $f	  // Min_Gamma_8
+50 95 $f	  // Min_Gamma_9
+51 AF $f	  // Min_Gamma_10
+52 C6 $f	  // Min_Gamma_11
+53 DB $f	  // Min_Gamma_12
+54 E5 $f	  // Min_Gamma_13
+55 EE $f	  // Min_Gamma_14
+56 F7 $f	  // Min_Gamma_15
+57 FF $f	  // Min_Gamma_16
+
+58 00 $f	  // Max_Gamma_0  
+59 0A $f	  // Max_Gamma_1  
+5a 16 $f	  // Max_Gamma_2  
+5b 30 $f	  // Max_Gamma_3  
+5c 46 $f	  // Max_Gamma_4  
+5d 58 $f	  // Max_Gamma_5  
+5e 70 $f	  // Max_Gamma_6  
+5f 84 $f	  // Max_Gamma_7  
+60 94 $f	  // Max_Gamma_8  
+61 A4 $f	  // Max_Gamma_9  
+62 B9 $f	  // Max_Gamma_10 
+63 CC $f	  // Max_Gamma_11 
+64 DE $f	  // Max_Gamma_12 
+65 E7 $f	  // Max_Gamma_13 
+66 F0 $f	  // Max_Gamma_14 
+67 F8 $f	  // Max_Gamma_15 
+68 FF $f	  // Max_Gamma_16 
+
+ 
+// CCM Saturation Level
+FF 85 $f //Page mode
+1A 21 $f	  //64 SUP Threshold	
+30 78 $f  // MinSUP	 
+
+// LSC
+0F 43 $f	  // LVLSC lux level threshold
+10 E3 $f	  // LSLSC Light source , threshold lux
+//0x8531  0xF0	  // Max LSC
+
+// Lens Shading
+FF A0 $f //Page mode
+43 80 $f 	  // RH7 rrhrhh
+44 80 $f 	  // RV
+45 80 $f 	  // RH	
+46 80 $f 	  // RV
+47 80 $f 	  // GH
+48 80 $f 	  // GV
+49 80 $f 	  // GH
+4A 80 $f 	  // GV	
+4B 80 $f 	  // BH
+4C 80 $f	  // BV
+4D 80 $f 	  // BH
+4E 80 $f 	  // BV  
+
+52 90 $f	  // GGain
+53 20 $f	  // GGain
+54 00 $f	  // GGain
+
+//Max Shading       
+FF 85 $f //Page mode
+04 F9 $f
+
+FF A0 $f //Page mode
+4F A8 $f	//Rgain1
+50 10 $f 	//Rgain2
+51 00 $f	//Rgain3
+55 90 $f 	//Bgain1
+56 10 $f 	//Bgain2
+57 00 $f	//Bgain3
+
+
+FF 87 $f	// Page Mode
+DC 05 $f        // by Yong In Han 091511
+DD b0 $f        // by Yong In Han 091511
+D5 00 $f		// Y-Flip
+
+FF B0 $f	 //Page mode
+54 02 $f	// MIPI PHY_HS_TX_CTRL
+38 05 $f	// MIPI DPHY_CTRL_SET
+
+// SXGA PR
+FF 85 $f //Page mode 
+B7 1e $f  // gPT_u8PR_Active_SXGA_DATA_TYPE_Addr
+B8 0A $f  // gPT_u8PR_Active_SXGA_WORD_COUNT_Addr0
+B9 00 $f  // gPT_u8PR_Active_SXGA_WORD_COUNT_Addr1
+BC 04 $f  // gPT_u8PR_Active_SXGA_DPHY_CLK_TIME_Addr3
+FF 87 $f //Page mode 
+0C 00 $f  // start Y
+0D 20 $f  // start Y   
+10 03 $f  // end Y
+11 E0 $f  // end Y   
+
+// Recoding 
+FF 86 $f //Page mode 
+37 1e $f  // gPT_u8PR_Active_720P_DATA_TYPE_Addr
+38 05 $f  // gPT_u8PR_Active_720P_WORD_COUNT_Addr0
+39 00 $f  // gPT_u8PR_Active_720P_WORD_COUNT_Addr1
+3C 04 $f  // gPT_u8PR_Active_720P_DPHY_CLK_TIME_Addr3
+
+FF 87 $f                                               
+23 02 $f	//gPR_Active_720P_u8SensorCtrl_Addr           
+24 72 $f	//binning on      
+25 01 $f	//gPR_Active_720P_u8PLL_P_Addr                
+26 0F $f	//gPR_Active_720P_u8PLL_M_Addr                
+27 00 $f	//gPR_Active_720P_u8PLL_S_Addr                
+28 00 $f	//gPR_Active_720P_u8PLL_Ctrl_Addr             
+29 01 $f	//gPR_Active_720P_u8src_clk_sel_Addr          
+2A 00 $f	//gPR_Active_720P_u8output_pad_status_Addr    
+2B 3F $f	//gPR_Active_720P_u8ablk_ctrl_10_Addr         
+2C FF $f	//gPR_Active_720P_u8BayerFunc_Addr            
+2D FF $f	//gPR_Active_720P_u8RgbYcFunc_Addr            
+2E 00 $f	//gPR_Active_720P_u8ISPMode_Addr              
+2F 02 $f	//gPR_Active_720P_u8SCLCtrl_Addr              
+30 01 $f	//gPR_Active_720P_u8SCLHorScale_Addr0         
+31 FF $f	//gPR_Active_720P_u8SCLHorScale_Addr1         
+32 03 $f	//gPR_Active_720P_u8SCLVerScale_Addr0         
+33 FF $f	//gPR_Active_720P_u8SCLVerScale_Addr1         
+34 00 $f	//gPR_Active_720P_u8SCLCropStartX_Addr0       
+35 00 $f	//gPR_Active_720P_u8SCLCropStartX_Addr1       
+36 00 $f	//gPR_Active_720P_u8SCLCropStartY_Addr0       
+37 10 $f	//gPR_Active_720P_u8SCLCropStartY_Addr1       
+38 02 $f	//gPR_Active_720P_u8SCLCropEndX_Addr0         
+39 80 $f	//gPR_Active_720P_u8SCLCropEndX_Addr1         
+3A 01 $f	//gPR_Active_720P_u8SCLCropEndY_Addr0         
+3B F0 $f	//gPR_Active_720P_u8SCLCropEndY_Addr1         
+3C 01 $f	//gPR_Active_720P_u8OutForm_Addr              
+3D 0C $f	//gPR_Active_720P_u8OutCtrl_Addr              
+3E 04 $f	//gPR_Active_720P_u8AEWinStartX_Addr          
+3F 04 $f	//gPR_Active_720P_u8AEWinStartY_Addr          
+40 66 $f	//gPR_Active_720P_u8MergedWinWidth_Addr       
+41 5E $f	//gPR_Active_720P_u8MergedWinHeight_Addr      
+42 04 $f	//gPR_Active_720P_u8AEHistWinAx_Addr          
+43 04 $f	//gPR_Active_720P_u8AEHistWinAy_Addr          
+44 98 $f	//gPR_Active_720P_u8AEHistWinBx_Addr          
+45 78 $f	//gPR_Active_720P_u8AEHistWinBy_Addr          
+46 22 $f	//gPR_Active_720P_u8AWBTrim_Addr              
+47 28 $f	//gPR_Active_720P_u8AWBCTWinAx_Addr           
+48 20 $f	//gPR_Active_720P_u8AWBCTWinAy_Addr           
+49 78 $f	//gPR_Active_720P_u8AWBCTWinBx_Addr           
+4A 60 $f	//gPR_Active_720P_u8AWBCTWinBy_Addr           
+4B 03 $f	//gPR_Active_720P_u16AFCFrameLength_0         
+4C 00 $f	//gPR_Active_720P_u16AFCFrameLength_1         
+
+// VGA PR     
+FF 86 $f //Page mode 
+2E 1e $f  // gPT_u8PR_Active_VGA_DATA_TYPE_Addr
+2F 05 $f  // gPT_u8PR_Active_VGA_WORD_COUNT_Addr0
+30 00 $f  // gPT_u8PR_Active_VGA_WORD_COUNT_Addr1
+33 04 $f  // gPT_u8PR_Active_VGA_DPHY_CLK_TIME_Addr3
+    
+FF 87 $f //Page mode 
+4D 00 $f	//gPR_Active_VGA_u8SensorCtrl_Addr
+4E 72 $f	//gPR_Active_VGA_u8SensorMode_Addr
+4F 01 $f	//gPR_Active_VGA_u8PLL_P_Addr
+50 0F $f	//gPR_Active_VGA_u8PLL_M_Addr
+51 00 $f	//gPR_Active_VGA_u8PLL_S_Addr
+52 00 $f	//gPR_Active_VGA_u8PLL_Ctrl_Addr
+53 01 $f	//gPR_Active_VGA_u8src_clk_sel_Addr
+54 00 $f	//gPR_Active_VGA_u8output_pad_status_Addr
+55 3F $f	//gPR_Active_VGA_u8ablk_ctrl_10_Addr
+56 FF $f	//gPR_Active_VGA_u8BayerFunc_Addr
+57 FF $f	//gPR_Active_VGA_u8RgbYcFunc_Addr
+58 00 $f	//gPR_Active_VGA_u8ISPMode_Addr
+59 02 $f	//gPR_Active_VGA_u8SCLCtrl_Addr
+5A 01 $f	//gPR_Active_VGA_u8SCLHorScale_Addr0
+5B FF $f	//gPR_Active_VGA_u8SCLHorScale_Addr1
+5C 01 $f	//gPR_Active_VGA_u8SCLVerScale_Addr0
+5D FF $f	//gPR_Active_VGA_u8SCLVerScale_Addr1
+5E 00 $f	//gPR_Active_VGA_u8SCLCropStartX_Addr0
+5F 00 $f	//gPR_Active_VGA_u8SCLCropStartX_Addr1
+60 00 $f	//gPR_Active_VGA_u8SCLCropStartY_Addr0
+61 10 $f	//gPR_Active_VGA_u8SCLCropStartY_Addr1
+62 05 $f	//gPR_Active_VGA_u8SCLCropEndX_Addr0
+63 00 $f	//gPR_Active_VGA_u8SCLCropEndX_Addr1
+64 03 $f	//gPR_Active_VGA_u8SCLCropEndY_Addr0
+65 E0 $f	//gPR_Active_VGA_u8SCLCropEndY_Addr1
+
+// For 25MHz
+FF 86 $f	// Active_SXGA_PLL
+FB 03 $f
+FC 1E $f
+
+FF 87 $f	// Active_VGA_PLL
+4F 03 $f
+50 1E $f
+
+
+FF 86 $f
+1A 01 $f	// Update
+
+FF C0 $f      
+10 41 $f
+$d0096      
+FF D1 $f      
+03 01 $f      
+      
+FF D0 $f	// Page Mode  
+20 0E $f  
+20 0F $f      
+
+
+$"[DB8131M] << REG_INIT"
+;   
+ 
+seq_init =
+   $"[DB8131M] >> seq_init"
+// Self-Cam END of Initial 
+   #GET_REG(D0,00)
+   $"[DB8131M] << seq_init"
+;
+
+cam_init_result = 61,0;
+
+//=========================================================
+// PING SEQUENCE
+//=========================================================
+seq_ping =
+
+   $"[DB8131M] >> seq_ping"
+
+   $"[DB8131M] >> POWER ON"
+
+$gp 0 1   //1.2V buck.
+$d0001
+$gp 2 1   //1.8V
+$d0001 
+$gp 4 1   //2.8V
+   $d0001
+$gp 1 1   //1.5V
+   $d0001
+$go 40 1  //1.3 stby
+   $d0001
+$gt 0 1		//0 clock on
+$d000a 		//clock on delay
+$go 41 1  //1.3 rst
+$d0010
+   $"[DB8131M] << POWER ON"
+
+   #GET_REG(D0,00)   // read DB8131M Device ID number. 
+   
+   $"[DB8131M] << seq_ping"
+;
+
+cam_ping_result = 61,0;
+
+
+
+//=========================================================
+// DEINIT SEQUENCE
+//=========================================================
+seq_deinit =
+   $"[DB8131M] >> De Initial "
+
+   $"[DB8131M] >> POWER OFF"
+$go 40 0  //1.3 stby low
+$d0001 
+$go 41 0  //1.3 rst low
+$d0001 
+$gt 0 0		//0 clock off
+   $d0001
+$gp 1 0   //1.5V
+   $d0001
+$gp 4 0   //2.8V
+   $d0001
+$gp 2 0   //1.8V
+   $d0001
+$gp 0 0   //1.2V buck.
+   $d0001
+   $"[DB8131M] << POWER OFF"
+
+   $"[DB8131M] << De Initial  "
+;
+
+REG_FIXED_15FPS =
+$"[DB8131M]  REG_FIXED_15FPS"
+//FF C0 $f 
+FF 82 $f	// Page mode
+91 02 $f		// AeMode
+
+FF 83 $f	// Page mode
+0B 04 $f		// Frame Rate
+0C 4C $f		// Frame Rate
+11 04 $f		// Frame Rate
+12 8A $f		// Frame Rate
+03 08 $f		// TimeMax60Hz
+04 06 $f		// Time3Lux60Hz
+05 04 $f		// Time2Lut60Hz
+06 04 $f		// Time1Lut60Hz
+07 0C $f		// TimeMax50Hz
+08 07 $f		// Time3Lux50Hz
+09 03 $f		// Time2Lut50Hz
+0A 03 $f		// Time1Lut50Hz
+
+FF 82 $f	// Page mode
+92 59 $f		// AE renew
+;
+
+REG_FIXED_24FPS =
+$"[DB8131M]  REG_FIXED_24FPS"
+FF C0 $f      
+10 42 $f 
+FF 86 $f // Page mode
+1A 01 $f	// Update
+FF 82 $f // Page mode
+91 02 $f           // AeMode
+FF 83 $f // Page mode
+0B 02 $f           // Frame Rate
+0C B0 $f           // Frame Rate
+03 04 $f           // TimeMax60Hz
+04 03 $f           // Time3Lux60Hz
+05 02 $f           // Time2Lut60Hz
+06 01 $f           // Time1Lut60Hz
+FF 82 $f // Page mode
+92 59 $f           // AE renew
+FF 87 $f // Page mode
+DE 72 $f 	   // pixel refresh     
+24 72 $f	   
+;
+
+REG_FIXED_25FPS =
+$"[DB8131M]  REG_FIXED_25FPS"
+FF C0 $f      
+10 42 $f 
+FF 86 $f // Page mode
+1A 01 $f	   // Update
+FF 82 $f // Page mode
+91 02 $f           // AeMode
+FF 83 $f // Page mode
+0B 02 $f           // Frame Rate
+0C 94 $f           // Frame Rate
+03 04 $f           // TimeMax60Hz
+04 03 $f           // Time3Lux60Hz
+05 02 $f           // Time2Lut60Hz
+06 01 $f           // Time1Lut60Hz
+FF 82 $f // Page mode
+92 59 $f           // AE renew
+FF 87 $f // Page mode
+DE 72 $f 	   // pixel refresh     
+24 72 $f	   
+;
+
+REG_FIXED_30FPS =
+$"[DB8131M]  REG_FIXED_30FPS"
+FF C0 $f      
+10 42 $f 
+FF 82 $f // Page mode
+91 02 $f           // AeMode
+FF 83 $f // Page mode
+0B 02 $f           // Frame Rate
+0C B0 $f           // Frame Rate
+03 04 $f           // TimeMax60Hz
+04 04 $f           // Time3Lux60Hz
+05 04 $f           // Time2Lut60Hz
+06 04 $f           // Time1Lut60Hz
+FF 82 $f // Page mode
+92 59 $f           // AE renew
+FF 87 $f // Page mode
+DE 72 $f 	   // pixel refresh 
+24 72 $f	
+;
+
+
+REG_VGA =
+$"[DB8131M] VGA  "
+FF B0 $f //Page mode 
+14 05 $f  	// MIPI_VGA_WORD_COUNT_Addr0
+15 00 $f  	// MIPI_VGA_WORD_COUNT_Addr1
+
+FF 87 $f
+B0 02 $f
+B1 01 $f
+B2 FF $f
+B3 01 $f
+B4 FF $f
+;
+
+REG_QVGA =
+$"[DB8131M] QVGA  "
+FF B0 $f //Page mode 
+14 02 $f  	// MIPI_VGA_WORD_COUNT_Addr0
+15 80 $f  	// MIPI_VGA_WORD_COUNT_Addr1
+
+FF 87 $f
+B0 00 $f
+B1 00 $f
+B2 FF $f
+B3 00 $f
+B4 FF $f
+;
+
+REG_QCIF =
+$"[DB8131M] QCIF  "
+FF B0 $f //Page mode 
+14 01 $f  	// MIPI_VGA_WORD_COUNT_Addr0
+15 60 $f  	// MIPI_VGA_WORD_COUNT_Addr1
+
+FF 87 $f
+B0 00 $f
+B1 00 $f
+B2 8C $f
+B3 00 $f
+B4 98 $f
+;
+
+
+
+//=========================================================
+// VIEWFINDER
+//=========================================================
+seq_vf_config_0 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_VGA
+;
+
+seq_vf_config_1 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_QVGA
+;
+
+seq_vf_config_4 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_QCIF
+;
+
+seq_vf_config_5 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_VGA
+#REG_FIXED_15FPS
+;
+
+seq_vf_config_6 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_QCIF
+#REG_FIXED_15FPS
+;
+
+seq_vf_config_7 =
+;
+
+seq_vf_config_8 =
+#GET_REG(87,FE)
+$c0 10
+#REG_INIT
+$cl
+#REG_INIT_M
+$cx
+#REG_QVGA
+#REG_FIXED_15FPS
+;
+
+seq_vf_config_9 =
+;
+
+
+
+seq_vf_start =
+$"[DB8131M] >> seq_vf_start"
+$"[DB8131M] << seq_vf_start"
+;
+
+seq_vf_stop =
+$"[DB8131M] >> seq_vf_stop"
+$"[DB8131M] << seq_vf_stop"
+;
+
+
+seq_vf_return =
+$"[DB8131M] >> seq_vf_return"
+ff C0 $f
+10 41 $f
+$d0030
+$"[DB8131M] << seq_vf_return"
+;
+
+//=========================================================
+// SnapShot Configuration
+//=========================================================
+
+seq_ss_config_2 =
+$"[DB8131M] seq_ss_config_2 Monitoring VGA "
+;
+
+seq_ss_config_3 =
+$"[DB8131M] seq_ss_config_3 Monitoring 1280 x 960 "
+;
+
+seq_ss_start =
+   $"[DB8131M] >> seq_ss_start"
+
+   $"[DB8131M] << Capture Setting Start"
+   
+ff C0 $f
+10 43 $f
+$d0010
+ff C0 $f
+10 43 $f
+$d0096 // 150ms delay, Pass 1 frame and capture next frame
+       // capture ??
+$"[DB8131M] << seq_ss_start"
+;
+
+seq_ss_stop =
+$"[DB8131M] >> seq_ss_stop"
+$"[DB8131M] << seq_ss_stop"
+;
+
+seq_ss_take =
+$"[DB8131M] >> seq_ss_take"
+$"[DB8131M] << seq_ss_take"
+;
+
+seq_ss_verify =
+$"[DB8131M] >> seq_ss_verify"
+$"[DB8131M] << seq_ss_verify"
+;
+
+//==========================================================
+// Property Configurtion
+//==========================================================
+
+seq_set_prop_14_0 =
+$"[DB8131M] >> Exposure compensation -4"
+FF 87 $f // Page mode
+AE B0 $f	// Brightness
+;
+
+seq_set_prop_14_1 =
+$"[DB8131M] >> Exposure compensation -3"
+FF 87 $f // Page mode
+AE D0 $f	// Brightness
+;
+
+seq_set_prop_14_2 =
+$"[DB8131M] >> Exposure compensation -2"
+FF 87 $f // Page mode
+AE E0 $f	// Brightness
+;
+
+seq_set_prop_14_3 =
+$"[DB8131M] >> Exposure compensation -1"
+FF 87 $f // Page mode
+AE F0 $f	// Brightness
+;
+
+seq_set_prop_14_4 =
+$"[DB8131M] >> Exposure compensation 0"
+FF 87 $f // Page mode
+AE 00 $f	// Brightness
+;
+
+seq_set_prop_14_5 =
+$"[DB8131M] >> Exposure compensation +1"
+FF 87 $f // Page mode
+AE 10 $f	// Brightness
+;
+
+seq_set_prop_14_6 =
+$"[DB8131M] >> Exposure compensation +2"
+FF 87 $f // Page mode
+AE 20 $f	// Brightness	
+;
+
+seq_set_prop_14_7 =
+$"[DB8131M] >> Exposure compensation +3"
+FF 87 $f // Page mode
+AE 30 $f	// Brightness	
+;
+
+seq_set_prop_14_8 =
+$"[DB8131M] >> Exposure compensation +4"
+FF 87 $f // Page mode
+AE 50 $f	// Brightness	
+;
+
+
+
+// Non Fixed Frame
+seq_set_prop_1a_0 =
+$"[DB8131M] >> fps 0"
+
+   $"[DB8131M] >> SEC_FIXED_FPS"
+   $"[DB8131M] >> seq_set_prop_1a_0"
+//FF C0 $f 
+FF 82 $f	// Page mode
+91 01 $f		// AeMode
+
+FF 83 $f	// Page mode
+0B 04 $f		// Frame Rate
+0C 76 $f		// Frame Rate
+11 04 $f		// Frame Rate
+12 8A $f		// Frame Rate
+03 0F $f		// TimeMax60Hz
+04 08 $f		// Time3Lux60Hz
+05 04 $f		// Time2Lut60Hz
+06 04 $f		// Time1Lut60Hz
+07 0C $f		// TimeMax50Hz
+08 07 $f		// Time3Lux50Hz
+09 03 $f		// Time2Lut50Hz
+0A 03 $f		// Time1Lut50Hz
+
+FF 82 $f	// Page mode
+92 59 $f		// AE renew
+
+   $"[DB8131M] << seq_set_prop_1a_0"
+   $"[DB8131M] << SEC_FIXED_FPS"
+;
+
+
+// 7fps Fixed Frame
+seq_set_prop_1a_7 =
+
+   $"[DB8131M] >> SEC_FIXED_FPS"
+   $"[DB8131M] >> seq_set_prop_1a_7"
+//FF C0 $f 
+FF 82 $f	// Page mode
+91 02 $f		// AeMode
+
+FF 83 $f	// Page mode
+0B 09 $f		// Frame Rate
+0C 39 $f		// Frame Rate
+11 09 $f		// Frame Rate
+12 19 $f		// Frame Rate
+03 11 $f		// TimeMax60Hz
+04 10 $f		// Time3Lux60Hz
+05 0C $f		// Time2Lut60Hz
+06 08 $f		// Time1Lut60Hz
+07 0E $f		// TimeMax50Hz
+08 0D $f		// Time3Lux50Hz
+09 0A $f		// Time2Lut50Hz
+0A 06 $f		// Time1Lut50Hz
+
+FF 82 $f	// Page mode
+92 59 $f		// AE renew
+
+   $"[DB8131M] << seq_set_prop_1a_7"
+   $"[DB8131M] << SEC_FIXED_FPS"
+;
+
+
+// 10fps Fixed Frame
+seq_set_prop_1a_a =
+
+   $"[DB8131M] >> SEC_FIXED_FPS"
+   $"[DB8131M] >> seq_set_prop_1a_A"
+//FF C0 $f 
+FF 82 $f	// Page mode
+91 02 $f		// AeMode
+
+FF 83 $f	// Page mode
+0B 06 $f		// Frame Rate
+0C 84 $f		// Frame Rate
+11 06 $f		// Frame Rate
+12 80 $f		// Frame Rate
+03 0C $f		// TimeMax60Hz
+04 0B $f		// Time3Lux60Hz
+05 0A $f		// Time2Lut60Hz
+06 08 $f		// Time1Lut60Hz
+07 0A $f		// TimeMax50Hz
+08 09 $f		// Time3Lux50Hz
+09 08 $f		// Time2Lut50Hz
+0A 06 $f		// Time1Lut50Hz
+
+FF 82 $f	// Page mode
+92 59 $f		// AE renew
+
+   $"[DB8131M] << seq_set_prop_1a_A"
+   $"[DB8131M] << SEC_FIXED_FPS"
+;
+
+
+// 12fps Fixed Frame
+seq_set_prop_1a_c =
+
+   $"[DB8131M] >> SEC_FIXED_FPS"
+   $"[DB8131M] >> seq_set_prop_1a_c"
+//FF C0 $f 
+FF 82 $f	// Page mode
+91 02 $f		// AeMode
+
+FF 83 $f	// Page mode
+0B 05 $f		// Frame Rate
+0C 6F $f		// Frame Rate
+11 05 $f		// Frame Rate
+12 33 $f		// Frame Rate
+03 0A $f		// TimeMax60Hz
+04 09 $f		// Time3Lux60Hz
+05 08 $f		// Time2Lut60Hz
+06 06 $f		// Time1Lut60Hz
+07 08 $f		// TimeMax50Hz
+08 07 $f		// Time3Lux50Hz
+09 06 $f		// Time2Lut50Hz
+0A 04 $f		// Time1Lut50Hz
+
+FF 82 $f	// Page mode
+92 59 $f		// AE renew
+
+   $"[DB8131M] << seq_set_prop_1a_c"
+   $"[DB8131M] << SEC_FIXED_FPS"
+;
+
+// 15fps Fixed Frame
+seq_set_prop_1a_f =
+$"[DB8131M] >> SEC_FIXED_15FPS"
+#REG_FIXED_15FPS
+;
+
+
+// 30fps Fixed Frame
+seq_set_prop_1a_1e =
+$"[DB8131M] >> SEC_FIXED_30FPS"
+
+;
+
+seq_set_prop_17_0=
+$"[DB8131M] >> not support"
+;
+
+seq_set_prop_18_0=
+$"[DB8131M] >>  not support"
+;
+
+//1byte data
+reg_get_8 = 
+$w2 $r1 4 $f
+$"[DB8131M]  reg_get %4"
+;
+
+reg_set_8 = 
+$"[DB8131M] << reg_set"
+$w2 $w0 $f
+;
