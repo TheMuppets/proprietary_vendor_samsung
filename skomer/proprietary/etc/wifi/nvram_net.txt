@@ -1,0 +1,90 @@
+# NVRAM file for BCM94334WLAGB Single board SKOEMER_REV0.6  2013.1.04
+# 2.4GHz FEM RFMD RFFM8204
+
+manfid=0x2d0
+prodid=0x05de
+vendid=0x14e4
+devid=0x4380
+boardtype=0x05de
+boardrev=0x1204
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+sromrev=3
+#boardflags: 
+#            2.4GHz FEM: has 2.4GHz ePA + SP3T
+#            2.4GHz FEM: SP3T switch share with BT
+#            keep original 0x200
+boardflags=0x80a01
+xtalfreq=37400
+nocrc=1
+ag0=253
+aa2g=1
+ccode=GB
+pa0itssit=0x20
+
+#PA parameters for 2.4GHz
+pa0b0=0x135F
+pa0b1=0xFD9F
+pa0b2=0xFF56
+
+maxp2ga0=72
+ofdm2gpo=0x66666664
+mcs2gpo0=0x8888
+mcs2gpo1=0x8888
+
+
+tssifloor2g=5
+extpagain2g=2
+
+# rssi params for 2.4GHz
+rssismf2g=0xf
+rssismc2g=0x8
+rssisav2g=0x1
+# rssi params(RFMD) for 2.4GHz
+#rssismf2g=0x3
+#rssismc2g=0xa
+#rssisav2g=0x1
+
+cckPwrOffset=-4
+cckdigfilttype=24
+ofdmdigfilttype2g=3
+
+il0macaddr=00:90:4c:c5:12:38
+wl0id=0x431b
+pagc2g=0x10
+
+# Parameters for DAC2x mode and ALPF bypass
+dacrate2xen=1
+txalpfbyp=1
+#txalpfpu=1
+
+#Murata 2G FEM switch control table
+swctrlmap_2g=0x00040004,0x00020002,0x00000000,0x10200,0x1ff
+
+
+elna_off_gain_idx_2g=32
+triso2g=8
+dacpu.fab.4=1
+
+aci_detect_en_2g=1
+txiqlopapu2g=0
+dlorange_lowlimit=-128
+loflag=1
+
+gain_settle_dly_2g=4
+noise_cal_po_2g=-1
+noise_cal_high_gain_2g=73
+noise_cal_nf_substract_val_2g=346
+
+rssicorrnorm=0
+rssicorratten=0
+
+#GPIO_4 & SW_OOB (Edge_Trigger)
+muxenab=0x2
+sd_gpout=4
+sd_gpval=1
+sd_oobonly=1
+
+btc_params80=0
+btc_params6=10
+btc_params95=53
