@@ -1,0 +1,92 @@
+76                                                                                                // Number of arguments
+7                                                                                                 // Version of Parser
+1                                                                                                 // File Type
+                                                                                                  
+LVM_MODE_ON                                                                                       // Include Tx Voice Engine Processing
+25                                                                                                // Number of Audio Profiles
+LVVEFS_ABSOLUTE_PATH                                                                              // Defintion of the path
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HANDSET.txt                              // Control Parameters 1
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_SPEAKER.txt                              // Control Parameters 2
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADSET.txt                              // Control Parameters 3
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADPHONE.txt                            // Control Parameters 4
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECOFF.txt                            // Control Parameters 5
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECON.txt                             // Control Parameters 6
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HANDSET_WB.txt                           // Control Parameters 7
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_SPEAKER_WB.txt                           // Control Parameters 8
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADSET_WB.txt                           // Control Parameters 9
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADPHONE_WB.txt                         // Control Parameters 10
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECOFF_WB.txt                         // Control Parameters 11
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECON_WB.txt                          // Control Parameters 12
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HANDSET_VT.txt                           // Control Parameters 13
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_SPEAKER_VT.txt                           // Control Parameters 14
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADSET_VT.txt                           // Control Parameters 15
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADPHONE_VT.txt                         // Control Parameters 16
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECOFF_VT.txt                         // Control Parameters 17
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECON_VT.txt                          // Control Parameters 18
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HANDSET_VOIP.txt                       // Control Parameters 19
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_SPEAKER_VOIP.txt                       // Control Parameters 20
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADSET_VOIP.txt                       // Control Parameters 21
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_HEADPHONE_VOIP.txt                     // Control Parameters 22
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECOFF_VOIP.txt                     // Control Parameters 23
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_BTNRECON_VOIP.txt                      // Control Parameters 24
+/system/etc/LVVEFS_tuning_parameters/Tx_ControlParams_LOOPBACK.txt                      // Control Parameters 25
+
+640                                                                                               // TxIn FIFO Size
+0                                                                                                 // TxIn FIFO Offset
+0                                                                                                 // TxIn FIFO Threshold
+
+640                                                                                               // TxRef FIFO Size
+0                                                                                                 // TxRef FIFO Offset
+0                                                                                                 // TxRef FIFO Threshold
+
+640                                                                                               // TxOut FIFO Size
+0                                                                                                 // TxOut FIFO Offset
+0                                                                                                 // TxOut FIFO Threshold
+
+640                                                                                               // TxNoise FIFO Size
+0                                                                                                 // TxNoise FIFO Offset
+0                                                                                                 // TxNoise FIFO Threshold
+
+1                                                                                                 // RefMaxCalltoUpdate
+3                                                                                                 // RefThreshold
+
+LVM_MODE_OFF                                                                                      // Enable Debugging
+LVM_MODE_OFF                                                                                      // Tx Status Reporting
+/data/LVVEFS_Tx_LVHF_Status.bin                                                                   // Tx Status File
+/data/LVVEFS_Tx_LVNV_Status.bin                                                                   // Tx Status File
+
+LVM_MODE_OFF                                                                                      // Enable BD Measurement
+0                                                                                                 // BD Estimate
+0                                                                                                 // BD Window
+
+0                                                                                                 // Tx In PCM Saving Mode
+1440000                                                                                           // Tx In PCM Saving Buffer Size in samples
+/data/Tx_in_mic.pcm                                                                               // Tx In PCM Saving filename
+
+LVVEFS_PCM_MODE_OFF                                                                               // Tx In PCM Injection Mode
+120000                                                                                            // Tx In PCM Injection Buffer Size in samples
+/data/WhiteNoise_delayed.pcm                                                                      // Tx In PCM Injection filename
+
+0                                                                                                 // Tx Ref PCM Saving Mode
+1440000                                                                                            // Tx Ref PCM Saving Buffer Size in samples
+/data/Tx_in_ref.pcm                                                                               // Tx Ref PCM Saving filename
+
+LVVEFS_PCM_MODE_OFF                                                                               // Tx Ref PCM Injection Mode
+120000                                                                                            // Tx Ref PCM Injection Buffer Size in samples
+/data/WhiteNoise.pcm                                                                              // Tx Ref PCM Injection filename
+
+0                                                                               // Tx Out PCM Saving Mode
+1440000                                                                                           // Tx Out PCM Saving Buffer Size in samples
+/data/Tx_out.pcm                                                                                  // Tx Out PCM Saving filename
+
+LVVEFS_PCM_MODE_OFF                                                                               // Tx Out PCM Injection Mode
+120000                                                                                            // Tx Out PCM Injection Buffer Size in samples
+/data/Tx_out_inject.pcm                                                                           // Tx Inject filename for Tx Out
+
+LVVEFS_PCM_MODE_OFF                                                                               // Tx Interal In PCM Saving Mode
+120000                                                                                            // Tx Interal In PCM Saving Buffer Size in samples
+/data/Tx_Internal_in_mic.pcm                                                                      // Tx Interal In PCM Saving filename
+
+LVVEFS_PCM_MODE_OFF                                                                               // Tx Interal Ref PCM Saving Mode
+120000                                                                                            // Tx Interal Ref PCM Saving Buffer Size in samples
+/data/Tx_Internal_in_ref.pcm                                                                      // Tx Interal Ref PCM Saving filename
