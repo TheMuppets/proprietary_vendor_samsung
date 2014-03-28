@@ -1,0 +1,25 @@
+#!/system/bin/sh
+#
+# Copyright (C) ST-Ericsson SA 2011. All rights reserved.
+# This code is ST-Ericsson proprietary and confidential.
+# Any use of the code for whatever purpose is subject to
+# specific written permission of ST-Ericsson SA.
+#
+
+PATH=${PATH}:/system/bin
+
+
+# enable ip forwarding in kernel
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# add rules for traffic on lan device
+ip addr del ${lan_own_ip#*:} dev ${lan_device}
+ip link set dev ${lan_device} up
+ip rule add iif ${lan_device} table ${rt_table_name}
+ip route add ${wan_ip} table ${rt_table_name} dev ${lan_device}
+
+# add rules for traffic on wan device
+ip addr del ${wan_ip} dev ${wan_device}
+ip link set dev ${wan_device} up
+ip route add default table ${rt_table_name} dev ${wan_device}
+ip rule add iif ${wan_device} table ${rt_table_name}

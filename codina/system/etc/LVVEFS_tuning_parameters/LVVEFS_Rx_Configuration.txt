@@ -1,0 +1,66 @@
+55                                                                                                   // Number of arguments
+7                                                                                                    // Version of Parser
+0                                                                                                    // File Type
+
+LVM_MODE_ON                                                                                          // Include Rx Voice Engine Processing
+25                                                                                                   // Number of Audio Profiles
+LVVEFS_ABSOLUTE_PATH                                                                                 // Defintion of the path
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HANDSET.txt                                 // Control Parameters 1
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_SPEAKER.txt                                 // Control Parameters 2
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADSET.txt                                 // Control Parameters 3
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADPHONE.txt                               // Control Parameters 4
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECOFF.txt                               // Control Parameters 5
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECON.txt                                // Control Parameters 6
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HANDSET_WB.txt                              // Control Parameters 7
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_SPEAKER_WB.txt                              // Control Parameters 8
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADSET_WB.txt                              // Control Parameters 9
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADPHONE_WB.txt                            // Control Parameters 10
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECOFF_WB.txt                            // Control Parameters 11
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECON_WB.txt                             // Control Parameters 12
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HANDSET_VT.txt                              // Control Parameters 13
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_SPEAKER_VT.txt                              // Control Parameters 14
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADSET_VT.txt                              // Control Parameters 15
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADPHONE_VT.txt                            // Control Parameters 16
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECOFF_VT.txt                            // Control Parameters 17
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECON_VT.txt                             // Control Parameters 18
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HANDSET_VOIP.txt                          // Control Parameters 19
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_SPEAKER_VOIP.txt                          // Control Parameters 20
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADSET_VOIP.txt                          // Control Parameters 21
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_HEADPHONE_VOIP.txt                        // Control Parameters 22
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECOFF_VOIP.txt                        // Control Parameters 23
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_BTNRECON_VOIP.txt                         // Control Parameters 24
+/system/etc/LVVEFS_tuning_parameters/Rx_ControlParams_LOOPBACK.txt                         // Control Parameters 25
+
+640                                                                                                  // RxIn FIFO Size
+0                                                                                                    // RxIn FIFO Offset
+0                                                                                                    // RxIn FIFO Threshold
+
+640                                                                                                  // RxOut FIFO Size
+0                                                                                                    // RxOut FIFO Offset
+0                                                                                                    // RxOut FIFO Threshold
+
+LVM_MODE_OFF                                                                                          // Enable Debugging(PCMdump)
+LVM_MODE_OFF                                                                                         // Rx Status Reporting
+/data/LVVEFS_Rx_Status.bin                                                                           // Rx Status File
+
+
+0                                                                                  // Rx In PCM Saving Mode
+1440000                                                                                              // Rx In PCM Saving Buffer Size in samples
+/data/Rx_in.pcm                                                                                      // Rx Dump filename for Rx Input
+
+LVVEFS_PCM_MODE_OFF                                                                                  // Rx In PCM Injection Mode
+120000                                                                                               // Rx In PCM Injection Buffer Size in samples
+/data/Rx_in_inject.pcm                                                                               // Rx Inject filename for Rx Input
+
+
+0                                                                                  // Rx Out PCM Saving Mode
+1440000                                                                                              // Rx Out PCM Saving Buffer Size in samples
+/data/Rx_out.pcm                                                                                     // Rx Dump filename for Rx Output
+
+LVVEFS_PCM_MODE_OFF                                                                                  // Rx Out PCM Injection Mode
+120000                                                                                               // Rx Out PCM Injection Buffer Size in samples
+/data/Rx_out_inject.pcm                                                                              // Rx Inject filename for Rx Out
+
+LVVEFS_PCM_MODE_OFF                                                                                  // Rx Internal PCM Saving Mode(SRC바로 이후)
+120000                                                                                               // Rx Internal PCM Saving Buffer Size in samples
+/data/Rx_Internal_in.pcm                                                                             // Rx Saving filename for Rx Out
