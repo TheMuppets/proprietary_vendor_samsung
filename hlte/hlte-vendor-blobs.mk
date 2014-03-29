@@ -85,10 +85,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hlte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
 	vendor/samsung/hlte/proprietary/lib/libcordon.so:system/lib/libcordon.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-	vendor/samsung/hlte/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
+	vendor/samsung/hlte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
 	vendor/samsung/hlte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-	vendor/samsung/hlte/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+	vendor/samsung/hlte/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
 	vendor/samsung/hlte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hlte/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
 	vendor/samsung/hlte/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	vendor/samsung/hlte/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+	vendor/samsung/hlte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
 	vendor/samsung/hlte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/hlte/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/hlte/proprietary/lib/hw/sensorhubs.msm8974.so:system/lib/hw/sensorhubs.msm8974.so \
