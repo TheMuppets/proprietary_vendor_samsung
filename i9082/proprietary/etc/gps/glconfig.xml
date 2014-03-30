@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+	<!--HAL Confguration  -->
+  
+	<hal
+		acPortName="/dev/ttyS3"
+		lBaudRate="921600"
+		gpioNStdbyPath="/sys/class/gpio/gpio99/value"				
+		acNvStoDir="/data/"
+		gpslogdPipePath="/data/system/.gpslogd.pipe"
+
+		cLogEnabled="false" 
+		acLogDirectory="/sdcard/gps/broadcom/"
+		Log="JAVA"
+
+		arp-supl-enable="true"
+		arp-supl-cap-msb="true"
+		arp-supl-cap-msa="true"
+		arp-supl-cap-ecid="false"
+		arp-supl-use-apn="false"
+		acSuplServer="supl.google.com"
+		SuplPort="7276"
+		tlsCertPath="/system/bin/gps.cer"		
+		SuplUT1Seconds="20"
+		SuplUT2Seconds="20"
+		SuplUT3Seconds="20"
+		SuplVersion="1"
+
+		LbsEnable="true"
+		LbsLocal="false"
+		LbsServer="BCMLS2.glpals.com"
+		LbsPort="7275"
+		LbsSyncLto="false"
+		SyncLto="true"
+		ltoFileName="lto2.dat"
+		acLtoDir="/data/"
+		LbsSyncLtoThresholdDays="1"
+		LbsTAC="10101111"
+		ctrlPipe="/data/glgpsctrl"
+		LbsWlanEnable="false"
+		
+		SensorsEnable="false"
+		SensorsPowerSave="false"
+		SensorsLog="false"
+		AssertEnabled="false"
+		WakeLock="true"
+		GpsdRildClientWakeLock="true"		
+	/>
+
+	<gll
+		LogPriMask="LOG_INFO"
+		LogFacMask="LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA"
+		FrqPlan="FRQ_PLAN_26MHZ_2PPM_13MHZ_300PPB"
+		RfType="GL_RF_4752_BRCM_EXT_LNA"
+		WarmStandbyTimeout1Seconds="10"
+		WarmStandbyTimeout2Seconds="15"
+	/>
+
+	<gll_features
+		EnableLowPowerEls="false"
+		EnableLowPowerPmm="true"
+	/>
+
+</glgps>
