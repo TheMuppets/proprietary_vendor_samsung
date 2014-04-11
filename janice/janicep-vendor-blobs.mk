@@ -118,6 +118,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/hw/sensors.montblanc.so:system/lib/hw/sensors.montblanc.so \
+    $(LOCAL_PATH)/system/lib/hw/nfc.samsungjanice.so:system/lib/hw/nfc.samsungjanice.so \
     $(LOCAL_PATH)/system/lib/libmllite.so:system/lib/libmllite.so \
     $(LOCAL_PATH)/system/lib/libmlplatform.so:system/lib/libmlplatform.so \
     $(LOCAL_PATH)/system/lib/libmpl.so:system/lib/libmpl.so \
@@ -128,10 +129,10 @@ PRODUCT_COPY_FILES += \
 
 # Security Daemon Modem
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/tee/cops_ta.ssw:system/lib/tee/cops_ta.ssw \
-    $(LOCAL_PATH)/system/lib/tee/custom_ta.ssw:system/lib/tee/custom_ta.ssw \
-    $(LOCAL_PATH)/system/lib/tee/libbassapp_ssw:system/lib/tee/libbassapp_ssw \
-    $(LOCAL_PATH)/system/lib/tee/smcl_ta_8500bx_secure.ssw:system/lib/tee/smcl_ta_8500bx_secure.ssw \
+    $(LOCAL_PATH)/system/lib/teeP/cops_ta.ssw:system/lib/tee/cops_ta.ssw \
+    $(LOCAL_PATH)/system/lib/teeP/custom_ta.ssw:system/lib/tee/custom_ta.ssw \
+    $(LOCAL_PATH)/system/lib/teeP/libbassapp_ssw:system/lib/tee/libbassapp_ssw \
+    $(LOCAL_PATH)/system/lib/teeP/smcl_ta_8500bx_secure.ssw:system/lib/tee/smcl_ta_8500bx_secure.ssw \
     $(LOCAL_PATH)/system/lib/libcops.so:system/lib/libcops.so
 
 # System STE binaries
