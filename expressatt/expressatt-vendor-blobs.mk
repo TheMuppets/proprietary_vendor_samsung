@@ -18,6 +18,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/expressatt/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
 	vendor/samsung/expressatt/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
 	vendor/samsung/expressatt/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
+	vendor/samsung/expressatt/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+	vendor/samsung/expressatt/proprietary/lib/libril.so:system/lib/libril.so \
 	vendor/samsung/expressatt/proprietary/bin/netmgrd:system/bin/netmgrd \
 	vendor/samsung/expressatt/proprietary/bin/sec-ril:system/bin/sec-ril \
 	vendor/samsung/expressatt/proprietary/bin/qmiproxy:system/bin/qmiproxy \

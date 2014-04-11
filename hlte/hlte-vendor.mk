@@ -17,6 +17,7 @@
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    com.qualcomm.location
+    com.qualcomm.location \
+    PPPreference
 
 $(call inherit-product, vendor/samsung/hlte/hlte-vendor-blobs.mk)

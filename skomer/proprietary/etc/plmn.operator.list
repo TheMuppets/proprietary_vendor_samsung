@@ -1,0 +1,758 @@
+Header:mcc,mnc,spn,mnn
+ 0x0363, 0x20, "DIGICEL", "DIGICEL" /* ABW */
+ 0x0363, 0x01, "SETAR GSM", "SETARGSM" /* ABW */
+ 0x0412, 0x01, "AF AWCC", "AWCC" /* AFG */
+ 0x0412, 0x40, "MTN AF", "MTN" /* AFG */
+ 0x0412, 0x50, "Etisalat Af", "Etisalat" /* AFG */
+ 0x0412, 0x20, "ROSHAN", "ROSHAN" /* AFG */
+ 0x0631, 0x02, "UNITEL", "UNITEL" /* AGO */
+ 0x0365, 0x0840, "C&W", "" /* AIA */
+ 0x0276, 0x01, "AMC - AL", "A M C" /* ALB */
+ 0x0276, 0x02, "vodafone AL", "voda AL" /* ALB */
+ 0x0213, 0x03, "STA-MOBILAND", "M-AND" /* AND */
+ 0x0362, 0x69, "CT GSM", "" /* ANT */
+ 0x0362, 0x0951, "CHIPPIE", "" /* ANT */
+ 0x0362, 0x51, "Telcell", "" /* ANT */
+ 0x0424, 0x03, "du", "du" /* ARE */
+ 0x0424, 0x02, "ETISALAT", "ETISALAT" /* ARE */
+ 0x0722, 0x0310, "CTI ARG", "" /* ARG */
+ 0x0722, 0x34, "AR TP", "" /* ARG */
+ 0x0722, 0x07, "AR - Movistar", "movistar" /* ARG */
+ 0x0283, 0x01, "Beeline AM", "Beeline" /* ARM */
+ 0x0283, 0x05, "ARM MTS", "MTS Arm" /* ARM */
+ 0x0344, 0x0030, "APUA-PCS", "" /* ATG */
+ 0x0344, 0x0930, "Cingular", "" /* ATG */
+ 0x0344, 0x0920, "C&W", "" /* ATG */
+ 0x0505, 0x06, "3TELSTRA", "3TELSTRA" /* AUS */
+ 0x0505, 0x02, "YES OPTUS", "Optus" /* AUS */
+ 0x0505, 0x01, "Telstra Mobile", "Telstra" /* AUS */
+ 0x0505, 0x03, "vodafone AU", "voda AU" /* AUS */
+ 0x0232, 0x10, "3 AT", "3 AT" /* AUT */
+ 0x0232, 0x01, "A1", "A1" /* AUT */
+ 0x0232, 0x05, "Orange AT", "Orange A" /* AUT */
+ 0x0232, 0x12, "Orange AT", "Orange A" /* AUT */
+ 0x0232, 0x03, "T-Mobile Austria", "TMA" /* AUT */
+ 0x0400, 0x01, "AZE - AZERCELL GSM", "ACELL" /* AZE */
+ 0x0400, 0x04, "AZ Nar", "Nar" /* AZE */
+ 0x0400, 0x02, "BAKCELL GSM 2000", "BKCELL" /* AZE */
+ 0x0642, 0x02, "BDI TEMPO-AFRICELL", "TEMPO-AF" /* BDI */
+ 0x0642, 0x01, "BDI ECONET", "EWB" /* BDI */
+ 0x0642, 0x03, "ONATEL BDI", "ONATEL" /* BDI */
+ 0x0642, 0x82, "BDITL", "" /* BDI */
+ 0x0206, 0x20, "BASE", "BASE" /* BEL */
+ 0x0206, 0x01, "BEL PROXIMUS", "PROXI" /* BEL */
+ 0x0206, 0x10, "B Mobistar", "mobi*" /* BEL */
+ 0x0616, 0x04, "BBCOM", "" /* BEN */
+ 0x0616, 0x03, "MTN BENIN", "MTN BENIN" /* BEN */
+ 0x0616, 0x02, "TELECEL BENIN", "TLCL-BEN" /* BEN */
+ 0x0613, 0x02, "BF Celtel", "celtel" /* BFA */
+ 0x0470, 0x01, "grameenphone", "grameen" /* BGD */
+ 0x0470, 0x03, "Banglalink", "Banglalink" /* BGD */
+ 0x0470, 0x04, "BGD bMobile", "bMobile" /* BGD */
+ 0x0470, 0x02, "BGD AKTEL", "AKTEL" /* BGD */
+ 0x0470, 0x07, "WARID BD", "WARID BD" /* BGD */
+ 0x0284, 0x03, "vivatel", "vivatel " /* BGR */
+ 0x0284, 0x05, "BG GLOBUL", "GLOBUL" /* BGR */
+ 0x0284, 0x01, "M-Tel BG", "Mobiltel" /* BGR */
+ 0x0426, 0x01, "BATELCO", "BATELCO" /* BHR */
+ 0x0426, 0x02, "zain BH", "zain BH" /* BHR */
+ 0x0364, 0x39, "BaTelCel", "" /* BHS */
+ 0x0218, 0x90, "BH GSMBIH", "GSMBIH" /* BIH */
+ 0x0218, 0x05, "m:tel", "m:tel" /* BIH */
+ 0x0257, 0x04, "life:) BY", "life:) BY" /* BLR */
+ 0x0257, 0x01, "BY VELCOM", "VELCOM" /* BLR */
+ 0x0257, 0x02, "MTS BY", "MTS" /* BLR */
+ 0x0702, 0x67, "BTL", "" /* BLZ */
+ 0x0350, 0x02, "M3 WIRELESS", "M3 WIRELES" /* BMU */
+ 0x0350, 0x10, "Cingular", "Cingular" /* BMU */
+ 0x0736, 0x01, "VIVA", "VIVA" /* BOL */
+ 0x0736, 0x03, "Telecel_Bolivia_GSM", "Telecel" /* BOL */
+ 0x0724, 0x16, "BrTCel", "" /* BRA */
+ 0x0724, 0x24, "AMAZONIA", "" /* BRA */
+ 0x0724, 0x05, "Claro", "Claro" /* BRA */
+ 0x0724, 0x34, "CTBC", "" /* BRA */
+ 0x0724, 0x33, "CTBC", "" /* BRA */
+ 0x0724, 0x32, "CTBC", "" /* BRA */
+ 0x0724, 0x15, "SCTL", "" /* BRA */
+ 0x0724, 0x23, "TELEMIGC", "" /* BRA */
+ 0x0724, 0x03, "TIM BRASIL", "TIM" /* BRA */
+ 0x0724, 0x02, "TIM BRASIL", "TIM" /* BRA */
+ 0x0724, 0x04, "TIM BRASIL", "TIM" /* BRA */
+ 0x0724, 0x31, "Oi", "" /* BRA */
+ 0x0724, 0x06, "VIVO", "VIVO" /* BRA */
+ 0x0724, 0x10, "VIVO", "VIVO" /* BRA */
+ 0x0724, 0x11, "VIVO", "" /* BRA */
+ 0x0342, 0x0600, "C&W", "" /* BRB */
+ 0x0342, 0x0750, "DIGICEL", "" /* BRB */
+ 0x0528, 0x02, "BRU-bmobile", "b-mobile" /* BRN */
+ 0x0528, 0x11, "DSTCom", "" /* BRN */
+ 0x0402, 0x11, "B-Mobile", "" /* BTN */
+ 0x0652, 0x01, "BW MASCOM", "MASCOM" /* BWA */
+ 0x0652, 0x02, "Orange", "Orange" /* BWA */
+ 0x0623, 0x02, "Telecel", "Telecel" /* CAF */
+ 0x0302, 0x0370, "Fido", "" /* CAN */
+ 0x0302, 0x0720, "ROGERS", "" /* CAN */
+ 0x0228, 0x07, "In&Phone", "In&Phone" /* CHE */
+ 0x0228, 0x03, "orange CH", "ORANGE" /* CHE */
+ 0x0228, 0x01, "Swisscom", "Swisscom" /* CHE */
+ 0x0228, 0x02, "sunrise", "sunrise" /* CHE */
+ 0x0228, 0x08, "CHE, Tele2 Switzerland", "T2" /* CHE */
+ 0x0901, 0x15, "OnAir", "" /* CHE */
+ 0x0730, 0x03, "CLARO CHL", "ClaroCHL" /* CHL */
+ 0x0730, 0x10, "CL ENTEL PCS", "ENTEL" /* CHL */
+ 0x0730, 0x01, "CL ENTEL PCS", "ENTEL" /* CHL */
+ 0x0730, 0x02, "movistar", "movistar" /* CHL */
+ 0x0460, 0x00, "CHINA MOBILE", "CMCC" /* CHN */
+ 0x0460, 0x01, "CHN-UNICOM", "UNICOM" /* CHN */
+ 0x0612, 0x02, "MOOV- CI", "MOOV" /* CIV */
+ 0x0612, 0x04, "KoZ", "KoZ" /* CIV */
+ 0x0612, 0x05, "MTN CI", "MTN CI" /* CIV */
+ 0x0612, 0x03, "Orange CI", "Orange" /* CIV */
+ 0x0624, 0x01, "MTN CAM", "62401" /* CMR */
+ 0x0624, 0x02, "Orange CAM", "Orange" /* CMR */
+ 0x0630, 0x02, "CELTEL DRC", "CELTEL" /* COD */
+ 0x0630, 0x89, "OASIS", "" /* COD */
+ 0x0630, 0x01, "VODACOM CD", "VODACOM" /* COD */
+ 0x0629, 0x01, "CELTEL ", "CELTEL RC" /* COG */
+ 0x0630, 0x10, "MTN-CG", "" /* COG */
+ 0x0629, 0x07, "WARID RC", "WARIDRC" /* COG */
+ 0x0630, 0x86, "CCT", "" /* COG */
+ 0x0629, 0x05, "SCELL", "" /* COG */
+ 0x0548, 0x01, "CK KOKANET", "KOKANET" /* COK */
+ 0x0732, 0x0111, "TIGO COL", "" /* COL */
+ 0x0732, 0x0103, "TIGO COL", "" /* COL */
+ 0x0732, 0x0101, "COMCEL", "" /* COL */
+ 0x0732, 0x0123, "COL_TEMC", "" /* COL */
+ 0x0654, 0x0001, "HURI", "" /* COM */
+ 0x0625, 0x01, "CPV MOVEL", "CMOVEL" /* CPV */
+ 0x0625, 0x02, "CPV T+", "T+" /* CPV */
+ 0x0712, 0x01, "I.C.E. ", "I.C.E. " /* CRI */
+ 0x0712, 0x02, "I.C.E.", "I.C.E." /* CRI */
+ 0x0368, 0x01, "CUBACEL", "CUBACEL" /* CUB */
+ 0x0346, 0x0140, "C&W", "" /* CYM */
+ 0x0280, 0x10, "MTN", "MTN" /* CYP */
+ 0x0280, 0x01, "CYTAMOBILE-VODAFONE", "CYTAVODA" /* CYP */
+ 0x0230, 0x01, "T-Mobile CZ", "TMO CZ" /* CZE */
+ 0x0230, 0x02, "O2 - CZ", "O2 - CZ" /* CZE */
+ 0x0230, 0x03, "Vodafone CZ", "Vodafone " /* CZE */
+ 0x0262, 0x03, "E-Plus", "E-Plus" /* DEU */
+ 0x0262, 0x07, "o2 - de", "o2 - de" /* DEU */
+ 0x0262, 0x08, "o2 - de", "o2 - de" /* DEU */
+ 0x0262, 0x01, "T-Mobile D", "TMO D" /* DEU */
+ 0x0262, 0x02, "Vodafone.de", "no name" /* DEU */
+ 0x0638, 0x01, "EVATIS", "" /* DJI */
+ 0x0366, 0x0110, "C&W", "" /* DMA */
+ 0x0366, 0x0020, "Cingular", "" /* DMA */
+ 0x0238, 0x06, "3 DK", "3 DK " /* DNK */
+ 0x0238, 0x02, "Telenor DK", "TelenoDK" /* DNK */
+ 0x0238, 0x01, "TDC MOBIL", "DK TDC" /* DNK */
+ 0x0238, 0x20, "TELIA DK", "TELIA" /* DNK */
+ 0x0370, 0x02, "CLARO DOM", "ClaroDOM" /* DOM */
+ 0x0370, 0x01, "orange", "orange" /* DOM */
+ 0x0603, 0x01, "ALG Mobilis", "Mobilis" /* DZA */
+ 0x0603, 0x02, "Djezzy", "Djezzy" /* DZA */
+ 0x0603, 0x03, "DZA NEDJMA", "NEDJMA" /* DZA */
+ 0x0740, 0x01, "PORTA GSM", "PORTAGSM" /* ECU */
+ 0x0740, 0x00, "movistar", "movistar" /* ECU */
+ 0x0602, 0x01, "EGY MobiNiL", "MobiNiL" /* EGY */
+ 0x0602, 0x03, "etisalat", "etisalat" /* EGY */
+ 0x0602, 0x02, "vodafone EG", "voda EG" /* EGY */
+ 0x0214, 0x03, "Orange", "Orange" /* ESP */
+ 0x0214, 0x07, "movistar", "movistar" /* ESP */
+ 0x0214, 0x01, "vodafone ES", "voda ES" /* ESP */
+ 0x0214, 0x04, "Yoigo", "YOIGO" /* ESP */
+ 0x0248, 0x01, "EE EMT", "EMT" /* EST */
+ 0x0248, 0x02, "EE elisa", "elisa" /* EST */
+ 0x0248, 0x03, "EE TELE2", "TELE2" /* EST */
+ 0x0636, 0x01, "ETH-MTN", "ET-MTN" /* ETH */
+ 0x0244, 0x14, "FI AMT", "" /* FIN */
+ 0x0244, 0x03, "dna", "dna" /* FIN */
+ 0x0244, 0x12, "dna", "" /* FIN */
+ 0x0244, 0x05, "FI elisa", "elisa" /* FIN */
+ 0x0244, 0x91, "SONERA", "" /* FIN */
+ 0x0542, 0x01, "FJ VODAFONE", "VODAFONE" /* FJI */
+ 0x0750, 0x01, "C&W FLK", "C&W FLK" /* FLK */
+ 0x0208, 0x20, "F-Bouygues Telecom", "BYTEL" /* FRA */
+ 0x0208, 0x01, "Orange F", "Orange" /* FRA */
+ 0x0208, 0x10, "F SFR", "SFR" /* FRA */
+ 0x0208, 0x88, "F - Contact", "Contact" /* FRA */
+ 0x0208, 0x02, "F - Contact", "Contact" /* FRA */
+ 0x0208, 0x13, "F - Contact", "F - Contact" /* FRA */
+ 0x0340, 0x20, "DIGICEL", "DigicelF" /* FRA */
+ 0x0340, 0x01, "F-Orange", "Orange" /* FRA */
+ 0x0547, 0x20, "F-VINI", "VINI" /* FRA */
+ 0x0288, 0x01, "F?roya Tele", "FT-GSM" /* FRO */
+ 0x0288, 0x02, "VODAFONE FO", "VODAFONE" /* FRO */
+ 0x0550, 0x01, "FSM Telecom", "FSMTC" /* FSM */
+ 0x0628, 0x02, "GAB TELECEL", "TELECEL" /* GAB */
+ 0x0628, 0x03, "ZAIN GA", "ZAIN" /* GAB */
+ 0x0628, 0x01, "628 01/LIBERTIS", "LIBERTIS" /* GAB */
+ 0x0234, 0x55, "C&W", "" /* GBR */
+ 0x0234, 0x20, "3 UK", "3 UK" /* GBR */
+ 0x0234, 0x50, "JT-Wave", "JT-Wave" /* GBR */
+ 0x0234, 0x58, "Pronto", "" /* GBR */
+ 0x0234, 0x10, "O2 - UK", "O2 - UK " /* GBR */
+ 0x0234, 0x16, "Opal UK", "" /* GBR */
+ 0x0234, 0x33, "Orange", "" /* GBR */
+ 0x0234, 0x30, "T-Mobile UK", "TMO UK" /* GBR */
+ 0x0234, 0x31, "T-Mobile UK", "TMO UK" /* GBR */
+ 0x0234, 0x32, "T-Mobile UK", "TMO UK" /* GBR */
+ 0x0234, 0x01, "UK01", "UK01" /* GBR */
+ 0x0234, 0x09, "PMN", "" /* GBR */
+ 0x0234, 0x15, "voda UK", "" /* GBR */
+ 0x0288, 0x04, "BEELINE", "" /* GEO */
+ 0x0620, 0x02, "GH ONEtouch", "ONEtouch" /* GHA */
+ 0x0620, 0x03, "tiGO", "tiGO GHANA" /* GHA */
+ 0x0620, 0x01, "GH MTN", "MTN" /* GHA */
+ 0x0266, 0x01, "GIBTEL GSM", "GIBTEL" /* GIB */
+ 0x0611, 0x04, "no name", "GNAreeba" /* GIN */
+ 0x0611, 0x01, "Orange GN", "ORANGEGN" /* GIN */
+ 0x0611, 0x02, "LAGUI", "" /* GIN */
+ 0x0340, 0x08, "DAUPHIN", "DAUPHIN" /* GLP */
+ 0x0607, 0x02, "no name", "AFRICELL" /* GMB */
+ 0x0607, 0x03, "GM COMIUM", "GMCOMIUM" /* GMB */
+ 0x0607, 0x01, "GAMCEL", "GAMCEL" /* GMB */
+ 0x0632, 0x07, "GTM", "" /* GNB */
+ 0x0632, 0x03, "Orange BS", "ORANGE BS" /* GNB */
+ 0x0627, 0x01, "GNQ01", "GETESA" /* GNQ */
+ 0x0202, 0x01, "GR COSMOTE", "C-OTE" /* GRC */
+ 0x0202, 0x05, "vodafone GR", "voda GR" /* GRC */
+ 0x0202, 0x10, "TIM GR", "TIM" /* GRC */
+ 0x0352, 0x0110, "TIM", "" /* GRD */
+ 0x0352, 0x0030, "C&W", "" /* GRD */
+ 0x0290, 0x01, "TELE Greenland", "TELE GRL" /* GRL */
+ 0x0704, 0x02, "Comcel_GSM", "COMCEL" /* GTM */
+ 0x0704, 0x01, "Claro GTM", "ClaroGTM" /* GTM */
+ 0x0704, 0x03, "movistar", "movistar" /* GTM */
+ 0x0340, 0x02, "ONLY", "ONLY" /* GUF */
+ 0x0738, 0x02, "GUY CLNK PLS", "CLNK PLS" /* GUY */
+ 0x0738, 0x01, "DIGICEL", "DIGICEL" /* GUY */
+ 0x0454, 0x12, "PEOPLES", "" /* HKG */
+ 0x0454, 0x00, "CSL", "CSL" /* HKG */
+ 0x0454, 0x02, "CSL", "CSL" /* HKG */
+ 0x0454, 0x18, "CSL", "" /* HKG */
+ 0x0454, 0x03, "3 HK", "3 HK" /* HKG */
+ 0x0454, 0x04, "3(2G)", "3(2G)" /* HKG */
+ 0x0454, 0x10, "CSL", "CSL" /* HKG */
+ 0x0454, 0x16, "PCCW", "" /* HKG */
+ 0x0454, 0x19, "PCCW", "" /* HKG */
+ 0x0454, 0x06, "SmarToneVodafone", "SMC-Voda" /* HKG */
+ 0x0454, 0x15, "454-15", "" /* HKG */
+ 0x0708, 0x30, "HND", "HT - 200" /* HND */
+ 0x0708, 0x01, "ClaroHND", "" /* HND */
+ 0x0708, 0x02, "CELTELHND", "CELTEL" /* HND */
+ 0x0219, 0x01, "T-Mobile HR", "TMO HR" /* HRV */
+ 0x0219, 0x02, "HR TELE2, HR 21902", "TELE2" /* HRV */
+ 0x0219, 0x10, "HR VIP", "VIP" /* HRV */
+ 0x0372, 0x01, "COMCEL", "VOILA" /* HTI */
+ 0x0216, 0x30, "T-Mobile H", "TMO H" /* HUN */
+ 0x0216, 0x01, "H pannon 3G", "pannon3G" /* HUN */
+ 0x0216, 0x70, "vodafone HU", "voda HU" /* HUN */
+ 0x0510, 0x11, "XL", "" /* IDN */
+ 0x0510, 0x89, "3", "" /* IDN */
+ 0x0510, 0x01, "IND INDOSAT", "INDOSAT" /* IDN */
+ 0x0510, 0x21, "INDOSAT", "" /* IDN */
+ 0x0510, 0x08, "axis", "axis" /* IDN */
+ 0x0510, 0x10, "IND TELKOMSEL", "T-SEL" /* IDN */
+ 0x0404, 0x41, "AIRCEL", "" /* IND */
+ 0x0404, 0x42, "AIRCEL", "" /* IND */
+ 0x0404, 0x79, "CellOne", "" /* IND */
+ 0x0404, 0x75, "CellOne", "" /* IND */
+ 0x0404, 0x81, "CellOne", "" /* IND */
+ 0x0404, 0x34, "CellOne", "" /* IND */
+ 0x0404, 0x62, "CellOne", "" /* IND */
+ 0x0404, 0x72, "CellOne", "" /* IND */
+ 0x0404, 0x66, "CellOne", "" /* IND */
+ 0x0404, 0x74, "CellOne", "" /* IND */
+ 0x0404, 0x54, "CellOne", "" /* IND */
+ 0x0404, 0x55, "CellOne", "" /* IND */
+ 0x0404, 0x80, "CellOne", "" /* IND */
+ 0x0404, 0x59, "CellOne", "" /* IND */
+ 0x0404, 0x53, "CellOne", "" /* IND */
+ 0x0404, 0x76, "CellOne", "" /* IND */
+ 0x0404, 0x77, "CellOne", "" /* IND */
+ 0x0404, 0x58, "CellOne", "" /* IND */
+ 0x0404, 0x71, "CellOne", "" /* IND */
+ 0x0404, 0x51, "CellOne", "" /* IND */
+ 0x0404, 0x57, "CellOne", "" /* IND */
+ 0x0404, 0x64, "CellOne", "" /* IND */
+ 0x0404, 0x73, "CellOne", "" /* IND */
+ 0x0404, 0x38, "CellOne", "" /* IND */
+ 0x0404, 0x49, "AirTel", "" /* IND */
+ 0x0404, 0x10, "AirTel", "AirTel" /* IND */
+ 0x0404, 0x31, "AirTel", "" /* IND */
+ 0x0404, 0x03, "AirTel", "AirTel" /* IND */
+ 0x0404, 0x40, "IND AIRTEL", "AIRTEL" /* IND */
+ 0x0404, 0x02, "AirTel", "AirTel" /* IND */
+ 0x0404, 0x93, "AirTel", "" /* IND */
+ 0x0404, 0x95, "AirTel", "" /* IND */
+ 0x0404, 0x97, "AirTel", "" /* IND */
+ 0x0404, 0x96, "AirTel", "" /* IND */
+ 0x0404, 0x94, "AirTel", "" /* IND */
+ 0x0404, 0x92, "AirTel", "" /* IND */
+ 0x0404, 0x90, "AirTel", "AirTel" /* IND */
+ 0x0404, 0x45, "AirTel", "" /* IND */
+ 0x0404, 0x98, "AirTel", "" /* IND */
+ 0x0404, 0x70, "INDH1", "Oasis" /* IND */
+ 0x0404, 0x21, "BPL MOBILE", "" /* IND */
+ 0x0404, 0x25, "AIRCEL", "" /* IND */
+ 0x0404, 0x28, "AIRCEL", "" /* IND */
+ 0x0404, 0x37, "AIRCEL", "" /* IND */
+ 0x0404, 0x35, "AIRCEL", "" /* IND */
+ 0x0404, 0x33, "AIRCEL", "" /* IND */
+ 0x0404, 0x17, "AIRCEL", "" /* IND */
+ 0x0404, 0x29, "AIRCEL", "" /* IND */
+ 0x0404, 0x82, "IDEA", "" /* IND */
+ 0x0404, 0x89, "IDEA", "" /* IND */
+ 0x0404, 0x87, "IDEA", "" /* IND */
+ 0x0404, 0x24, "IDEA", "" /* IND */
+ 0x0404, 0x22, "IDEA", "" /* IND */
+ 0x0404, 0x07, "IDEA", "IDEA" /* IND */
+ 0x0404, 0x78, "IDEA", "" /* IND */
+ 0x0404, 0x04, "IDEA", "IDEA" /* IND */
+ 0x0404, 0x12, "IDEA", "" /* IND */
+ 0x0404, 0x56, "IDEA", "" /* IND */
+ 0x0404, 0x19, "IDEA", "" /* IND */
+ 0x0404, 0x68, "DOLPHIN", "" /* IND */
+ 0x0404, 0x69, "DOLPHIN", "" /* IND */
+ 0x0404, 0x44, "SPICE", "" /* IND */
+ 0x0404, 0x14, "SPICE", "" /* IND */
+ 0x0404, 0x27, "Vodafone", "" /* IND */
+ 0x0404, 0x46, "Vodafone", "" /* IND */
+ 0x0404, 0x43, "Vodafone", "" /* IND */
+ 0x0404, 0x60, "Vodafone IN", "Vodafone" /* IND */
+ 0x0405, 0x01, "Reliance", "Reliance" /* IND */
+ 0x0404, 0x15, "Vodafone", "" /* IND */
+ 0x0404, 0x30, "Vodafone IN", "Vodafone" /* IND */
+ 0x0404, 0x05, "Vodafone IN", "Vodafone" /* IND */
+ 0x0404, 0x20, "Vodafone IN", "Vodafone" /* IND */
+ 0x0404, 0x11, "Vodafone", "" /* IND */
+ 0x0404, 0x13, "Vodafone", "" /* IND */
+ 0x0404, 0x84, "Vodafone", "" /* IND */
+ 0x0404, 0x86, "Vodafone", "" /* IND */
+ 0x0404, 0x88, "Vodafone", "" /* IND */
+ 0x0405, 0x56, "Airtel", "" /* IND */
+ 0x0405, 0x51, "AIRTEL", "" /* IND */
+ 0x0405, 0x54, "AIRTEL", "" /* IND */
+ 0x0405, 0x53, "AIRTEL", "" /* IND */
+ 0x0405, 0x55, "AIRTEL", "" /* IND */
+ 0x0405, 0x52, "AIRTEL", "" /* IND */
+ 0x0405, 0x50, "RELIANCE", "" /* IND */
+ 0x405, 0x34, "TATA", "" /* IND */
+ 0x405, 0x803, "AIRCEL", "" /* IND */
+ 0x405, 0x820, "Uninor", "" /* IND */
+ 0x0405, 0x67, "Vodafone", "" /* IND */
+ 0x0405, 0x66, "Vodafone", "" /* IND */
+ 0x0272, 0x05, "3 IRL", "3 IRL" /* IRL */
+ 0x0272, 0x03, "IRL - METEOR", "METEOR" /* IRL */
+ 0x0272, 0x02, "O2 IRL", "O2 - IRL" /* IRL */
+ 0x0272, 0x01, "vodafone IE", "voda IE" /* IRL */
+ 0x0432, 0x14, "KIFZO", "" /* IRN */
+ 0x0432, 0x11, "432 11", "" /* IRN */
+ 0x0432, 0x19, "MTCE", "" /* IRN */
+ 0x0432, 0x32, "Taliya", "" /* IRN */
+ 0x0418, 0x00, "ASIACELL", "ASIACELL" /* IRQ */
+ 0x0418, 0x05, "ASIACELL", "ASIACELL" /* IRQ */
+ 0x0418, 0x20, "zain IQ", "zain IQ" /* IRQ */
+ 0x0418, 0x30, "IRAQNA", "IRAQNA" /* IRQ */
+ 0x0418, 0x08, "SanaTel", "" /* IRQ */
+ 0x0418, 0x02, "IceCell", "" /* IRQ */
+ 0x0274, 0x07, "IS-IceCell", "IceCell" /* ISL */
+ 0x0274, 0x04, "Viking", "Viking" /* ISL */
+ 0x0274, 0x11, "Vodafone", "" /* ISL */
+ 0x0274, 0x02, "Vodafone", "Vodafone" /* ISL */
+ 0x0274, 0x03, "Siminn", "" /* ISL */
+ 0x0274, 0x01, "Siminn", "Siminn" /* ISL */
+ 0x0274, 0x08, "On-waves", "On-waves" /* ISL */
+ 0x0425, 0x02, "no name", "CH" /* ISR */
+ 0x0425, 0x05, "JAWWAL-PALESTINE", "JAWWAL" /* ISR */
+ 0x0425, 0x01, "IL ORANGE", "ORANGE" /* ISR */
+ 0x0425, 0x03, "IL Pelephone", "PCL" /* ISR */
+ 0x0222, 0x99, "3 ITA", "" /* ITA */
+ 0x0222, 0x01, "I TIM", "TIM" /* ITA */
+ 0x0222, 0x10, "vodafone IT", "voda IT" /* ITA */
+ 0x0222, 0x88, "I WIND", "" /* ITA */
+ 0x0338, 0x0180, "C&W", "" /* JAM */
+ 0x0338, 0x05, "DIGICEL", "DIGICEL" /* JAM */
+ 0x0234, 0x03, "Airtel-Vodafone", "ATL-VOD" /* JE */
+ 0x0901, 0x17, "Navitas", "" /* JEY */
+ 0x0416, 0x01, "zain JO", "zain JO" /* JOR */
+ 0x0416, 0x77, "Orange JO", "Orange JO" /* JOR */
+ 0x0416, 0x03, "UMNIAH", "UMNIAH" /* JOR */
+ 0x0440, 0x00, "JPN EMOBILE", "EMOBILE" /* JPN */
+ 0x0440, 0x10, "JP DOCOMO", "DOCOMO" /* JPN */
+ 0x0440, 0x20, "SoftBank", "SoftBank" /* JPN */
+ 0x0401, 0x02, "KZ KCELL", "KCELL" /* KAZ */
+ 0x0401, 0x01, "Beeline KZ", "Beeline" /* KAZ */
+ 0x0639, 0x03, "CELTEL", "CELTEL" /* KEN */
+ 0x0639, 0x02, "Safaricom", "SAF-COM" /* KEN */
+ 0x0437, 0x05, "MEGACOM", "MEGACOM" /* KGZ */
+ 0x0437, 0x01, "BITEL KGZ", "BITEL" /* KGZ */
+ 0x0456, 0x05, "STAR CELL", "STARCELL" /* KHM */
+ 0x0456, 0x18, "CAMSHIN", "" /* KHM */
+ 0x0456, 0x01, "MOBITEL - KHM", "MT-KHM" /* KHM */
+ 0x0456, 0x02, "hello", "TMIC" /* KHM */
+ 0x0545, 0x09, "KL-Frigate", "KI-FRIG" /* KIR */
+ 0x0356, 0x0110, "C&W", "" /* KNA */
+ 0x0450, 0x02, "KT", "KT" /* KOR */
+ 0x0450, 0x08, "KT", "KT" /* KOR */
+ 0x0450, 0x05, "KOR SK Telecom", "SKT" /* KOR */
+ 0x0420, 0x01, "STC", "STC" /* KSA */
+ 0x0419, 0x02, "Zain KW", "zain KW" /* KWT */
+ 0x0419, 0x03, "KT WATANIYA", "WATANIYA" /* KWT */
+ 0x0401, 0x77, "NEO", "" /* KZ */
+ 0x0457, 0x02, "ETL MOBILE NETWORK", "ETLMNW" /* LAO */
+ 0x0457, 0x03, "45703", "LATMOBIL" /* LAO */
+ 0x0457, 0x01, "no name", "LAO GSM" /* LAO */
+ 0x0457, 0x08, "TIGO LAO", "TIGO" /* LAO */
+ 0x0415, 0x01, "alfa", "alfa" /* LBN */
+ 0x0415, 0x03, "RL MTC Lebanon", "MTC LIBAN" /* LBN */
+ 0x0618, 0x02, "LIBERCEL", "" /* LBR */
+ 0x0618, 0x07, "Celcom GSM", "Celcom" /* LBR */
+ 0x0618, 0x01, "LBR Lonestar Cell", "LoneStar" /* LBR */
+ 0x0606, 0x01, "606 01", "" /* LBY */
+ 0x0606, 0x00, "Libyana", "L" /* LBY */
+ 0x0358, 0x0110, "C&W", "" /* LCA */
+ 0x0358, 0x0050, "DIGICEL", "" /* LCA */
+ 0x0295, 0x05, "FL1", "FL1" /* LIE */
+ 0x0295, 0x02, "Orange FL", "OFL" /* LIE */
+ 0x0295, 0x01, "SwisscomFL", "Swiss FL" /* LIE */
+ 0x0295, 0x77, "TANGO", "" /* LIE */
+ 0x0413, 0x08, "Hutch", "Hutch" /* LKA */
+ 0x0651, 0x02, "LS-ECONET-EZI-CEL", "EZI-CEL" /* LSO */
+ 0x0651, 0x01, "Vodacom Lesotho", "Vodacom-LS" /* LSO */
+ 0x0246, 0x01, "OMNITEL LT", "OMT" /* LTU */
+ 0x0246, 0x02, "LT BITE GSM", "BITE" /* LTU */
+ 0x0246, 0x03, "TELE2", "TELE2" /* LTU */
+ 0x0270, 0x01, "L LUXGSM", "LUXGSM" /* LUX */
+ 0x0270, 0x77, "TANGO", "" /* LUX */
+ 0x0270, 0x99, "L Orange-LU", "Orange" /* LUX */
+ 0x0247, 0x01, "LV LMT", "LMT" /* LV */
+ 0x0247, 0x05, "BITE LV", "BITE LV" /* LVA */
+ 0x0247, 0x02, "LV TELE2", "TELE2" /* LVA */
+ 0x0455, 0x01, "CTM", "CTM" /* MAC */
+ 0x0455, 0x04, "CTM", "CTM" /* MAC */
+ 0x0455, 0x03, "Hutchison MAC", "HT Macau" /* MAC */
+ 0x0455, 0x00, "SmarTone Macau", "SmarTone" /* MAC */
+ 0x0212, 0x10, "Monaco", "MONACO" /* MCO */
+ 0x0259, 0x04, "EVENTIS", "" /* MDA */
+ 0x0259, 0x02, "MD MOLDCELL", "MDCELL" /* MDA */
+ 0x0259, 0x01, "Orange MD", "Orange" /* MDA */
+ 0x0646, 0x01, "ZAIN MG", "ZAIN" /* MDG */
+ 0x0646, 0x02, "Orange MG", "OrangeMG" /* MDG */
+ 0x0646, 0x04, "TELMA", "TELMA" /* MDG */
+ 0x0472, 0x01, "MV DHIMOBILE", "D-MOBILE" /* MDV */
+ 0x0472, 0x02, "WATANIYA", "WATANIYA" /* MDV */
+ 0x0334, 0x03, "movistar", "movistar" /* MEX */
+ 0x0334, 0x20, "Mx Telcel GSM", "TELCEL" /* MEX */
+ 0x0294, 0x02, "MKD COSMOFON", "COSMOFON" /* MKD */
+ 0x0294, 0x01, "T-Mobile MK", "TMO MK" /* MKD */
+ 0x0610, 0x01, "MALITEL ML", "MALITEL" /* MLI */
+ 0x0610, 0x02, "ORANGE ML", "OML" /* MLI */
+ 0x0278, 0x21, "gomobile", "" /* MLT */
+ 0x0278, 0x01, "vodafone MT", "voda MT" /* MLT */
+ 0x0414, 0x01, "MM 900", "MPTGSM" /* MMR */
+ 0x0220, 0x04, "T-Mobile CG", "TMO CG" /* MNE */
+ 0x0428, 0x99, "MobiCom", "" /* MNG */
+ 0x0428, 0x88, "UNTLMN", "" /* MNG */
+ 0x0604, 0x01, "MOR IAM", "IAM" /* MOR */
+ 0x0604, 0x00, "MOR MEDITEL", "MEDITEL" /* MOR */
+ 0x0643, 0x01, "MOZ - mCel", "mCel" /* MOZ */
+ 0x0643, 0x04, "VodaCom-MZ", "VodaCom" /* MOZ */
+ 0x0609, 0x01, "MATTEL", "" /* MRT */
+ 0x0617, 0x01, "CELLPLUS-MRU", "CELL +" /* MRU */
+ 0x0617, 0x10, "EMTEL-MRU", "EMTEL" /* MRU */
+ 0x0354, 0x0860, "C&W", "" /* MS */
+ 0x0650, 0x10, "CELTEL MW", "CELTEL" /* MWI */
+ 0x0650, 0x01, "TNM", "TNM" /* MWI */
+ 0x0502, 0x19, "CELCOM", "" /* MYS */
+ 0x0502, 0x13, "CELCOM", "" /* MYS */
+ 0x0502, 0x16, "DiGi", "" /* MYS */
+ 0x0502, 0x12, "MY MAXIS", "" /* MYS */
+ 0x0502, 0x00, "TIME3G", "" /* MYS */
+ 0x0502, 0x01, "TIME3G", "" /* MYS */
+ 0x0649, 0x01, "MTC NAMIBIA", "MTCNAM" /* NAM */
+ 0x0649, 0x03, "NAM Cell One", "Cell One" /* NAM */
+ 0x0546, 0x01, "NCL MOBILIS", "MOBNCL" /* NCL */
+ 0x0614, 0x02, "CELTEL ", "CELTEL" /* NER */
+ 0x0614, 0x01, "SAHELCOM", "" /* NER */
+ 0x0614, 0x03, "TELECEL", "" /* NER */
+ 0x0614, 0x04, "Orange", "Orange NE" /* NER */
+ 0x0621, 0x20, "Zain NG", "Zain NG" /* NGA */
+ 0x0621, 0x50, "Glo NG", "glo" /* NGA */
+ 0x0621, 0x30, "MTN - NG", "MTN-NG" /* NGA */
+ 0x0621, 0x40, "Mtel", "" /* NGA */
+ 0x0710, 0x73, "ClaroNIC", "" /* NIC */
+ 0x0710, 0x21, "ClaroNIC", "" /* NIC */
+ 0x0710, 0x0300, "movistar", "" /* NIC */
+ 0x0204, 0x08, "NL KPN ", "NL KPN" /* NLD */
+ 0x0204, 0x20, "Orange NL", "" /* NLD */
+ 0x0204, 0x16, "T-Mobile NL", "TMO NL" /* NLD */
+ 0x0204, 0x12, "NL Tlfrt", "" /* NLD */
+ 0x0204, 0x04, "vodafone NL", "voda NL" /* NLD */
+ 0x0242, 0x05, "Network Norway N", "NetworkN" /* NOR */
+ 0x0242, 0x02, "N NetCom", "NetCom" /* NOR */
+ 0x0242, 0x01, "N Telenor", "TELENOR" /* NOR */
+ 0x0242, 0x03, "T3", "" /* NOR */
+ 0x0530, 0x01, "vodafone NZ", "voda NZ" /* NZL */
+ 0x0422, 0x02, "OMAN MOBILE", "OMAN" /* OMN */
+ 0x0422, 0x03, "nawras", "nawras" /* OMN */
+ 0x0410, 0x01, "Mobilink", "Mobilink" /* PAK */
+ 0x0410, 0x03, "PK-UFONE", "UFONE" /* PAK */
+ 0x0410, 0x04, "ZONG", "ZONG" /* PAK */
+ 0x0410, 0x06, "Telenor PK", "TELENOR" /* PAK */
+ 0x0410, 0x07, "WaridTel", "WaridTel" /* PAK */
+ 0x0714, 0x01, "+Movil - C&W PAN", "PANCW" /* PAN */
+ 0x0714, 0x20, "movistar ?GSM 850 ", "movistar" /* PAN */
+ 0x0716, 0x10, "CLARO PER", "ClaroPER" /* PER */
+ 0x0716, 0x06, "MOVISTAR", "MOVISTAR" /* PER */
+ 0x0515, 0x05, "PH Sun Cellular", "SUN" /* PHL */
+ 0x0515, 0x02, "Globe Telecom-PH", "GLOBE" /* PHL */
+ 0x0515, 0x01, "ISLACOM", "ISLACOM" /* PHL */
+ 0x0515, 0x03, "SMART", "SMART" /* PHL */
+ 0x0552, 0x80, "PLWPMC", "PLWPMC" /* PLW */
+ 0x0537, 0x30, "Digicel PNG", "Digicel" /* PNG */
+ 0x0537, 0x01, "PNGBMobile", "BMobile" /* PNG */
+ 0x0260, 0x01, "Plus", "PLUS" /* POL */
+ 0x0260, 0x02, "Era", "Era" /* POL */
+ 0x0260, 0x03, "Orange PL", "Orange" /* POL */
+ 0x0467, 0x03, "SUNNET", "" /* PRK */
+ 0x0268, 0x03, "P OPTIMUS", "OPTIM" /* PRT */
+ 0x0268, 0x06, "P TMN", "TMN" /* PRT */
+ 0x0268, 0x01, "vodafone P", "voda P" /* PRT */
+ 0x0744, 0x02, "CLARO PY", "CLARO PY" /* PRY */
+ 0x0744, 0x01, "HOLA PARAGUAY S.A.", "HPGYSA" /* PRY */
+ 0x0744, 0x05, "PY Personal", "Personal" /* PRY */
+ 0x0744, 0x04, "Telecel GSM", "Telecel" /* PRY */
+ 0x0427, 0x01, "Qat - Qtel", "Qtel" /* QAT */
+ 0x0647, 0x00, "Orange re", "Orange " /* REU */
+ 0x0647, 0x02, "ONLY", "OUTREMER" /* REU */
+ 0x0647, 0x10, "SFR REUNION", "SFR RU" /* REU */
+ 0x0226, 0x03, "RO COSMOTE", "COSMOTE" /* ROU */
+ 0x0226, 0x10, "RO ORANGE", "ORANGE" /* ROU */
+ 0x0226, 0x01, "RO Vodafone RO", "VF-RO" /* ROU */
+ 0x0250, 0x12, "BWC", "" /* RUS */
+ 0x0250, 0x20, "TELE2", "TELE2" /* RUS */
+ 0x0250, 0x19, "INDIGO", "" /* RUS */
+ 0x0250, 0x10, "RUS DTC", "DTC" /* RUS */
+ 0x0250, 0x28, "Beeline", "" /* RUS */
+ 0x0250, 0x17, "Utel", "" /* RUS */
+ 0x0250, 0x39, "Utel", "" /* RUS */
+ 0x0250, 0x13, "KUGSM", "" /* RUS */
+ 0x0250, 0x35, "MOTIV", "" /* RUS */
+ 0x0250, 0x02, "MegaFon RUS", "MegaFon" /* RUS */
+ 0x0250, 0x01, "MTS-RUS", "MTS" /* RUS */
+ 0x0250, 0x16, "NTC", "" /* RUS */
+ 0x0250, 0x99, "Beeline", "" /* RUS */
+ 0x0250, 0x92, "Primtel", "" /* RUS */
+ 0x0250, 0x04, "SIBCHALLENGE RUS", "RUS_SCN" /* RUS */
+ 0x0250, 0x05, "ETK RUS", "ETK" /* RUS */
+ 0x0250, 0x07, "RUS BMT", "BMT" /* RUS */
+ 0x0250, 0x15, "SMARTS", "" /* RUS */
+ 0x0635, 0x10, "R-CELL", "RCELL" /* RWA */
+ 0x0420, 0x03, "mobily-KSA", "mobily" /* SAU */
+ 0x0220, 0x02, "ProMonte", "ProMonte" /* SCG */
+ 0x0220, 0x03, "YUG 03", "SCGTS" /* SCG */
+ 0x0634, 0x01, "MobiTel SDN", "MobiTel" /* SDN */
+ 0x0634, 0x02, "MTN", "MTN" /* SDN */
+ 0x0608, 0x02, "SN-SENTEL SG", "SENTEL" /* SEN */
+ 0x0608, 0x01, "SN ALIZE", "ALIZE" /* SEN */
+ 0x0633, 0x10, "SEZ AIRTEL", "AIRTEL" /* SEZ */
+ 0x0525, 0x03, "SGP-M1-3GSM", "M1-3GSM" /* SGP */
+ 0x0525, 0x02, "SingTel-G18", "SingTel" /* SGP */
+ 0x0525, 0x01, "SingTel", "SingTel" /* SGP */
+ 0x0525, 0x05, "STARHUB", "STARHUB" /* SGP */
+ 0x0540, 0x01, "SI BREEZE", "BREEZE" /* SLB */
+ 0x0619, 0x01, "CELTEL SL", "CELTEL" /* SLE */
+ 0x0619, 0x02, "MILLICOM SL", "MILLICOM" /* SLE */
+ 0x0706, 0x01, "CLARO SLV", "ClaroSLV" /* SLV */
+ 0x0706, 0x02, "Digicel", "DIGICEL" /* SLV */
+ 0x0706, 0x04, "movistar", "movistar" /* SLV */
+ 0x0706, 0x03, "TELEMOVIL", "TM" /* SLV */
+ 0x0292, 0x66, "SMT", "" /* SMR */
+ 0x0637, 0x30, "Som Golis", "Golis" /* SOM */
+ 0x0637, 0x04, "SOMAFONE", "SOMAFONE" /* SOM */
+ 0x0637, 0x82, "Telsom", "" /* SOM */
+ 0x0637, 0x01, "SO Telesom", "Tele" /* SOM */
+ 0x0308, 0x02, "PROSOD", "" /* SPM */
+ 0x0308, 0x01, "SPM AMERIS", "AMERIS" /* SPM */
+ 0x0220, 0x01, "Telenor SRB", "Telenor" /* SRB */
+ 0x0220, 0x05, "Vip SRB", "Vip SRB" /* SRB */
+ 0x0413, 0x02, "SRI DIALOG", "DIALOG" /* SRI */
+ 0x0413, 0x01, "Mobitel", "MOBITEL" /* SRI */
+ 0x0413, 0x03, "SRI - Tigo", "Tigo" /* SRI */
+ 0x0626, 0x01, "STP CSTmovel", "CSTmovel" /* STP */
+ 0x0746, 0x03, "DIGICEL", "DIGICEL" /* SUR */
+ 0x0746, 0x02, "SR.TELESUR.GSM", "TeleG" /* SUR */
+ 0x0231, 0x01, "Orange SK", "Orange" /* SVK */
+ 0x0231, 0x02, "T-Mobile SK", "TMO SK" /* SVK */
+ 0x0231, 0x06, "O2 - SK", "O2 - SK" /* SVK */
+ 0x0293, 0x41, "MOBITEL", "" /* SVN */
+ 0x0293, 0x40, "Si.mobil", "Si.mobil" /* SVN */
+ 0x0293, 0x64, "T-2", "" /* SVN */
+ 0x0293, 0x70, "SI TUSMOBIL", "TUS" /* SVN */
+ 0x0240, 0x02, "3 SE", "3 SE" /* SWE */
+ 0x0240, 0x04, "SWEDEN", "SWE" /* SWE */
+ 0x0240, 0x10, "SpringMobil SE", "Spring" /* SWE */
+ 0x0240, 0x05, "Sweden 3G", "Sweden3G" /* SWE */
+ 0x0240, 0x08, "Telenor SE", "TelenorS" /* SWE */
+ 0x0240, 0x01, "TELIA S", "TELIA" /* SWE */
+ 0x0240, 0x98, "ST-E_S98", "S98"
+ 0x0240, 0x99, "ST-E_S99", "S99"
+ 0x0653, 0x10, "Swazi-MTN", "SwaziMTN" /* SWZ */
+ 0x0653, 0x01, "C&W SEY", "" /* SYC */
+ 0x0417, 0x02, "MTN", "MTN" /* SYR */
+ 0x0417, 0x09, "MOBILE", "" /* SYR */
+ 0x0417, 0x01, "SYRIATEL", "SYRIATEL" /* SYR */
+ 0x0376, 0x0350, "Is.Com TCI", "" /* TCA */
+ 0x0622, 0x01, "CELTEL TCD", "CELTEL" /* TCD */
+ 0x0615, 0x03, "TELECEL-TOGO", "TELECEL" /* TGO */
+ 0x0615, 0x01, "TG-TOGO CELL", "TGCELL" /* TGO */
+ 0x0520, 0x15, "ACT-1900", "" /* THA */
+ 0x0520, 0x01, "TH GSM", "TH GSM" /* THA */
+ 0x0520, 0x23, "GSM 1800", "" /* THA */
+ 0x0520, 0x18, "DTAC", "" /* THA */
+ 0x0520, 0x99, "TRUE", "" /* THA */
+ 0x0436, 0x04, "Babilon-M", "Babilon" /* TJK */
+ 0x0436, 0x02, "INDIGO-T", "INDIGO-T" /* TJK */
+ 0x0436, 0x12, "INDIGO-T", "" /* TJK */
+ 0x0436, 0x01, "Somoncom", "Somoncom" /* TJK */
+ 0x0436, 0x05, "BEELINE TJ", "BEELINE" /* TJK */
+ 0x0436, 0x03, "TJK MLT", "MLT" /* TJK */
+ 0x0438, 0x01, "MTS TM", "MTS TM" /* TKM */
+ 0x0438, 0x02, "TM CELL", "" /* TKM */
+ 0x0514, 0x02, "TLS-TT", "TT" /* TLS */
+ 0x0539, 0x01, "U-CALL", "U-CALL" /* TON */
+ 0x0374, 0x12, "TSTT", "" /* TTO */
+ 0x0605, 0x03, "TUNISIANA", "TUNSIANA" /* TUN */
+ 0x0605, 0x02, "TUNISIE TELECOM", "TUNTEL" /* TUN */
+ 0x0605, 0x01, "Orange", "Orange" /* TUN */
+ 0x0286, 0x03, "AVEA", "AVEA " /* TUR */
+ 0x0286, 0x01, "TR TURKCELL", "TCELL" /* TUR */
+ 0x0286, 0x02, "VODAFONE TR", "VF TR" /* TUR */
+ 0x0466, 0x92, "Chunghwa", "" /* TWN */
+ 0x0466, 0x01, "Far EasTone", "FET" /* TWN */
+ 0x0466, 0x88, "KGT", "" /* TWN */
+ 0x0466, 0x93, "TW MOB", "" /* TWN */
+ 0x0466, 0x97, "TWM", "" /* TWN */
+ 0x0466, 0x99, "TransAsi", "" /* TWN */
+ 0x0466, 0x89, "VIBO", "" /* TWN */
+ 0x0640, 0x05, "celtel", "celtel" /* TZA */
+ 0x0640, 0x02, "TIGO - TZ", "TIGO" /* TZA */
+ 0x0640, 0x04, "VodaCom", "VodaCom" /* TZA */
+ 0x0640, 0x03, "ZANTEL-TZ", "ZANTEL" /* TZA */
+ 0x0641, 0x11, "UTL", "" /* UG */
+ 0x0641, 0x01, "UG CelTel", "CELTEL" /* UGA */
+ 0x0641, 0x10, "MTN-UGANDA", "MTN-UG" /* UGA */
+ 0x0641, 0x22, "WaridTel", "" /* UGA */
+ 0x0641, 0x14, "ORANGE UGANDA", "OUL" /* UGA */
+ 0x0255, 0x06, "life:)", "life:)" /* UKR */
+ 0x0255, 0x05, "UA-GT", "GT" /* UKR */
+ 0x0255, 0x03, "UA-KYIVSTAR", "UA-KS" /* UKR */
+ 0x0255, 0x01, "MTS UKR", "MTS UKR" /* UKR */
+ 0x0255, 0x02, "Beeline UA", "Beeline" /* UKR */
+ 0x0748, 0x07, "MOVISTAR", "Movistar" /* URY */
+ 0x0748, 0x10, "CLARO URUGUAY", "CLARO UY" /* URY */
+ 0x0310, 0x0880, "ACSIAC", ""
+ 0x0310, 0x0640, "ARDGMC", ""
+ 0x0310, 0x0190, "D-HARBOR", ""
+ 0x0310, 0x0590, "ROAMING", ""
+ 0x0310, 0x0710, "ASTAC", ""
+ 0x0310, 0x0170, "AT&T", "AT&T"
+ 0x0310, 0x0410, "AT&T", "AT&T"
+ 0x0310, 0x0150, "AT&T", "AT&T"
+ 0x0310, 0x0030, "CENT USA", ""
+ 0x0310, 0x0630, "AMERLINK", ""
+ 0x0310, 0x0040, "CONCHO", ""
+ 0x0310, 0x0740, "TLXT", ""
+ 0x0310, 0x0080, "Corr", ""
+ 0x0310, 0x0700, "BIGFOOT", ""
+ 0x0310, 0x0560, "Cell One", ""
+ 0x0310, 0x0100, "PLATEAU", ""
+ 0x0310, 0x0340, "WestLink", ""
+ 0x0310, 0x0770, "IWS", ""
+ 0x0310, 0x0032, "IT&E", ""
+ 0x0310, 0x0650, "Jasper", ""
+ 0x0310, 0x0870, "PACE", ""
+ 0x0310, 0x0530, "W V W", ""
+ 0x0310, 0x0690, "IMMIX", ""
+ 0x0310, 0x0570, "Chinook", ""
+ 0x0310, 0x0450, "NECCI", ""
+ 0x0310, 0x0790, "Pinpoint", ""
+ 0x0310, 0x0320, "Cell", ""
+ 0x0310, 0x0910, "FCSI", ""
+ 0x0310, 0x0260, "T-Mobile", "TMO"
+ 0x0310, 0x0270, "T-Mobile", "TMO"
+ 0x0310, 0x0250, "T-Mobile", "TMO"
+ 0x0310, 0x0200, "T-Mobile", "TMO"
+ 0x0310, 0x31, "T-Mobile", "TMO"
+ 0x0310, 0x0220, "T-Mobile", "TMO"
+ 0x0310, 0x0160, "T-Mobile", "TMO"
+ 0x0310, 0x0660, "T-Mobile", "TMO"
+ 0x0310, 0x0240, "T-Mobile", "TMO"
+ 0x0310, 0x0230, "T-Mobile", "TMO"
+ 0x0310, 0x0210, "T-Mobile", "TMO"
+ 0x0310, 0x26, "T-Mobile", "TMO"
+ 0x0310, 0x0900, "TXCELL", ""
+ 0x0310, 0x46, "SIMMETRY", ""
+ 0x0310, 0x0390, "CELL 1 ET", ""
+ 0x0310, 0x0020, "UnionTel", ""
+ 0x0310, 0x0400, "iCAN_GSM", ""
+ 0x0310, 0x0890, "UNICEL", ""
+ 0x0310, 0x0950, "XIT", ""
+ 0x0311, 0x0130, "C1AMARIL", ""
+ 0x0311, 0x0190, "C1ECI", ""
+ 0x0311, 0x0040, "Commnet", ""
+ 0x0311, 0x0240, "CWCI", ""
+ 0x0311, 0x0070, "EASTER", ""
+ 0x0311, 0x0210, "FARMERS", ""
+ 0x0311, 0x0370, "GCI", ""
+ 0x0311, 0x0110, "HPW", ""
+ 0x0311, 0x0030, "Indigo", ""
+ 0x0311, 0x0310, "LamarCel", ""
+ 0x0311, 0x0090, "SXLP", ""
+ 0x0311, 0x00, "USA Mid-Tex Cellular, Ltd", "Mid-Tex"
+ 0x0311, 0x0170, "PetroCom", ""
+ 0x0311, 0x0080, "PINECell", ""
+ 0x0311, 0x0360, "STELERA", ""
+ 0x0311, 0x0250, "iCAN_GSM", ""
+ 0x0311, 0x01, "Wilkes USA", "WILKES"
+ 0x0311, 0x05, "Wilkes USA", "WILKES"
+ 0x0434, 0x05, "UZB Ucell", "Ucell"
+ 0x0434, 0x07, "UZB MTS", "UZB MTS"
+ 0x0434, 0x04, "Beeline UZ", "Beeline"
+ 0x0360, 0x0110, "C&W", ""
+ 0x0360, 0x0070, "DIGICEL", ""
+ 0x0734, 0x01, "DIGITEL GSM", "DIGITEL "
+ 0x0734, 0x02, "DIGITEL GSM", "DIGITEL "
+ 0x0734, 0x03, "DIGITEL GSM", "DIGITEL "
+ 0x0734, 0x04, "movistar", "movistar"
+ 0x0348, 0x0170, "C&W", ""
+ 0x0348, 0x0570, "CCTBVI", ""
+ 0x0452, 0x04, "VNM and VIETTEL", "VIETTEL"
+ 0x0452, 0x02, "VN VINAPHONE", "GPC"
+ 0x0452, 0x01, "VN MOBIFONE", "VMS"
+ 0x0541, 0x01, "VUT SMILE", "SMILE"
+ 0x0549, 0x27, "GO", ""
+ 0x0421, 0x02, "MTN", "MTN"
+ 0x0421, 0x01, "SabaFon", "SABAFON"
+ 0x0655, 0x07, "Cell C", "Cell C"
+ 0x0655, 0x10, "MTN-SA", "MTN"
+ 0x0655, 0x01, "VodaCom-SA", "VODA"
+ 0x0645, 0x01, "ZM CELTEL", "CELTEL"
+ 0x0645, 0x02, "MTN ZM", "MTN ZM"
+ 0x0648, 0x04, "ZW ECONET", "ECONET"
+ 0x0648, 0x01, "ZW NET*ONE", "NETONE"
+ 0x0648, 0x03, "TELECEL ZW", "TELECEL"
+ 0x0311, 0x0260, "SLO Cellular", ""
+ 0x0466, 0x68, "ACeS", ""
+ 0x0510, 0x00, "ACeS", "ACeS"
+ 0x0515, 0x11, "ACeS", ""
+ 0x0520, 0x20, "ACeS", "ACeS"
+ 0x0906, 0x10, "MAURITEL", ""
+ 0x0901, 0x14, "AeroMob", ""
+ 0x0901, 0x12, "MCP", ""
+ 0x0901, 0x21, "Seanet", ""
+ 0x0901, 0x05, "Thuraya", "Thuraya"
+ 0x0901, 0x06, "Thuraya", "Thuraya"
+
