@@ -44,8 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9500/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/i9500/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/i9500/proprietary/vendor/lib/hw/gralloc.exynos5.so:system/vendor/lib/hw/gralloc.exynos5.so \
-    vendor/samsung/i9500/proprietary/bin/lpmkey:system/bin/lpmkey \
-    vendor/samsung/i9500/proprietary/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/i9500/proprietary/bin/lpm:system/bin/lpm \
     vendor/samsung/i9500/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     vendor/samsung/i9500/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
     vendor/samsung/i9500/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
