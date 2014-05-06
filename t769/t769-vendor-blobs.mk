@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/t769/proprietary/lib/librpc.so:system/lib/librpc.so \
 	vendor/samsung/t769/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
 	vendor/samsung/t769/proprietary/lib/libakm.so:system/lib/libakm.so \
-	vendor/samsung/t769/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
+	vendor/samsung/t769/proprietary/lib/hw/camera.vendor.msm8660.so:system/lib/hw/camera.vendor.msm8660.so \
 	vendor/samsung/t769/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/t769/proprietary/lib/libgemini.so:system/lib/libgemini.so \
 	vendor/samsung/t769/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
