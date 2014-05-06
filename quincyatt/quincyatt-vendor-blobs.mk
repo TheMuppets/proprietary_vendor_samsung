@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/quincyatt/proprietary/lib/librpc.so:system/lib/librpc.so \
 	vendor/samsung/quincyatt/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
 	vendor/samsung/quincyatt/proprietary/lib/libakm.so:system/lib/libakm.so \
-	vendor/samsung/quincyatt/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
+	vendor/samsung/quincyatt/proprietary/lib/hw/camera.vendor.msm8660.so:system/lib/hw/camera.vendor.msm8660.so \
 	vendor/samsung/quincyatt/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/quincyatt/proprietary/lib/libgemini.so:system/lib/libgemini.so \
 	vendor/samsung/quincyatt/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
