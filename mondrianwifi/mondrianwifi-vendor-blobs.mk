@@ -102,7 +102,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 	vendor/samsung/mondrianwifi/proprietary/etc/imx134_module_info.xml:system/etc/imx134_module_info.xml \
 	vendor/samsung/mondrianwifi/proprietary/etc/imx135_module_info.xml:system/etc/imx135_module_info.xml \
-	vendor/samsung/mondrianwifi/proprietary/lib/hw/camera.msm8974.so:system/lib/hw/camera.msm8974.so \
+	vendor/samsung/mondrianwifi/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libTsAe.so:system/lib/libTsAe.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libTsAf.so:system/lib/libTsAf.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libTs_J_Accm.so:system/lib/libTs_J_Accm.so \
