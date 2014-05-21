@@ -27,8 +27,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334_semcosh.hcd:system/bin/bcm4334_semcosh.hcd \
     $(LOCAL_PATH)/proprietary/system/bin/gps.cer:system/bin/gps.cer \
-    $(LOCAL_PATH)/proprietary/system/bin/lpmkey:system/bin/lpmkey \
-    $(LOCAL_PATH)/proprietary/system/bin/playlpm:system/bin/playlpm
+    $(LOCAL_PATH)/proprietary/system/bin/lpm:system/bin/lpm
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
