@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/libaudiosa.so:system/lib/libaudiosa.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcec.so:system/lib/libcec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libddc.so:system/lib/libddc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libedid.so:system/lib/libedid.so \
@@ -124,6 +125,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblvverx.so:system/vendor/lib/liblvverx.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblvvetx.so:system/vendor/lib/liblvvetx.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
