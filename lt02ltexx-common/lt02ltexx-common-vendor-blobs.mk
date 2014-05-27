@@ -105,7 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt02ltexx-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/lt02ltexx-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/lt02ltexx-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/samsung/lt02ltexx-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/lt02ltexx-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/lt02ltexx-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
     vendor/samsung/lt02ltexx-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
