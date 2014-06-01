@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jflte/proprietary/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
         vendor/samsung/jflte/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/jflte/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-        vendor/samsung/jflte/proprietary/lib/libCB.so:system/lib/libCB.so \
         vendor/samsung/jflte/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
         vendor/samsung/jflte/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/jflte/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
@@ -38,8 +37,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jflte/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
+        vendor/samsung/jflte/proprietary/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+        vendor/samsung/jflte/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
@@ -48,7 +49,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jflte/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-        vendor/samsung/jflte/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
+        vendor/samsung/jflte/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
         vendor/samsung/jflte/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
         vendor/samsung/jflte/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
         vendor/samsung/jflte/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \

@@ -122,7 +122,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hlte/proprietary/etc/C13QS_imx135_module_info.xml:system/etc/C13QS_imx135_module_info.xml \
 	vendor/samsung/hlte/proprietary/etc/D13QL_s5k3l2xx_module_info.xml:system/etc/D13QL_s5k3l2xx_module_info.xml \
 	vendor/samsung/hlte/proprietary/etc/D13QS_imx135_module_info.xml:system/etc/D13QS_imx135_module_info.xml \
-	vendor/samsung/hlte/proprietary/lib/hw/camera.msm8974.so:system/lib/hw/camera.msm8974.so \
+	vendor/samsung/hlte/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
 	vendor/samsung/hlte/proprietary/lib/libTsAe.so:system/lib/libTsAe.so \
 	vendor/samsung/hlte/proprietary/lib/libTsAf.so:system/lib/libTsAf.so \
 	vendor/samsung/hlte/proprietary/lib/libTs_J_Accm.so:system/lib/libTs_J_Accm.so \
