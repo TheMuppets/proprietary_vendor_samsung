@@ -96,6 +96,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_gumi_imx135.bin:system/vendor/firmware/setfile_gumi_imx135.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_sec_imx135.bin:system/vendor/firmware/setfile_sec_imx135.bin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin:system/vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/02010000080300030000000000000000.tlbin:system/vendor/firmware/mcRegistry/02010000080300030000000000000000.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin:system/vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/07060000000000000000000000000000.tlbin:system/vendor/firmware/mcRegistry/07060000000000000000000000000000.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000003.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000003.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000004.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000004.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000005.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000005.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000007.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000007.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000008.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000008.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000009.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000009.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff00000000000000000000000a.tlbin:system/vendor/firmware/mcRegistry/ffffffff00000000000000000000000a.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff00000000000000000000000b.tlbin:system/vendor/firmware/mcRegistry/ffffffff00000000000000000000000b.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff00000000000000000000000f.tlbin:system/vendor/firmware/mcRegistry/ffffffff00000000000000000000000f.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffff000000000000000000000010.tlbin:system/vendor/firmware/mcRegistry/ffffffff000000000000000000000010.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/vendor/firmware/mcRegistry/ffffffffd00000000000000000000004.tlbin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/vendor/firmware/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
     vendor/samsung/i9500/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/i9500/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/i9500/proprietary/bin/cbd:system/bin/cbd \
