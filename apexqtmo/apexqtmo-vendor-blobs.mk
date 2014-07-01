@@ -38,9 +38,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/apexqtmo/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
-	vendor/samsung/apexqtmo/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
 	vendor/samsung/apexqtmo/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
+	vendor/samsung/apexqtmo/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
 	vendor/samsung/apexqtmo/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
+	vendor/samsung/apexqtmo/proprietary/lib/libbtnv.so:system/lib/libbtnv.so \
 	vendor/samsung/apexqtmo/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
 	vendor/samsung/apexqtmo/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
 	vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
