@@ -113,6 +113,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_GE.bin:system/cameradata/SlimISP_GE.bin \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_GH.bin:system/cameradata/SlimISP_GH.bin \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_JH.bin:system/cameradata/SlimISP_JH.bin \
+        vendor/samsung/d2lte/proprietary/cameradata/SlimISP_PH.bin:system/cameradata/SlimISP_PH.bin \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_WH.bin:system/cameradata/SlimISP_WH.bin \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_ZC.bin:system/cameradata/SlimISP_ZC.bin \
         vendor/samsung/d2lte/proprietary/cameradata/SlimISP_ZD.bin:system/cameradata/SlimISP_ZD.bin \
