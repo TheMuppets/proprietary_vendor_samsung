@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libexifa.so:system/lib/libexifa.so \
     $(LOCAL_PATH)/proprietary/system/lib/libjpega.so:system/lib/libjpega.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmedia_native.so:system/lib/libmedia_native.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmedia_jni.so:system/lib/libmedia_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
     $(LOCAL_PATH)/proprietary/system/lib/libseccameracore.so:system/lib/libseccameracore.so \
     $(LOCAL_PATH)/proprietary/system/lib/libarccamera.so:system/lib/libarccamera.so \
