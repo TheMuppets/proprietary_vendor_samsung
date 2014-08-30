@@ -77,33 +77,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8960-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/samsung/msm8960-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     vendor/samsung/msm8960-common/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libidl.so:system/lib/libidl.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/samsung/msm8960-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/samsung/msm8960-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     vendor/samsung/msm8960-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/samsung/msm8960-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/msm8960-common/proprietary/bin/radish:system/bin/radish \
-    vendor/samsung/msm8960-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
-    vendor/samsung/msm8960-common/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/msm8960-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/msm8960-common/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/msm8960-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-    vendor/samsung/msm8960-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/msm8960-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/msm8960-common/proprietary/lib/libakmd.so:system/lib/libakmd.so \
     vendor/samsung/msm8960-common/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
     vendor/samsung/msm8960-common/proprietary/lib/libmllite.so:system/lib/libmllite.so \
