@@ -16,8 +16,9 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/samsung/serrano-common/proprietary/lib/libbtnv.so:system/lib/libbtnv.so \
+    vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/serrano-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -77,8 +78,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/serrano-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/serrano-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
-    vendor/samsung/serrano-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
+    vendor/samsung/serrano-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/serrano-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/samsung/serrano-common/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/serrano-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/serrano-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -123,15 +128,27 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     vendor/samsung/serrano-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/serrano-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/serrano-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
     vendor/samsung/serrano-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
+    vendor/samsung/serrano-common/proprietary/bin/insthk:system/bin/insthk \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/samsung/serrano-common/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
+    vendor/samsung/serrano-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/samsung/serrano-common/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
+    vendor/samsung/serrano-common/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/samsung/serrano-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/serrano-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd

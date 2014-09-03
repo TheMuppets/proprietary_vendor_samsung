@@ -26,11 +26,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/mfgloader:system/bin/mfgloader \
     $(LOCAL_PATH)/proprietary/system/bin/pppd_runner:system/bin/pppd_runner \
     $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
+    $(LOCAL_PATH)/proprietary/system/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
+    $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so
 
 #    $(LOCAL_PATH)/proprietary/system/lib/libSECmWiMAXcAPI.so:system/lib/libSECmWiMAXcAPI.so \
 #    $(LOCAL_PATH)/proprietary/system/etc/wimax_boot.bin:system/etc/wimax_boot.bin \
