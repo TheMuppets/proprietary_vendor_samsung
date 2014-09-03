@@ -1,5 +1,0 @@
-#!/system/bin/sh
-setprop net.dns1 66.174.92.213
-setprop net.dns2 66.174.92.214
-/system/bin/pppd /dev/ttyCDMA0 115200 user USCC nodetach usepeerdns defaultroute
-
