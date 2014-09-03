@@ -16,8 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
-    vendor/samsung/wilcoxltexx/proprietary/vendor/firmware/libpn547_fw_pku.so:system/vendor/firmware/libpn547_fw_pku.so \
-    vendor/samsung/wilcoxltexx/proprietary/vendor/firmware/libpn547_fw_platform.so:system/vendor/firmware/libpn547_fw_platform.so \
     vendor/samsung/wilcoxltexx/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/samsung/wilcoxltexx/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/wilcoxltexx/proprietary/lib/libbtnv.so:system/lib/libbtnv.so \
