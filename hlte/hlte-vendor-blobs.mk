@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hlte/proprietary/bin/rfs_access:system/bin/rfs_access \
 	vendor/samsung/hlte/proprietary/bin/thermald:system/bin/thermald \
 	vendor/samsung/hlte/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+	vendor/samsung/hlte/proprietary/bin/sensorhubservice:system/bin/sensorhubservice \
 	vendor/samsung/hlte/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
 	vendor/samsung/hlte/proprietary/vendor/firmware/bcm4339.hcd:system/vendor/firmware/bcm4339.hcd \
 	vendor/samsung/hlte/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
@@ -103,6 +104,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hlte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/hlte/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/hlte/proprietary/lib/hw/sensorhubs.msm8974.so:system/lib/hw/sensorhubs.msm8974.so \
+	vendor/samsung/hlte/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
+	vendor/samsung/hlte/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
+	vendor/samsung/hlte/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
 	vendor/samsung/hlte/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
 	vendor/samsung/hlte/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
