@@ -29,15 +29,40 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_smart_stay.so:system/lib/libchromatix_s5k6a3yx_smart_stay.so \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_vt_hd.so:system/lib/libchromatix_s5k6a3yx_vt_hd.so \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_vt.so:system/lib/libchromatix_s5k6a3yx_vt.so \
-    vendor/samsung/d2lte/proprietary/bin/sec-ril:system/bin/sec-ril \
-    vendor/samsung/d2lte/proprietary/blobs/gsm/lib/libril-qc-qmi-1.so:system/blobs/gsm/lib/libril-qc-qmi-1.so \
+    vendor/samsung/d2lte/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
+    vendor/samsung/d2lte/proprietary/bin/efsks:system/bin/efsks \
+    vendor/samsung/d2lte/proprietary/bin/ks:system/bin/ks \
+    vendor/samsung/d2lte/proprietary/bin/qcks:system/bin/qcks \
+    vendor/samsung/d2lte/proprietary/bin/qmiproxy:system/bin/qmiproxy \
+    vendor/samsung/d2lte/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/samsung/d2lte/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/d2lte/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/d2lte/proprietary/blobs/gsm/lib/libril.so:system/blobs/gsm/lib/libril.so \
-    vendor/samsung/d2lte/proprietary/blobs/r530/lib/libril-qc-qmi-1.so:system/blobs/r530/lib/libril-qc-qmi-1.so \
+    vendor/samsung/d2lte/proprietary/blobs/gsm/lib/libsec-ril.so:system/blobs/gsm/lib/libsec-ril.so \
     vendor/samsung/d2lte/proprietary/blobs/r530/lib/libril.so:system/blobs/r530/lib/libril.so \
-    vendor/samsung/d2lte/proprietary/blobs/spr/lib/libril-qc-qmi-1.so:system/blobs/spr/lib/libril-qc-qmi-1.so \
+    vendor/samsung/d2lte/proprietary/blobs/r530/lib/libsec-ril.so:system/blobs/r530/lib/libsec-ril.so \
     vendor/samsung/d2lte/proprietary/blobs/spr/lib/libril.so:system/blobs/spr/lib/libril.so \
-    vendor/samsung/d2lte/proprietary/blobs/vzw/lib/libril-qc-qmi-1.so:system/blobs/vzw/lib/libril-qc-qmi-1.so \
+    vendor/samsung/d2lte/proprietary/blobs/spr/lib/libsec-ril.so:system/blobs/spr/lib/libsec-ril.so \
     vendor/samsung/d2lte/proprietary/blobs/vzw/lib/libril.so:system/blobs/vzw/lib/libril.so \
+    vendor/samsung/d2lte/proprietary/blobs/vzw/lib/libsec-ril.so:system/blobs/vzw/lib/libsec-ril.so \
+    vendor/samsung/d2lte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+    vendor/samsung/d2lte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+    vendor/samsung/d2lte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+    vendor/samsung/d2lte/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/d2lte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/d2lte/proprietary/lib/libxml.so:system/lib/libxml.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/d2lte/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/d2lte/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
     vendor/samsung/d2lte/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
