@@ -29,6 +29,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_smart_stay.so:system/lib/libchromatix_s5k6a3yx_smart_stay.so \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_vt_hd.so:system/lib/libchromatix_s5k6a3yx_vt_hd.so \
     vendor/samsung/d2lte/proprietary/lib/libchromatix_s5k6a3yx_vt.so:system/lib/libchromatix_s5k6a3yx_vt.so \
+    vendor/samsung/d2lte/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/samsung/d2lte/proprietary/etc/sec_config:system/etc/sec_config \
+    vendor/samsung/d2lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/samsung/d2lte/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/samsung/d2lte/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/d2lte/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/d2lte/proprietary/bin/ks:system/bin/ks \
