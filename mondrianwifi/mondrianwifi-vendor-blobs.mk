@@ -44,10 +44,15 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
 	vendor/samsung/mondrianwifi/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
 	vendor/samsung/mondrianwifi/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -58,14 +63,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
 	vendor/samsung/mondrianwifi/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
 	vendor/samsung/mondrianwifi/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
@@ -77,7 +82,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/bin/efsks:system/bin/efsks \
 	vendor/samsung/mondrianwifi/proprietary/bin/ks:system/bin/ks \
 	vendor/samsung/mondrianwifi/proprietary/bin/qcks:system/bin/qcks \
-	vendor/samsung/mondrianwifi/proprietary/bin/qmiproxy:system/bin/qmiproxy \
 	vendor/samsung/mondrianwifi/proprietary/bin/qmuxd:system/bin/qmuxd \
 	vendor/samsung/mondrianwifi/proprietary/bin/rild:system/bin/rild \
 	vendor/samsung/mondrianwifi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -87,7 +91,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
@@ -201,19 +204,19 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
 	vendor/samsung/mondrianwifi/proprietary/bin/qseecomd:system/bin/qseecomd \
+	vendor/samsung/mondrianwifi/proprietary/bin/drmserver:system/bin/drmserver \
 	vendor/samsung/mondrianwifi/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
 	vendor/samsung/mondrianwifi/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/mondrianwifi/proprietary/bin/irsc_util:system/bin/irsc_util \
 	vendor/samsung/mondrianwifi/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
