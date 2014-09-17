@@ -16,7 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0209.0328_K_SPR_VM_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0209.0328_K_SPR_VM_ORC.hcd \
+    vendor/samsung/kltevzw/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0212_K_VZW_VM_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0212_K_VZW_VM_ORC.hcd \
     vendor/samsung/kltevzw/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/kltevzw/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/kltevzw/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
@@ -25,10 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm2079xB5_pre_firmware.ncd:system/vendor/firmware/bcm2079xB5_pre_firmware.ncd \
+    vendor/samsung/kltevzw/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
