@@ -176,6 +176,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jactivelte/proprietary/lib/libsam.so:system/lib/libsam.so \
     vendor/samsung/jactivelte/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/jactivelte/proprietary/lib/hw/sensorhubs.msm8960.so:system/lib/hw/sensorhubs.msm8960.so \
+    vendor/samsung/jactivelte/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
     vendor/samsung/jactivelte/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/jactivelte/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/jactivelte/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
