@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/samsung/kltevzw/proprietary/lib/hw/nfc_nci.msm8974.so:system/lib/hw/nfc_nci.msm8974.so \
     vendor/samsung/kltevzw/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
