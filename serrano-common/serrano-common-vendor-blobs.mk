@@ -52,6 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/serrano-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/serrano-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/serrano-common/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     vendor/samsung/serrano-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/serrano-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/serrano-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
