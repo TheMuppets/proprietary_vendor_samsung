@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/klte/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/klte/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
-    vendor/samsung/klte/proprietary/lib/hw/nfc_nci.msm8974.so:system/lib/hw/nfc_nci.msm8974.so \
     vendor/samsung/klte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/klte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/klte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
