@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    vendor/samsung/wilcoxltexx/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
