@@ -9,8 +9,8 @@ boardflags2=0x00802000
 boardflags3=0x48000109
 
 macaddr=00:90:4c:16:70:01
-ccode=TW
-regrev=1
+ccode=GB
+regrev=6
 antswitch=0
 pdgain5g=4
 pdgain2g=4
