@@ -19,9 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/srp_data.bin:system/vendor/firmware/srp_data.bin \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/srp_vliw.bin:system/vendor/firmware/srp_vliw.bin \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
-    vendor/samsung/chagallwifi/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
-    vendor/samsung/chagallwifi/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
-    vendor/samsung/chagallwifi/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
+    vendor/samsung/chagallwifi/proprietary/vendor/firmware/bcm4350_A0.hcd:system/vendor/firmware/bcm4350_A0.hcd \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0184.0286_Chagall_WIFI_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0184.0286_Chagall_WIFI_ORC.hcd \
     vendor/samsung/chagallwifi/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/samsung/chagallwifi/proprietary/lib/hw/camera.universal5420.so:system/lib/hw/camera.universal5420.so \
@@ -109,8 +107,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt_4354_a0:system/etc/wifi/nvram_mfg.txt_4354_a0 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt_4354_a1:system/etc/wifi/nvram_mfg.txt_4354_a1 \
+    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a0:system/etc/wifi/nvram_net.txt_4354_a0 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a1:system/etc/wifi/nvram_net.txt_4354_a1 \
+    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_apsta.bin_4354_a0:system/etc/wifi/bcmdhd_apsta.bin_4354_a0 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_apsta.bin_4354_a1:system/etc/wifi/bcmdhd_apsta.bin_4354_a1 \
