@@ -62,6 +62,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/chagallwifi/proprietary/bin/lpm:system/bin/lpm \
     vendor/samsung/chagallwifi/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/chagallwifi/proprietary/media/battery_cover.spi:system/media/battery_cover.spi \
+    vendor/samsung/chagallwifi/proprietary/media/battery_error.spi:system/media/battery_error.spi \
+    vendor/samsung/chagallwifi/proprietary/media/battery_low.spi:system/media/battery_low.spi \
+    vendor/samsung/chagallwifi/proprietary/media/battery_temperature_error.spi:system/media/battery_temperature_error.spi \
+    vendor/samsung/chagallwifi/proprietary/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
+    vendor/samsung/chagallwifi/proprietary/media/dock_error.spi:system/media/dock_error.spi \
+    vendor/samsung/chagallwifi/proprietary/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
+    vendor/samsung/chagallwifi/proprietary/media/percentage.spi:system/media/percentage.spi \
+    vendor/samsung/chagallwifi/proprietary/media/wave_loop.spi:system/media/wave_loop.spi \
+    vendor/samsung/chagallwifi/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
+    vendor/samsung/chagallwifi/proprietary/media/wireless_right.spi:system/media/wireless_right.spi \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/chagallwifi/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
