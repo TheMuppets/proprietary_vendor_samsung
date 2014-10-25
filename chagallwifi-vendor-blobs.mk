@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
     vendor/samsung/chagallwifi/proprietary/media/dock_error.spi:system/media/dock_error.spi \
     vendor/samsung/chagallwifi/proprietary/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
+    vendor/samsung/chagallwifi/proprietary/media/lcd_density.txt:system/media/lcd_density.txt \
     vendor/samsung/chagallwifi/proprietary/media/percentage.spi:system/media/percentage.spi \
     vendor/samsung/chagallwifi/proprietary/media/wave_loop.spi:system/media/wave_loop.spi \
     vendor/samsung/chagallwifi/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
