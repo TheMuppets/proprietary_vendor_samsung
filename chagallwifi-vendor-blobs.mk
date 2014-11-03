@@ -113,21 +113,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_sta_tput.bin:system/etc/wifi/bcmdhd_sta_tput.bin \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_sta_tput.bin_a0:system/etc/wifi/bcmdhd_sta_tput.bin_a0 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt_4354_a0:system/etc/wifi/nvram_mfg.txt_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt_4354_a1:system/etc/wifi/nvram_mfg.txt_4354_a1 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a0:system/etc/wifi/nvram_net.txt_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a1:system/etc/wifi/nvram_net.txt_4354_a1 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_apsta.bin_4354_a0:system/etc/wifi/bcmdhd_apsta.bin_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_apsta.bin_4354_a1:system/etc/wifi/bcmdhd_apsta.bin_4354_a1 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_ibss.bin_4354_a0:system/etc/wifi/bcmdhd_ibss.bin_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_ibss.bin_4354_a1:system/etc/wifi/bcmdhd_ibss.bin_4354_a1 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_mfg.bin_4354_a0:system/etc/wifi/bcmdhd_mfg.bin_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_mfg.bin_4354_a1:system/etc/wifi/bcmdhd_mfg.bin_4354_a1 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_sta.bin_4354_a0:system/etc/wifi/bcmdhd_sta.bin_4354_a0 \
-    vendor/samsung/chagallwifi/proprietary/etc/wifi/bcmdhd_sta.bin_4354_a1:system/etc/wifi/bcmdhd_sta.bin_4354_a1 \
     vendor/samsung/chagallwifi/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
     vendor/samsung/chagallwifi/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     vendor/samsung/chagallwifi/proprietary/sbin/sswap:root/sbin/sswap
