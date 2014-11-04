@@ -17,12 +17,16 @@
 PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/bin/hvdcp:system/bin/hvdcp \
 	vendor/samsung/ks01lte/proprietary/bin/mpdecision:system/bin/mpdecision \
-	vendor/samsung/ks01lte/proprietary/bin/smdexe:system/bin/smdexe \
-	vendor/samsung/ks01lte/proprietary/bin/cnd:system/bin/cnd \
 	vendor/samsung/ks01lte/proprietary/bin/ssr_diag:system/bin/ssr_diag \
 	vendor/samsung/ks01lte/proprietary/bin/thermald:system/bin/thermald \
 	vendor/samsung/ks01lte/proprietary/bin/thermal-engine:system/bin/thermal-engine \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+	vendor/samsung/ks01lte/proprietary/bin/cnd:system/bin/cnd \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneutils.so:system/vendor/lib/libcneutils.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+	vendor/samsung/ks01lte/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
 	vendor/samsung/ks01lte/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
 	vendor/samsung/ks01lte/proprietary/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
 	vendor/samsung/ks01lte/proprietary/vendor/firmware/bcm4335_murata.hcd:system/vendor/firmware/bcm4335_murata.hcd \
