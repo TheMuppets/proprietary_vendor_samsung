@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
     vendor/samsung/chagallwifi/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagallwifi/proprietary/lib/libvdis.so:system/lib/libvdis.so \
-    vendor/samsung/chagallwifi/proprietary/bin/drmserver:system/bin/drmserver \
+    vendor/samsung/chagallwifi/proprietary/bin/drmserver:system/bin/drmserver.samsung \
     vendor/samsung/chagallwifi/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/chagallwifi/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/chagallwifi/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
