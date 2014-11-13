@@ -117,6 +117,17 @@ LOCAL_MODULE_OWNER := samsung_arm
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libbccArm
+LOCAL_SRC_FILES := libbccArm.so
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := samsung_arm
+include $(BUILD_PREBUILT)
+
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libstagefright_hdcp
 LOCAL_SRC_FILES := libstagefright_hdcp.so
 LOCAL_MODULE_SUFFIX := .so
