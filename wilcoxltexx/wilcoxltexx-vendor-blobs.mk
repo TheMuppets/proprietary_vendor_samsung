@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/wilcoxltexx/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/wilcoxltexx/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/wilcoxltexx/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/samsung/wilcoxltexx/proprietary/bin/irsc_util:system/bin/irsc_util \
