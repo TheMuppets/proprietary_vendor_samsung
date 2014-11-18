@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/samsung/d2-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
+    vendor/samsung/d2-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334.hcd:system/vendor/firmware/bcm4334.hcd \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_murata.hcd:system/vendor/firmware/bcm4334_murata.hcd \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_semco.hcd:system/vendor/firmware/bcm4334_semco.hcd \
@@ -66,6 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/samsung/d2-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/d2-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/d2-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/d2-common/proprietary/bin/ks:system/bin/ks \
