@@ -85,7 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/d2-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/d2-common/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/d2-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/d2-common/proprietary/bin/rmt_storage2:system/bin/rmt_storage2 \
     vendor/samsung/d2-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/d2-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/d2-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
