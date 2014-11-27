@@ -100,7 +100,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/mondrianwifi/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/mondrianwifi/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
