@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/expressatt/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/expressatt/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/expressatt/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/expressatt/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/expressatt/proprietary/bin/rmt_storage2:system/bin/rmt_storage2 \
     vendor/samsung/expressatt/proprietary/bin/sec-ril:system/bin/sec-ril \
     vendor/samsung/expressatt/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/expressatt/proprietary/lib/libcordon.so:system/lib/libcordon.so \
