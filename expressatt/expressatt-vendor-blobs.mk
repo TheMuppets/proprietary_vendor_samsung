@@ -55,6 +55,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/expressatt/proprietary/cameradata/SlimISP_ZD.bin:system/cameradata/SlimISP_ZD.bin \
     vendor/samsung/expressatt/proprietary/cameradata/SlimISP_ZE.bin:system/cameradata/SlimISP_ZE.bin \
     vendor/samsung/expressatt/proprietary/cameradata/SlimISP_ZH.bin:system/cameradata/SlimISP_ZH.bin \
+    vendor/samsung/expressatt/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
+    vendor/samsung/expressatt/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
+    vendor/samsung/expressatt/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/samsung/expressatt/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/expressatt/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/samsung/expressatt/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/samsung/expressatt/proprietary/lib/libqdi.so:system/lib/libqdi.so \
@@ -68,7 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/expressatt/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/expressatt/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/expressatt/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/expressatt/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/expressatt/proprietary/bin/rmt_storage2:system/bin/rmt_storage2 \
     vendor/samsung/expressatt/proprietary/bin/sec-ril:system/bin/sec-ril \
     vendor/samsung/expressatt/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/expressatt/proprietary/lib/libcordon.so:system/lib/libcordon.so \
