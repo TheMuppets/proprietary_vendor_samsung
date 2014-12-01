@@ -56,7 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/serrano-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/serrano-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    vendor/samsung/serrano-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/serrano-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/serrano-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/serrano-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
