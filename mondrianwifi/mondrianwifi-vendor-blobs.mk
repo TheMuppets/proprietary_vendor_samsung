@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -99,7 +100,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-	vendor/samsung/mondrianwifi/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
 	vendor/samsung/mondrianwifi/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/mondrianwifi/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/mondrianwifi/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -203,16 +203,20 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
 	vendor/samsung/mondrianwifi/proprietary/bin/qseecomd:system/bin/qseecomd \
-	vendor/samsung/mondrianwifi/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+	vendor/samsung/mondrianwifi/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
+	vendor/samsung/mondrianwifi/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
 	vendor/samsung/mondrianwifi/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/mondrianwifi/proprietary/bin/irsc_util:system/bin/irsc_util \
