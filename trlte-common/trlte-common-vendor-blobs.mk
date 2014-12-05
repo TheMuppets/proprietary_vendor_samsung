@@ -108,7 +108,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libmmcamera_isp_sce40.so:system/vendor/lib/libmmcamera_isp_sce40.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
-    vendor/samsung/trlte-common/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/samsung/trlte-common/proprietary/lib/H16UL_libTsAe.so:system/lib/H16UL_libTsAe.so \
@@ -248,3 +247,93 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_preview.so:system/vendor/lib/libchromatix_s5k8b1yx_preview.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_preview_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_preview_cpp.so \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_smart_stay.so:system/vendor/lib/libchromatix_s5k8b1yx_smart_stay.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_smart_stay_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_smart_stay_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_snapshot_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_snapshot_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_video.so:system/vendor/lib/libchromatix_s5k8b1yx_video.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_video_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_video_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_vt.so:system/vendor/lib/libchromatix_s5k8b1yx_vt.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_vt_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_vt_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_vt_hd.so:system/vendor/lib/libchromatix_s5k8b1yx_vt_hd.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_vt_hd_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_vt_hd_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_zslshot_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_zslshot_cpp.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libchromatix_s5k8b1yx_zslshot_lls_cpp.so:system/vendor/lib/libchromatix_s5k8b1yx_zslshot_lls_cpp.so \
+    vendor/samsung/trlte-common/proprietary/cameradata/F16UL_Isp1_s5k2p2xx.bin:system/cameradata/F16UL_Isp1_s5k2p2xx.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/F16US_Isp1_imx240.bin:system/cameradata/F16US_Isp1_imx240.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/H16UL_Isp1_s5k2p2xx.bin:system/cameradata/H16UL_Isp1_s5k2p2xx.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/H16US_Isp1_imx240.bin:system/cameradata/H16US_Isp1_imx240.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/Master1.bin:system/cameradata/Master1.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/OIS_63A.bin:system/cameradata/OIS_63A.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/OIS_63B.bin:system/cameradata/OIS_63B.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/cal_data_LSCmaster.bin:system/cameradata/cal_data_LSCmaster.bin \
+    vendor/samsung/trlte-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/trlte-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
+    vendor/samsung/trlte-common/proprietary/etc/H16UL_s5k2p2xx_module_info.xml:system/etc/H16UL_s5k2p2xx_module_info.xml \
+    vendor/samsung/trlte-common/proprietary/etc/H16US_imx240_module_info.xml:system/etc/H16US_imx240_module_info.xml \
+    vendor/samsung/trlte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/samsung/trlte-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
+    vendor/samsung/trlte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/samsung/trlte-common/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/trlte-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/samsung/trlte-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/samsung/trlte-common/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
+    vendor/samsung/trlte-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/samsung/trlte-common/proprietary/etc/sec_config:system/etc/sec_config \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/samsung/trlte-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
+    vendor/samsung/trlte-common/proprietary/lib/hw/sensors.apq8084.so:system/lib/hw/sensors.apq8084.so \
+    vendor/samsung/trlte-common/proprietary/lib/hw/sensorhubs.apq8084.so:system/lib/hw/sensorhubs.apq8084.so \
+    vendor/samsung/trlte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/nvram_net.txt_r10:system/etc/wifi/nvram_net.txt_r10 \
+    vendor/samsung/trlte-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
