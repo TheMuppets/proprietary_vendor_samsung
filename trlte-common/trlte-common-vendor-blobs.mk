@@ -274,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlte-common/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/samsung/trlte-common/proprietary/etc/H16UL_s5k2p2xx_module_info.xml:system/etc/H16UL_s5k2p2xx_module_info.xml \
     vendor/samsung/trlte-common/proprietary/etc/H16US_imx240_module_info.xml:system/etc/H16US_imx240_module_info.xml \
+    vendor/samsung/trlte-common/proprietary/lib/hw/consumerir.apq8084.so:system/lib/hw/consumerir.apq8084.so \
     vendor/samsung/trlte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/samsung/trlte-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/trlte-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
