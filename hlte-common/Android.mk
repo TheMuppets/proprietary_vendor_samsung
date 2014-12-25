@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hlte hltespr hlteusc hltevzw,$(TARGET_DEVICE)),)
+ifneq ($(filter hlte hltespr hltetmo hlteusc hltevzw,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := PPPreference
