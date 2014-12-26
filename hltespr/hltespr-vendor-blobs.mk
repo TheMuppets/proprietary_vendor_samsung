@@ -48,9 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/hltespr/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/hltespr/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/hltespr/proprietary/lib/librilswitch.so:system/lib/librilswitch.so \
     vendor/samsung/hltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/hltespr/proprietary/lib/libcfiril.so:system/lib/libcfiril.so \
     vendor/samsung/hltespr/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/hltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/hltespr/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
