@@ -294,4 +294,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
     vendor/samsung/hlte-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/hlte-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/hlte-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    vendor/samsung/hlte-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    vendor/samsung/hlte-common/proprietary//vendor/lib/libqti-perfd-client.so:system//vendor/lib/libqti-perfd-client.so
