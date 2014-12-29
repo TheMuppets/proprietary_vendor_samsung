@@ -288,6 +288,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
     vendor/samsung/hlte-common/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so \
     vendor/samsung/hlte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/samsung/hlte-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/hlte-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     vendor/samsung/hlte-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
