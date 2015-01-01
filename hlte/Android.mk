@@ -21,7 +21,7 @@ ifeq ($(TARGET_DEVICE),hlte)
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/app/com.qualcomm.location.apk
+LOCAL_SRC_FILES := proprietary/app/com.qualcomm.location/com.qualcomm.location.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_CLASS := APPS
