@@ -16,6 +16,7 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
+    TimeService \
     libHevcSwDecoder \
     libmm-abl \
     libtime_genoff
