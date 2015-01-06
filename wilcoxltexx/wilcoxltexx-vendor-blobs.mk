@@ -32,12 +32,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/wilcoxltexx/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/samsung/wilcoxltexx/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
@@ -55,10 +54,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/wilcoxltexx/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/wilcoxltexx/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/wilcoxltexx/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     vendor/samsung/wilcoxltexx/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    vendor/samsung/wilcoxltexx/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
@@ -79,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/wilcoxltexx/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/wilcoxltexx/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/samsung/wilcoxltexx/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/samsung/wilcoxltexx/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/wilcoxltexx/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -134,16 +132,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wilcoxltexx/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/wilcoxltexx/proprietary/bin/insthk:system/bin/insthk \
     vendor/samsung/wilcoxltexx/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/samsung/wilcoxltexx/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/samsung/wilcoxltexx/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/wilcoxltexx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/wilcoxltexx/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
     vendor/samsung/wilcoxltexx/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
