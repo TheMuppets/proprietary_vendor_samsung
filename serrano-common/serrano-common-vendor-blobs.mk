@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,13 +34,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d2_a3xx.so:system/vendor/lib/libc2d2_a3xx.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
@@ -56,7 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/serrano-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/serrano-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    vendor/samsung/serrano-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/serrano-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/serrano-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/serrano-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
@@ -75,8 +75,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/serrano-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/serrano-common/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/samsung/serrano-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/samsung/serrano-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/serrano-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -132,16 +132,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/serrano-common/proprietary/bin/insthk:system/bin/insthk \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/samsung/serrano-common/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/samsung/serrano-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/samsung/serrano-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
