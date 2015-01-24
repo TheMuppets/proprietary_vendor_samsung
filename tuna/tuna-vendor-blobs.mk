@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/tuna/proprietary/etc/powervr.ini:system/etc/powervr.ini \
-    vendor/samsung/tuna/proprietary/vendor/bin/fRom:system/vendor/bin/fRom \
     vendor/samsung/tuna/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
     vendor/samsung/tuna/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
     vendor/samsung/tuna/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
