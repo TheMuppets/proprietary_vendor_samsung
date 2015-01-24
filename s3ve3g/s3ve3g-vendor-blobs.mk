@@ -252,81 +252,43 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so
 
-# Qualcomm framework common
+# Qualcomm framework
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libdsucsd.so:system/vendor/lib/libdsucsd.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
 
-# Qualcomm framework Dual-sim
+# Radio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libdiag.so:system/blobs/s3ve3gds/vendor/lib/libdiag.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libdsutils.so:system/blobs/s3ve3gds/vendor/lib/libdsutils.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libidl.so:system/blobs/s3ve3gds/vendor/lib/libidl.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqcci_legacy.so:system/blobs/s3ve3gds/vendor/lib/libqcci_legacy.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqmi.so:system/blobs/s3ve3gds/vendor/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqmi_cci.so:system/blobs/s3ve3gds/vendor/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqmi_client_qmux.so:system/blobs/s3ve3gds/vendor/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqmi_csi.so:system/blobs/s3ve3gds/vendor/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libqmiservices.so:system/blobs/s3ve3gds/vendor/lib/libqmiservices.so
-
-# Qualcomm framework Single-sim
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libdiag.so:system/blobs/s3ve3g/vendor/lib/libdiag.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libdsutils.so:system/blobs/s3ve3g/vendor/lib/libdsutils.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libidl.so:system/blobs/s3ve3g/vendor/lib/libidl.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqmi.so:system/blobs/s3ve3g/vendor/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqcci_legacy.so:system/blobs/s3ve3g/vendor/lib/libqcci_legacy.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqmi_cci.so:system/blobs/s3ve3g/vendor/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqmi_client_qmux.so:system/blobs/s3ve3g/vendor/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqmi_csi.so:system/blobs/s3ve3g/vendor/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libqmiservices.so:system/blobs/s3ve3g/vendor/lib/libqmiservices.so
-
-# Radio Common
-PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
+    $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
+    $(LOCAL_PATH)/proprietary/bin/radish:system/bin/radish \
     $(LOCAL_PATH)/proprietary/bin/rfs_access:system/bin/rfs_access \
-    $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage
-
-# Radio Dual-Sim
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/bin/ds_fmc_appd:system/blobs/s3ve3gds/bin/ds_fmc_appd \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/bin/qmuxd:system/blobs/s3ve3gds/bin/qmuxd \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/bin/radish:system/blobs/s3ve3gds/bin/radish \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/bin/rild:system/blobs/s3ve3gds/bin/rild \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libatparser.so:system/blobs/s3ve3gds/lib/libatparser.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libcordon.so:system/blobs/s3ve3gds/lib/libcordon.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libfactoryutil.so:system/blobs/s3ve3gds/lib/libfactoryutil.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libomission_avoidance.so:system/blobs/s3ve3gds/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libreference-ril.so:system/blobs/s3ve3gds/lib/libreference-ril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libsecnativefeature.so:system/blobs/s3ve3gds/lib/libsecnativefeature.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libsecril-client.so:system/blobs/s3ve3gds/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libsec-ril.so:system/blobs/s3ve3gds/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libsec-ril-dsds.so:system/blobs/s3ve3gds/lib/libsec-ril-dsds.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/lib/libril.so:system/blobs/s3ve3gds/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libconfigdb.so:system/blobs/s3ve3gds/vendor/lib/libconfigdb.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libril-qcril-hook-oem.so:system/blobs/s3ve3gds/vendor/lib/libril-qcril-hook-oem.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3gds/vendor/lib/libxml.so:system/blobs/s3ve3gds/vendor/lib/libxml.so
-
-# Radio Single-sim
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/bin/ds_fmc_appd:system/blobs/s3ve3g/bin/ds_fmc_appd \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/bin/qmuxd:system/blobs/s3ve3g/bin/qmuxd \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/bin/radish:system/blobs/s3ve3g/bin/radish \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/bin/rild:system/blobs/s3ve3g/bin/rild \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libatparser.so:system/blobs/s3ve3g/lib/libatparser.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libcordon.so:system/blobs/s3ve3g/lib/libcordon.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libfactoryutil.so:system/blobs/s3ve3g/lib/libfactoryutil.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libomission_avoidance.so:system/blobs/s3ve3g/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libreference-ril.so:system/blobs/s3ve3g/lib/libreference-ril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libsecnativefeature.so:system/blobs/s3ve3g/lib/libsecnativefeature.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libsecril-client.so:system/blobs/s3ve3g/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libsec-ril.so:system/blobs/s3ve3g/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/lib/libril.so:system/blobs/s3ve3g/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libconfigdb.so:system/blobs/s3ve3g/vendor/lib/libconfigdb.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libril-qcril-hook-oem.so:system/blobs/s3ve3g/vendor/lib/libril-qcril-hook-oem.so \
-    $(LOCAL_PATH)/proprietary/blobs/s3ve3g/vendor/lib/libxml.so:system/blobs/s3ve3g/vendor/lib/libxml.so
+    $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+    $(LOCAL_PATH)/proprietary/lib/libcordon.so:system/lib/libcordon.so \
+    $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+    $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+    $(LOCAL_PATH)/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    $(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
