@@ -46,7 +46,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
 	vendor/samsung/ks01lte/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
@@ -63,12 +62,11 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -76,6 +74,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
 	vendor/samsung/ks01lte/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
 	vendor/samsung/ks01lte/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
 	vendor/samsung/ks01lte/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
@@ -127,6 +126,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
 	vendor/samsung/ks01lte/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 	vendor/samsung/ks01lte/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
 	vendor/samsung/ks01lte/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
@@ -265,18 +265,19 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
 	vendor/samsung/ks01lte/proprietary/bin/qseecomd:system/bin/qseecomd \
+	vendor/samsung/ks01lte/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
 	vendor/samsung/ks01lte/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
 	vendor/samsung/ks01lte/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
 	vendor/samsung/ks01lte/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+	vendor/samsung/ks01lte/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
 	vendor/samsung/ks01lte/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/ks01lte/proprietary/bin/irsc_util:system/bin/irsc_util \
