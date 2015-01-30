@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
     vendor/samsung/kltevzw/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0212_K_VZW_VM_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0212_K_VZW_VM_ORC.hcd \
-    vendor/samsung/kltevzw/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/kltevzw/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/kltevzw/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
     vendor/samsung/kltevzw/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \

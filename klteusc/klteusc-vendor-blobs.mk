@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteusc/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
     vendor/samsung/klteusc/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0221_K_USCC_VM_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0221_K_USCC_VM_ORC.hcd \
     vendor/samsung/klteusc/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
-    vendor/samsung/klteusc/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/klteusc/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/klteusc/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
     vendor/samsung/klteusc/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
