@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/klteusc/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
     vendor/samsung/klteusc/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0221_K_USCC_VM_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0221_K_USCC_VM_ORC.hcd \
-    vendor/samsung/klteusc/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/klteusc/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/klteusc/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
     vendor/samsung/klteusc/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
@@ -25,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteusc/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/samsung/klteusc/proprietary/vendor/firmware/libpn547.so:system/vendor/firmware/libpn547.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -44,9 +44,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteusc/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/klteusc/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/klteusc/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/klteusc/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/klteusc/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/klteusc/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/samsung/klteusc/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/klteusc/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/klteusc/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/klteusc/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/klteusc/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
