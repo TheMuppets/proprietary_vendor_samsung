@@ -86,10 +86,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klimtwifi/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
     vendor/samsung/klimtwifi/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
     vendor/samsung/klimtwifi/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-    vendor/samsung/klimtwifi/proprietary/vendor/firmware/fimc_is_fw2_IMX134.bin:system/vendor/firmware/fimc_is_fw2_IMX134.bin \
+    vendor/samsung/klimtwifi/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin \
     vendor/samsung/klimtwifi/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
-    vendor/samsung/klimtwifi/proprietary/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
-    vendor/samsung/klimtwifi/proprietary/vendor/firmware/setfile_imx134.bin:system/vendor/firmware/setfile_imx134.bin \
+    vendor/samsung/klimtwifi/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
+    vendor/samsung/klimtwifi/proprietary/vendor/firmware/setfile_imx134_eeprom.bin:system/vendor/firmware/setfile_imx134_eeprom.bin \
     vendor/samsung/klimtwifi/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/klimtwifi/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/klimtwifi/proprietary/app/mcRegistry/02010000080300030000000000000000.tlbin:system/app/mcRegistry/02010000080300030000000000000000.tlbin \
