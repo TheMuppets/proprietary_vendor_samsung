@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteusc/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/samsung/klteusc/proprietary/vendor/firmware/libpn547.so:system/vendor/firmware/libpn547.so \
+    vendor/samsung/klteusc/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/samsung/klteusc/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
