@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
     $(LOCAL_PATH)/proprietary/system/lib/libexif.so:system/lib/libexif.so \
