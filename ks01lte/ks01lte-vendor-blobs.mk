@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneutils.so:system/vendor/lib/libcneutils.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
 	vendor/samsung/ks01lte/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
+	vendor/samsung/ks01lte/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
 	vendor/samsung/ks01lte/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
 	vendor/samsung/ks01lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
