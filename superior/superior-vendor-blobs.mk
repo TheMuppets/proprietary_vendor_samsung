@@ -46,14 +46,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
     $(LOCAL_PATH)/proprietary/system/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libexif.so:system/lib/libexif.so \
     $(LOCAL_PATH)/proprietary/system/lib/libexifa.so:system/lib/libexifa.so \
     $(LOCAL_PATH)/proprietary/system/lib/libjpega.so:system/lib/libjpega.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmedia_native.so:system/lib/libmedia_native.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libmedia_jni.so:system/lib/libmedia_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
     $(LOCAL_PATH)/proprietary/system/lib/libseccameracore.so:system/lib/libseccameracore.so \
     $(LOCAL_PATH)/proprietary/system/lib/libarccamera.so:system/lib/libarccamera.so \
