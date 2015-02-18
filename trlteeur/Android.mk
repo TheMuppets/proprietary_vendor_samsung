@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),trlteeur)
+ifeq ($(TARGET_DEVICE),trltexx)
 # Leave this here for later.
 endif
 

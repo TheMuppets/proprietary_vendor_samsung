@@ -43,11 +43,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltetmo/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/trltetmo/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/trltetmo/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/samsung/trlteeur/proprietary/bin/ks:system/bin/ks \
+    vendor/samsung/trltexx/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/trltetmo/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     vendor/samsung/trltetmo/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/trltetmo/proprietary/bin/qcks:system/bin/qcks \
-    vendor/samsung/trlteeur/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
+    vendor/samsung/trltexx/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/samsung/trltetmo/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/trltetmo/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/trltetmo/proprietary/bin/rild:system/bin/rild \
@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltetmo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/trltetmo/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/trltetmo/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    vendor/samsung/trlteeur/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/trltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/trltetmo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/trltetmo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/trltetmo/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
