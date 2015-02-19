@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+	vendor/samsung/ks01lte/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
 	vendor/samsung/ks01lte/proprietary/bin/insthk:system/bin/insthk \
 	vendor/samsung/ks01lte/proprietary/etc/srm.bin:system/etc/srm.bin \
 	vendor/samsung/ks01lte/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
