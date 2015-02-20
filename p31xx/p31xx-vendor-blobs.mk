@@ -55,7 +55,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    $(LOCAL_PATH)/common/system/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(LOCAL_PATH)/common/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
