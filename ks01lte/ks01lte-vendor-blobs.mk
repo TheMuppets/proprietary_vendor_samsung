@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libcneutils.so:system/vendor/lib/libcneutils.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
 	vendor/samsung/ks01lte/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
 	vendor/samsung/ks01lte/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
