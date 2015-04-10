@@ -58,6 +58,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/expressatt/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
     vendor/samsung/expressatt/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/expressatt/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    vendor/samsung/expressatt/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+    vendor/samsung/expressatt/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+    vendor/samsung/expressatt/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+    vendor/samsung/expressatt/proprietary/lib/libCB.so:system/lib/libCB.so \
+    vendor/samsung/expressatt/proprietary/lib/libgsl.so:system/lib/libgsl.so \
+    vendor/samsung/expressatt/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
+    vendor/samsung/expressatt/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    vendor/samsung/expressatt/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/samsung/expressatt/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/expressatt/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/expressatt/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
