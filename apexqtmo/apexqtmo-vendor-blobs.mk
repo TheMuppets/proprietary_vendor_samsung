@@ -42,6 +42,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apexqtmo/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/apexqtmo/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/samsung/apexqtmo/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    vendor/samsung/apexqtmo/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libCB.so:system/lib/libCB.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libgsl.so:system/lib/libgsl.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    vendor/samsung/apexqtmo/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/samsung/apexqtmo/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/samsung/apexqtmo/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/samsung/apexqtmo/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
