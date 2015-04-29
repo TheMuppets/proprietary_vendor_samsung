@@ -126,7 +126,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := samsung_arm
 include $(BUILD_PREBUILT)
 
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libstagefright_hdcp
 LOCAL_SRC_FILES := libstagefright_hdcp.so
