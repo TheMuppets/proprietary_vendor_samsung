@@ -43,10 +43,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_smart_stay.so:system/lib/libchromatix_s5k6a3yx_smart_stay.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_vt_hd.so:system/lib/libchromatix_s5k6a3yx_vt_hd.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_vt.so:system/lib/libchromatix_s5k6a3yx_vt.so \
+    vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GC.bin:system/cameradata/SlimISP_BH.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GC.bin:system/cameradata/SlimISP_GC.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GD.bin:system/cameradata/SlimISP_GD.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GE.bin:system/cameradata/SlimISP_GE.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GH.bin:system/cameradata/SlimISP_GH.bin \
+    vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GH.bin:system/cameradata/SlimISP_GK.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_JH.bin:system/cameradata/SlimISP_JH.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_PH.bin:system/cameradata/SlimISP_PH.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_WH.bin:system/cameradata/SlimISP_WH.bin \
@@ -54,6 +56,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZD.bin:system/cameradata/SlimISP_ZD.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZE.bin:system/cameradata/SlimISP_ZE.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZH.bin:system/cameradata/SlimISP_ZH.bin \
+    vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZE.bin:system/cameradata/SlimISP_ZK.bin \
+    vendor/samsung/d2-common/proprietary/cameradata/SlimISP_ZH.bin:system/cameradata/SlimISP_ZM.bin \
     vendor/samsung/d2-common/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
     vendor/samsung/d2-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/d2-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
