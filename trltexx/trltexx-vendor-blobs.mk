@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trltetmo/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     vendor/samsung/trltetmo/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/trltetmo/proprietary/bin/qcks:system/bin/qcks \
-    vendor/samsung/trltexx/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/samsung/trltetmo/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/trltetmo/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/trltetmo/proprietary/bin/rild:system/bin/rild \
