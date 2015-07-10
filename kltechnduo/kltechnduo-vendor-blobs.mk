@@ -17,6 +17,15 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/vendor/firmware/bcm4350.hcd:system/vendor/firmware/bcm4350.hcd \
     vendor/samsung/kltechnduo/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0213_K_LTE_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0213_K_LTE_ORC.hcd \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libmasc.so:system/vendor/lib/libmasc.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/kltechnduo/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/kltechnduo/proprietary/lib/hw/flp.default.so:system/lib/hw/flp.default.so \
     vendor/samsung/kltechnduo/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
@@ -24,6 +33,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/liblisten.so:system/vendor/lib/liblisten.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
     vendor/samsung/kltechnduo/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
@@ -46,8 +64,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/kltechnduo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltechnduo/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/kltechnduo/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltechnduo/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdhdcpcp.so:system/vendor/lib/libwfdhdcpcp.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdmmsink.so:system/vendor/lib/libwfdmmsink.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdmmsrc.so:system/vendor/lib/libwfdmmsrc.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdmmutils.so:system/vendor/lib/libwfdmmutils.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdnative.so:system/vendor/lib/libwfdnative.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdrtsp.so:system/vendor/lib/libwfdrtsp.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfdsm.so:system/vendor/lib/libwfdsm.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfduibcinterface.so:system/vendor/lib/libwfduibcinterface.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfduibcsink.so:system/vendor/lib/libwfduibcsink.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfduibcsinkinterface.so:system/vendor/lib/libwfduibcsinkinterface.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfduibcsrc.so:system/vendor/lib/libwfduibcsrc.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libwfduibcsrcinterface.so:system/vendor/lib/libwfduibcsrcinterface.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libmmwfdinterface.so:system/vendor/lib/libmmwfdinterface.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libmmwfdsinkinterface.so:system/vendor/lib/libmmwfdsinkinterface.so \
+    vendor/samsung/kltechnduo/proprietary/vendor/lib/libmmwfdsrcinterface.so:system/vendor/lib/libmmwfdsrcinterface.so
