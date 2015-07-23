@@ -1,0 +1,97 @@
+manfid=0x2d0
+prodid=0x0532
+vendid=0x14e4
+devid=0x4360
+boardtype=0x0532
+boardrev=0x20
+boardflags=0x10080201
+
+nocrc=1
+xtalfreq=37400
+xtalmode=0x20,0x4,0
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+ag0=253
+ag1=255
+aa2g=1
+aa5g=1
+ccode=ALL
+
+sd_gpout=0
+sd_oobonly=1
+
+# 2G PA para_SMST_0502
+pa0b0=5477
+pa0b1=64918
+pa0b2=65396
+#pa0itssit=62
+rssismf2g=0xa
+rssismc2g=0x3
+rssisav2g=0x7
+
+# rssi params for 5GHz
+#rssismf5g=0x4
+rssismf5g=0xa
+rssismc5g=0x7
+rssisav5g=0x1
+#PA parameters for lower band
+pa1lob0=5408
+pa1lob1=64851
+pa1lob2=65337
+#PA parameters for midband
+pa1b0=5351
+pa1b1=64860
+pa1b2=65345
+#PA parameters for high band
+pa1hib0=4924
+pa1hib1=64895
+pa1hib2=65329
+
+# 2G PA offset
+maxp2ga0=72
+sromrev=3
+cckpo=0
+ofdm2gpo=0x66666666
+mcs2gpo0=0xaaaa
+mcs2gpo1=0xaaaa
+
+# 5G PA offset_0316
+maxp5ga0=71
+maxp5gla0=72
+maxp5gha0=72
+ofdm5gpo=0x55555555
+ofdm5glpo=0x55555555
+ofdm5ghpo=0x55555555
+mcs5gpo0=0x9999
+mcs5gpo1=0x9999
+mcs5glpo0=0x9999
+mcs5glpo1=0x9999
+mcs5ghpo0=0x9999
+mcs5ghpo1=0x9999
+
+cckPwrOffset=4
+cckdigfilttype=20
+ofdmdigfilttype=2
+#wl0id=0x431b
+extpagain5g=2
+rfreg033=0x19
+rfreg033_cck=0x1f
+pacalidx2g=65
+dacrate2g=160
+txalpfbyp2g=1
+bphyscale=17
+
+#5GHz Carrier
+txiqlopapu5g=1
+txiqlopag5g=0x10
+iqlocalidx5g=64
+
+# for BT-CO_EX
+btc_params80=0
+btc_params6=10
+btc_params8=10000
+
+
+swctrlmap_2g=0x84048404, 0x82028202, 0x84048404, 0x010202, 0x1ff
+swctrlmap_5g=0xC040C040, 0xB030A020, 0x8000C040, 0x010A02, 0x2F8
+
