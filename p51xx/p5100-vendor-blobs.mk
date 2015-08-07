@@ -14,7 +14,7 @@
 
 LOCAL_PATH := vendor/samsung/p51xx
 
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/p5100/sbin/cbd:root/sbin/cbd
 
 PRODUCT_COPY_FILES += \
