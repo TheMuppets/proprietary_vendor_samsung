@@ -12,24 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/p51xx
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p51xx/common/system/bin/bintvoutservice:system/bin/bintvoutservice \
+    vendor/samsung/p51xx/common/system/bin/gpsd:system/bin/gpsd
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    $(LOCAL_PATH)/common/system/bin/gpsd:system/bin/gpsd
+    vendor/samsung/p51xx/common/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+    vendor/samsung/p51xx/common/system/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+    vendor/samsung/p51xx/common/system/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    $(LOCAL_PATH)/common/system/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-    $(LOCAL_PATH)/common/system/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin
+    vendor/samsung/p51xx/common/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
+    vendor/samsung/p51xx/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    vendor/samsung/p51xx/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
-    $(LOCAL_PATH)/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
-    $(LOCAL_PATH)/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
-    $(LOCAL_PATH)/common/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
-    $(LOCAL_PATH)/common/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
-    $(LOCAL_PATH)/common/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
+    vendor/samsung/p51xx/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
+    vendor/samsung/p51xx/common/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
+    vendor/samsung/p51xx/common/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
+    vendor/samsung/p51xx/common/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
