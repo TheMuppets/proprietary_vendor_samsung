@@ -12,16 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/p31xx
-
 # Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/p3110/system/lib/libril.so:obj/lib/libril.so \
-    $(LOCAL_PATH)/p3110/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p31xx/p3110/system/lib/libril.so:obj/lib/libril.so \
+    vendor/samsung/p31xx/p3110/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/p3110/system/lib/libril.so:system/lib/libril.so \
-    $(LOCAL_PATH)/p3110/system/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/p31xx/p3110/system/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/p31xx/p3110/system/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/p3110/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
+    vendor/samsung/p31xx/p3110/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so

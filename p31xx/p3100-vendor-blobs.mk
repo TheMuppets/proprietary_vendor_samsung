@@ -12,14 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/p31xx
-
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/p3100/sbin/cbd:root/sbin/cbd
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p31xx/p3100/sbin/cbd:root/sbin/cbd
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/p3100/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/p3100/system/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/p31xx/p3100/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/p31xx/p3100/system/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/p3100/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
+    vendor/samsung/p31xx/p3100/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
