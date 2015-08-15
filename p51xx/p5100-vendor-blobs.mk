@@ -12,11 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/p51xx
-
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/p5100/sbin/cbd:root/sbin/cbd
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p51xx/p5100/sbin/cbd:root/sbin/cbd
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/p5100/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/p5100/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/p51xx/p5100/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/p51xx/p5100/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
