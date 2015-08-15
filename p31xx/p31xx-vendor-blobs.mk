@@ -13,9 +13,7 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p31xx/common/system/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/p31xx/common/system/bin/gpsd:system/bin/gpsd \
-    vendor/samsung/p31xx/common/system/bin/orientationd:system/bin/orientationd \
     vendor/samsung/p31xx/common/system/bin/smc.ini:system/bin/smc.ini \
     vendor/samsung/p31xx/common/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 

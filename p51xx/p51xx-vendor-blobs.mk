@@ -14,9 +14,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/p51xx/common/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    vendor/samsung/p51xx/common/system/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/p51xx/common/system/bin/gpsd:system/bin/gpsd \
-    vendor/samsung/p51xx/common/system/bin/orientationd:system/bin/orientationd \
     vendor/samsung/p51xx/common/system/bin/smc.ini:system/bin/smc.ini \
     vendor/samsung/p51xx/common/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 
@@ -31,7 +29,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/p51xx/common/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
     vendor/samsung/p51xx/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
-    vendor/samsung/p51xx/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
     vendor/samsung/p51xx/common/system/lib/libtiutils.so:system/lib/libtiutils.so
 
 PRODUCT_COPY_FILES += \
