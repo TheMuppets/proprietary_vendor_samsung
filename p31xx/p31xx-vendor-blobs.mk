@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/p31xx/common/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
-    vendor/samsung/p31xx/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    vendor/samsung/p31xx/common/system/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so \
     vendor/samsung/p31xx/common/system/lib/libtiutils.so:system/lib/libtiutils.so
 
 PRODUCT_COPY_FILES += \
