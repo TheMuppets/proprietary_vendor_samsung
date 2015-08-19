@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/samsung/a5ultexx/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/samsung/a5ultexx/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/samsung/a5ultexx/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
@@ -188,6 +189,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/a5ultexx/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/a5ultexx/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/samsung/a5ultexx/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/samsung/a5ultexx/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/a5ultexx/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/a5ultexx/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -208,10 +210,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/a5ultexx/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/samsung/a5ultexx/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
+    vendor/samsung/a5ultexx/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/a5ultexx/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/a5ultexx/proprietary/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk \
     vendor/samsung/a5ultexx/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-    vendor/samsung/a5ultexx/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so
+    vendor/samsung/a5ultexx/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/samsung/a5ultexx/proprietary/bin/nl_listener:system/bin/nl_listener \
+    vendor/samsung/a5ultexx/proprietary/bin/port-bridge:system/bin/port-bridge \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin
