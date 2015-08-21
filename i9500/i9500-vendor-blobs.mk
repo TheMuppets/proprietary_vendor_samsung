@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9500/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/i9500/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/i9500/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
+    vendor/samsung/i9500/proprietary/lib/hw/memtrack.exynos5.so:system/lib/hw/memtrack.exynos5.so \
     vendor/samsung/i9500/proprietary/vendor/lib/hw/gralloc.exynos5.so:system/vendor/lib/hw/gralloc.exynos5.so \
     vendor/samsung/i9500/proprietary/vendor/firmware/fimc_is_gumi_fw2.bin:system/vendor/firmware/fimc_is_gumi_fw2.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/fimc_is_sec_fw2.bin:system/vendor/firmware/fimc_is_sec_fw2.bin \
@@ -46,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_gumi_imx135.bin:system/vendor/firmware/setfile_gumi_imx135.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/setfile_sec_imx135.bin:system/vendor/firmware/setfile_sec_imx135.bin \
+    vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/FFFFFFFF000000000000000000000001.drbin:system/vendor/firmware/mcRegistry/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin:system/vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/02010000080300030000000000000000.tlbin:system/vendor/firmware/mcRegistry/02010000080300030000000000000000.tlbin \
     vendor/samsung/i9500/proprietary/vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin:system/vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin \
