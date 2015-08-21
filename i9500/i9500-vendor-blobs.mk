@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9500/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/i9500/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/i9500/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-    vendor/samsung/i9500/proprietary/lib/hw/memtrack.exynos5.so:system/lib/hw/memtrack.exynos5.so \
     vendor/samsung/i9500/proprietary/vendor/lib/hw/gralloc.exynos5.so:system/vendor/lib/hw/gralloc.exynos5.so \
     vendor/samsung/i9500/proprietary/vendor/firmware/fimc_is_gumi_fw2.bin:system/vendor/firmware/fimc_is_gumi_fw2.bin \
     vendor/samsung/i9500/proprietary/vendor/firmware/fimc_is_sec_fw2.bin:system/vendor/firmware/fimc_is_sec_fw2.bin \
