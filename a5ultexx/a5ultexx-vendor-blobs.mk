@@ -218,8 +218,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/samsung/a5ultexx/proprietary/bin/nl_listener:system/bin/nl_listener \
-    vendor/samsung/a5ultexx/proprietary/bin/port-bridge:system/bin/port-bridge \
+    vendor/samsung/a5ultexx/proprietary/bin/ssr_diag:system/bin/ssr_diag \
+    vendor/samsung/a5ultexx/proprietary/bin/ssr_setup:system/bin/ssr_setup \
+    vendor/samsung/a5ultexx/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
