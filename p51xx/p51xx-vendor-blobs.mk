@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p51xx/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
     vendor/samsung/p51xx/common/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/samsung/p51xx/common/system/lib/libion.omap4.so:system/lib/libion.omap4.so \
-    vendor/samsung/p51xx/common/system/lib/libion_ti.so:system/lib/libion_ti.so \
     vendor/samsung/p51xx/common/system/lib/libmm_osal.so:system/lib/libmm_osal.so \
     vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
     vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
