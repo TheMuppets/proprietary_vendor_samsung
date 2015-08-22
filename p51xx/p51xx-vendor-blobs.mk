@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p51xx/common/system/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p51xx/common/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
     vendor/samsung/p51xx/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     vendor/samsung/p51xx/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
