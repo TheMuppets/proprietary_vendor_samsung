@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
 	vendor/samsung/ks01lte/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
 	vendor/samsung/ks01lte/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
-	vendor/samsung/ks01lte/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
 	vendor/samsung/ks01lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
