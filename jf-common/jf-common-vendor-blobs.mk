@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/samsung/jf-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/jf-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/jf-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/jf-common/proprietary/lib/libthermalclient.so:system/lib/libthermalclient.so \
