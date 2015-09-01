@@ -36,11 +36,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/libalgobsx.so:system/lib/libalgobsx.so \
     vendor/samsung/a5ultexx/proprietary/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so \
     vendor/samsung/a5ultexx/proprietary/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
-    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b00:system/vendor/firmware/keymaste.b00 \
-    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b01:system/vendor/firmware/keymaste.b01 \
-    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b02:system/vendor/firmware/keymaste.b02 \
-    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b03:system/vendor/firmware/keymaste.b03 \
-    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.mdt:system/vendor/firmware/keymaste.mdt \
+    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b00:system/vendor/firmware/keymaster.b00 \
+    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b01:system/vendor/firmware/keymaster.b01 \
+    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b02:system/vendor/firmware/keymaster.b02 \
+    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b03:system/vendor/firmware/keymaster.b03 \
+    vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.mdt:system/vendor/firmware/keymaster.mdt \
     vendor/samsung/a5ultexx/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/a5ultexx/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/a5ultexx/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
