@@ -37,6 +37,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
 	vendor/samsung/mondrianwifi/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+	vendor/samsung/mondrianwifi/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
 	vendor/samsung/mondrianwifi/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
 	vendor/samsung/mondrianwifi/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
 	vendor/samsung/mondrianwifi/proprietary/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
