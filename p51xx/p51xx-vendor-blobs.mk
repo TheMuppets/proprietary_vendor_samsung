@@ -27,23 +27,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p51xx/common/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p51xx/common/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
-    vendor/samsung/p51xx/common/system/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so \
-    vendor/samsung/p51xx/common/system/lib/libtiutils.so:system/lib/libtiutils.so
+    vendor/samsung/p51xx/common/system/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p51xx/common/system/lib/libdomx.so:system/lib/libdomx.so \
     vendor/samsung/p51xx/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
-    vendor/samsung/p51xx/common/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    vendor/samsung/p51xx/common/system/lib/libion.omap4.so:system/lib/libion.omap4.so \
-    vendor/samsung/p51xx/common/system/lib/libmm_osal.so:system/lib/libmm_osal.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
-    vendor/samsung/p51xx/common/system/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/samsung/p51xx/common/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     vendor/samsung/p51xx/common/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/p51xx/common/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
