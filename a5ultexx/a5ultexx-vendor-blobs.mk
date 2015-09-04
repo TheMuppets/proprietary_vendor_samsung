@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
     vendor/samsung/a5ultexx/proprietary/lib/libalgobsx.so:system/lib/libalgobsx.so \
     vendor/samsung/a5ultexx/proprietary/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so \
+    vendor/samsung/a5ultexx/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/a5ultexx/proprietary/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
     vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b00:system/vendor/firmware/keymaster/keymaster.b00 \
     vendor/samsung/a5ultexx/proprietary/vendor/firmware/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
@@ -106,6 +107,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/samsung/a5ultexx/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
     vendor/samsung/a5ultexx/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libjpega.so:system/lib/libjpega.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libexifa.so:system/lib/libexifa.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_imx135_vt.so:system/vendor/lib/libchromatix_imx135_vt.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_imx135_vt_hd.so:system/vendor/lib/libchromatix_imx135_vt_hd.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_common.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_common.so \
@@ -158,6 +161,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/samsung/a5ultexx/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
@@ -212,7 +217,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/samsung/a5ultexx/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     vendor/samsung/a5ultexx/proprietary/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
-    vendor/samsung/a5ultexx/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/a5ultexx/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
@@ -221,7 +225,36 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_setup:system/bin/ssr_setup \
     vendor/samsung/a5ultexx/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
+    vendor/samsung/a5ultexx/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
-    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin
+    vendor/samsung/a5ultexx/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
+    vendor/samsung/a5ultexx/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+    vendor/samsung/a5ultexx/proprietary/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
+    vendor/samsung/a5ultexx/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_SamsungVAD_v01007.so:system/lib/lib_SamsungVAD_v01007.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver226.so \
+    vendor/samsung/a5ultexx/proprietary/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libtfa9895.so:system/lib/libtfa9895.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libmysound.so:system/lib/libmysound.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
+    vendor/samsung/a5ultexx/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
+    vendor/samsung/a5ultexx/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so
