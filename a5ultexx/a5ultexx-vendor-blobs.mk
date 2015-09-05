@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
-    vendor/samsung/a5ultexx/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
@@ -119,6 +118,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_vt.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_vt.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_vt_hd.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_vt_hd.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_zslshot.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_zslshot.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libAl_Awb.so:system/lib/libAl_Awb.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libAl_Awb_Sp.so:system/lib/libAl_Awb_Sp.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaf_algo_rear.so:system/lib/libaf_algo_rear.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaec_algo_front.so:system/lib/libaec_algo_front.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libawb_algo_rear_al.so:system/lib/libawb_algo_rear_al.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libaec_algo_rear.so:system/lib/libaec_algo_rear.so \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/samsung/a5ultexx/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
