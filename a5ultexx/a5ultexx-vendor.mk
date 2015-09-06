@@ -22,18 +22,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    libTimeService \
     TimeService
 
 PRODUCT_PACKAGES += \
-    libqct_resampler \
     libmm-abl
 
 PRODUCT_PACKAGES += \
-    libloc_api_v02
-
-PRODUCT_PACKAGES += \
-    libHevcSwDecoder \
-    libtime_genoff
+    libHevcSwDecoder
 
 $(call inherit-product, vendor/samsung/a5ultexx/a5ultexx-vendor-blobs.mk)

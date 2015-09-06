@@ -143,8 +143,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/a5ultexx/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/samsung/a5ultexx/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/samsung/a5ultexx/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -230,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/a5ultexx/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libcommon_time_client.so:system/lib/libcommon_time_client.so \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_setup:system/bin/ssr_setup \
     vendor/samsung/a5ultexx/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
