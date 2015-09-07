@@ -143,8 +143,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/a5ultexx/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/a5ultexx/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/samsung/a5ultexx/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/samsung/a5ultexx/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -188,7 +188,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
-    vendor/samsung/a5ultexx/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -230,7 +229,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/a5ultexx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/a5ultexx/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/samsung/a5ultexx/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/samsung/a5ultexx/proprietary/lib/libcommon_time_client.so:system/lib/libcommon_time_client.so \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/samsung/a5ultexx/proprietary/bin/ssr_setup:system/bin/ssr_setup \
@@ -266,5 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5ultexx/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
     vendor/samsung/a5ultexx/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
     vendor/samsung/a5ultexx/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
+    vendor/samsung/a5ultexx/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/samsung/a5ultexx/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-    vendor/samsung/a5ultexx/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so
+    vendor/samsung/a5ultexx/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
+    vendor/samsung/a5ultexx/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so
