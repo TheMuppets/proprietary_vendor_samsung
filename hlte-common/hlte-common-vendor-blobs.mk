@@ -29,8 +29,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0093.0399_wisol.hcd:system/vendor/firmware/bcm4335_V0093.0399_wisol.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0093.0399.hcd:system/vendor/firmware/bcm4335_V0093.0399.hcd \
+    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0105.0467_wisol.hcd:system/vendor/firmware/bcm4335_V0105.0467_wisol.hcd \
+    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0105.0467.hcd:system/vendor/firmware/bcm4335_V0105.0467.hcd \
+    vendor/samsung/hlte-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     vendor/samsung/hlte-common/proprietary/etc/C13QL_s5k3l2xx_module_info.xml:system/etc/C13QL_s5k3l2xx_module_info.xml \
     vendor/samsung/hlte-common/proprietary/etc/C13QS_imx135_module_info.xml:system/etc/C13QS_imx135_module_info.xml \
     vendor/samsung/hlte-common/proprietary/etc/D13QL_s5k3l2xx_module_info.xml:system/etc/D13QL_s5k3l2xx_module_info.xml \
