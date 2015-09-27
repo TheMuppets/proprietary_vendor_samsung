@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlte-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/samsung/trlte-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/trlte-common/proprietary/lib/libmmqjpeg_codec.so:system/lib/libmmqjpeg_codec.so \
+    vendor/samsung/trlte-common/proprietary/lib/libmysound.so:system/lib/libmysound.so \
     vendor/samsung/trlte-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/samsung/trlte-common/proprietary/lib/libqomx_jpegenc.so:system/lib/libqomx_jpegenc.so \
     vendor/samsung/trlte-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
