@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334.hcd:system/vendor/firmware/bcm4334.hcd \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_murata.hcd:system/vendor/firmware/bcm4334_murata.hcd \
-    vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_semco.hcd:system/vendor/firmware/bcm4334_semco.hcd \
+    vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_semcosh.hcd:system/vendor/firmware/bcm4334_semcosh.hcd \
     vendor/samsung/d2-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
     vendor/samsung/d2-common/proprietary/lib/libmmcamera_statsproc30.so:system/lib/libmmcamera_statsproc30.so \
