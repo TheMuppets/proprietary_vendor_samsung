@@ -141,11 +141,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/samsung/serrano-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
     vendor/samsung/serrano-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
