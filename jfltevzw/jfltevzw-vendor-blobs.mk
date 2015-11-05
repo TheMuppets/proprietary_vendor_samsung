@@ -22,6 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b05:system/etc/firmware/q6.b05 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b06:system/etc/firmware/q6.b06 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.mdt:system/etc/firmware/q6.mdt \
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/samsung/jfltevzw/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/samsung/jfltevzw/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/samsung/jfltevzw/proprietary/lib/libxml.so:system/lib/libxml.so \
