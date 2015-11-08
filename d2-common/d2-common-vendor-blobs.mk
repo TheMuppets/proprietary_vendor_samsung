@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/d2-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/d2-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/d2-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/d2-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/d2-common/proprietary/lib/libxml.so:system/lib/libxml.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
