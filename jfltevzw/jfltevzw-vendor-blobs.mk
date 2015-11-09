@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltevzw/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/jfltevzw/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/jfltevzw/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-    vendor/samsung/jfltevzw/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/samsung/jfltevzw/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/jfltevzw/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/jfltevzw/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
