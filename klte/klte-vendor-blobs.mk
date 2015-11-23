@@ -22,21 +22,25 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/klte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/klte/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/samsung/klte/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/klte/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/klte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/klte/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/samsung/klte/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
+    vendor/samsung/klte/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/samsung/klte/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/samsung/klte/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/klte/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/klte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/klte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/klte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/klte/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/samsung/klte/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    vendor/samsung/klte/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+    vendor/samsung/klte/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/klte/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/klte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/klte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/samsung/klte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/samsung/klte/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/samsung/klte/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    vendor/samsung/klte/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/samsung/klte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/klte/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/samsung/klte/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
