@@ -138,9 +138,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
-	vendor/samsung/jf-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-	vendor/samsung/jf-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
-	vendor/samsung/jf-common/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
 	vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
 	vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
 	vendor/samsung/jf-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
