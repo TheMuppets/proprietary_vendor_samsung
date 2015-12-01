@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/treltexx/proprietary/etc/sec_s3fwrn5_rfreg_thl.bin:system/etc/sec_s3fwrn5_rfreg_thl.bin \
     vendor/samsung/treltexx/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/treltexx/proprietary/lib/hw/nfc_nci.universal5433.so:system/lib/hw/nfc_nci.universal5433.so \
+    vendor/samsung/treltexx/proprietary/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
     vendor/samsung/treltexx/proprietary/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
     vendor/samsung/treltexx/proprietary/vendor/firmware/hevc_fw.bin:system/vendor/firmware/hevc_fw.bin \
     vendor/samsung/treltexx/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
