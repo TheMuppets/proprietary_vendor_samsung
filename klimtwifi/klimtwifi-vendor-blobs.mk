@@ -61,31 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klimtwifi/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/klimtwifi/proprietary/etc/gps.xml:system/etc/gps.xml \
     vendor/samsung/klimtwifi/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/klimtwifi/proprietary/bin/lpm:system/bin/lpm \
     vendor/samsung/klimtwifi/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/klimtwifi/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/klimtwifi/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/klimtwifi/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin \
     vendor/samsung/klimtwifi/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/klimtwifi/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
@@ -121,3 +97,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klimtwifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/klimtwifi/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
     vendor/samsung/klimtwifi/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    vendor/samsung/klimtwifi/proprietary/sbin/sswap:root/sbin/sswap
