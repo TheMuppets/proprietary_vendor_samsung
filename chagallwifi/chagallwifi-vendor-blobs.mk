@@ -58,7 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
     vendor/samsung/chagallwifi/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
     vendor/samsung/chagallwifi/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/chagallwifi/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/chagallwifi/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/chagallwifi/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     vendor/samsung/chagallwifi/proprietary/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
