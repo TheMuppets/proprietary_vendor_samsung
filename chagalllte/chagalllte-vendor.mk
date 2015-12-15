@@ -18,3 +18,7 @@
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/chagalllte/overlay
 
 $(call inherit-product, vendor/samsung/chagalllte/chagalllte-vendor-blobs.mk)
+
+# Include chagall-common repo
+$(call inherit-product-if-exists, vendor/samsung/chagall-common/chagall-common-vendor.mk)
+-include vendor/samsung/chagall-common/BoardConfigVendor.mk
