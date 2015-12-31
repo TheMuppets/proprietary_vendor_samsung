@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
     $(LOCAL_PATH)/proprietary/system/bin/diag_uart_log:system/bin/diag_uart_log \
     $(LOCAL_PATH)/proprietary/system/bin/efsks:system/bin/efsks \
-    $(LOCAL_PATH)/proprietary/system/bin/ks:system/bin/ks \
+    $(LOCAL_PATH)/proprietary/system/bin/ks_exec:system/bin/ks_exec \
     $(LOCAL_PATH)/proprietary/system/bin/qcks:system/bin/qcks \
     $(LOCAL_PATH)/proprietary/system/bin/qmiproxy:system/bin/qmiproxy \
     $(LOCAL_PATH)/proprietary/system/bin/qmuxd:system/bin/qmuxd \
