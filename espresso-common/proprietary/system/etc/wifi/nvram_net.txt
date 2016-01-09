@@ -12,7 +12,7 @@ macaddr=00:90:4c:c5:12:38
 ag0=253
 aa2g=1
 
-ccode=GB
+ccode=ALL
 
 pa0itssit=0x20
 pa0b0=0x1496
