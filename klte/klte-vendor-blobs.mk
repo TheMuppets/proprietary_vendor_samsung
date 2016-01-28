@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/samsung/klte/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/samsung/klte/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/samsung/klte/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/klte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/klte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/klte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
