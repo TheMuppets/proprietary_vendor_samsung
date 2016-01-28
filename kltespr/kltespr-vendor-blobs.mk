@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm4350_V0301.0568.hcd:system/vendor/firmware/bcm4350_V0301.0568.hcd \
     vendor/samsung/kltespr/proprietary/etc/clatd.conf:system/etc/clatd.conf \
-    vendor/samsung/kltespr/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/samsung/kltespr/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/kltespr/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/samsung/kltespr/proprietary/etc/sap.conf:system/etc/sap.conf \
