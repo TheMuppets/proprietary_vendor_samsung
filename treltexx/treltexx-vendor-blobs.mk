@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/treltexx/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.wmfw:system/etc/firmware/florida-dsp4-rx-anc-wb.wmfw \
     vendor/samsung/treltexx/proprietary/vendor/firmware/seiren_fw_dram.bin:system/vendor/firmware/seiren_fw_dram.bin \
     vendor/samsung/treltexx/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
-    vendor/samsung/treltexx/proprietary/lib/hw/camera.universal5433.so:system/lib/hw/camera.universal5433.so \
+    vendor/samsung/treltexx/proprietary/lib/hw/camera.universal5433.so:system/lib/hw/camera.vendor.universal5433.so \
     vendor/samsung/treltexx/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/treltexx/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/treltexx/proprietary/lib/libvdis.so:system/lib/libvdis.so \
