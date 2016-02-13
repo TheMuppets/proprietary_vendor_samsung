@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteduos/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/klteduos/proprietary/etc/clatd.conf:system/etc/clatd.conf \
-    vendor/samsung/klteduos/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/samsung/klteduos/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/klteduos/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/klteduos/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \

@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltechn/proprietary/vendor/firmware/bcm4350_V0301.0561.hcd:system/vendor/firmware/bcm4350_V0301.0561.hcd \
     vendor/samsung/kltechn/proprietary/etc/clatd.conf:system/etc/clatd.conf \
-    vendor/samsung/kltechn/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/samsung/kltechn/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/kltechn/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/kltechn/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
