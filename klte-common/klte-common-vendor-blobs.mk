@@ -220,6 +220,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/klte-common/proprietary/bin/vcsFPService:system/bin/vcsFPService \
+    vendor/samsung/klte-common/proprietary/lib/libfpasmtztransport.so:system/lib/libfpasmtztransport.so \
+    vendor/samsung/klte-common/proprietary/lib/libvalAuth.so:system/lib/libvalAuth.so \
+    vendor/samsung/klte-common/proprietary/lib/libvcsfp.so:system/lib/libvcsfp.so \
+    vendor/samsung/klte-common/proprietary/lib/libvfmClient.so:system/lib/libvfmClient.so \
+    vendor/samsung/klte-common/proprietary/lib/libvfmtztransport.so:system/lib/libvfmtztransport.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
