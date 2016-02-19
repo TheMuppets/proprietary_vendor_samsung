@@ -84,6 +84,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/treltexx/proprietary/etc/lhd.conf:system/etc/lhd.conf \
     vendor/samsung/treltexx/proprietary/bin/lhd:system/bin/lhd \
     vendor/samsung/treltexx/proprietary/lib/hw/sensors.universal5433.so:system/lib/hw/sensors.universal5433.so \
+    vendor/samsung/treltexx/proprietary/bin/sensorhubservice:system/bin/sensorhubservice \
+    vendor/samsung/treltexx/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
+    vendor/samsung/treltexx/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
+    vendor/samsung/treltexx/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
+    vendor/samsung/treltexx/proprietary/lib/hw/sensorhubs.universal5433.so:system/lib/hw/sensorhubs.universal5433.so \
     vendor/samsung/treltexx/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/samsung/treltexx/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/treltexx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
