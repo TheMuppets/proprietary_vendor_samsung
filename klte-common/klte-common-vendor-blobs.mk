@@ -243,6 +243,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/klte-common/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/samsung/klte-common/proprietary/bin/radish:system/bin/radish \
+    vendor/samsung/klte-common/proprietary/bin/sensorhubservice:system/bin/sensorhubservice \
     vendor/samsung/klte-common/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
@@ -258,7 +259,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/klte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
+    vendor/samsung/klte-common/proprietary/lib/hw/sensorhubs.msm8974.so:system/lib/hw/sensorhubs.msm8974.so \
     vendor/samsung/klte-common/proprietary/lib/libhr.so:system/lib/libhr.so \
+    vendor/samsung/klte-common/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
+    vendor/samsung/klte-common/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
+    vendor/samsung/klte-common/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
     vendor/samsung/klte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/klte-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/samsung/klte-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
