@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS += vendor/samsung/p31xx/overlay
-
-$(call inherit-product, vendor/samsung/p31xx/p31xx-vendor-blobs.mk)
+# RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/espresso3g/proprietary/sbin/cbd:root/sbin/cbd \
+    vendor/samsung/espresso3g/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
