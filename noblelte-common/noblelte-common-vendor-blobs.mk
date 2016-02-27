@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/noblelte-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
     vendor/samsung/noblelte-common/proprietary/bin/lhd:system/bin/lhd \
+    vendor/samsung/noblelte-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
     vendor/samsung/noblelte-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
