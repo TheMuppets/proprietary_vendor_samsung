@@ -209,6 +209,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
 	vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
 	vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
+        vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
 	vendor/samsung/zero-common/proprietary/lib/libtlc_direct_comm.so:system/lib/libtlc_direct_comm.so \
 	vendor/samsung/zero-common/proprietary/lib64/libtlc_direct_comm.so:system/lib64/libtlc_direct_comm.so \
 	vendor/samsung/zero-common/proprietary/lib/libtlc_proxy_comm.so:system/lib/libtlc_proxy_comm.so \
