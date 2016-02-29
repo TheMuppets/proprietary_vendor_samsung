@@ -130,8 +130,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_dram.bin:system/vendor/firmware/seiren_fw_dram.bin \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
-	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A0_V0009.0033.hcd:system/vendor/firmware/bcm4358A0_V0009.0033.hcd \
-	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A1_V0041.0075.hcd:system/vendor/firmware/bcm4358A1_V0041.0075.hcd \
+	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0062.0099.hcd:system/vendor/firmware/bcm4358A3_V0062.0099.hcd \
+	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0062.0099_wisol.hcd:system/vendor/firmware/bcm4358A3_V0062.0099_wisol.hcd \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
@@ -153,11 +153,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
 	vendor/samsung/zero-common/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
 	vendor/samsung/zero-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
-	vendor/samsung/zero-common/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
-	vendor/samsung/zero-common/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
+	vendor/samsung/zero-common/proprietary/lib/hw/fingerprint.universal7420.so:system/lib/hw/fingerprint.universal7420.so \
+	vendor/samsung/zero-common/proprietary/lib64/hw/fingerprint.universal7420.so:system/lib64/hw/fingerprint.universal7420.so \
 	vendor/samsung/zero-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
 	vendor/samsung/zero-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
-	vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
+	vendor/samsung/zero-common/proprietary/bin/gpsd:system/bin/gpsd \
+	vendor/samsung/zero-common/proprietary/lib64/hw/gps.universal7420.so:system/lib64/hw/gps.universal7420.so \
+	vendor/samsung/zero-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
+	vendor/samsung/zero-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/fimc_is_fw2_imx240.bin:system/vendor/firmware/fimc_is_fw2_imx240.bin \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
@@ -201,13 +204,14 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
 	vendor/samsung/zero-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin \
-	vendor/samsung/zero-common/proprietary/bin/cbd:system/bin/cbd \
 	vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
 	vendor/samsung/zero-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	vendor/samsung/zero-common/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
 	vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
 	vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
+	vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
+	vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
 	vendor/samsung/zero-common/proprietary/lib/libtlc_direct_comm.so:system/lib/libtlc_direct_comm.so \
 	vendor/samsung/zero-common/proprietary/lib64/libtlc_direct_comm.so:system/lib64/libtlc_direct_comm.so \
 	vendor/samsung/zero-common/proprietary/lib/libtlc_proxy_comm.so:system/lib/libtlc_proxy_comm.so \
@@ -234,8 +238,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_iccc.so:system/lib64/libtlc_tz_iccc.so \
 	vendor/samsung/zero-common/proprietary/lib/libtlc_tz_keystore.so:system/lib/libtlc_tz_keystore.so \
 	vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_keystore.so:system/lib64/libtlc_tz_keystore.so \
-	vendor/samsung/zero-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-	vendor/samsung/zero-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
 	vendor/samsung/zero-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
 	vendor/samsung/zero-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
 	vendor/samsung/zero-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
