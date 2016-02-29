@@ -16,18 +16,23 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/bcm4359B0_V0019.0000.hcd:system/vendor/firmware/bcm4359B0_V0019.0000.hcd \
-    vendor/samsung/noblelte-common/proprietary/vendor/firmware/bcm4359B1_V0030.0044_wisol.hcd:system/vendor/firmware/bcm4359B1_V0030.0044_wisol.hcd \
-    vendor/samsung/noblelte-common/proprietary/vendor/firmware/bcm4359B1_V0030.0044.hcd:system/vendor/firmware/bcm4359B1_V0030.0044.hcd \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/bcm4359B1_V0043.0055_wisol.hcd:system/vendor/firmware/bcm4359B1_V0043.0055_wisol.hcd \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/bcm4359B1_V0043.0055.hcd:system/vendor/firmware/bcm4359B1_V0043.0055.hcd \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
-    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_ibss.bin_b0:system/etc/wifi/bcmdhd_ibss.bin_b0 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_apsta.bin_b90s_b1:system/etc/wifi/bcmdhd_apsta.bin_b90s_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_apsta.bin_c0:system/etc/wifi/bcmdhd_apsta.bin_c0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_ibss.bin_b1:system/etc/wifi/bcmdhd_ibss.bin_b1 \
-    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg.bin_b0:system/etc/wifi/bcmdhd_mfg.bin_b0 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_ibss.bin_b90s_b1:system/etc/wifi/bcmdhd_ibss.bin_b90s_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_ibss.bin_c0:system/etc/wifi/bcmdhd_ibss.bin_c0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg.bin_b1:system/etc/wifi/bcmdhd_mfg.bin_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg.bin_b90s_b1:system/etc/wifi/bcmdhd_mfg.bin_b90s_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg.bin_c0:system/etc/wifi/bcmdhd_mfg.bin_c0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg2.bin_b1:system/etc/wifi/bcmdhd_mfg2.bin_b1 \
-    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_sta.bin_b0:system/etc/wifi/bcmdhd_sta.bin_b0 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg2.bin_b90s_b1:system/etc/wifi/bcmdhd_mfg2.bin_b90s_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_mfg2.bin_c0:system/etc/wifi/bcmdhd_mfg2.bin_c0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_sta.bin_b1:system/etc/wifi/bcmdhd_sta.bin_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_sta.bin_b90s_b1:system/etc/wifi/bcmdhd_sta.bin_b90s_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/wifi/bcmdhd_sta.bin_c0:system/etc/wifi/bcmdhd_sta.bin_c0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/nvram_mfg.txt_b0:system/etc/wifi/nvram_mfg.txt_b0 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/nvram_mfg.txt_b1:system/etc/wifi/nvram_mfg.txt_b1 \
@@ -96,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/noblelte-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
     vendor/samsung/noblelte-common/proprietary/bin/lhd:system/bin/lhd \
+    vendor/samsung/noblelte-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
     vendor/samsung/noblelte-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
@@ -111,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     vendor/samsung/noblelte-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:system/app/mcRegistry/07010000000000000000000000000000.tlbin \
+    vendor/samsung/noblelte-common/proprietary/app/mcRegistry/08130000000000000000000000000000.tlbin:system/app/mcRegistry/08130000000000000000000000000000.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/07060000000000000000000000000000.tlbin:system/app/mcRegistry/07060000000000000000000000000000.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/08880000000000000000000000000000.tlbin:system/app/mcRegistry/08880000000000000000000000000000.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
@@ -122,6 +129,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff00000000000000000000001f.tlbin:system/app/mcRegistry/ffffffff00000000000000000000001f.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff00000000000000000000002a.tlbin:system/app/mcRegistry/ffffffff00000000000000000000002a.tlbin \
+    vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff00000000000000000000003e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000003e.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000004.tlbin:system/app/mcRegistry/ffffffff000000000000000000000004.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000005.tlbin:system/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000012.tlbin:system/app/mcRegistry/ffffffff000000000000000000000012.tlbin \
@@ -133,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000019.tlbin:system/app/mcRegistry/ffffffff000000000000000000000019.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000021.tlbin:system/app/mcRegistry/ffffffff000000000000000000000021.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000028.tlbin:system/app/mcRegistry/ffffffff000000000000000000000028.tlbin \
+    vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffff000000000000000000000038.tlbin:system/app/mcRegistry/ffffffff000000000000000000000038.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
