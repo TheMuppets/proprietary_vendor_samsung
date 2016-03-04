@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/etc/sec_s3fwrn5s_rfreg_for_old_hw.bin:system/etc/sec_s3fwrn5s_rfreg_for_old_hw.bin \
     vendor/samsung/noblelte-common/proprietary/etc/sec_s3fwrn5s_rfreg.bin:system/etc/sec_s3fwrn5s_rfreg.bin \
     vendor/samsung/noblelte-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/sec_s3fwrn5s_firmware.bin:system/vendor/firmware/sec_s3fwrn5s_firmware.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/fimc_is_fw2_2p2.bin:system/vendor/firmware/fimc_is_fw2_2p2.bin \
