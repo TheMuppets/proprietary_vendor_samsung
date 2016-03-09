@@ -206,8 +206,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin \
 	vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
-	vendor/samsung/zero-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	vendor/samsung/zero-common/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
 	vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
 	vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
 	vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
