@@ -176,7 +176,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/samsung/lt03lte/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/lt03lte/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/samsung/lt03lte/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/samsung/lt03lte/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
@@ -224,6 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/lt03lte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/lt03lte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/lt03lte/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/lt03lte/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
