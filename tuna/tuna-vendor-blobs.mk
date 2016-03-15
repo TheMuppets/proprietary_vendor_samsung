@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
 # SGX DDK 1.9@2291151
 PRODUCT_COPY_FILES += \
     vendor/samsung/tuna/proprietary/etc/powervr.ini:system/etc/powervr.ini \
-    vendor/samsung/tuna/proprietary/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/tuna/proprietary/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/tuna/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
     vendor/samsung/tuna/proprietary/vendor/lib/hw/gralloc.omap4460.so:system/vendor/lib/hw/gralloc.omap4460.so \
