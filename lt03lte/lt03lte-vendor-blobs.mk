@@ -151,6 +151,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/samsung/lt03lte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/samsung/lt03lte/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/samsung/lt03lte/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/samsung/lt03lte/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/lt03lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
