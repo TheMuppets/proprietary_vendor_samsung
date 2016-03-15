@@ -76,7 +76,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltechnduo/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/kltechnduo/proprietary/lib/libsec-ril-09w.so:system/lib/libsec-ril-09w.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    vendor/samsung/kltechnduo/proprietary/lib/libsec-ril-dsds-09w.so:system/lib/libsec-ril-dsds-09w.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
