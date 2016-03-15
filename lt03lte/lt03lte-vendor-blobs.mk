@@ -40,7 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/samsung/lt03lte/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/samsung/lt03lte/proprietary/vendor/firmware/BCM4339_003.001.009.0061.0300.hcd:system/vendor/firmware/BCM4339_003.001.009.0061.0300.hcd \
     vendor/samsung/lt03lte/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/lt03lte/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
@@ -218,7 +217,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/samsung/lt03lte/proprietary/bin/efsks:system/bin/efsks \
+    vendor/samsung/lt03lte/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/lt03lte/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/samsung/lt03lte/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/lt03lte/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/lt03lte/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/lt03lte/proprietary/bin/rfs_access:system/bin/rfs_access \
@@ -253,10 +255,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
     vendor/samsung/lt03lte/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/lt03lte/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/lt03lte/proprietary/bin/efsks:system/bin/efsks \
-    vendor/samsung/lt03lte/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/samsung/lt03lte/proprietary/bin/ks:system/bin/ks \
-    vendor/samsung/lt03lte/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/lt03lte/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/lt03lte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/lt03lte/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
