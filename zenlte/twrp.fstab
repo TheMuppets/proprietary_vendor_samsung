@@ -1,0 +1,8 @@
+/boot		emmc		/dev/block/platform/15570000.ufs/by-name/BOOT
+/cache		ext4		/dev/block/platform/15570000.ufs/by-name/CACHE	
+/data		ext4		/dev/block/platform/15570000.ufs/by-name/USERDATA	length=-16384
+/recovery	emmc		/dev/block/platform/15570000.ufs/by-name/RECOVERY	
+/system		ext4		/dev/block/platform/15570000.ufs/by-name/SYSTEM	
+/efs		emmc		/dev/block/platform/15570000.ufs/by-name/EFS flags=display="EFS";backup=1	
+/radio		emmc		/dev/block/platform/15570000.ufs/by-name/RADIO flags=display="RADIO";backup=1	
+/usb-otg         vfat       /dev/block/sdd1	/dev/block/sdd	flags=display="USB-OTG";storage;wipeingui;removable
