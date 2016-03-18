@@ -1,0 +1,19 @@
+on early-init
+	setenforce permissive
+
+on fs
+    mount pstore pstore /sys/fs/pstore
+ 
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+ 
+    stop adbd
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 04e8
+    write /sys/class/android_usb/android0/idProduct 6860
+    write /sys/class/android_usb/android0/functions adb
+    write /sys/class/android_usb/android0/iManufacturer SAMSUNG
+    write /sys/class/android_usb/android0/iProduct SAMSUNG_Android
+    write /sys/class/android_usb/android0/iSerial ${ro.serialno}
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
