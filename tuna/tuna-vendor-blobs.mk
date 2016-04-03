@@ -42,6 +42,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/tuna/proprietary/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
     vendor/samsung/tuna/proprietary/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so
 
+# SMC
+PRODUCT_COPY_FILES += \
+    vendor/samsung/tuna/proprietary/vendor/firmware/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
+    vendor/samsung/tuna/proprietary/vendor/etc/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini
+
 # Widevine DRM
 PRODUCT_COPY_FILES += \
     vendor/samsung/tuna/proprietary/vendor/lib/libdrmmtkutil.so:system/vendor/lib/libdrmmtkutil.so \
