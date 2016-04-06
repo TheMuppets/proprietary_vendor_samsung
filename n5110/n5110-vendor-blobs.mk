@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,4 +16,5 @@ LOCAL_PATH := vendor/samsung/n5110
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
+

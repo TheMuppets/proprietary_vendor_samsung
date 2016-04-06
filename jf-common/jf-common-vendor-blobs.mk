@@ -19,9 +19,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
 	vendor/samsung/jf-common/proprietary/bin/radish:system/bin/radish \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
-	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_murata.hcd:system/vendor/firmware/bcm4335_murata.hcd \
-	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
+	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_V0343.0353.hcd:system/vendor/firmware/bcm4335_V0343.0353.hcd \
 	vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
 	vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
 	vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -130,22 +128,16 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
 	vendor/samsung/jf-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-	vendor/samsung/jf-common/proprietary/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-	vendor/samsung/jf-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
 	vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
 	vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
 	vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-	vendor/samsung/jf-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
 	vendor/samsung/jf-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
 	vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
-	vendor/samsung/jf-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-	vendor/samsung/jf-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
-	vendor/samsung/jf-common/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
 	vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
 	vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
 	vendor/samsung/jf-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \

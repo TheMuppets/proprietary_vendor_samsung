@@ -23,11 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/serrano-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/serrano-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-    vendor/samsung/serrano-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-    vendor/samsung/serrano-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
-    vendor/samsung/serrano-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
-    vendor/samsung/serrano-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/samsung/serrano-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/samsung/serrano-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/serrano-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/serrano-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
@@ -136,13 +131,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/serrano-common/proprietary/bin/insthk:system/bin/insthk \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/samsung/serrano-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/serrano-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/samsung/serrano-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/serrano-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
