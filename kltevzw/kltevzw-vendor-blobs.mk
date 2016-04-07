@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/libqmiservices_ext.so:system/vendor/lib/libqmiservices_ext.so \
     vendor/samsung/kltevzw/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/kltevzw/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/kltevzw/proprietary/bin/qcks:system/bin/qcks \
@@ -53,14 +52,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltevzw/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltevzw/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltevzw/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-    vendor/samsung/kltevzw/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/kltevzw/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltevzw/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltevzw/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/samsung/kltevzw/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltevzw/proprietary/lib/libstlport.so:system/lib/libstlport.so \
-    vendor/samsung/kltevzw/proprietary/lib/libstlport_shared.so:system/lib/libstlport_shared.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
