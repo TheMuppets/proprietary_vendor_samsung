@@ -16,5 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/treltexx/proprietary/vendor/firmware/bcm4358A0_V0033.0000.hcd:system/vendor/firmware/bcm4358A0_V0033.0000.hcd \
-    vendor/samsung/treltexx/proprietary/vendor/firmware/bcm4358A1_V0051.0080.hcd:system/vendor/firmware/bcm4358A1_V0051.0080.hcd \
+    vendor/samsung/treltexx/proprietary/vendor/firmware/BCM4358A1_V0054.0094_wisol.hcd:system/vendor/firmware/BCM4358A1_V0054.0094_wisol.hcd \
+    vendor/samsung/treltexx/proprietary/vendor/firmware/BCM4358A1_V0054.0094.hcd:system/vendor/firmware/BCM4358A1_V0054.0094.hcd \
     vendor/samsung/treltexx/proprietary/etc/sec_s3fwrn5_rfreg_thl.bin:system/etc/sec_s3fwrn5_rfreg_thl.bin
