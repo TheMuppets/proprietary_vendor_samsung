@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trelte-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/trelte-common/proprietary/lib/hw/gps.universal5433.so:system/lib/hw/gps.universal5433.so \
     vendor/samsung/trelte-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-    vendor/samsung/trelte-common/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     vendor/samsung/trelte-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/trelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/trelte-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
