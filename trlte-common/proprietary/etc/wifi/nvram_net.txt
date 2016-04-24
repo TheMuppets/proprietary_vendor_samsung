@@ -1,5 +1,4 @@
-#SEMCO B85 BT AoA BCM4358 WLCSP module, SEMCO S/W, 2 antenna - 2014.09.01
-#11b Ant DIV fix
+#SEMCO B85 BT AoA BCM4358 WLCSP module, SEMCO S/W, 2 antenna - 2014.09.23
 NVRAMRev=$Rev: 373428 $
 sromrev=11
 boardrev=0x1300
@@ -11,8 +10,8 @@ boardflags2=0x00002000
 boardflags3=0x48000109
 #boardnum=57410
 macaddr=00:90:4c:16:70:01
-ccode=US
-regrev=0
+ccode=GB
+regrev=06
 antswitch=0
 pdgain5g=4
 pdgain2g=4
@@ -69,14 +68,13 @@ temps_hysteresis=15
 tempoffset=255
 rawtempsense=0x1ff
 
-pa2ga0=0xff6b,0x1545,0xfd77
-pa2ga1=0xff60,0x153f,0xfd76
-pa5ga0=0xff44,0x1742,0xfd31,0xff47,0x173c,0xfd33,0xff42,0x1693,0xfd3e,0xff54,0x1721,0xfd3e
-pa5ga1=0xff40,0x17ab,0xfd24,0xff44,0x17b2,0xfd26,0xff47,0x1731,0xfd32,0xff47,0x1721,0xfd35
-
-maxp2ga0=76
+pa2ga0=0xff6b,0x1445,0xfd8a
+pa2ga1=0xff60,0x143f,0xfd8a
+pa5ga0=0xff44,0x1642,0xfd48,0xff47,0x163c,0xfd4a,0xff42,0x1513,0xfd62,0xff54,0x1721,0xfd3e
+pa5ga1=0xff40,0x16ab,0xfd3c,0xff44,0x16b2,0xfd3e,0xff47,0x15b1,0xfd55,0xff47,0x1721,0xfd35
+maxp2ga0=78
 maxp5ga0=74,74,74,74
-maxp2ga1=76
+maxp2ga1=78
 maxp5ga1=74,74,74,74
 subband5gver=0x4
 pdoffsetcckma0=0x3
@@ -87,16 +85,16 @@ pdoffset40ma1=0x0000
 pdoffset80ma1=0x0000
 cckbw202gpo=0x0000
 cckbw20ul2gpo=0x0000
-mcsbw202gpo=0xCC886664
-dot11agofdmhrbw202gpo=0x6688
+mcsbw202gpo=0xAA886664
+dot11agofdmhrbw202gpo=0x6666
 ofdmlrbw202gpo=0x0022
-mcsbw205glpo=0x88866660
+mcsbw205glpo=0x88866662
 mcsbw405glpo=0xAAA88884
 mcsbw805glpo=0xCCCAAAA6
-mcsbw205gmpo=0x88866660
+mcsbw205gmpo=0x88866662
 mcsbw405gmpo=0xAAA88884
 mcsbw805gmpo=0xCCCAAAA6
-mcsbw205ghpo=0x88866660
+mcsbw205ghpo=0x88866662
 mcsbw405ghpo=0xAAA88884
 mcsbw805ghpo=0xCCCAAAA6
 mcslr5glpo=0x0000
@@ -134,6 +132,8 @@ epsdelta2g0=0
 epsdelta2g1=0
 papdwar=4
 cckdigfilttype=4
+cck_onecore_tx=1
+tssisleep_en=0x1f
 
 ## SWCTRLMAP using AN29223K and AN29222K
 swctrlmap_5g=0x020c020c,0x05a40000,0x04240000,0x000000,0x0f8
@@ -146,7 +146,7 @@ swctrlmap_2g=0x10211021,0x28510000,0x08110000,0x020202,0x0ff
 #muxenab=0x4
 
 btc_params82=0x0
-
+btc_params51=0x409f
 # ###########  BTC Dynctl profile params  ############
 # flags:bit0 - dynctl enabled, bit1 dynamic desense, bit2 dynamic mode
 
@@ -165,8 +165,8 @@ btcdyn_msw_row0=1,12,-70,-30,-90
 btcdyn_dsns_row0=5,4,0,-65,-65
 
 ## 2G TX power compensation
-#powoffs2gtna0=0,-1,-1,0,2,3,4,4,2,0,-1,-2,-1,0
-#powoffs2gtna1=0,0,0,0,2,3,4,4,4,2,1,1,1,0
+powoffs2gtna0=0,-2,-4,-3,0,1,3,3,2,0,0,0,3,0
+powoffs2gtna1=-2,-3,-2,-1,0,1,0,0,0,0,0,2,2,0
 
 #rpcal2g=10
 #rpcal5gb0=20
