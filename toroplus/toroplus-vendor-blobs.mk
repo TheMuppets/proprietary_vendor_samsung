@@ -16,11 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/toroplus/proprietary/lib/lib_gsd4t.so:system/lib/lib_gsd4t.so \
-    vendor/samsung/toroplus/proprietary/lib/libsyncml_core.so:system/lib/libsyncml_core.so \
-    vendor/samsung/toroplus/proprietary/lib/libsyncml_port.so:system/lib/libsyncml_port.so \
-    vendor/samsung/toroplus/proprietary/vendor/lib/libsec-ril_lte.so:system/vendor/lib/libsec-ril_lte.so \
-    vendor/samsung/toroplus/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/samsung/toroplus/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/toroplus/proprietary/vendor/lib/libsec-ril_lte.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/toroplus/proprietary/vendor/etc/sirfgps.conf:system/vendor/etc/sirfgps.conf \
     vendor/samsung/toroplus/proprietary/vendor/firmware/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
     vendor/samsung/toroplus/proprietary/vendor/lib/hw/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so
