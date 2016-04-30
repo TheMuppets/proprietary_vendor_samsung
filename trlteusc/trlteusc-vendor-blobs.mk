@@ -19,8 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/trlteusc/proprietary/vendor/firmware/bcm43569.hcd:system/vendor/firmware/bcm43569.hcd \
     vendor/samsung/trlteusc/proprietary/vendor/firmware/bcm43569A0.hcd:system/vendor/firmware/bcm43569A0.hcd \
     vendor/samsung/trlteusc/proprietary/vendor/firmware/bcm43569A1.hcd:system/vendor/firmware/bcm43569A1.hcd \
-    vendor/samsung/trlteusc/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
-    vendor/samsung/trlteusc/proprietary/lib/libbluetooth_jni.so:system/lib/libbluetooth_jni.so \
     vendor/samsung/trlteusc/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/trlteusc/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/trlteusc/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
