@@ -15,6 +15,4 @@
 LOCAL_PATH := vendor/samsung/n5110
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
-
+    $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor
