@@ -15,6 +15,9 @@
 LOCAL_PATH := vendor/samsung/kona-common
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/smdexe:system/bin/smdexe \
     $(LOCAL_PATH)/proprietary/system/bin/ddexe:system/bin/ddexe \
     $(LOCAL_PATH)/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
