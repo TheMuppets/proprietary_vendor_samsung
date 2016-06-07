@@ -203,7 +203,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/samsung/klte-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/samsung/klte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/klte-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/samsung/klte-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/samsung/klte-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/klte-common/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
