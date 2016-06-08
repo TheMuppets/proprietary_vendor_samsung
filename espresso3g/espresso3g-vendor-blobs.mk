@@ -15,4 +15,5 @@
 # RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/espresso3g/proprietary/sbin/cbd:root/sbin/cbd \
-    vendor/samsung/espresso3g/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
+    vendor/samsung/espresso3g/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/espresso3g/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so

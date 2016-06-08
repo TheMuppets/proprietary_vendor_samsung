@@ -26,9 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
-
-PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/bin/gpsd:system/bin/gpsd \
     vendor/samsung/espresso-common/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so
 
