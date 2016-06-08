@@ -29,9 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
-
-PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \
     vendor/samsung/espresso-common/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
 
