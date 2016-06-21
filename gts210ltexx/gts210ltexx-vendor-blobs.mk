@@ -17,4 +17,5 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/gts210ltexx/proprietary/vendor/firmware/bcm4358A3_V0062.0104.hcd:system/vendor/firmware/bcm4358A3_V0062.0104.hcd \
     vendor/samsung/gts210ltexx/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
+    vendor/samsung/gts210ltexx/proprietary/bin/cbd:system/bin/cbd \
     vendor/samsung/gts210ltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
