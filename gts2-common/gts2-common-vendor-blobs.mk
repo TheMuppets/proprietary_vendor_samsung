@@ -95,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts2-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
     vendor/samsung/gts2-common/proprietary/vendor/lib/liblvverx_3.27.02.so:system/vendor/lib/liblvverx_3.27.02.so \
     vendor/samsung/gts2-common/proprietary/vendor/lib/liblvvetx_3.27.02.so:system/vendor/lib/liblvvetx_3.27.02.so \
+    vendor/samsung/gts2-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/gts2-common/proprietary/lib/hw/camera.universal5433.so:system/lib/hw/camera.universal5433.so \
     vendor/samsung/gts2-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/gts2-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
