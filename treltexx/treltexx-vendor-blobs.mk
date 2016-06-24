@@ -19,5 +19,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/treltexx/proprietary/vendor/firmware/BCM4358A1_V0054.0094_wisol.hcd:system/vendor/firmware/BCM4358A1_V0054.0094_wisol.hcd \
     vendor/samsung/treltexx/proprietary/vendor/firmware/BCM4358A1_V0054.0094.hcd:system/vendor/firmware/BCM4358A1_V0054.0094.hcd \
     vendor/samsung/treltexx/proprietary/etc/sec_s3fwrn5_rfreg_thl.bin:system/etc/sec_s3fwrn5_rfreg_thl.bin \
-    vendor/samsung/treltexx/proprietary/bin/cbd:system/bin/cbd \
+    vendor/samsung/treltexx/proprietary/bin/cbd:system/bin/cbd
 
