@@ -16,4 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/trhpltexx/proprietary/vendor/firmware/bcm4358A0_V0033.0000.hcd:system/vendor/firmware/bcm4358A0_V0033.0000.hcd \
-    vendor/samsung/trhpltexx/proprietary/vendor/firmware/bcm4358A1_V0054.0095.hcd:system/vendor/firmware/bcm4358A1_V0054.0095.hcd
+    vendor/samsung/trhpltexx/proprietary/vendor/firmware/bcm4358A1_V0054.0095.hcd:system/vendor/firmware/bcm4358A1_V0054.0095.hcd \
+    vendor/samsung/trhpltexx/proprietary/bin/cbd:system/bin/cbd
+
