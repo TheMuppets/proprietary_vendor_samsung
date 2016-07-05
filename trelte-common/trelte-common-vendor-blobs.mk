@@ -16,6 +16,12 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/trelte-common/proprietary/bin/argosd:system/bin/argosd \
+    vendor/samsung/trelte-common/proprietary/bin/vcsFPService:system/bin/vcsFPService \
+    vendor/samsung/trelte-common/proprietary/lib/libfpasmtztransport.so:system/lib/libfpasmtztransport.so \
+    vendor/samsung/trelte-common/proprietary/lib/libvalAuth.so:system/lib/libvalAuth.so \
+    vendor/samsung/trelte-common/proprietary/lib/libvcsfp.so:system/lib/libvcsfp.so \
+    vendor/samsung/trelte-common/proprietary/lib/libvfmClient.so:system/lib/libvfmClient.so \
+    vendor/samsung/trelte-common/proprietary/lib/libvfmtztransport.so:system/lib/libvfmtztransport.so \
     vendor/samsung/trelte-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/trelte-common/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
     vendor/samsung/trelte-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
