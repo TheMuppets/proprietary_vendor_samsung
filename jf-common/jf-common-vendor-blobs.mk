@@ -129,7 +129,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
 	vendor/samsung/jf-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-	vendor/samsung/jf-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
 	vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
@@ -153,11 +152,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
 	vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
 	vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-	vendor/samsung/jf-common/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
-	vendor/samsung/jf-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
-	vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+	vendor/samsung/jf-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+	vendor/samsung/jf-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-	vendor/samsung/jf-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
