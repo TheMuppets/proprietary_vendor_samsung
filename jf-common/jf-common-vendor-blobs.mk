@@ -124,13 +124,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/bin/irsc_util:system/bin/irsc_util \
 	vendor/samsung/jf-common/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-	vendor/samsung/jf-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
 	vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
 	vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-	vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-	vendor/samsung/jf-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
 	vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
