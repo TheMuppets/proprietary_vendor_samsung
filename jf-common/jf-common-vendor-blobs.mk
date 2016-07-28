@@ -93,11 +93,13 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+	vendor/samsung/jf-common/proprietary/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+	vendor/samsung/jf-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -124,13 +126,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/bin/irsc_util:system/bin/irsc_util \
 	vendor/samsung/jf-common/proprietary/etc/sec_config:system/etc/sec_config \
 	vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-	vendor/samsung/jf-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
 	vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
 	vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
 	vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-	vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-	vendor/samsung/jf-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
 	vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
 	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
