@@ -154,4 +154,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-	vendor/samsung/jf-common/proprietary/lib/libgnustl_shared:system/lib/libgnustl_shared
+	vendor/samsung/jf-common/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so
