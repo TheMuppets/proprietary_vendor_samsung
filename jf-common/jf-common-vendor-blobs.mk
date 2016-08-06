@@ -138,6 +138,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
 	vendor/samsung/jf-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
 	vendor/samsung/jf-common/proprietary/lib/hw/sensorhubs.msm8960.so:system/lib/hw/sensorhubs.msm8960.so \
+	vendor/samsung/jf-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+	vendor/samsung/jf-common/proprietary/lib/libthermalclient.so:system/lib/libthermalclient.so \
 	vendor/samsung/jf-common/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/jf-common/proprietary/lib/libTimeService.so:system/lib/libTimeService.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
