@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/p31xx/p3100/sbin/cbd:root/sbin/cbd
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/p31xx/p3100/system/lib/libsec-ril.so:system/lib/libsec-ril.so
+$(call inherit-product, vendor/samsung/espresso3g/espresso3g-vendor-blobs.mk)

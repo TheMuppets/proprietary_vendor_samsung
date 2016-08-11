@@ -14,33 +14,18 @@
 
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
-    vendor/samsung/espresso-common/proprietary/system/bin/orientationd:system/bin/orientationd \
     vendor/samsung/espresso-common/proprietary/system/bin/smc.ini:system/bin/smc.ini \
     vendor/samsung/espresso-common/proprietary/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/espresso-common/proprietary/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/espresso-common/proprietary/system/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-    vendor/samsung/espresso-common/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/espresso-common/proprietary/system/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     vendor/samsung/espresso-common/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libtiutils.so:system/lib/libtiutils.so
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libdomx.so:system/lib/libdomx.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libion.omap4.so:system/lib/libion.omap4.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libmm_osal.so:system/lib/libmm_osal.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
+    vendor/samsung/espresso-common/proprietary/system/bin/gpsd:system/bin/gpsd \
+    vendor/samsung/espresso-common/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \
@@ -51,3 +36,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espresso-common/proprietary/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/espresso-common/proprietary/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/espresso-common/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/espresso-common/proprietary/system/etc/powervr.ini:system/etc/powervr.ini \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/hw/gralloc.omap4430.so:system/vendor/lib/hw/gralloc.omap4430.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
+    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so
