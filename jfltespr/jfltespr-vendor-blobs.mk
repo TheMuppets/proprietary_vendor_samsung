@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltespr/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/jfltespr/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/jfltespr/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/jfltespr/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/jfltespr/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/jfltespr/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/jfltespr/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \

@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-gsm-common/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/jf-gsm-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/jf-gsm-common/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/jf-gsm-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/jf-gsm-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/jf-gsm-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/jf-gsm-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
