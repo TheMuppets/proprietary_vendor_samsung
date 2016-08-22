@@ -132,6 +132,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105.hcd:system/vendor/firmware/bcm4358A3_V0064.0105.hcd \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd:system/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd \
+	vendor/samsung/zero-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+	vendor/samsung/zero-common/proprietary/lib/hw/camera.vendor.universal7420.so:system/lib/hw/camera.vendor.universal7420.so \
+	vendor/samsung/zero-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
+	vendor/samsung/zero-common/proprietary/lib64/hw/camera.vendor.universal7420.so:system/lib64/hw/camera.vendor.universal7420.so \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
