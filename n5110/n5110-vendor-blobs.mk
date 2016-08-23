@@ -16,11 +16,9 @@
 LOCAL_PATH := vendor/samsung/n5110
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
 	$(LOCAL_PATH)/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
 	$(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
-	$(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd \
-	$(LOCAL_PATH)/proprietary/system/bin/smdexe:system/bin/smdexe
+	$(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
