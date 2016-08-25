@@ -18,3 +18,4 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter zerofltedv zerofltemtr zerofltespr zerofltetmo zerofltexx zeroltetmo zeroltexx,$(TARGET_DEVICE)),)
 
+endif
