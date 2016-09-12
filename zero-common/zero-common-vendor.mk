@@ -134,11 +134,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     vendor/samsung/zero-common/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/zero-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+    vendor/samsung/zero-common/proprietary/lib/hw/camera.vendor.universal7420.so:system/lib/hw/camera.vendor.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/zero-common/proprietary/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
     vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib/libsensorlistener.so:system/lib/libsensorlistener.so \
     vendor/samsung/zero-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/zero-common/proprietary/lib/libtlc_direct_comm.so:system/lib/libtlc_direct_comm.so \
@@ -165,11 +168,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
     vendor/samsung/zero-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/zero-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
+    vendor/samsung/zero-common/proprietary/lib64/hw/camera.vendor.universal7420.so:system/lib64/hw/camera.vendor.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/libexynoscamera.so:system/lib64/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     vendor/samsung/zero-common/proprietary/lib64/libexynosv4l2.so:system/lib64/libexynosv4l2.so \
     vendor/samsung/zero-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
+    vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     vendor/samsung/zero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/zero-common/proprietary/lib64/libtlc_direct_comm.so:system/lib64/libtlc_direct_comm.so \
@@ -258,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_dram.bin:system/vendor/firmware/seiren_fw_dram.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_2p2.bin:system/vendor/firmware/setfile_2p2.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin \
     vendor/samsung/zero-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
