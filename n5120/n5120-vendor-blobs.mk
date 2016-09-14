@@ -16,22 +16,19 @@
 LOCAL_PATH := vendor/samsung/n5120
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
-    $(LOCAL_PATH)/proprietary/system/bin/diag_uart_log:system/bin/diag_uart_log \
     $(LOCAL_PATH)/proprietary/system/bin/efsks:system/bin/efsks \
     $(LOCAL_PATH)/proprietary/system/bin/ks:system/bin/ks \
     $(LOCAL_PATH)/proprietary/system/bin/qcks:system/bin/qcks \
     $(LOCAL_PATH)/proprietary/system/bin/qmiproxy:system/bin/qmiproxy \
     $(LOCAL_PATH)/proprietary/system/bin/qmuxd:system/bin/qmuxd \
-    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild \
-    $(LOCAL_PATH)/proprietary/system/bin/smdexe:system/bin/smdexe
+    $(LOCAL_PATH)/proprietary/system/bin/rild:system/bin/rild
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/Diag.cfg:system/etc/Diag.cfg \
-    $(LOCAL_PATH)/proprietary/system/etc/Diag_zero.cfg:system/etc/Diag_zero.cfg
+    $(LOCAL_PATH)/proprietary/system/etc/Diag_zero.cfg:system/etc/Diag_zero.cfg \
+    $(LOCAL_PATH)/proprietary/system/etc/flp.conf:system/etc/flp.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/libatparser.so:system/lib/libatparser.so \
     $(LOCAL_PATH)/proprietary/system/lib/libconfigdb.so:system/lib/libconfigdb.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcordon.so:system/lib/libcordon.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -61,3 +58,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libxml.so:system/lib/libxml.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/flp.default.so:system/lib/hw/flp.default.so
