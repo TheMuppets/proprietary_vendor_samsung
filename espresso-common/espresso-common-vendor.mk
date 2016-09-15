@@ -17,7 +17,6 @@ $(call inherit-product, vendor/samsung/espresso-common/common-vendor-blobs.mk)
 PRODUCT_PACKAGES += \
     libdrmwvmplugin \
     libwvdrmengine \
-    libdrmmtkutil \
     libwvdrm_L3 \
     libwvm \
     libWVStreamControlAPI_L3
