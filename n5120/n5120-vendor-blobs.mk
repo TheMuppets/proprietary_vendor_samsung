@@ -17,7 +17,9 @@ LOCAL_PATH := vendor/samsung/n5120
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/efsks:system/bin/efsks \
+    $(LOCAL_PATH)/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
     $(LOCAL_PATH)/proprietary/system/bin/ks:system/bin/ks \
+    $(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd \
     $(LOCAL_PATH)/proprietary/system/bin/qcks:system/bin/qcks \
     $(LOCAL_PATH)/proprietary/system/bin/qmiproxy:system/bin/qmiproxy \
     $(LOCAL_PATH)/proprietary/system/bin/qmuxd:system/bin/qmuxd \
