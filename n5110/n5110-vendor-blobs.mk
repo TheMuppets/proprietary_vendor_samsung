@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so
 
 PRODUCT_COPY_FILES += \
