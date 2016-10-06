@@ -175,6 +175,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/samsung/lt03lte/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/samsung/lt03lte/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/samsung/lt03lte/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/samsung/lt03lte/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/samsung/lt03lte/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \

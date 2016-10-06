@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
+    vendor/samsung/msm8960-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/samsung/msm8960-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     vendor/samsung/msm8960-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/samsung/msm8960-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
