@@ -18,8 +18,6 @@
 DEVICE_PACKAGE_OVERLAYS += vendor/samsung/serrano-common/overlay
 
 PRODUCT_PACKAGES += \
-    libtime_genoff \
-    libTimeService \
-    TimeService
+    libtime_genoff
 
 $(call inherit-product, vendor/samsung/serrano-common/serrano-common-vendor-blobs.mk)
