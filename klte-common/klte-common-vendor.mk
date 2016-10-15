@@ -171,7 +171,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/lib/libqomx_jpegenc.so:system/lib/libqomx_jpegenc.so \
     vendor/samsung/klte-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
     vendor/samsung/klte-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0766_wisol.hcd:system/vendor/firmware/bcm4350_V0375.0766_wisol.hcd \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0768.hcd:system/vendor/firmware/bcm4350_V0375.0768.hcd \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0768_murata.hcd:system/vendor/firmware/bcm4350_V0375.0768_murata.hcd \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0768_semco.hcd:system/vendor/firmware/bcm4350_V0375.0768_semco.hcd \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0768_semcosh.hcd:system/vendor/firmware/bcm4350_V0375.0768_semcosh.hcd \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0375.0768_semcove.hcd:system/vendor/firmware/bcm4350_V0375.0768_semcove.hcd \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libchromatix_s5k2p2xx_common.so:system/vendor/lib/C16QL_libchromatix_s5k2p2xx_common.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res0.so:system/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res0.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res1.so:system/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res1.so \
