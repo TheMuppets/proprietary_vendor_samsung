@@ -29,15 +29,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteduos/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/klteduos/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/klteduos/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/samsung/klteduos/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/samsung/klteduos/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/klteduos/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/klteduos/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/samsung/klteduos/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/klteduos/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/klteduos/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/samsung/klteduos/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/klteduos/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/samsung/klteduos/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/klteduos/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/klteduos/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/klteduos/proprietary/lib/librilutils.so:system/lib/librilutils.so \
@@ -56,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteduos/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/samsung/klteduos/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
