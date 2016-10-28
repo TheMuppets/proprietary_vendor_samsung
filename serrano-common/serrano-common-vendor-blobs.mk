@@ -124,6 +124,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/serrano-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/samsung/serrano-common/proprietary/bin/insthk:system/bin/insthk \
     vendor/samsung/serrano-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/serrano-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
