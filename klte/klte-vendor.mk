@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/klte/proprietary/etc/clatd.conf:system/etc/clatd.conf \
     vendor/samsung/klte/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/samsung/klte/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/samsung/klte/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/klte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/klte/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
@@ -31,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/samsung/klte/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/klte/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/samsung/klte/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/klte/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/klte/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/klte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/klte/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/samsung/klte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/samsung/klte/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/samsung/klte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/klte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/samsung/klte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
