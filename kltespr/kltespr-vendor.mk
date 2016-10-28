@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/samsung/kltespr/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/kltespr/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/samsung/kltespr/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/kltespr/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltespr/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
@@ -46,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/samsung/kltespr/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
