@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltevzw/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
