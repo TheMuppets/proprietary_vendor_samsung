@@ -61,24 +61,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-	vendor/samsung/ks01lte/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
 	vendor/samsung/ks01lte/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
 	vendor/samsung/ks01lte/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
 	vendor/samsung/ks01lte/proprietary/bin/efsks:system/bin/efsks \
@@ -297,3 +279,5 @@ PRODUCT_PACKAGES += \
     libmm-abl \
     libtime_genoff \
     TimeService
+
+$(call inherit-product, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)
