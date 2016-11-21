@@ -128,9 +128,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/samsung/jf-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/samsung/jf-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 PRODUCT_PACKAGES += \
