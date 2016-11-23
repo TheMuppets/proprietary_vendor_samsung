@@ -75,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/samsung/d2-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-    vendor/samsung/d2-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/d2-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/d2-common/proprietary/etc/sec_config:system/etc/sec_config \
