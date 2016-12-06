@@ -139,6 +139,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/zero-common/proprietary/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
+		vendor/samsung/zero-common/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
+		vendor/samsung/zero-common/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
     vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
