@@ -156,6 +156,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/gps.universal7420.so:system/lib64/hw/gps.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
+    vendor/samsung/noblelte-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
+    vendor/samsung/noblelte-common/proprietary/lib/libion_exynos.so:system/lib/libion_exynos.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libion_exynos.so:system/lib64/libion_exynos.so \
+    vendor/samsung/noblelte-common/proprietary/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
     vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
