@@ -133,8 +133,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/noblelte-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/noblelte-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
-    vendor/samsung/noblelte-common/proprietary/vendor/lib/liblvverx_3.27.02.so:system/vendor/lib/liblvverx_3.25.00.so \
-    vendor/samsung/noblelte-common/proprietary/vendor/lib/liblvvetx_3.27.02.so:system/vendor/lib/liblvvetx_3.25.00.so \
+    vendor/samsung/noblelte-common/proprietary/vendor/lib/liblvverx_3.27.02.so:system/vendor/lib/liblvverx_3.27.02.so \
+    vendor/samsung/noblelte-common/proprietary/vendor/lib/liblvvetx_3.27.02.so:system/vendor/lib/liblvvetx_3.27.02.so \
+    vendor/samsung/noblelte-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+    vendor/samsung/noblelte-common/proprietary/lib/hw/camera.universal7420.so:system/lib/hw/camera.universal7420.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/hw/camera.universal7420.so:system/lib64/hw/camera.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
