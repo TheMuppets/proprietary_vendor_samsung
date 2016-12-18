@@ -14,10 +14,6 @@
 
 LOCAL_PATH := vendor/samsung/smdk4412-common
 
-PRODUCT_PACKAGES += \
-	libUMP \
-	libfimc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/cbd:system/bin/cbd
 
