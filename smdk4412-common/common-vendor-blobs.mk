@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
 	libfimc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/sbin/cbd:root/sbin/cbd
+    $(LOCAL_PATH)/proprietary/system/bin/cbd:system/bin/cbd
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
