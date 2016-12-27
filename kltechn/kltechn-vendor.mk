@@ -22,15 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechn/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltechn/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltechn/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltechn/proprietary/etc/clatd.conf:system/etc/clatd.conf \
-    vendor/samsung/kltechn/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/kltechn/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/samsung/kltechn/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/kltechn/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/samsung/kltechn/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/kltechn/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/kltechn/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/samsung/kltechn/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/kltechn/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/kltechn/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/kltechn/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
@@ -38,15 +29,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechn/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltechn/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltechn/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltechn/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/kltechn/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/kltechn/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/kltechn/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/samsung/kltechn/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \

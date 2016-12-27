@@ -22,20 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltechnduo/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltechnduo/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltechnduo/proprietary/etc/clatd.conf:system/etc/clatd.conf \
     vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/samsung/kltechnduo/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/samsung/kltechnduo/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/kltechnduo/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/samsung/kltechnduo/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/kltechnduo/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/samsung/kltechnduo/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/kltechnduo/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/kltechnduo/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/samsung/kltechnduo/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/kltechnduo/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/kltechnduo/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/kltechnduo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
@@ -47,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltechnduo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltechnduo/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
@@ -57,10 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/kltechnduo/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/kltechnduo/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/kltechnduo/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/liblisten.so:system/vendor/lib/liblisten.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
     vendor/samsung/kltechnduo/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \

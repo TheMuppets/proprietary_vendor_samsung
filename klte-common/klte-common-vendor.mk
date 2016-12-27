@@ -140,14 +140,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/lib/F16QS_libchromatix_imx240_vt_hd.so:system/lib/F16QS_libchromatix_imx240_vt_hd.so \
     vendor/samsung/klte-common/proprietary/lib/F16QS_libchromatix_imx240_zslshot.so:system/lib/F16QS_libchromatix_imx240_zslshot.so \
     vendor/samsung/klte-common/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
+    vendor/samsung/klte-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/klte-common/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
     vendor/samsung/klte-common/proprietary/lib/libTsAe.so:system/lib/libTsAe.so \
     vendor/samsung/klte-common/proprietary/lib/libTsAf.so:system/lib/libTsAf.so \
     vendor/samsung/klte-common/proprietary/lib/libTs_J_Accm.so:system/lib/libTs_J_Accm.so \
     vendor/samsung/klte-common/proprietary/lib/libTs_J_Awb.so:system/lib/libTs_J_Awb.so \
     vendor/samsung/klte-common/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
+    vendor/samsung/klte-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/samsung/klte-common/proprietary/lib/libhr.so:system/lib/libhr.so \
     vendor/samsung/klte-common/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
+    vendor/samsung/klte-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/samsung/klte-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/samsung/klte-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/klte-common/proprietary/lib/libmmcamera2_stats_algorithm.so:system/lib/libmmcamera2_stats_algorithm.so \
     vendor/samsung/klte-common/proprietary/lib/libmmcamera_cac3_lib.so:system/lib/libmmcamera_cac3_lib.so \
     vendor/samsung/klte-common/proprietary/lib/libmmcamera_fidelix_eeprom.so:system/lib/libmmcamera_fidelix_eeprom.so \
@@ -182,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/F16QS_libchromatix_imx240_common_res2.so:system/vendor/lib/F16QS_libchromatix_imx240_common_res2.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/F16QS_libchromatix_imx240_common_res3.so:system/vendor/lib/F16QS_libchromatix_imx240_common_res3.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
@@ -221,6 +227,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libmmcamera2_companion_imx240.so:system/vendor/lib/libmmcamera2_companion_imx240.so \
@@ -253,7 +263,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/klte-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
