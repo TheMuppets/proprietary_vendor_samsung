@@ -22,11 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltechnduo/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltechnduo/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltechnduo/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/samsung/kltechnduo/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/samsung/kltechnduo/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/kltechnduo/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/kltechnduo/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/kltechnduo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \

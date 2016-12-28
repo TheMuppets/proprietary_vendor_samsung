@@ -22,11 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteduos/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/klteduos/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/klteduos/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/klteduos/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/samsung/klteduos/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/samsung/klteduos/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/samsung/klteduos/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/samsung/klteduos/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/klteduos/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/klteduos/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/klteduos/proprietary/lib/libril.so:system/lib/libril.so \
