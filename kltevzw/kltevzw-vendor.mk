@@ -22,16 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltevzw/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltevzw/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltevzw/proprietary/etc/clatd.conf:system/etc/clatd.conf \
-    vendor/samsung/kltevzw/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/kltevzw/proprietary/etc/gps_vzw.conf:system/etc/gps_vzw.conf \
-    vendor/samsung/kltevzw/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/samsung/kltevzw/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/samsung/kltevzw/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/kltevzw/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/samsung/kltevzw/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/kltevzw/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/kltevzw/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/samsung/kltevzw/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/kltevzw/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltevzw/proprietary/lib/libril.so:system/lib/libril.so \
@@ -39,15 +29,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltevzw/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltevzw/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/kltevzw/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/kltevzw/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
