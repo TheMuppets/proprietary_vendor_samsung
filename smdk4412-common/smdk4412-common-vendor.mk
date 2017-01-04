@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -44,9 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4412-common/proprietary/lib/libcec.so:system/lib/libcec.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libddc.so:system/lib/libddc.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libedid.so:system/lib/libedid.so \
-    vendor/samsung/smdk4412-common/proprietary/lib/libfimg.so:system/lib/libfimg.so \
-    vendor/samsung/smdk4412-common/proprietary/lib/libhwconverter.so:system/lib/libhwconverter.so \
-    vendor/samsung/smdk4412-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/smdk4412-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/smdk4412-common/proprietary/usr/idc/melfas_ts.idc:system/usr/idc/melfas_ts.idc \
     vendor/samsung/smdk4412-common/proprietary/usr/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc \
@@ -71,6 +68,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/smdk4412-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/smdk4412-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/smdk4412-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-PRODUCT_PACKAGES += \
-    libfimc
