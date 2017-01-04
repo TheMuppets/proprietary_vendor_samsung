@@ -18,8 +18,7 @@ LOCAL_PATH := vendor/samsung/n5100
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/bin/geomagneticd:system/bin/geomagneticd \
 	$(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd \
-	$(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd \
-	$(LOCAL_PATH)/proprietary/system/bin/cbd:system/bin/cbd
+	$(LOCAL_PATH)/proprietary/system/bin/orientationd:system/bin/orientationd
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
