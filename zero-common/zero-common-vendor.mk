@@ -130,6 +130,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/hw/fingerprint.universal7420.so:system/lib/hw/fingerprint.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/zero-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/zero-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
@@ -164,6 +174,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/hw/gps.universal7420.so:system/lib64/hw/gps.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/zero-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
