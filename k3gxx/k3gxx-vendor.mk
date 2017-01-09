@@ -80,23 +80,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/k3gxx/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/k3gxx/proprietary/etc/wifi/nvram_net.txt_semco3rd:system/etc/wifi/nvram_net.txt_semco3rd \
     vendor/samsung/k3gxx/proprietary/etc/wifi/nvram_net.txt_wisol:system/etc/wifi/nvram_net.txt_wisol \
+    vendor/samsung/k3gxx/proprietary/lib/hw/camera.universal5422.so:system/lib/hw/camera.universal5422.so \
     vendor/samsung/k3gxx/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
     vendor/samsung/k3gxx/proprietary/lib/hw/gps.universal5422.so:system/lib/hw/gps.universal5422.so \
+    vendor/samsung/k3gxx/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     vendor/samsung/k3gxx/proprietary/lib/hw/nfc_nci.universal5422.so:system/lib/hw/nfc_nci.universal5422.so \
     vendor/samsung/k3gxx/proprietary/lib/hw/sensorhubs.universal5422.so:system/lib/hw/sensorhubs.universal5422.so \
     vendor/samsung/k3gxx/proprietary/lib/hw/sensors.universal5422.so:system/lib/hw/sensors.universal5422.so \
     vendor/samsung/k3gxx/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
     vendor/samsung/k3gxx/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
+    vendor/samsung/k3gxx/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/k3gxx/proprietary/lib/libfpasmtztransport.so:system/lib/libfpasmtztransport.so \
     vendor/samsung/k3gxx/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
     vendor/samsung/k3gxx/proprietary/lib/libhr.so:system/lib/libhr.so \
+    vendor/samsung/k3gxx/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/k3gxx/proprietary/lib/libmysound.so:system/lib/libmysound.so \
     vendor/samsung/k3gxx/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    vendor/samsung/k3gxx/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/k3gxx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/k3gxx/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
     vendor/samsung/k3gxx/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/samsung/k3gxx/proprietary/lib/libvalAuth.so:system/lib/libvalAuth.so \
     vendor/samsung/k3gxx/proprietary/lib/libvcsfp.so:system/lib/libvcsfp.so \
+    vendor/samsung/k3gxx/proprietary/lib/libvdis.so:system/lib/libvdis.so \
     vendor/samsung/k3gxx/proprietary/lib/libvfmClient.so:system/lib/libvfmClient.so \
     vendor/samsung/k3gxx/proprietary/lib/libvfmtztransport.so:system/lib/libvfmtztransport.so \
     vendor/samsung/k3gxx/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
