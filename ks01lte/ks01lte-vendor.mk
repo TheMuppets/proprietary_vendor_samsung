@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/ks01lte/proprietary/bin/radish:system/bin/radish \
 	vendor/samsung/ks01lte/proprietary/bin/ssr_diag:system/bin/ssr_diag \
 	vendor/samsung/ks01lte/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+	vendor/samsung/ks01lte/proprietary/bin/rfs_access:system/bin/rfs_access \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
 	vendor/samsung/ks01lte/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
 	vendor/samsung/ks01lte/proprietary/bin/cnd:system/bin/cnd \
