@@ -182,6 +182,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
     vendor/samsung/noblelte-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
+    vendor/samsung/noblelte-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
+    vendor/samsung/noblelte-common/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/noblelte-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+    vendor/samsung/noblelte-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
+    vendor/samsung/noblelte-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
     vendor/samsung/noblelte-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:system/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/noblelte-common/proprietary/app/mcRegistry/08130000000000000000000000000000.tlbin:system/app/mcRegistry/08130000000000000000000000000000.tlbin \
