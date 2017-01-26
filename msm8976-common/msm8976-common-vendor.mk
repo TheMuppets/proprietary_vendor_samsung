@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/samsung/msm8976-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/samsung/msm8976-common/proprietary/bin/garden_app:system/bin/garden_app \
-    vendor/samsung/msm8976-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/msm8976-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/msm8976-common/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/samsung/msm8976-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
