@@ -51,4 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts2-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/gts2-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/gts2-common/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+    vendor/samsung/gts2-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/gts2-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+    vendor/samsung/gts2-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    vendor/samsung/gts2-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so
