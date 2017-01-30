@@ -1,0 +1,254 @@
+# SS_TabS2_S_LTE Released on 20150326_Add parameter and delete unused parameter
+###################################################################################################
+# General parameters
+sromrev=11
+boardrev=0x1110
+boardtype=0x0752
+macaddr=00:90:4c:19:90:01
+ccode=ALL
+regrev=0
+vendid=0x14e4
+devid=0x43e9
+manfid=0x2d0
+#prodid=0x052e
+xtalfreq=37400
+otpimagesize=484
+#pciehdr=bcm94358wlspie_01
+boardflags=0x12001201
+boardflags2=0x00002000
+# RF Configuration
+antswitch=0
+#paprdis=0
+femctrl=10
+rxchain=3
+txchain=3
+aa2g=3
+aa5g=3
+agbg0=0
+agbg1=0
+aga0=0
+aga1=0
+ag0=0
+AvVmid_c0=2,140,2,145,2,145,2,145,2,145
+AvVmid_c1=2,140,2,145,2,145,2,145,2,145
+AvVmid_c2=0,0,0,0,0,0,0,0,0,0
+tssisleep_en=0x1f
+
+ltecxmux=0x77540
+
+phy4350_ss_opt=1
+#ofdmfilttype=1
+
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+
+# Temperature settings
+tempthresh=120
+temps_hysteresis=10
+tempoffset=255
+rawtempsense=0x1ff
+phycal_tempdelta=25
+temps_period=15
+
+nocrc=1
+
+#TSSI 1range setup
+#olpc_thresh=28                #Set min power to 7dbm
+#boardflags3=0x4800018a         #Enable cck war
+#tworangetssi2g=0
+#tworangetssi5g=0
+
+#TSSI 2range setup
+#Disable cck war
+boardflags3=0x4800010a   
+tworangetssi2g=1
+tworangetssi5g=1
+olpc_thresh=1            #Set min power to 0.25dbm
+lowpowerrange2g=0      #For low power range TSSI test.
+lowpowerrange5g=0       #For low power range TSSI test.
+
+
+###################################################################################################
+# 2G RF Settings
+###################################################################################################
+pdgain2g=4
+
+rxgains2gtrelnabypa0=1
+rxgains2gtrelnabypa1=1
+
+#2G elna gain from datasheet is 14dB
+#2G elna gain changed to 12dB
+rxgains2gelnagaina0=3
+rxgains2gelnagaina1=3
+
+#triso values for 2G are picked from older nvram. Might need to change.
+rxgains2gtrisoa0=6
+rxgains2gtrisoa1=6
+
+## SWCTRLMAP using RFMD8850B (iPA/eLNA)
+swctrlmap_2g=0x00001020,0x20400000,0x00000000,0x020202,0x0ff
+swctrlmap_5g=0x00000208,0x05900000,0x04100000,0x000000,0x0fd
+#swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+swctrlmapext_2g=0x0,0x0,0x0,0x0,0x03
+
+tssipos2g=1
+extpagain2g=2
+rssicorrnorm_c0=1,1
+rssicorrnorm_c1=1,1
+cckdigfilttype=4
+
+# Max Power is 18.5 dBm-1.5(backoff) = 17dBm
+maxp2ga0=74
+maxp2ga1=74
+
+# Pa Params for 2 range
+#high range
+pa2ga0=0xff9d,0x17dd,0xfd74
+pa2ga1=0xffa2,0x180a,0xfd77
+
+#low range
+pa2ga2=0xff75,0xf07,0xfdde
+pa2ga3=0xff67,0xed8,0xfde8
+
+pdoffsetcckma0=0x3
+pdoffsetcckma1=0x3
+
+# Power offsets
+cckbw202gpo=0x0000
+cckbw20ul2gpo=0x0000
+mcsbw202gpo=0xa9666644
+mcsbw402gpo=0xa9666644
+dot11agofdmhrbw202gpo=0x6642
+ofdmlrbw202gpo=0x0022
+sb20in40hrpo=0x0
+sb20in40lrpo=0x0
+###################################################################################################
+# 5G RF Settings
+###################################################################################################
+pdgain5g=4
+
+# ch12 power limit value
+fccpwrch12=40 
+# ch13 power limit value
+fccpwrch13=1 
+# Enable/disable for wifi only model
+fccpwroverride=0 
+
+
+#5G elna gain from datasheet is 12dB
+rxgains5gtrelnabypa0=1
+rxgains5gtrelnabypa1=1
+rxgains5gelnagaina0=3
+rxgains5gelnagaina1=3
+rxgains5gtrisoa0=5
+rxgains5gtrisoa1=5
+
+rxgains5gmtrelnabypa0=1
+rxgains5gmtrelnabypa1=1
+rxgains5gmelnagaina0=3
+rxgains5gmelnagaina1=3
+rxgains5gmtrisoa0=6
+rxgains5gmtrisoa1=6
+
+rxgains5ghtrelnabypa0=1
+rxgains5ghtrelnabypa1=1
+rxgains5ghelnagaina0=3
+rxgains5ghelnagaina1=3
+rxgains5ghtrisoa0=6
+rxgains5ghtrisoa1=6
+
+tssipos5g=1
+extpagain5g=2
+subband5gver=0x4
+
+rssicorrnorm5g_c0=0,0,2,0,1,1,-1,0,1,-1,0,1
+rssicorrnorm5g_c1=0,0,2,0,0,1,-1,-1,1,-1,-1,1
+
+# Max Power is 18.5 dBm for all 5G bands
+maxp5ga0=74,74,74,74
+maxp5ga1=74,74,74,74
+
+#high power range
+pa5ga0=0xff61,0x17d8,0xfd35,0xff62,0x17fe,0xfd31,0xff5f,0x17de,0xfd32,0xff5f,0x17b7,0xfd34
+pa5ga1=0xff5d,0x17de,0xfd36,0xff57,0x17f3,0xfd29,0xff59,0x17f7,0xfd2f,0xff5a,0x17ce,0xfd36
+
+#low power range
+pa5ga2=0xffa0,0xe34,0xfddd,0xffab,0xee3,0xfdd1,0xff7b,0xe9d,0xfde9,0xff83,0xec8,0xfde2
+pa5ga3=0xff5d,0xe39,0xfdfa,0xff64,0xe90,0xfdf2,0xff59,0xe79,0xfdf8,0xff61,0xebe,0xfdef
+
+pdoffset40ma0=0x0000
+pdoffset80ma0=0x0000
+pdoffset40ma1=0x0000
+pdoffset80ma1=0x0000
+
+# Low band power offsets
+mcslr5glpo=0x0000
+mcsbw205glpo=0x88866662
+mcsbw405glpo=0xAAA88884
+mcsbw805glpo=0xCCCAAAA6
+sb40and80lr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160lr5glpo=0x0
+sb20in80and160hr5glpo=0x0
+
+# Mid band power offsets
+mcslr5gmpo=0x0000
+mcsbw205gmpo=0x88866662
+mcsbw405gmpo=0xAAA88884
+mcsbw805gmpo=0xCCCAAAA6
+sb40and80lr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb20in80and160hr5gmpo=0x0
+
+# High band power offsets
+mcslr5ghpo=0x0000
+mcsbw205ghpo=0x88866662
+mcsbw405ghpo=0xAAA88884
+mcsbw805ghpo=0xCCCAAAA6
+sb40and80lr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb20in80and160hr5ghpo=0x0
+
+## 2G TX power compensation
+powoffs2gtna0=0,0,0,-3,-3,-1,0,0,-2,-2,-1,0,2,0
+powoffs2gtna1=-3,-3,-4,-5,-5,-4,-4,-2,-3,-4,-5,-4,-7,0
+
+cck_onecore_tx=1
+
+epsdelta2g0=0
+epsdelta2g1=0
+papdwar=4
+## Enabling OOB signal - needed for final board
+host_wake_opt=0
+## SAR control
+dynamicsarctrl_2g=0xb0b8
+dynamicsarctrl_5g=0xa0a0
+
+btc_params82=0x0
+btc_params51=0x409f
+btc_params73=0
+prot_btrssi_thresh=0
+
+# ###########  BTC Dynctl profile params  ############
+# flags:bit0 - dynctl enabled, bit1 dynamic desense, bit2 dynamic mode
+btcdyn_flags=0x7
+btcdyn_dflt_dsns_level=0
+btcdyn_low_dsns_level=0
+btcdyn_mid_dsns_level=12
+btcdyn_high_dsns_level=2
+btcdyn_default_btc_mode=1
+# --- number of rows in the array vars below ---
+btcdyn_msw_rows=1
+btcdyn_dsns_rows=1
+# --- mode switch data rows (max is 4) ---
+btcdyn_msw_row0=1,12,-70,-5,-100
+# --- desense switching data rows (max is 4) ---
+btcdyn_dsns_row0=5,4,0,-65,-65
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                             
