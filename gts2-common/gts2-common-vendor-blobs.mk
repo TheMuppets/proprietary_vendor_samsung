@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts2-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
     vendor/samsung/gts2-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/gts2-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
-    vendor/samsung/gts2-common/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     vendor/samsung/gts2-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
     vendor/samsung/gts2-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     vendor/samsung/gts2-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
