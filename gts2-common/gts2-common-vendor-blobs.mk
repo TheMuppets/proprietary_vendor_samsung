@@ -45,13 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts2-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/gts2-common/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so \
     vendor/samsung/gts2-common/proprietary/lib/hw/sensors.exynos5.so:system/lib/hw/sensors.exynos5.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/gts2-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
-    vendor/samsung/gts2-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/gts2-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
     vendor/samsung/gts2-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/gts2-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
