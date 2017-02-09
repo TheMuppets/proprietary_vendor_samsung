@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts2-common/proprietary/etc/wifi/bcmdhd_sta.bin_4356_a2:system/etc/wifi/bcmdhd_sta.bin_4356_a2 \
     vendor/samsung/gts2-common/proprietary/etc/wifi/bcmdhd_sta.bin_4358_a1:system/etc/wifi/bcmdhd_sta.bin_4358_a1 \
     vendor/samsung/gts2-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
+    vendor/samsung/gts2-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/gts2-common/proprietary/etc/wifi/nvram_mfg.txt_4356_a2:system/etc/wifi/nvram_mfg.txt_4356_a2 \
+    vendor/samsung/gts2-common/proprietary/etc/wifi/nvram_mfg.txt_4358_a1:system/etc/wifi/nvram_mfg.txt_4358_a1 \
     vendor/samsung/gts2-common/proprietary/vendor/firmware/hevc_fw.bin:system/vendor/firmware/hevc_fw.bin \
     vendor/samsung/gts2-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/gts2-common/proprietary/vendor/firmware/fimc_is_fw2_4h5.bin:system/vendor/firmware/fimc_is_fw2_4h5.bin \
