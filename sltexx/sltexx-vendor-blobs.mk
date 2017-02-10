@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sltexx/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.wmfw:system/etc/firmware/florida-dsp4-rx-anc-wb.wmfw \
     vendor/samsung/sltexx/proprietary/vendor/firmware/seiren_fw_dram.bin:system/vendor/firmware/seiren_fw_dram.bin \
     vendor/samsung/sltexx/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/AzControlParams_SPEAKER.txt:system/vendor/etc/nxp/proprietary/vendor/etc/nxp/AzControlParams_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/LVAZFS_Configuration.txt:system/vendor/etc/nxp/proprietary/vendor/etc/nxp/LVAZFS_Configuration.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
@@ -77,8 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
-    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt \
-    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_SPEAKER.txt \
@@ -119,8 +121,56 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/sltexx/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
-    vendor/samsung/sltexx/proprietary/vendor/lib/liblvverx_3.21.15.so:system/vendor/lib/liblvverx_3.21.15.so \
-    vendor/samsung/sltexx/proprietary/vendor/lib/liblvvetx_3.21.15.so:system/vendor/lib/liblvvetx_3.21.15.so \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_IDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_IDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/sltexx/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/sltexx/proprietary/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so \
+    vendor/samsung/sltexx/proprietary/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     vendor/samsung/sltexx/proprietary/lib/hw/camera.universal5430.so:system/lib/hw/camera.universal5430.so \
     vendor/samsung/sltexx/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/sltexx/proprietary/lib/libvdis.so:system/lib/libvdis.so \
