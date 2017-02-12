@@ -69,11 +69,13 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero-common/proprietary/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
   vendor/samsung/hero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
   vendor/samsung/hero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
-  vendor/samsung/hero-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
-  vendor/samsung/hero-common/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
+  vendor/samsung/hero-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
   vendor/samsung/hero-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
+  vendor/samsung/hero-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
   vendor/samsung/hero-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
+  vendor/samsung/hero-common/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
   vendor/samsung/hero-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
+  vendor/samsung/hero-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
   vendor/samsung/hero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
   vendor/samsung/hero-common/proprietary/bin/gps.cer:system/bin/gps.cer \
   vendor/samsung/hero-common/proprietary/bin/gpsd:system/bin/gpsd \
@@ -137,17 +139,11 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
   vendor/samsung/hero-common/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
   vendor/samsung/hero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-  vendor/samsung/hero-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-  vendor/samsung/hero-common/proprietary/lib/libxml2.so:system/lib/libxml2.so \
-  vendor/samsung/hero-common/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
   vendor/samsung/hero-common/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
   vendor/samsung/hero-common/proprietary/lib64/libril.so:system/lib64/libril.so \
   vendor/samsung/hero-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
   vendor/samsung/hero-common/proprietary/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
   vendor/samsung/hero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
-  vendor/samsung/hero-common/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
-  vendor/samsung/hero-common/proprietary/lib64/libxml2.so:system/lib64/libxml2.so \
-  vendor/samsung/hero-common/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
   vendor/samsung/hero-common/proprietary/lib64/libhr.so:system/lib64/libhr.so \
   vendor/samsung/hero-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
   vendor/samsung/hero-common/proprietary/bin/lhd:system/bin/lhd \
