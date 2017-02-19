@@ -60,8 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/companion_fw_imx240_evt1.bin:system/vendor/firmware/companion_fw_imx240_evt1.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/companion_imx240_master_setfile.bin:system/vendor/firmware/companion_imx240_master_setfile.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/companion_imx240_mode_setfile.bin:system/vendor/firmware/companion_imx240_mode_setfile.bin \
-    vendor/samsung/noblelte-common/proprietary/etc/firmware/audience-es804-data.bin:system/etc/firmware/audience-es804-data.bin \
-    vendor/samsung/noblelte-common/proprietary/etc/firmware/audience-es804-fw.bin:system/etc/firmware/audience-es804-fw.bin \
     vendor/samsung/noblelte-common/proprietary/etc/firmware/clearwater-dsp3-tx-nb.bin:system/etc/firmware/clearwater-dsp3-tx-nb.bin \
     vendor/samsung/noblelte-common/proprietary/etc/firmware/clearwater-dsp3-tx-swb-interview.bin:system/etc/firmware/clearwater-dsp3-tx-swb-interview.bin \
     vendor/samsung/noblelte-common/proprietary/etc/firmware/clearwater-dsp3-tx-wb.bin:system/etc/firmware/clearwater-dsp3-tx-wb.bin \
