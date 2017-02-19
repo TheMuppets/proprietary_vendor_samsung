@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/sec_s3fwrn5s_firmware.bin:system/vendor/firmware/sec_s3fwrn5s_firmware.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
+    vendor/samsung/noblelte-common/proprietary/vendor/firmware/fimc_is_fw2.bin:system/vendor/firmware/fimc_is_fw2.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/fimc_is_fw2_2p2.bin:system/vendor/firmware/fimc_is_fw2_2p2.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/fimc_is_fw2_imx240.bin:system/vendor/firmware/fimc_is_fw2_imx240.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/ois_fw_dom.bin:system/vendor/firmware/ois_fw_dom.bin \
@@ -186,9 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     vendor/samsung/noblelte-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
-    vendor/samsung/noblelte-common/proprietary/lib/hw/camera.universal7420.so:system/lib/hw/camera.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/hw/camera.universal7420.so:system/lib64/hw/camera.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
@@ -201,6 +200,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/setfile_2p2.bin:system/vendor/firmware/setfile_2p2.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
+    vendor/samsung/noblelte-common/proprietary/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     vendor/samsung/noblelte-common/proprietary/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin \
     vendor/samsung/noblelte-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/gps.universal7420.so:system/lib64/hw/gps.universal7420.so \
