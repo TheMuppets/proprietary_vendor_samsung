@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter i9100g p3100 p3110 p5100 p5110,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),i9100g)
 
 LOCAL_PATH := $(call my-dir)
 
