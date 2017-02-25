@@ -186,6 +186,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     vendor/samsung/noblelte-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
+    vendor/samsung/noblelte-common/proprietary/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/libcamera_metadata.so:system/lib64/libcamera_metadata.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     vendor/samsung/noblelte-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
@@ -212,26 +214,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/noblelte-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/noblelte-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
     vendor/samsung/noblelte-common/proprietary/bin/lhd:system/bin/lhd \
     vendor/samsung/noblelte-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
