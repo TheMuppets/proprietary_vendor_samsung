@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     libusc \
     libGLESv1_CM_POWERVR \
     libGLESv2_POWERVR \
+    gralloc.omap4
 
 PRODUCT_PACKAGES += \
     libdrmwvmplugin \
