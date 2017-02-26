@@ -10,8 +10,8 @@ boardflags2=0x00800000
 boardflags3=0x48700106
 #boardnum=57410 
 macaddr=00:90:4c:12:d0:01
-ccode=US
-regrev=988
+ccode=TR
+regrev=7
 antswitch=0
 #pdgain5g=0
 #pdgain2g=0
@@ -90,10 +90,10 @@ tempoffset=255
 rawtempsense=0x1ff
 
 # Normal Power mode (10~20dBm) 시 cal data
-pa2ga0=0xff5b,0x1ad2,0xfcdb
-pa2ga1=0xff40,0x1ca0,0xfc92
-pa5ga0=0xff7d,0x1f7a,0xfc50,0xff71,0x1e8f,0xfc5b,0xff8b,0x207a,0xfc22,0xff9c,0x2151,0xfc09
-pa5ga1=0xff72,0x1e4d,0xfc70,0xff76,0x1e80,0xfc6e,0xff74,0x1e70,0xfc67,0xff72,0x1e79,0xfc61
+pa2ga0=0xff5b,0x18d2,0xfd04
+pa2ga1=0xff40,0x1aa0,0xfcc2
+pa5ga0=0xff7d,0x1c7a,0xfc81,0xff71,0x1b8f,0xfc91,0xff8b,0x1d7a,0xfc4e,0xff9c,0x1e51,0xfc2e
+pa5ga1=0xff72,0x1b4d,0xfca5,0xff76,0x1b80,0xfca2,0xff74,0x1b70,0xfc9c,0xff72,0x1b79,0xfc96
 
 # Low Power Mode (0~10dBm) 시 cal data
 pa2ga2=0xff2a,0x10df,0xfdbf
@@ -102,14 +102,14 @@ pa5ga2=0xff72,0x1737,0xfce2,0xff6e,0x16a2,0xfcf6,0xff78,0x1799,0xfcd9,0xff73,0x1
 pa5ga3=0xff9a,0x1a76,0xfc73,0xff78,0x175f,0xfcdc,0xff6d,0x1654,0xfd02,0xff6c,0x1685,0xfcf6
 
 # Target Power Table 및 offset
-maxp2ga0=78
-maxp2ga1=78
-maxp5ga0=82,78,78,82
-maxp5ga1=82,78,78,82
+maxp2ga0=74
+maxp2ga1=74
+maxp5ga0=74,74,74,74
+maxp5ga1=74,74,74,74
 subband5gver=0x4
 paparambwver=3
-cckpwroffset0=4
-cckpwroffset1=2
+cckpwroffset0=7
+cckpwroffset1=5
 #cckulbpwroffset0=-6
 #cckulbpwroffset1=-6
 pdoffset40ma0=0x3333
@@ -163,7 +163,7 @@ temps_hysteresis=15
 #OOB params
 #device_wake_opt=1
 host_wake_opt=0
-swctrlmap_2g=0x00000808,0x30300000,0x10100000,0x020202,0x1f8
+swctrlmap_2g=0x00000808,0x30300000,0x10100000,0x023010,0x1f8
 swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x001
 swctrlmap_5g=0x00004040,0x80800000,0x80800000,0x000000,0x1c8
 swctrlmapext_5g=0x00000000,0x01010000,0x00000000,0x000000,0x001
@@ -184,13 +184,13 @@ fem_table_init_val=0x10100000,0x80800000
 
 # 11b CDD mode 
 # 0: enabled  /  1: disabled, Antenna diversity
-# cck_onecore_tx=1
+cck_onecore_tx=1
 
 muxenab=0x4  
 #ed_thresh2g=-63
 #ed_thresh5g=-63
-dynamicsarctrl_2g=0xC4C4
-dynamicsarctrl_5g=0xC0C0
+#dynamicsarctrl_2g=0xffb0
+#dynamicsarctrl_5g=0xffa0
 #powoffs5g20mtna0=0,0,0,0,0,0
 #powoffs5g20mtna1=0,0,0,0,0,0
 #powoffs5g40mtna0=0,0,0,0
@@ -201,9 +201,10 @@ dynamicsarctrl_5g=0xC0C0
 # FCC limit
 # Power setting in quater dB
 # enable by setting fccpwroverride 1
-#fccpwrch12 = 4
-#fccpwrch13 = 4
-#fccpwroverride = 0
+fccpwrch12=40 # ch12 power limit value
+fccpwrch13=1 # ch13 power limit value
+fccpwroverride=0 # '0'은 일반 // '1'은 LDU 모델
+
 
 btc_params66=0x44c0
 btc_params82=0
