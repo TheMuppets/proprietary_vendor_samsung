@@ -14,20 +14,6 @@
 
 $(call inherit-product, vendor/samsung/espresso-common/common-vendor-blobs.mk)
 
-VENDOR_SGX_CORE := SGX540_120
-
-PRODUCT_PACKAGES += \
-    libglslcompiler \
-    libIMGegl \
-    libpvr2d \
-    libpvrANDROID_WSEGL \
-    libPVRScopeServices \
-    libsrv_init \
-    libsrv_um \
-    libusc \
-    libGLESv1_CM_POWERVR \
-    libGLESv2_POWERVR \
-
 PRODUCT_PACKAGES += \
     libdrmwvmplugin \
     libwvdrmengine \
