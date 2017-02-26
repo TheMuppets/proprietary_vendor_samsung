@@ -49,19 +49,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libidl.so:system//vendor/lib/libidl.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+    $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/libdiag.so:system/lib/libdiag.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libconfigdb.so:system/lib/libconfigdb.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libdsutils.so:system/lib/libdsutils.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libgeofence.so:system/lib/libgeofence.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libidl.so:system//lib/libidl.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libizat_core.so:system/lib/libizat_core.so \
+    $(LOCAL_PATH)/proprietary/system/lib/liblbs_core.so:system/lib/liblbs_core.so \
+    $(LOCAL_PATH)/proprietary/system/lib/liblocationservice.so:system/lib/liblocationservice.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi.so:system/lib/libqmi.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libqmiservices.so:system/lib/libqmiservices.so
