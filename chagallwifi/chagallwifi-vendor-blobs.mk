@@ -29,6 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt_4354_a1:system/etc/wifi/nvram_mfg.txt_4354_a1 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a0:system/etc/wifi/nvram_net.txt_4354_a0 \
     vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt_4354_a1:system/etc/wifi/nvram_net.txt_4354_a1 \
+    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/chagallwifi/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/chagallwifi/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/chagallwifi/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/chagallwifi/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
