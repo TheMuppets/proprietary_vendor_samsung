@@ -35,9 +35,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sltexx/proprietary/etc/wifi/nvram_net.txt_semco:system/etc/wifi/nvram_net.txt_semco \
     vendor/samsung/sltexx/proprietary/etc/wifi/nvram_net.txt_semco3rd:system/etc/wifi/nvram_net.txt_semco3rd \
     vendor/samsung/sltexx/proprietary/etc/wifi/nvram_net.txt_wisol:system/etc/wifi/nvram_net.txt_wisol \
-    vendor/samsung/sltexx/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
+    vendor/samsung/sltexx/proprietary/etc/nfc/sec_s3fwrn5_rfreg.bin:system/etc/nfc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/sltexx/proprietary/lib/hw/nfc_nci.universal5430.so:system/lib/hw/nfc_nci.universal5430.so \
-    vendor/samsung/sltexx/proprietary/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
+    vendor/samsung/sltexx/proprietary/vendor/firmware/nfc/sec_s3fwrn5_firmware.bin:system/vendor/firmware/nfc/sec_s3fwrn5_firmware.bin \
     vendor/samsung/sltexx/proprietary/vendor/firmware/hevc_fw.bin:system/vendor/firmware/hevc_fw.bin \
     vendor/samsung/sltexx/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/sltexx/proprietary/vendor/firmware/fimc_is_fw2_2p2_12m.bin:system/vendor/firmware/fimc_is_fw2_2p2_12m.bin \
