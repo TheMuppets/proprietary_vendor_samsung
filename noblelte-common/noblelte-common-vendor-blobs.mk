@@ -32,6 +32,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/nvram_net.txt_b1:system/etc/wifi/nvram_net.txt_b1 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/nvram_net.txt_murata_b1:system/etc/wifi/nvram_net.txt_murata_b1 \
     vendor/samsung/noblelte-common/proprietary/etc/wifi/nvram_net.txt_wisol_b1:system/etc/wifi/nvram_net.txt_wisol_b1 \
+    vendor/samsung/noblelte-common/proprietary/etc/nfc/sec_s3fwrn5s_rfreg.bin:system/etc/nfc/sec_s3fwrn5s_rfreg.bin \
+    vendor/samsung/noblelte-common/proprietary/etc/nfc/THL/sec_s3fwrn5s_rfreg.bin:system/etc/nfc/THL/sec_s3fwrn5s_rfreg.bin \
     vendor/samsung/noblelte-common/proprietary/etc/sec_s3fwrn5s_rfreg_for_old_hw.bin:system/etc/sec_s3fwrn5s_rfreg_for_old_hw.bin \
     vendor/samsung/noblelte-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
