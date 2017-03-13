@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/d2-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/d2-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/d2-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_BH.bin:system/cameradata/SlimISP_BH.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GC.bin:system/cameradata/SlimISP_GC.bin \
     vendor/samsung/d2-common/proprietary/cameradata/SlimISP_GD.bin:system/cameradata/SlimISP_GD.bin \
