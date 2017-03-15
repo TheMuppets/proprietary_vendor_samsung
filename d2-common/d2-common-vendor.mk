@@ -61,15 +61,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
-    vendor/samsung/d2-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/d2-common/proprietary/lib/libakmd.so:system/lib/libakmd.so \
     vendor/samsung/d2-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-    vendor/samsung/d2-common/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
-    vendor/samsung/d2-common/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
-    vendor/samsung/d2-common/proprietary/lib/libchromatix_ov2720_default_video.so:system/lib/libchromatix_ov2720_default_video.so \
-    vendor/samsung/d2-common/proprietary/lib/libchromatix_ov2720_preview.so:system/lib/libchromatix_ov2720_preview.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_default_video.so:system/lib/libchromatix_s5k6a3yx_default_video.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_preview.so:system/lib/libchromatix_s5k6a3yx_preview.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_smart_stay.so:system/lib/libchromatix_s5k6a3yx_smart_stay.so \
@@ -84,19 +79,23 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/d2-common/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/samsung/d2-common/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
+    vendor/samsung/d2-common/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/samsung/d2-common/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
     vendor/samsung/d2-common/proprietary/lib/libmmcamera_statsproc30.so:system/lib/libmmcamera_statsproc30.so \
     vendor/samsung/d2-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/d2-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
+    vendor/samsung/d2-common/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
     vendor/samsung/d2-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/d2-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/d2-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/samsung/d2-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/samsung/d2-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/d2-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/d2-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/d2-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
     vendor/samsung/d2-common/proprietary/lib/libxml.so:system/lib/libxml.so \
+    vendor/samsung/d2-common/proprietary/lib/libyamaha.so:system/lib/libyamaha.so \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334.hcd:system/vendor/firmware/bcm4334.hcd \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_murata.hcd:system/vendor/firmware/bcm4334_murata.hcd \
     vendor/samsung/d2-common/proprietary/vendor/firmware/bcm4334_semcosh.hcd:system/vendor/firmware/bcm4334_semcosh.hcd \
