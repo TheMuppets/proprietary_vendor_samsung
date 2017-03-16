@@ -41,7 +41,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/blobs/gsm/vendor/lib/libqmi_csi.so:system/blobs/gsm/vendor/lib/libqmi_csi.so \
     vendor/samsung/klte/proprietary/blobs/gsm/vendor/lib/libqmi_encdec.so:system/blobs/gsm/vendor/lib/libqmi_encdec.so \
     vendor/samsung/klte/proprietary/blobs/gsm/vendor/lib/libqmiservices.so:system/blobs/gsm/vendor/lib/libqmiservices.so \
-    vendor/samsung/klte/proprietary/blobs/gsm/vendor/lib/libril-qcril-hook-oem.so:system/blobs/gsm/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/klte/proprietary/blobs/gsm/vendor/lib/libril-qcril-hook-oem.so:system/blobs/gsm/vendor/lib/libril-qcril-hook-oem.so
+PRODUCT_COPY_FILES += \
     vendor/samsung/klte/proprietary/blobs/vzw/bin/efsks:system/blobs/vzw/bin/efsks \
     vendor/samsung/klte/proprietary/blobs/vzw/bin/ks:system/blobs/vzw/bin/ks \
     vendor/samsung/klte/proprietary/blobs/vzw/bin/qcks:system/blobs/vzw/bin/qcks \
