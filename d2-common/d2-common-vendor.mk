@@ -59,7 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
     vendor/samsung/d2-common/proprietary/etc/wifi/nvram_net.txt_murata_b2:system/etc/wifi/nvram_net.txt_murata_b2 \
     vendor/samsung/d2-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
-    vendor/samsung/d2-common/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/d2-common/proprietary/lib/libakmd.so:system/lib/libakmd.so \
