@@ -1,4 +1,5 @@
-# Copyright (C) 2017 The CyanogenMod Project
+# Copyright (C) 2012-2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter i9300 i9305 n7100 n8000 n8013 n8020 t0lte t0lteatt t0ltetmo i605 l900 r950 i925 n5100 n5110 n5120,$(TARGET_DEVICE)),)
+ifneq ($(filter i9300 i9305 n7100 n8000 n8013 n8020 t0lte t0lteatt t0ltetmo t0lteskt t0ltektt i605 l900 r950 i925 n5100 n5110 n5120,$(TARGET_DEVICE)),)
 
 endif
