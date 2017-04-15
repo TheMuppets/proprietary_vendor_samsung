@@ -118,4 +118,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt02lte-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/samsung/lt02lte-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/lt02lte-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
+    vendor/samsung/lt02lte-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/samsung/lt02lte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
