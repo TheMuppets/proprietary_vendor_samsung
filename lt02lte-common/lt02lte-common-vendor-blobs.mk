@@ -118,8 +118,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt02lte-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/samsung/lt02lte-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/lt02lte-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
-    vendor/samsung/lt02lte-common/proprietary/bin/insthk:system/bin/insthk \
-    vendor/samsung/lt02lte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/samsung/lt02lte-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
-    vendor/samsung/lt02lte-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/lt02lte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
