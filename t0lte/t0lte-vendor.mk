@@ -24,23 +24,23 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/t0lte/proprietary/etc/Diag.cfg:system/etc/Diag.cfg \
     vendor/samsung/t0lte/proprietary/etc/Diag_zero.cfg:system/etc/Diag_zero.cfg \
     vendor/samsung/t0lte/proprietary/lib/libakm.so:system/lib/libakm.so \
-    vendor/samsung/t0lte/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/samsung/t0lte/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
-    vendor/samsung/t0lte/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-    vendor/samsung/t0lte/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    vendor/samsung/t0lte/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
-    vendor/samsung/t0lte/proprietary/lib/libidl.so:system/lib/libidl.so \
-    vendor/samsung/t0lte/proprietary/lib/libizat_core.so:system/lib/libizat_core.so \
-    vendor/samsung/t0lte/proprietary/lib/liblbs_core.so:system/lib/liblbs_core.so \
     vendor/samsung/t0lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/t0lte/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
-    vendor/samsung/t0lte/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
-    vendor/samsung/t0lte/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/samsung/t0lte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/t0lte/proprietary/lib/libxml.so:system/lib/libxml.so
+    vendor/samsung/t0lte/proprietary/lib/libxml.so:system/lib/libxml.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/samsung/t0lte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
