@@ -123,17 +123,6 @@ special_mode_mask values:
       <A3Preview>s5k4h5yc_dw9807_3a_zsl_video</A3Preview>
       <A3Video>s5k4h5yc_dw9807_3a_zsl_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="0" special_mode_mask="QHDVIDEORECORDING">
-      <ISPPreview>s5k4h5yc_dw9807_isp_qhd_video</ISPPreview>
-      <ISPSnapshot>s5k4h5yc_dw9807_isp_qhd_video</ISPSnapshot>
-      <ISPVideo>s5k4h5yc_dw9807_isp_qhd_video</ISPVideo>
-      <CPPPreview>s5k4h5yc_dw9807_cpp_video_qhd</CPPPreview>
-      <CPPSnapshot>s5k4h5yc_dw9807_cpp_video_qhd</CPPSnapshot>
-      <CPPVideo>s5k4h5yc_dw9807_cpp_video_qhd</CPPVideo>
-      <CPPLiveshot>s5k4h5yc_dw9807_cpp_liveshot</CPPLiveshot>
-      <A3Preview>s5k4h5yc_dw9807_3a_zsl_video</A3Preview>
-      <A3Video>s5k4h5yc_dw9807_3a_zsl_video</A3Video>
-    </ChromatixName>
     <!--Panorama-->
     <ChromatixName sensor_resolution_index="0" special_mode_mask="PANORAMA">
       <ISPPreview>s5k4h5yc_dw9807_isp_preview</ISPPreview>
@@ -244,17 +233,6 @@ special_mode_mask values:
       <CPPSnapshot>s5k4h5yc_dw9807_cpp_food_snapshot</CPPSnapshot>
       <CPPVideo>s5k4h5yc_dw9807_cpp_video</CPPVideo>
       <A3Preview>s5k4h5yc_dw9807_3a_food</A3Preview>
-      <A3Video>s5k4h5yc_dw9807_3a_zsl_video</A3Video>
-    </ChromatixName>
-    <ChromatixName sensor_resolution_index="1" special_mode_mask="QHDVIDEORECORDING">
-      <ISPPreview>s5k4h5yc_dw9807_isp_qhd_video</ISPPreview>
-      <ISPSnapshot>s5k4h5yc_dw9807_isp_qhd_video</ISPSnapshot>
-      <ISPVideo>s5k4h5yc_dw9807_isp_qhd_video</ISPVideo>
-      <CPPPreview>s5k4h5yc_dw9807_cpp_video_qhd</CPPPreview>
-      <CPPSnapshot>s5k4h5yc_dw9807_cpp_video_qhd</CPPSnapshot>
-      <CPPVideo>s5k4h5yc_dw9807_cpp_video_qhd</CPPVideo>
-      <CPPLiveshot>s5k4h5yc_dw9807_cpp_liveshot</CPPLiveshot>
-      <A3Preview>s5k4h5yc_dw9807_3a_zsl_video</A3Preview>
       <A3Video>s5k4h5yc_dw9807_3a_zsl_video</A3Video>
     </ChromatixName>
 
