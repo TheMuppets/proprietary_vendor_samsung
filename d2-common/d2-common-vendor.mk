@@ -62,16 +62,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/d2-common/proprietary/lib/libakmd.so:system/lib/libakmd.so \
-    vendor/samsung/d2-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_default_video.so:system/lib/libchromatix_s5k6a3yx_default_video.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_preview.so:system/lib/libchromatix_s5k6a3yx_preview.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_smart_stay.so:system/lib/libchromatix_s5k6a3yx_smart_stay.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_vt.so:system/lib/libchromatix_s5k6a3yx_vt.so \
     vendor/samsung/d2-common/proprietary/lib/libchromatix_s5k6a3yx_vt_hd.so:system/lib/libchromatix_s5k6a3yx_vt_hd.so \
-    vendor/samsung/d2-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/d2-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
-    vendor/samsung/d2-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/d2-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/samsung/d2-common/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/samsung/d2-common/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
@@ -85,10 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     vendor/samsung/d2-common/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
     vendor/samsung/d2-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/d2-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    vendor/samsung/d2-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-    vendor/samsung/d2-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
-    vendor/samsung/d2-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/samsung/d2-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/d2-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/d2-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
@@ -114,5 +107,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/d2-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/samsung/d2-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
-    vendor/samsung/d2-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    vendor/samsung/d2-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
