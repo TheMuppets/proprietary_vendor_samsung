@@ -34,4 +34,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/samsung/msm8960-common/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
-    vendor/samsung/msm8960-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so
+    vendor/samsung/msm8960-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
+    vendor/samsung/msm8960-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
