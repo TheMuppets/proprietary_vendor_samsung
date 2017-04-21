@@ -23,21 +23,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/hlte/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/hlte/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/hlte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/hlte/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/hlte/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/hlte/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/hlte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/hlte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/hlte/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
@@ -46,5 +41,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/hlte/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
-    vendor/samsung/hlte/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
+    vendor/samsung/hlte/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so

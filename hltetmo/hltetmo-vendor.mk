@@ -17,15 +17,12 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/bin/efsks:system/bin/efsks \
-    vendor/samsung/hltetmo/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/samsung/hltetmo/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/hltetmo/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/hltetmo/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/hltetmo/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/hltetmo/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/hltetmo/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/hltetmo/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/samsung/hltetmo/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/hltetmo/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/hltetmo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/hltetmo/proprietary/lib/libril.so:system/lib/libril.so \
@@ -38,10 +35,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/hltetmo/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/hltetmo/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/hltetmo/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
