@@ -1,0 +1,154 @@
+# 2013-08-20 SWB-B67_R04MVT
+# Driver ver : 6.37.32.13
+# H2 - 2G_Skyworks + 5G_Syri
+# CID : 33 88
+
+sromrev=11
+boardrev=0x1405
+boardtype=0x0697
+boardflags=0x10401001
+boardflags2=0x0
+#0819 (boardflags3=0x810C48C --> 0x810C08C)
+#Gain control configuration for 5G : WAR for 5G Rx PER Hump at high input.
+boardflags3=0x810c08c
+#boardnum=57410 
+macaddr=00:90:4c:c5:12:38
+ccode=ALL
+regrev=0
+antswitch=0
+pdgain5g=1
+pdgain2g=1
+tworangetssi2g=0
+tworangetssi5g=0
+femctrl=4
+pcieingress_war=15
+vendid=0x14e4
+devid=0x43ae
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=502
+xtalfreq=37400
+extpagain2g=1
+pdetrange2g=2
+extpagain5g=1
+pdetrange5g=2
+rxgains2gelnagaina0=3
+rxgains2gtrisoa0=7
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=3
+rxgains5gtrisoa0=7
+rxgains5gtrelnabypa0=1
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+agbg0=0
+aga0=0
+tssipos5g=1
+tssipos2g=1
+
+pdoffset40ma0=0
+pdoffset80ma0=0
+pdoffsetcckma0=0
+
+pdoffset40ma0=0x0000
+pdoffset80ma0=0x0000
+
+#2G - 19dBm(11M)/18dBm(6M)/16dBm(54)/15dBm(M7)
+maxp2ga0=74
+
+##2013.05.27 IQxel_#1 based Cal (a1,b0,b1)
+# 2G : 5 - 22dBm / pa2ga0 OFDM / pa2gccka0 CCK
+pa2ga0=0xFF35,0x15E3,0xFD2C
+pa2gccka0=0xFF37,0x1664,0xFD20
+
+cckbw202gpo=0
+cckbw20ul2gpo=0
+dot11agofdmhrbw202gpo=0x6666
+ofdmlrbw202gpo=0x0022
+mcsbw202gpo=0x88888884
+
+#Target Pwr 
+#5G 20M - 16dBm(M0,6M)/14dBm(54)/13dBm(M7)/13dBm(C8)
+#5G 40M - 15dBm(M0)/12dBm(M7)/12dBm(C8/C9)
+#5G 80M - 14dBm(M0)/11dBm(C8/C9)
+maxp5ga0=74,74,74,74
+
+##2013.07.13 IQxel_#1 based Cal (a1,b0,b1)
+##Low(36-48)/Mid(52-64)/High(100-140)/X1(149-165)
+# 5G : 5 - 20dBm / pa5ga0 20M / pa5gbw40a0 40M 
+# 5G : 5 - 18dBm / pa5gbw80a0 80M
+pa5ga0=0xFF6D,0x156D,0xFD5F,0xFF52,0x14B5,0xFD60,0xFF63,0x14CE,0xFD72,0xFF7D,0x1590,0xFD57
+pa5gbw40a0=0xFF5E,0x15EC,0xFD4C,0xFF5B,0x15F6,0xFD48,0xff48,0x15b4,0xfd33,0xFF51,0x1580,0xFD3A
+pa5gbw80a0=0xFF4E,0x155E,0xFD45,0xFF58,0x1664,0xFD29,0xFF4E,0x1541,0xFD4A,0xFF55,0x14B7,0xFD60
+
+#Low(36-64)
+mcslr5glpo=0
+mcsbw205glpo=0x88866662
+mcsbw405glpo=0xAAA88884
+mcsbw805glpo=0xCCCAAAA6
+
+#Mid(100-140)
+mcslr5gmpo=0
+mcsbw205gmpo=0x88866662
+mcsbw405gmpo=0xAAA88884
+mcsbw805gmpo=0xCCCAAAA6
+
+#High(149-165)
+mcslr5ghpo=0
+mcsbw205ghpo=0x88866662
+mcsbw405ghpo=0xAAA88884
+mcsbw805ghpo=0xCCCAAAA6
+
+#20MHz High Rate
+sb20in40hrrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+
+#40MHz High Rate
+sb40and80hr5glpo=0x0
+sb40and80hr5gmpo=0x0
+sb40and80hr5ghpo=0x0
+
+#20MHz Low Rate
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+
+#40MHz Low Rate
+sb40and80lr5glpo=0x0
+sb40and80lr5gmpo=0x0
+sb40and80lr5ghpo=0x0
+
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+
+cckdigfilttype=2
+phycal_tempdelta=25
+
+##2G Channel pwr compensation (CH12/3/2/1, CH5/4/14/13, CH9/8/7/6, NA/NA/11/10)
+rpcal2g=0x000F
+rpcal5gb0=0x008F
+rpcal5gb1=0x0000
+rpcal5gb2=0x0000
+
+#About RSSI Changed 0714
+##2G RSSI compensation 20/40 
+rssicorrnorm_c0=-1,-1
+##5G RSSI compenation Low(36-48):20/40/80, Mid(54-64):20/40/80, High(100-140):20/40/80, X1(149-165):20/40/80
+rssicorrnorm5g_c0=2,2,3,1,2,2,0,1,2,0,2,2
+
+#PA blow up protect
+tssifloor2g=245
+tssifloor5g=298,280,266,238
+txidxcap2g=0x10
+txidxcap5g=0x10
+
+#For PA trimming
+paparambwver=1
+
+#HW OOB Enable
+muxenab=0x10
