@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/gts210wifi/proprietary/vendor/firmware/bcm4358A3_V0083.0139.hcd:system/vendor/firmware/bcm4358A3_V0083.0139.hcd \
     vendor/samsung/gts210wifi/proprietary/bin/gpsd:system/bin/gpsd \
+    vendor/samsung/gts210wifi/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     vendor/samsung/gts210wifi/proprietary/lib/hw/gps.universal5433.so:system/lib/hw/gps.universal5433.so \
     vendor/samsung/gts210wifi/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/gts210wifi/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:system/app/mcRegistry/07010000000000000000000000000000.tlbin \

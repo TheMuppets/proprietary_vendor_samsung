@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/gts28ltexx/proprietary/vendor/firmware/bcm4358A3_V0083.0139.hcd:system/vendor/firmware/bcm4358A3_V0083.0139.hcd \
     vendor/samsung/gts28ltexx/proprietary/bin/gpsd:system/bin/gpsd \
+    vendor/samsung/gts28ltexx/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     vendor/samsung/gts28ltexx/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/gts28ltexx/proprietary/lib/hw/gps.universal5433.so:system/lib/hw/gps.universal5433.so \
     vendor/samsung/gts28ltexx/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
