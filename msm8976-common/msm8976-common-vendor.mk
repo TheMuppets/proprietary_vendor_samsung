@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/msm8976-common/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/samsung/msm8976-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
-    vendor/samsung/msm8976-common/proprietary/lib64/hw/sensors.msm8952.so:system/lib64/hw/sensors.msm8952.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
@@ -96,7 +95,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/samsung/msm8976-common/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/samsung/msm8976-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/samsung/msm8976-common/proprietary/vendor/etc/yas_set.cfg:system/vendor/etc/yas_set.cfg \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -317,7 +315,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
-    vendor/samsung/msm8976-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
@@ -417,7 +414,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
-    vendor/samsung/msm8976-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
@@ -425,8 +421,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/samsung/msm8976-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
-    vendor/samsung/msm8976-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/samsung/msm8976-common/proprietary/vendor/lib64/libyasalgo.so:system/vendor/lib64/libyasalgo.so
+    vendor/samsung/msm8976-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
