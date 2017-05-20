@@ -221,7 +221,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/lib/libsensirion_h_2.so:system/lib/libsensirion_h_2.so \
     vendor/samsung/hlte-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/hlte-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
-    vendor/samsung/hlte-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
@@ -260,7 +259,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/samsung/hlte-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:system/vendor/lib/libactuator_ak7345_camcorder.so \
@@ -326,7 +324,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
-    vendor/samsung/hlte-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
