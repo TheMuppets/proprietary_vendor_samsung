@@ -17,6 +17,11 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/nobleltetmo/proprietary/etc/firmware/audience-es804-data.bin:system/etc/firmware/audience-es804-data.bin \
     vendor/samsung/nobleltetmo/proprietary/etc/firmware/audience-es804-fw.bin:system/etc/firmware/audience-es804-fw.bin \
+    vendor/samsung/nobleltetmo/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/nobleltetmo/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/nobleltetmo/proprietary/lib64/libril.so:system/lib64/libril.so \
+    vendor/samsung/nobleltetmo/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/nobleltetmo/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
     vendor/samsung/nobleltetmo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/nobleltetmo/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
     vendor/samsung/nobleltetmo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
