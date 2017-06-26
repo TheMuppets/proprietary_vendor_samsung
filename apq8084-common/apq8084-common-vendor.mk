@@ -165,7 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/lib/F16US_libchromatix_imx240_zslshot_iso800_cpp.so:system/lib/F16US_libchromatix_imx240_zslshot_iso800_cpp.so \
     vendor/samsung/apq8084-common/proprietary/lib/F16US_libchromatix_imx240_zslshot_lls_cpp.so:system/lib/F16US_libchromatix_imx240_zslshot_lls_cpp.so \
     vendor/samsung/apq8084-common/proprietary/lib/F16US_libchromatix_imx240_zslshot_pip_cpp.so:system/lib/F16US_libchromatix_imx240_zslshot_pip_cpp.so \
-    vendor/samsung/apq8084-common/proprietary/lib/hw/camera.apq8084.so:system/lib/hw/camera.apq8084.so \
+    vendor/samsung/apq8084-common/proprietary/lib/hw/camera.vendor.apq8084.so:system/lib/hw/camera.vendor.apq8084.so \
     vendor/samsung/apq8084-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/apq8084-common/proprietary/lib/hw/sensorhubs.apq8084.so:system/lib/hw/sensorhubs.apq8084.so \
     vendor/samsung/apq8084-common/proprietary/lib/hw/sensors.apq8084.so:system/lib/hw/sensors.apq8084.so \
