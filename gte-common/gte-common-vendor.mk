@@ -18,16 +18,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gte-common/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
     vendor/samsung/gte-common/proprietary/lib/libmysound.so:system/lib/libmysound.so \
     vendor/samsung/gte-common/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/gte-common/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/gte-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+    vendor/samsung/gte-common/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so
