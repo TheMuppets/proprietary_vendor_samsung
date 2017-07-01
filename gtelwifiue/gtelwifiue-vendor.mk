@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gtelwifiue/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
     vendor/samsung/gtelwifiue/proprietary/lib/libAl_Awb.so:system/lib/libAl_Awb.so \
     vendor/samsung/gtelwifiue/proprietary/lib/libAl_Awb_Sp.so:system/lib/libAl_Awb_Sp.so \
-    vendor/samsung/gtelwifiue/proprietary/lib/libQjpeg.so:system/lib/libQjpeg.so \
     vendor/samsung/gtelwifiue/proprietary/lib/libaec_algo_front.so:system/lib/libaec_algo_front.so \
     vendor/samsung/gtelwifiue/proprietary/lib/libaec_algo_rear.so:system/lib/libaec_algo_rear.so \
     vendor/samsung/gtelwifiue/proprietary/lib/libaf_algo_rear.so:system/lib/libaf_algo_rear.so \
