@@ -54,16 +54,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gprimelte-common/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
     vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/gprimelte-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+    vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so
