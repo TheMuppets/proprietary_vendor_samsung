@@ -29,9 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/hltetmo/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/hltetmo/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/hltetmo/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
-    vendor/samsung/hltetmo/proprietary/vendor/firmware/libpn547_fw_pku.so:system/vendor/firmware/libpn547_fw_pku.so \
-    vendor/samsung/hltetmo/proprietary/vendor/firmware/libpn547_fw_platform.so:system/vendor/firmware/libpn547_fw_platform.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/hltetmo/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \

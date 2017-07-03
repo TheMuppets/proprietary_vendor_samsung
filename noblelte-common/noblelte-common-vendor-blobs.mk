@@ -234,10 +234,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/noblelte-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
     vendor/samsung/noblelte-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/noblelte-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
-    vendor/samsung/noblelte-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/noblelte-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     vendor/samsung/noblelte-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/samsung/noblelte-common/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     vendor/samsung/noblelte-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
