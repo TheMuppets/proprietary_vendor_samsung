@@ -17,15 +17,13 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/gprimelte-common/proprietary/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libSamsungMusic_v4.so:system/lib/libSamsungMusic_v4.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/libSamsungPDLComposer_MD2.so:system/lib/libSamsungPDLComposer_MD2.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libSamsungPkcs11Wrapper.so:system/lib/libSamsungPkcs11Wrapper.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver226.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/lib_SA_GoogleFX_ver119k.so:system/lib/lib_SA_GoogleFX_ver119k.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
+    vendor/samsung/gprimelte-common/proprietary/lib/lib_DNSe_NRSS_ver230.so:system/lib/lib_DNSe_NRSS_ver230.so \
+    vendor/samsung/gprimelte-common/proprietary/lib/lib_PreGainBooster_ver104.so:system/lib/lib_PreGainBooster_ver104.so \
+    vendor/samsung/gprimelte-common/proprietary/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_SoundAlive_3DPosition_ver107.so:system/lib/lib_SoundAlive_3DPosition_ver107.so \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
@@ -34,19 +32,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_SoundBooster_ver608.so:system/lib/lib_SoundBooster_ver608.so \
     vendor/samsung/gprimelte-common/proprietary/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libmysound.so:system/lib/libmysound.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungSoundbooster_ext.so:system/lib/libsamsungSoundbooster_ext.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungearcare.so:system/lib/libsamsungearcare.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungeffect.so:system/lib/libsamsungeffect.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/libsamsungtts.so:system/lib/libsamsungtts.so \
-    vendor/samsung/gprimelte-common/proprietary/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
+    vendor/samsung/gprimelte-common/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
     vendor/samsung/gprimelte-common/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
     vendor/samsung/gprimelte-common/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
