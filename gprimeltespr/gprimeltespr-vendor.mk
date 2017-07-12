@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gprimeltespr/proprietary/etc/calib_SI_matrix_data_file.dat:system/etc/calib_SI_matrix_data_file.dat \
     vendor/samsung/gprimeltespr/proprietary/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
     vendor/samsung/gprimeltespr/proprietary/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
-    vendor/samsung/gprimeltespr/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
+    vendor/samsung/gprimeltespr/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
     vendor/samsung/gprimeltespr/proprietary/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so \
     vendor/samsung/gprimeltespr/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
     vendor/samsung/gprimeltespr/proprietary/lib/libAl_Awb.so:system/lib/libAl_Awb.so \
