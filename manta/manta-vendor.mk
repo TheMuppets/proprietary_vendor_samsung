@@ -26,17 +26,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/manta/proprietary/vendor/firmware/setfile_4e5.bin:system/vendor/firmware/setfile_4e5.bin \
     vendor/samsung/manta/proprietary/vendor/firmware/setfile_6a3.bin:system/vendor/firmware/setfile_6a3.bin \
     vendor/samsung/manta/proprietary/vendor/firmware/setfile.bin:system/vendor/firmware/setfile.bin \
-    vendor/samsung/manta/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/manta/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/manta/proprietary/vendor/lib/libbccArm.so:system/vendor/lib/libbccArm.so \
-    vendor/samsung/manta/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/samsung/manta/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     vendor/samsung/manta/proprietary/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
     vendor/samsung/manta/proprietary/vendor/lib/libstagefright_hdcp.so:system/vendor/lib/libstagefright_hdcp.so \
-    vendor/samsung/manta/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/manta/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/samsung/manta/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
-    vendor/samsung/manta/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/manta/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/manta/proprietary/vendor/secapp/00060308060501020000000000000000.tlbin:system/vendor/secapp/00060308060501020000000000000000.tlbin \
     vendor/samsung/manta/proprietary/vendor/secapp/020a0000000000000000000000000000.drbin:system/vendor/secapp/020a0000000000000000000000000000.drbin \
