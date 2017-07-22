@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter gprimelte gprimeltespr gprimeltexx gtelwifiue gtesqltespr,$(TARGET_DEVICE)),)
+ifneq ($(filter gprimelte gprimeltespr gprimeltexx gtelwifiue gtesqltespr j7ltechn j7ltespr,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
