@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hlte hltetmo,$(TARGET_DEVICE)),)
+ifneq ($(filter hlte hltechn hltetmo,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libmm-abl
