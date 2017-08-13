@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltespr/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltespr/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltespr/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/kltespr/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltespr/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
@@ -33,16 +32,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB5_pre_firmware.ncd:system/vendor/firmware/bcm2079xB5_pre_firmware.ncd \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/kltespr/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/kltespr/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so

@@ -28,16 +28,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltekdi/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kltekdi/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/kltekdi/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/kltekdi/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/kltekdi/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
