@@ -23,24 +23,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/can/bin/rfs_access:system/blobs/can/bin/rfs_access \
     vendor/samsung/hltetmo/proprietary/blobs/can/bin/rild:system/blobs/can/bin/rild \
     vendor/samsung/hltetmo/proprietary/blobs/can/bin/rmt_storage:system/blobs/can/bin/rmt_storage \
-    vendor/samsung/hltetmo/proprietary/blobs/can/lib/libmdmdetect.so:system/blobs/can/lib/libmdmdetect.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/lib/libreference-ril.so:system/blobs/can/lib/libreference-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/lib/libril.so:system/blobs/can/lib/libril.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/lib/libsec-ril.so:system/blobs/can/lib/libsec-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/lib/libsecnativefeature.so:system/blobs/can/lib/libsecnativefeature.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/lib/libsecril-client.so:system/blobs/can/lib/libsecril-client.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libconfigdb.so:system/blobs/can/vendor/lib/libconfigdb.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libdiag.so:system/blobs/can/vendor/lib/libdiag.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libdsutils.so:system/blobs/can/vendor/lib/libdsutils.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libidl.so:system/blobs/can/vendor/lib/libidl.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqcci_legacy.so:system/blobs/can/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi.so:system/blobs/can/vendor/lib/libqmi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi_cci.so:system/blobs/can/vendor/lib/libqmi_cci.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi_client_qmux.so:system/blobs/can/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi_common_so.so:system/blobs/can/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi_csi.so:system/blobs/can/vendor/lib/libqmi_csi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmi_encdec.so:system/blobs/can/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libqmiservices.so:system/blobs/can/vendor/lib/libqmiservices.so \
     vendor/samsung/hltetmo/proprietary/blobs/can/vendor/lib/libril-qcril-hook-oem.so:system/blobs/can/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/bin/efsks:system/blobs/tmo/bin/efsks \
@@ -50,24 +37,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/bin/rfs_access:system/blobs/tmo/bin/rfs_access \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/bin/rild:system/blobs/tmo/bin/rild \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/bin/rmt_storage:system/blobs/tmo/bin/rmt_storage \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libmdmdetect.so:system/blobs/tmo/lib/libmdmdetect.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libreference-ril.so:system/blobs/tmo/lib/libreference-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libril.so:system/blobs/tmo/lib/libril.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libsec-ril.so:system/blobs/tmo/lib/libsec-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libsecnativefeature.so:system/blobs/tmo/lib/libsecnativefeature.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libsecril-client.so:system/blobs/tmo/lib/libsecril-client.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libconfigdb.so:system/blobs/tmo/vendor/lib/libconfigdb.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libdiag.so:system/blobs/tmo/vendor/lib/libdiag.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libdsutils.so:system/blobs/tmo/vendor/lib/libdsutils.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libidl.so:system/blobs/tmo/vendor/lib/libidl.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqcci_legacy.so:system/blobs/tmo/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi.so:system/blobs/tmo/vendor/lib/libqmi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi_cci.so:system/blobs/tmo/vendor/lib/libqmi_cci.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi_client_qmux.so:system/blobs/tmo/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi_common_so.so:system/blobs/tmo/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi_csi.so:system/blobs/tmo/vendor/lib/libqmi_csi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmi_encdec.so:system/blobs/tmo/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libqmiservices.so:system/blobs/tmo/vendor/lib/libqmiservices.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libril-qcril-hook-oem.so:system/blobs/tmo/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/efsks:system/blobs/vzw/bin/efsks \
@@ -77,22 +51,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/rfs_access:system/blobs/vzw/bin/rfs_access \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/rild:system/blobs/vzw/bin/rild \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/rmt_storage:system/blobs/vzw/bin/rmt_storage \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libmdmdetect.so:system/blobs/vzw/lib/libmdmdetect.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libreference-ril.so:system/blobs/vzw/lib/libreference-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libril.so:system/blobs/vzw/lib/libril.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libsec-ril.so:system/blobs/vzw/lib/libsec-ril.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libsecnativefeature.so:system/blobs/vzw/lib/libsecnativefeature.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/lib/libsecril-client.so:system/blobs/vzw/lib/libsecril-client.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libconfigdb.so:system/blobs/vzw/vendor/lib/libconfigdb.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libdiag.so:system/blobs/vzw/vendor/lib/libdiag.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libdsutils.so:system/blobs/vzw/vendor/lib/libdsutils.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libidl.so:system/blobs/vzw/vendor/lib/libidl.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqcci_legacy.so:system/blobs/vzw/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi.so:system/blobs/vzw/vendor/lib/libqmi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi_cci.so:system/blobs/vzw/vendor/lib/libqmi_cci.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi_client_qmux.so:system/blobs/vzw/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi_common_so.so:system/blobs/vzw/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi_csi.so:system/blobs/vzw/vendor/lib/libqmi_csi.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmi_encdec.so:system/blobs/vzw/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libqmiservices.so:system/blobs/vzw/vendor/lib/libqmiservices.so \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/vendor/lib/libril-qcril-hook-oem.so:system/blobs/vzw/vendor/lib/libril-qcril-hook-oem.so
