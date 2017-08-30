@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klteduos/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/samsung/klteduos/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/liblisten.so:system/vendor/lib/liblisten.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
     vendor/samsung/klteduos/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
