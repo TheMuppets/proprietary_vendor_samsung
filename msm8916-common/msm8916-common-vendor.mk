@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/msm8916-common/proprietary/bin/radish:system/bin/radish \
-    vendor/samsung/msm8916-common/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/msm8916-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/msm8916-common/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/samsung/msm8916-common/proprietary/bin/ssr_setup:system/bin/ssr_setup \
