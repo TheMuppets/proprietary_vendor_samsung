@@ -68,8 +68,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/samsung/serrano-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
     vendor/samsung/serrano-common/proprietary/vendor/bin/geomagneticd:system/vendor/bin/geomagneticd \
     vendor/samsung/serrano-common/proprietary/vendor/lib/sensors.vendor.msm8960.so:system/vendor/lib/sensors.vendor.msm8960.so \
     vendor/samsung/serrano-common/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
