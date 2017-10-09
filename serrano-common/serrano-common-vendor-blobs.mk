@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/samsung/serrano-common/proprietary/vendor/bin/radish:system/vendor/bin/radish \
-    vendor/samsung/serrano-common/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/samsung/serrano-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
