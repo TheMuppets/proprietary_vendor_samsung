@@ -44,6 +44,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/lib/libsecril-client.so:system/blobs/tmo/lib/libsecril-client.so \
     vendor/samsung/hltetmo/proprietary/blobs/tmo/vendor/lib/libril-qcril-hook-oem.so:system/blobs/tmo/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/efsks:system/blobs/usc/bin/efsks \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/ks:system/blobs/usc/bin/ks \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/qcks:system/blobs/usc/bin/qcks \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/qmuxd:system/blobs/usc/bin/qmuxd \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/rfs_access:system/blobs/usc/bin/rfs_access \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/rild:system/blobs/usc/bin/rild \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/bin/rmt_storage:system/blobs/usc/bin/rmt_storage \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/lib/libreference-ril.so:system/blobs/usc/lib/libreference-ril.so \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/lib/libril.so:system/blobs/usc/lib/libril.so \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/lib/libsec-ril.so:system/blobs/usc/lib/libsec-ril.so \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/lib/libsecnativefeature.so:system/blobs/usc/lib/libsecnativefeature.so \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/lib/libsecril-client.so:system/blobs/usc/lib/libsecril-client.so \
+    vendor/samsung/hltetmo/proprietary/blobs/usc/vendor/lib/libril-qcril-hook-oem.so:system/blobs/usc/vendor/lib/libril-qcril-hook-oem.so
+PRODUCT_COPY_FILES += \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/efsks:system/blobs/vzw/bin/efsks \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/ks:system/blobs/vzw/bin/ks \
     vendor/samsung/hltetmo/proprietary/blobs/vzw/bin/qcks:system/blobs/vzw/bin/qcks \
