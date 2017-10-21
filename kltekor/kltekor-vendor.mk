@@ -23,9 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltekor/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltekor/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltekor/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltekor/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltekor/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltekor/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/kltekor/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/kltekor/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/kltekor/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
