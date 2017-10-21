@@ -23,11 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltedv/proprietary/blobs/dv/bin/rfs_access:system/blobs/dv/bin/rfs_access \
     vendor/samsung/kltedv/proprietary/blobs/dv/bin/rild:system/blobs/dv/bin/rild \
     vendor/samsung/kltedv/proprietary/blobs/dv/bin/rmt_storage:system/blobs/dv/bin/rmt_storage \
-    vendor/samsung/kltedv/proprietary/blobs/dv/lib/libreference-ril.so:system/blobs/dv/lib/libreference-ril.so \
     vendor/samsung/kltedv/proprietary/blobs/dv/lib/libril.so:system/blobs/dv/lib/libril.so \
     vendor/samsung/kltedv/proprietary/blobs/dv/lib/libsec-ril.so:system/blobs/dv/lib/libsec-ril.so \
-    vendor/samsung/kltedv/proprietary/blobs/dv/lib/libsecnativefeature.so:system/blobs/dv/lib/libsecnativefeature.so \
-    vendor/samsung/kltedv/proprietary/blobs/dv/lib/libsecril-client.so:system/blobs/dv/lib/libsecril-client.so \
     vendor/samsung/kltedv/proprietary/blobs/dv/vendor/lib/libril-qcril-hook-oem.so:system/blobs/dv/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltedv/proprietary/blobs/spr/bin/efsks:system/blobs/spr/bin/efsks \
@@ -37,11 +34,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltedv/proprietary/blobs/spr/bin/rfs_access:system/blobs/spr/bin/rfs_access \
     vendor/samsung/kltedv/proprietary/blobs/spr/bin/rild:system/blobs/spr/bin/rild \
     vendor/samsung/kltedv/proprietary/blobs/spr/bin/rmt_storage:system/blobs/spr/bin/rmt_storage \
-    vendor/samsung/kltedv/proprietary/blobs/spr/lib/libreference-ril.so:system/blobs/spr/lib/libreference-ril.so \
     vendor/samsung/kltedv/proprietary/blobs/spr/lib/libril.so:system/blobs/spr/lib/libril.so \
     vendor/samsung/kltedv/proprietary/blobs/spr/lib/libsec-ril.so:system/blobs/spr/lib/libsec-ril.so \
-    vendor/samsung/kltedv/proprietary/blobs/spr/lib/libsecnativefeature.so:system/blobs/spr/lib/libsecnativefeature.so \
-    vendor/samsung/kltedv/proprietary/blobs/spr/lib/libsecril-client.so:system/blobs/spr/lib/libsecril-client.so \
     vendor/samsung/kltedv/proprietary/blobs/spr/vendor/lib/libril-qcril-hook-oem.so:system/blobs/spr/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/kltedv/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \

@@ -23,11 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kltespr/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/samsung/kltespr/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kltespr/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/kltespr/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kltespr/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kltespr/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/kltespr/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/kltespr/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/kltespr/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
