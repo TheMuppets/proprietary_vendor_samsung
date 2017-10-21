@@ -17,11 +17,18 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/samsung/klte-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/klte-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/samsung/klte-common/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/klte-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/klte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/samsung/klte-common/proprietary/bin/qcks:system/bin/qcks \
+    vendor/samsung/klte-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/klte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/klte-common/proprietary/bin/radish:system/bin/radish \
+    vendor/samsung/klte-common/proprietary/bin/rfs_access:system/bin/rfs_access \
+    vendor/samsung/klte-common/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/klte-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/klte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/klte-common/proprietary/cameradata/C16QL_Isp0_s5k2p2xx.bin:system/cameradata/C16QL_Isp0_s5k2p2xx.bin \
     vendor/samsung/klte-common/proprietary/cameradata/C16QL_Isp1_s5k2p2xx.bin:system/cameradata/C16QL_Isp1_s5k2p2xx.bin \
@@ -278,6 +285,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
