@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/klte-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/klte-common/proprietary/bin/rfs_access:system/bin/rfs_access \
-    vendor/samsung/klte-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/klte-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/klte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/klte-common/proprietary/cameradata/C16QL_Isp0_s5k2p2xx.bin:system/cameradata/C16QL_Isp0_s5k2p2xx.bin \
