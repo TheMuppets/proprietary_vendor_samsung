@@ -17,11 +17,18 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/samsung/hlte-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/hlte-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/samsung/hlte-common/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/hlte-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/hlte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/samsung/hlte-common/proprietary/bin/qcks:system/bin/qcks \
+    vendor/samsung/hlte-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/hlte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/hlte-common/proprietary/bin/radish:system/bin/radish \
+    vendor/samsung/hlte-common/proprietary/bin/rfs_access:system/bin/rfs_access \
+    vendor/samsung/hlte-common/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/hlte-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/samsung/hlte-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/hlte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/hlte-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
@@ -316,6 +323,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
