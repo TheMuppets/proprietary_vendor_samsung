@@ -11,7 +11,7 @@ boardflags2=0x00800000
 boardflags3=0x48700106
 #boardnum=57410
 macaddr=00:90:4c:12:d0:01
-ccode=ALL
+ccode=GB
 regrev=999
 antswitch=0
 vendid=0x14e4
@@ -108,8 +108,8 @@ pa5ga3=-139,5773,-789,-119,6180,-845,-122,6143,-839,-67,7242,-983
 # Target Power Table offset
 maxp2ga0=80
 maxp2ga1=80
-maxp5ga0=73,74,76,76
-maxp5ga1=72,72,72,75
+maxp5ga0=73,75,79,78
+maxp5ga1=70,70,70,71
 subband5gver=0x4
 paparambwver=3
 
@@ -123,20 +123,19 @@ pdoffset80ma0=0x0ef0
 pdoffset80ma1=0x000f
 cckbw202gpo=0
 cckbw20ul2gpo=0
-mcsbw202gpo=0xAA886664
+mcsbw202gpo=0xAA754444
 
-dot11agofdmhrbw202gpo=0x8888
-ofdmlrbw202gpo=0x0055
-mcsbw205glpo=0x77755553
-mcsbw405glpo=0xBBB99997
-mcsbw805glpo=0xDDDBBBB8
-mcsbw205gmpo=0x77755553
-mcsbw405gmpo=0xBBB99997
-mcsbw805gmpo=0xDDDBBBB8
-mcsbw205ghpo=0x77755553
-mcsbw405ghpo=0xBBB99997
-mcsbw805ghpo=0xDDDBBBB8
-
+dot11agofdmhrbw202gpo=0x7777
+ofdmlrbw202gpo=0x0044
+mcsbw205glpo=0x86644442
+mcsbw405glpo=0xAAA88884
+mcsbw805glpo=0xBCCAAAA6
+mcsbw205gmpo=0x86644442
+mcsbw405gmpo=0xAAA88885
+mcsbw805gmpo=0xCCCAAAA6
+mcsbw205ghpo=0x86644442
+mcsbw405ghpo=0xAAA88885
+mcsbw805ghpo=0xCCCAAAA6
 mcslr5glpo=0x0000
 mcslr5gmpo=0x0000
 mcslr5ghpo=0x0000
@@ -184,19 +183,18 @@ rssi_delta_5gmu_c1=-1,3,-1,3,-1,3
 rssi_delta_5gh_c1=-1,3,-1,3,-1,3
 
 #BLR tuned 2g power offsets for LTE filter
-powoffs2gtna0=0,0,0,0,0,0,0,0,1,1,0,0,0,0
-powoffs2gtna1=-1,1,1,2,1,0,0,1,2,1,1,0,0,0
+powoffs2gtna0=-1,-2,-3,-4,-4,-4,-3,-2,0,0,0,0,-1,0
+powoffs2gtna1=-3,-1,2,1,-1,-2,-3,-2,1,1,1,-2,-2,-1
 
-
-powoffs5g20mtna0=-4,-4,-4,0,0,0
-powoffs5g20mtna1=-4,-4,-4,0,0,0
-powoffs5g40mtna0=-8,-4,-4,0
-powoffs5g40mtna1=-8,-4,-4,0
-powoffs5g80mtna0=-4,0,-4,0
-powoffs5g80mtna1=-4,0,-4,0
+powoffs5g20mtna0=-4,-4,-4,-4,0,0
+powoffs5g20mtna1=-4,-4,-4,-4,0,0
+powoffs5g40mtna0=-8,-8,-12,0
+powoffs5g40mtna1=-8,-8,-12,0
+powoffs5g80mtna0=-8,-4,-12,0
+powoffs5g80mtna1=-8,-4,-12,0
 ## Dynamic SAR control, need to be tuned
-dynamicsarctrl_2g=0xb4b4
-dynamicsarctrl_5g=0xa8a8
+dynamicsarctrl_2g=0xBCBC
+dynamicsarctrl_5g=0xB4B4
 
 # 11b CDD mode
 # 0: enabled  /  1: disabled, Antenna diversity

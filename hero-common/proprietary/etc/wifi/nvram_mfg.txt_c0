@@ -108,10 +108,10 @@ pa2ga3=0xff2d,0x114b,0xfdb2
 pa5ga2=0xff53,0x13d2,0xfd51,0xff54,0x13c7,0xfd52,0xff55,0x1346,0xfd5c,0xff52,0x1339,0xfd62
 pa5ga3=0xff3e,0x10e4,0xfdac,0xff3c,0x10d4,0xfdaf,0xff4e,0x12cb,0xfd6e,0xff42,0x11a3,0xfd96
 
-# Target Power Table & offset
-maxp2ga0=79
-maxp2ga1=79
-maxp5ga0=74,74,74,73
+# Target Power Table นื offset
+maxp2ga0=80
+maxp2ga1=80
+maxp5ga0=74,74,74,74
 maxp5ga1=74,74,74,74
 subband5gver=0x4
 paparambwver=3
@@ -125,20 +125,20 @@ pdoffset40ma1=0x3333
 pdoffset80ma1=0x1111
 cckbw202gpo=0
 cckbw20ul2gpo=0
-mcsbw202gpo=0xAA886664
+mcsbw202gpo=0xAA864444
 
 dot11agofdmhrbw202gpo=0x8888
-ofdmlrbw202gpo=0x0055
-mcsbw205glpo=0x66644442
-mcsbw405glpo=0xAAA88885
+ofdmlrbw202gpo=0x0044
+mcsbw205glpo=0x86644442
+mcsbw405glpo=0xAAA88884
 mcsbw805glpo=0xCCCAAAA6
 
-mcsbw205gmpo=0x66644442
-mcsbw405gmpo=0xAAA88885
+mcsbw205gmpo=0x86644442
+mcsbw405gmpo=0xAAA88884
 mcsbw805gmpo=0xCCCAAAA6
 
-mcsbw205ghpo=0x66644442
-mcsbw405ghpo=0xAAA88885
+mcsbw205ghpo=0x86644442
+mcsbw405ghpo=0xAAA88884
 mcsbw805ghpo=0xCCCAAAA6
 
 mcslr5glpo=0x0000
@@ -187,29 +187,29 @@ rssi_delta_5gmu_c1=0,3,0,3,0,2
 rssi_delta_5gh_c1=0,1,0,3,1,3
 
 #BLR tuned 2g power offsets for LTE filter
-powoffs2gtna0=-2,-2,-2,0,1,0,0,0,0,0,0,0,0,0
-powoffs2gtna1=-3,-2,-1,-1,1,1,1,1,0,0,0,0,0,0
+powoffs2gtna0=1,1,1,1,0,-1,-1,-1,0,1,1,1,1,0
+powoffs2gtna1=-1,-1,-1,1,0,1,1,1,1,1,1,1,0,0
 
 # 11b CDD mode 
 # 0: enabled  /  1: disabled, Antenna diversity
 cck_onecore_tx=1
 
-muxenab=0x4  
+muxenab=0x4
 #ed_thresh2g=-63
 #ed_thresh5g=-63
-#dynamicsarctrl_2g=0xb4b4
-#dynamicsarctrl_5g=0xa8a8
-powoffs5g20mtna0=-4,-4,-4,0,0,0
-powoffs5g20mtna1=-4,-4,-4,0,0,0
-powoffs5g40mtna0=-8,-4,-4,0
-powoffs5g40mtna1=-8,-4,-4,0
-powoffs5g80mtna0=-4,0,-4,0
-powoffs5g80mtna1=-4,0,-4,0
+dynamicsarctrl_2g=0xBCBC
+dynamicsarctrl_5g=0xB4B4
+powoffs5g20mtna0=-4,-4,-4,-4,0,0
+powoffs5g20mtna1=-4,-4,-4,-4,0,0
+powoffs5g40mtna0=-8,-8,-12,0
+powoffs5g40mtna1=-8,-8,-12,0
+powoffs5g80mtna0=-8,-4,-12,0
+powoffs5g80mtna1=-8,-4,-12,0
 
 ## FCC power limit on ch12/13
-#fccpwrch12 = 8
-#fccpwrch13 = 32
-#fccpwroverride = 1
+fccpwrch12=8
+fccpwrch13=32
+#fccpwroverride=1
 
 # Enabling One Core Listen
 ocl=1
@@ -225,4 +225,3 @@ rpcal_phase5gb0=187
 rpcal_phase5gb1=182
 rpcal_phase5gb2=41
 rpcal_phase5gb3=12
-

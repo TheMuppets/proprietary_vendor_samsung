@@ -10,7 +10,7 @@ boardflags2=0x00800000
 boardflags3=0x48700106
 #boardnum=57410 
 macaddr=00:90:4c:12:d0:01
-ccode=ALL
+ccode=GB
 regrev=6
 antswitch=0
 
