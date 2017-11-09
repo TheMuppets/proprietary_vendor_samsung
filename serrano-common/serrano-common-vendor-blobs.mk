@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/serrano-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/serrano-common/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/samsung/serrano-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
