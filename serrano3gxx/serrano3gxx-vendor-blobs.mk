@@ -19,4 +19,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano3gxx/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/serrano3gxx/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/serrano3gxx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/serrano3gxx/proprietary/lib/libaudcal.so:system/lib/libaudcal.so
+    vendor/samsung/serrano3gxx/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+    vendor/samsung/serrano3gxx/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so
