@@ -210,11 +210,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
     vendor/samsung/apq8084-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/samsung/apq8084-common/proprietary/lib/libqomx_jpegenc.so:system/lib/libqomx_jpegenc.so \
-    vendor/samsung/apq8084-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/apq8084-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/apq8084-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/apq8084-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
     vendor/samsung/apq8084-common/proprietary/lib/libssaudio-client.so:system/lib/libssaudio-client.so \
