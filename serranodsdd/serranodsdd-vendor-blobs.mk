@@ -20,4 +20,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serranodsdd/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/serranodsdd/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/serranodsdd/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    vendor/samsung/serranodsdd/proprietary/lib/libaudcal.so:system/lib/libaudcal.so
+    vendor/samsung/serranodsdd/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+    vendor/samsung/serranodsdd/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so
