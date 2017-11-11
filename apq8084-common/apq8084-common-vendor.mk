@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/apq8084-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/apq8084-common/proprietary/bin/radish:system/bin/radish \
-    vendor/samsung/apq8084-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/apq8084-common/proprietary/bin/sensorhubservice:system/bin/sensorhubservice \
     vendor/samsung/apq8084-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/apq8084-common/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
@@ -210,7 +209,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
     vendor/samsung/apq8084-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/samsung/apq8084-common/proprietary/lib/libqomx_jpegenc.so:system/lib/libqomx_jpegenc.so \
-    vendor/samsung/apq8084-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/samsung/apq8084-common/proprietary/lib/libsensorhubservice.so:system/lib/libsensorhubservice.so \
