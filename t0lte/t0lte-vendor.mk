@@ -19,10 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/t0lte/proprietary/bin/efsks:system/bin/efsks \
     vendor/samsung/t0lte/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/t0lte/proprietary/bin/qcks:system/bin/qcks \
-    vendor/samsung/t0lte/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/samsung/t0lte/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/t0lte/proprietary/etc/Diag.cfg:system/etc/Diag.cfg \
-    vendor/samsung/t0lte/proprietary/etc/Diag_zero.cfg:system/etc/Diag_zero.cfg \
     vendor/samsung/t0lte/proprietary/lib/libakm.so:system/lib/libakm.so \
     vendor/samsung/t0lte/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/samsung/t0lte/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
