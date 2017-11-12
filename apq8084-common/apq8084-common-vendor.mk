@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/samsung/apq8084-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/apq8084-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/apq8084-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/apq8084-common/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/apq8084-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/apq8084-common/proprietary/bin/qseecomd:system/bin/qseecomd \
@@ -369,7 +368,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmmcamera_s5k8b1yx.so:system/vendor/lib/libmmcamera_s5k8b1yx.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    vendor/samsung/apq8084-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
