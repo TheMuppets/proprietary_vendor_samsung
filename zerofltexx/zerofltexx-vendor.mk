@@ -17,4 +17,9 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltexx/proprietary/app/mcRegistry/ffffffff000000000000000000000028.tlbin:system/app/mcRegistry/ffffffff000000000000000000000028.tlbin \
     vendor/samsung/zerofltexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so
+    vendor/samsung/zerofltexx/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
+    vendor/samsung/zerofltexx/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    vendor/samsung/zerofltexx/proprietary/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
+    vendor/samsung/zerofltexx/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
+    vendor/samsung/zerofltexx/proprietary/lib64/libfloatingfeature.so:system/lib64/libfloatingfeature.so
+
