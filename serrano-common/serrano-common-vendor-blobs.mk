@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/samsung/serrano-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/serrano-common/proprietary/lib/libbtnv.so:system/lib/libbtnv.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
     vendor/samsung/serrano-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/samsung/serrano-common/proprietary/bin/thermald:system/bin/thermald \
