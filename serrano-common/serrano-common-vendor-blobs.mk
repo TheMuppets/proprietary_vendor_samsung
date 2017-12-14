@@ -18,6 +18,7 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/samsung/serrano-common/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
     vendor/samsung/serrano-common/proprietary/vendor/bin/fm_qsoc_patches:system/vendor/bin/fm_qsoc_patches \
     vendor/samsung/serrano-common/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/samsung/serrano-common/proprietary/vendor/bin/thermald:system/vendor/bin/thermald \
