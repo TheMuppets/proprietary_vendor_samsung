@@ -1,0 +1,195 @@
+#bcm94358pciemdl1FFMS_MM_mdfy_PAparam_141223_2rangeCal_ver5_rpcal_150209.txt -- 2/9/2015 by Murata, based on bcm94358pciemdl1FFMS_MM_20150121-2.txt, Changed rpcal.
+#BCM4358 WLCSP module for iPA, eLNA board with PCIE for production package and BT
+sromrev=11
+boardrev=0x1301
+## boardtype is subject to change
+boardtype=0x0774
+boardflags=0x12001001
+#enable eLNA both 2G/5G
+boardflags2=0x00002000
+boardflags3=0x48000109
+#boardnum=57410 
+macaddr=00:90:4c:16:70:01
+ccode=GB
+regrev=6
+antswitch=0
+pdgain5g=4
+pdgain2g=4
+olpc_thresh=1
+## enabling two range tssi - set to 0 when performing tssi cal
+tworangetssi2g=1
+tworangetssi5g=1
+## lowpowerrange - set to 1 only when performing tssi cal for lower power range
+lowpowerrange2g=0
+lowpowerrange5g=0
+femctrl=10
+vendid=0x14e4
+devid=0x43e9
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=484
+xtalfreq=37400
+rxgains2gelnagaina0=3
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=3
+rxgains5gtrisoa0=5
+rxgains5gtrelnabypa0=1
+rxgains5gmelnagaina0=3
+rxgains5gmtrisoa0=5
+rxgains5gmtrelnabypa0=1
+rxgains5ghelnagaina0=3
+rxgains5ghtrisoa0=5
+rxgains5ghtrelnabypa0=1
+rxgains2gelnagaina1=3
+rxgains2gtrisoa1=6
+rxgains2gtrelnabypa1=1
+rxgains5gelnagaina1=3
+rxgains5gtrisoa1=5
+rxgains5gtrelnabypa1=1
+rxgains5gmelnagaina1=3
+rxgains5gmtrisoa1=5
+rxgains5gmtrelnabypa1=1
+rxgains5ghelnagaina1=3
+rxgains5ghtrisoa1=5
+rxgains5ghtrelnabypa1=1
+rxchain=3
+txchain=3
+aa2g=3
+aa5g=3
+agbg0=0
+agbg1=0
+aga0=0
+aga1=0
+tssipos2g=1
+extpagain2g=2
+tssipos5g=1
+extpagain5g=2
+tempthresh=120
+temps_hysteresis=15
+tempoffset=255
+rawtempsense=0x1ff
+## PA parameters for normal range
+pa2ga0=-104,6085,-655
+pa2ga1=-138,5774,-673
+pa5ga0=-174,5966,-714,-167,5853,-702,-173,5752,-694,-162,5721,-679
+pa5ga1=-166,6242,-735,-167,6239,-735,-151,6053,-702,-157,5749,-679
+## PA parameters for lower power range
+pa2ga2=109,5005,-536
+pa2ga3=122,4747,-511
+pa5ga2=-111,3933,-557,-114,3966,-558,259,4994,-436,-95,3876,-551
+pa5ga3=16,4882,-608,-25,4647,-603,62,4732,-557,-29,4156,-567
+
+maxp2ga0=78
+maxp5ga0=78,78,78,78
+maxp2ga1=74
+maxp5ga1=78,80,80,78
+subband5gver=0x4
+pdoffsetcckma0=0x2
+pdoffsetcckma1=0x2
+pdoffset40ma0=0x2222
+pdoffset80ma0=0x0111
+pdoffset40ma1=0x2221
+pdoffset80ma1=0x1110
+cckbw202gpo=0x0000
+cckbw20ul2gpo=0x0000
+
+mcsbw202gpo=0xcb765422
+mcsbw402gpo=0xa9765422
+dot11agofdmhrbw202gpo=0x5564
+ofdmlrbw202gpo=0x0011
+mcsbw205glpo=0xba977772
+mcsbw405glpo=0xbbb77774
+mcsbw805glpo=0xddc88887
+mcsbw205gmpo=0xcba88883
+mcsbw405gmpo=0xbbb77774
+mcsbw805gmpo=0xddc88887
+mcsbw205ghpo=0xba977772
+mcsbw405ghpo=0xbbb77774
+mcsbw805ghpo=0xddc88887
+mcslr5glpo=0x1111
+mcslr5gmpo=0x1111
+mcslr5ghpo=0x1111
+
+sb20in40hrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb40and80lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb40and80lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb40and80lr5ghpo=0x0
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+phycal_tempdelta=25
+temps_period=15
+phy4350_ss_opt=1
+AvVmid_c0=2,140,2,145,2,145,2,145,2,145
+AvVmid_c1=2,140,2,145,2,145,2,145,2,145
+AvVmid_c2=0,0,0,0,0,0,0,0,0,0
+rssicorrnorm_c0=5,5
+rssicorrnorm_c1=5,5
+rssicorrnorm5g_c0=-1,0,1,-1,0,1,-1,0,1,-1,0,1
+rssicorrnorm5g_c1=0,2,2,0,2,2,-1,0,1,-1,0,1
+epsdelta2g0=0
+epsdelta2g1=0
+papdwar=4
+cckdigfilttype=5
+tssisleep_en=0x1f
+
+## SWCTRLMAP using AN29223K and AN29222K
+# BT only uses RF_SW_CTRL_1
+swctrlmap_5g=0x02080208,0x05a00000,0x04200000,0x000000,0x0fd
+swctrlmap_2g=0x14011401,0x28500000,0x08100000,0x020202,0x0ff
+#fem_table_init_val=0x1,0x1
+swctrlmapext_2g=0x0,0x0,0x0,0x0,0x03
+
+btc_params82=0x0
+btc_params51=0x409f
+btc_params73=0
+prot_btrssi_thresh=0
+
+# ###########  BTC Dynctl profile params  ############
+# flags:bit0 - dynctl enabled, bit1 dynamic desense, bit2 dynamic mode
+
+btcdyn_flags=0x7
+btcdyn_dflt_dsns_level=0
+btcdyn_low_dsns_level=0
+btcdyn_mid_dsns_level=12
+btcdyn_high_dsns_level=2
+btcdyn_default_btc_mode=1
+# --- number of rows in the array vars below ---
+btcdyn_msw_rows=1
+btcdyn_dsns_rows=1
+# --- mode switch data rows (max is 4) ---
+btcdyn_msw_row0=1,12,-70,-5,-100
+# --- desense switching data rows (max is 4) ---
+btcdyn_dsns_row0=5,4,0,-65,-65
+
+## Enabling OOB signal - needed for final board
+host_wake_opt=0
+
+## 2G TX power compensation, need to be tuned
+powoffs2gtna0=0,-1,-1,1,3,4,4,1,-1,0,2,5,5,0
+powoffs2gtna1=-1,-1,0,0,0,3,3,1,0,0,0,0,0,0
+
+## reciprocity cal for implicit TXBF, need to be tuned
+rpcal2g=0x00BE
+rpcal5gb0=0x001F
+rpcal5gb1=0x0010
+rpcal5gb2=0x0012
+rpcal5gb3=0x0032
+## Dynamic SAR control, need to be tuned
+#dynamicsarctrl_2g=0xffb0
+#dynamicsarctrl_5g=0xffa0
+cck_onecore_tx=1
+# For Sensor Hub UART
+muxenab=0x4
+shwakepin=0x62
