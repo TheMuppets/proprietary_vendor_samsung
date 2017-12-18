@@ -19,5 +19,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serranoltespr/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/serranoltespr/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/serranoltespr/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
-    vendor/samsung/serranoltespr/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-    vendor/samsung/serranoltespr/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so
+    vendor/samsung/serranoltespr/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
