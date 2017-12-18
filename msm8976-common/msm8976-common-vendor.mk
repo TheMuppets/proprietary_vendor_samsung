@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/lib/hw/camera.vendor.msm8952.so:system/lib/hw/camera.vendor.msm8952.so \
     vendor/samsung/msm8976-common/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/samsung/msm8976-common/proprietary/lib/libalawb_algo.so:system/lib/libalawb_algo.so \
+    vendor/samsung/msm8976-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/samsung/msm8976-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
     vendor/samsung/msm8976-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     vendor/samsung/msm8976-common/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
@@ -83,6 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8976-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/msm8976-common/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/samsung/msm8976-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
+    vendor/samsung/msm8976-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
     vendor/samsung/msm8976-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
