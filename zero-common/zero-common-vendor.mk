@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
     vendor/samsung/zero-common/proprietary/bin/cbd:system/bin/cbd \
-    vendor/samsung/zero-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/zero-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
     vendor/samsung/zero-common/proprietary/etc/firmware/audience-es705-fw.bin:system/etc/firmware/audience-es705-fw.bin \
     vendor/samsung/zero-common/proprietary/etc/firmware/audience-es804-fw.bin:system/etc/firmware/audience-es804-fw.bin \
@@ -145,8 +144,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/samsung/zero-common/proprietary/lib/libprotobuf-cpp-shim.so:system/lib/libprotobuf-cpp-shim.so \
-    vendor/samsung/zero-common/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/zero-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/zero-common/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
     vendor/samsung/zero-common/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
     vendor/samsung/zero-common/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
@@ -230,8 +227,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/zero-common/proprietary/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
     vendor/samsung/zero-common/proprietary/lib64/libprotobuf-cpp-shim.so:system/lib64/libprotobuf-cpp-shim.so \
-    vendor/samsung/zero-common/proprietary/lib64/libril.so:system/lib64/libril.so \
-    vendor/samsung/zero-common/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
     vendor/samsung/zero-common/proprietary/lib64/libsavsac.so:system/lib64/libsavsac.so \
     vendor/samsung/zero-common/proprietary/lib64/libsavscmn.so:system/lib64/libsavscmn.so \
     vendor/samsung/zero-common/proprietary/lib64/libsavsff.so:system/lib64/libsavsff.so \
