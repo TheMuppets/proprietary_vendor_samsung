@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/zero-common/proprietary/lib/libprotobuf-cpp-shim.so:system/lib/libprotobuf-cpp-shim.so \
     vendor/samsung/zero-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/zero-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/zero-common/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
@@ -228,6 +229,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/zero-common/proprietary/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
+    vendor/samsung/zero-common/proprietary/lib64/libprotobuf-cpp-shim.so:system/lib64/libprotobuf-cpp-shim.so \
     vendor/samsung/zero-common/proprietary/lib64/libril.so:system/lib64/libril.so \
     vendor/samsung/zero-common/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
     vendor/samsung/zero-common/proprietary/lib64/libsavsac.so:system/lib64/libsavsac.so \
