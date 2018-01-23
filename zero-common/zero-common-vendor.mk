@@ -123,6 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/etc/wifi/nvram_net.txt_wisol_b85_a1:system/etc/wifi/nvram_net.txt_wisol_b85_a1 \
     vendor/samsung/zero-common/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/samsung/zero-common/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/zero-common/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
     vendor/samsung/zero-common/proprietary/lib/hw/camera.vendor.exynos5.so:system/lib/hw/camera.vendor.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
