@@ -185,7 +185,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
     vendor/samsung/zero-common/proprietary/lib/libsxqk.so:system/lib/libsxqk.so \
     vendor/samsung/zero-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \
-    vendor/samsung/zero-common/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
     vendor/samsung/zero-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
@@ -269,7 +268,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libsxqk.so:system/lib64/libsxqk.so \
     vendor/samsung/zero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/zero-common/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
-    vendor/samsung/zero-common/proprietary/lib64/libvulkan.so:system/lib64/libvulkan.so \
     vendor/samsung/zero-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
     vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
