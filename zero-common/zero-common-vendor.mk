@@ -149,8 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
     vendor/samsung/zero-common/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
     vendor/samsung/zero-common/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/zero-common/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    vendor/samsung/zero-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/zero-common/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
     vendor/samsung/zero-common/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
     vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
@@ -232,8 +230,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libsavsmeta.so:system/lib64/libsavsmeta.so \
     vendor/samsung/zero-common/proprietary/lib64/libsavsvc.so:system/lib64/libsavsvc.so \
     vendor/samsung/zero-common/proprietary/lib64/libsdid.so:system/lib64/libsdid.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     vendor/samsung/zero-common/proprietary/lib64/libseccamera_jni.so:system/lib64/libseccamera_jni.so \
     vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
     vendor/samsung/zero-common/proprietary/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
