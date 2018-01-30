@@ -16,6 +16,4 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltecan/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/zerofltecan/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    vendor/samsung/zerofltecan/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
-    vendor/samsung/zerofltecan/proprietary/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so
+    vendor/samsung/zerofltecan/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so
