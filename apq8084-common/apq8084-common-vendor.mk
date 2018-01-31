@@ -222,6 +222,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16US_libchromatix_imx240_common_res1.so:system/vendor/lib/F16US_libchromatix_imx240_common_res1.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16US_libchromatix_imx240_common_res2.so:system/vendor/lib/F16US_libchromatix_imx240_common_res2.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16US_libchromatix_imx240_common_res3.so:system/vendor/lib/F16US_libchromatix_imx240_common_res3.so \
+    vendor/samsung/apq8084-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -258,6 +259,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
+    vendor/samsung/apq8084-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libchromatix_s5k6d1yx_common.so:system/vendor/lib/libchromatix_s5k6d1yx_common.so \
