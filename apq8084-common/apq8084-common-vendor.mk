@@ -387,6 +387,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/samsung/apq8084-common/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
