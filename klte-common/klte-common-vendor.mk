@@ -40,16 +40,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/cameradata/cal_data_LSCmaster.bin:system/vendor/cameradata/cal_data_LSCmaster.bin \
     vendor/samsung/klte-common/proprietary/vendor/cameradata/datapattern_420sp.yuv:system/vendor/cameradata/datapattern_420sp.yuv \
     vendor/samsung/klte-common/proprietary/vendor/cameradata/datapattern_front_420sp.yuv:system/vendor/cameradata/datapattern_front_420sp.yuv \
-    vendor/samsung/klte-common/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:system/vendor/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/samsung/klte-common/proprietary/vendor/etc/C16QL_s5k2p2xx_module_info.xml:system/vendor/etc/C16QL_s5k2p2xx_module_info.xml \
     vendor/samsung/klte-common/proprietary/vendor/etc/F16QL_s5k2p2xx_module_info.xml:system/vendor/etc/F16QL_s5k2p2xx_module_info.xml \
     vendor/samsung/klte-common/proprietary/vendor/etc/F16QS_imx240_module_info.xml:system/vendor/etc/F16QS_imx240_module_info.xml \
-    vendor/samsung/klte-common/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
-    vendor/samsung/klte-common/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
-    vendor/samsung/klte-common/proprietary/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-    vendor/samsung/klte-common/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-    vendor/samsung/klte-common/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-    vendor/samsung/klte-common/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/General_cal.acdb:system/vendor/etc/acdbdata/General_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Global_cal.acdb:system/vendor/etc/acdbdata/Global_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:system/vendor/etc/acdbdata/Handset_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:system/vendor/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:system/vendor/etc/acdbdata/Headset_cal.acdb \
+    vendor/samsung/klte-common/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:system/vendor/etc/acdbdata/Speaker_cal.acdb \
     vendor/samsung/klte-common/proprietary/vendor/firmware/audience-es705-fw.bin:system/vendor/firmware/audience-es705-fw.bin \
     vendor/samsung/klte-common/proprietary/vendor/firmware/audience-es705-vs.bin:system/vendor/firmware/audience-es705-vs.bin \
     vendor/samsung/klte-common/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
