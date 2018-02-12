@@ -16,6 +16,8 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/opensource/bin/sdcard:system/bin/sdcard \
+    vendor/samsung/zero-common/opensource/lib/libsensor.so:system/lib/libsensor.so \
+    vendor/samsung/zero-common/opensource/lib64/libsensor.so:system/lib64/libsensor.so \
     vendor/samsung/zero-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
