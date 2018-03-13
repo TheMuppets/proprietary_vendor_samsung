@@ -163,7 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/lib/hw/camera.vendor.apq8084.so:system/vendor/lib/hw/camera.vendor.apq8084.so \
     vendor/samsung/apq8084-common/proprietary/lib/hw/gps.default.so:system/vendor/lib/hw/gps.default.so \
     vendor/samsung/apq8084-common/proprietary/lib/hw/sensorhubs.apq8084.so:system/vendor/lib/hw/sensorhubs.apq8084.so \
-    vendor/samsung/apq8084-common/proprietary/lib/hw/sensors.apq8084.so:system/vendor/lib/hw/sensors.apq8084.so \
+    vendor/samsung/apq8084-common/proprietary/lib/hw/sensors.apq8084.so:system/vendor/lib/sensors.vendor.apq8084.so \
     vendor/samsung/apq8084-common/proprietary/lib/libTsAe.so:system/vendor/lib/libTsAe.so \
     vendor/samsung/apq8084-common/proprietary/lib/libTsAf.so:system/vendor/lib/libTsAf.so \
     vendor/samsung/apq8084-common/proprietary/lib/libTs_J_Accm.so:system/vendor/lib/libTs_J_Accm.so \
