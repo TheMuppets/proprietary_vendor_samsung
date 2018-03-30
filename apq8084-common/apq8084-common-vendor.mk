@@ -64,9 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
     vendor/samsung/apq8084-common/proprietary/etc/firmware/utf20.bin:system/etc/firmware/utf20.bin \
     vendor/samsung/apq8084-common/proprietary/etc/firmware/utfbd20.bin:system/etc/firmware/utfbd20.bin \
-    vendor/samsung/apq8084-common/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/samsung/apq8084-common/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/apq8084-common/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/samsung/apq8084-common/proprietary/lib/F16UL_libTsAe.so:system/lib/F16UL_libTsAe.so \
     vendor/samsung/apq8084-common/proprietary/lib/F16UL_libTsAf.so:system/lib/F16UL_libTsAf.so \
     vendor/samsung/apq8084-common/proprietary/lib/F16UL_libTs_J_Accm.so:system/lib/F16UL_libTs_J_Accm.so \
