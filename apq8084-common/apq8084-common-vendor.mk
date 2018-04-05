@@ -211,7 +211,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/lib/libssaudio-client.so:system/vendor/lib/libssaudio-client.so \
     vendor/samsung/apq8084-common/proprietary/lib/libvdis.so:system/vendor/lib/libvdis.so \
     vendor/samsung/apq8084-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/samsung/apq8084-common/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16UL_libchromatix_s5k2p2xx_common.so:system/vendor/lib/F16UL_libchromatix_s5k2p2xx_common.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16UL_libchromatix_s5k2p2xx_common_res0.so:system/vendor/lib/F16UL_libchromatix_s5k2p2xx_common_res0.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/F16UL_libchromatix_s5k2p2xx_common_res1.so:system/vendor/lib/F16UL_libchromatix_s5k2p2xx_common_res1.so \
