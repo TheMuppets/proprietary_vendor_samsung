@@ -18,7 +18,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/hw/fingerprint.exynos5.so:system/lib/hw/fingerprint.exynos5.so \
     vendor/samsung/star-common/proprietary/lib/hw/lights.universal9810.so:system/lib/hw/lights.universal9810.so \
     vendor/samsung/star-common/proprietary/lib64/hw/fingerprint.exynos5.so:system/lib64/hw/fingerprint.exynos5.so \
-    vendor/samsung/star-common/proprietary/lib64/hw/lights.universal9810.so:system/lib64/hw/lights.universal9810.so
+    vendor/samsung/star-common/proprietary/lib64/hw/lights.universal9810.so:system/lib64/hw/lights.universal9810.so \
+    vendor/samsung/star-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/samsung/star-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so
 
 PRODUCT_PACKAGES += \
     cbd
