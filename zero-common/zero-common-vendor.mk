@@ -136,7 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
     vendor/samsung/zero-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/zero-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
-    vendor/samsung/zero-common/proprietary/lib/libarac.so:system/lib/libarac.so \
     vendor/samsung/zero-common/proprietary/lib/libcsc.so:system/lib/libcsc.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
@@ -147,44 +146,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/samsung/zero-common/proprietary/lib/libprotobuf-cpp-shim.so:system/lib/libprotobuf-cpp-shim.so \
-    vendor/samsung/zero-common/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
-    vendor/samsung/zero-common/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
-    vendor/samsung/zero-common/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
-    vendor/samsung/zero-common/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-    vendor/samsung/zero-common/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
     vendor/samsung/zero-common/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
     vendor/samsung/zero-common/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
     vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/zero-common/proprietary/lib/libsensorlistener.so:system/lib/libsensorlistener.so \
     vendor/samsung/zero-common/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
-    vendor/samsung/zero-common/proprietary/lib/libsnaace.so:system/lib/libsnaace.so \
-    vendor/samsung/zero-common/proprietary/lib/libsnamrnb.so:system/lib/libsnamrnb.so \
-    vendor/samsung/zero-common/proprietary/lib/libsnamrwb.so:system/lib/libsnamrwb.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxcore.so:system/lib/libsomxcore.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxevrcd.so:system/lib/libsomxevrcd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxevrce.so:system/lib/libsomxevrce.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxqcelpd.so:system/lib/libsomxqcelpd.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxqcelpe.so:system/lib/libsomxqcelpe.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
-    vendor/samsung/zero-common/proprietary/lib/libsxqk.so:system/lib/libsxqk.so \
     vendor/samsung/zero-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \
     vendor/samsung/zero-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
@@ -211,7 +177,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
     vendor/samsung/zero-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
     vendor/samsung/zero-common/proprietary/lib64/libagc_max.so:system/lib64/libagc_max.so \
-    vendor/samsung/zero-common/proprietary/lib64/libarac.so:system/lib64/libarac.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
     vendor/samsung/zero-common/proprietary/lib64/libcsc.so:system/lib64/libcsc.so \
@@ -227,44 +192,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/zero-common/proprietary/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
     vendor/samsung/zero-common/proprietary/lib64/libprotobuf-cpp-shim.so:system/lib64/libprotobuf-cpp-shim.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsavsac.so:system/lib64/libsavsac.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsavscmn.so:system/lib64/libsavscmn.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsavsff.so:system/lib64/libsavsff.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsavsmeta.so:system/lib64/libsavsmeta.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsavsvc.so:system/lib64/libsavsvc.so \
     vendor/samsung/zero-common/proprietary/lib64/libsdid.so:system/lib64/libsdid.so \
     vendor/samsung/zero-common/proprietary/lib64/libseccamera_jni.so:system/lib64/libseccamera_jni.so \
     vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
     vendor/samsung/zero-common/proprietary/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     vendor/samsung/zero-common/proprietary/lib64/libsensorservice.so:system/lib64/libsensorservice.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsnaace.so:system/lib64/libsnaace.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsnamrnb.so:system/lib64/libsnamrnb.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsnamrwb.so:system/lib64/libsnamrwb.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomx263dsw.so:system/lib64/libsomx263dsw.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomx264dsw.so:system/lib64/libsomx264dsw.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxaacd.so:system/lib64/libsomxaacd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxaace.so:system/lib64/libsomxaace.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxadpcmd.so:system/lib64/libsomxadpcmd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxamrd.so:system/lib64/libsomxamrd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxcmn.so:system/lib64/libsomxcmn.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxcore.so:system/lib64/libsomxcore.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxevrcd.so:system/lib64/libsomxevrcd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxevrce.so:system/lib64/libsomxevrce.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxflacd.so:system/lib64/libsomxflacd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxhevcdsw.so:system/lib64/libsomxhevcdsw.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxmp3d.so:system/lib64/libsomxmp3d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxmp43d.so:system/lib64/libsomxmp43d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxmp4vdsw.so:system/lib64/libsomxmp4vdsw.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxnaace.so:system/lib64/libsomxnaace.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxqcelpd.so:system/lib64/libsomxqcelpd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxqcelpe.so:system/lib64/libsomxqcelpe.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxsr263d.so:system/lib64/libsomxsr263d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxvc1dsw.so:system/lib64/libsomxvc1dsw.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxvp8d.so:system/lib64/libsomxvp8d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxwmad.so:system/lib64/libsomxwmad.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxwmv7d.so:system/lib64/libsomxwmv7d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsomxwmv8d.so:system/lib64/libsomxwmv8d.so \
-    vendor/samsung/zero-common/proprietary/lib64/libsxqk.so:system/lib64/libsxqk.so \
     vendor/samsung/zero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/zero-common/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
     vendor/samsung/zero-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
