@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
     vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
-    vendor/samsung/zero-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/samsung/zero-common/proprietary/bin/gps.cer:system/bin/gps.cer \
     vendor/samsung/zero-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
