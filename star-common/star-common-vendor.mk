@@ -72,7 +72,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/android.hidl.token@1.0-utils.so:system/lib/vndk-compat/android.hidl.token@1.0-utils.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/android.hidl.token@1.0.so:system/lib/vndk-compat/android.hidl.token@1.0.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/android.system.wifi.keystore@1.0.so:system/lib/vndk-compat/android.system.wifi.keystore@1.0.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libAstcEnc.so:system/lib/vndk-compat/libAstcEnc.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libEGL.so:system/lib/vndk-compat/libEGL.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libGLESOverlay.so:system/lib/vndk-compat/libGLESOverlay.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libMaliCounterCapture.so:system/lib/vndk-compat/libMaliCounterCapture.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libSEC_EGL.so:system/lib/vndk-compat/libSEC_EGL.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libandroid_runtime.so:system/lib/vndk-compat/libandroid_runtime.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libaudioclient.so:system/lib/vndk-compat/libaudioclient.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libaudioroute.so:system/lib/vndk-compat/libaudioroute.so \
@@ -85,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libcrypto_utils.so:system/lib/vndk-compat/libcrypto_utils.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libdebuggerd_client.so:system/lib/vndk-compat/libdebuggerd_client.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libdiskconfig.so:system/lib/vndk-compat/libdiskconfig.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libedmnativehelper.so:system/lib/vndk-compat/libedmnativehelper.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libevent.so:system/lib/vndk-compat/libevent.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libexif.so:system/lib/vndk-compat/libexif.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libexpat.so:system/lib/vndk-compat/libexpat.so \
@@ -92,7 +97,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libgatekeeper.so:system/lib/vndk-compat/libgatekeeper.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libgui.so:system/lib/vndk-compat/libgui.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libhardware_legacy.so:system/lib/vndk-compat/libhardware_legacy.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libhwastc.so:system/lib/vndk-compat/libhwastc.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libhwui.so:system/lib/vndk-compat/libhwui.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libhwuibridge.so:system/lib/vndk-compat/libhwuibridge.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libimagefilter.so:system/lib/vndk-compat/libimagefilter.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libinput.so:system/lib/vndk-compat/libinput.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libjavacore.so:system/lib/vndk-compat/libjavacore.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libjpeg.so:system/lib/vndk-compat/libjpeg.so \
@@ -101,8 +109,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libldacBT_abr.so:system/lib/vndk-compat/libldacBT_abr.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libldacBT_enc.so:system/lib/vndk-compat/libldacBT_enc.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/liblz4.so:system/lib/vndk-compat/liblz4.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libmctraster.so:system/lib/vndk-compat/libmctraster.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libmedia.so:system/lib/vndk-compat/libmedia.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libmedia_helper.so:system/lib/vndk-compat/libmedia_helper.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libmedia_jni.so:system/lib/vndk-compat/libmedia_jni.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libmediacodecservice.so:system/lib/vndk-compat/libmediacodecservice.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libmediadrm.so:system/lib/vndk-compat/libmediadrm.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libmemtrack.so:system/lib/vndk-compat/libmemtrack.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libmemunreachable.so:system/lib/vndk-compat/libmemunreachable.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libminijail.so:system/lib/vndk-compat/libminijail.so \
@@ -112,15 +124,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libnl.so:system/lib/vndk-compat/libnl.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libopus.so:system/lib/vndk-compat/libopus.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libpcre2.so:system/lib/vndk-compat/libpcre2.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libpersona.so:system/lib/vndk-compat/libpersona.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libpiex.so:system/lib/vndk-compat/libpiex.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libpng.so:system/lib/vndk-compat/libpng.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libpower.so:system/lib/vndk-compat/libpower.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libprocinfo.so:system/lib/vndk-compat/libprocinfo.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libprotobuf-cpp-full.so:system/lib/vndk-compat/libprotobuf-cpp-full.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libprotobuf-cpp-lite.so:system/lib/vndk-compat/libprotobuf-cpp-lite.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libquramimagecodec.so:system/lib/vndk-compat/libquramimagecodec.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libradio.so:system/lib/vndk-compat/libradio.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libradio_metadata.so:system/lib/vndk-compat/libradio_metadata.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/librilutils.so:system/lib/vndk-compat/librilutils.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libsamsungeffect.so:system/lib/vndk-compat/libsamsungeffect.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libsdp_crypto.so:system/lib/vndk-compat/libsdp_crypto.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libselinux.so:system/lib/vndk-compat/libselinux.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libsensor.so:system/lib/vndk-compat/libsensor.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libskia.so:system/lib/vndk-compat/libskia.so \
@@ -153,6 +169,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libstagefright_soft_vpxdec.so:system/lib/vndk-compat/libstagefright_soft_vpxdec.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libstagefright_soft_vpxenc.so:system/lib/vndk-compat/libstagefright_soft_vpxenc.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libstagefright_xmlparser@1.0.so:system/lib/vndk-compat/libstagefright_xmlparser@1.0.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libsts_values.so:system/lib/vndk-compat/libsts_values.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libsuspend.so:system/lib/vndk-compat/libsuspend.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libsysutils.so:system/lib/vndk-compat/libsysutils.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libtinyalsa.so:system/lib/vndk-compat/libtinyalsa.so \
@@ -160,6 +177,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libui.so:system/lib/vndk-compat/libui.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libusbhost.so:system/lib/vndk-compat/libusbhost.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libutils.so:system/lib/vndk-compat/libutils.so \
+    vendor/samsung/star-common/proprietary/lib/vndk-compat/libvicom_recon.so:system/lib/vndk-compat/libvicom_recon.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libvintf.so:system/lib/vndk-compat/libvintf.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libvixl-arm.so:system/lib/vndk-compat/libvixl-arm.so \
     vendor/samsung/star-common/proprietary/lib/vndk-compat/libvixl-arm64.so:system/lib/vndk-compat/libvixl-arm64.so \
@@ -248,7 +266,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/android.hidl.token@1.0-utils.so:system/lib64/vndk-compat/android.hidl.token@1.0-utils.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/android.hidl.token@1.0.so:system/lib64/vndk-compat/android.hidl.token@1.0.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/android.system.wifi.keystore@1.0.so:system/lib64/vndk-compat/android.system.wifi.keystore@1.0.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libAstcEnc.so:system/lib64/vndk-compat/libAstcEnc.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libEGL.so:system/lib64/vndk-compat/libEGL.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libGLESOverlay.so:system/lib64/vndk-compat/libGLESOverlay.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libMaliCounterCapture.so:system/lib64/vndk-compat/libMaliCounterCapture.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libSEC_EGL.so:system/lib64/vndk-compat/libSEC_EGL.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libandroid_runtime.so:system/lib64/vndk-compat/libandroid_runtime.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libaudioclient.so:system/lib64/vndk-compat/libaudioclient.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libaudioroute.so:system/lib64/vndk-compat/libaudioroute.so \
@@ -263,6 +285,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libdebuggerd_client.so:system/lib64/vndk-compat/libdebuggerd_client.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libdiskconfig.so:system/lib64/vndk-compat/libdiskconfig.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libdumpstateutil.so:system/lib64/vndk-compat/libdumpstateutil.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libedmnativehelper.so:system/lib64/vndk-compat/libedmnativehelper.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libevent.so:system/lib64/vndk-compat/libevent.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libexif.so:system/lib64/vndk-compat/libexif.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libexpat.so:system/lib64/vndk-compat/libexpat.so \
@@ -270,7 +293,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libgatekeeper.so:system/lib64/vndk-compat/libgatekeeper.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libgui.so:system/lib64/vndk-compat/libgui.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libhardware_legacy.so:system/lib64/vndk-compat/libhardware_legacy.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libhwastc.so:system/lib64/vndk-compat/libhwastc.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libhwui.so:system/lib64/vndk-compat/libhwui.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libhwuibridge.so:system/lib64/vndk-compat/libhwuibridge.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libimagefilter.so:system/lib64/vndk-compat/libimagefilter.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libinput.so:system/lib64/vndk-compat/libinput.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libjavacore.so:system/lib64/vndk-compat/libjavacore.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libjpeg.so:system/lib64/vndk-compat/libjpeg.so \
@@ -279,7 +305,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libldacBT_abr.so:system/lib64/vndk-compat/libldacBT_abr.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libldacBT_enc.so:system/lib64/vndk-compat/libldacBT_enc.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/liblz4.so:system/lib64/vndk-compat/liblz4.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmctraster.so:system/lib64/vndk-compat/libmctraster.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmedia.so:system/lib64/vndk-compat/libmedia.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmedia_helper.so:system/lib64/vndk-compat/libmedia_helper.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmedia_jni.so:system/lib64/vndk-compat/libmedia_jni.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmediadrm.so:system/lib64/vndk-compat/libmediadrm.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmemtrack.so:system/lib64/vndk-compat/libmemtrack.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libmemunreachable.so:system/lib64/vndk-compat/libmemunreachable.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libminijail.so:system/lib64/vndk-compat/libminijail.so \
@@ -290,15 +320,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libopus.so:system/lib64/vndk-compat/libopus.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpagemap.so:system/lib64/vndk-compat/libpagemap.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpcre2.so:system/lib64/vndk-compat/libpcre2.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpersona.so:system/lib64/vndk-compat/libpersona.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpiex.so:system/lib64/vndk-compat/libpiex.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpng.so:system/lib64/vndk-compat/libpng.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libpower.so:system/lib64/vndk-compat/libpower.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libprocinfo.so:system/lib64/vndk-compat/libprocinfo.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libprotobuf-cpp-full.so:system/lib64/vndk-compat/libprotobuf-cpp-full.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libprotobuf-cpp-lite.so:system/lib64/vndk-compat/libprotobuf-cpp-lite.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libquramimagecodec.so:system/lib64/vndk-compat/libquramimagecodec.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libradio.so:system/lib64/vndk-compat/libradio.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libradio_metadata.so:system/lib64/vndk-compat/libradio_metadata.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/librilutils.so:system/lib64/vndk-compat/librilutils.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsamsungeffect.so:system/lib64/vndk-compat/libsamsungeffect.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsdp_crypto.so:system/lib64/vndk-compat/libsdp_crypto.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libselinux.so:system/lib64/vndk-compat/libselinux.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsensor.so:system/lib64/vndk-compat/libsensor.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libskia.so:system/lib64/vndk-compat/libskia.so \
@@ -330,6 +364,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libstagefright_soft_vorbisdec.so:system/lib64/vndk-compat/libstagefright_soft_vorbisdec.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libstagefright_soft_vpxdec.so:system/lib64/vndk-compat/libstagefright_soft_vpxdec.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libstagefright_soft_vpxenc.so:system/lib64/vndk-compat/libstagefright_soft_vpxenc.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsts_values.so:system/lib64/vndk-compat/libsts_values.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsuspend.so:system/lib64/vndk-compat/libsuspend.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libsysutils.so:system/lib64/vndk-compat/libsysutils.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libtinyalsa.so:system/lib64/vndk-compat/libtinyalsa.so \
@@ -337,6 +372,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libui.so:system/lib64/vndk-compat/libui.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libusbhost.so:system/lib64/vndk-compat/libusbhost.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libutils.so:system/lib64/vndk-compat/libutils.so \
+    vendor/samsung/star-common/proprietary/lib64/vndk-compat/libvicom_recon.so:system/lib64/vndk-compat/libvicom_recon.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libvintf.so:system/lib64/vndk-compat/libvintf.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libvixl-arm.so:system/lib64/vndk-compat/libvixl-arm.so \
     vendor/samsung/star-common/proprietary/lib64/vndk-compat/libvixl-arm64.so:system/lib64/vndk-compat/libvixl-arm64.so \
