@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
     vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
-    vendor/samsung/zero-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/samsung/zero-common/proprietary/bin/gps.cer:system/bin/gps.cer \
     vendor/samsung/zero-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
@@ -200,7 +199,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/camera.vendor.exynos5.so:system/lib64/hw/camera.vendor.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/consumerir.exynos5.so:system/lib64/hw/consumerir.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
