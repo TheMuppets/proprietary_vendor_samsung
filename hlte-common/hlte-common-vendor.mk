@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/samsung/hlte-common/proprietary/vendor/bin/ks:system/vendor/bin/ks \
     vendor/samsung/hlte-common/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
-    vendor/samsung/hlte-common/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/samsung/hlte-common/proprietary/vendor/bin/qcks:system/vendor/bin/qcks \
     vendor/samsung/hlte-common/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/samsung/hlte-common/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
@@ -216,6 +215,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libsensirion_h_2.so:system/vendor/lib/libsensirion_h_2.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libvdis.so:system/vendor/lib/libvdis.so \
+    vendor/samsung/hlte-common/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
