@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/cameradata/datapattern_front_420sp.yuv:system/vendor/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/apq8084-common/proprietary/vendor/etc/F16UL_s5k2p2xx_module_info.xml:system/vendor/etc/F16UL_s5k2p2xx_module_info.xml \
     vendor/samsung/apq8084-common/proprietary/vendor/etc/F16US_imx240_module_info.xml:system/vendor/etc/F16US_imx240_module_info.xml \
+    vendor/samsung/apq8084-common/proprietary/vendor/etc/data/qmi_config.xml:system/vendor/etc/data/qmi_config.xml \
     vendor/samsung/apq8084-common/proprietary/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw \
     vendor/samsung/apq8084-common/proprietary/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw \
     vendor/samsung/apq8084-common/proprietary/vendor/firmware/audience-es705-fw.bin:system/vendor/firmware/audience-es705-fw.bin \
