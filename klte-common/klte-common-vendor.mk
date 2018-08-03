@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/F16QS_libchromatix_imx240_vt_hd.so:system/vendor/lib/F16QS_libchromatix_imx240_vt_hd.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/F16QS_libchromatix_imx240_zslshot.so:system/vendor/lib/F16QS_libchromatix_imx240_zslshot.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/hw/camera.vendor.msm8974.so:system/vendor/lib/hw/camera.vendor.msm8974.so \
-    vendor/samsung/klte-common/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
+    vendor/samsung/klte-common/proprietary/vendor/lib/hw/sensors.vendor.msm8974.so:system/vendor/lib/hw/sensors.vendor.msm8974.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libTsAe.so:system/vendor/lib/libTsAe.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libTsAf.so:system/vendor/lib/libTsAf.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libTs_J_Accm.so:system/vendor/lib/libTs_J_Accm.so \
