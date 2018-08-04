@@ -133,7 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/lib/D13QS_libchromatix_imx135_zslshot.so:system/vendor/lib/D13QS_libchromatix_imx135_zslshot.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/hw/camera.vendor.msm8974.so:system/vendor/lib/hw/camera.vendor.msm8974.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/hw/sensorhubs.msm8974.so:system/vendor/lib/hw/sensorhubs.msm8974.so \
-    vendor/samsung/hlte-common/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
+    vendor/samsung/hlte-common/proprietary/vendor/lib/hw/sensors.vendor.msm8974.so:system/vendor/lib/hw/sensors.vendor.msm8974.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libTsAe.so:system/vendor/lib/libTsAe.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libTsAf.so:system/vendor/lib/libTsAf.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/libTs_J_Accm.so:system/vendor/lib/libTs_J_Accm.so \
