@@ -17,5 +17,8 @@
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/chagallwifi/overlay
 
+# Mobicore
+USE_DEVICE_MOBICORE_VARIANT := true
+
 $(call inherit-product, vendor/samsung/chagallwifi/chagallwifi-vendor-blobs.mk)
 $(call inherit-product, vendor/samsung/exynos5420-common/exynos5420-common-vendor.mk)
