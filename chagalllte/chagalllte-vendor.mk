@@ -17,8 +17,11 @@
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/chagalllte/overlay
 
+<<<<<<< HEAD
+=======
 # Mobicore
 USE_DEVICE_MOBICORE_VARIANT := true
 
+>>>>>>> upstream/cm-14.1
 $(call inherit-product, vendor/samsung/chagalllte/chagalllte-vendor-blobs.mk)
 $(call inherit-product, vendor/samsung/exynos5420-common/exynos5420-common-vendor.mk)
