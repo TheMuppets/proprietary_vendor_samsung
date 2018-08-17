@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,6 @@
 
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/chagallwifi/overlay
-
-# Mobicore
-USE_DEVICE_MOBICORE_VARIANT := true
 
 $(call inherit-product, vendor/samsung/chagallwifi/chagallwifi-vendor-blobs.mk)
 $(call inherit-product, vendor/samsung/exynos5420-common/exynos5420-common-vendor.mk)
