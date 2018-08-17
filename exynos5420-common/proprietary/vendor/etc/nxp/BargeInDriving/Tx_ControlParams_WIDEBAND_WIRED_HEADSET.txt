@@ -40,6 +40,7 @@
 256
 128
 128
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
 128
 32767
 8000
@@ -47,6 +48,14 @@
 28000
 5827
 64
+=======
+32767
+4000
+280
+24576
+5827
+0
+>>>>>>> upstream/cm-14.1:n1awifi/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_SPEAKER.txt
 512
 768
 150

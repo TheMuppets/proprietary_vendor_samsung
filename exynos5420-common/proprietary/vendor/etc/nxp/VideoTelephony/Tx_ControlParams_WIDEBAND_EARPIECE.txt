@@ -21,28 +21,36 @@
 8192
 2048
 0
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_EARPIECE.txt
 128
+=======
+200
+>>>>>>> upstream/cm-14.1:klimtwifi/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_EARPIECE.txt
 8192
 4096
 96
 8192
-512
+2048
 1
 767
-3000
-1000
-512
-256
+18000
+16000
+2048
+64
 256
 384
-3000
-1000
-768
-256
+24000
+22000
+2048
+128
 256
 512
 32767
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_WIDEBAND_EARPIECE.txt
 2000
+=======
+14000
+>>>>>>> upstream/cm-14.1:klimtwifi/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_EARPIECE.txt
 280
 8230
 5827

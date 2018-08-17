@@ -41,10 +41,18 @@
 128
 256
 256
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
 32767
 13000
 512
 10158
+=======
+128
+32767
+4000
+512
+32767
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt
 5827
 16384
 512
@@ -146,7 +154,10 @@
 5827
 819
 32767
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
 0
+=======
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/BargeInDriving/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt
 0
 16384
 512

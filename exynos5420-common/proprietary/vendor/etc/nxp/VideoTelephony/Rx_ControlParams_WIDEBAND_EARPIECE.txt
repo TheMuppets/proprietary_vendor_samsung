@@ -10,7 +10,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -15 //-14
+=======
+-13
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -58,7 +62,7 @@
 400
 0
 0
--78
+-90
 1
 200
 0
@@ -91,7 +95,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -12 //-11
+=======
+-10
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -139,7 +147,7 @@
 400
 0
 0
--78
+-90
 1
 200
 0
@@ -172,7 +180,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -9 //-8
+=======
+-7
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -220,7 +232,7 @@
 400
 0
 0
--78
+-90
 1
 200
 0
@@ -253,7 +265,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -6 //-5
+=======
+-4
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -301,7 +317,7 @@
 400
 0
 0
--78
+-90
 1
 200
 0
@@ -334,7 +350,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -3 //-2
+=======
+-1
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -382,7 +402,7 @@
 400
 0
 0
--78
+-90
 1
 200
 0
@@ -415,7 +435,11 @@
 1
 0
 1
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 0 //1
+=======
+2
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 1
 8192
 96
@@ -458,12 +482,16 @@
 -72
 -45
 -20
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 -10
+=======
+-8
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 50
 400
 0
 0
--78
+-95
 1
 200
 0
@@ -493,7 +521,11 @@
 
 
 
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 0
+=======
+1
+>>>>>>> upstream/cm-14.1:chagallwifi/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
 0
 1
 0

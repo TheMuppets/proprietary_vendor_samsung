@@ -15,7 +15,11 @@
 100
 0
 3500
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_EARPIECE.txt
 0
+=======
+1
+>>>>>>> upstream/cm-14.1:klimtwifi/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_NARROWBAND_EARPIECE.txt
 31
 0
 8192

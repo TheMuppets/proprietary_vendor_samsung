@@ -42,7 +42,11 @@
 256
 128
 32767
+<<<<<<< HEAD:exynos5420-common/proprietary/vendor/etc/nxp/VideoTelephony/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt
 5000
+=======
+3000
+>>>>>>> upstream/cm-14.1:n1awifi/proprietary/vendor/etc/nxp/mVoIP/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt
 280
 8230
 5827
