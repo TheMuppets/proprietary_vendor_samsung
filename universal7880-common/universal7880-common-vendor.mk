@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd32.bin:system/etc/firmware/utfbd32.bin \
     vendor/samsung/universal7880-common/proprietary/etc/nfc/sec_s3nrn81_rfreg.bin:system/etc/nfc/sec_s3nrn81_rfreg.bin \
     vendor/samsung/universal7880-common/proprietary/lib/hw/camera.vendor.exynos5.so:system/lib/hw/camera.vendor.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib/hw/nfc_nci.universal7880.so:system/lib/hw/nfc_nci.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/universal7880-common/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
@@ -93,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/camera.vendor.exynos5.so:system/lib64/hw/camera.vendor.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/hw/nfc_nci.universal7880.so:system/lib64/hw/nfc_nci.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/sensorhubs.universal7880.so:system/lib64/hw/sensorhubs.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/sensors.universal7880.so:system/lib64/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
@@ -122,11 +120,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/setfile_3p8.bin:system/vendor/firmware/setfile_3p8.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/setfile_3p8_front.bin:system/vendor/firmware/setfile_3p8_front.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/nfc_nci.default.so:system/vendor/lib/hw/nfc_nci.default.so \
     vendor/samsung/universal7880-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:system/vendor/lib64/hw/nfc_nci.default.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
