@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd32.bin:system/etc/firmware/utfbd32.bin \
     vendor/samsung/universal7880-common/proprietary/etc/nfc/sec_s3nrn81_rfreg.bin:system/etc/nfc/sec_s3nrn81_rfreg.bin \
     vendor/samsung/universal7880-common/proprietary/lib/hw/camera.vendor.exynos5.so:system/lib/hw/camera.vendor.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib/hw/nfc_nci.universal7880.so:system/lib/hw/nfc_nci.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/universal7880-common/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
@@ -87,13 +86,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \
     vendor/samsung/universal7880-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/universal7880-common/proprietary/lib/modules/qca_cld/qca_cld_wlan.ko:system/lib/modules/qca_cld/qca_cld_wlan.ko \
-    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/camera.vendor.exynos5.so:system/lib64/hw/camera.vendor.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/hw/nfc_nci.universal7880.so:system/lib64/hw/nfc_nci.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/sensorhubs.universal7880.so:system/lib64/hw/sensorhubs.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/sensors.universal7880.so:system/lib64/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
@@ -112,76 +106,83 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/libuniapi.so:system/lib64/libuniapi.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/fimc_is_lib.bin:system/vendor/firmware/fimc_is_lib.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/nfc/sec_s3nrn81_firmware.bin:system/vendor/firmware/nfc/sec_s3nrn81_firmware.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/setfile_3p8.bin:system/vendor/firmware/setfile_3p8.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/firmware/setfile_3p8_front.bin:system/vendor/firmware/setfile_3p8_front.bin \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/nfc_nci.default.so:system/vendor/lib/hw/nfc_nci.default.so \
     vendor/samsung/universal7880-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:system/vendor/lib64/hw/nfc_nci.default.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
-ifeq ($(WITH_EXYNOS_BSP),)
+# Graphics
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/hw/hwcomposer.exynos5.so:system/lib/hw/hwcomposer.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib/hw/memtrack.exynos5.so:system/lib/hw/memtrack.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libcsc.so:system/lib/libcsc.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libdisplay.so:system/lib/libdisplay.so \
+    vendor/samsung/universal7880-common/proprietary/lib/libexynosdisplay.so:system/lib/libexynosdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosgscaler.so:system/lib/libexynosgscaler.so \
+    vendor/samsung/universal7880-common/proprietary/lib/libExynosHWCService.so:system/lib/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libexynosutils.so:system/lib/libexynosutils.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/universal7880-common/proprietary/lib/libhdmi.so:system/lib/libhdmi.so \
     vendor/samsung/universal7880-common/proprietary/lib/libhwcutils.so:system/lib/libhwcutils.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libmpp.so:system/lib/libmpp.so \
     vendor/samsung/universal7880-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    vendor/samsung/universal7880-common/proprietary/lib/libvirtualdisplay.so:system/lib/libvirtualdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.MPEG2.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG2.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/hwcomposer.exynos5.so:system/lib64/hw/hwcomposer.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/hw/memtrack.exynos5.so:system/lib64/hw/memtrack.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libcsc.so:system/lib64/libcsc.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libdisplay.so:system/lib64/libdisplay.so \
+   vendor/samsung/universal7880-common/proprietary/lib64/libexynosdisplay.so:system/lib64/libexynosdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosgscaler.so:system/lib64/libexynosgscaler.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/libExynosHWCService.so:system/lib64/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosscaler.so:system/lib64/libexynosscaler.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libexynosutils.so:system/lib64/libexynosutils.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libexynosv4l2.so:system/lib64/libexynosv4l2.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libfimg.so:system/lib64/libfimg.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libhdmi.so:system/lib64/libhdmi.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libhwcutils.so:system/lib64/libhwcutils.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libmpp.so:system/lib64/libmpp.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libstagefrighthw.so:system/lib64/libstagefrighthw.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/libvirtualdisplay.so:system/lib64/libvirtualdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.MPEG2.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG2.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so
-endif
+    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/memtrack.universal7880.so:system/vendor/lib/hw/memtrack.universal7880.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/memtrack.universal7880.so:system/vendor/lib64/hw/memtrack.universal7880.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libcsc.so:system/vendor/lib/libcsc.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libcsc.so:system/vendor/lib64/libcsc.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libexynosutils.so:system/vendor/lib/libexynosutils.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libexynosutils.so:system/vendor/lib64/libexynosutils.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libexynosv4l2.so:system/vendor/lib/libexynosv4l2.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libhwc2on1adapter.so:system/vendor/lib64/libhwc2on1adapter.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libhwc2on1adapter.so:system/vendor/lib/libhwc2on1adapter.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libexynosv4l2.so:system/vendor/lib64/libexynosv4l2.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libion_exynos.so:system/vendor/lib/libion_exynos.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libion_exynos.so:system/vendor/lib64/libion_exynos.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libmpp.so:system/vendor/lib/libmpp.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libmpp.so:system/vendor/lib64/libmpp.so
 
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
