@@ -140,7 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
     vendor/samsung/universal7880-common/proprietary/lib/libcsc.so:system/lib/libcsc.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libdisplay.so:system/lib/libdisplay.so \
+    vendor/samsung/universal7880-common/proprietary/lib/libexynosdisplay.so:system/lib/libexynosdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosgscaler.so:system/lib/libexynosgscaler.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosutils.so:system/lib/libexynosutils.so \
@@ -163,7 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libcsc.so:system/lib64/libcsc.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libdisplay.so:system/lib64/libdisplay.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/libexynosdisplay.so:system/lib64/libexynosdisplay.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosgscaler.so:system/lib64/libexynosgscaler.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosscaler.so:system/lib64/libexynosscaler.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosutils.so:system/lib64/libexynosutils.so \
