@@ -23,10 +23,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/samsung/serrano-common/proprietary/vendor/bin/thermald:system/vendor/bin/thermald \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
-    vendor/samsung/serrano-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/samsung/serrano-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/samsung/serrano-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/samsung/serrano-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
+    vendor/samsung/serrano-common/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
+    vendor/samsung/serrano-common/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
+    vendor/samsung/serrano-common/proprietary/vendor/firmware/vidc_1080p.fw:system/vendor/firmware/vidc_1080p.fw \
+    vendor/samsung/serrano-common/proprietary/vendor/firmware/vidcfw.elf:system/vendor/firmware/vidcfw.elf \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
