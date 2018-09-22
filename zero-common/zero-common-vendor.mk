@@ -128,7 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib/hw/camera.vendor.exynos5.so:system/lib/hw/camera.vendor.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/hw/sensorhubs.universal7420.so:system/lib/hw/sensorhubs.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
@@ -167,7 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/lib64/hw/consumerir.exynos5.so:system/lib64/hw/consumerir.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/sensorhubs.universal7420.so:system/lib64/hw/sensorhubs.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
@@ -377,14 +375,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin \
     vendor/samsung/zero-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/hw/vulkan.exynos5.so:system/vendor/lib/hw/vulkan.exynos5.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib/hw/nfc_nci.default.so:system/vendor/lib/hw/nfc_nci.default.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.nfc@1.0-impl.so:system/vendor/lib/hw/vendor.samsung.hardware.nfc@1.0-impl.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/libOpenCv.so:system/vendor/lib/libOpenCv.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib/vendor.samsung.hardware.nfc@1.0.so:system/vendor/lib/vendor.samsung.hardware.nfc@1.0.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/hw/vulkan.exynos5.so:system/vendor/lib64/hw/vulkan.exynos5.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:system/vendor/lib64/hw/nfc_nci.default.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.nfc@1.0-impl.so:system/vendor/lib64/hw/vendor.samsung.hardware.nfc@1.0-impl.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/libOpenCv.so:system/vendor/lib64/libOpenCv.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@1.0.so:system/vendor/lib64/vendor.samsung.hardware.nfc@1.0.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
