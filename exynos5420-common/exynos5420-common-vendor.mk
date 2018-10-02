@@ -18,6 +18,8 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/exynos5420-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/exynos5420-common/proprietary/bin/cs:system/bin/cs \
+    vendor/samsung/exynos5420-common/proprietary/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
+    vendor/samsung/exynos5420-common/proprietary/framework/com.samsung.device.jar:system/framework/com.samsung.device.jar \
     vendor/samsung/exynos5420-common/proprietary/lib/libGLES_trace.so:system/lib/libGLES_trace.so \
     vendor/samsung/exynos5420-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/exynos5420-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
