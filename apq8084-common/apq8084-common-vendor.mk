@@ -400,3 +400,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService
+
+PRODUCT_PACKAGES += \
+    nfc_nci.apq8084
