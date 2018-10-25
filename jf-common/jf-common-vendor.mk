@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/jf-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
-    vendor/samsung/jf-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/jf-common/proprietary/lib/hw/sensorhubs.msm8960.so:system/lib/hw/sensorhubs.msm8960.so \
     vendor/samsung/jf-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
@@ -91,13 +90,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/samsung/jf-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/samsung/jf-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/jf-common/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/samsung/jf-common/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
     vendor/samsung/jf-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/jf-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/samsung/jf-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/samsung/jf-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/samsung/jf-common/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/samsung/jf-common/proprietary/lib/libmercury.so:system/lib/libmercury.so \
     vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/jf-common/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
@@ -115,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
     vendor/samsung/jf-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     vendor/samsung/jf-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/samsung/jf-common/proprietary/lib/libperipheral_client.so:system/lib/libperipheral_client.so \
     vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
     vendor/samsung/jf-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
@@ -129,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/samsung/jf-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
@@ -137,6 +137,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jf-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/samsung/jf-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/samsung/jf-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
