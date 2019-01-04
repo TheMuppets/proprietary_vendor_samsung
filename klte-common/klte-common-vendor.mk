@@ -62,11 +62,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/bcmdhd_sta.bin:system/vendor/etc/wifi/bcmdhd_sta.bin \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_mfg.txt:system/vendor/etc/wifi/nvram_mfg.txt \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_mfg.txt_a0:system/vendor/etc/wifi/nvram_mfg.txt_a0 \
-    vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_mfg.txt_muratafem1:system/vendor/etc/wifi/nvram_mfg.txt_muratafem1 \
+    vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_mfg.txt_murata:system/vendor/etc/wifi/nvram_mfg.txt_murata \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_mfg.txt_semco3rd:system/vendor/etc/wifi/nvram_mfg.txt_semco3rd \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_net.txt:system/vendor/etc/wifi/nvram_net.txt \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_net.txt_a0:system/vendor/etc/wifi/nvram_net.txt_a0 \
-    vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_net.txt_muratafem1:system/vendor/etc/wifi/nvram_net.txt_muratafem1 \
+    vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_net.txt_murata:system/vendor/etc/wifi/nvram_net.txt_murata \
     vendor/samsung/klte-common/proprietary/vendor/etc/wifi/nvram_net.txt_semco3rd:system/vendor/etc/wifi/nvram_net.txt_semco3rd \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libTsAe.so:system/vendor/lib/C16QL_libTsAe.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libTsAf.so:system/vendor/lib/C16QL_libTsAf.so \
