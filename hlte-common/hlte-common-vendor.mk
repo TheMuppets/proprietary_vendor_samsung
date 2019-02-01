@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -221,11 +221,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB5_firmware.ncd:system/vendor/firmware/bcm2079xB5_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm2079xB5_pre_firmware.ncd:system/vendor/firmware/bcm2079xB5_pre_firmware.ncd \
     vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559.hcd:system/vendor/firmware/bcm4335_V0111.0559.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559_murata.hcd:system/vendor/firmware/bcm4335_V0111.0559_murata.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559_semco.hcd:system/vendor/firmware/bcm4335_V0111.0559_semco.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559_semcosh.hcd:system/vendor/firmware/bcm4335_V0111.0559_semcosh.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559_semcove.hcd:system/vendor/firmware/bcm4335_V0111.0559_semcove.hcd \
-    vendor/samsung/hlte-common/proprietary/vendor/firmware/bcm4335_V0111.0559_wisol.hcd:system/vendor/firmware/bcm4335_V0111.0559_wisol.hcd \
     vendor/samsung/hlte-common/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt.so:system/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so:system/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so \
     vendor/samsung/hlte-common/proprietary/vendor/lib/C13QS_libchromatix_imx135_vt.so:system/vendor/lib/C13QS_libchromatix_imx135_vt.so \
