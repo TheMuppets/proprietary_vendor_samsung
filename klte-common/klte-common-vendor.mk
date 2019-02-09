@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -165,11 +165,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libvdis.so:system/vendor/lib/libvdis.so \
     vendor/samsung/klte-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797.hcd:system/vendor/firmware/bcm4350_V0395.0797.hcd \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797_murata.hcd:system/vendor/firmware/bcm4350_V0395.0797_murata.hcd \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797_semco.hcd:system/vendor/firmware/bcm4350_V0395.0797_semco.hcd \
+    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797_semco3rd.hcd:system/vendor/firmware/bcm4350_V0395.0797_semco3rd.hcd \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797_semcosh.hcd:system/vendor/firmware/bcm4350_V0395.0797_semcosh.hcd \
-    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797_semcove.hcd:system/vendor/firmware/bcm4350_V0395.0797_semcove.hcd \
-    vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797.hcd:system/vendor/firmware/bcm4350_V0395.0797.hcd \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0798_wisol.hcd:system/vendor/firmware/bcm4350_V0395.0798_wisol.hcd \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libchromatix_s5k2p2xx_common.so:system/vendor/lib/C16QL_libchromatix_s5k2p2xx_common.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res0.so:system/vendor/lib/C16QL_libchromatix_s5k2p2xx_common_res0.so \
