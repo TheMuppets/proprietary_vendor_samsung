@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -201,10 +201,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libmysound.so:system/vendor/lib/libmysound.so \
-    vendor/samsung/apq8084-common/proprietary/vendor/lib/libprotobuf-cpp-full.so:system/vendor/lib/libprotobuf-cpp-full.so \
+    vendor/samsung/apq8084-common/proprietary/vendor/lib/libprotobuf-cpp-sec.so:system/vendor/lib/libprotobuf-cpp-sec.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/samsung/apq8084-common/proprietary/vendor/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libsensorhub.so:system/vendor/lib/libsensorhub.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libsensorhubservice.so:system/vendor/lib/libsensorhubservice.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libssaudio-client.so:system/vendor/lib/libssaudio-client.so \
@@ -388,6 +387,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
+    vendor/samsung/apq8084-common/proprietary/vendor/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/samsung/apq8084-common/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
