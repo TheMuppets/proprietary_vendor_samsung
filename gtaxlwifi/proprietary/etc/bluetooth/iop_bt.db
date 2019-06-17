@@ -1,0 +1,870 @@
+#=====================================================================
+#
+#   :: Bluetooth IOP Database
+#
+#   :: Database layout
+#
+#       QUERY_ID [SPACE SEPARATED KEYVALUE PAIRS]
+#
+#       QUERY_ID1 KEY1=VAL1 KEY2=VAL2
+#       QUERY_ID2 KEY1=VAL1 KEY2=VAL2 KEY3=VAL3
+#          ...
+#       QUERY_ID3 KEY1=VAL1 KEY2=VAL2 KEY3=VAL3
+#
+#       -- Each query on a single line.
+#       -- In order for a query to generate a match, each query needs
+#          to match all non-NULL keyvalues listed for each exception.
+#       -- Letters are case insensitive
+#
+#       DEFINED KEYS :
+#
+#       KEY_NAME        Format : Nullterminated string
+#       KEY_BDADDR      Format : "xx:xx:xx:xx:xx:xx", wildcards (*) allowed (hex)
+#       KEY_COD         Format : "xx:xx:xx"     "11:22:33" (hex)
+#       KEY_LMP_MFCT    Format : "<decimal>"    "120" (decimal)
+#       KEY_LMP_VER     Format : "ver:subver"   "5:6523" (decimal)
+#       KEY_DID_VND_ID  Format : "<decimal>"    "120" (decimal)
+#       KEY_DID_PROD_ID Format : "<decimal>"    "120" (decimal)
+#       KEY_DID_VER_ID  Format : "<decimal>"    "120" (decimal)
+#       KEY_HIDKB_PRID  Format : "xxxx"         "B30B" (16 bit hex)
+#       KEY_HIDKB_VNDID Format : "xxxx"         "046D" (16 bit hex)
+#       KEY_DIR_ALL     Format : "<decimal>"    "1"  (decimal)
+#
+#======================================================================
+
+#----------------------------------------------------------------------
+#   :: Enforce master role
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+#         KEY_LMP_VER    : LMP version & subversion
+#         KEY_LMP_MFCT   : Manufacturer
+#         KEY_DIR_ALL    : 0 to apply only for incoming connections
+#                          1 to allow for all directions (default if key not present)
+#
+
+/* Denso Infineon */
+EnforceMasterRole KEY_BDADDR="00:02:c7:*" KEY_LMP_MFCT="9" KEY_LMP_VER="1:1111" KEY_DIR_ALL="0"
+
+/* Sony-Ericsson DS980 (Mfr:13 TI, LMP=3, SUBV=0x1126) */
+#EnforceMasterRole KEY_BDADDR="00:1c:a4:*" KEY_LMP_VER="3:4390" KEY_LMP_MFCT="13" KEY_DIR_ALL="0"
+
+/* Sony-Ericsson DS220 (Mfr:13 TI, LMP=3, SUBV=0x1126) */
+#EnforceMasterRole KEY_BDADDR="00:18:13:*" KEY_LMP_VER="3:4390" KEY_LMP_MFCT="13" KEY_DIR_ALL="0"
+
+/* Jabra BT 3030 series */
+#EnforceMasterRole KEY_BDADDR="00:1d:82:*" KEY_LMP_MFCT="10" KEY_DIR_ALL="0"
+
+/* iMT525 */
+EnforceMasterRole KEY_BDADDR="00:07:62:*" KEY_DIR_ALL="0"
+
+/* Microsoft Elite Keyboard */
+EnforceMasterRole KEY_BDADDR="00:50:f2:*" KEY_DIR_ALL="0"
+
+/* MB China carkit */
+#EnforceMasterRole KEY_BDADDR="00:0e:9f:*" KEY_DIR_ALL="0"
+
+/* CSR based headsets */
+
+/* Moto H790 */
+#EnforceMasterRole KEY_BDADDR="00:24:1c:*" KEY_LMP_VER="4:5725" KEY_LMP_MFCT="10" KEY_DIR_ALL="0"
+
+/* Plantronics Pulsar 590 */
+#EnforceMasterRole KEY_BDADDR="00:19:7f:*" KEY_LMP_MFCT="10" KEY_DIR_ALL="0"
+
+# Jabra BT620
+#EnforceMasterRole KEY_BDADDR="00:13:17:*" KEY_LMP_MFCT="10" KEY_LMP_VER="2:2361" KEY_DIR_ALL="0"
+
+# Motorola S9-HD
+#EnforceMasterRole KEY_BDADDR="00:0d:fd:*" KEY_LMP_MFCT="10" KEY_LMP_VER="4:5363"
+#EnforceMasterRole KEY_BDADDR="00:0d:fd:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:3728"
+
+# Samsung SBH650 Stereo HS
+#EnforceMasterRole KEY_BDADDR="a0:07:98:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:4277" KEY_DIR_ALL="0"
+
+# Motorola S7-HD Stereo HS
+#EnforceMasterRole KEY_BDADDR="00:1a:0e:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:4532" KEY_DIR_ALL="0"
+
+# LG HBS250 requires slave role for successful a2dp connection
+EnforceMasterRole KEY_BDADDR="00:07:88:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:3413" KEY_DIR_ALL="0"
+
+# Sennheiser PX 210BT Stereo HS
+#EnforceMasterRole KEY_BDADDR="00:1b:66:*" KEY_LMP_MFCT="10" KEY_LMP_VER="4:5363" KEY_DIR_ALL="0"
+
+# Motorola HT820 Stereo HS
+#EnforceMasterRole KEY_BDADDR="00:07:a4:*" KEY_LMP_MFCT="10" KEY_LMP_VER="2:2660" KEY_DIR_ALL="0"
+
+# Jabra Halo Stereo HS
+#EnforceMasterRole KEY_BDADDR="00:23:78:*" KEY_LMP_MFCT="10" KEY_LMP_VER="4:6301" KEY_DIR_ALL="0"
+
+# Jabra Clipper
+#EnforceMasterRole KEY_BDADDR="9c:b7:0d:*" KEY_LMP_MFCT="10" KEY_LMP_VER="4:5370" KEY_DIR_ALL="0"
+
+/* RAPOO E6300 */
+EnforceMasterRole KEY_BDADDR="6c:5d:63:*" KEY_DIR_ALL="0"
+
+/* WEP470 */
+EnforceMasterRole KEY_BDADDR="00:0d:e6:*"
+
+/* SAMSUNG SBH700 */
+EnforceMasterRole KEY_BDADDR="00:1e:e1:*" KEY_LMP_MFCT="10" KEY_LMP_VER="2:3328"
+
+/* Motorola S805 */
+EnforceMasterRole KEY_BDADDR="00:0c:55:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:2625"
+EnforceMasterRole KEY_BDADDR="00:1a:0e:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:2625"
+
+/* Motorola HT820 */
+EnforceMasterRole KEY_BDADDR="00:07:a4:*" KEY_LMP_MFCT="10" KEY_LMP_VER="2:2660"
+
+/* SRS-X10 */
+EnforceMasterRole KEY_BDADDR="b8:69:c2:*"
+
+/* Samsung HS3000 */
+EnforceMasterRole KEY_BDADDR="bc:47:60:*" KEY_LMP_MFCT="10" KEY_LMP_VER="5:7213"
+
+/* Lexux IS */
+EnforceMasterRole KEY_BDADDR="64:d4:bd:*" KEY_DIR_ALL="0" KEY_LMP_VER="6:9079"
+
+/* Lexux GS */
+EnforceMasterRole KEY_BDADDR="ac:7a:4d:*" KEY_DIR_ALL="0"
+
+#---------------------------------------------------------------------
+# :: Delayed role switch exception
+#
+#    AVAILABLE KEYS :
+#
+#       KEY_BDADDR
+#       KEY_LMP_VER
+#       KEY_LMP_MFCT
+
+/* BRCM, we check only the top 3 bits (15-13) of LMP subversion*/
+MasterRoleDelayed KEY_LMP_MFCT="15" KEY_LMP_VER="4:8192"
+
+#---------------------------------------------------------------------
+# :: Skip authentication enable
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Audi/BMW Combo Carkits */
+SkipAuthEnable KEY_BDADDR="00:0e:9f:*"
+
+#---------------------------------------------------------------------
+# :: Prevent pairing with some HID devices
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Apple Keyboard */
+HidPairBlacklist KEY_BDADDR="00:22:41:*"
+HidPairBlacklist KEY_BDADDR="44:2a:60:*"
+/* Samsung SMB-9100B BT Mouse*/
+HidPairBlacklist KEY_BDADDR="00:12:a1:*"
+/* Microsoft bluetooth notebook mouse 5000*/
+HidPairBlacklist KEY_BDADDR="00:1d:d8:*"
+HidPairBlacklist KEY_BDADDR="7c:ed:8d:*"
+/* Microsoft bluetooth notebook mouse 8000*/
+HidPairBlacklist KEY_BDADDR="00:17:fa:*"
+
+#---------------------------------------------------------------------
+# :: Prevent sending update fast conn params
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Madcatz devices */
+HOGPBlacklist KEY_BDADDR="00:15:9E:*"
+/*  iBuffalo BSMBB09DS */
+HOGPBlacklist KEY_BDADDR="00:1B:DC:*"
+
+#---------------------------------------------------------------------
+# :: Prevent sending update fast conn params
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+#      KEY_NAME
+BleCIBlackList KEY_BDADDR="D0:5F:B8:*" KEY_NAME="A&D*"
+
+#---------------------------------------------------------------------
+# :: Prevent sending gattc service changed indication
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_NAME
+
+NoServiceChgInd KEY_NAME="GearVRController*"
+
+#---------------------------------------------------------------------
+# :: Prevent using default io key distribution for SMP for HOGP
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Microsoft Arc Mouse */
+HOGPIOKeyBlacklist  KEY_BDADDR="F1:9C:A7:*"
+HOGPIOKeyBlacklist  KEY_BDADDR="FC:70:32:*"
+
+#---------------------------------------------------------------------
+# :: Prevent SDP with some HID devices during incoming connections
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_LMP_MFCT
+
+/* APPLE  MOUSE and KEYBOARD*/
+HidSdpBlacklist  KEY_LMP_MFCT="76"
+/* MICROSOFT MOUSE */
+HidSdpBlacklist  KEY_LMP_MFCT="9"
+/* SONY VAIO MOUSE */
+HidSdpBlacklist  KEY_LMP_MFCT="15"
+
+#---------------------------------------------------------------------
+# List of HID keyboards for which the NUMLOCK state needs to be
+# turned ON by default. Add devices to this list to apply the
+# NUMLOCK state toggle on fpr first connect
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_HIDKB_PRID   HID keyboard product id (16 bit hex)
+#      KEY_HIDKB_VNDID  HID keyboard vendor id (16 bit hex)
+
+/* LOGITECH_KB_MX5500 */
+HidKeybNumLock KEY_HIDKB_PRID="B30B" KEY_HIDKB_VNDID="046D"
+
+#---------------------------------------------------------------------
+# :: Send AVRC Key release event for carkits that do not send
+#    Release key event for RC key press
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_NAME
+#      KEY_LMP_VER
+#      KEY_LMP_MFCT
+
+/* Ford Sync Carkit (Device Name: SYNC Mfr:10 (CSR), LMP=3, SUBV=0x0C5C) */
+AvrcKeyReleaseQuirk KEY_NAME="SYNC" KEY_LMP_MFCT="10" KEY_LMP_VER="3:3164"
+
+
+#---------------------------------------------------------------------
+# :: enforce open AVDTP sig CH if the HF doesn't open it
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* SF600 */
+EnforceAvSigOpen KEY_BDADDR="00:24:1c:*"
+
+#---------------------------------------------------------------------
+# :: disable Power Control Request feature in local support feature
+# :: with certain bluetoot car kits.
+#
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+#      KEY_LMP_VER    : LMP version & subversion
+
+/* Jeep Uconnect */
+DisablePwlCtrReq KEY_BDADDR="00:0e:9f:*" KEY_LMP_MFCT="10" KEY_LMP_VER="3:1958"
+
+
+#---------------------------------------------------------------------
+# :: AVRC absolute volume fails for certain devices
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Ausdom M05 - unacceptably loud volume */
+/* LG Tone HV-800 - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="a0:e9:db:*"
+/* iKross IKBT83B HS - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:14:02:*"
+/* Jabra EXTREME 2 - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="1c:48:f9:*"
+/* JayBird BlueBuds X - low granularity on volume control */
+AvrcAbsVolBlacklist KEY_BDADDR="44:5e:f3:*"
+AvrcAbsVolBlacklist KEY_BDADDR="d4:9c:28:*"
+/* JayBird BlueBuds Freedom - low granularity on volume control */
+AvrcAbsVolBlacklist KEY_BDADDR="d4:4c:28:*"
+/* LG Tone HBS-730 - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:18:6b:*"
+AvrcAbsVolBlacklist KEY_BDADDR="b8:ad:3e:*"
+/* Mpow Cheetah - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:11:b1:*"
+/* SOL REPUBLIC Tracks Air - unable to adjust volume back off from max */
+AvrcAbsVolBlacklist KEY_BDADDR="a4:15:66:*"
+/* Swage Rokitboost HS - unacceptably loud volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:14:f1:*"
+/* VW Car Kit - not enough granularity with volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:26:7e:*"
+AvrcAbsVolBlacklist KEY_BDADDR="90:03:b7:*"
+/* SONATA - unable to synchronize volume */
+AvrcAbsVolBlacklist KEY_BDADDR="a8:b9:b3:*"
+/* Mi Bluetooth Speaker - unable to synchronize volume */
+AvrcAbsVolBlacklist KEY_BDADDR="e8:07:bf:*"
+AvrcAbsVolBlacklist KEY_BDADDR="b8:07:bf:*"
+/* Baskinrobbins - unable to synchronize volume */
+AvrcAbsVolBlacklist KEY_BDADDR="11:11:22:*"
+/* FOCUSPOWER-F10 - not enough granularity with volume */
+AvrcAbsVolBlacklist KEY_BDADDR="00:17:77:*"
+/* A33 - malfunction if register volume event */
+AvrcAbsVolBlacklist KEY_BDADDR="00:22:37:*"
+/* FENDA Swan - malfunction if register volume event */
+AvrcAbsVolBlacklist KEY_BDADDR="f0:13:c3:*"
+/* BTH-053 - malfunction if register volume event */
+AvrcAbsVolBlacklist KEY_BDADDR="00:1a:7d:*"
+
+#---------------------------------------------------------------------
+# :: AVRC absolute volume fails for certain devices
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+#      KEY_NAME
+/* LG Tone HBS 810K - unacceptably loud volume */
+AvcBlacklistWithBdName KEY_BDADDR="00:00:00:*" KEY_NAME="HBS_810K"
+/* DiiFA ER700 - loud volume after reconnection*/
+AvcBlacklistWithBdName KEY_BDADDR="00:00:00:*" KEY_NAME="ER700"
+/* PISnet FreeGo - loud volume after reconnection*/
+AvcBlacklistWithBdName KEY_BDADDR="00:00:00:*" KEY_NAME="PISnet_FreeGo"
+
+#---------------------------------------------------------------------
+# :: AVRC absolute volume fails for certain devices
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+#      KEY_LMP_MFCT
+#      KEY_LMP_VER
+/* JBL Charge - unable to control volume */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="00:1d:df:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* WB50 - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="00:02:5b:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* [Samsung] W_Audio - unable to control volume */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="f4:7b:5e:*" KEY_LMP_MFCT="10" KEY_LMP_VER="5:7856"
+/* BT-M1 LIGHT - malfunction during avc */
+/* Rowkin Mini M-B - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="00:23:01:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* Scosche boomBOTTLE H2O - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="00:00:02:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* [Samsung] W_Audio - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="78:ab:bb:*" KEY_LMP_MFCT="10" KEY_LMP_VER="5:7856"
+/* WB50 - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="c0:7a:a5:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* UCLEAR Commander - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="f4:04:4c:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* BT Elite - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="00:6a:8e:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* Anker SoundSync - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="a4:77:58:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* CLUSTER TALK2 - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="d0:bd:01:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+/* H13S - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="13:17:11:*" KEY_LMP_MFCT="10" KEY_LMP_VER="7:8648"
+/* 007 - malfunction during avc */
+AvcBlacklistWithBdMfctLmp KEY_BDADDR="13:e9:08:*" KEY_LMP_MFCT="10" KEY_LMP_VER="6:8648"
+
+#---------------------------------------------------------------------
+# :: Initiate Av connect even when sdp fails
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Denso carkit */
+AvConnectOnSdpFail KEY_BDADDR="00:1e:3d:*"
+/* Audi carkit */
+AvConnectOnSdpFail KEY_BDADDR="00:1b:fb:*"
+
+#---------------------------------------------------------------------
+# :: Apple HId devices
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_LMP_MFCT
+
+/* APPLE  MOUSE and KEYBOARD*/
+AppleHIDDevice  KEY_LMP_MFCT="76"
+#---------------------------------------------------------------------
+# :: Test exceptions
+#
+#    Matched towards testcases defined in iop_db_test.c
+#
+
+#EnforceMasterRole KEY_BDADDR="22:22:22:*"
+#EnforceMasterRole KEY_BDADDR="22:22:23:*" KEY_DIR_ALL="1"
+
+#SkipAuthEnable KEY_BDADDR="44:44:33:33:11:11"
+#SkipAuthEnable KEY_BDADDR="12:34:56:*"
+#EnforcePairing KEY_BDADDR="12:34:56:*"
+
+#ExitSniffOnSco KEY_BDADDR="12:34:56:*"
+
+#NoClearLinkPolicy KEY_BDADDR="00:22:65:*"
+
+/* sony dr-bt50 headset */
+#EnforceMasterRole KEY_BDADDR="00:24:be:*" KEY_LMP_VER="3:3413" KEY_LMP_MFCT="10"
+
+
+#---------------------------------------------------------------------
+# :: to process PLAY/PAUSE command after a voice call has ended recently.
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* VW PHONE */
+ProcessAvrcKey KEY_BDADDR="90:03:b7:*"
+/* Audi MIB Standard  */
+ProcessAvrcKey KEY_BDADDR="34:c7:31:*"
+/* Audi MIB High */
+ProcessAvrcKey KEY_BDADDR="00:17:ca:*"
+/* Acura ZDX 2013 */
+ProcessAvrcKey KEY_BDADDR="00:0a:30:*"
+/* BMW 57523 COMBOX */
+ProcessAvrcKey KEY_BDADDR="00:0e:9f:*"
+/* SYNC */
+ProcessAvrcKey KEY_BDADDR="00:21:cc:*"
+/* Ford SYNC Touch */
+ProcessAvrcKey KEY_BDADDR="00:26:b4:*"
+/* Chevy Silverado */
+ProcessAvrcKey KEY_BDADDR="38:c0:96:*"
+/* Volkswagen UHV Premium */
+ProcessAvrcKey KEY_BDADDR="00:23:3d:*"
+/* CADILLAC CUE */
+ProcessAvrcKey KEY_BDADDR="04:98:f3:*"
+/* FIAT VP4 (Chrysler) */
+ProcessAvrcKey KEY_BDADDR="30:14:4a:*"
+/* Volkswagen Touareg */
+ProcessAvrcKey KEY_BDADDR="9c:df:03:*"
+/* Seat BT AC */
+ProcessAvrcKey KEY_BDADDR="e0:75:0a:*"
+/* My Car (Nissan) */
+ProcessAvrcKey KEY_BDADDR="00:09:93:*"
+/* MY10 Mitsu MDG(Hands Free System)*/
+ProcessAvrcKey KEY_BDADDR="51:30:26:*"
+/* VW MIB DELPHI(VW BT ----) */
+ProcessAvrcKey KEY_BDADDR="fc:62:b9:*"
+/* Audi02 */
+ProcessAvrcKey KEY_BDADDR="ac:7a:4d:*"
+/*  FIAT VP2 (Uconnect) */
+ProcessAvrcKey KEY_BDADDR="9c:28:bf:*"
+/* Hands Free System */
+ProcessAvrcKey KEY_BDADDR="0c:d9:c1:*"
+/*  Audi MMI 4339 */
+ProcessAvrcKey KEY_BDADDR="48:a9:d2:*"
+/*  Porsche01 */
+ProcessAvrcKey KEY_BDADDR="60:f1:89:*"
+/*  Chevrolet MyLink */
+ProcessAvrcKey KEY_BDADDR="9c:8d:7c:*"
+/*  Volkswagen MIB2 STD */
+ProcessAvrcKey KEY_BDADDR="30:c3:d9:*"
+/*  Porsche BT 2110 */
+ProcessAvrcKey KEY_BDADDR="b8:d7:af:*"
+/*  Chrysler BT VP2 C */
+ProcessAvrcKey KEY_BDADDR="00:54:af:*"
+
+#---------------------------------------------------------------------
+# :: to process PLAY/PAUSE command by checking DID.
+#
+#    AVAILABLE KEYS :
+#
+#         KEY_DID_VND_ID     : Remote vendor id
+#         KEY_START_PROD_ID  : Range of Remote product id (start)
+#         KEY_END_PROD_ID    : Range of Remote product id (end)
+
+/* VW MIB2+ (VID 287, PID 12442) */
+ProcessAvrcKeyByDID KEY_DID_VND_ID="287" KEY_START_PROD_ID="12442" KEY_END_PROD_ID="12442"
+
+#---------------------------------------------------------------------
+# :: Wait before sending call end indication +CIEV:1,0.
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Ford SYNC Touch */
+WaitBeforeCiev KEY_BDADDR="00:26:b4:*"
+/* BMW 57523 COMBOX & PCM SW 2.4*/
+WaitBeforeCiev KEY_BDADDR="00:0e:9f:*"
+/* Volkswagen UHV Premium */
+WaitBeforeCiev KEY_BDADDR="00:23:3d:*"
+/* Volkswagen GTi BT 4196 */
+WaitBeforeCiev KEY_BDADDR="e0:75:0a:*"
+/* Toyota Prius*/
+WaitBeforeCiev KEY_BDADDR="9c:df:03:*"
+/* Volvo 2013 S80 My Volvo Car */
+WaitBeforeCiev KEY_BDADDR="34:c7:31:*"
+/*  FIAT VP2 (Uconnect) */
+WaitBeforeCiev KEY_BDADDR="9c:28:bf:*"
+/*  Chevrolet MyLink */
+ProcessAvrcKey KEY_BDADDR="9c:8d:7c:*"
+
+#---------------------------------------------------------------------
+# :: Delay AV START for l2cap connection pending
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_NAME
+
+/* Samsung HS3000 */
+DelayAVStartL2capPending KEY_NAME="HS3000"
+
+#----------------------------------------------------------------------
+#   :: Send AVRC Key release event for remote device that do not send
+#    Release key event for RC key press
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* 2011 SONATA */
+ReleaseQuirk KEY_BDADDR="00:0b:24:*"
+
+#----------------------------------------------------------------------
+#   :: Ignore the passthrough command
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* 2011 SONATA */
+IgnoreRCKey KEY_BDADDR="00:0b:24:*"
+
+#---------------------------------------------------------------------
+# :: Change dynamically AVRCP version from 1.5 to 1.4
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Hyundai Genesis, Santa Fe Sport, SONATA *
+AvChangeAvrcpVersion KEY_BDADDR="18:6d:99:*"
+/* KIA Soul */
+AvChangeAvrcpVersion KEY_BDADDR="68:84:70:*"
+/* Genesis, KIA MOTORS, Sportage */
+AvChangeAvrcpVersion KEY_BDADDR="94:44:44:*"
+/* Hyundai */
+AvChangeAvrcpVersion KEY_BDADDR="00:0b:24:*"
+/* Hyundai */
+AvChangeAvrcpVersion KEY_BDADDR="00:24:0b:*"
+/* Hyundai */
+AvChangeAvrcpVersion KEY_BDADDR="08:76:95:*"
+/* Hyundai */
+AvChangeAvrcpVersion KEY_BDADDR="00:05:c9:*"
+/* Ford SYNC */
+AvChangeAvrcpVersion KEY_BDADDR="00:26:b4:*"
+/* Ford SYNC (another one in ETO) */
+AvChangeAvrcpVersion KEY_BDADDR="00:21:cc:*"
+/* Hyundai Santa Fe Sport */
+AvChangeAvrcpVersion KEY_BDADDR="00:1e:b2:*"
+/* Volkswagen UHV HIGH */
+AvChangeAvrcpVersion KEY_BDADDR="90:03:b7:*"
+/* Chrysler VP2C */
+AvChangeAvrcpVersion KEY_BDADDR="00:54:af:*"
+/* BMW I3 */
+AvChangeAvrcpVersion KEY_BDADDR="30:14:4a:*"
+/* Chrysler VP2(in Italy QA) */
+AvChangeAvrcpVersion KEY_BDADDR="9c:28:bf:*"
+/* Toyata Prius */
+AvChangeAvrcpVersion KEY_BDADDR="5c:f8:a1:*"
+/* AUDI MIB STD */
+AvChangeAvrcpVersion KEY_BDADDR="34:c7:31:*"
+/* Chrysler VP4(in Italy QA) */
+AvChangeAvrcpVersion KEY_BDADDR="00:0b:6b:*"
+/* Volkswagen GTi */
+AvChangeAvrcpVersion KEY_BDADDR="e0:75:0a:*"
+/* 2015 Acura RDX, MDX car kit */
+AvChangeAvrcpVersion KEY_BDADDR="0c:d9:c1:*"
+/* Volkswagen MIB STD */
+AvChangeAvrcpVersion KEY_BDADDR="00:07:04:*"
+/* 2015 Honda Civic */
+AvChangeAvrcpVersion KEY_BDADDR="64:d4:bd:*"
+/* Volkswagen Touareg */
+AvChangeAvrcpVersion KEY_BDADDR="9c:df:03:*"
+/* KIA Forte and Optima */
+AvChangeAvrcpVersion KEY_BDADDR="10:08:c1:*"
+/* Mazda CX5 */
+AvChangeAvrcpVersion KEY_BDADDR="00:0a:30:*"
+/* SCION TC */
+AvChangeAvrcpVersion KEY_BDADDR="1c:99:4c:*"
+/* Parrot MKi9200 */
+AvChangeAvrcpVersion KEY_BDADDR="00:26:7e:*"
+/* Chrysler*/
+AvChangeAvrcpVersion KEY_BDADDR="00:15:83:*"
+/* Nissan 2013 Altima */
+AvChangeAvrcpVersion KEY_BDADDR="00:09:93:*"
+
+#----------------------------------------------------------------------
+#   :: Enforce slave role
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+#         KEY_LMP_VER    : LMP version & subversion
+#         KEY_LMP_MFCT   : Manufacturer
+#         KEY_DIR_ALL    : 0 to apply only for incoming connections
+#                          1 to allow for all directions (default if key not present)
+#
+
+/* Bose */
+EnforceSlaveRole KEY_BDADDR="00:0c:8a:*" KEY_DIR_ALL="0"
+/* BMW_ULF */
+EnforceSlaveRole KEY_BDADDR="00:09:93:*" KEY_DIR_ALL="0"
+/* Tenqa */
+EnforceSlaveRole KEY_BDADDR="00:23:01:*" KEY_DIR_ALL="0"
+/* Savox */
+EnforceSlaveRole KEY_BDADDR="00:15:be:*" KEY_DIR_ALL="0"
+
+#----------------------------------------------------------------------
+#   :: Disable slave role
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* BlueMe */
+DisableSniff KEY_BDADDR="a9:b1:c8:*"
+/* BlueMe */
+DisableSniff KEY_BDADDR="00:14:09:*"
+/* PCM */
+DisableSniff KEY_BDADDR="00:0e:9f:*"
+/* NISSAN */
+#DisableSniff KEY_BDADDR="38:c0:96:*"
+
+#----------------------------------------------------------------------
+#   :: Extend sniff time
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* MBBluetooth NTG3.0 */
+ExtendSniffTime KEY_BDADDR="00:13:1e:*"
+/* KIA Carkit */
+#ExtendSniffTime KEY_BDADDR="00:1e:b2:*"
+/* AUDI */
+#ExtendSniffTime KEY_BDADDR="00:1e:43:*"
+
+#----------------------------------------------------------------------
+#   :: Skip disable sniff policy
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* Samsung BKB A1 */
+SkipDisableSniff KEY_BDADDR="00:19:01:*"
+/* IBall-BT333 */
+SkipDisableSniff KEY_BDADDR="00:16:90:*"
+/* Samsung BKB A2 */
+SkipDisableSniff KEY_BDADDR="20:73:0d:*"
+/* Samsung BKB 10 */
+SkipDisableSniff KEY_BDADDR="90:7f:61:*"
+
+#----------------------------------------------------------------------
+#   :: Skip Send Sdp Info request
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* PRC ECO2 */
+SkipSdpInfo KEY_BDADDR="00:07:80:*"
+
+
+#---------------------------------------------------------------------
+# :: to add media_feeding_state.pcm.counter
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Toyota on Docomo */
+/* CAR MULTIMEDIA_11MOP */
+CheckAvCorrection KEY_BDADDR="00:06:f7:*"
+
+#---------------------------------------------------------------------
+# :: to process AV open
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Toyota on Docomo */
+
+/* CAR MULTIMEDIA_14DOP */
+CheckAvCollMask KEY_BDADDR="7c:66:9d:*"
+/* CAR MULTIMEDIA_11MOP */
+CheckAvCollMask KEY_BDADDR="00:06:f7:*"
+/* CAR MULTIMEDIA_13MOP */
+CheckAvCollMask KEY_BDADDR="34:b1:f7:*"
+
+#---------------------------------------------------------------------
+# :: to avoid AV scalable bitrate
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_NAME
+
+/* Jaybird BlueBuds X */
+AvoidAvScalable KEY_NAME="BlueBuds_X"
+/* Jaybird X2 */
+AvoidAvScalable KEY_NAME="Jaybird_X2"
+/* Plantronics BACKBEAT FIT */
+AvoidAvScalable KEY_NAME="PLT_BBFIT"
+/* Amazon Echo-XXX */
+AvoidAvScalable KEY_NAME="Echo-*"
+
+#---------------------------------------------------------------------
+# :: Feature enable / disable
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_NAME
+/* Feature checker */
+FeatureChecker KEY_NAME="dummy"
+
+#---------------------------------------------------------------------
+# :: SS_BT_HFP START
+#---------------------------------------------------------------------
+
+#---------------------------------------------------------------------
+# :: Sniff exceptions
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* iMT525 */
+ExitSniffOnSco KEY_BDADDR="00:07:62:*"
+
+/* HM1700 */
+ExitSniffOnSco KEY_BDADDR="18:3f:47:*"
+
+/* Moto H790 */
+ExitSniffOnSco KEY_BDADDR="00:24:1c:*" KEY_LMP_VER="4:5725" KEY_LMP_MFCT="10"
+
+#---------------------------------------------------------------------
+# :: Reject SCO connection request if inactive call
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+/* Motorola S305 */
+RejectEScoConnReq KEY_BDADDR="00:0d:fd:*"
+/* PLT_K100 */
+RejectEScoConnReq KEY_BDADDR="00:23:7f:*"
+
+#----------------------------------------------------------------------
+#   :: Don't care ESCO Retransmission
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* Plantronics E240 */
+EscoRetransDontcare KEY_BDADDR="00:23:7f:*"
+
+#----------------------------------------------------------------------
+#   :: Exception to avoid sending +CIEV: 2,3 on call alerting
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* 2014 Chrysler Town & Country (New Jersey) */
+AvoidAlertingCarkit KEY_BDADDR="e0:75:0a:*"
+/* Chrysler LLC: PLC 0 (Dallas) */
+AvoidAlertingCarkit KEY_BDADDR="04:76:6e:*"
+/* Toyota Sienna (Dallas) */
+AvoidAlertingCarkit KEY_BDADDR="64:d4:bd:*"
+
+#----------------------------------------------------------------------
+#   :: Exception to timeout while SLC 
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* JB LAB Carkit */
+ExceptSLCTimeout KEY_BDADDR="00:0D:18:*"
+
+#----------------------------------------------------------------------
+#   :: Exception to avoid In-band Ringtone
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_BDADDR     : Remote bd address
+
+/* None */
+AvoidInBandRingtone KEY_BDADDR="FF:FF:FF:*"
+
+#---------------------------------------------------------------------
+# :: Wait before sending call end indication +CIEV:1,0.
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+#      KEY_NAME
+
+/* RD45 car kit */
+NoDelayCIEVRINGinCarkit KEY_BDADDR="00:54:af:*" KEY_NAME="BT_RADIO"
+
+#----------------------------------------------------------------------
+#   :: Exception to allow sniff mode while sco connection
+#
+#      AVAILABLE KEYS :
+#
+#         KEY_DID_VND_ID     : Remote vendor id
+#         KEY_START_PROD_ID  : Range of Remote product id (start)
+#         KEY_END_PROD_ID    : Range of Remote product id (end)
+
+/* Gear (VID 117, PID 42241~42250) */
+AllowedScoSniffMode KEY_DID_VND_ID="117" KEY_START_PROD_ID="42241" KEY_END_PROD_ID="42250"
+/* Level U (VID 117, PID 40976~40991) */
+AllowedScoSniffMode KEY_DID_VND_ID="117" KEY_START_PROD_ID="40976" KEY_END_PROD_ID="40991"
+
+#---------------------------------------------------------------------
+# :: Disable AAC codec
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Volkswagen tiguan Smartpop RNS-KR3 SP3 */
+DisableAacCodec KEY_BDADDR="00:14:0a:*"
+
+#---------------------------------------------------------------------
+# :: Disable AAC codec with name
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* Spigen R12S */
+DisableAacCodecWithName KEY_NAME="Spigen_R12S"
+/* Maruti Suzuki */
+DisableAacCodecWithName KEY_NAME="Maruti_Suzuki"
+
+#---------------------------------------------------------------------
+# :: Block HV1 SCO connection
+#
+#    AVAILABLE KEYS :
+#
+#      KEY_BDADDR
+
+/* BMW 525i 2007 */
+BlockHV1Sco KEY_LMP_MFCT="10" KEY_LMP_VER="2:1721"
+
+#---------------------------------------------------------------------
+# :: SS_BT_HFP END
+#---------------------------------------------------------------------

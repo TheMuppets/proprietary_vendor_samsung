@@ -1,0 +1,5 @@
+service sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    class main
+    user root
+    group system radio cache inet misc audio log readproc wakelock
+    capabilities BLOCK_SUSPEND NET_ADMIN SYS_NICE
