@@ -1,0 +1,79 @@
+# NVRAM file for New A3 Rev0.1 murata filter matching value - 20151029
+# 2.4 GHz, 20 MHz BW mode
+
+# The following parameter values are just placeholders, need to be updated.
+manfid=0x2d0
+prodid=0x0727
+vendid=0x14e4
+devid=0x43e2
+boardtype=0x0727
+boardrev=0x1101
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+sromrev=11
+boardflags=0x00404201
+boardflags3=0x08000000
+xtalfreq=37400
+nocrc=1
+ag0=0
+aa2g=1
+ccode=ALL
+regrev=0
+
+pa0itssit=0x20
+extpagain2g=0
+
+#PA parameters for 2.4GHz, measured at antenna port
+pa2ga0=0xFF6E,0x1A56,0xFCFE
+pa2ga0_2pwr=0xFF2B,0xF8E,0xFDEF
+pmin=0
+pmax=40
+
+AvVmid_c0=0x0,0xc8
+cckpwroffset0=0
+
+# PPR params
+maxp2ga0=72
+txpwrbckof=6
+cckbw202gpo=0
+legofdmbw202gpo=0x66666666
+mcsbw202gpo=0x44444444
+propbw202gpo=0xdd
+# OFDM IIR :
+ofdmdigfilttype=17
+ofdmdigfilttypebe=18
+# PAPD mode:
+papdmode=1
+papdvalidtest=1
+pacalidx2g=42
+papdepsoffset=-22
+papdendidx=58
+il0macaddr=00:90:4c:c5:12:38
+wl0id=0x431b
+
+deadman_to=0xffffffff
+# muxenab: 0x1 for UART enable, 0x2 for GPIOs, 0x8 for JTAG
+muxenab=0x10
+# CLDO PWM voltage settings - 0x4 - 1.1 volt
+#cldo_pwm=0x4
+
+#VCO freq 326.4MHz
+spurconfig=0x3
+
+#edonthd20l = -65
+#edoffthd20ul = -71
+btc_params95=8
+
+edonthd20l=-65
+edoffthd20ul=-71
+
+txpwroffset2g=0,0,0,0,0,0,0,0,0,0,0,0,0
+rssicornorm=-2
+#CH12 CH13 Power Limit
+fccpwrch12=30
+fccpwrch13=30
+fccpwroverride=0
+
+#Two-range TSSI on 2g_0x90:4dBm 0xa0:8dBm 0xa8:10dBm 0xb8:14 dBm
+dynamicsarctrl_2g=0xb4
+
