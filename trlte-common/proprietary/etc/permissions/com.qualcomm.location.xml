@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---******************************************************************************
+* @file    com.qualcomm.location.xml
+* @brief   configuration file for permission mapping
+*  Copyright (c) 2012 Qualcomm Atheros, Inc.
+*  All Rights Reserved.
+*  Qualcomm Atheros Confidential and Proprietary.
+*  *****************************************************************************-->
+
+<permissions>
+
+<permission name="com.qualcomm.permission.IZAT" >
+    <group gid="gps" />
+    <group gid="net_raw" />
+    <group gid="net_admin" />
+    <group gid="system" />
+    <group gid="diag" />
+    <group gid="qcom_diag" />
+    <group gid="sdcard_rw" />
+    <group gid="media_rw" />
+    <group gid="wifi" />
+</permission>
+
+</permissions>
