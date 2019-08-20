@@ -1,0 +1,153 @@
+# 2013-08-23 YMP01A_R08MVT
+# Driver version: 6.37.32.13
+# 2G_Skyworks, 5G_Anadigics
+# CID : 9001
+
+NVRAMRev=$Rev: 367475 $
+sromrev=11
+boardrev=0x1600
+boardtype=0x0697
+boardflags=0x10401001
+boardflags2=0x0
+boardflags3=0x810c08c
+#boardnum=57410
+macaddr=00:90:4c:c5:12:38
+ccode=GB
+regrev=6
+antswitch=0
+pdgain5g=1
+pdgain2g=4
+tworangetssi2g=0
+tworangetssi5g=0
+femctrl=4
+pcieingress_war=15
+vendid=0x14e4
+devid=0x43ae
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+otpimagesize=502
+xtalfreq=37400
+extpagain2g=1
+pdetrange2g=2
+extpagain5g=1
+pdetrange5g=2
+rxgains2gelnagaina0=3
+rxgains2gtrisoa0=7
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=3
+rxgains5gtrisoa0=6
+rxgains5gtrelnabypa0=1
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+
+tssipos5g=1
+tssipos2g=1
+
+pdoffset40ma0=0
+pdoffset80ma0=0
+pdoffsetcckma0=0
+
+pdoffset40ma0=0x0000
+pdoffset80ma0=0x0000
+
+#2G - 19dBm(11M)/18dBm(6M)/16dBm(54)/15dBm(M7)
+maxp2ga0=74
+
+##2013.08.22 IQxel_#1 based Cal (a1,b0,b1)
+# 2G : 5 - 22dBm / pa2ga0 OFDM / pa2gccka0 CCK
+pa2ga0=0xff3a,0x160e,0xfd32
+pa2gccka0=0xff38,0x1668,0xfd25
+
+cckbw202gpo=0
+cckbw20ul2gpo=0
+dot11agofdmhrbw202gpo=0x6666
+ofdmlrbw202gpo=0x0022
+mcsbw202gpo=0x88888884
+
+#Target Pwr
+#5G 20M - 16dBm(M0,6M)/14dBm(54)/13dBm(M7)/13dBm(C8)
+#5G 40M - 15dBm(M0)/12dBm(M7)/12dBm(C8/C9)
+#5G 80M - 14dBm(M0)/11dBm(C8/C9)
+maxp5ga0=74,74,74,74
+
+##2013.08.15 IQxel_#1 based Cal (a1,b0,b1)
+##Low(36-48)/Mid(52-64)/High(100-140)/X1(149-165)
+# 5G : 5 - 20dBm / pa5ga0 20M / pa5gbw40a0 40M
+# 5G : 5 - 18dBm / pa5gbw80a0 80M
+pa5ga0=0xff83,0x1656,0xfd69,0xff85,0x1660,0xfd69,0xff9a,0x16ad,0xfd6a,0xffb9,0x16e7,0xfd75
+pa5gbw40a0=0xff98,0x18a0,0xfd29,0xffa3,0x18fc,0xfd27,0xffab,0x18f2,0xfd23,0xffdd,0x1a25,0xfd1c
+pa5gbw80a0=0xff6a,0x162b,0xfd5b,0xff67,0x15e4,0xfd61,0xff77,0x160e,0xfd5f,0xff8c,0x165b,0xfd5e
+
+#Low(36-64)
+mcslr5glpo=0
+mcsbw205glpo=0x88866662
+mcsbw405glpo=0xAAA88884
+mcsbw805glpo=0xCCCAAAA6
+
+#Mid(100-140)
+mcslr5gmpo=0
+mcsbw205gmpo=0x88866662
+mcsbw405gmpo=0xAAA88884
+mcsbw805gmpo=0xCCCAAAA6
+
+#High(149-165)
+mcslr5ghpo=0
+mcsbw205ghpo=0x88866662
+mcsbw405ghpo=0xAAA88884
+mcsbw805ghpo=0xCCCAAAA6
+
+#20MHz High Rate
+sb20in40hrrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+
+#40MHz High Rate
+sb40and80hr5glpo=0x0
+sb40and80hr5gmpo=0x0
+sb40and80hr5ghpo=0x0
+
+#20MHz Low Rate
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+
+#40MHz Low Rate
+sb40and80lr5glpo=0x0
+sb40and80lr5gmpo=0x0
+sb40and80lr5ghpo=0x0
+
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+
+cckdigfilttype=2
+phycal_tempdelta=25
+
+##2G Channel pwr compensation (CH12/3/2/1, CH5/4/14/13, CH9/8/7/6, NA/NA/11/10)
+rpcal2g=0x000F
+rpcal5gb0=0x008F
+rpcal5gb1=0x0000
+rpcal5gb2=0x0000
+
+##2G RSSI compensation 20/40
+
+rssicorrnorm_c0=-2,-1
+
+##5G RSSI compenation Low(36-48):20/40/80, Mid(54-64):20/40/80, High(100-140):20/40/80, X1(149-165):20/40/80
+rssicorrnorm5g_c0=-3,-2,-1,-3,-2,-1,-3,-2,-1,-4,-2,-2
+
+#PA blow up protect
+#tssifloor2g=245
+#tssifloor5g=220,213,218,228
+txidxcap2g=0x10
+#txidxcap5g=0x10
+
+#For PA trimming
+paparambwver=1
+
+#HW OOB Enable
+muxenab=0x10
