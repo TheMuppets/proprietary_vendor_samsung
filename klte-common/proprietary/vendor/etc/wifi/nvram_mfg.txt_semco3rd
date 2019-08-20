@@ -1,5 +1,5 @@
 #BCM4354WLCSP_A1 with iPA/eLNA for SEMCO SWB-B80 M3 module -- 02/04/2014
-#FW ver. :7.26.2
+#FW ver. :7.10.82.46
 
 NVRAMRev=$Rev: 373428 $
 sromrev=11
@@ -162,5 +162,3 @@ muxenab=0x10
 #ltecxmux=0x534201
 epsdelta2g0=0
 epsdelta2g1=0
-#ofdmfilttype=1
-
