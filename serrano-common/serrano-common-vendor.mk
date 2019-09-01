@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
+    vendor/samsung/serrano-common/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libchromatix_imx175_antishake.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx175_antishake.so \
     vendor/samsung/serrano-common/proprietary/vendor/lib/libchromatix_imx175_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx175_default_video.so \
