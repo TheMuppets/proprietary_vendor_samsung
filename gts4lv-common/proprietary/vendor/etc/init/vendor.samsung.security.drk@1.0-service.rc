@@ -1,0 +1,16 @@
+on boot
+    mkdir /mnt/vendor/efs/prov 0770 system system
+    mkdir /mnt/vendor/efs/prov_data 0770 system system
+    mkdir /mnt/vendor/efs/prov_data/dev_root 0770 system system
+    chown system:system /mnt/vendor/efs/prov
+    chown system:system /mnt/vendor/efs/prov_data
+    chown system:system /mnt/vendor/efs/prov_data/dev_root
+    chown system:system /mnt/vendor/efs/prov_data/dev_root/dev_root.dat
+
+service drk_hal /vendor/bin/vendor.samsung.security.drk@1.0-service
+    interface vendor.samsung.security.drk@1.0::IDrkService default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

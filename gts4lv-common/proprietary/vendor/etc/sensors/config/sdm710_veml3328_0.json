@@ -1,0 +1,128 @@
+{
+  "config":{
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf"],
+    "soc_id": ["336", "347", "360"],
+  },
+  "veml3328_0_platform":{
+    "owner": "sns_veml3328",
+    ".config":{
+      "owner": "sns_veml3328",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "16"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".ambient_light":{
+      "owner": "sns_veml3328",
+      ".fac_cal":
+      {
+        "owner": "sns_veml3328",
+        "scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_veml3328",
+      ".fac_cal":
+      {
+        "owner": "sns_veml3328",
+        "r_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "r_channel_bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        },
+        "g_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "g_channel_bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        },
+        "b_channel_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "b_channel_bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        },
+        "color_temp_scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "color_temp_bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        }		
+      }
+    },
+    ".placement":{
+      "owner": "sns_veml3328",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}

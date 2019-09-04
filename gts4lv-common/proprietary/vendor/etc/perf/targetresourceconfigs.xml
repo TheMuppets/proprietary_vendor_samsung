@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is a target specific resource config file which can be
+used to overwrite the node paths mentioned in common resources file
+and also to modify the Supported field information. -->
+
+<!-- This file supports only Config tag, which has the following fields
+* MajorValue and MinorValue, both are required to uniquely
+identify the resource.
+* Node, the new node path to overwrite the already existing path
+of commonresourceconfigs.xml file.
+* Supported, to indicate whether the resource is supported or not.
+* For each config tag, either of Node or Supported fields need
+to be mentioned.
+NOTE - It is not Mandatory to write all the resources which are not supported,
+as anyway perflock calls of these resources would fail. -->
+
+<ResourceConfigs>
+    <PerfResources>
+
+        <Config MajorValue="0x1" MinorValue="0x1" Supported="no" /> <!--  toggle_l2_pc_perf -->
+
+        <Config MajorValue="0x3" MinorValue="0x3" Supported="no" /> <!-- sched_small_task -->
+        <Config MajorValue="0x3" MinorValue="0x6" Supported="no" /> <!-- sched_init_task_load -->
+        <Config MajorValue="0x3" MinorValue="0xB" Supported="no" /> <!-- sched_spill_nr_run -->
+        <Config MajorValue="0x3" MinorValue="0xC" Supported="no" /> <!-- sched_static_cpu_pwr_cost -->
+        <Config MajorValue="0x3" MinorValue="0xD" Supported="no" /> <!-- sched_restrict_cluster_spill -->
+        <Config MajorValue="0x3" MinorValue="0x13" Supported="no" /> <!-- sched_set_freq_aggr -->
+        <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
+        <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
+
+        <Config MajorValue="0x6" MinorValue="0x4" Supported="no" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
+        <Config MajorValue="0x6" MinorValue="0x5" Supported="no" /> <!-- cpubw_hmon_low_power_io_percent -->
+
+        <!-- All the minors of LLCBW_HWMON major are not supported. -->
+        <Config MajorValue="0xC" MinorValue="0x0" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x1" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x2" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x3" Supported="no" />
+
+        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/soc:qcom,memlat-cpu6/mem_latency/ratio_ceil"/> <!-- l2_memlat_ratio_ceil_1 -->
+        <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/soc:qcom,memlat-cpu6/mem_latency/stall_floor"/> <!-- memlat_stall_floor -->
+        <Config MajorValue="0xD" MinorValue="0x6" Node="/sys/class/devfreq/soc:qcom,memlat-cpu6/min_freq"/> <!-- memlat_min_freq -->
+
+    </PerfResources>
+</ResourceConfigs>

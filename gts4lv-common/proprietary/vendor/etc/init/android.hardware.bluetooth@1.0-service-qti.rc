@@ -1,0 +1,5 @@
+service vendor.bluetooth-1-0-qti /vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+    class hal
+    user bluetooth
+    group bluetooth system wakelock oem_2901
+    capabilities BLOCK_SUSPEND NET_ADMIN

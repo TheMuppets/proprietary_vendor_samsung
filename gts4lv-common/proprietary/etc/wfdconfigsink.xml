@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+    <!--
+        Copyright (C) 2012 - 2018 Qualcomm Technologies, Inc.
+        All Rights Reserved.
+        Confidential and Proprietary - Qualcomm Technologies, Inc.
+    -->
+   <!-- This config file is to be used when local device is sink -->
+
+<WFDConfig>
+    <Capability>
+        <!--
+            Audio capabilities
+        -->
+        <AudioLPCM>
+            <Name>LPCM</Name>
+            <Valid>1</Valid>
+            <Channels>2</Channels>
+            <SamplingFreq>48000</SamplingFreq>
+            <Latency>33</Latency>
+        </AudioLPCM>
+
+        <AudioAAC>
+            <Name>AAC</Name>
+            <Valid>1</Valid>
+            <Channels>6</Channels>
+            <SamplingFreq>48000</SamplingFreq>
+            <Latency>0</Latency>
+        </AudioAAC>
+
+        <AudioAC3>
+            <Name>AC3</Name>
+            <Valid>0</Valid>
+            <Channels>0</Channels>
+            <SamplingFreq>0</SamplingFreq>
+            <Latency>0</Latency>
+        </AudioAC3>
+
+        <!--
+            Video capabilities additions for H264 codec
+        -->
+        <VideoFormats>
+
+            <VideoCodecHeader>
+                <TotalProfiles>7</TotalProfiles>
+                <PreferredDisplaySupport>0</PreferredDisplaySupport>
+            </VideoCodecHeader>
+             <!-- AVC Profile 0 - Constrained Baseline,
+                              1 - Constrained High,
+                              2 - Constrained High2,
+                              3 - BaseLine
+                              4 - Main
+                              5 - High
+                  HEVC Profile 0 - Main
+            -->
+
+            <!-- Level  0 - 3.1,
+                        1 - 3.2,
+                        2 - 4.0,
+                        3 - 4.1,
+                        4 - 4.2,
+                        5 - 5,
+                        6 - 5.1,
+                        7 - 5.2
+            -->
+            <VideoCodec1>
+                <CodecName>H.264</CodecName>
+                <Profile>0</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec1>
+
+            <VideoCodec2>
+                <CodecName>H.264</CodecName>
+                <Profile>1</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec2>
+
+            <VideoCodec3>
+                <CodecName>H.264</CodecName>
+                <Profile>2</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec3>
+
+            <VideoCodec4>
+                <CodecName>H.264</CodecName>
+                <Profile>3</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec4>
+
+            <VideoCodec5>
+                <CodecName>H.264</CodecName>
+                <Profile>4</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec5>
+
+            <VideoCodec6>
+                <CodecName>H.264</CodecName>
+                <Profile>5</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec6>
+
+            <VideoCodec7>
+                <CodecName>H.265</CodecName>
+                <Profile>0</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>30</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec7>
+        </VideoFormats>
+
+        <!--
+            Aux streaming is new addition
+            This is added for Direct streaming
+        -->
+        <AuxStreamInfo>
+            <Codec>
+                <Count>1</Count>
+                <Name1>PNG</Name1>
+            </Codec>
+        <!--
+            Limiting the number of layers to 5 in the overlay
+            Resolution is 1080P for Direct streaming
+        -->
+            <MaxOverlay>5</MaxOverlay>
+            <HRes>1280</HRes>
+            <VRes>720</VRes>
+            <Mode>CEA</Mode>
+        </AuxStreamInfo>
+
+        <!--
+            Standby Resume capability is supported
+        -->
+        <StandbyResumeCapability>
+            <Valid>1</Valid>
+        </StandbyResumeCapability>
+
+        <!--
+            Explicit AV format change
+            Not supported
+        -->
+        <AVFormatChange>
+            <Valid>0</Valid>
+            <AVInterval>0</AVInterval>
+        </AVFormatChange>
+
+        <!--
+            Frame skipping interval is in the scale of 500 msec or half second.
+            FrameInterval can be between 1 to 7,  according to the WFD spec.
+            0 means Frame skipping interval is infinite and recommended value is 0
+        -->
+        <FrameSkipping>
+            <Valid>1</Valid>
+            <FrameInterval>0</FrameInterval>
+        </FrameSkipping>
+
+        <!--  disable HDCP by default -->
+        <ContentProtection>
+            <Valid>0</Valid>
+            <!--
+                Valid values WFD_HDCP_2_0,
+                WFD_HDCP_2_1 and WFD_HDCP_2_2
+            -->
+            <Version>WFD_HDCP_2_2</Version>
+            <CPPort>6789</CPPort>
+        </ContentProtection>
+
+        <!--
+            To enable RTP dump at sink
+        -->
+        <RTPDumpEnable>
+            <!-- DEPRECATED -->
+            <!-- For enabling RTP parser dumping set
+                 persist.vendor.debug.rtp.enable_dump to 1
+                 /data/media/rtpdump.ts
+                 -->
+        </RTPDumpEnable>
+
+        <!--
+            UIBC by default enabled
+        -->
+        <UIBC>
+            <UIBCValid>1</UIBCValid>            <!-- 0/1 UIBC supported or not -->
+            <InputCategory>
+                <Generic>1</Generic>            <!-- 0/1 - support generic or not -->
+                <HID>1</HID>                    <!-- 0/1 - support HID or not -->
+            </InputCategory>
+
+            <!--  Supported input events  -->
+            <InputEvents>
+                <GenericInputEvents>
+                <!-- 0/1 for all Input Event Types -->
+                    <Mouse>0</Mouse>
+                    <Keyboard>1</Keyboard>
+                    <SingleTouch>1</SingleTouch>
+                    <MultiTouch>1</MultiTouch>
+                    <JoyStick>0</JoyStick>
+                    <Camera>0</Camera>
+                    <Gesture>0</Gesture>
+                    <RemoteControl>0</RemoteControl>
+                </GenericInputEvents>
+                <!--
+                Each input path will have a byte and support
+                for the input types is indicated by setting a bit:
+                KEYBOARD              BIT0
+                MOUSE                 BIT1
+                SINGLETOUCH           BIT2
+                MULTITOUCH            BIT3
+                JOYSTICK              BIT4
+                CAMERA                BIT5
+                GESTURE               BIT6
+                REMOTECONTROL         BIT7
+                -->
+                <HIDInputPaths>
+                    <Infrared>0</Infrared>
+                    <USB>1</USB>
+                    <BT>0</BT>
+                    <Zigbee>0</Zigbee>
+                    <Wifi>0</Wifi>
+                    <NoSP>0</NoSP>
+                </HIDInputPaths>
+            </InputEvents>
+            <!--  TCP port on which UIBC connection established -->
+            <TcpPort>4321</TcpPort>
+        </UIBC>
+    </Capability>
+
+    <!--
+         Enabling Rtcp
+    -->
+    <RTCP>
+        <RtcpRREnabled>1</RtcpRREnabled>
+        <RtcpRRIntervalMs>500</RtcpRRIntervalMs>
+    </RTCP>
+
+    <!--
+        Send keep alive messages for every 50sec
+    -->
+    <SendKeepAlive>1</SendKeepAlive>
+
+    <!--
+        RTSP port on which RTSP server is running
+    -->
+    <RTSPPort>5550</RTSPPort>
+
+    <!--
+        To configure video core in SVS mode
+    -->
+    <PerformanceLevelSVSMode>1</PerformanceLevelSVSMode>
+
+    <!--
+        To configure video core in Nominal mode
+    -->
+    <PerformanceLevelNominalMode>0</PerformanceLevelNominalMode>
+
+    <!--
+        To configure video core in Turbo mode
+    -->
+    <PerformanceLevelTurboMode>0</PerformanceLevelTurboMode>
+
+    <!--
+        Bitrate settings for each mode
+    -->
+    <BitrateTable>
+        <!--
+            Bitrate table for Audio formats
+        -->
+        <AAC>
+            <BIT0>
+                <MaxBitrate>256000</MaxBitrate>
+                <MinBitrate>256000</MinBitrate>
+            </BIT0>
+            <BIT1>
+                <MaxBitrate>384000</MaxBitrate>
+                <MinBitrate>384000</MinBitrate>
+            </BIT1>
+            <BIT2>
+                <MaxBitrate>512000</MaxBitrate>
+                <MinBitrate>512000</MinBitrate>
+            </BIT2>
+        </AAC>
+
+        <!--
+            CEA Min and Max bit rates for each resolution
+            Will configure the video core with MaxBitrate
+            Based on the available link speed video bitrate
+            can go upto MinBitrate
+        -->
+        <CEA>
+          <!-- 640x480p60  -->
+            <BIT0>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT0>
+          <!-- 720x480p60 -->
+            <BIT1>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT1>
+          <!-- 720x480i60 -->
+            <BIT2>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT2>
+          <!-- 720x576p50  -->
+            <BIT3>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT3>
+          <!-- 720x576i50  -->
+            <BIT4>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT4>
+          <!-- 1280x720p30  -->
+            <BIT5>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT5>
+          <!-- 1280x720p60  -->
+            <BIT6>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT6>
+          <!-- 1920x1080p30  -->
+            <BIT7>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT7>
+          <!-- 1920x1080p60  -->
+            <BIT8>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT8>
+          <!-- 1920x1080i60  -->
+            <BIT9>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT9>
+          <!-- 1280x720p25  -->
+            <BIT10>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT10>
+          <!-- 1280x720p50  -->
+            <BIT11>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT11>
+          <!-- 1920x1080p25  -->
+            <BIT12>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT12>
+          <!-- 1920x1080p50  -->
+            <BIT13>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT13>
+          <!-- 1920x1080i50  -->
+            <BIT14>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT14>
+          <!-- 1280x720p24  -->
+            <BIT15>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT15>
+          <!-- 1920x1080p24  -->
+            <BIT16>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT16>
+          <!--  3840x2160p24  -->
+            <BIT17>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT17>
+          <!--  3840x2160 p25  -->
+            <BIT18>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT18>
+          <!--  3840x2160p30 -->
+            <BIT19>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT19>
+          <!--  3840x2160p50  -->
+            <BIT20>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT20>
+          <!--  3840x2160p60 -->
+            <BIT21>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT21>
+          <!--  4096x2160p24  -->
+            <BIT22>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT22>
+          <!--  4096x2160p25  -->
+            <BIT23>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT23>
+          <!--  4096x2160p30  -->
+            <BIT24>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT24>
+          <!--  4096x2160p50  -->
+            <BIT25>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT25>
+          <!--  4096x2160 p60 -->
+            <BIT26>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT26>
+        </CEA>
+
+        <!--
+            VESA Min and Max bit rates for each resolution
+            Will configure the video core with MaxBitrate
+            Based on the available link speed video bitrate
+            can go upto MinBitrate
+        -->
+        <VESA>
+            <!--  800x600p30 -->
+            <BIT0>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT0>
+            <!--  800x600p60 -->
+            <BIT1>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT1>
+            <!--  1024x768p30 -->
+            <BIT2>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT2>
+            <!--  1024x768p60 -->
+            <BIT3>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT3>
+            <!--  1152x864p30 -->
+            <BIT4>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT4>
+            <!--  1152x864p60 -->
+            <BIT5>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT5>
+            <!--  1280x768p30 -->
+            <BIT6>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT6>
+            <!--  1280x768p60 -->
+            <BIT7>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT7>
+            <!--  1280x800p30 -->
+            <BIT8>
+                <MinBitrate>3500000</MinBitrate>
+                <MaxBitrate>14000000</MaxBitrate>
+            </BIT8>
+            <!--  1280x800p60 -->
+            <BIT9>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT9>
+            <!--  1360x768p30 -->
+            <BIT10>
+                <MinBitrate>3500000</MinBitrate>
+                <MaxBitrate>14000000</MaxBitrate>
+            </BIT10>
+            <!--  1360x768p60 -->
+            <BIT11>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT11>
+            <!--  1366x768p30 -->
+            <BIT12>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
+            </BIT12>
+            <!--  1366x768p60 -->
+            <BIT13>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT13>
+            <!--  1280x1024p30 -->
+            <BIT14>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT14>
+            <!--  1280x1024p60 -->
+            <BIT15>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT15>
+            <!--  1400x1050p30 -->
+            <BIT16>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT16>
+            <!--  1400x1050p60 -->
+            <BIT17>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT17>
+            <!--  1440x900p30 -->
+            <BIT18>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT18>
+            <!--  1440x900p60 -->
+            <BIT19>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT19>
+            <!--  1600x900p30 -->
+            <BIT20>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT20>
+            <!--  1600x900p60 -->
+            <BIT21>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT21>
+            <!--  1600x1200p30 -->
+            <BIT22>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT22>
+            <!--  1600x1200p60 -->
+            <BIT23>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT23>
+            <!--  1680x1024p30 -->
+            <BIT24>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT24>
+            <!--  1680x1024p60 -->
+            <BIT25>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT25>
+            <!--  1680x1050p30 -->
+            <BIT26>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT26>
+            <!--  1680x1050p60 -->
+            <BIT27>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT27>
+            <!--  1920x1200p30 -->
+            <BIT28>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
+            </BIT28>
+            <!--  1920x1200p60 -->
+            <BIT29>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>40000000</MaxBitrate>
+            </BIT29>
+            <!--  2560x1440p30  -->
+            <BIT30>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT30>
+            <!--  2560x1440p60  -->
+            <BIT31>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT31>
+            <!--  2560x1600p30  -->
+            <BIT32>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT32>
+            <!--  2560x1600p60  -->
+            <BIT33>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>30000000</MaxBitrate>
+            </BIT33>
+        </VESA>
+
+        <!--
+            HH Min and Max bit rates for each resolution
+            Will configure the video core with MaxBitrate
+            Based on the available link speed video bitrate
+            can go upto MinBitrate
+        -->
+        <HH>
+            <!--  800x480p30  -->
+            <BIT0>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT0>
+            <!--  800x480p60  -->
+            <BIT1>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT1>
+            <!--  854x480p30  -->
+            <BIT2>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT2>
+            <!--  854x480p60  -->
+            <BIT3>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT3>
+            <!--  864x480p30  -->
+            <BIT4>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT4>
+            <!--  864x480p60  -->
+            <BIT5>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT5>
+            <!--  640x360p30  -->
+            <BIT6>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT6>
+            <!--  640x360p60  -->
+            <BIT7>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT7>
+            <!--  960x540p30  -->
+            <BIT8>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT8>
+            <!--  960x540p60  -->
+            <BIT9>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT9>
+            <!--  848x480p30  -->
+            <BIT10>
+                <MinBitrate>500000</MinBitrate>
+                <MaxBitrate>2000000</MaxBitrate>
+            </BIT10>
+            <!--  848x480p60  -->
+            <BIT11>
+                <MinBitrate>1000000</MinBitrate>
+                <MaxBitrate>4000000</MaxBitrate>
+            </BIT11>
+        </HH>
+    </BitrateTable>
+
+    <!--
+        RetryCount is Max no of times Client request to set-up Socket connect
+        This can be applicable only to sink
+    -->
+    <RetryCount>40</RetryCount>
+
+    <!--
+        To disable/enable audio stream playback
+        support during power suspend - 0 or 1
+    -->
+    <AudioStreamInSuspend>0</AudioStreamInSuspend>
+
+    <!--
+        Compensation delay for audio
+        This is maintain good AV sync in the mux TS A + V stream Recommended
+        value is 150 msec arrived at this number after fine tuning OEMs can
+        change this value in case they want
+    -->
+    <AudioAVSyncDelay>-150</AudioAVSyncDelay>
+
+    <!--
+        To disable/enable AV Sync - 1 or 0
+        By default AV sync is enabled
+        This is only for certification
+        The reason for introducing this flag is
+        there are some issues with some test bed sources
+        if we enable AV sync though our sink is properly
+        handling AV sync
+    -->
+    <DisableAVSync>0</DisableAVSync>
+
+    <!--
+        To drop video frame in case parser detects and reports packet loss over the air
+        Three modes are supported -
+        1. 0 - Don't drop any video frame
+        2. 1 - Drop only the video frame where parser reported packet loss
+        3. 2 - Parser reported packet loss, request an IDR and drop until IDR
+    -->
+    <DropFrameOnPacketLossMode>0</DropFrameOnPacketLossMode>
+
+    <!--
+        To disable/enable Audio Track Latency - 0 or 1.
+        This adds audio track latency to renderer to improve AV sync during BT use case.
+    -->
+    <EnableAudioTrackLatency>0</EnableAudioTrackLatency>
+
+    <!--
+        To Configure maximum capability for frame rate
+        of Max resolution supported.
+        It will be changed in code also based on target.
+    -->
+    <MaxFpsSupported>60</MaxFpsSupported>
+
+    <!--
+        Make audio AV Sync drop window configurable item.Sometimes if wlan
+        doesn't perform at required throughput,audio drops can happen due
+        to late arrival of audio frames.
+    -->
+    <AudioAVSyncDropWindow>-150000</AudioAVSyncDropWindow>
+
+    <!--
+        Make Video AV Sync drop window configurable item.Sometimes if wlan
+        doesn't perform at required throughput,Video drops can happen due
+        to late arrival of video frames.
+    -->
+    <VideoAVSyncDropWindow>-200000</VideoAVSyncDropWindow>
+
+    <!-- Direct Streaming Feature support -->
+    <StreamingSupport>1</StreamingSupport>
+
+    <Cursor>0</Cursor>
+
+</WFDConfig>

@@ -1,0 +1,5 @@
+service vendor.wvkprov_server_hal /vendor/bin/vendor.samsung.security.wvkprov_server@1.0-service
+    class core
+    user system
+    group system
+
