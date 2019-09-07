@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libchromatix_s5k6b2yx_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_video.so \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt.so \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt_hd.so \
+    vendor/samsung/jactivelte/proprietary/vendor/lib/libcsd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsd-client.so \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libgemini.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgemini.so \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libimage-jpeg-dec-omx-comp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/samsung/jactivelte/proprietary/vendor/lib/libimage-jpeg-enc-omx-comp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimage-jpeg-enc-omx-comp.so \
