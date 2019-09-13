@@ -18,6 +18,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/gta4xl-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/gta4xl-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/samsung/gta4xl-common/proprietary/system/etc/somxreg.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/somxreg.conf \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libcamerahardwareinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamerahardwareinterface.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomx263dsw.so \
