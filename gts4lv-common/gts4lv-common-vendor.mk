@@ -46,12 +46,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/samsung/gts4lv-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/gts4lv-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/samsung/gts4lv-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+    vendor/samsung/gts4lv-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
     vendor/samsung/gts4lv-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/samsung/gts4lv-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
