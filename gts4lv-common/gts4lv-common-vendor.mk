@@ -603,12 +603,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/vendor.samsung.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.gnss@1.0.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/vendor.samsung.security.drk@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.security.drk@1.0_vendor.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/vendor.samsung.security.proca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.security.proca@1.0.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_omx_utils.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_soft_g711dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_soft_g711dec.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_soft_rawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_soft_rawdec.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_soft_vorbisdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_soft_vorbisdec.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/vndk/libstagefright_xmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_xmlparser.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
