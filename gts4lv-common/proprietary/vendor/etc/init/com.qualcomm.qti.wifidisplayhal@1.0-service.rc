@@ -1,4 +1,9 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
 service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
   class main
   user system
-  group drmrpc inet input net_admin mediadrm audio system
+  group inet input audio media uhid

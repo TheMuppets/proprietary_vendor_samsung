@@ -1,9 +1,11 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
 service wfdservice /system/bin/wfdservice
     class main
     user system
-    group audio camera inet uhid drmrpc media_rw media input net_admin
-    #removed these because of limit of 12 groups
-    #graphics net_bt net_bt_admin bluetooth
     disabled
     oneshot
 

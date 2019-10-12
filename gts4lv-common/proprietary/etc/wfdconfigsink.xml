@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2018 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2019 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
     -->
@@ -779,13 +779,6 @@
     <EnableAudioTrackLatency>0</EnableAudioTrackLatency>
 
     <!--
-        To Configure maximum capability for frame rate
-        of Max resolution supported.
-        It will be changed in code also based on target.
-    -->
-    <MaxFpsSupported>60</MaxFpsSupported>
-
-    <!--
         Make audio AV Sync drop window configurable item.Sometimes if wlan
         doesn't perform at required throughput,audio drops can happen due
         to late arrival of audio frames.
@@ -803,5 +796,10 @@
     <StreamingSupport>1</StreamingSupport>
 
     <Cursor>0</Cursor>
+
+    <!--
+        Video Decoder Input Custom Limit Buffer Size Mode
+    -->
+    <VideoCustomSizeMode>1</VideoCustomSizeMode>
 
 </WFDConfig>
