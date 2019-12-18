@@ -64,6 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a5xelte/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     vendor/samsung/a5xelte/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
     vendor/samsung/a5xelte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
+    vendor/samsung/a5xelte/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    vendor/samsung/a5xelte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/a5xelte/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
     vendor/samsung/a5xelte/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/a5xelte/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \

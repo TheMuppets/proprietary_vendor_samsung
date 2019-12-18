@@ -59,6 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
     vendor/samsung/s5neolte/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/samsung/s5neolte/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
+    vendor/samsung/s5neolte/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    vendor/samsung/s5neolte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/s5neolte/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/bcm43455_V0147_0248.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43455_V0147_0248.hcd \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/fimc_is_fd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_fd.bin \

@@ -24,8 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/universal7580-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/samsung/universal7580-common/proprietary/lib/libprotobuf-cpp-fl26.so:system/lib/libprotobuf-cpp-fl26.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/universal7580-common/proprietary/lib/libsensorlistener.so:system/lib/libsensorlistener.so \
     vendor/samsung/universal7580-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/universal7580-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \

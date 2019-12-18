@@ -51,6 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3xelte/proprietary/lib/hw/nfc_nci.universal7580.so:system/lib/hw/nfc_nci.universal7580.so \
     vendor/samsung/a3xelte/proprietary/lib/hw/sensors.universal7580.so:system/lib/hw/sensors.universal7580.so \
     vendor/samsung/a3xelte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
+    vendor/samsung/a3xelte/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    vendor/samsung/a3xelte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/a3xelte/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
     vendor/samsung/a3xelte/proprietary/vendor/etc/yas_set.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/yas_set.cfg \
     vendor/samsung/a3xelte/proprietary/vendor/firmware/bcm43430A1_V0062.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43430A1_V0062.hcd \
