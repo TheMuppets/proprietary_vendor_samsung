@@ -1,4 +1,0 @@
-service qchdcpkprov_server-1-0 /vendor/bin/hw/vendor.samsung.hardware.qchdcpkprov_server@1.0-service
-    class hal
-    user system
-    group system

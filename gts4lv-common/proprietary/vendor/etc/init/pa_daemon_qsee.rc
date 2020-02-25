@@ -1,9 +1,0 @@
-# Process Authenticator startup
-service proca /vendor/bin/vendor.samsung.security.proca@1.0-service
-    class early_hal
-    user system
-    group system
-    disabled
-
-on property:vendor.sys.qseecomd.enable=true
-    start proca

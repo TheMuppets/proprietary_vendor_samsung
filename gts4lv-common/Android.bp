@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -110,17 +110,6 @@ android_app_import {
 	owner: "samsung",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
 	certificate: ":timeservice_app_cert",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "TrustZoneAccessService",
-	owner: "samsung",
-	apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
