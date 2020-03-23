@@ -75,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfvelte/proprietary/vendor/lib/libmmcamera_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_plugin.so \
     vendor/samsung/jfvelte/proprietary/vendor/lib/libmmcamera_statsproc31.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_statsproc31.so \
     vendor/samsung/jfvelte/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_wavelet_lib.so \
-    vendor/samsung/jfvelte/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/samsung/jfvelte/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/samsung/jfvelte/proprietary/vendor/lib/libmmstillomx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmstillomx.so \
     vendor/samsung/jfvelte/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
