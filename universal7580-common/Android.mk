@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,9 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter a3xelte a5xelte a7xelte gvwifi gvlte j7elte s5neolte,$(TARGET_DEVICE)),)
 
-
-ifeq ($(WITH_EXYNOS_BSP),)
-endif
 include $(CLEAR_VARS)
 LOCAL_MODULE := libGLES_mali
 LOCAL_MODULE_OWNER := samsung
