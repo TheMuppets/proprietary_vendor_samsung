@@ -36,38 +36,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
 
-ifeq ($(WITH_EXYNOS_BSP),)
-PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7580-common/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
-    vendor/samsung/universal7580-common/proprietary/lib/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gralloc.exynos5.so \
-    vendor/samsung/universal7580-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so \
-    vendor/samsung/universal7580-common/proprietary/lib/hw/memtrack.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/memtrack.exynos5.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Core.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libMcClient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libMcClient.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libMcRegistry.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libMcRegistry.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libcsc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcsc.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosdisplay.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libexynosgscaler.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosgscaler.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libexynosscaler.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosscaler.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libexynosutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosutils.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libexynosv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosv4l2.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libfimg.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfimg.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libhdmi.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhdmi.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libhwcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwcutils.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libmpp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmpp.so \
-    vendor/samsung/universal7580-common/proprietary/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefrighthw.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.MPEG2.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.MPEG2.Decoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/universal7580-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.VP9.Decoder.so
-endif
-
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
