@@ -18,7 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7580-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7580-common/proprietary/vendor/bin/cs:$(TARGET_COPY_OUT_VENDOR)/bin/cs \
     vendor/samsung/universal7580-common/proprietary/vendor/bin/gps.cer:$(TARGET_COPY_OUT_VENDOR)/bin/gps.cer \
     vendor/samsung/universal7580-common/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
     vendor/samsung/universal7580-common/proprietary/lib/hw/gps.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gps.universal7580.so \
