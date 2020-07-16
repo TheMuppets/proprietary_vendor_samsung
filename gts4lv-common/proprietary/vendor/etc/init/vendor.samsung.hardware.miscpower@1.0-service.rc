@@ -1,4 +1,0 @@
-service sec-miscpower-1-0 /vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
-    class main
-    user system
-    group system

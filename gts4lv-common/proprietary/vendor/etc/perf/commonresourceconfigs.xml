@@ -80,6 +80,12 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x18" Node="/dev/stune/top-app/schedtune.prefer_idle" />
         <Minor OpcodeValue="0x19" Node="/proc/sys/kernel/sched_initial_task_util" />
         <Minor OpcodeValue="0x1A" Node="/sys/devices/system/cpu/cpu0/sched_load_boost" />
+        <Minor OpcodeValue="0x1B" Node="/proc/sys/kernel/sched_little_cluster_coloc_fmin_khz" />
+        <Minor OpcodeValue="0x1C" Node="/dev/stune/top-app/schedtune.boost" />
+        <Minor OpcodeValue="0x1D" Node="/proc/sys/kernel/sched_busy_hysteresis_enable_cpus" />
+        <Minor OpcodeValue="0x1E" Node="/proc/sys/kernel/sched_min_task_util_for_colocation" />
+        <Minor OpcodeValue="0x1F" Node="/proc/sys/kernel/sched_min_task_util_for_boost" />
+        <Minor OpcodeValue="0x20" Node="/proc/%d/sched_boost" Supported="yes"/> <!-- sched_task_boost -->
     <!-- sched major end -->
 
     <!-- core hotplug major start -->
@@ -110,6 +116,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0xF" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq" />
         <Minor OpcodeValue="0x10" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load" />
         <Minor OpcodeValue="0x11" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl" />
+        <Minor OpcodeValue="0x12" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us" />
     <!-- interactive major end -->
 
     <!-- cpubw hwmon major start -->
@@ -125,6 +132,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x7" Node="/sys/class/devfreq/soc:qcom,cpubw/polling_interval" />
         <Minor OpcodeValue="0x8" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/sample_ms" />
         <Minor OpcodeValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/idle_mbps" />
+        <Minor OpcodeValue="0xA" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq" />
     <!-- cpubw hwmon major end -->
 
     <!-- video major start -->
@@ -182,6 +190,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x1" Node="/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/io_percent" />
         <Minor OpcodeValue="0x2" Node="SPECIAL_NODE - llcbw_hwmon_hyst_opt" />
         <Minor OpcodeValue="0x3" Node="/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/sample_ms" />
+        <Minor OpcodeValue="0x4" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" />
     <!-- llcbw hwmon major end -->
 
     <!-- memlat major start -->

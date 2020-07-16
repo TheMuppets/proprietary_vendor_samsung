@@ -1,4 +1,0 @@
-service qti_gnss_service /vendor/bin/hw/vendor.qti.gnss@1.2-service
-    class hal
-    user system
-    group system gps radio

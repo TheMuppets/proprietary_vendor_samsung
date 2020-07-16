@@ -1,0 +1,4 @@
+service gnss_service /vendor/bin/hw/android.hardware.gnss@2.0-service-qti
+    class hal
+    user system
+    group system gps radio

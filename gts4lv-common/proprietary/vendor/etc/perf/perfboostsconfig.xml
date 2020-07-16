@@ -55,8 +55,18 @@
             Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="sdm710"
            Resources="0x40C00000, 0x3, 0x40C58000, 95, 0x40C54000, 100, 0x40408000, 0x63" />
 
+     <!-- config_gameBoost-->
+         <!-- SCHEDBOOST resource opcode, value-->
+         <!-- SCHED GROUP DOWNMIGRATE resource opcode, value-->
+         <!-- SCHED GROUP UPMIGRATE resource opcode, value-->
+         <!-- LPM Bias resource opcode, value-->
 
-    <!-- config_enableLaunchBoostv4-->
+         <!-- Type="4", FA launch boost of 15sec -->
+         <Config
+             Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="sdm710"
+            Resources="0x40C00000, 0x3, 0x40C58000, 95, 0x40C54000, 100, 0x40408000, 0x63" />
+
+    <!-- config_enableLaunchBoostv5-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_LITTLE resource opcode, value-->
         <!-- GO_HISPEED_LOAD_INTERACTIVE_CLUSTER_BIG resource opcode, value-->
@@ -70,15 +80,27 @@
         <!-- LPM_LEVELS_REF_STDDEV resource opcode, value-->
         <!-- LPM_LEVELS_TMR_ADD resource opcode, value-->
 
-        <!-- Type="4", Adaptive Launch boost -->
+        <!-- Type="5", Adaptive Launch boost -->
         <Config
-            Id="0x00001081" Type="4" Enable="true" Timeout="2000" Target="sdm710"
+            Id="0x00001081" Type="5" Enable="true" Timeout="2000" Target="sdm710"
             Resources="0x41000100, 0x4, 0x41000000, 0x4,
                        0x41440000, 0x28, 0x41440100, 0x28,
                        0x4143C000, 0xFFF, 0x4143C100, 0xFFF,
                        0x40C20000, 0x28, 0x40C1C000, 0x32,
                        0x43404000, 0x2710, 0x43408000, 0x2710,
                        0x4040C000, 0x1F4, 0x40410000, 0x3E8" />
+
+     <!-- config_enableLaunchBoost6-->
+        <!-- SLB_BIG, val, SLB_BIG, val-->
+        <!-- SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US, val us -->
+
+        <!-- Type="6", Game Launch boost -->
+        <Config
+            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="sdm710"
+            Resources="0x40C68000, 60, 0x40C68010, 60,
+                       0x40C68100, 33, 0x40C68110, 33, 0x40C68120, 33, 0x40C68130, 33, 0x40C68140, 33, 0x40C68150, 33,
+                       0x41448000, 20000 "/>
 
     <!--Animation boost -->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -173,5 +195,17 @@
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="sdm710"
             Resources="0x40800100, 1000, 0x4280C000, 596" />
+
+    <!--Display on Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001041" Enable="true" Timeout="0" Target="sdm710"
+                Resources="0x40000000, 1" />
+    <!--Display off Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001040" Enable="true" Timeout="0" Target="sdm710"
+                Resources="0x40000000, 0x0" />
+
     </PerfBoost>
 </BoostConfigs>

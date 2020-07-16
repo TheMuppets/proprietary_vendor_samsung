@@ -53,7 +53,9 @@ number of path entries.
 <sfs_path>
     <gp_data_path> /data/vendor/tzstorage/ </gp_data_path>
     <gp_persist_path> /efs/ </gp_persist_path>
-    <gp_whitelist_count> 2 </gp_whitelist_count>
+    <gp_whitelist_count> 4 </gp_whitelist_count>
     <gp_whitelist_path> /data/system/users/ </gp_whitelist_path>
     <gp_whitelist_path> /data/misc/qsee/ </gp_whitelist_path>
+    <gp_whitelist_path> /qwes </gp_whitelist_path>
+    <gp_whitelist_path> /qwes/licenses </gp_whitelist_path>
 </sfs_path>
