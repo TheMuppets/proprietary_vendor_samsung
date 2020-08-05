@@ -18,36 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7880-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7880-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_SYSTEM)/app/FFFFFFFF000000000000000000000001.drbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/00060308060501020000000000000000.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/07010000000000000000000000000000.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/07060000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/07060000000000000000000000000000.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/08130000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/08130000000000000000000000000000.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000004.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000004.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000005.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000b.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000000b.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000c.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000000c.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000d.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000000d.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000012.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000012.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000013.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000013.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000016.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000016.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000017.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000019.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000019.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000001f.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000001f.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff00000000000000000000002e.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000002e.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000038.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000038.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000041.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000041.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffff000000000000000000000045.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff000000000000000000000045.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000014.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd00000000000000000000014.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
-    vendor/samsung/universal7880-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
     vendor/samsung/universal7880-common/proprietary/bin/wcnss_filter:$(TARGET_COPY_OUT_SYSTEM)/bin/wcnss_filter \
     vendor/samsung/universal7880-common/proprietary/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/Tfa9896.cnt \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/Data.msc:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/Data.msc \
@@ -79,8 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libMcClient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libMcClient.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libMcRegistry.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera3.so \
     vendor/samsung/universal7880-common/proprietary/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosdisplay.so \
@@ -118,8 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libMcClient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libMcClient.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexynoscamera.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexynoscamera3.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexynosdisplay.so \
@@ -149,6 +115,27 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/07060000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07060000000000000000000000000000.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/08130000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08130000000000000000000000000000.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000005.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000000b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000b.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000013.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000017.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000028.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000028.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000002e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000002e.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000002f.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000002f.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000030.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000030.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000038.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000038.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000041.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000045.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000045.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000014.tlbin \
+    vendor/samsung/universal7880-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
     vendor/samsung/universal7880-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/universal7880-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
     vendor/samsung/universal7880-common/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
@@ -163,6 +150,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/memtrack.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.default.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsc.so \
@@ -192,6 +181,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/memtrack.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.default.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcsc.so \
