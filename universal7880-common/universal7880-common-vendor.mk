@@ -58,8 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/libhdmi.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhdmi.so \
     vendor/samsung/universal7880-common/proprietary/lib/libhwcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwcutils.so \
     vendor/samsung/universal7880-common/proprietary/lib/libhwjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwjpeg.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libprotobuf-cpp-fulN.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-fulN.so \
-    vendor/samsung/universal7880-common/proprietary/lib/libprotobuf-cpp-litN.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-litN.so \
     vendor/samsung/universal7880-common/proprietary/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
     vendor/samsung/universal7880-common/proprietary/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so \
     vendor/samsung/universal7880-common/proprietary/lib/libsensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsensorlistener.so \
@@ -95,8 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/libhdmi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhdmi.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libhwcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhwcutils.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhwjpeg.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libprotobuf-cpp-fulN.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-fulN.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/libprotobuf-cpp-litN.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-litN.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecril-client.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensorlistener.so \
