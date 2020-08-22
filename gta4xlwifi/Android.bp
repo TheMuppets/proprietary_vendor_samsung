@@ -19,3 +19,19 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libskeymaster4device",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libskeymaster4device.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+

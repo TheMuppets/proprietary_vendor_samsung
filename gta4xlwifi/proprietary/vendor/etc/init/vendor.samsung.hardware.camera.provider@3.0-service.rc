@@ -1,0 +1,8 @@
+service sec-camera-provider-3-0 /vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
+    interface vendor.samsung.hardware.camera.provider@3.0::ISehCameraProvider legacy/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc system media_rw sdcard_rw
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
