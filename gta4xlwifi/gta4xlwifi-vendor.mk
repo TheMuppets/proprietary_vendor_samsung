@@ -227,6 +227,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libdualcam_refocus_video_wt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video_wt.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libexynoscamera_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_plugin.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgscaler.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosscaler.so \
@@ -341,6 +342,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libdualcam_refocus_image_wt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image_wt.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libexynoscamera_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera_plugin.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgscaler.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosscaler.so \
