@@ -190,11 +190,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/gralloc.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/hwcomposer.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/memtrack.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9611.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/power.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.exynos9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/power.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.universal9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.sensorhub.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/sensors.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.exynos9611.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/sound_trigger.primary.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos9611.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/thermal.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.exynos9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/sensors.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/sound_trigger.primary.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.universal9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/thermal.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.universal9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosHWCService.so \
@@ -319,10 +319,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/gralloc.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/hwcomposer.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/memtrack.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9611.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/power.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.exynos9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/power.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.universal9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.sensorhub.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/sensors.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.exynos9611.so \
-    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/thermal.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.exynos9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/sensors.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.universal9611.so \
+    vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/thermal.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.universal9611.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so \
     vendor/samsung/gta4xlwifi/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
