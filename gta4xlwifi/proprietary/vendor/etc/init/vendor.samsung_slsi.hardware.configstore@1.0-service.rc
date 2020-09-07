@@ -1,4 +1,0 @@
-service ExynosHWCConfigs /vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
-    class hal animation
-    user system
-    group system
