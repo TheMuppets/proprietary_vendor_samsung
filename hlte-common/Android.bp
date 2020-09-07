@@ -19,29 +19,3 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libtime_genoff",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "TimeService",
-	owner: "samsung",
-	apk: "proprietary/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
