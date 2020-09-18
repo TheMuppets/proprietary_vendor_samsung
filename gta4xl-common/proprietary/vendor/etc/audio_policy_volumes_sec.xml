@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<audioPolicyConfiguration version="1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <!-- Part of audio_policy_volumes.xml -->
+    <volumes>
+        <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_HEADSET">
+            <point>0,-4200</point>
+            <point>33,-2800</point>
+            <point>66,-1400</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+            <point>0,-2400</point>
+            <point>33,-1600</point>
+            <point>66,-800</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE">
+            <point>0,-2400</point>
+            <point>33,-1600</point>
+            <point>66,-800</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                 ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                 ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_HEADSET">
+            <point>1,-3000</point>
+            <point>33,-2600</point>
+            <point>66,-2200</point>
+            <point>100,-1800</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                             ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                             ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                             ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                             ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                           ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+            <point>1,-2970</point>
+            <point>33,-2010</point>
+            <point>66,-1020</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                           ref="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                           ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                           ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                            ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+            <point>1,-2970</point>
+            <point>33,-2010</point>
+            <point>66,-1020</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                            ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                                   ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+            <point>1,-2970</point>
+            <point>33,-2010</point>
+            <point>66,-1020</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                                   ref="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                   ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                   ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_HEADSET">
+            <point>0,-4200</point>
+            <point>33,-2800</point>
+            <point>66,-1400</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_SPEAKER">
+            <point>0,-2400</point>
+            <point>33,-1600</point>
+            <point>66,-800</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_EARPIECE">
+            <point>0,-4200</point>
+            <point>33,-2800</point>
+            <point>66,-1400</point>
+            <point>100,0</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                    ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                    ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_HEADSET">
+            <point>1,-3000</point>
+            <point>33,-2600</point>
+            <point>66,-2200</point>
+            <point>100,-1800</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                                       ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                                       ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                       ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ENFORCED_AUDIBLE" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                       ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_HEADSET">
+            <point>1,-3000</point>
+            <point>33,-2600</point>
+            <point>66,-2200</point>
+            <point>100,-1800</point>
+        </volume>
+        <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                           ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                           ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                           ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                           ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_TTS" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                          ref="SILENT_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_TTS" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                          ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_TTS" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                          ref="SILENT_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_TTS" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                          ref="SILENT_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_TTS" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                          ref="SILENT_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ACCESSIBILITY" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                                    ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ACCESSIBILITY" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                                    ref="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ACCESSIBILITY" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                                    ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ACCESSIBILITY" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                    ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_ACCESSIBILITY" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                    ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_REROUTING" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                                ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_REROUTING" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                                ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_REROUTING" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                                ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_REROUTING" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                                ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_REROUTING" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                                ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_FM_RADIO" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_FM_RADIO" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_FM_RADIO" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_FM_RADIO" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VIDEO_CALL" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VIDEO_CALL" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VIDEO_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VIDEO_CALL" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SEC_VOICE_COMMUNICATION" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SEC_VOICE_COMMUNICATION" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SEC_VOICE_COMMUNICATION" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_SEC_VOICE_COMMUNICATION" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VOICENOTE" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VOICENOTE" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VOICENOTE" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+        <volume stream="AUDIO_STREAM_VOICENOTE" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                            ref="FULL_SCALE_VOLUME_CURVE"/>
+    </volumes>
+    <!-- Part of default_volume_tables.xml -->
+    <volumes>
+        <reference name="FULL_SCALE_VOLUME_CURVE">
+        <!-- Full Scale reference Volume Curve -->
+            <point>0,0</point>
+            <point>100,0</point>
+        </reference>
+        <reference name="SILENT_VOLUME_CURVE">
+            <point>0,-9600</point>
+            <point>100,-9600</point>
+        </reference>
+        <reference name="DEFAULT_SYSTEM_VOLUME_CURVE">
+        <!-- Default System reference Volume Curve -->
+            <point>1,-2400</point>
+            <point>33,-1800</point>
+            <point>66,-1200</point>
+            <point>100,-600</point>
+        </reference>
+        <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
+        <!-- Default Media reference Volume Curve -->
+            <point>1,-5800</point>
+            <point>20,-4000</point>
+            <point>60,-1700</point>
+            <point>100,0</point>
+        </reference>
+        <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">
+        <!--Default Volume Curve -->
+            <point>1,-4950</point>
+            <point>33,-3350</point>
+            <point>66,-1700</point>
+            <point>100,0</point>
+        </reference>
+        <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
+        <!-- Default is Speaker Media Volume Curve -->
+            <point>1,-5800</point>
+            <point>20,-4000</point>
+            <point>60,-1700</point>
+            <point>100,0</point>
+        </reference>
+        <reference name="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE">
+        <!--Default Volume Curve -->
+            <point>1,-4950</point>
+            <point>33,-3350</point>
+            <point>66,-1700</point>
+            <point>100,0</point>
+        </reference>
+        <reference name="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE">
+        <!-- Default is Ext Media System Volume Curve -->
+            <point>1,-5800</point>
+            <point>20,-4000</point>
+            <point>60,-2100</point>
+            <point>100,-1000</point>
+        </reference>
+        <reference name="DEFAULT_HEARING_AID_VOLUME_CURVE">
+        <!-- Default Hearing Aid Volume Curve -->
+            <point>1,-12700</point>
+            <point>20,-8000</point>
+            <point>60,-4000</point>
+            <point>100,0</point>
+        </reference>
+    </volumes>
+</audioPolicyConfiguration>
