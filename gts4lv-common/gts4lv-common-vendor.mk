@@ -188,8 +188,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/somxreg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/somxreg.conf \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/samsung/gts4lv-common/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml \
-    vendor/samsung/gts4lv-common/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/samsung/gts4lv-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -859,4 +857,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleExTL3210 \
     WfdService \
     TimeService \
-    WfdCommon
+    WfdCommon \
+    android.hardware.gnss@2.0-service-qti \
+    vendor.qti.gnss@3.0-service
