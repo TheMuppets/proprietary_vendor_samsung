@@ -1,5 +1,7 @@
 # Wi-Fi init file
 on post-fs-data
+    mkdir /data/vendor 0771 root system
+    mkdir /data/vendor/log 0771 root system
     mkdir /data/vendor/conn 0771 wifi wifi
     mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
