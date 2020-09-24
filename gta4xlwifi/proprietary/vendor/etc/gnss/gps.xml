@@ -32,8 +32,11 @@
 
     IgnoreJniTime="true"
     AssertEnabled="false"
-	
-	GnssYearOfHardware="2016"
+
+    IgnoreFwConfig="false"
+    DisablePglorNmeaCallback="true"
+
+    GnssYearOfHardware="2016"
    />
 
   <gll
@@ -50,7 +53,9 @@
 
   <gll_features
     EnableLowPowerPmm="true"
-	EnableBeidou="true"
+    EnableBeidou="true"
+    IndoorVDREnable="false"
+    VDRTunnelPropagate="false"
   />
 
 </glgps>
