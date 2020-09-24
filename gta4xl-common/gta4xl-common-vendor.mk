@@ -25,9 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdf.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libomission_avoidance.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpacm_client.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/libsec_semRil.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsec_semRil.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecure_storage.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomx263dsw.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomx264dsw.so \
@@ -55,9 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdf.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libomission_avoidance.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpacm_client.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/libsec_semRil.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec_semRil.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecril-client.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecure_storage.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomx263dsw.so \
     vendor/samsung/gta4xl-common/proprietary/system/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomx264dsw.so \
@@ -197,7 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libacryl_plugin_slsi_hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl_plugin_slsi_hdr10.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils_sec.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudiodebugfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodebugfs.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
@@ -392,7 +387,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000000046:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000000046 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
