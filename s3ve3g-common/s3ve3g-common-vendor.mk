@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libfactoryutil.so:system/vendor/lib/libfactoryutil.so \
-    vendor/samsung/s3ve3g-common/proprietary/lib/libfmjni.so:system/lib/libfmjni.so \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libmmcamera_cac.so:system/vendor/lib/libmmcamera_cac.so \
     vendor/samsung/s3ve3g-common/proprietary/vendor/lib/libmmcamera_cac2_lib.so:system/vendor/lib/libmmcamera_cac2_lib.so \
