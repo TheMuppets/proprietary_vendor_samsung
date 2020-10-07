@@ -1,0 +1,34 @@
+on post-fs-data
+    # for WIFI DONGLE EVENT LOG
+    write /data/vendor/conn/.logtrace.info 1
+    chown wifi root /data/vendor/conn/.logtrace.info
+    chmod 0660 /data/vendor/conn/.logtrace.info
+
+    chown wifi root /data/vendor/conn/.frameburst.info
+    chmod 0660 /data/vendor/conn/.frameburst.info
+
+    chown wifi root /data/vendor/conn/.bad_ap_list.info
+    chmod 0660 /data/vendor/conn/.bad_ap_list.info
+
+    chown wifi root /sys/wifi/cid
+    chmod 0660 /sys/wifi/cid
+    chown wifi root /sys/wifi/wifiver
+    chmod 0660 /sys/wifi/wifiver
+    chown wifi root /sys/wifi/pm
+    chmod 0660 /sys/wifi/pm
+    chown wifi root /sys/wifi/ant
+    chmod 0660 /sys/wifi/ant
+    chown wifi root /sys/wifi/softap
+    chmod 0660 /sys/wifi/softap
+    chown wifi root /sys/wifi/memdump
+    chmod 0660 /sys/wifi/memdump
+    chown wifi root /sys/wifi/frameburst
+    chmod 0660 /sys/wifi/frameburst
+    chown wifi root /sys/wifi/bad_ap_list
+    chmod 0660 /sys/wifi/bad_ap_list
+    chown wifi root /sys/wifi/control_he_enab
+    chmod 0660 /sys/wifi/control_he_enab
+
+on boot
+    # for fwpath
+    chown wifi root /sys/module/dhd/parameters/firmware_path
