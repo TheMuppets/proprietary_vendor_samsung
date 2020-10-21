@@ -2187,10 +2187,10 @@ layer {
   }
 }
 layer {
-  name: "vizinsight/gallery/davinci/v4/compressed"
+  name: "vizinsight/gallery/davinci/v37/compressed"
   type: "PointwiseConvolution"
   bottom: "avg_pool"
-  top: "vizinsight/gallery/davinci/v4/compressed"
+  top: "vizinsight/gallery/davinci/v37/compressed"
   param {
     lr_mult: 100.0
     decay_mult: 1.0
@@ -2200,7 +2200,7 @@ layer {
     decay_mult: 0.0
   }
   convolution_param {
-    num_output: 2327
+    num_output: 2334
     kernel_size: 1
     weight_filler {
       type: "xavier"
@@ -2214,6 +2214,6 @@ layer {
 layer {
   name: "prob"
   type: "Softmax"
-  bottom: "vizinsight/gallery/davinci/v4/compressed"
+  bottom: "vizinsight/gallery/davinci/v37/compressed"
   top: "prob"
 }

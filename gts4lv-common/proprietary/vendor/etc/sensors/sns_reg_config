@@ -6,5 +6,3 @@ file=platform_version=/sys/devices/soc0/platform_version
 file=soc_id=/sys/devices/soc0/soc_id
 file=revision=/sys/class/sensors/ssc_core/ssc_hw_rev
 file=output=/mnt/vendor/persist/sensors/registry/registry
-property=persist.vendor.sensors.enable.property=/mnt/vendor/persist/sensors/registry/file1
-property=persist.vendor.sensors.enable.property1=/mnt/vendor/persist/sensors/registry/file2
