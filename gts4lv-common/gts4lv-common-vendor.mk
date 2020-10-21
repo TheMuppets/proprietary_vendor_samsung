@@ -536,7 +536,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
@@ -837,8 +836,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/vendor.samsung.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.health@1.0.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.miscpower@2.0.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc \
-    vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5OD/6.5.1/slens_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5OD/6.5.1/slens_detector_cnn.dlc \
+    vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc \
+    vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5OD/6.5.1/slens_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5OD/6.5.1/slens_detector_cnn.dlc \
     vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.prototxt \
     vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn_light.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn_light.caffemodel \
     vendor/samsung/gts4lv-common/proprietary/vendor/saiv/image_understanding/db/aic_detector/aic_detector_cnn.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aic_detector/aic_detector_cnn.prototxt \
@@ -852,8 +851,8 @@ PRODUCT_PACKAGES += \
     libantradio \
     libplatformconfig \
     libskeymaster4device \
-    HotwordEnrollmentOKGoogleExTL3210 \
-    HotwordEnrollmentXGoogleExTL3210 \
+    HotwordEnrollmentOKGoogleEx2TL3210 \
+    HotwordEnrollmentXGoogleEx2TL3210 \
     WfdService \
     TimeService \
     WfdCommon
