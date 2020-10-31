@@ -1,0 +1,8 @@
+/* Allow communication to some OEM - QMI services with radio privilages */
+/* Format is <Service id>:<all instances>:<radio>:<net_raw> */
+/* VSS */
+227:4294967295:1001:3004
+/*COEX*/
+34:4294967295:1001
+/* WDA */
+26:4294967295:1001:3004
