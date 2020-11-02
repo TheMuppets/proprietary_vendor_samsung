@@ -13,8 +13,14 @@ on post-fs-data
 on property:ro.vendor.multisim.simslotcount=1
     stop ril-daemon1
 
-on property:hwservicemanager.ready=false
-    restart ril-daemon
+on property:vts.native_server.on=*    
+    setprop vendor.vts.native_server.on ${vts.native_server.on}
 
-on property:hwservicemanager.ready=false && property:ro.vendor.multisim.simslotcount=2
-    restart ril-daemon1
+service secril_config /vendor/bin/secril_config_svc
+    user radio
+    group radio
+    oneshot
+    disabled
+
+on post-fs-data
+    exec_start secril_config
