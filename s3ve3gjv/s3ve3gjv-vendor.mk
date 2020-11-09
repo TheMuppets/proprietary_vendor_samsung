@@ -44,4 +44,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s3ve3gjv/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
     vendor/samsung/s3ve3gjv/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
     vendor/samsung/s3ve3gjv/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
+    vendor/samsung/s3ve3gjv/proprietary/vendor/lib/libmmcamera_s5k4h5yb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4h5yb.so \
     vendor/samsung/s3ve3gjv/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so
