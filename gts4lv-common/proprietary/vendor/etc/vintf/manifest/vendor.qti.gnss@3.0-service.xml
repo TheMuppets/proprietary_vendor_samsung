@@ -1,0 +1,18 @@
+<!-- Copyright (c) 2019 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.qti.gnss</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ILocHidlGnss/gnss_vendor</fqname>
+        <fqname>@2.1::ILocHidlGnss/gnss_vendor</fqname>
+        <fqname>@3.0::ILocHidlGnss/gnss_vendor</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGnss/gnss_vendor</fqname>
+    </hal>
+</manifest>

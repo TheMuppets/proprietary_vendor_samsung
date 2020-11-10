@@ -1,0 +1,7 @@
+service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    class hal
+    user system
+    group system 5678
+
+on post-fs-data
+    mkdir /data/vendor/gatekeeper 0770 system system

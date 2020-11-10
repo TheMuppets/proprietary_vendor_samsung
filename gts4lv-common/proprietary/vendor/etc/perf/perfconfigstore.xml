@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2019 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is PerfConfigsStore file which returns the value when a
+particular property name is invoked -->
+
+<!-- This file supports only Prop tag, which has the following fields
+* Name, to identify the name of the property. The names of the
+properties have been classified into Vendor and System property.
+* Value, the new value to be returned as string when respective
+property Name is called. -->
+
+<PerfConfigsStore>
+    <PerfConfigs>
+
+                <!--Vendor Properties -->
+                <Prop Name="vendor.debug.enable.lm" Value="false" />
+                <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
+                <Prop Name="vendor.perf.iop_v3.enable.debug" Value="0" />
+                <Prop Name="vendor.enable.prefetch" Value="false" />
+                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+
+                <!--System Properties -->
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
+                <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
+                <Prop Name="ro.vendor.iocgrp.config" Value="1" />
+                <Prop Name="ro.lmk.enable_userspace_lmk" Value="false" />
+                <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+
+    </PerfConfigs>
+</PerfConfigsStore>

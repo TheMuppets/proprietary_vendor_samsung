@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2019 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<CapabilityStore version="1">
+    <namespace name="vpp">
+        <capability key="default_config" value="false"/>
+        <capability key="disable_dynamic_hal" value="true"/>
+        <capability key="enable" value="false"/>
+    </namespace>
+</CapabilityStore>
