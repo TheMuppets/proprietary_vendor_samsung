@@ -285,7 +285,7 @@ Beeline UA"Beeline
 26201
 Telekom.de"TDG
  
-26202Vodafone.de"Vodafone
+26202vodafone.de"Vodafone
 
 26203o2 - de"o2 - de
 
@@ -324,9 +324,8 @@ vodafone P"voda P
 IS OnWaves"OnWaves
 
 27411NOVA IS"NOVA
-
-27601
-Telekom.al"T.al
+
+27601One.al"One.al
 
 27602Voda AL"Voda AL
 
@@ -685,6 +684,8 @@ AW Digicel"Digicel
 374130Digicel"Digicel
 
 376350FLOW"FLOW
+
+376360Digicel"TCI
 
 40001AZEAC"Azercell
 
@@ -706,31 +707,39 @@ Beeline KZ"Beeline
 
 40277	TASHICELL"TASHICEL
 
+40401Vi India"Vi India
+
 40402
 IND airtel"airtel
 
 40403
 IND airtel"airtel
-
-40404IDEA"IDEA
-
-40407IDEA"IDEA
+
+40405Vi India"Vi India
+
+40407Vi India"Vi India
 
 40410
 IND airtel"airtel
-
-40412IDEA"IDEA
-
-40414IDEA"IDEA
+
+40411Vi India"Vi India
+
+40414Vi India"Vi India
+
+40415Vi India"Vi India
 
 40416
 IND airtel"airtel
-
-40419IDEA"IDEA
-
-40422IDEA"IDEA
-
-40424IDEA"IDEA
+
+40419Vi India"Vi India
+
+40420Vi India"Vi India
+
+40422Vi India"Vi India
+
+40427Vi India"Vi India
+
+40430Vi India"Vi India
 
 40431
 IND airtel"airtel
@@ -741,8 +750,8 @@ IND airtel"airtel
 
 40440
 IND airtel"airtel
-
-40444IDEA"IDEA
+
+40443Vi India"Vi India
 
 40445
 IND airtel"airtel
@@ -757,14 +766,16 @@ IND airtel"airtel
 40454CellOne"CellOne
 
 40455CellOne"CellOne
-
-40456IDEA"IDEA
+
+40456Vi India"Vi India
 
 40457CellOne"CellOne
 
 40458CellOne"CellOne
 
 40459CellOne"CellOne
+
+40460Vi India"Vi India
 
 40462CellOne"CellOne
 
@@ -794,20 +805,20 @@ IND airtel"airtel
 40476CellOne"CellOne
 
 40477CellOne"CellOne
-
-40478IDEA"IDEA
+
+40478Vi India"Vi India
 
 40479CellOne"CellOne
 
 40480CellOne"CellOne
 
 40481CellOne"CellOne
-
-40482IDEA"IDEA
-
-40487IDEA"IDEA
-
-40489IDEA"IDEA
+
+40482Vi India"Vi India
+
+40484Vi India"Vi India
+
+40486Vi India"Vi India
 
 40490
 IND airtel"airtel
@@ -850,10 +861,16 @@ IND airtel"airtel
 
 40556
 IND airtel"airtel
-
-40570IDEA"IDEA
-
-405799IDEA"IDEA
+
+40567Vi India"Vi India
+
+40570Vi India"Vi India
+
+405751Vi India"Vi India
+
+405753Vi India"Vi India
+
+405755Vi India"Vi India
 
 405823VIDEOCON"VIDEOCON
 
@@ -894,20 +911,8 @@ IND airtel"airtel
 405842VIDEOCON"VIDEOCON
 
 405843VIDEOCON"VIDEOCON
-
-405845IDEA"IDEA
-
-405846IDEA"IDEA
-
-405848IDEA"IDEA
-
-405849IDEA"IDEA
-
-405850IDEA"IDEA
-
-405852IDEA"IDEA
-
-405853IDEA"IDEA
+
+405846Vi India"Vi India
 
 405854IND-JIO"JIO
 
@@ -1751,8 +1756,8 @@ TelkomSA-R"Telkom-R
 71021	CLARO NIC"ClaroNIC
 
 71073	CLARO NIC"ClaroNIC
-
-710300Movistar"Movistar
+
+710300Tigo"Tigo
 
 71201I.C.E."I.C.E.
 
@@ -1899,4 +1904,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML	Published
+90150EchoStar Mobile"EML(Published TS.25 Database 12 October 2020
