@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/hero2lte/proprietary/app/mcRegistry/ffffffff00000000000000000000003e.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffff00000000000000000000003e.tlbin \
     vendor/samsung/hero2lte/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
     vendor/samsung/hero2lte/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_SYSTEM)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
-    vendor/samsung/hero2lte/proprietary/lib/liboemcrypto.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liboemcrypto.so \
+    vendor/samsung/hero2lte/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/samsung/hero2lte/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/hero2lte/proprietary/vendor/app/mcRegistry/07060000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07060000000000000000000000000000.tlbin \
     vendor/samsung/hero2lte/proprietary/vendor/app/mcRegistry/08130000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08130000000000000000000000000000.tlbin \
