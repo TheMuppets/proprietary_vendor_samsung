@@ -1,5 +1,0 @@
-service vendor.radio-config-svc-hal-1-0 /vendor/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service
-    class hal
-    user system
-    group system radio
-    interface vendor.samsung.hardware.radio.configsvc@1.0::IConfigSvc default

@@ -75,11 +75,12 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="20610" mtu="1340" rat="4"/>
 
 <!-- Orange VoWIFI -->
-    <mtuTableEntry numeric="20801" mtu="1340" rat="4"/>
-    <mtuTableEntry numeric="22610" mtu="1340" rat="4"/>
+    <mtuTableEntry numeric="20801" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="22610" mtu="1300" rat="4"/>
     <mtuTableEntry numeric="26003" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="26003" mtu="1300" rat="4"/>
-    <mtuTableEntry numeric="21403" mtu="1280" rat="4"/>
+    <mtuTableEntry numeric="21403" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="64700" mtu="1300" rat="4"/>
 
 <!-- Telenet Luxembourg(LUX) VoLTE VoWifi -->
     <mtuTableEntry numeric="20605" mtu="1300" profile="2"/>
@@ -100,6 +101,7 @@ mtuTableEntry attributes:
 <!-- Movistar (Telephonica Spain) -->
     <mtuTableEntry numeric="21407" mtu="1440" profile="2"/>
     <mtuTableEntry numeric="21407" mtu="1440" profile="14"/>
+    <mtuTableEntry numeric="21407" mtu="1280" rat="4"/>
 
 <!-- Digi Mobil Hungary -->
     <mtuTableEntry numeric="21603" mtu="1400" profile="2"/>
@@ -115,12 +117,15 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="22210" mtu="1350"/>
 
 <!-- RDS Romania -->
-    <mtuTableEntry numeric="22605" mtu="1354" rat="4"/>    
+    <mtuTableEntry numeric="22605" mtu="1354" rat="4"/>
 
 <!-- Swisscom VoLTE & VoWiFi -->
     <mtuTableEntry numeric="22801" mtu="1280" rat="4"/>
     <mtuTableEntry numeric="22801" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="22801" mtu="1340" profile="14"/>
+
+<!-- Salt -->
+    <mtuTableEntry numeric="22803" mtu="1280" profile="2"/>
 
 <!-- Hutchison -->
     <mtuTableEntry numeric="23205" mtu="1280" rat="4"/>
@@ -174,17 +179,11 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="24202" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="24202" mtu="1300" rat="4"/>    
 
-<!-- ice -->
-    <mtuTableEntry numeric="24214" mtu="1300" profile="2"/>
-
 <!-- DNA FINLAND VOLTE VOWIFI -->
     <mtuTableEntry numeric="24412" mtu="1300" rat="4"/>
     <mtuTableEntry numeric="24412" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="24413" mtu="1300" rat="4"/>
     <mtuTableEntry numeric="24413" mtu="1300" profile="2"/>
-
-<!-- Telia FI -->
-    <mtuTableEntry numeric="24491" mtu="1300" profile="2"/>
 
 <!-- Elisa Finland VoLTE VoWifi -->
     <mtuTableEntry numeric="24405" mtu="1300" profile="2"/>
@@ -222,9 +221,19 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="26209" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="26209" mtu="1280" rat="4"/>    
 
+<!-- Portugal-NOS -->
+    <mtuTableEntry numeric="26803" mtu="1380" profile="2"/>
+
+<!-- Portugal-NOS Trial -->
+    <mtuTableEntry numeric="26899" mtu="1300" profile="2"/>
+
 <!-- Vodafone VDI VoLTE VoWifi -->
     <mtuTableEntry numeric="27201" mtu="1330" profile="2"/>
     <mtuTableEntry numeric="27201" mtu="1330" rat="4"/>
+
+<!-- A1 Bulgaria -->
+    <mtuTableEntry numeric="28401" mtu="1330" profile="2"/>
+    <mtuTableEntry numeric="28401" mtu="1330" rat="4"/>
 
 <!-- TURKCELL -->
     <mtuTableEntry numeric="28601" mtu="1300" profile="2"/>    
@@ -232,6 +241,9 @@ mtuTableEntry attributes:
 <!-- AVEA -->
     <mtuTableEntry numeric="28603" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="28603" mtu="1300" rat="4"/>
+
+<!-- Telemach (Slovenia) -->
+    <mtuTableEntry numeric="29370" mtu="1300" profile="2"/>
 
 <!-- Telus -->
     <mtuTableEntry numeric="302220" mtu="1440" profile="2"/>
@@ -271,6 +283,22 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="310410" mtu="1430"/>
     <mtuTableEntry numeric="310980" mtu="1430"/>
     <mtuTableEntry numeric="311180" mtu="1430"/>
+    <mtuTableEntry numeric="310030" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310070" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310090" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310150" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310170" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310280" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310380" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310410" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310560" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310680" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="310950" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="311180" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="313100" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="312670" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="313130" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="313140" mtu="1300" rat="4"/>
 
 <!-- Verizon (Default : 1428) -->
     <mtuTableEntry numeric="311480" mtu="1428"/>
@@ -421,9 +449,8 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="50501" mtu="1300" rat="4"/>
 
 <!--  Optus YES -->
-    <mtuTableEntry numeric="50502" mtu="1300" profile="2"/>
-    <mtuTableEntry numeric="50502" mtu="1300" proto="2"/>
-    <mtuTableEntry numeric="50502" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="50502" mtu="1280" profile="2"/>
+    <mtuTableEntry numeric="50502" mtu="1280" rat="4"/>
 
 <!--  Vodafone VAU -->
     <mtuTableEntry numeric="50503" mtu="1280" profile="2"/>
@@ -453,13 +480,28 @@ mtuTableEntry attributes:
 <!-- Movistar Peru -->
     <mtuTableEntry numeric="71606" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="71606" mtu="1300" rat="4"/>
-	
+
+<!-- Claro Panama -->
+    <mtuTableEntry numeric="71403" mtu="1280" profile="2"/>
+    <mtuTableEntry numeric="71403" mtu="1280" rat="4"/>
+
+<!-- Cable Panama -->
+    <mtuTableEntry numeric="71401" mtu="1280" profile="2"/>
+
+<!-- Claro Uruguay -->
+    <mtuTableEntry numeric="74810" mtu="1280" profile="2"/>
+    <mtuTableEntry numeric="74810" mtu="1280" rat="4"/>
+
 <!-- Claro Peru -->
     <mtuTableEntry numeric="71610" mtu="1280" rat="4"/>
 
 <!-- Claro Argentina -->
     <mtuTableEntry numeric="722310" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="722310" mtu="1280" rat="4"/>
+
+<!-- Personal Argentina -->	
+    <mtuTableEntry numeric="72234" mtu="1300" profile="2"/>
+    <mtuTableEntry numeric="72234" mtu="1300" rat="4"/>
 
 <!-- Claro Brazil -->
     <mtuTableEntry numeric="72405" mtu="1280"/>
@@ -474,17 +516,16 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="72423" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="72423" mtu="1280" rat="4"/>
 
-<!-- Porto Brazil -->
-    <mtuTableEntry numeric="72454" mtu="1390"/>
-
 <!-- Movistar Chile -->
     <mtuTableEntry numeric="73002" mtu="1430" profile="2"/>
     <mtuTableEntry numeric="73002" mtu="1280" rat="4"/>
     <mtuTableEntry numeric="73002" mtu="1280" profile="14"/>
 
 <!-- Claro Chile -->
-    <mtuTableEntry numeric="73003" mtu="1390" profile="2"/>
-    <mtuTableEntry numeric="73003" mtu="1390" rat="4"/>
+    <mtuTableEntry numeric="73003" mtu="1300" proto="1"/>
+    <mtuTableEntry numeric="73003" mtu="1280" proto="2"/>
+    <mtuTableEntry numeric="73023" mtu="1300" proto="1"/>
+    <mtuTableEntry numeric="73023" mtu="1280" proto="2"/>
 
 <!-- ATT Mexico -->
     <mtuTableEntry numeric="33405" mtu="1390" profile="2"/>
@@ -511,5 +552,30 @@ mtuTableEntry attributes:
 
 <!-- Tigo Guatemala - CGU -->
     <mtuTableEntry numeric="70402" mtu="1300" profile="2"/>
+
+<!-- Entel Chile - CHE -->
+    <mtuTableEntry numeric="73001" mtu="1390" profile="2"/>
+    <mtuTableEntry numeric="73001" mtu="1390" rat="4"/>
+    <mtuTableEntry numeric="73010" mtu="1390" profile="2"/>
+    <mtuTableEntry numeric="73010" mtu="1390" rat="4"/>
+
+<!-- WIND Greece -->
+    <mtuTableEntry numeric="20209" mtu="1390" profile="2"/>
+    <mtuTableEntry numeric="20210" mtu="1390" profile="2"/>
+
+<!-- Movistar Uruguay - UFU -->
+    <mtuTableEntry numeric="74807" mtu="1280" profile="2"/>
+    <mtuTableEntry numeric="74807" mtu="1280" rat="4"/>
+
+<!-- Tigo Bolivia - BVO (BVT) -->
+    <mtuTableEntry numeric="73603" mtu="1300" profile="2"/>
+
+<!-- ZAIN MI -->
+    <mtuTableEntry numeric="41902" mtu="1410" profile="2"/>
+    <mtuTableEntry numeric="41902" mtu="1410" rat="4"/>
+
+<!-- Orange Dominicana - DOR -->
+    <mtuTableEntry numeric="37001" mtu="1300" profile="2"/>
+    <mtuTableEntry numeric="370001" mtu="1300" profile="2"/>
 
 </mtuTableEntry>
