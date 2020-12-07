@@ -18,6 +18,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/msm8226-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8226-common/proprietary/etc/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a300_pfp.fw \
+    vendor/samsung/msm8226-common/proprietary/etc/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a300_pm4.fw \
     vendor/samsung/msm8226-common/proprietary/etc/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pfp.fw \
     vendor/samsung/msm8226-common/proprietary/etc/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pm4.fw \
     vendor/samsung/msm8226-common/proprietary/vendor/lib/egl/eglsubAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglsubAndroid.so \
