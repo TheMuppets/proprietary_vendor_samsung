@@ -160,7 +160,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/sensors/config/veml3328_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/veml3328_0.json \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/samsung/gts4lv-common/proprietary/vendor/etc/somxreg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/somxreg.conf \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/samsung/gts4lv-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -280,7 +279,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libarac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarac.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
@@ -389,9 +387,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsavsac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsavsac.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsavscmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsavscmn.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsavsvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsavsvc.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
@@ -415,33 +410,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnaace.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnamrnb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnamrnb.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnamrwb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnamrwb.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v2.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnpe_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_wrapper.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx263dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx264dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxaacd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxaacd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxadpcmd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxamrd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcmn.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcore_vendor.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxflacd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxhevcdsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp3d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxmp43d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp43d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp4vdsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxnaace.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvc1dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvp8d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxwmad.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmad.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxwmv7d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmv7d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsomxwmv8d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmv8d.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspcom.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
@@ -449,7 +423,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsxqk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsxqk.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
@@ -595,7 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libarac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarac.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
@@ -688,9 +660,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsavsac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsac.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsavscmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavscmn.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsavsvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsvc.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
@@ -713,39 +682,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaace.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnamrnb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrnb.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnamrwb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrwb.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnpe_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_wrapper.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx263dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx264dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxaacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxaacd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxadpcmd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxamrd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcore_vendor.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxflacd.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxhevcdsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp3d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxmp43d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp43d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp4vdsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxnaace.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvc1dsw.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvp8d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxwmad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmad.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxwmv7d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv7d.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsomxwmv8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv8d.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsxqk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxqk.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/gts4lv-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
