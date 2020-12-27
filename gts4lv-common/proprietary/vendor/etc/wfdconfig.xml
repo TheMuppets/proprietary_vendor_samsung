@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2018 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2019 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
     -->
@@ -51,14 +51,20 @@
                   HEVC Profile 0 - Main
             -->
 
-            <!-- Level  0 - 3.1,
-                        1 - 3.2,
-                        2 - 4.0,
-                        3 - 4.1,
-                        4 - 4.2,
-                        5 - 5,
-                        6 - 5.1,
-                        7 - 5.2
+            <!-- AVC Level  0 - 3.1,
+                            1 - 3.2,
+                            2 - 4.0,
+                            3 - 4.1,
+                            4 - 4.2,
+                            5 - 5,
+                            6 - 5.1,
+                            7 - 5.2
+
+                 HEVC Level 0 - 3.1,
+                            1 - 4,
+                            2 - 4.1,
+                            3 - 5,
+                            4 - 5.1
             -->
 
             <VideoCodec1>
@@ -94,7 +100,7 @@
             <VideoCodec3>
                 <CodecName>H.265</CodecName>
                 <Profile>0</Profile>
-                <Level>6</Level>
+                <Level>4</Level>
                 <HorizontalResolution>3840</HorizontalResolution>
                 <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
@@ -350,8 +356,8 @@
             </BIT7>
           <!-- 1920x1080p60  -->
             <BIT8>
-                <MinBitrate>10000000</MinBitrate>
-                <MaxBitrate>20000000</MaxBitrate>
+                <MinBitrate>7000000</MinBitrate>
+                <MaxBitrate>13000000</MaxBitrate>
             </BIT8>
           <!-- 1920x1080i60  -->
             <BIT9>

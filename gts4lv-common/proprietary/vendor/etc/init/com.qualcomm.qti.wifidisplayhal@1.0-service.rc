@@ -7,3 +7,5 @@ service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
   class main
   user system
   group inet input audio media uhid
+  capabilities NET_RAW
+

@@ -78,17 +78,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "samsung",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "samsung",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -99,10 +88,22 @@ android_app_import {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "WfdService",
+	owner: "samsung",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "WfdCommon",
 	owner: "samsung",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 prebuilt_etc_xml {
