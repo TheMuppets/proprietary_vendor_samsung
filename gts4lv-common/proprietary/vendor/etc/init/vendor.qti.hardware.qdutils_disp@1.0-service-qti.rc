@@ -1,4 +1,0 @@
-service qdutils_disp-1-0 /vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-    class hal
-    user system
-    group system drmrpc 
