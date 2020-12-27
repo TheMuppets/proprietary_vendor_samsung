@@ -20,7 +20,7 @@ ifneq ($(filter herolte hero2lte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 
-EGL_LIBS := libOpenCL.so libOpenCL.so.1 libOpenCL.so.1.1
+EGL_LIBS := libGLES_mali.so libOpenCL.so libOpenCL.so.1 libOpenCL.so.1.1
 
 EGL_32_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/lib/,$(EGL_LIBS))
 $(EGL_32_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
