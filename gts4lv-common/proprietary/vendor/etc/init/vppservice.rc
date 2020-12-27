@@ -1,4 +1,4 @@
- # Copyright (c) 2019 Qualcomm Technologies, Inc.
+ # Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
  # All Rights Reserved.
  # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -9,7 +9,6 @@ service vendor.vppservice /vendor/bin/vppservice
 
     # HIDL interfaces
     interface vendor.qti.hardware.vpp@1.1::IHidlVppService vppService
-    interface vendor.qti.hardware.vpp@1.2::IHidlVppService vppService
 
     # don't auto restart
     oneshot
