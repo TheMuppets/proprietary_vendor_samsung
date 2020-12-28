@@ -1152,7 +1152,7 @@
 
 	<path name="incall_nb-hearing-aid">
 		<path name="incall-hearing-aid" />
-		<ctl name="ABOX Sound Type" value="BTVOICE" />
+		<ctl name="ABOX Sound Type" value="VOICE" />
 	</path>
 
 	<!-- VoiceCall CP WB -->
