@@ -1,0 +1,42 @@
+on post-fs-data
+# GPS
+    chown root system /sys/class/sec/gps/GPS_PWR_EN/value
+    chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
+    mkdir /data/vendor 0771 system system
+    chown system system /data/vendor
+    mkdir /data/vendor/gps 0771 system system
+    chown system system /data/vendor/gps
+    rm /data/vendor/gps/gps_started
+    rm /data/vendor/gps/glonass_started
+    rm /data/vendor/gps/beidou_started
+    rm /data/vendor/gps/smd_started
+    rm /data/vendor/gps/sv_cno.info
+
+
+# SensorHub Debugging File Node
+chown gps system /sys/devices/platform/bbd.0/BBD
+chown gps system /sys/devices/platform/bbd.0/DEV
+chown gps system /sys/devices/platform/bbd.0/ESW
+chown gps system /sys/devices/platform/bbd.0/baud
+chown gps system /sys/devices/platform/bbd.0/debug
+chown gps system /sys/devices/platform/bbd.0/buf
+chown gps system /sys/devices/platform/bbd.0/pl
+chown gps system /sys/devices/platform/bbd.0/passthru
+chown gps system /sys/devices/platform/bbd.0/ssi_xfer
+chown gps system /sys/devices/platform/bbd.0/ssi_count
+chown gps system /sys/devices/platform/bbd.0/ssi_trace
+chown gps system /sys/devices/platform/bbd.0/shmd
+
+# SensorHub (Location Hub)
+service lhd /vendor/bin/hw/lhd /vendor/etc/sensor/lhd.conf
+    class main
+    user gps
+    group system inet net_raw
+    ioprio be 0
+
+# GPS
+service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.xml
+    class main
+    user gps
+    group system inet net_raw wakelock
+    ioprio be 0
