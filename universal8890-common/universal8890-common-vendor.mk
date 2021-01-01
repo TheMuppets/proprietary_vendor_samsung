@@ -165,8 +165,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc \
-    vendor/samsung/universal8890-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
+    vendor/samsung/universal8890-common/proprietary/vendor/etc/init/wifi_sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_sec.rc \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/nfc/sec_s3nrn81_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn81_rfreg.bin \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/universal8890-common/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
