@@ -54,7 +54,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts4lv/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin_FEM \
     vendor/samsung/gts4lv/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
     vendor/samsung/gts4lv/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
-    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T725.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T725.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T725C.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T725C.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T725N.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T725N.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T727.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T727.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T727R4.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T727R4.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T727U.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T727U.mbn \
+    vendor/samsung/gts4lv/proprietary/vendor/firmware/wlanmdsp_SM-T727V.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp_SM-T727V.mbn \
     vendor/samsung/gts4lv/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/samsung/gts4lv/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/samsung/gts4lv/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
