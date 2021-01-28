@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal8890-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/universal8890-common/proprietary/bin/lpm:$(TARGET_COPY_OUT_SYSTEM)/bin/lpm \
     vendor/samsung/universal8890-common/proprietary/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh \
     vendor/samsung/universal8890-common/proprietary/etc/firmware/moon-dsp1-trace.wmfw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/moon-dsp1-trace.wmfw \
     vendor/samsung/universal8890-common/proprietary/etc/firmware/moon-dsp2-tx-evs.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/moon-dsp2-tx-evs.bin \
@@ -89,8 +90,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libhr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhr.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libhwcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwcutils.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
+    vendor/samsung/universal8890-common/proprietary/lib64/libmaet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmaet.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
+    vendor/samsung/universal8890-common/proprietary/lib64/libsxqk_skia.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsxqk_skia.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libuniapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniapi.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/libvirtualdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvirtualdisplay.so \
@@ -115,6 +118,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.configstore-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.configstore-utils.so \
     vendor/samsung/universal8890-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so \
+    vendor/samsung/universal8890-common/proprietary/media/battery_error.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_error.spi \
+    vendor/samsung/universal8890-common/proprietary/media/battery_low.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_low.spi \
+    vendor/samsung/universal8890-common/proprietary/media/battery_temperature_error.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_temperature_error.spi \
+    vendor/samsung/universal8890-common/proprietary/media/battery_temperature_limit.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_temperature_limit.spi \
+    vendor/samsung/universal8890-common/proprietary/media/battery_water_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_water_usb.spi \
+    vendor/samsung/universal8890-common/proprietary/media/bootsamsung.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/bootsamsung.qmg \
+    vendor/samsung/universal8890-common/proprietary/media/bootsamsungloop.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/bootsamsungloop.qmg \
+    vendor/samsung/universal8890-common/proprietary/media/charging_New_Fast.spi:$(TARGET_COPY_OUT_SYSTEM)/media/charging_New_Fast.spi \
+    vendor/samsung/universal8890-common/proprietary/media/charging_New_Normal.spi:$(TARGET_COPY_OUT_SYSTEM)/media/charging_New_Normal.spi \
+    vendor/samsung/universal8890-common/proprietary/media/crypt_bootsamsung.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/crypt_bootsamsung.qmg \
+    vendor/samsung/universal8890-common/proprietary/media/crypt_bootsamsungloop.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/crypt_bootsamsungloop.qmg \
+    vendor/samsung/universal8890-common/proprietary/media/dock_error_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/dock_error_usb.spi \
+    vendor/samsung/universal8890-common/proprietary/media/incomplete_connect.spi:$(TARGET_COPY_OUT_SYSTEM)/media/incomplete_connect.spi \
+    vendor/samsung/universal8890-common/proprietary/media/lcd_density.txt:$(TARGET_COPY_OUT_SYSTEM)/media/lcd_density.txt \
+    vendor/samsung/universal8890-common/proprietary/media/percentage.spi:$(TARGET_COPY_OUT_SYSTEM)/media/percentage.spi \
+    vendor/samsung/universal8890-common/proprietary/media/safety_timer_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/safety_timer_usb.spi \
+    vendor/samsung/universal8890-common/proprietary/media/shutdown.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/shutdown.qmg \
+    vendor/samsung/universal8890-common/proprietary/media/slow_charging_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/slow_charging_usb.spi \
+    vendor/samsung/universal8890-common/proprietary/media/temperature_limit_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/temperature_limit_usb.spi \
+    vendor/samsung/universal8890-common/proprietary/media/water_protection_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/water_protection_usb.spi \
     vendor/samsung/universal8890-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/samsung/universal8890-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/universal8890-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
