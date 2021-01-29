@@ -123,18 +123,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8890-common/proprietary/media/battery_temperature_error.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_temperature_error.spi \
     vendor/samsung/universal8890-common/proprietary/media/battery_temperature_limit.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_temperature_limit.spi \
     vendor/samsung/universal8890-common/proprietary/media/battery_water_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/battery_water_usb.spi \
-    vendor/samsung/universal8890-common/proprietary/media/bootsamsung.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/bootsamsung.qmg \
-    vendor/samsung/universal8890-common/proprietary/media/bootsamsungloop.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/bootsamsungloop.qmg \
     vendor/samsung/universal8890-common/proprietary/media/charging_New_Fast.spi:$(TARGET_COPY_OUT_SYSTEM)/media/charging_New_Fast.spi \
     vendor/samsung/universal8890-common/proprietary/media/charging_New_Normal.spi:$(TARGET_COPY_OUT_SYSTEM)/media/charging_New_Normal.spi \
-    vendor/samsung/universal8890-common/proprietary/media/crypt_bootsamsung.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/crypt_bootsamsung.qmg \
-    vendor/samsung/universal8890-common/proprietary/media/crypt_bootsamsungloop.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/crypt_bootsamsungloop.qmg \
     vendor/samsung/universal8890-common/proprietary/media/dock_error_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/dock_error_usb.spi \
     vendor/samsung/universal8890-common/proprietary/media/incomplete_connect.spi:$(TARGET_COPY_OUT_SYSTEM)/media/incomplete_connect.spi \
     vendor/samsung/universal8890-common/proprietary/media/lcd_density.txt:$(TARGET_COPY_OUT_SYSTEM)/media/lcd_density.txt \
     vendor/samsung/universal8890-common/proprietary/media/percentage.spi:$(TARGET_COPY_OUT_SYSTEM)/media/percentage.spi \
     vendor/samsung/universal8890-common/proprietary/media/safety_timer_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/safety_timer_usb.spi \
-    vendor/samsung/universal8890-common/proprietary/media/shutdown.qmg:$(TARGET_COPY_OUT_SYSTEM)/media/shutdown.qmg \
     vendor/samsung/universal8890-common/proprietary/media/slow_charging_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/slow_charging_usb.spi \
     vendor/samsung/universal8890-common/proprietary/media/temperature_limit_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/temperature_limit_usb.spi \
     vendor/samsung/universal8890-common/proprietary/media/water_protection_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/water_protection_usb.spi \
