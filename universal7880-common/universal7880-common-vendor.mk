@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,24 +22,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/Tfa9896.cnt \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/Data.msc:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/Data.msc \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/bdwlan30.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/bdwlan30.bin \
+    vendor/samsung/universal7880-common/proprietary/etc/firmware/bdwlan30_OLD.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/bdwlan30_OLD.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/bdwlan32.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/bdwlan32.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv_1.3.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_1.3.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv_2.1.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_2.1.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv_3.0.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_3.0.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv_3.2.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_3.2.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/nvm_tlv_tf_1.1.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_tf_1.1.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/otp30.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/otp30.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/qwlan30.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/qwlan30.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/qwlan30_ibss.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/qwlan30_ibss.bin \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv.img \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_1.3.tlv \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_2.1.tlv \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_3.0.tlv \
-    vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/rampatch_tlv_tf_1.1.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_tf_1.1.tlv \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utf30.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utf30.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd30.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utfbd30.bin \
+    vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd30_OLD.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utfbd30_OLD.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd32.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utfbd32.bin \
     vendor/samsung/universal7880-common/proprietary/etc/nfc/sec_s3nrn81_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc/sec_s3nrn81_rfreg.bin \
     vendor/samsung/universal7880-common/proprietary/lib/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.exynos5.so \
@@ -66,7 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/libuniapi.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libuniapi.so \
     vendor/samsung/universal7880-common/proprietary/lib/libuniplugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libuniplugin.so \
     vendor/samsung/universal7880-common/proprietary/lib/libvirtualdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvirtualdisplay.so \
-    vendor/samsung/universal7880-common/proprietary/lib/modules/qca_cld/qca_cld_wlan.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/qca_cld/qca_cld_wlan.ko \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/universal7880-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
@@ -205,5 +196,3 @@ PRODUCT_COPY_FILES += \
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
 
-# Qualcomm WiFi driver
-PRODUCT_PACKAGES += qca_cld_wlan
