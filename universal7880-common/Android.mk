@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,26 +43,6 @@ $(SYMLINKS):
 
 ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
 	$(ALL_MODULES.$(LOCAL_MODULE).INSTALLED) $(SYMLINKS)
-
-include $(BUILD_PREBUILT)
-
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qca_cld_wlan
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/lib/modules/qca_cld/qca_cld_wlan.ko
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .ko
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/modules/qca_cld
-
-MODULE_DIRS := $(TARGET_OUT)/system
-$(MODULE_DIRS):
-	@mkdir -p $@/lib/modules/qca_cld
-
-ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
-	$(ALL_MODULES.$(LOCAL_MODULE).INSTALLED) $(MODULE_DIRS)
 
 include $(BUILD_PREBUILT)
 
