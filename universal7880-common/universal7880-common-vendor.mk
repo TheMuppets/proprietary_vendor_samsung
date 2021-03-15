@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib/hw/sensors.universal7880.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Resourcemanager.so \
@@ -76,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/hwcomposer.exynos5.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/hw/sensors.universal7880.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosHWCService.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Resourcemanager.so \
@@ -153,6 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/memtrack.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.default.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/sensors.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so \
@@ -193,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/memtrack.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.default.so \
+    vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/sensors.universal7880.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.universal7880.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
     vendor/samsung/universal7880-common/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so \
