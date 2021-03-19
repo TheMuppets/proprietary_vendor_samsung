@@ -1,13 +1,20 @@
 on init
     symlink /dev/block/platform/13520000.ufs/by-name/radio /dev/mbin0
     restorecon /dev/mbin0
-	write /proc/sys/net/core/netdev_max_backlog 5000
-    write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 6
-    write /sys/class/net/rmnet1/queues/rx-0/rps_cpus 6
-    write /sys/class/net/rmnet2/queues/rx-0/rps_cpus 6
-    write /sys/class/net/rmnet3/queues/rx-0/rps_cpus 6
 
 on post-fs-data
     chown radio radio sys/devices/virtual/misc/multipdp/waketime
     chmod 0660 /sys/devices/virtual/misc/umts_dm0/dm_state
     chown radio system /sys/devices/virtual/misc/umts_dm0/dm_state
+
+    # /mnt/vendor/efs/factory.prop for Dual / Single SIM settings
+    chown radio radio /mnt/vendor/efs/factory.prop
+    chmod 0600 /mnt/vendor/efs/factory.prop
+
+on post-fs-data
+    # For Samsung members
+    chmod 0775 /data/log/err
+    chown radio radio /data/log/err
+
+on property:ro.vendor.multisim.simslotcount=*
+   write /sys/module/modem_ctrl_ss310ap/parameters/ds_detect ${ro.vendor.multisim.simslotcount}

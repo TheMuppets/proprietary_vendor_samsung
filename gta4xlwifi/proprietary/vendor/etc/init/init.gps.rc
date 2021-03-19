@@ -1,13 +1,5 @@
 on post-fs-data
 # GPS
-    chown root system /dev/ttySAC0
-    chown root system /dev/ttySAC4
-    chown root system /dev/ttySAC6
-    chown root system /dev/ttyHS2
-    chmod 0660 /dev/ttySAC0
-    chmod 0660 /dev/ttySAC4
-    chmod 0660 /dev/ttySAC6
-    chmod 0660 /dev/ttyHS2
     chown root system /sys/class/sec/gps/GPS_PWR_EN/value
     chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
     mkdir /data/vendor 0771 system system
@@ -27,9 +19,3 @@ service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.xml
     group system inet net_raw wakelock
     ioprio be 0
     seclabel u:r:gpsd:s0
-service gllogd /vendor/bin/hw/gllogd
-    class main
-    user gps
-    group system inet net_raw wakelock
-    ioprio be 0
-

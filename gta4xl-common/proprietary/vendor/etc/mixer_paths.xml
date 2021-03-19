@@ -1511,44 +1511,12 @@
 	</path>
 
 	<!-- call forwarding output -->
-	<path name="call_forwarding_master">
+	<path name="call_forwarding_primary">
         <ctl name="ABOX SPUS OUT4" value="SIFS2" />
         <ctl name="ABOX SIFS2" value="SPUS OUT4" />
         <ctl name="ABOX UAIF3 SPK" value="SIFS2" />
         <ctl name="ABOX NSRC0" value="SIFS2" />
         <ctl name="ABOX SIFM0" value="WDMA" />
-	</path>
-
-	<path name="call_forwarding_slave-handset">
-		<path name="communication-handset" />
-	</path>
-
-	<path name="call_forwarding_slave-speaker">
-		<path name="communication-speaker" />
-	</path>
-
-	<path name="call_forwarding_slave-dual-speaker">
-		<path name="communication-dual-speaker" />
-	</path>
-
-	<path name="call_forwarding_slave-dex-speaker">
-		<path name="communication-dex-speaker" />
-	</path>
-
-	<path name="call_forwarding_slave-dex-dual-speaker">
-		<path name="communication-dex-dual-speaker" />
-	</path>
-
-	<path name="call_forwarding_slave-headset">
-		<path name="communication-headset" />
-	</path>
-
-	<path name="call_forwarding_slave-headphone">
-		<path name="call_forwarding_slave-headset" />
-	</path>
-
-	<path name="call_forwarding_slave-bt-sco-headset">
-		<path name="communication-bt-sco-headset" />
 	</path>
 
 	<!-- Spectro Scenario -->
@@ -2610,41 +2578,9 @@
 	</path>
 
 	<!-- Call Forwarding Input paths -->
-	<path name="call_forwarding_master-mic">
+	<path name="call_forwarding_primary-mic">
 		<ctl name="ABOX NSRC1" value="SIFS0" />
 		<ctl name="ABOX SIFM1" value="WDMA" />
-	</path>
-
-	<path name="call_forwarding_slave-handset-mic">
-		<path name="communication-handset-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-speaker-mic">
-		<path name="communication-speaker-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-dual-speaker-mic">
-		<path name="communication-dual-speaker-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-dex-speaker-mic">
-		<path name="communication-dex-speaker-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-dex-dual-speaker-mic">
-		<path name="communication-dex-dual-speaker-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-headset-mic">
-		<path name="communication-headset-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-headphone-mic">
-		<path name="communication-headphone-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-bt-sco-headset-in">
-		<path name="communication-bt-sco-headset-in" />
 	</path>
 
 	<!-- Spectro Scenario -->
