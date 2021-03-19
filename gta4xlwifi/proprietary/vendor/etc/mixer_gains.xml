@@ -828,33 +828,10 @@
 	</path>
 
 	<!-- call forwarding output volume -->
-	<path name="gain-call_forwarding_master">
+	<path name="gain-call_forwarding_primary">
 		<!-- we use default volume -->
 	</path>
 
-	<path name="gain-call_forwarding_slave-handset">
-	</path>
-
-	<path name="gain-call_forwarding_slave-speaker">
-		<path name="gain-media-speaker"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-dex-speaker">
-		<path name="gain-media-speaker"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-headset">
-		<ctl name="DAC1 Playback Volume" value="175"/>
-		<ctl name="Headphone Playback Volume" value="31"/>
-		<ctl name="HPO Playback Switch" value="1"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-headphone">
-		<path name="gain-call_forwarding_slave-headset"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-bt-sco-headset">
-	</path>
 	<path name="gain-fm_radio-speaker">
 		<path name="gain-media-speaker"/>
 	</path>
@@ -1797,36 +1774,8 @@
 	</path>
 
 	<!-- call forwarding input volume -->
-	<path name="gain-call_forwarding_master-mic">
+	<path name="gain-call_forwarding_primary-mic">
 		<!-- we use default volume -->
-	</path>
-
-	<path name="gain-call_forwarding_slave-handset-mic">
-		<ctl name="IN3 Boost Volume" value="53"/>
-		<ctl name="STO1 ADC Capture Volume" value="47"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-speaker-mic">
-		<ctl name="IN4 Boost Volume" value="41"/>
-		<ctl name="STO1 ADC Capture Volume" value="47"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-dex-speaker-mic">
-		<ctl name="IN4 Boost Volume" value="41"/>
-		<ctl name="STO1 ADC Capture Volume" value="47"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-headset-mic">
-		<ctl name="IN1 Boost Volume" value="41"/>
-		<ctl name="STO1 ADC Capture Volume" value="47"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-headphone-mic">
-		<ctl name="IN3 Boost Volume" value="53"/>
-		<ctl name="STO1 ADC Capture Volume" value="47"/>
-	</path>
-
-	<path name="gain-call_forwarding_slave-bt-sco-headset-in">
 	</path>
 
 	<!-- echo(rms) test input volume -->

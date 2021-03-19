@@ -7,55 +7,28 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/libcamerahardwareinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamerahardwareinterface.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/vendor.samsung_slsi.hardware.configstore-utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.configstore-utils.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.configstore@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/vendor.samsung_slsi.hardware.configstore-utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung_slsi.hardware.configstore-utils.so \
-    vendor/samsung/gta4xl-common/proprietary/system/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/fruc_kernels.exynos9610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fruc_kernels.exynos9610.bin
-PRODUCT_COPY_FILES += \
-    vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
+    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/fruc_kernels.exynos9610.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fruc_kernels.exynos9610.bin \
+    vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.0-service \
-    vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service \
-    vendor/samsung/gta4xl-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service \
     vendor/samsung/gta4xl-common/proprietary/vendor/bin/tzdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzdaemon \
     vendor/samsung/gta4xl-common/proprietary/vendor/bin/tzts_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzts_daemon \
-    vendor/samsung/gta4xl-common/proprietary/vendor/bin/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service \
     vendor/samsung/gta4xl-common/proprietary/vendor/bin/wlbtd:$(TARGET_COPY_OUT_VENDOR)/bin/wlbtd \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/audio_policy_configuration_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_sec.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/tms_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tms_audio_policy_configuration.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/hydra_config.sdb:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/hydra_config.sdb \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_bt.hcf \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx140_t_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan.hcf \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/mx140_t_wlan_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan_sw.hcf \
@@ -69,22 +42,23 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/slsi_reg_database.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
+    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_DRAM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_DRAM_CODE_FLASH.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_DTCM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_DTCM_CODE_FLASH.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_ITCM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_ITCM_CODE_FLASH.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
-    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/bl.unchecked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bl.unchecked.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/calliope_iva.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_iva.bin \
+    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/dbmd8_va_asrp_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_asrp_fw.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/dbmd8_va_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_fw.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/fimc_is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_rta.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/kernel_bin_enf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_enf.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/kernel_bin_inception.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_inception.bin \
+    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/kernel_bin_mfb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_mfb.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/kernel_bin_mobile_vgg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_mobile_vgg.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/kernel_bin_nfd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_nfd.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
-    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/os.checked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/os.checked.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/param_ti.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/param_ti.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/setfile_5e9.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e9.bin \
@@ -101,39 +75,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/hwcomposer.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos9611.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/memtrack.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9611.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.sensorhub.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/sensors.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal9611.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/sound_trigger.primary.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.universal9611.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosHWCService.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Core.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Resourcemanager.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGrallocWrapper.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCv.camera.samsung.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libSEF.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSEF.quram.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libSamsungPostProcessConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSamsungPostProcessConvertor.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SamsungRec_07001.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07001.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_3DPosition_ver202.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_AlbumArt_ver105.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SoundAlive_play_plus_ver400.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_play_plus_ver400.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_SoundBooster_ver1050.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundBooster_ver1050.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaboxpcmdump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaboxpcmdump.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libacryl_plugin_slsi_hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl_plugin_slsi_hdr10.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils_sec.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudiodebugfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodebugfs.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libcodecdspdump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodecdspdump.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsc.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libdatamod.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdatamod.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libdualcam_refocus_image_wt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image_wt.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libdualcam_refocus_video_wt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video_wt.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepicoperator.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynoscamera_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_plugin.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynosgraphicbuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgraphicbuffer.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgscaler.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosscaler.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libexynosutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosutils.so \
@@ -146,14 +110,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libsamsungDiamondVoice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsamsungDiamondVoice.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteecl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libuniapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniapi.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuuid.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libvndsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndsecril-client.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
@@ -167,14 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiosaplus_sec.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libgearvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libgearvr.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libmysound.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmysound.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmyspace.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/soundfx/libplaybackrecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libplaybackrecorder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/vndk/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libaudioroute.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib/vndk/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_omx_utils.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
@@ -188,25 +145,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/hw/hwcomposer.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos9611.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/hw/memtrack.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9611.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/hw/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.sensorhub.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/hw/sensors.universal9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.universal9611.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosHWCService.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Core.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Resourcemanager.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGrallocWrapper.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCv.camera.samsung.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libSEF.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSEF.quram.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_3DPosition_ver202.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_AlbumArt_ver105.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver400.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_play_plus_ver400.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/lib_SoundBooster_ver1050.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundBooster_ver1050.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacryl.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libacryl_plugin_slsi_hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacryl_plugin_slsi_hdr10.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcsc.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libdualcam_refocus_image_wt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image_wt.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepicoperator.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynoscamera_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera_plugin.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynosgraphicbuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgraphicbuffer.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgscaler.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosscaler.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libexynosutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosutils.so \
@@ -216,9 +166,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libion_exynos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_exynos.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libiwt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiwt.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libkeymaster_helper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_helper_vendor.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libmpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpp.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
+    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libkeymaster_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_helper.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
@@ -227,8 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libuniapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniapi.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuuid.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/libvndsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndsecril-client.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
@@ -242,27 +188,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiosaplus_sec.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libgearvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libgearvr.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libmysound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmysound.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmyspace.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/soundfx/libplaybackrecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libplaybackrecorder.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.audio@1.0.so \
     vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so \
-    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000046495645:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000046495645 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00535453540c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00535453540c \
-    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-474154454b45 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
+    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6d73745f5441 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/driver/00000000-0000-0000-0000-00535453540b:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-00535453540b \
@@ -271,4 +207,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
-    libskeymaster4device
+    libskeymaster4device \
+    manifest_android.hardware.drm@1.3-service.widevine

@@ -60,3 +60,8 @@ service vendor.ipacm-diag /vendor/bin/ipacm-diag-dummy
 
 on property:ro.radio.needcalibration=yes
     enable sec_diag_uart_log
+
+on post-fs-data
+    mkdir /efs/imei 0775 root radio
+    restorecon -R /efs/imei
+
