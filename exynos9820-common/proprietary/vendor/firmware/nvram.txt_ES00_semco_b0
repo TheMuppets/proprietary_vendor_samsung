@@ -1,0 +1,429 @@
+# bcm4369 A0 FCBGA reference board, iPA version.
+# nvram copied and edited from BCM4369_A0 fcbga BU board //
+# bcm94369fcpagbi.txt
+# SSID generated using Alberto's boardssid.py script:
+# ********************SUMMARY********************
+# Board Name: bcm94369fcpagb_2_
+#SSID: 0x0864
+#macmid: 0x02d7
+# Successfully made SSID entry in sromdefs.tcl.
+# Successfully made macmid entry in sromdefs.tcl.
+# Successfully made SSID entry in tblssid.py.
+# *************************************************
+# Broadcom Proprietary and Confidential. Copyright (C) 2018,
+# All Rights Reserved.
+#
+# This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom;
+# the contents of this file may not be disclosed to third parties,
+# copied or duplicated in any form, in whole or in part, without
+# the prior written permission of Broadcom.
+#
+#
+# <<Broadcom-WL-IPTag/Proprietary:>>
+NVRAMRev=$Rev: 506283 $
+sromrev=11
+boardrev=0x1201
+boardtype=0x0864
+boardflags=0x10401201
+boardflags2=0x00000000
+boardflags3=0x40000100
+#boardnum=57410
+macaddr=00:90:4c:12:d0:01
+jtag_irw=38
+
+#Regulatory specific
+ccode=0
+regrev=0
+
+# Board specific
+vendid=0x14e4
+devid=0x4475
+manfid=0x2d0
+antswitch=0
+pdgain5g=0
+pdgain2g=0
+aa2g=3
+aa5g=3
+agbg0=2
+agbg1=2
+aga0=2
+aga1=2
+extpagain5g=0
+slice/1/extpagain2g=2
+slice/1/extpagain5g=0
+rxgains2gelnagaina0=2
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=2
+rxgains5gtrisoa0=6
+rxgains5gtrelnabypa0=1
+rxgains5gmelnagaina0=2
+rxgains5gmtrisoa0=6
+rxgains5gmtrelnabypa0=1
+rxgains5ghelnagaina0=2
+rxgains5ghtrisoa0=6
+rxgains5ghtrelnabypa0=1
+rxgains2gelnagaina1=2
+rxgains2gtrisoa1=6
+rxgains2gtrelnabypa1=1
+rxgains5gelnagaina1=2
+rxgains5gtrisoa1=6
+rxgains5gtrelnabypa1=1
+rxgains5gmelnagaina1=2
+rxgains5gmtrisoa1=6
+rxgains5gmtrelnabypa1=1
+rxgains5ghelnagaina1=2
+rxgains5ghtrisoa1=6
+rxgains5ghtrelnabypa1=1
+
+#RSSI related
+rssicorrnorm_c0=0,0
+rssicorrnorm_c1=0,0
+rssicorrnorm5g_c0=0,0,0,0,0,0,0,0,0,0,0,0
+rssicorrnorm5g_c1=0,0,0,0,0,0,0,0,0,0,0,0
+rssi_cal_freq_grp_2g= 0x08,0x01,0x91,0x2a,0x23,0xb3,0xc4
+rssi_delta_5gl=-6 4 -8 -8 -6 4 -8 -8 -6 4 -8 -8 -3 6 -3 -4 -3 6 -3 -4 -3 6 -3 -4
+rssi_delta_5gml=-1 3 -1 -3 -1 3 -1 -3 -1 3 -1 -3 -1 2 0 -2 -1 2 0 -2 -1 2 0 -2
+rssi_delta_5gmu=0 3 -1 -2 0 3 -1 -2 0 3 -1 -2 0 2 0 -2 0 2 0 -2 0 2 0 -2
+rssi_delta_5gh=2 4 2 -1 2 4 2 -1 2 4 2 -1 0 0 2 -2 0 0 2 -2 0 0 2 -2
+rssi_cal_rev=1
+rxgaincal_rssical=1
+slice/1/rssi_cal_freq_grp_2g= 0x08,0x01,0x91,0x2a,0x23,0xb3,0xc4
+slice/1/rssi_delta_2gb0=8,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0
+slice/1/rssi_delta_2gb1=12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/rssi_delta_2gb2=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/rssi_delta_2gb3=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/rssi_delta_2gb4=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/rssi_cal_rev=1
+slice/1/rxgaincal_rssical=1
+
+#Two range TSSI
+tworangetssi2g=0
+tworangetssi5g=0
+# NOTE :================================================================================
+# To run TPC with Two Range TSSI ,set  tworangetssi2g = 1 and lowpowerrange2g = 0
+# To run TPC with Single Range TSSI, set tworangetssi2g = 0
+# To run TPC please READ instructions near pa2ga0 and pa2ga1 as well
+# To generate PA params for Low Range set  tworangetssi2g = 0 and lowpowerrange2g to 1
+# To generate PA params for High Range set  tworangetssi2g = 1 and lowpowerrange2g to 1
+# ======================================================================================
+slice/1/tworangetssi2g=1
+slice/1/lowpowerrange2g=0
+
+#Related to FW Download. Host may use this
+nocrc=1
+#FIXME:4369 otpimagesize? Check with Pranay
+otpimagesize=502
+
+xtalfreq=37400
+
+txchain=3
+rxchain=3
+
+cckdigfilttype=2
+
+#bit mask for slice capability bit 0:2G bit 1:5G
+bandcap=2
+slice/1/bandcap=1
+
+#TXBF Related
+rpcal2g=0
+rpcal5gb0=0
+rpcal5gb1=0
+rpcal5gb2=0
+rpcal5gb3=0
+slice/1/rpcal2g=0
+slice/1/rpcal5gb0=0
+slice/1/rpcal5gb1=0
+slice/1/rpcal5gb2=0
+slice/1/rpcal5gb3=0
+
+
+#FDSS Related
+#fdss_level_5g=-1,-1
+#fdss_interp_en=0
+#slice/1/fdss_level_2g=4,4
+#slice/1/fdss_interp_en=1
+
+#PAPRR Related
+slice/1/paprdis=1
+slice/1/paprrmcsgain2g=128,128,128,128,128,0,0,0,0,0
+slice/1/paprrmcsgamma2g=500,500,550,700,700,-1,-1,-1,-1,-1
+
+#Tempsense Related
+tempthresh=255
+tempoffset=255
+rawtempsense=0x1ff
+phycal_tempdelta=15
+temps_period=15
+temps_hysteresis=15
+
+#------------- TSSI Related -------------
+#FIXME:4369 Always 1 do we really need it?
+tssipos2g=1
+tssipos5g=1
+AvVmid_c0=2,131,5,20,5,20,6,15,5,25
+AvVmid_c1=2,130,5,20,5,20,5,20,6,15
+slice/1/AvVmid_c0=3,117,1,159,1,166,1,153,1,153
+slice/1/AvVmid_c1=3,120,1,155,1,158,1,147,1,151
+# If Two Range is set to 0 please uncomment the following two lines
+# and comment the lines after "High Power and Low Power below"
+# SINGLE RANGE TPC/TSSI
+#slice/1/pa2ga0=-129,6257,-740
+#slice/1/pa2ga1=-140,6306,-754
+#slice/1/pa2ga2=-202,4219,-571
+#slice/1/pa2ga3=-188,4088,-567
+# If Two Range is set to 1 please uncomment the following two lines
+# and comment the lines after "High Power and Low Power below"
+# TWO RANGE TSSI/TPC
+# High Power or CCK in case of multi mode 5
+slice/1/pa2ga0=23,7095,-705
+slice/1/pa2ga1=-39,7043,-734
+# Low Power or OFDM in case of multi_mode 5
+slice/1/pa2ga2=-58,5872,-618
+slice/1/pa2ga3=-69,6134,-654
+
+pa5ga0=-231,6917,-867,-229,7014,-874,-222,6973,-866,-227,6794,-849
+pa5ga1=-229,6908,-865,-228,6969,-870,-231,6810,-854,-221,6711,-835
+# Max power and offsets
+maxp2ga0=66
+maxp2ga1=66
+maxp5ga0=66,66,66,66
+maxp5ga1=66,66,66,66
+subband5gver=0x4
+paparambwver=3
+slice/1/cckpwroffset0=0
+slice/1/cckpwroffset1=0
+pdoffset40ma0=0x4433
+pdoffset80ma0=0x3232
+pdoffset40ma1=0x2333
+pdoffset80ma1=0x1222
+
+pdoffset20mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset20mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset1_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset2_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset1_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset2_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+cckbw202gpo=0
+cckbw20ul2gpo=0
+mcsbw202gpo=0xEC888222
+mcsbw402gpo=0xEC888222
+dot11agofdmhrbw202gpo=0x6622
+ofdmlrbw202gpo=0x0000
+mcsbw205glpo=0xCA666000
+mcsbw405glpo=0xCA666000
+mcsbw805glpo=0xEA666000
+mcsbw1605glpo=0
+mcsbw205gmpo=0xCA666000
+mcsbw405gmpo=0xCA666000
+mcsbw805gmpo=0xEA666000
+mcsbw1605gmpo=0
+mcsbw205ghpo=0xCA666000
+mcsbw405ghpo=0xCA666000
+mcsbw805ghpo=0xEA666000
+
+slice/1/powoffs2gtna0=-2,0,0,2,2,0,0,0,0,2,1,3,2,0
+slice/1/powoffs2gtna1=-2,0,0,0,0,0,0,0,0,0,0,0,0,0
+#slice/1/pdoffsetcckma0=1
+#slice/1/pdoffsetcckma1=1
+mcs1024qam2gpo=0xCCCC
+mcs1024qam5glpo=0xEECCCC
+mcs1024qam5gmpo=0xEECCCC
+mcs1024qam5ghpo=0xEECCCC
+mcs1024qam5gx1po=0xEECCCC
+mcs1024qam5gx2po=0xEECCCC
+mcs8poexp=0
+mcs9poexp=0
+mcs10poexp=0
+
+# 5G power offset per channel for band edge channel
+powoffs5g20mtna0=0,0,0,0,0,0,0
+powoffs5g20mtna1=0,0,0,0,0,0,0
+powoffs5g40mtna0=0,0,0,0,0
+powoffs5g40mtna1=0,0,0,0,0
+powoffs5g80mtna0=0,0,0,0,0
+powoffs5g80mtna1=0,0,0,0,0
+mcs11poexp=0
+
+# OLPC Related
+disable_olpc=0
+olpc_thresh5g=32
+olpc_anchor5g=40
+slice/1/disable_olpc=0
+slice/1/olpc_thresh2g=32
+slice/1/olpc_anchor2g=40
+
+#LTE Coex Related
+ltecxmux=0
+ltecxpadnum=0x0504
+ltecxfnsel=0x44
+ltecxgcigpio=0x04
+#OOB params
+#device_wake_opt=1
+host_wake_opt=0
+
+# SWCTRL Related
+swctrlmap_5g=0x60604040,0x20200000,0x00000000,0x000000,0x3FF
+swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+fem_table_init_val=0x00000000,0x00000000
+fem_table_init_val_ext=0x00000000,0x00000000
+
+slice/1/swctrlmap_2g=0x00000202,0x03030000,0x01010000,0x000000,0x3FF
+slice/1/swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+slice/1/swctrlmap_5g=0x60604040,0x20200000,0x00000000,0x000000,0x3FF
+slice/1/swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+slice/1/fem_table_init_val=0x01010000,0x00000000
+slice/1/fem_table_init_val_ext=0x00000000,0x00000000
+
+clb2gslice0core0=0x000
+clb2gslice1core0=0x011
+clb5gslice0core0=0x060
+clb5gslice1core0=0x060
+clb2gslice0core1=0x000
+clb2gslice1core1=0x011
+clb5gslice0core1=0x060
+clb5gslice1core1=0x060
+# FIXME:4369 Review with Amit
+btc_prisel_ant_mask=0x0
+clb_swctrl_smask_ant0=0x3ff
+clb_swctrl_smask_ant1=0x3ff
+muxenab=1
+
+#BT Coex 1:TDM
+btc_mode=1
+
+# --- PAPD Cal related params ----
+txwbpapden=0 # 0:NBPAPD 1:WBPAPD
+# NB PAPD Cal params
+slice/1/nb_eps_offset=469,468
+slice/1/nb_bbmult=48,48
+slice/1/nb_papdcalidx=0,0
+slice/1/nb_txattn=3,3
+slice/1/nb_rxattn=0,0
+slice/1/nb_eps_stopidx=63
+#WB papd cal params
+#params are - 0x5g2g
+#slice/1/wb_rxattn=0x0101
+#slice/1/wb_txattn=0x0404
+#slice/1/wb_papdcalidx=0x1405
+#slice/1/wb_papdcalidx_core1=0x1404
+#slice/1/wb_bbmult=0x4040
+#slice/1/wb_bbmult_core1=0x4040
+#slice/1/wb_calref_db=0x2828
+#slice/1/wb_calref_db_core1=0x1a1a
+#slice/1/wb_tia_gain_mode=0x0006
+#slice/1/wb_tia_gain_mode_core1=0x0006
+#slice/1/wb_txbuf_offset=0x1820
+#slice/1/wb_txbuf_offset_core1=0x1823
+#slice/1/wb_frac_del=0x4B0F
+#slice/1/wb_frac_del_core1=0x4B2D
+#slice/1/wb_eps_offset=432
+#slice/1/wb_eps_offset_core1=430
+
+#wb_papdcalidx=0x0202
+#wb_papdcalidx=0x0404
+#wb_txbuf_offset=0x2020
+#wb_calref_db=0x1616
+#wb_frac_del=0x1a1a
+#wb_eps_offset=0x1c201c3
+#wb_bbmult=0x6664
+#wb_bbmult=0x4848
+#wb_eps_offset_core1=438
+
+# energy detect threshold
+ed_thresh2g=-63
+ed_thresh5g=-63
+# energy detect threshold for EU
+eu_edthresh2g=-63
+eu_edthresh5g=-63
+
+btldopu=1
+
+#rpcal coef for imptxbf
+rpcal5gb0=238
+rpcal5gb1=228
+rpcal5gb2=222
+rpcal5gb3=229
+slice/1/rpcal2g=15
+
+#Enable LHL PS mode
+lhl_ps_mode=3
+
+# to enable he features
+he_en=1
+
+### SAR HEAD params
+### MIMO Mode Parameters
+## 2g normal:16dB airplane:15dB
+#slice/1/dynsar_2g=0xc0c0
+#slice/1/dynsar_2g_2=0xbcbc
+## 5g normal:14dB airplane:13dB
+#dynsar_5g=0xb8b8
+#dynsar_5g_2=0xb4b4
+### RSDB mode Parameters(Both core are active)
+## 2g normal:15dB airplane:14dB
+#slice/1/rsdb_dynsar_2g=0xbcbc
+#slice/1/rsdb_dynsar_2g_2=0xb8b8
+## 5g normal:13dB airplane:12dB
+#rsdb_dynsar_5g=0xb4b4
+#rsdb_dynsar_5g_2=0xb0b0
+### Disable Parameters 2G:31.75dB 5G:31.75dB
+#slice/1/rsdb_dynsar_2g_1=0xffff
+#rsdb_dynsar_5g_1=0xffff
+#
+### SAR GRIP params
+### MIMO Mode Parameters
+## 2g normal:16dB airplane:15dB
+#slice/1/grip_dynsar_2g=0xc0c0
+#slice/1/grip_dynsar_2g_2=0xbcbc
+## 5g normal:14dB airplane:13dB
+#grip_dynsar_5g=0xb8b8
+#grip_dynsar_5g_2=0xb4b4
+### RSDB mode Parameters(Both core are active)
+## 2g normal:15dB airplane:14dB
+#slice/1/grip_rsdb_dynsar_2g=0xbcbc
+#slice/1/grip_rsdb_dynsar_2g_2=0xb8b8
+## 5g normal:13dB airplane:12dB
+#grip_rsdb_dynsar_5g=0xb4b4
+#grip_rsdb_dynsar_5g_2=0xb0b0
+#
+### FCC Mode: 10dB
+#slice/1/fccpwrch12=0x28
+#slice/1/fccpwrch13=0x28
+#
+#
+### RU SAR HEAD params
+### MIMO Mode Parameters
+## 2g normal:14,6,0.25dB airplane:18,10,2dB
+#slice/1/dynsar_2g_ru=0xb8b8,0x9898,0x8181
+#slice/1/dynsar_2g_2_ru=0xc8c8,0xa8a8,0x8888
+## 5g normal:14,6,0.25dB airplane:18,10,2dB
+#dynsar_5g_ru=0xb8b8,0x9898,0x8181
+#dynsar_5g_2_ru=0xc8c8,0xa8a8,0x8888
+### RSDB mode Parameters(Both core are active)
+## 2g normal:14,6,0.25dB airplane:18,10,2dB
+#slice/1/rsdb_dynsar_2g_ru=0xb8b8,0x9898,0x8181
+#slice/1/rsdb_dynsar_2g_2_ru=0xc8c8,0xa8a8,0x8888
+## 5g normal:14,6,0.25dB airplane:18,10,2dB
+#rsdb_dynsar_5g_ru=0xb8b8,0x9898,0x8181
+#rsdb_dynsar_5g_2_ru=0xc8c8,0xa8a8,0x8888
+#
+### RU SAR GRIP params
+### MIMO Mode Parameters
+## 2g normal:16,8,1dB airplane:20,12,4dB
+#slice/1/grip_dynsar_2g_ru=0xc0c0,0xa0a0,0x8484
+#slice/1/grip_dynsar_2g_2_ru=0xd0d0,0xb0b0,0x9090
+## 5g normal:16,8,1dB airplane:20,12,4dB
+#grip_dynsar_5g_ru=0xc0c0,0xa0a0,0x8484
+#grip_dynsar_5g_2_ru=0xd0d0,0xb0b0,0x9090
+### RSDB mode Parameters(Both core are active)
+## 2g normal:16,8,1dB airplane:20,12,4dB
+#slice/1/grip_rsdb_dynsar_2g_ru=0xc0c0,0xa0a0,0x8484
+#slice/1/grip_rsdb_dynsar_2g_2_ru=0xd0d0,0xb0b0,0x9090
+## 5g normal:16,8,1dB airplane:20,12,4dB
+#grip_rsdb_dynsar_5g_ru=0xc0c0,0xa0a0,0x8484
+#grip_rsdb_dynsar_5g_2_ru=0xd0d0,0xb0b0,0x9090

@@ -1,0 +1,13 @@
+{
+"y_mode": 1,
+"comments_rgb ":" // RGB = 0, BGR = 1",
+"rgb_or_bgr": 1,
+"netStd": 36.9375,
+"pyramid_min_size": 128,
+"comments_pyramid ":" // regular = 0, fast = 1",
+"pyramid_fast_mode": 0,
+"comments_format ":" // 422 = 1, 420 = 2",
+"format_422_or_420": 1,
+"input_img_width": 640,
+"input_img_height": 480
+}
