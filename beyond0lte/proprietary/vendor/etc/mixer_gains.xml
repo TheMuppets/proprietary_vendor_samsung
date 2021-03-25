@@ -1,0 +1,2188 @@
+<mixer>
+	<!-- Output volume stage -->
+	<!-- media playback volume -->
+	<path name="gain-media-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-media-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-speaker2">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="107" />
+		<ctl name="HPOUT2R Impedance Volume" value="107" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-media-headphone">
+		<path name="gain-media-headset" />
+	</path>
+
+	<path name="gain-media-speaker-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+		<ctl name="HPOUT2L Impedance Volume" value="51" />
+		<ctl name="HPOUT2R Impedance Volume" value="51" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-media-speaker-headphone">
+		<path name="gain-media-speaker-headset" />
+	</path>
+
+	<path name="gain-media-dual-speaker-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+		<ctl name="HPOUT2L Impedance Volume" value="51" />
+		<ctl name="HPOUT2R Impedance Volume" value="51" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-media-dual-speaker-headphone">
+		<path name="gain-media-dual-speaker-headset" />
+	</path>
+
+	<path name="gain-media-bt-sco-headphone">
+	</path>
+
+	<path name="gain-media-bt-sco-headset">
+	</path>
+
+	<path name="gain-media-speaker-bt-sco-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-dual-speaker-bt-sco-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-bt-a2dp-headphone">
+	</path>
+
+	<path name="gain-media-bt-a2dp-headset">
+	</path>
+
+	<path name="gain-media-dual-speaker-bt-a2dp-headphone">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-usb-headset">
+	</path>
+
+	<path name="gain-media-speaker-usb-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-media-dual-speaker-usb-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<!-- Remote MIC recording Volume -->
+	<path name="gain-remote_mic-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<!-- Remote MIC playback Volume -->
+	<path name="gain-remote_mic-headphone">
+	</path>
+
+	<path name="gain-remote_mic-headset">
+	</path>
+
+	<path name="gain-remote_mic-bt-sco-headset">
+	</path>
+
+	<path name="gain-remote_mic-usb-headset">
+	</path>
+
+	<!-- Ringtone playback volume -->
+	<path name="gain-ringtone-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-ringtone-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-ringtone-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-ringtone-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="107" />
+		<ctl name="HPOUT2R Impedance Volume" value="107" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-ringtone-usb-headset">
+	</path>
+
+	<path name="gain-ringtone-speaker-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+		<ctl name="HPOUT2L Impedance Volume" value="51" />
+		<ctl name="HPOUT2R Impedance Volume" value="51" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-ringtone-dual-speaker-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+		<ctl name="HPOUT2L Impedance Volume" value="51" />
+		<ctl name="HPOUT2R Impedance Volume" value="51" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-ringtone-speaker-headphone">
+		<path name="gain-ringtone-speaker-headset" />
+	</path>
+
+	<path name="gain-ringtone-dual-speaker-headphone">
+		<path name="gain-ringtone-dual-speaker-headset" />
+	</path>
+
+	<path name="gain-ringtone-bt-sco-headset">
+	</path>
+
+	<path name="gain-ringtone-speaker-bt-sco-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-ringtone-dual-speaker-bt-sco-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-ringtone-speaker-usb-headset">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-ringtone-dual-speaker-usb-headset">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<!-- Communication playback volume -->
+	<path name="gain-communication-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-communication-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-gaming-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="103" />
+		<ctl name="HPOUT2R Impedance Volume" value="103" />
+		<ctl name="HPOUT2L Input 1 Volume" value="35" />
+		<ctl name="HPOUT2R Input 1 Volume" value="35" />
+	</path>
+
+	<path name="gain-communication-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="103" />
+		<ctl name="HPOUT2R Impedance Volume" value="103" />
+		<ctl name="HPOUT2L Input 1 Volume" value="35" />
+		<ctl name="HPOUT2R Input 1 Volume" value="35" />
+	</path>
+
+	<path name="gain-communication-bt-sco-headset">
+	</path>
+
+	<path name="gain-communication-usb-headset">
+	</path>
+
+	<!-- samsung voip fmc playback volume -->
+	<path name="gain-samsung_voip_fmc-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="103" />
+		<ctl name="HPOUT2R Impedance Volume" value="103" />
+		<ctl name="HPOUT2L Input 1 Volume" value="35" />
+		<ctl name="HPOUT2R Input 1 Volume" value="35" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="103" />
+		<ctl name="HPOUT2R Impedance Volume" value="103" />
+		<ctl name="HPOUT2L Input 1 Volume" value="35" />
+		<ctl name="HPOUT2R Input 1 Volume" value="35" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-bt-sco-headset">
+	</path>
+
+	<path name="gain-samsung_voip_fmc-usb-headset">
+	</path>
+
+	<!-- wificall nb playback volume -->
+	<path name="gain-wificall_nb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-wificall_nb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_nb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_nb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_nb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_nb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_nb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_nb-bt-sco-headset">
+	</path>
+
+	<path name="gain-wificall_nb-usb-headset">
+	</path>
+
+	<!-- wificall wb playback volume -->
+	<path name="gain-wificall_wb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-wificall_wb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_wb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_wb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_wb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_wb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_wb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_wb-bt-sco-headset">
+	</path>
+
+	<path name="gain-wificall_wb-usb-headset">
+	</path>
+
+	<!-- wificall evs playback volume -->
+	<path name="gain-wificall_evs-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-wificall_evs-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_evs-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_evs-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_evs-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-wificall_evs-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_evs-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-wificall_evs-bt-sco-headset">
+	</path>
+
+	<path name="gain-wificall_evs-usb-headset">
+	</path>
+
+	<!-- Video call playback volume -->
+	<path name="gain-video_call-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-video_call-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-video_call-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-video_call-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-video_call-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-video_call-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-video_call-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-video_call-bt-sco-headset">
+	</path>
+
+	<path name="gain-video_call-usb-headset">
+	</path>
+
+	<!-- CP Call Output volume -->
+	<!-- NB volume -->
+	<path name="gain-incall_nb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-incall_nb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_nb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_nb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_nb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_nb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-incall_nb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-incall_nb-bt-sco-headset">
+	</path>
+
+	<path name="gain-incall_nb-usb-headset">
+	</path>
+
+	<path name="gain-incall_nb-hearing-aid">
+	</path>
+
+	<!-- WB volume -->
+	<path name="gain-incall_wb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-incall_wb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_wb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_wb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_wb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-incall_wb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-incall_wb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-incall_wb-bt-sco-headset">
+	</path>
+
+	<path name="gain-incall_wb-usb-headset">
+	</path>
+
+	<path name="gain-incall_wb-hearing-aid">
+	</path>
+
+	<!-- VoLTE CP NB playback volume -->
+	<path name="gain-volte_cp_nb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_cp_nb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_nb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_nb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_nb-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_cp_nb-usb-headset">
+	</path>
+
+	<path name="gain-volte_cp_nb-hearing-aid">
+	</path>
+
+	<!-- VoLTE CP WB playback volume -->
+	<path name="gain-volte_cp_wb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_cp_wb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_wb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_wb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_wb-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_cp_wb-usb-headset">
+	</path>
+
+	<path name="gain-volte_cp_wb-hearing-aid">
+	</path>
+
+	<!-- EVS volume -->
+	<path name="gain-volte_cp_evs-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_cp_evs-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_cp_evs-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_evs-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_cp_evs-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_cp_evs-usb-headset">
+	</path>
+
+	<path name="gain-volte_cp_evs-hearing-aid">
+	</path>
+
+	<!-- VoLTE VT CP NB playback volume -->
+	<path name="gain-volte_vt_cp_nb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="106" />
+		<ctl name="HPOUT2R Impedance Volume" value="106" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-usb-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-hearing-aid">
+	</path>
+
+	<!-- VoLTE VT CP WB playback volume -->
+	<path name="gain-volte_vt_cp_wb-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-usb-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-hearing-aid">
+	</path>
+
+	<!-- EVS VT volume -->
+	<path name="gain-volte_vt_cp_evs-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="789" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dex-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dex-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="116" />
+		<ctl name="HPOUT2R Impedance Volume" value="116" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-bt-sco-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-usb-headset">
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-hearing-aid">
+	</path>
+
+	<!-- TTY Mode volume-->
+	<path name="gain-tty_mode-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-tty_mode-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="105" />
+		<ctl name="HPOUT2R Impedance Volume" value="105" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-tty_mode-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="105" />
+		<ctl name="HPOUT2R Impedance Volume" value="105" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-tty_mode-usb-headset">
+	</path>
+
+	<!-- AP TTY Mode volume-->
+	<path name="gain-ap_tty_mode-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-ap_tty_mode-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="105" />
+		<ctl name="HPOUT2R Impedance Volume" value="105" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-ap_tty_mode-headphone">
+		<ctl name="HPOUT2L Impedance Volume" value="105" />
+		<ctl name="HPOUT2R Impedance Volume" value="105" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-ap_tty_mode-usb-headset">
+	</path>
+
+	<!-- FM radio volume -->
+	<path name="gain-fm_radio-speaker">
+		<ctl name="IN2L Volume" value="0" />
+		<ctl name="IN2L Digital Volume" value="128" />
+		<ctl name="IN2R Volume" value="0" />
+		<ctl name="IN2R Digital Volume" value="128" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-fm_radio-dual-speaker">
+		<ctl name="IN2L Volume" value="0" />
+		<ctl name="IN2L Digital Volume" value="128" />
+		<ctl name="IN2R Volume" value="0" />
+		<ctl name="IN2R Digital Volume" value="128" />
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-fm_radio-headphone">
+		<ctl name="IN2L Volume" value="0" />
+		<ctl name="IN2L Digital Volume" value="128" />
+		<ctl name="IN2R Volume" value="0" />
+		<ctl name="IN2R Digital Volume" value="128" />
+		<ctl name="HPOUT2L Impedance Volume" value="107" />
+		<ctl name="HPOUT2R Impedance Volume" value="107" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-fm_radio-headset">
+		<path name="gain-fm_radio-headphone" />
+	</path>
+
+	<path name="gain-fm_radio-external">
+		<ctl name="IN2L Volume" value="0" />
+		<ctl name="IN2L Digital Volume" value="128" />
+		<ctl name="IN2R Volume" value="0" />
+		<ctl name="IN2R Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-karaoke-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="745" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<!-- call forwarding output volume -->
+	<path name="gain-call_forwarding_primary">
+		<!-- we use default volume -->
+	</path>
+
+	<!-- Spectro output volume -->
+	<path name="gain-call_spectro">
+	</path>
+
+	<!-- Input stage volume -->
+	<!-- media input volume -->
+	<path name="gain-media-mic">
+		<ctl name="IN3L Digital Volume" value="96" />
+	</path>
+
+	<path name="gain-media-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="130" />
+	</path>
+
+	<path name="gain-media-headset-mic">
+		<ctl name="IN1L Volume" value="24" />
+		<ctl name="IN1L Digital Volume" value="80" />
+	</path>
+
+	<path name="gain-media-headset-main-mic">
+		<path name="gain-media-mic" />
+		<path name="gain-media-headset-mic" />
+	</path>
+
+	<path name="gain-media-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-media-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-media-usb-headset-mic">
+	</path>
+
+	<!-- voice recording input volume -->
+	<path name="gain-recording-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-recording-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-recording-dualmic">
+		<ctl name="IN3L Digital Volume" value="116" />
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-recording-headset-mic">
+		<ctl name="IN1L Volume" value="12" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-recording-headset-main-mic">
+		<path name="gain-recording-mic" />
+		<path name="gain-recording-headset-mic" />
+	</path>
+
+	<path name="gain-recording-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-recording-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-recording-usb-headset-mic">
+	</path>
+
+	<!-- interview input volume -->
+	<path name="gain-interview-mic">
+		<ctl name="IN3L Digital Volume" value="125" />
+		<ctl name="IN4L Digital Volume" value="125" />
+	</path>
+
+	<!-- meeting input volume -->
+	<path name="gain-meeting-mic">
+		<!-- TODO: We will make this -->
+	</path>
+
+	<!-- camcorder input volume -->
+	<path name="gain-camcorder-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-camcorder-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-camcorder-dualmic">
+		<ctl name="IN3L Digital Volume" value="116" />
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-camcorder-headset-mic">
+		<ctl name="IN1L Volume" value="12" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-camcorder-headset-main-mic">
+		<ctl name="IN1L Volume" value="12" />
+		<ctl name="IN1L Digital Volume" value="128" />
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-camcorder-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-camcorder-usb-headset-mic">
+	</path>
+
+	<!-- recognition input volume -->
+	<path name="gain-recognition-mic">
+		<ctl name="IN3L Digital Volume" value="164" />
+	</path>
+
+	<path name="gain-recognition-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="164" />
+	</path>
+
+	<path name="gain-recognition-headset-mic">
+		<ctl name="IN1L Volume" value="31" />
+		<ctl name="IN1L Digital Volume" value="137" />
+	</path>
+
+	<path name="gain-recognition-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="164" />
+	</path>
+
+	<path name="gain-recognition-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-recognition-usb-headset-mic">
+	</path>
+
+	<!-- bargein samsung input volume -->
+	<path name="gain-bargein_samsung_engine-mic">
+		<ctl name="IN3L Digital Volume" value="126" />
+		<ctl name="IN4L Digital Volume" value="168" />
+	</path>
+
+	<path name="gain-bargein_samsung_engine-headset-mic">
+		<ctl name="IN1L Volume" value="24" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-bargein_samsung_engine-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-bargein_samsung_engine-usb-headset-mic">
+	</path>
+
+	<!-- bargein external input volume-->
+	<path name="gain-bargein_external_engine-mic">
+		<ctl name="IN3L Digital Volume" value="115" />
+		<ctl name="IN4L Digital Volume" value="132" />
+	</path>
+
+	<path name="gain-bargein_external_engine-headset-mic">
+		<ctl name="IN1L Volume" value="24" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-bargein_external_engine-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-bargein_external_engine-usb-headset-mic">
+	</path>
+
+	<!-- svoice/carmode samsung input volume -->
+	<path name="gain-dualmic_samsung_engine-mic">
+		<ctl name="IN3L Digital Volume" value="164" />
+		<ctl name="IN4L Digital Volume" value="164" />
+	</path>
+
+	<path name="gain-dualmic_samsung_engine-headset-mic">
+		<ctl name="IN1L Volume" value="31" />
+		<ctl name="IN1L Digital Volume" value="137" />
+	</path>
+
+	<path name="gain-dualmic_samsung_engine-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-dualmic_samsung_engine-usb-headset-mic">
+	</path>
+
+	<!-- svoice/carmode external input volume -->
+	<path name="gain-dualmic_external_engine-mic">
+		<ctl name="IN3L Digital Volume" value="176" />
+		<ctl name="IN4L Digital Volume" value="168" />
+	</path>
+
+	<path name="gain-dualmic_external_engine-headset-mic">
+		<ctl name="IN1L Volume" value="31" />
+		<ctl name="IN1L Digital Volume" value="133" />
+	</path>
+
+	<path name="gain-dualmic_external_engine-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-dualmic_external_engine-usb-headset-mic">
+	</path>
+
+	<!-- communication input volume -->
+	<path name="gain-communication-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-communication-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-communication-dual-speaker-mic">
+		<path name="gain-communication-speaker-mic" />
+	</path>
+
+	<path name="gain-communication-gaming-dual-speaker-mic">
+		<path name="gain-communication-speaker-mic" />
+	</path>
+
+	<path name="gain-communication-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-communication-dex-dual-speaker-mic">
+		<path name="gain-communication-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-communication-headset-mic">
+		<ctl name="IN1L Volume" value="31" />
+		<ctl name="IN1L Digital Volume" value="140" />
+	</path>
+
+	<path name="gain-communication-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-communication-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-communication-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-communication-usb-headset-mic">
+	</path>
+
+	<!-- samsung voip fmc input volume -->
+	<path name="gain-samsung_voip_fmc-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dual-speaker-mic">
+		<path name="gain-samsung_voip_fmc-speaker-mic" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-dex-dual-speaker-mic">
+		<path name="gain-samsung_voip_fmc-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-headset-mic">
+		<ctl name="IN1L Volume" value="31" />
+		<ctl name="IN1L Digital Volume" value="140" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-samsung_voip_fmc-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-samsung_voip_fmc-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-samsung_voip_fmc-usb-headset-mic">
+	</path>
+
+	<!-- wificall nb input volume -->
+	<path name="gain-wificall_nb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-wificall_nb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_nb-dual-speaker-mic">
+		<path name="gain-wificall_nb-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_nb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_nb-dex-dual-speaker-mic">
+		<path name="gain-wificall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_nb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_nb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_nb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-wificall_nb-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-wificall_nb-usb-headset-mic">
+	</path>
+
+	<!-- wificall wb input volume -->
+	<path name="gain-wificall_wb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-wificall_wb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_wb-dual-speaker-mic">
+		<path name="gain-wificall_wb-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_wb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_wb-dex-dual-speaker-mic">
+		<path name="gain-wificall_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_wb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_wb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_wb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-wificall_wb-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-wificall_wb-usb-headset-mic">
+	</path>
+
+	<!-- wificall evs input volume -->
+	<path name="gain-wificall_evs-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-wificall_evs-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_evs-dual-speaker-mic">
+		<path name="gain-wificall_evs-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_evs-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_evs-dex-dual-speaker-mic">
+		<path name="gain-wificall_evs-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-wificall_evs-headset-mic">
+		<ctl name="IN1L Volume" value="23" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_evs-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-wificall_evs-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-wificall_evs-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-wificall_evs-usb-headset-mic">
+	</path>
+
+	<!-- Video call input volume -->
+	<path name="gain-video_call-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-video_call-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-video_call-dual-speaker-mic">
+		<path name="gain-video_call-speaker-mic" />
+	</path>
+
+	<path name="gain-video_call-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-video_call-dex-dual-speaker-mic">
+		<path name="gain-video_call-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-video_call-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-video_call-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-video_call-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-video_call-bt-sco-nrec-headset-in">
+	</path>
+
+	<path name="gain-video_call-usb-headset-mic">
+	</path>
+
+	<!-- CP Call Input volume -->
+	<!-- NB volume -->
+	<path name="gain-incall_nb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-incall_nb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_nb-dual-speaker-mic">
+		<path name="gain-incall_nb-speaker-mic" />
+	</path>
+
+	<path name="gain-incall_nb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_nb-dex-dual-speaker-mic">
+		<path name="gain-incall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-incall_nb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_nb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_nb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-incall_nb-usb-headset-mic">
+	</path>
+
+	<!-- WB volume -->
+	<path name="gain-incall_wb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-incall_wb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_wb-dual-speaker-mic">
+		<path name="gain-incall_wb-speaker-mic" />
+	</path>
+
+	<path name="gain-incall_wb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_wb-dex-dual-speaker-mic">
+		<path name="gain-incall_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-incall_wb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_wb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_wb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-incall_wb-usb-headset-mic">
+	</path>
+
+	<!-- VoLTE CP NB input volume -->
+	<path name="gain-volte_cp_nb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_cp_nb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dual-speaker-mic">
+		<path name="gain-volte_cp_nb-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_nb-dex-dual-speaker-mic">
+		<path name="gain-volte_cp_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_nb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_nb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_nb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_cp_nb-usb-headset-mic">
+	</path>
+
+	<!-- VoLTE CP WB input volume -->
+	<path name="gain-volte_cp_wb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_cp_wb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dual-speaker-mic">
+		<path name="gain-volte_cp_wb-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_wb-dex-dual-speaker-mic">
+		<path name="gain-volte_cp_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_wb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_wb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_wb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_cp_wb-usb-headset-mic">
+	</path>
+
+	<!-- EVS Input volume -->
+	<path name="gain-volte_cp_evs-handset-mic">
+		<ctl name="EQ1 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ1 B1 Volume" value="12" />
+		<ctl name="EQ1 B2 Volume" value="12" />
+		<ctl name="EQ1 B3 Volume" value="12" />
+		<ctl name="EQ1 B4 Volume" value="0" />
+		<ctl name="EQ1 B5 Volume" value="0" />
+		<ctl name="EQ2 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ2 B1 Volume" value="12" />
+		<ctl name="EQ2 B2 Volume" value="12" />
+		<ctl name="EQ2 B3 Volume" value="12" />
+		<ctl name="EQ2 B4 Volume" value="0" />
+		<ctl name="EQ2 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_cp_evs-speaker-mic">
+		<ctl name="EQ3 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ3 B1 Volume" value="12" />
+		<ctl name="EQ3 B2 Volume" value="12" />
+		<ctl name="EQ3 B3 Volume" value="12" />
+		<ctl name="EQ3 B4 Volume" value="1" />
+		<ctl name="EQ3 B5 Volume" value="0" />
+		<ctl name="EQ4 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ4 B1 Volume" value="12" />
+		<ctl name="EQ4 B2 Volume" value="12" />
+		<ctl name="EQ4 B3 Volume" value="12" />
+		<ctl name="EQ4 B4 Volume" value="1" />
+		<ctl name="EQ4 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dual-speaker-mic">
+		<path name="gain-volte_cp_evs-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dex-speaker-mic">
+		<ctl name="EQ3 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ3 B1 Volume" value="12" />
+		<ctl name="EQ3 B2 Volume" value="12" />
+		<ctl name="EQ3 B3 Volume" value="12" />
+		<ctl name="EQ3 B4 Volume" value="1" />
+		<ctl name="EQ3 B5 Volume" value="0" />
+		<ctl name="EQ4 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ4 B1 Volume" value="12" />
+		<ctl name="EQ4 B2 Volume" value="12" />
+		<ctl name="EQ4 B3 Volume" value="12" />
+		<ctl name="EQ4 B4 Volume" value="1" />
+		<ctl name="EQ4 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_evs-dex-dual-speaker-mic">
+		<path name="gain-volte_cp_evs-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_cp_evs-headset-mic">
+		<ctl name="IN1L Volume" value="23" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_evs-headphone-mic">
+		<ctl name="EQ1 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ1 B1 Volume" value="12" />
+		<ctl name="EQ1 B2 Volume" value="12" />
+		<ctl name="EQ1 B3 Volume" value="12" />
+		<ctl name="EQ1 B4 Volume" value="0" />
+		<ctl name="EQ1 B5 Volume" value="0" />
+		<ctl name="EQ2 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ2 B1 Volume" value="12" />
+		<ctl name="EQ2 B2 Volume" value="12" />
+		<ctl name="EQ2 B3 Volume" value="12" />
+		<ctl name="EQ2 B4 Volume" value="0" />
+		<ctl name="EQ2 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_cp_evs-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_cp_evs-usb-headset-mic">
+	</path>
+
+	<!-- VoLTE VT CP NB input volume -->
+	<path name="gain-volte_vt_cp_nb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_nb-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-dex-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_vt_cp_nb-usb-headset-mic">
+	</path>
+
+	<!-- VoLTE VT CP WB input volume -->
+	<path name="gain-volte_vt_cp_wb-handset-mic">
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_wb-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dex-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-dex-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-headset-mic">
+		<ctl name="IN1L Volume" value="20" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-headphone-mic">
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_vt_cp_wb-usb-headset-mic">
+	</path>
+
+	<!-- EVS VT Input volume -->
+	<path name="gain-volte_vt_cp_evs-handset-mic">
+		<ctl name="EQ1 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ1 B1 Volume" value="12" />
+		<ctl name="EQ1 B2 Volume" value="12" />
+		<ctl name="EQ1 B3 Volume" value="12" />
+		<ctl name="EQ1 B4 Volume" value="0" />
+		<ctl name="EQ1 B5 Volume" value="0" />
+		<ctl name="EQ2 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ2 B1 Volume" value="12" />
+		<ctl name="EQ2 B2 Volume" value="12" />
+		<ctl name="EQ2 B3 Volume" value="12" />
+		<ctl name="EQ2 B4 Volume" value="0" />
+		<ctl name="EQ2 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="148" />
+		<ctl name="IN4L Digital Volume" value="148" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-speaker-mic">
+		<ctl name="EQ3 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ3 B1 Volume" value="12" />
+		<ctl name="EQ3 B2 Volume" value="12" />
+		<ctl name="EQ3 B3 Volume" value="12" />
+		<ctl name="EQ3 B4 Volume" value="1" />
+		<ctl name="EQ3 B5 Volume" value="0" />
+		<ctl name="EQ4 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ4 B1 Volume" value="12" />
+		<ctl name="EQ4 B2 Volume" value="12" />
+		<ctl name="EQ4 B3 Volume" value="12" />
+		<ctl name="EQ4 B4 Volume" value="1" />
+		<ctl name="EQ4 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_evs-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dex-speaker-mic">
+		<ctl name="EQ3 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ3 B1 Volume" value="12" />
+		<ctl name="EQ3 B2 Volume" value="12" />
+		<ctl name="EQ3 B3 Volume" value="12" />
+		<ctl name="EQ3 B4 Volume" value="1" />
+		<ctl name="EQ3 B5 Volume" value="0" />
+		<ctl name="EQ4 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ4 B1 Volume" value="12" />
+		<ctl name="EQ4 B2 Volume" value="12" />
+		<ctl name="EQ4 B3 Volume" value="12" />
+		<ctl name="EQ4 B4 Volume" value="1" />
+		<ctl name="EQ4 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-dex-dual-speaker-mic">
+		<path name="gain-volte_vt_cp_evs-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-headset-mic">
+		<ctl name="IN1L Volume" value="23" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-headphone-mic">
+		<ctl name="EQ1 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ1 B1 Volume" value="12" />
+		<ctl name="EQ1 B2 Volume" value="12" />
+		<ctl name="EQ1 B3 Volume" value="12" />
+		<ctl name="EQ1 B4 Volume" value="0" />
+		<ctl name="EQ1 B5 Volume" value="0" />
+		<ctl name="EQ2 Coefficients" value="0 0 15 205 4 3 0 204 14 93 253 229 4 10 55 7 9 220 1 12 4 78 63 93 14 133 249 250 4 10 39 131 4 219 5 55 64 0 0 0" />
+		<ctl name="EQ2 B1 Volume" value="12" />
+		<ctl name="EQ2 B2 Volume" value="12" />
+		<ctl name="EQ2 B3 Volume" value="12" />
+		<ctl name="EQ2 B4 Volume" value="0" />
+		<ctl name="EQ2 B5 Volume" value="0" />
+		<ctl name="IN3L Digital Volume" value="128" />
+		<ctl name="IN4L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-volte_vt_cp_evs-usb-headset-mic">
+	</path>
+
+	<!-- TTY Mode Input volume -->
+	<path name="gain-tty_mode-vco-mic">
+		<ctl name="IN3L Digital Volume" value="156" />
+	</path>
+
+	<path name="gain-tty_mode-full-mic">
+		<ctl name="IN1L Volume" value="26" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-tty_mode-hco-mic">
+		<ctl name="IN1L Volume" value="26" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-tty_mode-usb-full-mic">
+	</path>
+
+	<path name="gain-tty_mode-usb-hco-mic">
+	</path>
+
+	<!-- AP TTY Mode Input volume -->
+	<path name="gain-ap_tty_mode-vco-mic">
+		<ctl name="IN3L Digital Volume" value="156" />
+	</path>
+
+	<path name="gain-ap_tty_mode-full-mic">
+		<ctl name="IN1L Volume" value="26" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-ap_tty_mode-hco-mic">
+		<ctl name="IN1L Volume" value="26" />
+		<ctl name="IN1L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-ap_tty_mode-usb-full-mic">
+	</path>
+
+	<path name="gain-ap_tty_mode-usb-hco-mic">
+	</path>
+
+	<!-- call forwarding input volume -->
+	<path name="gain-call_forwarding_primary-mic">
+		<!-- we use default volume -->
+	</path>
+
+	<!-- Spectro input volume -->
+	<path name="gain-call_spectro-mic">
+		<ctl name="IN3L Digital Volume" value="154" />
+	</path>
+
+	<!-- Factory test paths -->
+	<!-- Loopback (no delay) volume -->
+	<path name="gain-loopback-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="110" />
+		<ctl name="HPOUT2R Impedance Volume" value="110" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<!-- Packet Loopback output volume-->
+	<path name="gain-loopback_packet-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-loopback_packet-speaker2">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-loopback_packet-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-loopback_packet-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-loopback_packet-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="112" />
+		<ctl name="HPOUT2R Impedance Volume" value="112" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-loopback_packet-usb-headset">
+	</path>
+
+	<!-- Realtime Loopback output volume-->
+	<path name="gain-realtimeloopback-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-realtimeloopback-speaker2">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-realtimeloopback-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-realtimeloopback-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-realtimeloopback-headset">
+		<ctl name="HPOUT2L Impedance Volume" value="107" />
+		<ctl name="HPOUT2R Impedance Volume" value="107" />
+		<ctl name="HPOUT2L Input 1 Volume" value="32" />
+		<ctl name="HPOUT2R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-realtimeloopback-bt-sco-headset">
+	</path>
+
+	<path name="gain-realtimeloopback-usb-headset">
+	</path>
+
+	<!-- echo(rms) test output volume -->
+	<path name="gain-echo_test-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-echo_test-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-echo_test-speaker2">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-echo_test-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-echo_thd_test-handset">
+		<ctl name="Left AMP PCM Gain" value="4" />
+		<ctl name="Left Digital PCM Volume" value="761" />
+	</path>
+
+	<path name="gain-echo_thd_test-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-echo_thd_test-speaker2">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-echo_thd_test-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<!-- Loopback Input (no delay) -->
+	<path name="gain-loopback-mic">
+		<ctl name="IN3L Digital Volume" value="134" />
+	</path>
+
+	<path name="gain-loopback-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="140" />
+	</path>
+
+	<!-- Packet Loopback Input -->
+	<path name="gain-loopback_packet-mic">
+		<ctl name="IN3L Digital Volume" value="144" />
+	</path>
+
+	<path name="gain-loopback_packet-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="134" />
+	</path>
+
+	<path name="gain-loopback_packet-headset-mic">
+		<ctl name="IN1L Volume" value="16" />
+		<ctl name="IN1L Digital Volume" value="121" />
+	</path>
+
+	<path name="gain-loopback_packet-dualmic">
+		<ctl name="IN3L Digital Volume" value="146" />
+		<ctl name="IN4L Digital Volume" value="138" />
+	</path>
+
+	<path name="gain-loopback_packet-handset-dualmic">
+		<ctl name="IN3L Digital Volume" value="146" />
+		<ctl name="IN4L Digital Volume" value="138" />
+	</path>
+
+	<path name="gain-loopback_packet-speaker-dualmic">
+		<ctl name="IN3L Digital Volume" value="146" />
+		<ctl name="IN4L Digital Volume" value="138" />
+	</path>
+
+	<path name="gain-loopback_packet-usb-headset-mic">
+	</path>
+
+	<!-- Realtime Loopback Input -->
+	<path name="gain-realtimeloopback-mic">
+		<ctl name="IN3L Digital Volume" value="96" />
+	</path>
+
+	<path name="gain-realtimeloopback-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="122" />
+	</path>
+
+	<path name="gain-realtimeloopback-headset-mic">
+		<ctl name="IN1L Volume" value="24" />
+		<ctl name="IN1L Digital Volume" value="80" />
+	</path>
+
+	<path name="gain-realtimeloopback-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-realtimeloopback-usb-headset-mic">
+	</path>
+
+	<!-- echo(rms) test input volume -->
+	<path name="gain-echo_test-mic">
+		<ctl name="IN3L Digital Volume" value="124" />
+	</path>
+
+	<path name="gain-echo_test-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="126" />
+	</path>
+
+	<path name="gain-echo_test-dualmic">
+		<ctl name="IN3L Digital Volume" value="145" />
+		<ctl name="IN4L Digital Volume" value="137" />
+	</path>
+
+	<path name="gain-echo_thd_test-mic">
+		<ctl name="IN3L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-echo_thd_test-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-echo_thd_test-dualmic">
+		<ctl name="IN3L Digital Volume" value="116" />
+		<ctl name="IN4L Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-karaoke-2nd-mic">
+		<ctl name="IN4L Digital Volume" value="130" />
+	</path>
+</mixer>
