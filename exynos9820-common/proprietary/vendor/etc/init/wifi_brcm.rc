@@ -1,0 +1,38 @@
+on post-fs-data
+    # for WIFI DONGLE EVENT LOG
+    write /data/vendor/conn/.logtrace.info 1
+    chown wifi wifi /data/vendor/conn/.logtrace.info
+    chmod 0640 /data/vendor/conn/.logtrace.info
+
+    chown wifi wifi /data/vendor/conn/.frameburst.info
+    chmod 0640 /data/vendor/conn/.frameburst.info
+
+    chown wifi wifi /data/vendor/conn/.bad_ap_list.info
+    chmod 0640 /data/vendor/conn/.bad_ap_list.info
+
+    chown wifi wifi /sys/wifi/cid
+    chmod 0640 /sys/wifi/cid
+    chown wifi wifi /sys/wifi/wifiver
+    chmod 0640 /sys/wifi/wifiver
+    chown wifi wifi /sys/wifi/pm
+    chmod 0640 /sys/wifi/pm
+    chown wifi wifi /sys/wifi/ant
+    chmod 0640 /sys/wifi/ant
+    chown wifi wifi /sys/wifi/softap
+    chmod 0640 /sys/wifi/softap
+    chown wifi wifi /sys/wifi/memdump
+    chmod 0644 /sys/wifi/memdump
+    chown wifi wifi /sys/wifi/frameburst
+    chmod 0640 /sys/wifi/frameburst
+    chown wifi wifi /sys/wifi/bad_ap_list
+    chmod 0640 /sys/wifi/bad_ap_list
+    chown wifi wifi /sys/wifi/control_he_enab
+    chmod 0640 /sys/wifi/control_he_enab
+
+on boot
+    # for fwpath
+    chown wifi wifi /sys/module/dhd/parameters/firmware_path
+    chown wifi wifi /sys/module/dhd/parameters/nvram_path
+
+on property:vold.decrypt=trigger_restart_framework
+exec - wifi wifi -- /vendor/bin/hw/macloader

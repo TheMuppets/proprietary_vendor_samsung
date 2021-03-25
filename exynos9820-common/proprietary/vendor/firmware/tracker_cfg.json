@@ -1,0 +1,873 @@
+{
+   "WorkPointToScore" : {
+      "working_point_lut_detection" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -142,
+            "OutThrScore" : -142
+         },
+         {
+            "WorkingPt" : 128,
+            "InternalScore" : -125,
+            "OutThrScore" : -125
+         },
+         {
+            "WorkingPt" : 256,
+            "InternalScore" : -107,
+            "OutThrScore" : -107
+         },
+         {
+            "WorkingPt" : 384,
+            "InternalScore" : -87,
+            "OutThrScore" : -87
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -63,
+            "OutThrScore" : -63
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -34,
+            "OutThrScore" : -34
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : 4,
+            "OutThrScore" : 4
+         },
+         {
+            "WorkingPt" : 832,
+            "InternalScore" : 30,
+            "OutThrScore" : 30
+         },
+         {
+            "WorkingPt" : 864,
+            "InternalScore" : 46,
+            "OutThrScore" : 46
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : 65,
+            "OutThrScore" : 65
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : 93,
+            "OutThrScore" : 93
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : 133,
+            "OutThrScore" : 133
+         },
+         {
+            "WorkingPt" : 976,
+            "InternalScore" : 164,
+            "OutThrScore" : 164
+         },
+         {
+            "WorkingPt" : 992,
+            "InternalScore" : 233,
+            "OutThrScore" : 233
+         },
+         {
+            "WorkingPt" : 996,
+            "InternalScore" : 256,
+            "OutThrScore" : 256
+         },
+         {
+            "WorkingPt" : 997,
+            "InternalScore" : 311,
+            "OutThrScore" : 311
+         },
+         {
+            "WorkingPt" : 998,
+            "InternalScore" : 497,
+            "OutThrScore" : 497
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : 887,
+            "OutThrScore" : 887
+         },
+         {
+            "WorkingPt" : 1008,
+            "InternalScore" : 1244,
+            "OutThrScore" : 1244
+         },
+         {
+            "WorkingPt" : 1024,
+            "InternalScore" : 1957,
+            "OutThrScore" : 1957
+         }
+      ],
+      "working_point_lut_tracking" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -217,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 256,
+            "InternalScore" : -165,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 320,
+            "InternalScore" : -153,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 352,
+            "InternalScore" : -146,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 368,
+            "InternalScore" : -143,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 384,
+            "InternalScore" : -135,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 448,
+            "InternalScore" : -107,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 480,
+            "InternalScore" : -92,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -82,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 576,
+            "InternalScore" : -64,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -41,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 704,
+            "InternalScore" : -18,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 736,
+            "InternalScore" : -6,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : 9,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : 79,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 912,
+            "InternalScore" : 92,
+            "OutThrScore" : -974
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : 126,
+            "OutThrScore" : -580
+         },
+         {
+            "WorkingPt" : 944,
+            "InternalScore" : 147,
+            "OutThrScore" : 17
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : 147,
+            "OutThrScore" : 152
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : 147,
+            "OutThrScore" : 563
+         }
+      ],
+      "working_point_lut_roi_tracking" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -444,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -255,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 576,
+            "InternalScore" : -232,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 608,
+            "InternalScore" : -220,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 624,
+            "InternalScore" : -189,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -153,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 656,
+            "InternalScore" : -117,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 664,
+            "InternalScore" : -98,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 672,
+            "InternalScore" : -88,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 704,
+            "InternalScore" : -69,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : -35,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 832,
+            "InternalScore" : 3,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : 51,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : 74,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 944,
+            "InternalScore" : 86,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : 128,
+            "OutThrScore" : -863
+         },
+         {
+            "WorkingPt" : 968,
+            "InternalScore" : 162,
+            "OutThrScore" : 134
+         },
+         {
+            "WorkingPt" : 976,
+            "InternalScore" : 162,
+            "OutThrScore" : 177
+         },
+         {
+            "WorkingPt" : 992,
+            "InternalScore" : 162,
+            "OutThrScore" : 286
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : 162,
+            "OutThrScore" : 400
+         }
+      ]
+   },
+   "HybridWorkPointToScore" : {
+      "working_point_lut_hybrid_detection" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -1024,
+            "OutThrScore" : 128
+         },
+         {
+            "WorkingPt" : 128,
+            "InternalScore" : -1024,
+            "OutThrScore" : 256
+         },
+         {
+            "WorkingPt" : 256,
+            "InternalScore" : -1024,
+            "OutThrScore" : 384
+         },
+         {
+            "WorkingPt" : 384,
+            "InternalScore" : -1024,
+            "OutThrScore" : 512
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -1024,
+            "OutThrScore" : 640
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -1024,
+            "OutThrScore" : 768
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : -1024,
+            "OutThrScore" : 832
+         },
+         {
+            "WorkingPt" : 832,
+            "InternalScore" : -1024,
+            "OutThrScore" : 864
+         },
+         {
+            "WorkingPt" : 864,
+            "InternalScore" : -1024,
+            "OutThrScore" : 896
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : -1024,
+            "OutThrScore" : 928
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : -1024,
+            "OutThrScore" : 960
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : -1024,
+            "OutThrScore" : 976
+         },
+         {
+            "WorkingPt" : 976,
+            "InternalScore" : -1024,
+            "OutThrScore" : 992
+         },
+         {
+            "WorkingPt" : 992,
+            "InternalScore" : -1024,
+            "OutThrScore" : 996
+         },
+         {
+            "WorkingPt" : 996,
+            "InternalScore" : -1024,
+            "OutThrScore" : 997
+         },
+         {
+            "WorkingPt" : 997,
+            "InternalScore" : -1024,
+            "OutThrScore" : 998
+         },
+         {
+            "WorkingPt" : 998,
+            "InternalScore" : -1024,
+            "OutThrScore" : 1000
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : -1024,
+            "OutThrScore" : 1008
+         },
+         {
+            "WorkingPt" : 1008,
+            "InternalScore" : -1024,
+            "OutThrScore" : 1024
+         },
+         {
+            "WorkingPt" : 1024,
+            "InternalScore" : -1024,
+            "OutThrScore" : -515
+         }
+      ],
+      "working_point_lut_hybrid_tracking" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -1024,
+            "OutThrScore" : -615
+         },
+         {
+            "WorkingPt" : 64,
+            "InternalScore" : -1024,
+            "OutThrScore" : -177
+         },
+         {
+            "WorkingPt" : 256,
+            "InternalScore" : -1024,
+            "OutThrScore" : -144
+         },
+         {
+            "WorkingPt" : 320,
+            "InternalScore" : -1024,
+            "OutThrScore" : -133
+         },
+         {
+            "WorkingPt" : 368,
+            "InternalScore" : -1024,
+            "OutThrScore" : -124
+         },
+         {
+            "WorkingPt" : 384,
+            "InternalScore" : -1024,
+            "OutThrScore" : -122
+         },
+         {
+            "WorkingPt" : 448,
+            "InternalScore" : -1024,
+            "OutThrScore" : -109
+         },
+         {
+            "WorkingPt" : 480,
+            "InternalScore" : -1024,
+            "OutThrScore" : -103
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -1024,
+            "OutThrScore" : -95
+         },
+         {
+            "WorkingPt" : 576,
+            "InternalScore" : -1024,
+            "OutThrScore" : -81
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -1024,
+            "OutThrScore" : -64
+         },
+         {
+            "WorkingPt" : 704,
+            "InternalScore" : -1024,
+            "OutThrScore" : -44
+         },
+         {
+            "WorkingPt" : 736,
+            "InternalScore" : -1024,
+            "OutThrScore" : -33
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : -1024,
+            "OutThrScore" : -20
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : -1024,
+            "OutThrScore" : 42
+         },
+         {
+            "WorkingPt" : 912,
+            "InternalScore" : -1024,
+            "OutThrScore" : 57
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : -1024,
+            "OutThrScore" : 74
+         },
+         {
+            "WorkingPt" : 944,
+            "InternalScore" : -1024,
+            "OutThrScore" : 97
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : -1024,
+            "OutThrScore" : 125
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : -1024,
+            "OutThrScore" : 383
+         }
+      ],
+      "working_point_lut_hybrid_roi_tracking" : [
+         {
+            "WorkingPt" : 0,
+            "InternalScore" : -444,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 512,
+            "InternalScore" : -255,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 576,
+            "InternalScore" : -232,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 608,
+            "InternalScore" : -220,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 624,
+            "InternalScore" : -189,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 640,
+            "InternalScore" : -153,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 656,
+            "InternalScore" : -117,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 664,
+            "InternalScore" : -98,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 672,
+            "InternalScore" : -88,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 704,
+            "InternalScore" : -69,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 768,
+            "InternalScore" : -35,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 832,
+            "InternalScore" : 3,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 896,
+            "InternalScore" : 51,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 928,
+            "InternalScore" : 74,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 944,
+            "InternalScore" : 86,
+            "OutThrScore" : -1024
+         },
+         {
+            "WorkingPt" : 960,
+            "InternalScore" : 128,
+            "OutThrScore" : -863
+         },
+         {
+            "WorkingPt" : 968,
+            "InternalScore" : 162,
+            "OutThrScore" : 134
+         },
+         {
+            "WorkingPt" : 976,
+            "InternalScore" : 162,
+            "OutThrScore" : 177
+         },
+         {
+            "WorkingPt" : 992,
+            "InternalScore" : 162,
+            "OutThrScore" : 286
+         },
+         {
+            "WorkingPt" : 1000,
+            "InternalScore" : 162,
+            "OutThrScore" : 400
+         }
+      ]
+   },
+   "Tune" : {
+      "find_det_face_in_list_overlap_th" : 205,
+      "hybrid_find_det_face_in_list_overlap_th" : 205,
+      "tracker_th_post" : -200,
+      "scoreDecay" : 32,
+      "kill_rects_with_little_history" : 1,
+      "tracker_th_hw_large_face" : 40960,
+      "tracker_th_hw" : 200,
+      "tracker_th_hw_frontal" : 200,
+      "select_method_th" : 205,
+      "delete_overlap_rect_th" : 410,
+      "check_fully_contained_in_delete_ovelaps" : 1,
+      "check_fully_contained_dilation_factor" : 5,
+      "num_of_pixels_xy_hysteresis" : 0,
+      "hybrid_num_of_pixels_xy_hysteresis" : 0,
+      "ratio_of_scale_hysteresis" : 281,
+      "hybrid_ratio_of_scale_hysteresis" : 281,
+      "hybrid_not_detected_threshold_factor" : 256,
+      "hybrid_not_detected_threshold_offset" : 0,
+      "hybrid_not_detected_threshold_factor_selfie" : 256,
+      "hybrid_not_detected_threshold_offset_selfie" : 0
+   },
+   "hybridTune" : {
+      "hybrid_dir_preference_smaller" : 64,
+      "hybrid_dir_preference_larger" : 256,
+      "hybrid_frame_diff_scale_adaptor" : 256,
+      "hybrid_new_candidate_penalty" : 1000,
+      "hybrid_frame_diff_weight" : 200,
+      "hybrid_use_scores_conversion_lut" : 1,
+      "hybrid_score_correlation_factor" : 504,
+      "hybrid_score_correlation_offset" : 1,
+      "hybrid_decay_factor_mantissa" : 1638,
+      "hybrid_decay_factor_neg_exp" : 14,
+      "hybrid_max_cnn_contribution" : 256
+   },
+   "FrameCfgStr" : {
+      "TrackModeType" : 1,
+      "hybrid_single_frame_cnn_budget" : 4,
+      "hybrid_tracking_cnn_budget" : 4,
+      "selfie_mode_enable" : 0,
+      "sortTrackedFacesType" : "None",
+      "smoothing_level" : 0,
+      "tracker_working_point" : 900,
+      "selfie_best_tracker_working_point" : 900
+   },
+   "postDetectStr" : {
+      "max_cluster_bins_axis_sh" : 5,
+      "max_valid_cost_calculations" : 250
+   },
+   "SizeStr" : {
+      "Width" : 640,
+      "Height" : 360
+   },
+   "hybrid_cnn_score_to_vra_score_lut" : [
+      [ -834, -658 ],
+      [ -822, -651 ],
+      [ -822, -645 ],
+      [ -822, -638 ],
+      [ -822, -632 ],
+      [ -822, -626 ],
+      [ -822, -620 ],
+      [ -822, -614 ],
+      [ -822, -608 ],
+      [ -822, -601 ],
+      [ -822, -595 ],
+      [ -822, -589 ],
+      [ -822, -583 ],
+      [ -817, -577 ],
+      [ -817, -570 ],
+      [ -811, -564 ],
+      [ -811, -558 ],
+      [ -811, -552 ],
+      [ -811, -546 ],
+      [ -798, -540 ],
+      [ -798, -533 ],
+      [ -796, -527 ],
+      [ -792, -521 ],
+      [ -786, -515 ],
+      [ -779, -509 ],
+      [ -764, -502 ],
+      [ -761, -496 ],
+      [ -752, -490 ],
+      [ -744, -484 ],
+      [ -742, -478 ],
+      [ -735, -472 ],
+      [ -730, -465 ],
+      [ -722, -459 ],
+      [ -714, -453 ],
+      [ -707, -447 ],
+      [ -701, -441 ],
+      [ -695, -435 ],
+      [ -687, -428 ],
+      [ -679, -422 ],
+      [ -670, -416 ],
+      [ -662, -410 ],
+      [ -655, -404 ],
+      [ -648, -398 ],
+      [ -640, -392 ],
+      [ -631, -386 ],
+      [ -624, -379 ],
+      [ -617, -373 ],
+      [ -609, -367 ],
+      [ -603, -361 ],
+      [ -595, -356 ],
+      [ -588, -350 ],
+      [ -580, -344 ],
+      [ -574, -338 ],
+      [ -567, -332 ],
+      [ -560, -327 ],
+      [ -552, -321 ],
+      [ -547, -316 ],
+      [ -541, -310 ],
+      [ -535, -305 ],
+      [ -529, -300 ],
+      [ -524, -295 ],
+      [ -518, -290 ],
+      [ -514, -285 ],
+      [ -507, -281 ],
+      [ -503, -276 ],
+      [ -497, -272 ],
+      [ -492, -268 ],
+      [ -487, -264 ],
+      [ -482, -260 ],
+      [ -478, -256 ],
+      [ -473, -252 ],
+      [ -468, -249 ],
+      [ -464, -245 ],
+      [ -460, -242 ],
+      [ -455, -239 ],
+      [ -451, -236 ],
+      [ -447, -233 ],
+      [ -443, -230 ],
+      [ -440, -227 ],
+      [ -436, -225 ],
+      [ -434, -222 ],
+      [ -430, -220 ],
+      [ -427, -217 ],
+      [ -424, -215 ],
+      [ -421, -213 ],
+      [ -417, -211 ],
+      [ -414, -209 ],
+      [ -412, -207 ],
+      [ -409, -205 ],
+      [ -406, -203 ],
+      [ -404, -201 ],
+      [ -401, -199 ],
+      [ -399, -198 ],
+      [ -396, -196 ],
+      [ -394, -194 ],
+      [ -391, -192 ],
+      [ -388, -190 ],
+      [ -385, -189 ],
+      [ -383, -187 ],
+      [ -380, -185 ],
+      [ -377, -184 ],
+      [ -374, -182 ],
+      [ -372, -180 ],
+      [ -369, -178 ],
+      [ -365, -177 ],
+      [ -362, -174 ],
+      [ -359, -172 ],
+      [ -356, -170 ],
+      [ -352, -168 ],
+      [ -349, -166 ],
+      [ -344, -164 ],
+      [ -341, -162 ],
+      [ -338, -159 ],
+      [ -332, -157 ],
+      [ -329, -154 ],
+      [ -323, -151 ],
+      [ -318, -148 ],
+      [ -313, -145 ],
+      [ -307, -142 ],
+      [ -300, -139 ],
+      [ -295, -136 ],
+      [ -289, -132 ],
+      [ -282, -129 ],
+      [ -274, -125 ],
+      [ -268, -121 ],
+      [ -258, -117 ],
+      [ -251, -113 ],
+      [ -242, -109 ],
+      [ -235, -104 ],
+      [ -225, -100 ],
+      [ -217, -95 ],
+      [ -207, -91 ],
+      [ -197, -86 ],
+      [ -187, -81 ],
+      [ -179, -76 ],
+      [ -166, -71 ],
+      [ -157, -66 ],
+      [ -147, -61 ],
+      [ -136, -55 ],
+      [ -124, -50 ],
+      [ -114, -44 ],
+      [ -102, -39 ],
+      [ -91, -33 ],
+      [ -77, -28 ],
+      [ -67, -22 ],
+      [ -55, -16 ],
+      [ -41, -10 ],
+      [ -30, -5 ],
+      [ -15, 1 ],
+      [ -1, 7 ],
+      [ 14, 13 ],
+      [ 24, 19 ],
+      [ 39, 25 ],
+      [ 55, 31 ],
+      [ 71, 37 ],
+      [ 86, 43 ],
+      [ 100, 49 ],
+      [ 114, 55 ],
+      [ 131, 61 ],
+      [ 150, 67 ],
+      [ 169, 73 ],
+      [ 182, 79 ],
+      [ 198, 85 ],
+      [ 215, 91 ],
+      [ 239, 97 ],
+      [ 254, 104 ],
+      [ 280, 110 ],
+      [ 299, 116 ],
+      [ 312, 122 ],
+      [ 326, 128 ],
+      [ 343, 134 ],
+      [ 364, 140 ],
+      [ 381, 146 ],
+      [ 398, 153 ],
+      [ 411, 159 ],
+      [ 424, 165 ],
+      [ 441, 171 ],
+      [ 459, 177 ],
+      [ 466, 183 ],
+      [ 481, 190 ],
+      [ 495, 196 ],
+      [ 527, 202 ],
+      [ 544, 208 ],
+      [ 556, 214 ],
+      [ 578, 220 ],
+      [ 603, 227 ],
+      [ 621, 233 ],
+      [ 643, 239 ],
+      [ 675, 245 ],
+      [ 697, 251 ],
+      [ 757, 257 ],
+      [ 757, 264 ],
+      [ 757, 270 ],
+      [ 757, 276 ],
+      [ 762, 282 ],
+      [ 849, 288 ],
+      [ 849, 294 ],
+      [ 849, 301 ],
+      [ 849, 307 ],
+      [ 904, 314 ]
+   ]
+}

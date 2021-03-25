@@ -1,0 +1,6 @@
+{
+   "trackerCfg" : "tracker_cfg.json",
+   "preprocessingCfg" : "pp_cfg.json",
+   "cnnType" : "HFD_SDNN",
+   "cnnConcurrencyType" : "HFD_WAIT_FOR_CNN"
+}
