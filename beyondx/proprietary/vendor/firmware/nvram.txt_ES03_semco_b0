@@ -1,0 +1,441 @@
+#BCM4375B0 SWB-E43 R02 SEMCO nvram_180803_FW18.35.112
+
+
+# bcm4375 B0, SEMCO E43 R02 nvram
+# 2G iPA, 5G ePA
+NVRAMRev=$Rev: 506283 $
+sromrev=11
+boardrev=0x1100
+boardtype=0x088e
+boardflags=0x10401001
+boardflags2=0x00800000
+boardflags3=0x40000100
+#boardnum=57410
+macaddr=00:90:4c:30:40:01
+jtag_irw=38
+
+#Regulatory specific
+ccode=GB
+regrev=0
+
+# Board specific
+vendid=0x14e4
+devid=0x4470
+manfid=0x2d0
+antswitch=0
+pdgain5g=0
+pdgain2g=0
+aa2g=3
+aa5g=3
+agbg0=0
+agbg1=0
+aga0=0
+aga1=0
+extpagain5g=0
+slice/1/extpagain2g=2
+slice/1/extpagain5g=0
+rxgains2gelnagaina0=2
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=2
+rxgains5gtrisoa0=6
+rxgains5gtrelnabypa0=1
+rxgains5gmelnagaina0=2
+rxgains5gmtrisoa0=6
+rxgains5gmtrelnabypa0=1
+rxgains5ghelnagaina0=2
+rxgains5ghtrisoa0=6
+rxgains5ghtrelnabypa0=1
+rxgains2gelnagaina1=2
+rxgains2gtrisoa1=6
+rxgains2gtrelnabypa1=1
+rxgains5gelnagaina1=2
+rxgains5gtrisoa1=6
+rxgains5gtrelnabypa1=1
+rxgains5gmelnagaina1=2
+rxgains5gmtrisoa1=6
+rxgains5gmtrelnabypa1=1
+rxgains5ghelnagaina1=2
+rxgains5ghtrisoa1=6
+rxgains5ghtrelnabypa1=1
+
+#RSSI related
+rssicorrnorm_c0=0,0
+rssicorrnorm_c1=0,0
+rssicorrnorm5g_c0=0,0,0,0,0,0,0,0,0,0,0,0
+rssicorrnorm5g_c1=0,0,0,0,0,0,0,0,0,0,0,0
+rssi_cal_freq_grp_2g= 0x08,0x01,0x91,0x2a,0x23,0xb3,0xc4
+rssi_delta_5gl=-7 -5 -7 -5 -7 -5 -7 -5 -7 -5 -7 -5 -6 -1 -6 -1 -6 -1 -6 -1 -6 -1 -6 -1
+rssi_delta_5gml=-10 -7 -10 -7 -10 -7 -10 -7 -10 -7 -10 -7 -6 -3 -6 -3 -6 -3 -6 -3 -6 -3 -6 -3
+rssi_delta_5gmu=-10 -7 -10 -7 -10 -7 -10 -7 -10 -7 -10 -7 -6 -3 -6 -3 -6 -3 -6 -3 -6 -3 -6 -3
+rssi_delta_5gh=-10 -5 -10 -5 -10 -5 -10 -5 -10 -5 -10 -5 -6 -1 -6 -1 -6 -1 -6 -1 -6 -1 -6 -1
+rssi_cal_rev=1
+rxgaincal_rssical=1
+rssi_delta_2gb0=-6,8,-6,8,-6,8,-6,8,-22,-10,-22,-10,-22,-10,-22,-10
+rssi_delta_2gb1=-6,8,-6,8,-6,8,-6,8,-22,-10,-22,-10,-22,-10,-22,-10
+rssi_delta_2gb2=-6,8,-6,8,-6,8,-6,8,-22,-10,-22,-10,-22,-10,-22,-10
+rssi_delta_2gb3=-6,8,-6,8,-6,8,-6,8,-22,-10,-22,-10,-22,-10,-22,-10
+rssi_delta_2gb4=-6,8,-6,8,-6,8,-6,8,-22,-10,-22,-10,-22,-10,-22,-10
+gain_cal_temp=25
+trloss_adj_time_dur=30
+trloss_adj_temp_thresh=10
+temp_comp_tr_loss=1
+
+rxgain_tempcoeff2g_sub=28,31,25,30,25,27,28,24,24,23
+rxgain_tempcoeff5gl=32,29
+rxgain_tempcoeff5gml=31,46
+rxgain_tempcoeff5gmu=26,36
+rxgain_tempcoeff5gh=31,36
+rxgain_tempcoeff2g_sub_elnaoff=28,30,25,25,25,25,22,20,21,23
+rxgain_tempcoeff5gl_elnaoff=48,55
+rxgain_tempcoeff5gml_elnaoff=50,56
+rxgain_tempcoeff5gmu_elnaoff=51,57
+rxgain_tempcoeff5gh_elnaoff=49,57
+
+#Two range TSSI
+tworangetssi5g=0
+slice/1/tworangetssi2g=0
+slice/1/lowpowerrange2g=0
+
+nocrc=1
+otpimagesize=502
+
+xtalfreq=37400
+
+txchain=3
+rxchain=3
+
+## --- 11b ANT selection Diversity ---
+cck_onecore_tx=1
+#slice/1/ocl=0
+### --- 11b ANT selection Diversity core mask setting ---
+#ocl_cm=1
+#slice/1/ocl_cm=1
+
+cckdigfilttype=2
+slice/1/bphyscale=42
+slice/1/cck_txgain_offsetval=36
+
+#bit mask for slice capability bit 0:2G bit 1:5G
+bandcap=2
+slice/1/bandcap=1
+
+#TXBF Related
+rpcal2g=0
+rpcal5gb0=0
+rpcal5gb1=0
+rpcal5gb2=0
+rpcal5gb3=0
+slice/1/rpcal2g=0
+slice/1/rpcal5gb0=0
+slice/1/rpcal5gb1=0
+slice/1/rpcal5gb2=0
+slice/1/rpcal5gb3=0
+
+#FDSS Related
+#fdss_level_5g=-1,-1
+#fdss_interp_en=0
+#slice/1/fdss_level_2g=4,4
+#slice/1/fdss_interp_en=1
+
+#PAPRR Related
+slice/1/paprdis=1
+slice/1/paprrmcsgain2g=128,128,128,128,128,0,0,0,0,0
+slice/1/paprrmcsgamma2g=500,500,550,700,700,-1,-1,-1,-1,-1
+
+#Tempsense Related
+tempthresh=255
+tempoffset=-1
+rawtempsense=0x1ff
+phycal_tempdelta=15
+temps_period=15
+temps_hysteresis=15
+
+#------------- TSSI Related -------------
+tssipos2g=1
+tssipos5g=1
+
+AvVmid_c0=2,131,5,52,6,39,6,39,6,39
+AvVmid_c1=2,130,6,39,6,35,6,35,6,37
+
+slice/1/AvVmid_c0=6,70,1,159,1,166,1,153,1,153
+slice/1/AvVmid_c1=6,65,1,155,1,158,1,147,1,151
+# CCK in case of multi mode 5
+pa2gccka0=0xff56,0x1c3c,0xfca5
+pa2gccka1=0xff5b,0x1ce9,0xfc97
+# OFDM in case of multi_mode 5
+pa2ga0=0xffed,0x1ca7,0xfd48
+pa2ga1=0xffea,0x1d9b,0xfd23
+
+pa5ga0=0xff44,0x1883,0xfd35,0xff44,0x1877,0xfd32,0xff41,0x1831,0xfd35,0xff35,0x1784,0xfd3a
+pa5ga1=0xff42,0x176c,0xfd4d,0xff3f,0x170a,0xfd57,0xff42,0x1730,0xfd55,0xff3c,0x16fe,0xfd50
+
+# Max power and offsets
+maxp2ga0=84
+maxp2ga1=84
+maxp5ga0=74,74,74,74
+maxp5ga1=74,74,74,74
+subband5gver=0x4
+paparambwver=3
+cckpwroffset0=0
+cckpwroffset1=0
+pdoffset40ma0=0x0000
+pdoffset80ma0=0x0000
+pdoffset40ma1=0x0000
+pdoffset80ma1=0x0000
+pdoffset20mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset20mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset1_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset2_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset1_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset2_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+cckbw202gpo=0
+cckbw20ul2gpo=0
+mcsbw202gpo=0xDA886664
+mcsbw402gpo=0xDA886664
+dot11agofdmhrbw202gpo=0x6666
+ofdmlrbw202gpo=0x0022
+mcsbw205glpo=0x66644440
+mcsbw405glpo=0x88866662
+mcsbw805glpo=0xAAA88884
+mcsbw1605glpo=0
+mcsbw205gmpo=0x66644440
+mcsbw405gmpo=0x88866662
+mcsbw805gmpo=0xAAA88884
+mcsbw1605gmpo=0
+mcsbw205ghpo=0x66644440
+mcsbw405ghpo=0x88866662
+mcsbw805ghpo=0xAAA88884
+
+slice/1/powoffs2gtna0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/powoffs2gtna1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+#slice/1/pdoffsetcckma0=1
+#slice/1/pdoffsetcckma1=1
+mcs1024qam2gpo=0xCCCC
+mcs1024qam5glpo=0xCCAA88
+mcs1024qam5gmpo=0xCCAA88
+mcs1024qam5ghpo=0xCCAA88
+mcs1024qam5gx1po=0xCCAA88
+mcs1024qam5gx2po=0xCCAA88
+mcs8poexp=0
+mcs9poexp=0
+mcs10poexp=0
+
+# 5G power offset per channel for band edge channel
+powoffs5g20mtna0=0,0,0,0,0,0,0
+powoffs5g20mtna1=0,0,0,0,0,0,0
+powoffs5g40mtna0=0,0,0,0,0
+powoffs5g40mtna1=0,0,0,0,0
+powoffs5g80mtna0=0,0,0,0,0
+powoffs5g80mtna1=0,0,0,0,0
+mcs11poexp=0
+
+# OLPC Related
+disable_olpc=0
+olpc_thresh5g=44
+olpc_anchor5g=48
+slice/1/disable_olpc=0
+slice/1/olpc_thresh2g=44
+slice/1/olpc_anchor2g=48
+
+#LTE Coex Related
+#ltecxmux=0
+#ltecxpadnum=0x0504
+#ltecxfnsel=0x44
+#ltecxgcigpio=0x04
+#OOB params
+#device_wake_opt=1
+host_wake_opt=0
+
+# SWCTRL Related
+swctrlmap_5g=0xe0e0c0c0,0xa0a00000,0x80800000,0x000000,0x3FF
+swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+fem_table_init_val=0x00000000,0x80800000
+fem_table_init_val_ext=0x00000000,0x00000000
+
+slice/1/swctrlmap_2g=0x00000000,0x03030000,0x01010000,0x000000,0x3FF
+slice/1/swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x003
+
+slice/1/fem_table_init_val=0x01010000,0x00000000
+slice/1/fem_table_init_val_ext=0x00000000,0x00000000
+
+#clb2gslice0core0=0x000
+clb2gslice1core0=0x003
+clb5gslice0core0=0x0E0
+#clb5gslice1core0=0x070
+#clb2gslice0core1=0x000
+clb2gslice1core1=0x003
+clb5gslice0core1=0x0E0
+#clb5gslice1core1=0x038
+btc_prisel_ant_mask=0x2
+clb_swctrl_smask_ant0=0x3ff
+clb_swctrl_smask_ant1=0x3ff
+muxenab=1
+
+#BT Coex 1:TDM
+btc_mode=1
+
+# --- PAPD Cal related params ----
+txwbpapden=0 # 0:NBPAPD 1:WBPAPD
+# NB PAPD Cal params
+slice/1/nb_eps_offset=485,487
+slice/1/nb_bbmult=35,39
+slice/1/nb_papdcalidx=11,11
+slice/1/nb_txattn=3,3
+slice/1/nb_rxattn=0,0
+slice/1/nb_eps_stopidx=63
+slice/1/papdgainctrl2g=1
+slice/1/pacalshift2g=2,1
+slice/1/ampbased_gc=0
+
+# energy detect threshold
+ed_thresh2g=-63
+ed_thresh5g=-63
+# energy detect threshold for EU
+eu_edthresh2g=-63
+eu_edthresh5g=-63
+
+btldopu=1
+
+#Enable LHL PS mode
+lhl_ps_mode=3
+# to enable he features
+he_en=1
+
+# FE Loss comp parameters
+slice/1/felossTx2ga0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossTx2ga1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossRx2ga0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossRx2ga1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+felossTx5ga0=0,0,0,0
+felossTx5ga1=0,0,0,0
+felossRx5ga0=0,0,0,0
+felossRx5ga1=0,0,0,0
+
+## ULOFDMA Board limit PPRs for 2G20 ##
+ruppr2g20bpska0=0xf62d6
+ruppr2g20bpska1=0xf62d6
+ruppr2g20qpska0=0xf6b18
+ruppr2g20qpska1=0xf6b18
+ruppr2g20qam16a0=0xf6b5a
+ruppr2g20qam16a1=0xf6b5a
+ruppr2g20qam64a0=0x203de
+ruppr2g20qam64a1=0x203de
+ruppr2g20qam256a0=0x30800
+ruppr2g20qam256a1=0x30800
+ruppr2g20qam1024a0=0x0
+ruppr2g20qam1024a1=0x0
+## ULOFDMA Board limit PPRs for 5G20 ##
+ruppr5g20bpska0=0xd6316
+ruppr5g20bpska1=0xd6316
+ruppr5g20qpska0=0xe6316
+ruppr5g20qpska1=0xe6316
+ruppr5g20qam16a0=0xd6b5a
+ruppr5g20qam16a1=0xd6b5a
+ruppr5g20qam64a0=0x0
+ruppr5g20qam64a1=0x0
+ruppr5g20qam256a0=0x10842
+ruppr5g20qam256a1=0x10842
+ruppr5g20qam1024a0=0x30000
+ruppr5g20qam1024a1=0x30000
+## ULOFDMA Board limit PPRs for 5G40 ##
+ruppr5g40bpska0=0x1cc6316
+ruppr5g40bpska1=0x1cc6316
+ruppr5g40qpska0=0x1cd6316
+ruppr5g40qpska1=0x1cd6316
+ruppr5g40qam16a0=0x1cd735a
+ruppr5g40qam16a1=0x1cd735a
+ruppr5g40qam64a0=0x0
+ruppr5g40qam64a1=0x0
+ruppr5g40qam256a0=0x210842
+ruppr5g40qam256a1=0x210842
+ruppr5g40qam1024a0=0x630000
+ruppr5g40qam1024a1=0x630000
+## ULOFDMA Board limit PPRs for 5G80 ##
+ruppr5g80bpska0=0x7bdc
+ruppr5g80bpska1=0x7bdc
+ruppr5g80qpska0=0x7bdc
+ruppr5g80qpska1=0x7bdc
+ruppr5g80qam16a0=0x3dc
+ruppr5g80qam16a1=0x3dc
+ruppr5g80qam64a0=0x0
+ruppr5g80qam64a1=0x0
+ruppr5g80qam256a0=0x213842
+ruppr5g80qam256a1=0x213842
+ruppr5g80qam1024a0=0x420000
+ruppr5g80qam1024a1=0x420000
+
+### SAR HEAD params
+### MIMO Mode Parameters
+## 2g normal:16dB airplane:15dB
+#slice/1/dynsar_2g=0xc0c0
+#slice/1/dynsar_2g_2=0xbcbc
+## 5g normal:14dB airplane:13dB
+#dynsar_5g=0xb8b8
+#dynsar_5g_2=0xb4b4
+### RSDB mode Parameters(Both core are active)
+## 2g normal:15dB airplane:14dB
+#slice/1/rsdb_dynsar_2g=0xbcbc
+#slice/1/rsdb_dynsar_2g_2=0xb8b8
+## 5g normal:13dB airplane:12dB
+#rsdb_dynsar_5g=0xb4b4
+#rsdb_dynsar_5g_2=0xb0b0
+### Disable Parameters 2G:31.75dB 5G:31.75dB
+#slice/1/rsdb_dynsar_2g_1=0xffff
+#rsdb_dynsar_5g_1=0xffff
+#
+### SAR GRIP params
+### MIMO Mode Parameters
+## 2g normal:16dB airplane:15dB
+#slice/1/grip_dynsar_2g=0xc0c0
+#slice/1/grip_dynsar_2g_2=0xbcbc
+## 5g normal:14dB airplane:13dB
+#grip_dynsar_5g=0xb8b8
+#grip_dynsar_5g_2=0xb4b4
+### RSDB mode Parameters(Both core are active)
+## 2g normal:15dB airplane:14dB
+#slice/1/grip_rsdb_dynsar_2g=0xbcbc
+#slice/1/grip_rsdb_dynsar_2g_2=0xb8b8
+## 5g normal:13dB airplane:12dB
+#grip_rsdb_dynsar_5g=0xb4b4
+#grip_rsdb_dynsar_5g_2=0xb0b0
+#
+### FCC Mode: 10dB
+#slice/1/fccpwrch12=0x28
+#slice/1/fccpwrch13=0x28
+#
+#
+### RU SAR HEAD params
+### MIMO Mode Parameters
+## 2g normal:14,6,0.25dB airplane:18,10,2dB
+#slice/1/dynsar_2g_ru=0xb8b8,0x9898,0x8181
+#slice/1/dynsar_2g_2_ru=0xc8c8,0xa8a8,0x8888
+## 5g normal:14,6,0.25dB airplane:18,10,2dB
+#dynsar_5g_ru=0xb8b8,0x9898,0x8181
+#dynsar_5g_2_ru=0xc8c8,0xa8a8,0x8888
+### RSDB mode Parameters(Both core are active)
+## 2g normal:14,6,0.25dB airplane:18,10,2dB
+#slice/1/rsdb_dynsar_2g_ru=0xb8b8,0x9898,0x8181
+#slice/1/rsdb_dynsar_2g_2_ru=0xc8c8,0xa8a8,0x8888
+## 5g normal:14,6,0.25dB airplane:18,10,2dB
+#rsdb_dynsar_5g_ru=0xb8b8,0x9898,0x8181
+#rsdb_dynsar_5g_2_ru=0xc8c8,0xa8a8,0x8888
+#
+### RU SAR GRIP params
+### MIMO Mode Parameters
+## 2g normal:16,8,1dB airplane:20,12,4dB
+#slice/1/grip_dynsar_2g_ru=0xc0c0,0xa0a0,0x8484
+#slice/1/grip_dynsar_2g_2_ru=0xd0d0,0xb0b0,0x9090
+## 5g normal:16,8,1dB airplane:20,12,4dB
+#grip_dynsar_5g_ru=0xc0c0,0xa0a0,0x8484
+#grip_dynsar_5g_2_ru=0xd0d0,0xb0b0,0x9090
+### RSDB mode Parameters(Both core are active)
+## 2g normal:16,8,1dB airplane:20,12,4dB
+#slice/1/grip_rsdb_dynsar_2g_ru=0xc0c0,0xa0a0,0x8484
+#slice/1/grip_rsdb_dynsar_2g_2_ru=0xd0d0,0xb0b0,0x9090
+## 5g normal:16,8,1dB airplane:20,12,4dB
+#grip_rsdb_dynsar_5g_ru=0xc0c0,0xa0a0,0x8484
+#grip_rsdb_dynsar_5g_2_ru=0xd0d0,0xb0b0,0x9090
+
