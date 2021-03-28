@@ -1,4 +1,0 @@
-service sec-miscpower-2-0 /vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
-    class hal
-    user system
-    group system
