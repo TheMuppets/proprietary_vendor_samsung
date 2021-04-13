@@ -78,7 +78,7 @@ Telekom HU"THU
 
 21901HT HR"HT HR
 
-21902Tele2 HR"Tele2 HR
+21902Telemach"Telemach
 
 21910A1 HR"A1 HR
 
@@ -343,6 +343,8 @@ ALBtelecom"ATmobile
 28010epic"epic
 !
 28020PrimeTel PLC"PrimeTel
+
+28022Cablenet"Cablenet
 
 28201GEO-GEOCELL"GCELL
 
@@ -1881,9 +1883,8 @@ TelkomSA-R"Telkom-R
 74404TIGO PY"TIGO
  
 74405PY Personal"Personal
-
-74602
-SR.TELESUR"TELESUR
+
+74602TELESUR"TELESUR
 
 74603DIGICEL"DIGICEL
 
@@ -1912,4 +1913,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML)Published TS.25 Database 01 February 2021
+90150EchoStar Mobile"EML&Published TS.25 Database 15 March 2021
