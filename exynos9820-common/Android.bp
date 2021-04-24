@@ -31,12 +31,3 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "sec.android.hardware.nfc@1.2-service",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
