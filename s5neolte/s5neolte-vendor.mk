@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_mfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_mfg.txt \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_net.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt \
     vendor/samsung/s5neolte/proprietary/lib/hw/camera.vendor.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.universal7580.so \
-    vendor/samsung/s5neolte/proprietary/lib/hw/nfc_nci.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/nfc_nci.universal7580.so \
     vendor/samsung/s5neolte/proprietary/lib/hw/sensors.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.universal7580.so \
     vendor/samsung/s5neolte/proprietary/lib/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera.so \
     vendor/samsung/s5neolte/proprietary/lib/libinvensense_hal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libinvensense_hal.so \
