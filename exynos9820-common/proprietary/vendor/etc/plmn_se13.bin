@@ -77,16 +77,16 @@ Telekom HU"THU
 21890	BH Mobile"BHMOBILE
 
 21901HT HR"HT HR
-
-21902Telemach"Telemach
+
+21902Telemach"TM HR
 
 21910A1 HR"A1 HR
 
 22001Telenor SRB"Telenor
 
 22003mt:s"MTS
-
-22005Vip SRB"Vip SRB
+
+22005A1 SRB"A1 SRB
 
 22101vala"vala
 
@@ -269,8 +269,8 @@ Beeline UA"Beeline
 25901	Orange MD"Orange
 
 25902Moldcell"Moldcell
-
-25905UNITE"UNITE
+ 
+25905Moldtelecom"Mtelecom
 
 25915IDC"IDC
 
@@ -440,6 +440,8 @@ Telekom.me"T.me
 
 30801
 SPM AMERIS"AMERIS
+
+30803SPM Telecom"SPM
 *
 310020US - Union Telephone"UnionTel
 
@@ -498,16 +500,14 @@ SPM AMERIS"AMERIS
 310380AT&T"AT&T
 
 310410AT&T"AT&T
-*
-310450Cell One of NE Colorado"NECCI
+#
+310450Viaero Wireless"Viaero
 
 310460USA1L"USA1L
  
 310470DOCOMO PACIFIC"DPAC
 
 310490T-Mobile"T-Mobile
-"
-310530Iowa Wireless USA"IWS
 
 310570Cell One"Cell One
 #
@@ -518,10 +518,6 @@ SPM AMERIS"AMERIS
 310690Limitless Mobile"LMUSA
 
 310730U.S.Cellular"USCC
-
-310740USA OTZ"OTZ
-"
-310770Iowa Wireless USA"IWS
 
 310800T-Mobile"T-Mobile
 
@@ -550,6 +546,8 @@ SPM AMERIS"AMERIS
 311480Verizon"Verizon
 
 311530USANW"USANW
+
+311560USA OTZ"OTZ
 
 311580U.S.Cellular"USCC
 #
@@ -1004,8 +1002,6 @@ SRI AIRTEL"Airtel
 41501alfa"alfa
 
 41503touch"touch
-
-41505LBN OGERO Mobile"OM
 
 41601Zain JO"Zain JO
 
@@ -1184,8 +1180,6 @@ $
 45601Cellcard"Cellcard
 
 45602Smart"Smart
-
-45604qb"qb
 
 45605Smart"Smart
 
@@ -1356,8 +1350,6 @@ TOT Mobile"TOT
 53005Spark NZ"Spark NZ
 
 530242degrees"2degrees
-
-53601PacCell"PacCell
 
 53701bmobile"bmobile
 
@@ -1667,8 +1659,6 @@ VodaCom-MZ"VodaCom
 64602Orange"Orange
 
 64604TELMA"TELMA
-
-64605Bip"Bip
 
 64700	Orange re"Orange
  
@@ -1735,6 +1725,8 @@ TelkomSA-R"Telkom-R
 65801Sure"Sure
 
 65902MTN"MTN
+
+65905Digitel"DT-SSD
 
 65906ZAIN SS"ZAIN SS
 
@@ -1829,8 +1821,6 @@ TelkomSA-R"Telkom-R
 72433Algar Telecom"Algar
 
 72434Algar Telecom"Algar
- 
-72439Nextel Brasil"Nextel
 
 73001	ENTEL PCS"ENTEL
 
@@ -1855,6 +1845,8 @@ TelkomSA-R"Telkom-R
 732130Avantel"Avantel
 
 732187ETB 4G"ETB
+
+732360WOM"WOM
 
 73402DIGITEL"DIGITEL
 
@@ -1913,4 +1905,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML&Published TS.25 Database 15 March 2021
+90150EchoStar Mobile"EML&Published TS.25 Database 26 April 2021
