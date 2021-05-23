@@ -39,8 +39,6 @@
       <data name="pnd_rps_mask" type="int"> 0 </data>
       <data name="netdev_budget" type="int"> 0 </data>
 
-      <data name="low_latency_filters" type="int"> 0 </data>
-
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -295,6 +293,7 @@
       <data name="netdev_budget" type="int"> 9 </data>
       <data name="tc_ul_baserate" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 1 </data>
+      <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -378,7 +377,6 @@
       <data name="pnd_rps_mask" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 0 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
       <data name="tc_ul_baserate" type="int"> 55000000 </data>
       <data name="num_modems" type="int"> 2 </data>
@@ -463,7 +461,6 @@
       <data name="pnd_rps_mask" type="int"> 16 </data>
       <data name="qos_via_idl" type="int"> 0 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -546,7 +543,6 @@
       <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="netdev_budget" type="int"> 9 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 0 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -634,7 +630,6 @@
       <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="pnd_rps_mask" type="int"> 0 </data>
       <data name="netdev_budget" type="int"> 9 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -693,7 +688,6 @@
       <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="pnd_rps_mask" type="int"> 16 </data>
       <data name="netdev_budget" type="int"> 9 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -778,7 +772,6 @@
       <data name="pnd_rps_mask" type="int"> 16 </data>
       <data name="vnd_rps_mask" type="int"> 32 </data>
       <data name="netdev_budget" type="int"> 9 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -863,7 +856,6 @@
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="netdev_budget" type="int"> 9 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -948,7 +940,6 @@
       <data name="pnd_rps_mask" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 0 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="tc_ul_baserate" type="int"> 55000000 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -1029,8 +1020,6 @@
      <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 0n </data>
 
-     <data name="low_latency_filters" type="int"> 0 </data>
-
      <data name="frag_low_mem" type="int"> 300000 </data>
      <data name="frag_high_mem" type="int"> 400000 </data>
 
@@ -1089,7 +1078,6 @@
 
       <data name="pnd_rps_mask" type="int"> 16 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -1171,7 +1159,6 @@
 
       <data name="pnd_rps_mask" type="int"> 01 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
@@ -1260,7 +1247,6 @@
       <data name="vnd_rps_mask" type="int"> 0 </data>
       <data name="clat_rps_mask" type="int"> 32 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -1359,7 +1345,6 @@
       <data name="vnd_rps_mask" type="int"> 4 </data>
       <data name="clat_rps_mask" type="int"> 8 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -1458,7 +1443,6 @@
       <data name="vnd_rps_mask" type="int"> 4 </data>
       <data name="clat_rps_mask" type="int"> 8 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -1556,7 +1540,6 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -1654,7 +1637,6 @@
       <data name="vnd_rps_mask" type="int"> 15 </data>
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -1744,7 +1726,6 @@
     <data name="pnd_rps_mask" type="int"> 1 </data>
     <data name="vnd_rps_mask" type="int"> 0 </data>
     <data name="netdev_budget" type="int"> 9 </data>
-    <data name="low_latency_filters" type="int"> 0 </data>
 
     <data name="num_modems" type="int"> 2 </data>
     <list name="modems_enabled">
@@ -1827,8 +1808,6 @@
      <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
      <data name="qos_via_idl" type="int"> 0 </data>
      <data name="tc_ul_baserate" type="int"> 0 </data>
-
-     <data name="low_latency_filters" type="int"> 0 </data>
 
      <data name="frag_low_mem" type="int"> 300000 </data>
      <data name="frag_high_mem" type="int"> 400000 </data>
@@ -1986,7 +1965,6 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
@@ -2185,7 +2163,6 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 12 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -2296,7 +2273,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 12 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
+      <data name="tcp_mtu_probing" type="int"> 2 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -2372,7 +2349,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
@@ -2405,9 +2382,9 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 0 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2570,7 +2547,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
@@ -2603,9 +2580,9 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2678,7 +2655,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
@@ -2720,6 +2697,7 @@
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2826,15 +2804,6 @@
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
-      <!-- The below configuration is only added as a proof of concept
-           to test out the hardidletimer feature. The actual implementation
-           is subject to application and product requirements -->
-      <list name="idle_timer_detection">
-        <data name="hidt_enabled" type="int"> 1 </data>
-        <data name="hidt_timeout" type="int"> 2 </data>
-        <data name="hidt_tcp_port" type="int"> 5001 </data>
-        <data name="hidt_udp_port" type="int"> 5001 </data>
-      </list>
 
       <data name="single_qmux_ch_enabled" type="int"> 1 </data>
       <data name="single_qmux_ch_conn_id_str" type="string"> rmnet_mhi0 </data>
@@ -2875,6 +2844,7 @@
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3013,9 +2983,9 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 204 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 8192 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3111,10 +3081,10 @@
      <data name="static_rev_links" type="int"> 4 </data>
    </listitem>
 
-   <!-- Fusion SDA855+SDXMARMOT (PCIe) parameters -->
-   <listitem name = "fusion_sda855_sdxmarmot">
+   <!-- lahaina parameters -->
+   <listitem name = "lahaina">
 
-      <data name="qmi_dpm_enabled" type="int"> 0 </data>
+      <data name="qmi_dpm_enabled" type="int"> 1 </data>
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
@@ -3122,43 +3092,42 @@
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
+      <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
       <data name="single_qmux_ch_enabled" type="int"> 1 </data>
-      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet_mhi0 </data>
-      <data name="single_qmux_ch_name" type="string"> MHICTL0 </data>
-      <data name="tc_ul_ceiling_mbps" type="int"> 3500 </data>
-      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
-      <data name="tc_ul_burst" type="int"> 25000 </data>
+      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
+      <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
-      <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
-      <data name="dataformat_agg_ul_size" type="int"> 0 </data>
-      <data name="dataformat_agg_ul_time" type="int"> 0 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 63 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 64844 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
+      <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
       <data name="dataformat_agg_ul_features" type="int"> 1 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
-      <data name="rsc" type="int"> 0 </data>
-      <data name="rsb" type="int"> 0 </data>
-      <data name="mhip" type="int"> 1 </data>
-      <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+      <data name="rsc" type="int"> 2 </data>
+      <data name="rsb" type="int"> 2 </data>
+      <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
-      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
-      <data name="rmnet_perf" type="int"> 3 </data>
+      <data name="rmnet_offload" type="int"> 1 </data>
       <data name="rmnet_shs" type="int"> 1 </data>
+      <data name="uplink_priority" type="int"> 1 </data>
+      <data name="iwlan_concurrency" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
+      <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
+
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
       <data name="dl_marker_enabled" type="int"> 2 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
-      <data name="netdev_budget" type="int"> 0 </data>
-      <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3253,5 +3222,4 @@
       <!-- Number of above reverse data ports inited on bootup -->
       <data name="static_rev_links" type="int"> 4 </data>
    </listitem>
-
 </list>

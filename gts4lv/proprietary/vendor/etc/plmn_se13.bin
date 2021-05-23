@@ -78,7 +78,7 @@ Telekom HU"THU
 
 21901HT HR"HT HR
 
-21902Tele2 HR"Tele2 HR
+21902Telemach"Telemach
 
 21910A1 HR"A1 HR
 
@@ -331,8 +331,8 @@ IS OnWaves"OnWaves
 
 27603
 ALBtelecom"ATmobile
-
-27801vodafone MT"voda MT
+
+27801epic"epic
 
 27821	go mobile"gomobile
  
@@ -343,6 +343,8 @@ ALBtelecom"ATmobile
 28010epic"epic
 !
 28020PrimeTel PLC"PrimeTel
+
+28022Cablenet"Cablenet
 
 28201GEO-GEOCELL"GCELL
 
@@ -981,11 +983,15 @@ Telenor PK"TELENOR
 Mobitel LK"Mobitel
 
 41302DIALOG"DIALOG
+
+41303Hutch"Hutch
 
 41305
 SRI AIRTEL"Airtel
 
 41308Hutch"Hutch
+
+41309Hutch"Hutch
 
 41401MM 900"MPTGSM
 
@@ -1336,11 +1342,14 @@ TOT Mobile"TOT
 52508StarHub"StarHub
 
 52510TPG SG"TPG SG
+
+52801Imagine"Imagine
 
 52802PCSB"PCSB
-
-52811
-BRU-DSTCom"DSTCom
+
+52803UNN"UNN
+
+52811DSTCom"DSTCom
 
 53001vodafone NZ"voda NZ
 
@@ -1874,8 +1883,8 @@ TelkomSA-R"Telkom-R
 74404TIGO PY"TIGO
  
 74405PY Personal"Personal
- 
-74602SR.TELESUR.GSM"TeleG
+
+74602TELESUR"TELESUR
 
 74603DIGICEL"DIGICEL
 
@@ -1904,4 +1913,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML(Published TS.25 Database 12 October 2020
+90150EchoStar Mobile"EML&Published TS.25 Database 15 March 2021

@@ -1,4 +1,4 @@
-# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -9,8 +9,22 @@ on boot
 
     #Assign TCP buffer thresholds to be ceiling value of technology maximums
     #Increased technology maximums should be reflected here.
-    write /proc/sys/net/core/rmem_max  16777216
-    write /proc/sys/net/core/wmem_max  8388608
+    write /proc/sys/net/core/rmem_max  33554432
+    write /proc/sys/net/core/wmem_max  16777216
+
+    #Load rmnet_core driver
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_ctl
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_core
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_ctl
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_core
+
+on boot
+    #Reduce the pressure on the reassemly cache by discarding orphan fragments quicker
+    write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 10
+    
+on boot && property:ro.csc.countryiso_code=BR
+    #Reduce the pressure on the reassemly cache by discarding orphan fragments quicker
+    write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 60
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -41,18 +55,32 @@ on property:ro.baseband=apq
 
 on property:persist.vendor.data.shs_ko_load=1
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_shs
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_shs
 
 on property:persist.vendor.data.shs_ko_load=0
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_shs
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_shs
 
 on property:persist.vendor.data.perf_ko_load=3
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules rmnet_perf rmnet_perf_ingress_deag=N
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules/5.4-gki rmnet_perf rmnet_perf_ingress_deag=N
 
 on property:persist.vendor.data.perf_ko_load=2
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules rmnet_perf rmnet_perf_opt_mode="udp"
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules/5.4-gki rmnet_perf rmnet_perf_opt_mode="udp"
 
 on property:persist.vendor.data.perf_ko_load=1
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_perf
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_perf
 
 on property:persist.vendor.data.perf_ko_load=0
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_perf
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_perf
+
+on property:persist.vendor.data.offload_ko_load=1
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_offload
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_offload
+
+on property:persist.vendor.data.offload_ko_load=0
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_offload
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_offload
