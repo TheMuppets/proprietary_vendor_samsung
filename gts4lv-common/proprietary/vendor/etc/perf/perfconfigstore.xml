@@ -18,12 +18,13 @@ property Name is called. -->
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <Prop Name="vendor.debug.enable.lm" Value="false" />
+                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.iop.enabled" Value="false" />
                 <Prop Name="vendor.iop.enable_uxe" Value="0" />
-                <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="0" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="0" />
-                <Prop Name="vendor.enable.prefetch" Value="false" />
-                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+                <Prop Name="vendor.enable.prefetch" Value="0" />
+                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="0" />
 
                 <!--System Properties -->
                 <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />

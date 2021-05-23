@@ -1,0 +1,4 @@
+service sec-thermal-1-0 /vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
+    class hal
+    user system
+    group system

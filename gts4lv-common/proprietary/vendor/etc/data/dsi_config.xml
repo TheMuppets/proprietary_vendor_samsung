@@ -119,6 +119,7 @@
 
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
      <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
      <data name="num_dsi_handles" type="int"> 8 </data>
      <list name="device_names">
@@ -1205,15 +1206,16 @@
      </list>
    </listitem>
 
-   <!-- Configuration for DS_TARGET_FUSION_SDA855_SDXMARMOT PCIe -->
-   <listitem name="fusion_sda855_sdxmarmot">
+   <!-- Configuration for lahaina -->
+   <listitem name="lahaina">
 
      <data name="qos_enabled" type="int"> 1 </data>
      <data name="rmnet_data_enabled" type="int"> 1 </data>
-     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
-     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
 
      <data name="num_dsi_handles" type="int"> 17 </data>
      <list name="device_names">

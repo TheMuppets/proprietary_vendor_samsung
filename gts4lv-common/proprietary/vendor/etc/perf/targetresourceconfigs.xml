@@ -35,6 +35,8 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
         <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
 
+        <Config MajorValue="0x5" MinorValue="0x13" Supported="no" /> <!-- rtg_boost_freq -->
+
         <Config MajorValue="0x6" MinorValue="0x4" Supported="no" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
         <Config MajorValue="0x6" MinorValue="0x5" Supported="no" /> <!-- cpubw_hmon_low_power_io_percent -->
 
