@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+  <!--HAL Confguration  -->
+  <hal
+    PortName="lhd"
+    NvStorageDir="/data/vendor/gps/"
+
+    LogDirectory="/storage/emulated/0/gps/broadcom/storage"
+
+    WakeLock="geo"
+
+    RilConnRetry="60"
+    LPmode="false"
+    CpColdStart="false"
+    CpGuardTimeSec="1"
+    CpLppGuardTimeSec="1"
+    CpLppeProvideHighAcc3DPosOnComIECap="true" 
+    ReAidingOnHotStart="false"
+    SuplSslMethod="SSLv23_NO_TLSv1_2"
+    SuplEnable="true"
+    SuplUseApn="false"
+    SuplTlsCertPath="/vendor/etc/gnss/gps.cer"
+    SuplTlsCertDirPath="/system/etc/security/cacerts"
+    SuplUT1Seconds="20"
+    SuplUT2Seconds="20"
+    SuplUT3Seconds="20"
+    TcpConnectionTimeout="20"
+    SuplLppCapable="false"
+
+    LbsEnable="true"
+    LbsServer="BCMLS2.glpals.com"
+    RtiConfig="gllto.glpals.com:80/rtistatus3.dat"
+    HttpSyncLto="true"
+    LbsCellEnable="false"
+    LtoDir="/data/vendor/gps/"
+    LtoSyncThresholdDays="1"
+
+    IgnoreJniTime="true"
+    AssertEnabled="false"
+
+    IgnoreFwConfig="false"
+    DisablePglorNmeaCallback="true"
+
+    GnssYearOfHardware="2016"
+    WakelockAlertSec="1800"
+    EventDumpEnable="true"
+
+    RtoEnable="true"
+    RtoConfig="gllto.glpals.com/rto/v1/latest/rto.dat"
+    AttributionAppPkgName="com.sec.location.nfwlocationprivacy"
+   />
+
+  <gll
+    LogPriMask="LOG_INFO"
+    LogFacMask="LOG_GLLIO | LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA"
+    FrqPlan="FRQ_PLAN_26MHZ_2PPM_49_152MHZ_300PPB"
+    RfType="GL_RF_4755_BRCM"
+    MultiCarrRFMode ="GL_MULTI_CARR_RF_MODE_L1_L5"
+    MultiCarrLnaMask="L1_EXT_ON|L5_EXT_ON"
+    WarmStandbyTimeout1Seconds="10"
+    WarmStandbyTimeout2Seconds="15"
+    RfPathLossDb_Cp="5.0"
+    RfPathLossDb_Ap="5.0"
+    ExtL5Bias="11.182"
+  >
+  </gll>
+
+  <gll_features
+    EnableLowPowerPmm="true"
+    EnableBeidou="true"
+    EnableGalileo="true"
+    EnableACSD="true"
+    MPFCollect="true"
+    IndoorVDREnable="false"
+    VDRTunnelPropagate="false"
+  />
+
+</glgps>
