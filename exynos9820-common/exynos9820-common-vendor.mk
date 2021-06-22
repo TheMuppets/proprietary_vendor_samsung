@@ -12,8 +12,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/gps.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gps.sh \
-    vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lhd \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/exynos9820-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.0-service \
@@ -22,61 +20,36 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/sensor/lhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor/lhd.conf \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/APDVTX_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDVTX_AUDIO_SLSI.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/WithLightFixNoBN.SDNNmodel:$(TARGET_COPY_OUT_VENDOR)/firmware/WithLightFixNoBN.SDNNmodel \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/bcmdhd_mfg.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b1 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/bcmdhd_mon.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mon.bin_b1 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/bcmdhd_sta.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_sta.bin_b1 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/bidirmic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bidirmic.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/calliope2.dt:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope2.dt \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/calliope_dram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/calliope_dram_2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_dram_2.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_sram.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/calliope_sram_2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_sram_2.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/cs35l40-bot-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l40-bot-dsp1-spk-prot.wmfw \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/cs35l40-rcv-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l40-rcv-dsp1-spk-prot.wmfw \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/cs47l93-dsp1-trace.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs47l93-dsp1-trace.wmfw \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/default_configuration.hfd.cfg.json:$(TARGET_COPY_OUT_VENDOR)/firmware/default_configuration.hfd.cfg.json \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/dnn.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dnn.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/dual_cal_front_subfront.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dual_cal_front_subfront.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/dual_cal_wide_swide.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dual_cal_wide_swide.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/dual_cal_wide_tele.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dual_cal_wide_tele.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/epx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/epx.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/fmsb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fmsb.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/iva30_rt-makalu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/iva30_rt-makalu.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_1rh_es11_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_1rh_es11_b0 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_1rh_es12_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_1rh_es12_b0 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_1rh_es13_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_1rh_es13_b0 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_ES00_semco_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_ES00_semco_b0 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_ES01_semco_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_ES01_semco_b0 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/nvram.txt_ES02_semco_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_ES02_semco_b0 \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/pp_cfg.json:$(TARGET_COPY_OUT_VENDOR)/firmware/pp_cfg.json \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/camera1/score_br_dmb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_br_dmb.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/camera1/score_br_pmw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_br_pmw.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/camera1/score_ts_dmb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_ts_dmb.bin \
@@ -87,22 +60,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/develop1/score_br_pmw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/develop1/score_br_pmw.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/develop1/score_ts_dmb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/develop1/score_ts_dmb.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/score/develop1/score_ts_pmw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/develop1/score_ts_pmw.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/setfile_3j1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3j1.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/tracker_cfg.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tracker_cfg.json \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/usbin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbin.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/usbout.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbout.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/audio.primary.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/gatekeeper.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/gralloc.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/hwcomposer.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/memtrack.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/sensors.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/hw/sound_trigger.primary.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos9820.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosHWCService.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Core.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Resourcemanager.so \
@@ -110,15 +71,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libRSDriverArm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriverArm.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libSEF.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSEF.quram.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libSamsungPostProcessConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSamsungPostProcessConvertor.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/lib_SamsungRec_07010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07010.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libacryl.plugin.hdr.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl.plugin.hdr.exynos9820.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacryl.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils_sec.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsc.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengmode_client.so \
@@ -163,7 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP9.Encoder.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.channel@2.0.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.0.so \
@@ -171,14 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/vndk/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libaudioroute.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/gatekeeper.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/gralloc.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/hwcomposer.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/memtrack.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/sensors.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.exynos9820.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosHWCService.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Core.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Resourcemanager.so \
@@ -234,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/omx/libOMX.Exynos.VP9.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP9.Encoder.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
-    vendor/samsung/exynos9820-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/exynos9820-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
