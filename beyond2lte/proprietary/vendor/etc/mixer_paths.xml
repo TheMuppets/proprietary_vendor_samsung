@@ -1,0 +1,3407 @@
+<mixer>
+	<!-- These paths are for Star with Exynos9820 -->
+
+	<!-- Board Device Connections -->
+	<!-- UAIF0 - CODEC for normal Playback and Capture -->
+	<!-- UAIF1 - Speaker AMP -->
+	<!-- UAIF2 - FM Radio -->
+	<!-- UAIF3 - Bluetooth -->
+
+	<!-- Exynos A-Box Term -->
+	<!-- SIFS0 : Mixer for Playback -->
+	<!-- SIFS1 : Mux1 for Playback -->
+	<!-- SIFS2 : Mux2 for Playback -->
+	<!-- SIFS3 : Mux3 for Playback -->
+	<!-- RSRC0 : Recording Source 0 -->
+	<!-- RSRC1 : Recording Source 1 -->
+	<!-- NSRC0 : Capture Source 0 -->
+	<!-- NSRC1 : Capture Source 1 -->
+	<!-- NSRC2 : Capture Source 2 -->
+	<!-- NSRC3 : Capture Source 3 -->
+	<!-- NSRC4 : Capture Source 4 -->
+	<!-- NSRC5 : Capture Source 5 -->
+	<!-- NSRC6 : Capture Source 6 -->
+
+	<include name="/vendor/etc/mixer_gains.xml" />
+
+	<pcmdai codec_dump_link="42" />
+
+	<!-- Initial Mixer control configurations -->
+	<!-- A-Box Default Configuration for Rate min -->
+	<ctl name="ABOX SIFS0 Rate Min" value="48000" />
+	<ctl name="ABOX SIFS1 Rate Min" value="8000" />
+	<ctl name="ABOX SIFS2 Rate Min" value="8000" />
+	<ctl name="ABOX SIFS3 Rate Min" value="8000" />
+	<ctl name="ABOX SIFS4 Rate Min" value="8000" />
+	<ctl name="ABOX PIFS Rate Min" value="8000" />
+	<ctl name="ABOX SIFM0 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM1 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM2 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM3 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM4 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM5 Rate Min" value="8000" />
+	<ctl name="ABOX SIFM6 Rate Min" value="8000" />
+
+	<!-- A-Box Default Configuration for SIFS Width -->
+	<ctl name="ABOX SIFS0 Width" value="24" />
+	<ctl name="ABOX SIFS1 Width" value="32" />
+	<ctl name="ABOX SIFS2 Width" value="16" />
+	<ctl name="ABOX SIFS3 Width" value="16" />
+	<ctl name="ABOX SIFS4 Width" value="16" />
+
+	<!-- A-Box Default Configuration for UAIF -->
+	<ctl name="ABOX UAIF0 Width" value="24" />
+	<ctl name="ABOX UAIF0 Channel" value="2" />
+	<ctl name="ABOX UAIF0 Rate" value="48000" />
+	<ctl name="ABOX UAIF1 Width" value="32" />
+	<ctl name="ABOX UAIF1 Channel" value="4" />
+	<ctl name="ABOX UAIF1 Rate" value="48000" />
+	<ctl name="ABOX UAIF2 Width" value="16" />
+	<ctl name="ABOX UAIF2 Channel" value="2" />
+	<ctl name="ABOX UAIF2 Rate" value="48000" />
+	<ctl name="ABOX UAIF3 Width" value="16" />
+	<ctl name="ABOX UAIF3 Channel" value="2" />
+	<ctl name="ABOX UAIF3 Rate" value="16000" />
+
+	<!-- A-Box Default Configuration for Speaker Path -->
+	<ctl name="ABOX SPUS ASRC0" value="0" />
+	<ctl name="ABOX SPUS ASRC1" value="0" />
+	<ctl name="ABOX SPUS ASRC2" value="0"/>
+	<ctl name="ABOX SPUS ASRC3" value="0"/>
+	<ctl name="ABOX SPUS ASRC4" value="0"/>
+	<ctl name="ABOX SPUS ASRC5" value="0" />
+	<ctl name="ABOX SPUS ASRC6" value="0" />
+	<ctl name="ABOX SPUS ASRC7" value="0" />
+	<ctl name="ABOX SPUS ASRC8" value="0" />
+	<ctl name="ABOX SPUS ASRC9" value="0" />
+	<ctl name="ABOX SPUS ASRC10" value="0" />
+	<ctl name="ABOX SPUS ASRC11" value="0" />
+	<ctl name="ABOX SPUS OUT0" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT1" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT2" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT3" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT4" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT5" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT6" value="SIFS1" />
+	<ctl name="ABOX SPUS OUT7" value="SIFS2" />
+	<ctl name="ABOX SPUS OUT8" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT9" value="SIFS0" />
+	<ctl name="ABOX SPUS OUT10" value="SIFS3" />
+	<ctl name="ABOX SPUS OUT11" value="SIFS0" />
+
+	<ctl name="ABOX SIFS1" value="SPUS OUT7" />
+	<ctl name="ABOX SIFS2" value="SPUS OUT6" />
+
+	<ctl name="ABOX UAIF0 SPK" value="RESERVED" />
+	<ctl name="ABOX UAIF1 SPK" value="RESERVED" />
+	<ctl name="ABOX UAIF2 SPK" value="RESERVED" />
+	<ctl name="ABOX UAIF3 SPK" value="RESERVED" />
+
+	<!-- A-Box Default Configuration for MIC Path -->
+	<ctl name="ABOX SPUM ASRC0" value="0" />
+	<ctl name="ABOX SPUM ASRC1" value="0" />
+	<ctl name="ABOX SPUM ASRC2" value="0" />
+	<ctl name="ABOX SPUM ASRC3" value="0" />
+	<ctl name="ABOX SPUM ASRC4" value="0" />
+	<ctl name="ABOX SPUM ASRC5" value="0" />
+	<ctl name="ABOX SPUM ASRC6" value="0" />
+	<ctl name="ABOX SPUM ASRC7" value="0" />
+
+	<ctl name="ABOX RECP PIFS0" value="0" />
+	<ctl name="ABOX RECP PIFS1" value="0" />
+
+	<ctl name="ABOX SIFM0" value="WDMA" />
+	<ctl name="ABOX SIFM1" value="WDMA" />
+	<ctl name="ABOX SIFM2" value="WDMA" />
+	<ctl name="ABOX SIFM3" value="WDMA" />
+	<ctl name="ABOX SIFM4" value="WDMA" />
+	<ctl name="ABOX SIFM5" value="WDMA" />
+	<ctl name="ABOX SIFM6" value="WDMA" />
+
+	<ctl name="ABOX NSRC0" value="RESERVED" />
+	<ctl name="ABOX NSRC1" value="RESERVED" />
+	<ctl name="ABOX NSRC2" value="RESERVED" />
+	<ctl name="ABOX NSRC3" value="RESERVED" />
+	<ctl name="ABOX NSRC4" value="RESERVED" />
+	<ctl name="ABOX NSRC5" value="RESERVED" />
+	<ctl name="ABOX NSRC6" value="RESERVED" />
+
+	<ctl name="ABOX NSRC0 Bridge" value="0" />
+	<ctl name="ABOX NSRC1 Bridge" value="0" />
+	<ctl name="ABOX NSRC2 Bridge" value="0" />
+	<ctl name="ABOX NSRC3 Bridge" value="0" />
+	<ctl name="ABOX NSRC4 Bridge" value="0" />
+	<ctl name="ABOX NSRC5 Bridge" value="0" />
+	<ctl name="ABOX NSRC6 Bridge" value="0" />
+
+	<ctl name="ABOX REFEXT4CH_EN" value="On" />
+	<ctl name="ABOX REFEXT4CH_A" value="WDMA3" />
+
+	<!-- EXTERNAL MCD Solution components connection initialized -->
+	<ctl name="ABOX MCD_DNN_A" value="None" />
+	<ctl name="ABOX USBOUT_COM_A" value="None" />
+	<ctl name="ABOX USBIN_COM_A" value="None" />
+	<ctl name="ABOX SOUNDBOOST_A" value="None" />
+	<ctl name="ABOX MCD_TXSE1_A" value="None" />
+	<ctl name="ABOX MCD_RXSE_A" value="None" />
+	<ctl name="ABOX MCD_TXSE2_A" value="None" />
+	<ctl name="ABOX BTA2DP_A" value="None" />
+	<ctl name="ABOX MCD_BIBF_A" value="None" />
+
+	<!-- A-Box Default Configuration for ASRC APF control -->
+	<ctl name="ABOX SPUS ASRC4 APF COEF" value="1" />
+
+	<!-- A-Box Default Configuration for others -->
+	<ctl name="ABOX Audio Mode" value="NORMAL" />
+
+	<!-- Primary (RDMA0) Default routed to Virtual PCM component -->
+	<ctl name="ABOX VPCMOUT_DAI0_EN" value="On" />
+	<ctl name="ABOX RDMA0_EN" value="On" />
+	<ctl name="ABOX RDMA0_A" value="VPCMOUT_DAI0" />
+
+	<!-- For CS47L93 Codec -->
+	<ctl name="IN1L Mux" value="B" />
+	<ctl name="IN2L Mux" value="A" />
+	<ctl name="IN2R Mux" value="A" />
+
+	<ctl name="IN2 OSR" value="3.072MHz" />
+	<ctl name="IN3 OSR" value="3.072MHz" />
+	<ctl name="IN4 OSR" value="3.072MHz" />
+
+	<ctl name="IN3L HPF Switch" value="1" />
+	<ctl name="IN4L HPF Switch" value="1" />
+	<ctl name="IN HPF Cutoff Frequency" value="10Hz" />
+	<ctl name="Input Ramp Up" value="8ms/6dB" />
+	<ctl name="Output Ramp Up" value="1ms/6dB" />
+
+	<ctl name="Output Rate 1" value="ASYNCCLK rate 1" />
+
+	<ctl name="HPOUT2 Digital Switch" value="0" />
+	<ctl name="Output Ramp Down" value="0.5ms/6dB" />
+	<ctl name="HPOUT2L Input 1" value="None" />
+	<ctl name="HPOUT2R Input 1" value="None" />
+
+	<ctl name="DMIC1 Switch" value="0" />
+	<ctl name="DMIC2 Switch" value="0" />
+
+	<ctl name="HPOUT2 DRE Switch" value="1" />
+	<ctl name="HPOUT2 EDRE Switch" value="1" />
+
+	<!-- For Input Mic control configuration -->
+	<ctl name="Sample Rate 2" value="48kHz" />
+	<ctl name="ASYNC Sample Rate 2" value="48kHz" />
+	<ctl name="IN1L Rate" value="SYNCCLK rate 2" />
+	<ctl name="IN3L Rate" value="SYNCCLK rate 2" />
+	<ctl name="IN4L Rate" value="SYNCCLK rate 2" />
+
+	<ctl name="ISRC1 FSL" value="ASYNCCLK rate 2" />
+	<ctl name="ISRC1 FSH" value="ASYNCCLK rate 1" />
+	<ctl name="ISRC2 FSL" value="ASYNCCLK rate 2" />
+	<ctl name="ISRC2 FSH" value="ASYNCCLK rate 1" />
+
+	<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 2" />
+	<ctl name="ASRC1 Rate 2" value="ASYNCCLK rate 2" />
+
+	<!-- A-Box wakelock default released -->
+	<ctl name="ABOX Wakelock" value="0" />
+
+	<!-- Cirrus CS35L41 Amp default configuration -->
+	<ctl name="Left DSP1 Firmware" value="Protection" />
+	<ctl name="Left DSP1 Preload Switch" value="1" />
+	<ctl name="Left PCM Source" value="DSP" />
+	<ctl name="Left DSP RX2 Source" value="ASPRX1" />
+	<ctl name="Left Boost Enable" value="Disabled" />
+	<ctl name="Left AMP Enable Switch" value="0" />
+	<ctl name="Left AMP Mute" value="Unmuted" />
+	<ctl name="Left PCM Soft Ramp" value=".5ms" />
+	<ctl name="Left VPBR Release Rate" value="5ms" />
+	<ctl name="Left VPBR Wait" value="10ms" />
+	<ctl name="Left VPBR Attack Rate" value="2.5us" />
+	<ctl name="Left VPBR Attack Volume" value="1dB" />
+	<ctl name="Left VPBR Max Attenuation" value="2" />
+	<ctl name="Left VPBR Threshold 1" value="2.687" />
+	<ctl name="Left VPBR Enable" value="Enabled" />
+
+	<ctl name="Right DSP1 Firmware" value="Protection" />
+	<ctl name="Right DSP1 Preload Switch" value="1" />
+	<ctl name="Right PCM Source" value="DSP" />
+	<ctl name="Right DSP RX2 Source" value="ASPRX1" />
+	<ctl name="Right Boost Enable" value="Disabled" />
+	<ctl name="Right AMP Enable Switch" value="0" />
+	<ctl name="Right AMP Mute" value="Unmuted" />
+	<ctl name="Right PCM Soft Ramp" value=".5ms" />
+	<ctl name="Right VPBR Release Rate" value="5ms" />
+	<ctl name="Right VPBR Wait" value="10ms" />
+	<ctl name="Right VPBR Attack Rate" value="2.5us" />
+	<ctl name="Right VPBR Attack Volume" value="1dB" />
+	<ctl name="Right VPBR Max Attenuation" value="2" />
+	<ctl name="Right VPBR Threshold 1" value="2.687" />
+	<ctl name="Right VPBR Enable" value="Enabled" />
+
+	<ctl name="Debug Buffer Switch" value="0" />
+
+	<path name="route-codec-rxtotx-loop">
+		<ctl name="AIF1TX1 Input 1" value="AIF1RX1" />
+		<ctl name="AIF1TX2 Input 1" value="AIF1RX2" />
+	</path>
+
+	<!-- Common A-Box RX Path configurations -->
+	<path name="route-sifs0-to-uaif0">
+		<ctl name="ABOX UAIF0 SPK" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-uaif1">
+		<ctl name="ABOX UAIF1 SPK" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-rsrc0">
+		<ctl name="ABOX RSRC0" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc1">
+		<ctl name="ABOX NSRC1" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc1-bridge">
+		<ctl name="ABOX NSRC1" value="SIFS0" />
+		<ctl name="ABOX NSRC1 Bridge" value="1" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc2">
+		<ctl name="ABOX NSRC2" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc2-bridge">
+		<ctl name="ABOX NSRC2" value="SIFS0" />
+		<ctl name="ABOX NSRC2 Bridge" value="1" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc5">
+		<ctl name="ABOX NSRC5" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs0-to-nsrc6">
+		<ctl name="ABOX NSRC6" value="SIFS0" />
+	</path>
+
+	<path name="route-sifs1-to-uaif1">
+		<ctl name="ABOX UAIF1 SPK" value="SIFS1" />
+	</path>
+
+	<path name="route-sifs1-to-uaif2">
+		<ctl name="ABOX UAIF3 SPK" value="SIFS1" />
+	</path>
+
+	<path name="route-sifs1-to-uaif3">
+		<ctl name="ABOX UAIF3 SPK" value="SIFS1" />
+	</path>
+
+	<path name="route-sifs2-to-uaif2">
+		<ctl name="ABOX UAIF2 SPK" value="SIFS2" />
+	</path>
+
+	<path name="route-sifs2-to-uaif3">
+		<ctl name="ABOX UAIF3 SPK" value="SIFS2" />
+	</path>
+
+	<path name="route-sifs2-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="SIFS2" />
+	</path>
+
+	<path name="route-sifs2-to-nsrc1">
+		<ctl name="ABOX NSRC1" value="SIFS2" />
+	</path>
+
+	<path name="route-sifs3-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="SIFS3" />
+	</path>
+
+	<path name="route-sifs3-to-nsrc1">
+		<ctl name="ABOX NSRC1" value="SIFS3" />
+	</path>
+
+	<path name="route-sifs3-to-nsrc6">
+		<ctl name="ABOX NSRC6" value="SIFS3" />
+	</path>
+
+	<path name="route-sifs4-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="SIFS4" />
+	</path>
+
+	<path name="route-sifs3-to-nsrc0-bridge">
+		<ctl name="ABOX NSRC0" value="SIFS3" />
+		<ctl name="ABOX NSRC0 Bridge" value="1" />
+	</path>
+
+	<path name="route-sifs3-to-nsrc1-bridge">
+		<ctl name="ABOX NSRC1" value="SIFS3" />
+		<ctl name="ABOX NSRC1 Bridge" value="1" />
+	</path>
+
+	<path name="route-rdma4-to-sifs4">
+		<ctl name="ABOX SPUS OUT4" value="SIFS4" />
+		<ctl name="ABOX SIFS4" value="SPUS OUT4" />
+	</path>
+
+	<path name="route-rdma6-to-sifs2">
+		<ctl name="ABOX SPUS OUT6" value="SIFS2" />
+		<ctl name="ABOX SIFS2" value="SPUS OUT6" />
+	</path>
+
+	<path name="route-rdma7-to-sifs1">
+		<ctl name="ABOX SPUS OUT7" value="SIFS1" />
+		<ctl name="ABOX SIFS1" value="SPUS OUT7" />
+	</path>
+
+	<path name="route-rdma9-to-sifs2">
+		<ctl name="ABOX SPUS OUT9" value="SIFS2" />
+		<ctl name="ABOX SIFS2" value="SPUS OUT9" />
+	</path>
+
+	<path name="route-rdma10-to-sifs3">
+		<ctl name="ABOX SPUS OUT10" value="SIFS3" />
+		<ctl name="ABOX SIFS3" value="SPUS OUT10" />
+	</path>
+
+	<path name="route-sifs3-autoconfig">
+		<ctl name="ABOX SIFS3 Auto Config" value="1" />
+		<ctl name="ABOX SIFS3 Rate Min" value="8000" />
+	</path>
+
+	<!-- Common A-Box TX Path configurations -->
+	<path name="route-uaif0-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="UAIF0" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc1">
+		<ctl name="ABOX NSRC1" value="UAIF0" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc2">
+		<ctl name="ABOX NSRC2" value="UAIF0" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc0-bridge">
+		<ctl name="ABOX NSRC0" value="UAIF0" />
+		<ctl name="ABOX NSRC0 Bridge" value="1" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc1-bridge">
+		<ctl name="ABOX NSRC1" value="UAIF0" />
+		<ctl name="ABOX NSRC1 Bridge" value="1" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc2-bridge">
+		<ctl name="ABOX NSRC2" value="UAIF0" />
+		<ctl name="ABOX NSRC2 Bridge" value="1" />
+	</path>
+
+	<path name="route-uaif0-to-nsrc6">
+		<ctl name="ABOX NSRC6" value="UAIF0" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc0-bridge">
+		<ctl name="ABOX NSRC0" value="UAIF3" />
+		<ctl name="ABOX NSRC0 Bridge" value="1" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc1-bridge">
+		<ctl name="ABOX NSRC1" value="UAIF3" />
+		<ctl name="ABOX NSRC1 Bridge" value="1" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc6">
+		<ctl name="ABOX NSRC6" value="UAIF3" />
+	</path>
+
+	<path name="route-uaif1-to-nsrc3">
+		<ctl name="ABOX NSRC3" value="UAIF1" />
+	</path>
+
+	<path name="route-uaif2-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="UAIF2" />
+	</path>
+
+	<path name="route-uaif2-to-nsrc6">
+		<ctl name="ABOX NSRC6" value="UAIF2" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc0">
+		<ctl name="ABOX NSRC0" value="UAIF3" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc1">
+		<ctl name="ABOX NSRC1" value="UAIF3" />
+	</path>
+
+	<path name="route-uaif3-to-nsrc3">
+		<ctl name="ABOX NSRC3" value="UAIF3" />
+	</path>
+
+	<path name="route-nsrc0-to-wdma1">
+		<ctl name="ABOX SIFM0" value="WDMA" />
+	</path>
+
+	<path name="route-nsrc1-to-wdma2">
+		<ctl name="ABOX SIFM1" value="WDMA" />
+	</path>
+
+	<path name="route-nsrc2-to-wdma3">
+		<ctl name="ABOX SIFM2" value="WDMA" />
+	</path>
+
+	<path name="route-nsrc3-to-wdma4">
+		<ctl name="ABOX SIFM3" value="WDMA" />
+	</path>
+
+	<path name="route-nsrc6-to-wdma7">
+		<ctl name="ABOX SIFM6" value="WDMA" />
+	</path>
+
+	<!-- Common Internal Loop Path configurations -->
+	<path name="route-nsrc5-to-wdma6">
+		<ctl name="ABOX SIFM5" value="WDMA" />
+	</path>
+
+	<path name="route-rsrc0-to-wdma0">
+		<ctl name="ABOX RECP PIFS0" value="1" />
+	</path>
+
+	<path name="route-sifm0-autoconfig">
+		<ctl name="ABOX SIFM0 Auto Config" value="1" />
+		<ctl name="ABOX SIFM0 Rate Min" value="8000" />
+	</path>
+
+	<path name="route-sifm1-autoconfig">
+		<ctl name="ABOX SIFM1 Auto Config" value="1" />
+		<ctl name="ABOX SIFM1 Rate Min" value="8000" />
+	</path>
+
+	<!-- Common ERAP configurations -->
+	<path name="route-wdma4-to-refext4ch">
+		<ctl name="ABOX REFEXT4CH_EN" value="On" />
+		<ctl name="ABOX REFEXT4CH_A" value="WDMA4" />
+	</path>
+
+	<path name="erap-amp-reference-dsm-bypass">
+		<ctl name="ABOX RDMA7_EN" value="On" />
+		<ctl name="ABOX CHCONV4CH_EN" value="On" />
+		<ctl name="ABOX RDMA7_A" value="CHCONV4CH" />
+		<ctl name="ABOX CHCONV4CH_A" value="WDMA3" />
+		<path name="route-wdma4-to-refext4ch" />
+	</path>
+
+	<path name="erap-amp-reference-dsm-bypass-soundboost">
+		<ctl name="ABOX RDMA7_EN" value="On" />
+		<ctl name="ABOX CHCONV4CH_EN" value="On" />
+		<ctl name="ABOX RDMA7_A" value="CHCONV4CH" />
+		<ctl name="ABOX SOUNDBOOST_EN" value="On" />
+		<ctl name="ABOX SOUNDBOOST_A" value="WDMA3" />
+		<ctl name="ABOX CHCONV4CH_A" value="SOUNDBOOST" />
+		<path name="route-wdma4-to-refext4ch" />
+	</path>
+
+	<path name="route-wdma3-to-rdma6">
+		<ctl name="ABOX RDMA6_EN" value="On" />
+		<ctl name="ABOX WDMA3_EN" value="On" />
+		<ctl name="ABOX RDMA6_A" value="WDMA3" />
+	</path>
+
+	<path name="route-remote_mic-comp-pipeline">
+		<ctl name="ABOX WDMA7_EN" value="On" />
+		<ctl name="ABOX RDMA8_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE2_EN" value="On" />
+		<ctl name="ABOX MCD_RXSE_EN" value="On" />
+		<ctl name="ABOX RDMA8_A" value="MCD_RXSE" />
+		<ctl name="ABOX MCD_RXSE_A" value="MCD_TXSE2" />
+		<ctl name="ABOX MCD_TXSE2_A" value="WDMA7" />
+	</path>
+
+	<path name="dev-bt-a2dp">
+	</path>
+
+	<path name="route-wdma6-to-usboutcom">
+		<ctl name="ABOX WDMA6_EN" value="On" />
+		<ctl name="ABOX USBOUTSTACK_EN" value="On" />
+		<ctl name="ABOX USBOUT_COM_EN" value="On" />
+		<ctl name="ABOX USBOUTSTACK_A" value="USBOUT_COM" />
+		<ctl name="ABOX USBOUT_COM_A" value="WDMA6" />
+		<ctl name="ABOX SPUM ASRC6" value="1" />
+	</path>
+
+	<path name="route-usbincom-to-rdma10">
+		<ctl name="ABOX RDMA10_EN" value="On" />
+		<ctl name="ABOX USBINSTACK_EN" value="On" />
+		<ctl name="ABOX USBIN_COM_EN" value="On" />
+		<ctl name="ABOX USBIN_COM_A" value="USBINSTACK" />
+		<ctl name="ABOX RDMA10_A" value="USBIN_COM" />
+	</path>
+
+	<path name="route-wdma1-to-vpcmindai">
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="WDMA1" />
+	</path>
+
+	<path name="route-fmradio-comp-pipeline">
+		<ctl name="ABOX WDMA7_EN" value="On" />
+		<ctl name="ABOX RDMA8_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI1_EN" value="On" />
+		<ctl name="ABOX RDMA8_A" value="WDMA7" />
+		<ctl name="ABOX VPCMIN_DAI1_A" value="WDMA7" />
+	</path>
+
+	<path name="acquire-abox-wakelock">
+		<ctl name="ABOX Wakelock" value="1" />
+	</path>
+
+	<!-- Common CODEC configurations -->
+	<path name="dev-handset">
+		<ctl name="Left ASPTX1 Slot Position" value="0" />
+		<ctl name="Left ASPTX2 Slot Position" value="2" />
+		<ctl name="Left ASPTX3 Slot Position" value="4" />
+		<ctl name="Left ASPTX4 Slot Position" value="6" />
+		<ctl name="Left ASP TX1 Source" value="ASPRX1" />
+		<ctl name="Left ASP TX2 Source" value="VMON" />
+		<ctl name="Left ASP TX3 Source" value="Zero" />
+		<ctl name="Left ASP TX4 Source" value="Zero" />
+		<ctl name="Left PCM Source" value="ASP" />
+		<ctl name="Left Boost Enable" value="Disabled" />
+		<ctl name="Left AMP Enable Switch" value="1" />
+	</path>
+
+	<path name="dev-speaker">
+		<ctl name="Right ASPTX1 Slot Position" value="0" />
+		<ctl name="Right ASPTX2 Slot Position" value="2" />
+		<ctl name="Right ASPTX3 Slot Position" value="4" />
+		<ctl name="Right ASPTX4 Slot Position" value="6" />
+		<ctl name="Right ASP TX1 Source" value="DSPTX1" />
+		<ctl name="Right ASP TX2 Source" value="ASPRX1" />
+		<ctl name="Right ASP TX3 Source" value="Zero" />
+		<ctl name="Right ASP TX4 Source" value="Zero" />
+		<ctl name="Right PCM Source" value="DSP" />
+		<ctl name="Right Boost Enable" value="Enabled" />
+		<ctl name="Right AMP Enable Switch" value="1" />
+	</path>
+
+	<path name="dev-speaker2">
+		<ctl name="Left ASPTX1 Slot Position" value="0" />
+		<ctl name="Left ASPTX2 Slot Position" value="2" />
+		<ctl name="Left ASPTX3 Slot Position" value="4" />
+		<ctl name="Left ASPTX4 Slot Position" value="6" />
+		<ctl name="Left ASP TX1 Source" value="DSPTX1" />
+		<ctl name="Left ASP TX2 Source" value="ASPRX1" />
+		<ctl name="Left ASP TX3 Source" value="Zero" />
+		<ctl name="Left ASP TX4 Source" value="Zero" />
+		<ctl name="Left PCM Source" value="DSP" />
+		<ctl name="Left Boost Enable" value="Enabled" />
+		<ctl name="Left AMP Enable Switch" value="1" />
+	</path>
+
+	<path name="dev-dual-speaker">
+		<ctl name="Left ASPTX1 Slot Position" value="0" />
+		<ctl name="Left ASPTX2 Slot Position" value="2" />
+		<ctl name="Left ASPTX3 Slot Position" value="4" />
+		<ctl name="Left ASPTX4 Slot Position" value="6" />
+		<ctl name="Left ASP TX1 Source" value="DSPTX1" />
+		<ctl name="Left ASP TX2 Source" value="ASPRX1" />
+		<ctl name="Left ASP TX3 Source" value="Zero" />
+		<ctl name="Left ASP TX4 Source" value="Zero" />
+		<ctl name="Left PCM Source" value="DSP" />
+		<ctl name="Left Boost Enable" value="Enabled" />
+		<ctl name="Left AMP Enable Switch" value="1" />
+
+		<ctl name="Right ASPTX1 Slot Position" value="1" />
+		<ctl name="Right ASPTX2 Slot Position" value="3" />
+		<ctl name="Right ASPTX3 Slot Position" value="5" />
+		<ctl name="Right ASPTX4 Slot Position" value="7" />
+		<ctl name="Right ASP TX1 Source" value="DSPTX1" />
+		<ctl name="Right ASP TX2 Source" value="ASPRX1" />
+		<ctl name="Right ASP TX3 Source" value="Zero" />
+		<ctl name="Right ASP TX4 Source" value="Zero" />
+		<ctl name="Right PCM Source" value="DSP" />
+		<ctl name="Right Boost Enable" value="Enabled" />
+		<ctl name="Right AMP Enable Switch" value="1" />
+	</path>
+
+	<path name="dev-headset">
+		<ctl name="HPOUT2L Input 1" value="AIF1RX1" />
+		<ctl name="HPOUT2R Input 1" value="AIF1RX2" />
+		<ctl name="HPOUT2 Digital Switch" value="1" />
+	</path>
+
+	<path name="dev-speaker-headset">
+		<path name="dev-speaker" />
+		<path name="dev-headset" />
+	</path>
+
+	<path name="dev-dual-speaker-headset">
+		<path name="dev-dual-speaker" />
+		<path name="dev-headset" />
+	</path>
+
+	<path name="dev-speaker-headphone">
+		<path name="dev-speaker-headset" />
+	</path>
+
+	<path name="dev-dual-speaker-headphone">
+		<path name="dev-dual-speaker-headset" />
+	</path>
+
+	<path name="dev-fm_radio-input">
+		<ctl name="IN2L Mux" value="B" />
+		<ctl name="IN2R Mux" value="B" />
+		<ctl name="AIF3TX1 Input 1" value="IN2L" />
+		<ctl name="AIF3TX2 Input 1" value="IN2R" />
+	</path>
+
+	<path name="dev-main-mic">
+		<ctl name="LHPF1 Input 1" value="IN3L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF1" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT1" />
+		<ctl name="DMIC1 Switch" value="1" />
+	</path>
+
+	<path name="dev-2nd-mic">
+		<ctl name="LHPF2 Input 1" value="IN4L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF2" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<!-- L ch: main-mic / R ch: 2nd-mic -->
+	<path name="dev-dual-mic">
+		<ctl name="LHPF1 Input 1" value="IN3L" />
+		<ctl name="LHPF2 Input 1" value="IN4L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF1" />
+		<ctl name="ASRC1IN1R Input 1" value="LHPF2" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<!-- L ch: 2nd-mic / R ch: main-mic -->
+	<path name="dev-dual-invert-mic">
+		<ctl name="LHPF1 Input 1" value="IN3L" />
+		<ctl name="LHPF2 Input 1" value="IN4L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF2" />
+		<ctl name="ASRC1IN1R Input 1" value="LHPF1" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<path name="dev-headset-mic">
+		<ctl name="LHPF1 Input 1" value="IN1L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF1" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT1" />
+	</path>
+
+	<path name="dev-headset-main-mic">
+		<ctl name="LHPF1 Input 1" value="IN1L" />
+		<ctl name="LHPF2 Input 1" value="IN3L" />
+		<ctl name="ASRC1IN1L Input 1" value="LHPF1" />
+		<ctl name="ASRC1IN1R Input 1" value="LHPF2" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+	</path>
+
+	<!-- BT SCO Sampling Rate Settings -->
+	<path name="set-bt-sco-rx-rate-nb">
+		<ctl name="ABOX UAIF3 Rate" value="8000" />
+	</path>
+
+	<path name="set-bt-sco-tx-rate-nb">
+		<ctl name="ABOX UAIF3 Rate" value="8000" />
+	</path>
+
+	<path name="set-bt-sco-rx-rate-wb">
+		<ctl name="ABOX UAIF3 Rate" value="16000" />
+	</path>
+
+	<path name="set-bt-sco-tx-rate-wb">
+		<ctl name="ABOX UAIF3 Rate" value="16000" />
+	</path>
+
+	<!-- BT A2DP Sampling Rate Settings -->
+	<path name="set-bt-a2dp-playback">
+		<ctl name="ABOX UAIF3 Rate" value="48000" />
+	</path>
+
+	<!-- Left Amp control -->
+	<path name="upper-spk-amp-mute">
+		<ctl name="Left AMP Mute" value="Muted" />
+	</path>
+
+	<path name="upper-spk-amp-unmute">
+		<ctl name="Left AMP Mute" value="Unmuted" />
+	</path>
+
+	<!-- MCD Solution mixer settings -->
+	<path name="voip-rxse">
+		<ctl name="ABOX MCD_RXSE_EN" value="On" />
+		<ctl name="ABOX MCD_RXSE_A" value="VPCMOUT_DAI0" />
+		<ctl name="ABOX RDMA0_A" value="MCD_RXSE" />
+	</path>
+
+	<!-- Amp & codec mute control -->
+	<path name="output-mute">
+		<ctl name="HPOUT2 Digital Switch" value="0" />
+		<ctl name="Right Digital PCM Volume" value="0" />
+		<ctl name="Left Digital PCM Volume" value="0" />
+	</path>
+
+	<!-- Output mixer settings -->
+	<!-- Playback paths -->
+	<path name="media-handset">
+		<path name="dev-handset" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-speaker">
+		<path name="dev-speaker" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-speaker2">
+		<path name="dev-speaker2" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-dual-speaker">
+		<path name="dev-dual-speaker" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-headset">
+		<path name="dev-headset" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+	</path>
+
+	<path name="media-headphone">
+		<path name="media-headset" />
+	</path>
+
+	<path name="media-speaker-headset">
+		<path name="dev-speaker-headset" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-speaker-headphone">
+		<path name="media-speaker-headset" />
+	</path>
+
+	<path name="media-dual-speaker-headset">
+		<path name="dev-dual-speaker-headset" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-dual-speaker-headphone">
+		<path name="media-dual-speaker-headset" />
+	</path>
+
+	<path name="media-bt-sco-headphone">
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-wdma3-to-rdma6" />
+		<path name="route-rdma6-to-sifs2" />
+		<path name="route-sifs2-to-uaif3" />
+	</path>
+
+	<path name="media-bt-sco-headset">
+		<path name="media-bt-sco-headphone" />
+	</path>
+
+	<path name="media-speaker-bt-sco-headset">
+		<path name="dev-speaker" />
+		<path name="media-bt-sco-headphone" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-dual-speaker-bt-sco-headset">
+		<path name="dev-dual-speaker" />
+		<path name="media-bt-sco-headphone" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-bt-a2dp-headphone">
+		<path name="media-bt-sco-headphone"/>
+		<path name="dev-bt-a2dp"/>
+	</path>
+
+	<path name="media-bt-a2dp-headset">
+		<path name="media-bt-a2dp-headphone" />
+	</path>
+
+	<path name="media-dual-speaker-bt-a2dp-headphone">
+		<path name="dev-dual-speaker" />
+		<path name="media-bt-a2dp-headphone" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-usb-headset">
+		<path name="route-sifs0-to-nsrc5" />
+		<path name="route-nsrc5-to-wdma6" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-wdma6-to-usboutcom" />
+	</path>
+
+	<path name="media-speaker-usb-headset">
+		<path name="dev-speaker" />
+		<path name="route-sifs0-to-nsrc5" />
+		<path name="route-nsrc5-to-wdma6" />
+		<path name="route-wdma6-to-usboutcom" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<path name="media-dual-speaker-usb-headset">
+		<path name="dev-dual-speaker" />
+		<path name="route-sifs0-to-nsrc5" />
+		<path name="route-nsrc5-to-wdma6" />
+		<path name="route-wdma6-to-usboutcom" />
+		<path name="route-sifs0-to-nsrc2-bridge" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+	</path>
+
+	<!-- Remote MIC recording paths -->
+	<path name="remote_mic-mic">
+		<path name="dev-dual-invert-mic" />
+		<path name="route-uaif0-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-uaif0-to-nsrc0-bridge" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="acquire-abox-wakelock" />
+	</path>
+
+	<!-- Remote MIC playback paths -->
+	<path name="remote_mic-headphone">
+		<path name="route-remote_mic-comp-pipeline" />
+		<path name="dev-headset" />
+		<path name="route-sifs0-to-uaif0" />
+		<ctl name="ABOX DVTx Path Index" value="1" />
+		<ctl name="ABOX Speech Param" value="1" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="remote_mic-headset">
+		<path name="remote_mic-headphone" />
+	</path>
+
+	<path name="route-sifs0-to-uaif3">
+		<ctl name="ABOX UAIF3 SPK" value="SIFS0" />
+	</path>
+
+	<path name="remote_mic-bt-sco-headset">
+		<path name="route-remote_mic-comp-pipeline" />
+		<path name="route-sifs0-to-uaif3" />
+		<ctl name="ABOX DVTx Path Index" value="2" />
+		<ctl name="ABOX Speech Param" value="2" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="remote_mic-usb-headset">
+		<path name="route-remote_mic-comp-pipeline" />
+		<path name="route-sifs0-to-nsrc5" />
+		<path name="route-nsrc5-to-wdma6" />
+		<path name="route-wdma6-to-usboutcom" />
+		<ctl name="ABOX DVTx Path Index" value="3" />
+		<ctl name="ABOX Speech Param" value="3" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- Ringtone playback paths -->
+	<path name="ringtone-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="ringtone-speaker">
+		<path name="media-speaker" />
+	</path>
+
+	<path name="ringtone-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<path name="ringtone-headset">
+		<path name="media-headset" />
+	</path>
+
+	<path name="ringtone-usb-headset">
+		<path name="media-usb-headset" />
+	</path>
+
+	<path name="ringtone-speaker-headset">
+		<path name="media-speaker-headset" />
+	</path>
+
+	<path name="ringtone-dual-speaker-headset">
+		<path name="media-dual-speaker-headset" />
+	</path>
+
+	<path name="ringtone-speaker-headphone">
+		<path name="media-speaker-headphone" />
+	</path>
+
+	<path name="ringtone-dual-speaker-headphone">
+		<path name="media-dual-speaker-headphone" />
+	</path>
+
+	<path name="ringtone-bt-sco-headset">
+		<path name="media-bt-sco-headset" />
+	</path>
+
+	<path name="ringtone-speaker-bt-sco-headset">
+		<path name="media-speaker-bt-sco-headset" />
+	</path>
+
+	<path name="ringtone-dual-speaker-bt-sco-headset">
+		<path name="media-dual-speaker-bt-sco-headset" />
+	</path>
+
+	<path name="ringtone-speaker-usb-headset">
+		<path name="media-speaker-usb-headset" />
+	</path>
+
+	<path name="ringtone-dual-speaker-usb-headset">
+		<path name="media-dual-speaker-usb-headset" />
+	</path>
+
+	<!-- APCall(Communication) playback paths -->
+	<path name="communication-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="9" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="10" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="10" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-gaming-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="131" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="11" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="11" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="13" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="12" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="7" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="111" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- samsung voip fmc playback -->
+	<path name="samsung_voip_fmc-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="16" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="17" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="17" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="18" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="18" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="20" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="19" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="14" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="samsung_voip_fmc-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="113" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- WiFICall playback paths -->
+	<!-- WiFiCall AP NB -->
+	<path name="wificall_nb-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="48" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="50" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="50" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="52" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="52" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="55" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="54" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="46" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_nb-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="121" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- WiFiCall AP WB -->
+	<path name="wificall_wb-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="58" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="60" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="60" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="62" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="62" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="65" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="64" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="56" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_wb-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="123" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- WiFiCall AP EVS -->
+	<path name="wificall_evs-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="68" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="70" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="70" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="72" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="72" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="75" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="74" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="66" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="wificall_evs-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="125" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- VideoCall playback paths -->
+	<path name="video_call-handset">
+		<path name="voip-rxse" />
+		<path name="media-handset" />
+		<ctl name="ABOX Speech Param" value="30" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="31" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="31" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-dex-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="33" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-dex-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="33" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-headset">
+		<path name="voip-rxse" />
+		<path name="media-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="36" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-headphone">
+		<path name="voip-rxse" />
+		<path name="media-headphone" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Speech Param" value="35" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-bt-sco-headset">
+		<path name="voip-rxse" />
+		<path name="media-bt-sco-headset" />
+		<ctl name="ABOX Speech Param" value="28" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="video_call-usb-headset">
+		<path name="voip-rxse" />
+		<path name="media-usb-headset" />
+		<ctl name="ABOX Speech Param" value="117" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<!-- VoiceCall paths -->
+	<!-- Common VoiceCall paths -->
+	<path name="incall-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="incall-speaker">
+		<path name="media-speaker" />
+	</path>
+
+	<path name="incall-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<path name="incall-headset">
+		<path name="media-headset" />
+	</path>
+
+	<path name="incall-bt-sco-headset">
+		<path name="media-bt-sco-headset" />
+	</path>
+
+	<path name="incall-usb-headset">
+		<path name="media-usb-headset" />
+	</path>
+
+	<path name="incall-hearing-aid">
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+	</path>
+
+	<!-- VoiceCall CP NB -->
+	<path name="incall_nb-handset">
+		<path name="incall-handset" />
+		<ctl name="ABOX Sound Type" value="VOICE" />
+	</path>
+
+	<path name="incall_nb-speaker">
+		<path name="incall-speaker" />
+		<ctl name="ABOX Sound Type" value="SPEAKER" />
+	</path>
+
+	<path name="incall_nb-dual-speaker">
+		<path name="incall-dual-speaker" />
+		<ctl name="ABOX Sound Type" value="SPEAKER" />
+	</path>
+
+	<path name="incall_nb-dex-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="incall_nb-dex-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="incall_nb-headset">
+		<path name="incall-headset" />
+		<ctl name="HPOUT2 DRE Switch" value="0" />
+		<ctl name="HPOUT2 EDRE Switch" value="0" />
+		<ctl name="Output Ramp Up" value="8ms/6dB" />
+		<ctl name="ABOX Sound Type" value="HEADSET" />
+	</path>
+
+	<path name="incall_nb-headphone">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="incall_nb-bt-sco-headset">
+		<path name="incall-bt-sco-headset" />
+		<ctl name="ABOX Sound Type" value="BTVOICE" />
+	</path>
+
+	<path name="incall_nb-usb-headset">
+		<path name="incall-usb-headset" />
+		<ctl name="ABOX Sound Type" value="USB" />
+	</path>
+
+	<path name="incall_nb-hearing-aid">
+		<path name="incall-hearing-aid" />
+		<ctl name="ABOX Sound Type" value="BTVOICE" />
+	</path>
+
+	<!-- VoiceCall CP WB -->
+	<path name="incall_wb-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="incall_wb-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="incall_wb-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="incall_wb-dex-speaker">
+		<path name="incall_nb-dex-speaker" />
+	</path>
+
+	<path name="incall_wb-dex-dual-speaker">
+		<path name="incall_nb-dex-dual-speaker" />
+	</path>
+
+	<path name="incall_wb-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="incall_wb-headphone">
+		<path name="incall_nb-headphone" />
+	</path>
+
+	<path name="incall_wb-bt-sco-headset">
+		<path name="incall_nb-bt-sco-headset" />
+	</path>
+
+	<path name="incall_wb-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<path name="incall_wb-hearing-aid">
+		<path name="incall_nb-hearing-aid" />
+	</path>
+
+	<!-- VoLTECall CP NB -->
+	<path name="volte_cp_nb-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="volte_cp_nb-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="volte_cp_nb-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_nb-dex-speaker">
+		<path name="incall_nb-dex-speaker" />
+	</path>
+
+	<path name="volte_cp_nb-dex-dual-speaker">
+		<path name="incall_nb-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_nb-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="volte_cp_nb-headphone">
+		<path name="incall_nb-headphone" />
+	</path>
+
+	<path name="volte_cp_nb-bt-sco-headset">
+		<path name="incall_nb-bt-sco-headset" />
+	</path>
+
+	<path name="volte_cp_nb-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<path name="volte_cp_nb-hearing-aid">
+		<path name="incall_nb-hearing-aid" />
+	</path>
+
+	<!-- VoLTECall CP WB -->
+	<path name="volte_cp_wb-handset">
+		<path name="incall_wb-handset" />
+	</path>
+
+	<path name="volte_cp_wb-speaker">
+		<path name="incall_wb-speaker" />
+	</path>
+
+	<path name="volte_cp_wb-dual-speaker">
+		<path name="incall_wb-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_wb-dex-speaker">
+		<path name="incall_wb-dex-speaker" />
+	</path>
+
+	<path name="volte_cp_wb-dex-dual-speaker">
+		<path name="incall_wb-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_wb-headset">
+		<path name="incall_wb-headset" />
+	</path>
+
+	<path name="volte_cp_wb-headphone">
+		<path name="incall_wb-headphone" />
+	</path>
+
+	<path name="volte_cp_wb-bt-sco-headset">
+		<path name="incall_wb-bt-sco-headset" />
+	</path>
+
+	<path name="volte_cp_wb-usb-headset">
+		<path name="incall_wb-usb-headset" />
+	</path>
+
+	<path name="volte_cp_wb-hearing-aid">
+		<path name="incall_wb-hearing-aid" />
+	</path>
+
+	<!-- VoLTECall CP EVS -->
+	<path name="volte_cp_evs-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="volte_cp_evs-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="volte_cp_evs-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_evs-dex-speaker">
+		<path name="incall_nb-dex-speaker" />
+	</path>
+
+	<path name="volte_cp_evs-dex-dual-speaker">
+		<path name="incall_nb-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_cp_evs-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="volte_cp_evs-headphone">
+		<path name="volte_cp_evs-headset" />
+	</path>
+
+	<path name="volte_cp_evs-bt-sco-headset">
+		<path name="incall_nb-bt-sco-headset" />
+	</path>
+
+	<path name="volte_cp_evs-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<path name="volte_cp_evs-hearing-aid">
+		<path name="incall_nb-hearing-aid" />
+	</path>
+
+	<!-- VoLTE VideoCall CP NB -->
+	<path name="volte_vt_cp_nb-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="volte_vt_cp_nb-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dex-speaker">
+		<path name="incall_nb-dex-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dex-dual-speaker">
+		<path name="incall_nb-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_nb-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="volte_vt_cp_nb-headphone">
+		<path name="incall_nb-headphone" />
+	</path>
+
+	<path name="volte_vt_cp_nb-bt-sco-headset">
+		<path name="incall_nb-bt-sco-headset" />
+	</path>
+
+	<path name="volte_vt_cp_nb-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<path name="volte_vt_cp_nb-hearing-aid">
+		<path name="incall_nb-hearing-aid" />
+	</path>
+
+	<!-- VoLTE VideoCall CP WB -->
+	<path name="volte_vt_cp_wb-handset">
+		<path name="incall_wb-handset" />
+	</path>
+
+	<path name="volte_vt_cp_wb-speaker">
+		<path name="incall_wb-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dual-speaker">
+		<path name="incall_wb-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dex-speaker">
+		<path name="incall_wb-dex-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dex-dual-speaker">
+		<path name="incall_wb-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_wb-headset">
+		<path name="incall_wb-headset" />
+	</path>
+
+	<path name="volte_vt_cp_wb-headphone">
+		<path name="incall_wb-headphone" />
+	</path>
+
+	<path name="volte_vt_cp_wb-bt-sco-headset">
+		<path name="incall_wb-bt-sco-headset" />
+	</path>
+
+	<path name="volte_vt_cp_wb-usb-headset">
+		<path name="incall_wb-usb-headset" />
+	</path>
+
+	<path name="volte_vt_cp_wb-hearing-aid">
+		<path name="incall_wb-hearing-aid" />
+	</path>
+
+	<!-- VoLTE VideoCall CP EVS -->
+	<path name="volte_vt_cp_evs-handset">
+		<path name="volte_cp_evs-handset" />
+	</path>
+
+	<path name="volte_vt_cp_evs-speaker">
+		<path name="volte_cp_evs-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dual-speaker">
+		<path name="volte_cp_evs-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dex-speaker">
+		<path name="volte_cp_evs-dex-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dex-dual-speaker">
+		<path name="volte_cp_evs-dex-dual-speaker" />
+	</path>
+
+	<path name="volte_vt_cp_evs-headset">
+		<path name="volte_cp_evs-headset" />
+	</path>
+
+	<path name="volte_vt_cp_evs-headphone">
+		<path name="volte_cp_evs-headphone" />
+	</path>
+
+	<path name="volte_vt_cp_evs-bt-sco-headset">
+		<path name="volte_cp_evs-bt-sco-headset" />
+	</path>
+
+	<path name="volte_vt_cp_evs-usb-headset">
+		<path name="volte_cp_evs-usb-headset" />
+	</path>
+
+	<path name="volte_vt_cp_evs-hearing-aid">
+		<path name="volte_cp_evs-hearing-aid" />
+	</path>
+
+	<!-- TTY Mode -->
+	<path name="tty_mode-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="tty_mode-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="tty_mode-headphone">
+		<path name="tty_mode-headset" />
+	</path>
+
+	<path name="tty_mode-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<!-- AP TTY Mode -->
+	<path name="ap_tty_mode-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="ap_tty_mode-headset">
+		<path name="media-headset" />
+	</path>
+
+	<path name="ap_tty_mode-headphone">
+		<path name="ap_tty_mode-headset" />
+	</path>
+
+	<path name="ap_tty_mode-usb-headset">
+		<path name="media-usb-headset" />
+	</path>
+
+	<!-- FM Radio paths -->
+	<path name="fm_radio-speaker">
+		<path name="route-uaif2-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-fmradio-comp-pipeline" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+		<path name="dev-speaker" />
+		<path name="dev-fm_radio-input" />
+		<path name="acquire-abox-wakelock" />
+	</path>
+
+	<path name="fm_radio-dual-speaker">
+		<path name="route-uaif2-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-fmradio-comp-pipeline" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass-soundboost" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+		<path name="dev-dual-speaker" />
+		<path name="dev-fm_radio-input" />
+		<path name="acquire-abox-wakelock" />
+	</path>
+
+	<path name="fm_radio-headphone">
+		<path name="dev-headset" />
+		<path name="route-uaif2-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-fmradio-comp-pipeline" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="dev-fm_radio-input" />
+		<path name="acquire-abox-wakelock" />
+		<ctl name="Output Ramp Up" value="4ms/6dB" />
+	</path>
+
+	<path name="fm_radio-headset">
+		<path name="fm_radio-headphone" />
+	</path>
+
+	<!-- For BT A2DP : FM rx to AP tx -->
+	<path name="fm_radio-external">
+		<path name="route-uaif2-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-fmradio-comp-pipeline" />
+		<path name="dev-fm_radio-input" />
+		<path name="acquire-abox-wakelock" />
+	</path>
+
+	<!-- call forwarding output -->
+	<path name="call_forwarding_primary">
+		<!-- AP Rx -> CP Tx -->
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-uaif0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<ctl name="ABOX Sound Type" value="CALLFWD" />
+		<!-- CP Rx -> AP Tx -->
+		<path name="route-rdma4-to-sifs4" />
+		<path name="route-sifs4-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="route-uaif0-to-nsrc1-bridge" />
+		<path name="route-nsrc1-to-wdma2" />
+		<!-- Codec loop from Rx -> Tx -->
+		<path name="route-codec-rxtotx-loop" />
+	</path>
+
+	<!-- Spectro Scenario -->
+	<path name="call_spectro">
+		<!-- AP Rx -> CP Tx -->
+		<path name="call_forwarding_primary" />
+	</path>
+
+
+	<!-- Input mixer settings -->
+	<!-- Capture paths -->
+	<path name="route-ap-record">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+	</path>
+
+	<path name="route-ap-record-bt">
+		<path name="route-uaif3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+	</path>
+
+	<path name="route-ap-record-usb">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm0-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+		<path name="route-wdma1-to-vpcmindai" />
+	</path>
+
+	<!-- Capture paths with TXSE1 component (ex: BargeIn) -->
+	<path name="route-wdma1-to-txse1">
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE1_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE1" />
+		<ctl name="ABOX MCD_TXSE1_A" value="WDMA1" />
+		<ctl name="ABOX MCD_TXSE1_B" value="REFEXT4CH" />
+	</path>
+
+	<path name="route-ap-record-txse1">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-txse1" />
+	</path>
+
+	<path name="route-ap-record-bt-txse1">
+		<path name="route-uaif3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-txse1" />
+	</path>
+
+	<path name="route-ap-record-usb-txse1">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm0-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+		<path name="route-wdma1-to-txse1" />
+	</path>
+
+	<!-- Capture paths with DNN-TXSE2 component (ex: VoIP) -->
+	<path name="route-wdma1-to-dnn-txse2">
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX MCD_DNN_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE2_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE2" />
+		<ctl name="ABOX MCD_TXSE2_A" value="MCD_DNN" />
+		<ctl name="ABOX MCD_DNN_A" value="WDMA1" />
+		<ctl name="ABOX MCD_DNN_B" value="REFEXT4CH" />
+	</path>
+
+	<path name="route-ap-record-dnn-txse2">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-dnn-txse2" />
+	</path>
+
+	<path name="route-ap-record-bt-dnn-txse2">
+		<path name="route-uaif3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-dnn-txse2" />
+	</path>
+
+	<path name="route-ap-record-usb-dnn-txse2">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm0-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+		<path name="route-wdma1-to-dnn-txse2" />
+	</path>
+
+	<!-- Capture paths with TXSE1-TXSE2 component (ex: VoWifi, VT) -->
+	<path name="route-wdma1-to-txse1-txse2">
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE1_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE2_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE2" />
+		<ctl name="ABOX MCD_TXSE2_A" value="MCD_TXSE1" />
+		<ctl name="ABOX MCD_TXSE1_A" value="WDMA1" />
+		<ctl name="ABOX MCD_TXSE1_B" value="REFEXT4CH" />
+	</path>
+
+	<path name="route-ap-record-txse1-txse2">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-txse1-txse2" />
+	</path>
+
+	<path name="route-ap-record-bt-txse1-txse2">
+		<path name="route-uaif3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-txse1-txse2" />
+	</path>
+
+	<path name="route-ap-record-usb-txse1-txse2">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm0-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+		<path name="route-wdma1-to-txse1-txse2" />
+	</path>
+
+	<path name="media-mic">
+		<path name="dev-main-mic" />
+		<path name="route-ap-record" />
+	</path>
+
+	<path name="media-2nd-mic">
+		<path name="dev-2nd-mic" />
+		<path name="route-ap-record" />
+	</path>
+
+	<path name="media-headset-mic">
+		<path name="dev-headset-mic" />
+		<path name="route-ap-record" />
+	</path>
+
+	<path name="media-headset-main-mic">
+		<path name="dev-headset-main-mic" />
+		<path name="route-ap-record" />
+	</path>
+
+	<path name="media-headphone-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="media-bt-sco-headset-in">
+		<path name="route-ap-record-bt" />
+	</path>
+
+	<path name="media-usb-headset-mic">
+		<path name="route-ap-record-usb" />
+	</path>
+
+	<!-- Voice Recording paths -->
+	<path name="recording-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="recording-2nd-mic">
+		<path name="media-2nd-mic" />
+	</path>
+
+	<path name="recording-dualmic">
+		<path name="route-ap-record" />
+		<path name="dev-dual-invert-mic" />
+	</path>
+
+	<path name="recording-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="recording-headset-main-mic">
+		<path name="media-headset-main-mic" />
+	</path>
+
+	<path name="recording-headphone-mic">
+		<path name="recording-mic" />
+	</path>
+
+	<path name="recording-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="recording-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<path name="interview-mic">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX MCD_BIBF_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="MCD_BIBF" />
+		<ctl name="ABOX MCD_BIBF_A" value="WDMA1" />
+		<path name="dev-dual-invert-mic" />
+	</path>
+
+	<path name="meeting-mic">
+		<!-- TODO: We will make this -->
+	</path>
+
+	<!-- Camcording paths -->
+	<path name="camcorder-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="camcorder-2nd-mic">
+		<path name="media-2nd-mic" />
+	</path>
+
+	<path name="camcorder-dualmic">
+		<path name="recording-dualmic" />
+	</path>
+
+	<path name="camcorder-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="camcorder-headset-main-mic">
+		<path name="media-headset-main-mic" />
+	</path>
+
+	<path name="camcorder-headphone-mic">
+		<path name="camcorder-mic" />
+	</path>
+
+	<path name="camcorder-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- Recognition Input paths -->
+	<path name="recognition-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="recognition-2nd-mic">
+		<path name="media-2nd-mic" />
+	</path>
+
+	<path name="recognition-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="recognition-headphone-mic">
+		<path name="recognition-mic" />
+	</path>
+
+	<path name="recognition-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="recognition-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- bargein samsung input -->
+	<path name="bargein_samsung_engine-mic">
+		<path name="dev-dual-invert-mic" />
+		<path name="route-ap-record-txse1" />
+		<ctl name="ABOX OEM AP Call type" value="1" />
+		<ctl name="ABOX OEM NXP Mode" value="2" />
+	</path>
+
+	<path name="bargein_samsung_engine-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="bargein_samsung_engine-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="bargein_samsung_engine-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- bargein external input -->
+	<path name="bargein_external_engine-mic">
+		<path name="bargein_samsung_engine-mic" />
+	</path>
+
+	<path name="bargein_external_engine-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="bargein_external_engine-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="bargein_external_engine-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- svoice/carmode samsung input -->
+	<path name="dualmic_samsung_engine-mic">
+		<path name="dev-dual-mic" />
+		<path name="route-ap-record" />
+		<ctl name="IN HPF Cutoff Frequency" value="20Hz" />
+		<ctl name="Input Ramp Up" value="4ms/6dB" />
+	</path>
+
+	<path name="dualmic_samsung_engine-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="dualmic_samsung_engine-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="dualmic_samsung_engine-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- svoice/carmode external input -->
+	<path name="dualmic_external_engine-mic">
+		<path name="dualmic_samsung_engine-mic" />
+	</path>
+
+	<path name="dualmic_external_engine-headset-mic">
+		<path name="dualmic_samsung_engine-headset-mic" />
+	</path>
+
+	<path name="dualmic_external_engine-bt-sco-headset-in">
+		<path name="dualmic_samsung_engine-bt-sco-headset-in" />
+	</path>
+
+	<path name="dualmic_external_engine-usb-headset-mic">
+		<path name="dualmic_samsung_engine-usb-headset-mic" />
+	</path>
+
+	<!-- APCall TX paths -->
+	<path name="communication-handset-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="9" />
+		<ctl name="ABOX DVTx Path Index" value="9" />
+		<ctl name="ABOX DNN Path Index" value="9" />
+	</path>
+
+	<path name="communication-speaker-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="10" />
+		<ctl name="ABOX DVTx Path Index" value="10" />
+		<ctl name="ABOX DNN Path Index" value="10" />
+	</path>
+
+	<path name="communication-dual-speaker-mic">
+		<path name="communication-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="10" />
+		<ctl name="ABOX DVTx Path Index" value="10" />
+		<ctl name="ABOX DNN Path Index" value="10" />
+	</path>
+
+	<path name="communication-gaming-dual-speaker-mic">
+		<path name="communication-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="131" />
+		<ctl name="ABOX DVTx Path Index" value="131" />
+		<ctl name="ABOX DNN Path Index" value="131" />
+	</path>
+
+	<path name="communication-dex-speaker-mic">
+		<path name="communication-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="11" />
+		<ctl name="ABOX DVTx Path Index" value="11" />
+		<ctl name="ABOX DNN Path Index" value="11" />
+	</path>
+
+	<path name="communication-dex-dual-speaker-mic">
+		<path name="communication-dual-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="11" />
+		<ctl name="ABOX DVTx Path Index" value="11" />
+		<ctl name="ABOX DNN Path Index" value="11" />
+	</path>
+
+	<path name="communication-headset-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="13" />
+		<ctl name="ABOX DVTx Path Index" value="13" />
+		<ctl name="ABOX DNN Path Index" value="13" />
+	</path>
+
+	<path name="communication-headphone-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="12" />
+		<ctl name="ABOX DVTx Path Index" value="12" />
+		<ctl name="ABOX DNN Path Index" value="12" />
+	</path>
+
+	<path name="communication-bt-sco-headset-in">
+		<path name="route-ap-record-bt-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="8" />
+		<ctl name="ABOX DVTx Path Index" value="8" />
+		<ctl name="ABOX DNN Path Index" value="8" />
+	</path>
+
+	<path name="communication-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="7" />
+		<ctl name="ABOX DVTx Path Index" value="7" />
+		<ctl name="ABOX DNN Path Index" value="7" />
+	</path>
+
+	<path name="communication-usb-headset-mic">
+		<path name="route-ap-record-usb-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="111" />
+		<ctl name="ABOX DVTx Path Index" value="111" />
+		<ctl name="ABOX DNN Path Index" value="111" />
+	</path>
+
+	<!-- samsung voip fmc input -->
+	<path name="samsung_voip_fmc-handset-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="16" />
+		<ctl name="ABOX DVTx Path Index" value="16" />
+		<ctl name="ABOX DNN Path Index" value="16" />
+	</path>
+
+	<path name="samsung_voip_fmc-speaker-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="17" />
+		<ctl name="ABOX DVTx Path Index" value="17" />
+		<ctl name="ABOX DNN Path Index" value="17" />
+	</path>
+
+	<path name="samsung_voip_fmc-dual-speaker-mic">
+		<path name="samsung_voip_fmc-speaker-mic" />
+	</path>
+
+	<path name="samsung_voip_fmc-dex-speaker-mic">
+		<path name="samsung_voip_fmc-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="18" />
+		<ctl name="ABOX DVTx Path Index" value="18" />
+		<ctl name="ABOX DNN Path Index" value="18" />
+	</path>
+
+	<path name="samsung_voip_fmc-dex-dual-speaker-mic">
+		<path name="samsung_voip_fmc-dual-speaker-mic" />
+	</path>
+
+	<path name="samsung_voip_fmc-headset-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="20" />
+		<ctl name="ABOX DVTx Path Index" value="20" />
+		<ctl name="ABOX DNN Path Index" value="20" />
+	</path>
+
+	<path name="samsung_voip_fmc-headphone-mic">
+		<path name="route-ap-record-dnn-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="19" />
+		<ctl name="ABOX DVTx Path Index" value="19" />
+		<ctl name="ABOX DNN Path Index" value="19" />
+	</path>
+
+	<path name="samsung_voip_fmc-bt-sco-headset-in">
+		<path name="route-ap-record-bt-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="15" />
+		<ctl name="ABOX DVTx Path Index" value="15" />
+		<ctl name="ABOX DNN Path Index" value="15" />
+	</path>
+
+	<path name="samsung_voip_fmc-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="14" />
+		<ctl name="ABOX DVTx Path Index" value="14" />
+		<ctl name="ABOX DNN Path Index" value="14" />
+	</path>
+
+	<path name="samsung_voip_fmc-usb-headset-mic">
+		<path name="route-ap-record-usb-dnn-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="113" />
+		<ctl name="ABOX DVTx Path Index" value="113" />
+		<ctl name="ABOX DNN Path Index" value="113" />
+	</path>
+
+	<!-- WiFiCall Input paths -->
+	<!-- WiFiCall AP NB -->
+	<path name="wificall_nb-handset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="48" />
+		<ctl name="ABOX DVTx Path Index" value="48" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="50" />
+		<ctl name="ABOX DVTx Path Index" value="50" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-dual-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="50" />
+		<ctl name="ABOX DVTx Path Index" value="50" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-dex-speaker-mic">
+		<path name="wificall_nb-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="52" />
+		<ctl name="ABOX DVTx Path Index" value="52" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-dex-dual-speaker-mic">
+		<path name="wificall_nb-dual-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="52" />
+		<ctl name="ABOX DVTx Path Index" value="52" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-headset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="55" />
+		<ctl name="ABOX DVTx Path Index" value="55" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-headphone-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="54" />
+		<ctl name="ABOX DVTx Path Index" value="54" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-bt-sco-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="46" />
+		<ctl name="ABOX DVTx Path Index" value="46" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="47" />
+		<ctl name="ABOX DVTx Path Index" value="47" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_nb-usb-headset-mic">
+		<path name="route-ap-record-usb-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="121" />
+		<ctl name="ABOX DVTx Path Index" value="121" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<!-- WiFiCall AP WB -->
+	<path name="wificall_wb-handset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="58" />
+		<ctl name="ABOX DVTx Path Index" value="58" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="60" />
+		<ctl name="ABOX DVTx Path Index" value="60" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-dual-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="60" />
+		<ctl name="ABOX DVTx Path Index" value="60" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-dex-speaker-mic">
+		<path name="wificall_wb-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="62" />
+		<ctl name="ABOX DVTx Path Index" value="62" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-dex-dual-speaker-mic">
+		<path name="wificall_wb-dual-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="62" />
+		<ctl name="ABOX DVTx Path Index" value="62" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-headset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="65" />
+		<ctl name="ABOX DVTx Path Index" value="65" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-headphone-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="64" />
+		<ctl name="ABOX DVTx Path Index" value="64" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-bt-sco-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="56" />
+		<ctl name="ABOX DVTx Path Index" value="56" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="57" />
+		<ctl name="ABOX DVTx Path Index" value="57" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_wb-usb-headset-mic">
+		<path name="route-ap-record-usb-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="123" />
+		<ctl name="ABOX DVTx Path Index" value="123" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<!-- WiFiCall AP EVS -->
+	<path name="wificall_evs-handset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="68" />
+		<ctl name="ABOX DVTx Path Index" value="68" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="70" />
+		<ctl name="ABOX DVTx Path Index" value="70" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-dual-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="70" />
+		<ctl name="ABOX DVTx Path Index" value="70" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-dex-speaker-mic">
+		<path name="wificall_evs-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="72" />
+		<ctl name="ABOX DVTx Path Index" value="72" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-dex-dual-speaker-mic">
+		<path name="wificall_evs-dual-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="72" />
+		<ctl name="ABOX DVTx Path Index" value="72" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-headset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="75" />
+		<ctl name="ABOX DVTx Path Index" value="75" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-headphone-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="74" />
+		<ctl name="ABOX DVTx Path Index" value="74" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-bt-sco-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="66" />
+		<ctl name="ABOX DVTx Path Index" value="66" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="67" />
+		<ctl name="ABOX DVTx Path Index" value="67" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="wificall_evs-usb-headset-mic">
+		<path name="route-ap-record-usb-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="125" />
+		<ctl name="ABOX DVTx Path Index" value="125" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<!-- Video Call Input paths -->
+	<path name="video_call-handset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="30" />
+		<ctl name="ABOX DVTx Path Index" value="30" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-speaker-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-invert-mic" />
+		<ctl name="ABOX OEM AP Call type" value="31" />
+		<ctl name="ABOX DVTx Path Index" value="31" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-dual-speaker-mic">
+		<path name="video_call-speaker-mic" />
+	</path>
+
+	<path name="video_call-dex-speaker-mic">
+		<path name="video_call-speaker-mic" />
+		<ctl name="ABOX OEM AP Call type" value="33" />
+		<ctl name="ABOX DVTx Path Index" value="33" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-dex-dual-speaker-mic">
+		<path name="video_call-dual-speaker-mic" />
+	</path>
+
+	<path name="video_call-headset-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-headset-mic" />
+		<ctl name="ABOX OEM AP Call type" value="36" />
+		<ctl name="ABOX DVTx Path Index" value="36" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-headphone-mic">
+		<path name="route-ap-record-txse1-txse2" />
+		<path name="dev-dual-mic" />
+		<ctl name="ABOX OEM AP Call type" value="35" />
+		<ctl name="ABOX DVTx Path Index" value="35" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-bt-sco-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="28" />
+		<ctl name="ABOX DVTx Path Index" value="28" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-bt-sco-nrec-headset-in">
+		<path name="route-ap-record-bt-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="29" />
+		<ctl name="ABOX DVTx Path Index" value="29" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<path name="video_call-usb-headset-mic">
+		<path name="route-ap-record-usb-txse1-txse2" />
+		<ctl name="ABOX OEM AP Call type" value="117" />
+		<ctl name="ABOX DVTx Path Index" value="117" />
+		<ctl name="ABOX OEM NXP Mode" value="1" />
+	</path>
+
+	<!-- VoiceCall TX paths -->
+	<path name="route-cp-tx">
+		<path name="route-uaif0-to-nsrc1" />
+		<path name="route-nsrc1-to-wdma2" />
+	</path>
+
+	<path name="route-cp-tx-bridge">
+		<path name="route-uaif0-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-uaif0-to-nsrc0-bridge" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="route-uaif0-to-nsrc1-bridge" />
+		<path name="route-nsrc1-to-wdma2" />
+	</path>
+
+	<path name="route-bt-sco-tx">
+		<path name="route-uaif3-to-nsrc1" />
+		<path name="route-nsrc1-to-wdma2" />
+	</path>
+
+	<path name="route-bt-sco-tx-bridge">
+		<path name="route-uaif3-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-uaif3-to-nsrc0-bridge" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="route-uaif3-to-nsrc1-bridge" />
+		<path name="route-nsrc1-to-wdma2" />
+	</path>
+
+	<path name="route-usb-cp-tx">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc1" />
+		<path name="route-nsrc1-to-wdma2" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm1-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+	</path>
+
+	<path name="route-usb-cp-tx-bridge">
+		<path name="route-rdma10-to-sifs3" />
+		<path name="route-sifs3-to-nsrc6" />
+		<path name="route-nsrc6-to-wdma7" />
+		<path name="route-sifs3-to-nsrc0-bridge" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="route-sifs3-to-nsrc1-bridge" />
+		<path name="route-nsrc1-to-wdma2" />
+		<path name="route-sifs3-autoconfig" />
+		<path name="route-sifm1-autoconfig" />
+		<path name="route-usbincom-to-rdma10" />
+	</path>
+
+	<path name="karaoke-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<!-- VoiceCall CP NB -->
+	<path name="incall_nb-handset-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-dual-mic" />
+	</path>
+
+	<path name="incall_nb-speaker-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-dual-invert-mic" />
+	</path>
+
+	<path name="incall_nb-dual-speaker-mic">
+		<path name="incall_nb-speaker-mic" />
+	</path>
+
+	<path name="incall_nb-dex-speaker-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-2nd-mic" />
+	</path>
+
+	<path name="incall_nb-dex-dual-speaker-mic">
+		<path name="incall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="incall_nb-headset-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-headset-mic" />
+	</path>
+
+	<path name="incall_nb-headphone-mic">
+		<path name="incall_nb-handset-mic" />
+	</path>
+
+	<path name="incall_nb-bt-sco-headset-in">
+		<path name="route-bt-sco-tx-bridge" />
+	</path>
+
+	<path name="incall_nb-usb-headset-mic">
+		<path name="route-usb-cp-tx-bridge" />
+	</path>
+
+	<!-- VoiceCall CP WB -->
+	<path name="incall_wb-handset-mic">
+		<path name="incall_nb-handset-mic" />
+	</path>
+
+	<path name="incall_wb-speaker-mic">
+		<path name="incall_nb-speaker-mic" />
+	</path>
+
+	<path name="incall_wb-dual-speaker-mic">
+		<path name="incall_nb-dual-speaker-mic" />
+	</path>
+
+	<path name="incall_wb-dex-speaker-mic">
+		<path name="incall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="incall_wb-dex-dual-speaker-mic">
+		<path name="incall_nb-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="incall_wb-headset-mic">
+		<path name="incall_nb-headset-mic" />
+	</path>
+
+	<path name="incall_wb-headphone-mic">
+		<path name="incall_nb-headphone-mic" />
+	</path>
+
+	<path name="incall_wb-bt-sco-headset-in">
+		<path name="incall_nb-bt-sco-headset-in" />
+	</path>
+
+	<path name="incall_wb-usb-headset-mic">
+		<path name="incall_nb-usb-headset-mic" />
+	</path>
+
+	<!-- VoLTECall TX paths -->
+	<!-- VoiceCall CP NB -->
+	<path name="volte_cp_nb-handset-mic">
+		<path name="incall_nb-handset-mic" />
+	</path>
+
+	<path name="volte_cp_nb-speaker-mic">
+		<path name="incall_nb-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_nb-dual-speaker-mic">
+		<path name="incall_nb-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_nb-dex-speaker-mic">
+		<path name="incall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_nb-dex-dual-speaker-mic">
+		<path name="incall_nb-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_nb-headset-mic">
+		<path name="incall_nb-headset-mic" />
+	</path>
+
+	<path name="volte_cp_nb-headphone-mic">
+		<path name="incall_nb-headphone-mic" />
+	</path>
+
+	<path name="volte_cp_nb-bt-sco-headset-in">
+		<path name="incall_nb-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_cp_nb-usb-headset-mic">
+		<path name="incall_nb-usb-headset-mic" />
+	</path>
+
+	<!-- VoiceCall CP WB -->
+	<path name="volte_cp_wb-handset-mic">
+		<path name="incall_wb-handset-mic" />
+	</path>
+
+	<path name="volte_cp_wb-speaker-mic">
+		<path name="incall_wb-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_wb-dual-speaker-mic">
+		<path name="incall_wb-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_wb-dex-speaker-mic">
+		<path name="incall_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_wb-dex-dual-speaker-mic">
+		<path name="incall_wb-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_wb-headset-mic">
+		<path name="incall_wb-headset-mic" />
+	</path>
+
+	<path name="volte_cp_wb-headphone-mic">
+		<path name="incall_wb-headphone-mic" />
+	</path>
+
+	<path name="volte_cp_wb-bt-sco-headset-in">
+		<path name="incall_wb-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_cp_wb-usb-headset-mic">
+		<path name="incall_wb-usb-headset-mic" />
+	</path>
+
+	<!-- VoiceCall CP EVS -->
+	<path name="volte_cp_evs-handset-mic">
+		<path name="route-cp-tx-bridge" />
+		<ctl name="ASRC1IN1L Input 1" value="IN3L" />
+		<ctl name="ASRC1IN1R Input 1" value="IN4L" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<path name="volte_cp_evs-speaker-mic">
+		<path name="route-cp-tx-bridge" />
+		<ctl name="ASRC1IN1L Input 1" value="IN4L" />
+		<ctl name="ASRC1IN1R Input 1" value="IN3L" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<path name="volte_cp_evs-dual-speaker-mic">
+		<path name="volte_cp_evs-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_evs-dex-speaker-mic">
+		<path name="route-cp-tx-bridge" />
+		<ctl name="ASRC1IN1L Input 1" value="IN4L" />
+		<ctl name="ASRC1IN1R Input 1" value="IN4L" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<path name="volte_cp_evs-dex-dual-speaker-mic">
+		<path name="volte_cp_evs-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_cp_evs-headset-mic">
+		<path name="incall_nb-headset-mic" />
+	</path>
+
+	<path name="volte_cp_evs-headphone-mic">
+		<path name="route-cp-tx-bridge" />
+		<ctl name="ASRC1IN1L Input 1" value="IN3L" />
+		<ctl name="ASRC1IN1R Input 1" value="IN4L" />
+		<ctl name="ISRC1INT1 Input 1" value="ASRC1IN1L" />
+		<ctl name="ISRC1INT2 Input 1" value="ASRC1IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="ISRC1INT1" />
+		<ctl name="AIF1TX2 Input 1" value="ISRC1INT2" />
+		<ctl name="DMIC1 Switch" value="1" />
+		<ctl name="DMIC2 Switch" value="1" />
+	</path>
+
+	<path name="volte_cp_evs-bt-sco-headset-in">
+		<path name="incall_nb-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_cp_evs-usb-headset-mic">
+		<path name="incall_nb-usb-headset-mic" />
+	</path>
+
+	<!-- VoLTE VideoCall TX paths -->
+	<!-- VoLTE VideoCall CP NB -->
+	<path name="volte_vt_cp_nb-handset-mic">
+		<path name="incall_nb-handset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-speaker-mic">
+		<path name="incall_nb-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dual-speaker-mic">
+		<path name="incall_nb-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dex-speaker-mic">
+		<path name="incall_nb-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-dex-dual-speaker-mic">
+		<path name="incall_nb-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-headset-mic">
+		<path name="incall_nb-headset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-headphone-mic">
+		<path name="incall_nb-headphone-mic" />
+	</path>
+
+	<path name="volte_vt_cp_nb-bt-sco-headset-in">
+		<path name="incall_nb-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_vt_cp_nb-usb-headset-mic">
+		<path name="incall_nb-usb-headset-mic" />
+	</path>
+
+	<!-- VoLTE VideoCall CP WB -->
+	<path name="volte_vt_cp_wb-handset-mic">
+		<path name="incall_wb-handset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-speaker-mic">
+		<path name="incall_wb-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dual-speaker-mic">
+		<path name="incall_wb-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dex-speaker-mic">
+		<path name="incall_wb-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-dex-dual-speaker-mic">
+		<path name="incall_wb-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-headset-mic">
+		<path name="incall_wb-headset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-headphone-mic">
+		<path name="incall_wb-headphone-mic" />
+	</path>
+
+	<path name="volte_vt_cp_wb-bt-sco-headset-in">
+		<path name="incall_wb-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_vt_cp_wb-usb-headset-mic">
+		<path name="incall_wb-usb-headset-mic" />
+	</path>
+
+	<!-- VoLTE VideoCall CP EVS -->
+	<path name="volte_vt_cp_evs-handset-mic">
+		<path name="volte_cp_evs-handset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-speaker-mic">
+		<path name="volte_cp_evs-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dual-speaker-mic">
+		<path name="volte_cp_evs-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dex-speaker-mic">
+		<path name="volte_cp_evs-dex-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-dex-dual-speaker-mic">
+		<path name="volte_cp_evs-dex-dual-speaker-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-headset-mic">
+		<path name="volte_cp_evs-headset-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-headphone-mic">
+		<path name="volte_cp_evs-headphone-mic" />
+	</path>
+
+	<path name="volte_vt_cp_evs-bt-sco-headset-in">
+		<path name="volte_cp_evs-bt-sco-headset-in" />
+	</path>
+
+	<path name="volte_vt_cp_evs-usb-headset-mic">
+		<path name="volte_cp_evs-usb-headset-mic" />
+	</path>
+
+	<!-- TTY Mode Input paths -->
+	<path name="tty_mode-vco-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-main-mic" />
+	</path>
+
+	<path name="tty_mode-full-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-headset-mic" />
+	</path>
+
+	<path name="tty_mode-hco-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-headset-mic" />
+	</path>
+
+	<path name="tty_mode-usb-full-mic">
+		<path name="route-usb-cp-tx-bridge" />
+	</path>
+
+	<path name="tty_mode-usb-hco-mic">
+		<path name="route-usb-cp-tx-bridge" />
+	</path>
+
+	<!-- AP TTY Mode Input paths -->
+	<path name="ap_tty_mode-vco-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="ap_tty_mode-full-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="ap_tty_mode-hco-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="ap_tty_mode-usb-full-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<path name="ap_tty_mode-usb-hco-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- Call Forwarding Input paths -->
+	<path name="call_forwarding_primary-mic">
+		<!-- CP Rx -> AP Tx -->
+		<path name="route-rdma4-to-sifs4" />
+		<path name="route-sifs4-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-vpcmindai" />
+		<path name="route-uaif0-to-nsrc1-bridge" />
+		<path name="route-nsrc1-to-wdma2" />
+		<!-- Codec loop from Rx -> Tx -->
+		<path name="route-codec-rxtotx-loop" />
+	</path>
+
+	<!-- Spectro Scenario -->
+	<path name="call_spectro-mic">
+		<!-- CP Rx -> AP Tx -->
+		<path name="call_forwarding_primary-mic" />
+	</path>
+
+	<!-- Factory test paths -->
+	<!-- Loopback (no delay) -->
+	<path name="loopback-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<!-- Packet Loopback -->
+	<path name="loopback_packet-handset">
+		<path name="incall_nb-handset" />
+	</path>
+
+	<path name="loopback_packet-speaker2">
+		<path name="dev-speaker2" />
+		<path name="route-sifs0-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif1-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="erap-amp-reference-dsm-bypass" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif1" />
+		<ctl name="ABOX Sound Type" value="SPEAKER" />
+	</path>
+
+	<path name="loopback_packet-speaker">
+		<path name="incall_nb-speaker" />
+	</path>
+
+	<path name="loopback_packet-dual-speaker">
+		<path name="incall_nb-dual-speaker" />
+	</path>
+
+	<path name="loopback_packet-headset">
+		<path name="incall_nb-headset" />
+	</path>
+
+	<path name="loopback_packet-usb-headset">
+		<path name="incall_nb-usb-headset" />
+	</path>
+
+	<!-- Realtime Loopback -->
+	<path name="realtimeloopback-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="realtimeloopback-speaker2">
+		<path name="media-speaker2" />
+	</path>
+
+	<path name="realtimeloopback-speaker">
+		<path name="media-speaker" />
+	</path>
+
+	<path name="realtimeloopback-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<path name="realtimeloopback-headset">
+		<path name="media-headset" />
+	</path>
+
+	<path name="realtimeloopback-bt-sco-headset">
+		<path name="media-bt-sco-headset" />
+	</path>
+
+	<path name="realtimeloopback-usb-headset">
+		<path name="media-usb-headset" />
+	</path>
+
+	<!-- echo(rms) test output -->
+	<path name="echo_test-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="echo_test-speaker">
+		<path name="media-speaker" />
+	</path>
+
+	<path name="echo_test-speaker2">
+		<path name="media-speaker2" />
+	</path>
+
+	<path name="echo_test-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<path name="echo_thd_test-handset">
+		<path name="media-handset" />
+	</path>
+
+	<path name="echo_thd_test-speaker">
+		<path name="media-speaker" />
+	</path>
+
+	<path name="echo_thd_test-speaker2">
+		<path name="media-speaker2" />
+	</path>
+
+	<path name="echo_thd_test-dual-speaker">
+		<path name="media-dual-speaker" />
+	</path>
+
+	<!-- Input -->
+	<!-- Loopback Input (no delay) -->
+	<path name="loopback-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-main-mic" />
+	</path>
+
+	<path name="loopback-2nd-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-2nd-mic" />
+	</path>
+
+	<!-- Packet Loopback Input -->
+	<path name="loopback_packet-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-main-mic" />
+	</path>
+
+	<path name="loopback_packet-2nd-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-2nd-mic" />
+	</path>
+
+	<path name="loopback_packet-headset-mic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-headset-mic" />
+	</path>
+
+	<path name="loopback_packet-dualmic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-dual-mic" />
+	</path>
+
+	<path name="loopback_packet-handset-dualmic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-dual-mic" />
+	</path>
+
+	<path name="loopback_packet-speaker-dualmic">
+		<path name="route-cp-tx-bridge" />
+		<path name="dev-dual-invert-mic" />
+	</path>
+
+	<path name="loopback_packet-usb-headset-mic">
+		<path name="incall_nb-usb-headset-mic" />
+	</path>
+
+	<!-- Realtime Loopback Input -->
+	<path name="realtimeloopback-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="realtimeloopback-2nd-mic">
+		<path name="media-2nd-mic" />
+	</path>
+
+	<path name="realtimeloopback-headset-mic">
+		<path name="media-headset-mic" />
+	</path>
+
+	<path name="realtimeloopback-bt-sco-headset-in">
+		<path name="media-bt-sco-headset-in" />
+	</path>
+
+	<path name="realtimeloopback-usb-headset-mic">
+		<path name="media-usb-headset-mic" />
+	</path>
+
+	<!-- echo(rms) test input -->
+	<path name="echo_test-mic">
+		<path name="route-ap-record" />
+		<path name="dev-main-mic" />
+	</path>
+
+	<path name="echo_test-2nd-mic">
+		<path name="route-ap-record" />
+		<path name="dev-2nd-mic" />
+	</path>
+
+	<path name="echo_test-dualmic">
+		<path name="route-ap-record" />
+		<path name="dev-dual-mic" />
+	</path>
+
+	<path name="echo_thd_test-mic">
+		<path name="route-ap-record" />
+		<path name="dev-main-mic" />
+	</path>
+
+	<path name="echo_thd_test-2nd-mic">
+		<path name="route-ap-record" />
+		<path name="dev-2nd-mic" />
+	</path>
+
+	<path name="echo_thd_test-dualmic">
+		<path name="route-ap-record" />
+		<path name="dev-dual-mic" />
+	</path>
+
+	<path name="karaoke-2nd-mic">
+		<path name="media-2nd-mic" />
+	</path>
+</mixer>
