@@ -89,14 +89,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2x/proprietary/vendor/lib/hw/memtrack.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9825.so \
     vendor/samsung/d2x/proprietary/vendor/lib/hw/sensors.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.exynos9825.so \
     vendor/samsung/d2x/proprietary/vendor/lib/hw/sound_trigger.primary.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos9825.so \
+    vendor/samsung/d2x/proprietary/vendor/lib/libTOFProc_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTOFProc_interface.so \
     vendor/samsung/d2x/proprietary/vendor/lib/lib_SamsungRec_08010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_08010.so \
     vendor/samsung/d2x/proprietary/vendor/lib/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lvacfs.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
+    vendor/samsung/d2x/proprietary/vendor/lib/libdatazip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdatazip.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
+    vendor/samsung/d2x/proprietary/vendor/lib/libiu456_datapath_processor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiu456_datapath_processor.so \
     vendor/samsung/d2x/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
     vendor/samsung/d2x/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
     vendor/samsung/d2x/proprietary/vendor/lib/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.bio.so \
@@ -113,10 +116,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2x/proprietary/vendor/lib64/hw/memtrack.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9825.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/hw/sensors.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.exynos9825.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
+    vendor/samsung/d2x/proprietary/vendor/lib64/libTOFProc_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTOFProc_interface.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
+    vendor/samsung/d2x/proprietary/vendor/lib64/libdatazip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdatazip.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
+    vendor/samsung/d2x/proprietary/vendor/lib64/libiu456_datapath_processor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiu456_datapath_processor.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
     vendor/samsung/d2x/proprietary/vendor/lib64/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.bio.so \
