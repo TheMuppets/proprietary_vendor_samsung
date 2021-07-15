@@ -1,6 +1,0 @@
-# Set vendor property for SELinux permission
-on property:gsm.sim.state=*
-    setprop vendor.gsm.sim.state ${gsm.sim.state}
-
-on property:gsm.network.type=*
-    setprop vendor.gsm.network.type ${gsm.network.type}
