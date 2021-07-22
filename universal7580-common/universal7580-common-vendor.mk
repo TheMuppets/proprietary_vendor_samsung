@@ -12,7 +12,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptX_encoder.so \
     vendor/samsung/universal7580-common/proprietary/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
     vendor/samsung/universal7580-common/proprietary/lib/libhwjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwjpeg.so \
-    vendor/samsung/universal7580-common/proprietary/lib/liboemcrypto.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liboemcrypto.so \
     vendor/samsung/universal7580-common/proprietary/lib/libprotobuf-cpp-fl26.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-fl26.so \
     vendor/samsung/universal7580-common/proprietary/lib/libsensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsensorlistener.so \
     vendor/samsung/universal7580-common/proprietary/lib/libstagefright_hdcp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_hdcp.so \
