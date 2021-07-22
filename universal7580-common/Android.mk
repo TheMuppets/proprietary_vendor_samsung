@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter a3xelte a5xelte a7xelte gvwifi gvlte j7elte s5neolte,$(TARGET_DEVICE)),)
+ifneq ($(filter a3xelte a5xelte a7xelte gvwifi gvlte j7elte j7xlte s5neolte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libGLES_mali
