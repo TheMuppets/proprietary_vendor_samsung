@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2016, moredump definitions for PL192 Vectored Interrupt Controller
+
+From ARM PrimeCell VectoredInterrupt Controller (PL192) TRM
+-->
+
+<registerfragment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.samsung.com RegisterFragment.xsd"
+          name="Vectored interrupt controller" class="D" comment="Based on ARM PrimeCell VIC (PL192) TRM">
+
+  <block name ="Common">
+    <register addr="0000" rw_flags="R" width="4" name="VICIRQSTATUS" comment="IRQ Status Register"/>
+    <register addr="0004" rw_flags="R" width="4" name="VICFIQSTATUS" comment="FIQ Status Register"/>
+    <register addr="0008" rw_flags="R" width="4" name="VICRAWINTR" comment="Raw Interrupt Status Register"/>
+    <register addr="000C" rw_flags="RW" width="4" name="VICINTSELECT" comment="Interrupt Select Register"/>
+    <register addr="0010" rw_flags="RW" width="4" name="VICINTENABLE" comment="Interrupt Enable Register"/>
+    <register addr="0014" rw_flags="W" width="4" name="VICINTENCLEAR" comment="Interrupt Enable Clear Register"/>
+    <register addr="0018" rw_flags="RW" width="4" name="VICSOFTINT" comment="Software Interrupt Register"/>
+    <register addr="001C" rw_flags="W" width="4" name="VICSOFTINTCLEAR" comment="Software Interrupt Clear Register"/>
+    <register addr="0020" rw_flags="RW" width="1" name="VICPROTECTION" comment="Protection Enable Register"/>
+    <register addr="0024" rw_flags="RW" width="2" name="VICSWPRIORITY MASK" comment="Software Priority Mask Register"/>
+    <register addr="0028" rw_flags="RW" width="1" name="VICPRIORITYDAISY" comment="Vector Priority Register for Daisy Chain"/>
+  </block>
+
+  <array name ="Vector addresses" addr="0100" count ="32">
+    <register addr="0000" rw_flags="RW" width="4" name="VICVECTADDR" comment="Vector Address Register"/>
+  </array>
+
+  <array name ="Vector priorities" addr="0200" count="32">
+    <register addr="0000" rw_flags="RW" width="1" name="VICVECTPRIORITY" comment="Vector Priority Register"/>
+  </array>
+
+  <block name ="Coresight Management Registers">
+    <register addr="0F00" rw_flags="RW" width="4" name="VICADDRESS" comment="Vector Address Register"/>
+    <register addr="0FE0" rw_flags="R" width="1" name="VICPERIPHID0" comment="Peripheral Identification Register bits 7:0"/>
+    <register addr="0FE4" rw_flags="R" width="1" name="VICPERIPHID1" comment="Peripheral Identification Register bits 15:8"/>
+    <register addr="0FE8" rw_flags="R" width="1" name="VICPERIPHID2" comment="Peripheral Identification Register bits 23:16"/>
+    <register addr="0FEC" rw_flags="R" width="1" name="VICPERIPHID3" comment="Peripheral Identification Register bits 31:24"/>
+    <register addr="0FF0" rw_flags="R" width="1" name="VICPCELLID0" comment="PrimeCell Identification Register bits 7:0"/>
+    <register addr="0FF4" rw_flags="R" width="1" name="VICPCELLID1" comment="PrimeCell Identification Register bits 15:8"/>
+    <register addr="0FF8" rw_flags="R" width="1" name="VICPCELLID2" comment="PrimeCell Identification Register bits 23:16"/>
+    <register addr="0FFC" rw_flags="R" width="1" name="VICPCELLID3" comment="PrimeCell Identification Register bits 31:24"/>
+  </block>
+</registerfragment>

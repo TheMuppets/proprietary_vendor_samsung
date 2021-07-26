@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2016, moredump definitions for a mailbox with 4 shared registers
+-->
+
+<memoryfragment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.samsung.com MemoryFragment.xsd"
+           name="mailbox 16" comment="Mailbox with 16 shared registers">
+  <region startAddr="0000" endAddr="0003" name="MCUController" comment="MCU Controller" />
+  <region startAddr="0008" endAddr="001B" name="Interrupts from" comment="Interrupt registers" />
+  <region startAddr="001C" endAddr="002F" name="Interrupts to" comment="Interrupt registers" />
+  <region startAddr="004C" endAddr="0053" name="Init" comment="INIT/VERSION" />
+  <region startAddr="0080" endAddr="00BF" name="Shared" comment="Shared registers" />
+</memoryfragment>

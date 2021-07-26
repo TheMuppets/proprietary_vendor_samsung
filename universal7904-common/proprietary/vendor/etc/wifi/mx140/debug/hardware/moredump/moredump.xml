@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2017, definitions for moredump: lassen platform
+-->
+
+<moredump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.samsung.com Moredump.xsd">
+
+  <target name="lassen" aka="mxl141" idat="530003FC" chipid="A3" firmware="80000000"
+          comment="http://confluence/display/LAS/Maxwell150+Memory+Map">
+    <!-- Define the mmap range - DO NOT CHANGE THIS -->
+    <mmap startAddr="80000000" endAddr="803FFFFF" dev="/dev/mx_0_mmap"/>
+
+    <bb>
+      <cpu name="CortexR4" xml="cortexR4.xml" t32API="20001" t32GDB="30001" dev="/dev/mx_0_r4_gdb">
+        <extraXml name ="VIC" baseAddr="ffff0000" xml="pl192vic.xml"/>
+      </cpu>
+      <cpu name="CortexM4" xml="cortexM4.xml" t32API="20000" t32GDB="30000" dev="/dev/mx_0_m4_gdb"/>
+      <subsystem name="bt" xml="bt_registers.xml" speedy="40320000"/>
+      <subsystem name="wlan" xml="wlan_sys_registers.xml" speedy="50220000"/>
+    </bb>
+
+    <memory>
+      <cpuSpecific name="CortexR4">
+        <!-- Memory specific to (and will only be read via) CortexR4 -->
+        <region startAddr="00000000" endAddr="00007fff" name="ATCM" comment="32K"/>
+        <region startAddr="00030000" endAddr="0003ffff" name="B1TCM" comment="64K"/>
+      </cpuSpecific>
+
+      <cpuSpecific name="CortexM4">
+        <!--  Memory specific to (and will only be read via) CortexM4 -->
+      </cpuSpecific>
+
+      <!--  Memory that can be read via (possibly mmap or) CortexR4 or CortexM4 -->
+      <region startAddr="53008000" endAddr="530083FF" name="KARAM" comment="1KB" />
+      <region startAddr="70000000" endAddr="70017FFF" name="RAMSW" comment="96KB" />
+      <region startAddr="08000000" endAddr="0802BFFF" name="RAMSB" comment="176KB" />
+      <region startAddr="80000000" endAddr="803FFFFF" name="DRAM" comment="4MB" />
+
+      <!-- <extraXml name="DBUS A-BOX mailbox" baseAddr="????????" xml="mailbox4.xml"/> -->
+      <extraXml name="DBUS AP Cortex R4 mailbox" baseAddr="A20C0000" xml="mailbox4.xml"/>
+      <extraXml name="DBUS AP Cortex M4 mailbox" baseAddr="A20E0000" xml="mailbox4.xml"/>
+      <!-- <extraXml name="DBUS APM mailbox" baseAddr="????????" xml="mailbox4.xml"/> -->
+      <!-- <extraXml name="PBUS Cellular mailbox" baseAddr="B0001000" xml="mailbox16.xml"/> -->
+      <!-- <extraXml name="PBUS GNSS mailbox" baseAddr="B0002000" xml="mailbox16.xml"/> -->
+    </memory>
+  </target>
+</moredump>

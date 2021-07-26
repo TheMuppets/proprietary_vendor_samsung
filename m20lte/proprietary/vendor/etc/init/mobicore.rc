@@ -1,0 +1,24 @@
+on post-fs
+	setprop vendor.sys.mobicoredaemon.enable stopped
+
+on late-fs
+
+on nonencrypted
+    mkdir /data/vendor/mcRegistry 0775 system system
+
+on property:vold.decrypt=trigger_restart_framework
+    mkdir /data/vendor/mcRegistry 0775 system system
+
+on post-fs
+    export MC_AUTH_TOKEN_PATH /efs
+    mkdir /efs/TEE  0770 radio system
+    mkdir /mnt/vendor/efs/TEE  0770 radio system
+    chmod 0660 /dev/t-base-tui
+    chown system system /dev/t-base-tui
+    start mobicore
+
+service mobicore /vendor/bin/mcDriverDaemon -r /vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin -r /vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin -r /vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin -r /vendor/app/mcRegistry/ffffffffd0000000000000000000001c.tlbin -r /vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin
+    class core
+    user system
+    group system
+    disabled
