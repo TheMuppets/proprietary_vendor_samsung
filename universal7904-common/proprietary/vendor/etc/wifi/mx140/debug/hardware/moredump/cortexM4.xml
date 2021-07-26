@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2016, moredump definitions for Cortex M4 processor
+-->
+
+<processor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://www.samsung.com Processor.xsd"
+           name="Cortex M4"
+           comment="Cortex M4 Processor/co-processors">
+  <cpuregister name="R0"/>
+  <cpuregister name="R1"/>
+  <cpuregister name="R2"/>
+  <cpuregister name="R3"/>
+  <cpuregister name="R4"/>
+  <cpuregister name="R5"/>
+  <cpuregister name="R6"/>
+  <cpuregister name="R7"/>
+  <cpuregister name="R8"/>
+  <cpuregister name="R9"/>
+  <cpuregister name="R10"/>
+  <cpuregister name="R11"/>
+  <cpuregister name="R12"/>
+  <cpuregister name="R13"/>
+  <cpuregister name="R14"/>
+  <cpuregister name="PC"/>
+  <cpuregister name="XPSR"/>
+  <cpuregister name="CONTROL"/>
+  <cpuregister name="FAULTMASK"/>
+  <cpuregister name="BASEPRI"/>
+  <cpuregister name="PRIMASK"/>
+  <cpuregister name="MSP"/>
+  <cpuregister name="PSP"/>
+
+  <memorymapped name="System Control" class="S">
+    <register addr="e000e008" rw_flags="RW" width="4" name="ACTLR" comment="Auxiliary Control Register"/>
+    <register addr="e000e010" rw_flags="RW" width="4" name="STCSR" comment="SysTick Control and Status Register"/>
+    <register addr="e000e014" rw_flags="RW" width="4" name="STRVR" comment="SysTick Reload Value Register"/>
+    <register addr="e000e018" rw_flags="RW" width="4" name="STCVR" comment="SysTick Current Value Register"/>
+    <register addr="e000e01c" rw_flags="RW" width="4" name="STCR" comment="SysTick Calibration Value Register"/>
+    <register addr="e000ed00" rw_flags="RW" width="4" name="CPUID" comment="CPU ID Base Register"/>
+    <register addr="e000ed04" rw_flags="RW" width="4" name="ICSR" comment="Interrupt Control State Register"/>
+    <register addr="e000ed08" rw_flags="RW" width="4" name="VTOR" comment="Vector Table Offset Register"/>
+    <register addr="e000ed0c" rw_flags="RW" width="4" name="AIRCR" comment="Application Interrupt and Reset Control Register"/>
+    <register addr="e000ed10" rw_flags="RW" width="4" name="SCR" comment="System Control Register"/>
+    <register addr="e000ed14" rw_flags="RW" width="4" name="CCR" comment="Configuration Control Register"/>
+    <register addr="e000ed18" rw_flags="RW" width="4" name="SHPR1" comment="System Handler Priority Register 1"/>
+    <register addr="e000ed1c" rw_flags="RW" width="4" name="SHPR2" comment="System Handler Priority Register 2"/>
+    <register addr="e000ed20" rw_flags="RW" width="4" name="SHPR3" comment="System Handler Priority Register 3"/>
+    <register addr="e000ed24" rw_flags="RW" width="4" name="SHCSR" comment="System Handler Control and State Register"/>
+    <register addr="e000ed28" rw_flags="RW" width="4" name="CFSR" comment="Configurable Fault Status Register"/>
+    <register addr="e000ed2c" rw_flags="RW" width="4" name="HFSR" comment="Hard Fault Status Register"/>
+    <register addr="e000ed30" rw_flags="RW" width="4" name="DFSR" comment="Debug Fault Status Register"/>
+    <register addr="e000ed34" rw_flags="RW" width="4" name="MMFAR" comment="MemManage Fault Address Register"/>
+    <register addr="e000ed38" rw_flags="RW" width="4" name="BFAR" comment="BusFault Address Register"/>
+    <register addr="e000ed3c" rw_flags="RW" width="4" name="AFSR" comment="Auxiliary Fault Status Register"/>
+    <register addr="e000ed88" rw_flags="RW" width="4" name="CPACR" comment="Coprocessor Access Control Register"/>
+    <block name="Feature Registers">
+      <register addr="e000ed40" rw_flags="RW" width="4" name="ID_PFR0" comment="Processor Feature Register 0"/>
+      <register addr="e000ed44" rw_flags="RW" width="4" name="ID_PFR1" comment="Processor Feature Register 1"/>
+      <register addr="e000ed48" rw_flags="RW" width="4" name="ID_DFR0" comment="Debug Feature Register 0"/>
+      <register addr="e000ed4c" rw_flags="RW" width="4" name="ID_AFR0" comment="Auxiliary Feature Register 0"/>
+      <register addr="e000ed50" rw_flags="RW" width="4" name="ID_MMFR0" comment="Memory Model Feature Register 0"/>
+      <register addr="e000ed54" rw_flags="RW" width="4" name="ID_MMFR1" comment="Memory Model Feature Register 1"/>
+      <register addr="e000ed58" rw_flags="RW" width="4" name="ID_MMFR2" comment="Memory Model Feature Register 2"/>
+      <register addr="e000ed5c" rw_flags="RW" width="4" name="ID_MMFR3" comment="Memory Model Feature Register 3"/>
+      <register addr="e000ed60" rw_flags="RW" width="4" name="ID_ISAR0" comment="Instruction Set Attribute Feature Register 0"/>
+      <register addr="e000ed64" rw_flags="RW" width="4" name="ID_ISAR1" comment="Instruction Set Attribute Feature Register 1"/>
+      <register addr="e000ed68" rw_flags="RW" width="4" name="ID_ISAR2" comment="Instruction Set Attribute Feature Register 2"/>
+      <register addr="e000ed6c" rw_flags="RW" width="4" name="ID_ISAR3" comment="Instruction Set Attribute Feature Register 3"/>
+      <register addr="e000ed70" rw_flags="RW" width="4" name="ID_ISAR4" comment="Instruction Set Attribute Feature Register 4"/>
+    </block>
+    <block name="Coresight identification Registers">
+      <register addr="e000efd0" rw_flags="RW" width="4" name="PID4" comment="Peripheral Identification Register 4"/>
+      <register addr="e000efe0" rw_flags="RW" width="4" name="PID0" comment="Peripheral ID0"/>
+      <register addr="e000efe4" rw_flags="RW" width="4" name="PID1" comment="Peripheral ID1"/>
+      <register addr="e000efe8" rw_flags="RW" width="4" name="PID2" comment="Peripheral ID2"/>
+      <register addr="e000efec" rw_flags="RW" width="4" name="PID3" comment="Peripheral ID3"/>
+      <register addr="e000eff0" rw_flags="RW" width="4" name="CID0" comment="Component ID0 (Preamble)"/>
+      <register addr="e000eff4" rw_flags="RW" width="4" name="CID1" comment="Component ID1"/>
+      <register addr="e000eff8" rw_flags="RW" width="4" name="CID2" comment="Component ID2"/>
+      <register addr="e000effc" rw_flags="RW" width="4" name="CID3" comment="Component ID3"/>
+    </block>
+  </memorymapped>
+
+  <memorymapped name="Memory Protection Unit" class="S">
+    <register addr="e000ed90" rw_flags="RW" width="4" name="MPUTYPE" comment="MPU Type Register"/>
+    <register addr="e000ed94" rw_flags="RW" width="4" name="MPUCONTROL" comment="MPU Control Register"/>
+    <table name="MPU Regions">
+      <indexregister addr="e000ed98" rw_flags="RW" width="4" name="MPUREGION" comment="MPU Region Number Register">
+        <countfrom addr="e000ed90" rw_flags="RW" width="4" name="MPUTYPE" comment="MPU type register" shift="8" mask="000F"/>
+      </indexregister>
+      <register addr="e000ed9c" rw_flags="RW" width="4" name="MBUREGBASEADD" comment="MPU Region Base Address Register"/>
+      <register addr="e000eda0" rw_flags="RW" width="4" name="MPUREGATTRIB" comment="MPU Region Attribute and Size Register"/>
+    </table>
+  </memorymapped>
+
+  <memorymapped name="Nested Vectored Interrupt Controller" class="S">
+    <register addr="e000e004" rw_flags="RW" width="4" name="ICTR" comment="Interrupt Controller Type Register"/>
+    <block name="Interrupt Set/Clear Enable Registers">
+      <register addr="e000e100" rw_flags="RW" width="4" name="IRQ0_31SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e104" rw_flags="RW" width="4" name="IRQ32_63SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e108" rw_flags="RW" width="4" name="IRQ64_95SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e10c" rw_flags="RW" width="4" name="IRQ96_127SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e110" rw_flags="RW" width="4" name="IRQ128_159SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e114" rw_flags="RW" width="4" name="IRQ160_191SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+      <register addr="e000e118" rw_flags="RW" width="4" name="IRQ192_223SET/CLREN" comment="Interrupt Set/Cleared Enable Register"/>
+      <register addr="e000e11c" rw_flags="RW" width="4" name="IRQ224_239SET/CLREN" comment="Interrupt Set/Clear Enable Register"/>
+    </block>
+    <block name="Interrupt Set/Clear Pending Registers">
+      <register addr="e000e200" rw_flags="RW" width="4" name="IRQ0_31_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e204" rw_flags="RW" width="4" name="IRQ32_63_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e208" rw_flags="RW" width="4" name="IRQ64_95_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e20c" rw_flags="RW" width="4" name="IRQ96_127_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e210" rw_flags="RW" width="4" name="IRQ128_159_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e214" rw_flags="RW" width="4" name="IRQ160_191_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e218" rw_flags="RW" width="4" name="IRQ192_223_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+      <register addr="e000e21c" rw_flags="RW" width="4" name="IRQ224_239_SET/CLRPEN" comment="Interrupt Set/Clear Pending Register"/>
+    </block>
+    <block name="Interrupt Active Bit Registers">
+      <register addr="e000e300" rw_flags="RW" width="4" name="ACTIVE1" comment="Active Bit Register 1"/>
+      <register addr="e000e304" rw_flags="RW" width="4" name="ACTIVE2" comment="Active Bit Register 2"/>
+      <register addr="e000e308" rw_flags="RW" width="4" name="ACTIVE3" comment="Active Bit Register 3"/>
+      <register addr="e000e30c" rw_flags="RW" width="4" name="ACTIVE4" comment="Active Bit Register 4"/>
+      <register addr="e000e310" rw_flags="RW" width="4" name="ACTIVE5" comment="Active Bit Register 5"/>
+      <register addr="e000e314" rw_flags="RW" width="4" name="ACTIVE6" comment="Active Bit Register 6"/>
+      <register addr="e000e318" rw_flags="RW" width="4" name="ACTIVE7" comment="Active Bit Register 7"/>
+      <register addr="e000e31c" rw_flags="RW" width="4" name="ACTIVE8" comment="Active Bit Register 8"/>
+    </block>
+    <block name="Interrupt Priority Registers">
+      <register addr="e000e400" rw_flags="RW" width="4" name="INT0" comment="Interrupt Priority Register"/>
+      <register addr="e000e404" rw_flags="RW" width="4" name="INT1" comment="Interrupt Priority Register"/>
+      <register addr="e000e408" rw_flags="RW" width="4" name="INT2" comment="Interrupt Priority Register"/>
+      <register addr="e000e40c" rw_flags="RW" width="4" name="INT3" comment="Interrupt Priority Register"/>
+      <register addr="e000e410" rw_flags="RW" width="4" name="INT4" comment="Interrupt Priority Register"/>
+      <register addr="e000e414" rw_flags="RW" width="4" name="INT5" comment="Interrupt Priority Register"/>
+      <register addr="e000e418" rw_flags="RW" width="4" name="INT6" comment="Interrupt Priority Register"/>
+      <register addr="e000e41c" rw_flags="RW" width="4" name="INT7" comment="Interrupt Priority Register"/>
+      <register addr="e000e420" rw_flags="RW" width="4" name="INT8" comment="Interrupt Priority Register"/>
+      <register addr="e000e424" rw_flags="RW" width="4" name="INT9" comment="Interrupt Priority Register"/>
+      <register addr="e000e428" rw_flags="RW" width="4" name="INT10" comment="Interrupt Priority Register"/>
+      <register addr="e000e42c" rw_flags="RW" width="4" name="INT11" comment="Interrupt Priority Register"/>
+      <register addr="e000e430" rw_flags="RW" width="4" name="INT12" comment="Interrupt Priority Register"/>
+      <register addr="e000e434" rw_flags="RW" width="4" name="INT13" comment="Interrupt Priority Register"/>
+      <register addr="e000e438" rw_flags="RW" width="4" name="INT14" comment="Interrupt Priority Register"/>
+      <register addr="e000e43c" rw_flags="RW" width="4" name="INT15" comment="Interrupt Priority Register"/>
+      <register addr="e000e440" rw_flags="RW" width="4" name="INT16" comment="Interrupt Priority Register"/>
+      <register addr="e000e444" rw_flags="RW" width="4" name="INT17" comment="Interrupt Priority Register"/>
+      <register addr="e000e448" rw_flags="RW" width="4" name="INT18" comment="Interrupt Priority Register"/>
+      <register addr="e000e44c" rw_flags="RW" width="4" name="INT19" comment="Interrupt Priority Register"/>
+      <register addr="e000e450" rw_flags="RW" width="4" name="INT20" comment="Interrupt Priority Register"/>
+      <register addr="e000e454" rw_flags="RW" width="4" name="INT21" comment="Interrupt Priority Register"/>
+      <register addr="e000e458" rw_flags="RW" width="4" name="INT22" comment="Interrupt Priority Register"/>
+      <register addr="e000e45c" rw_flags="RW" width="4" name="INT23" comment="Interrupt Priority Register"/>
+      <register addr="e000e460" rw_flags="RW" width="4" name="INT24" comment="Interrupt Priority Register"/>
+      <register addr="e000e464" rw_flags="RW" width="4" name="INT25" comment="Interrupt Priority Register"/>
+      <register addr="e000e468" rw_flags="RW" width="4" name="INT26" comment="Interrupt Priority Register"/>
+      <register addr="e000e46c" rw_flags="RW" width="4" name="INT27" comment="Interrupt Priority Register"/>
+      <register addr="e000e470" rw_flags="RW" width="4" name="INT28" comment="Interrupt Priority Register"/>
+      <register addr="e000e474" rw_flags="RW" width="4" name="INT29" comment="Interrupt Priority Register"/>
+      <register addr="e000e478" rw_flags="RW" width="4" name="INT30" comment="Interrupt Priority Register"/>
+      <register addr="e000e47c" rw_flags="RW" width="4" name="INT31" comment="Interrupt Priority Register"/>
+      <register addr="e000e480" rw_flags="RW" width="4" name="INT32" comment="Interrupt Priority Register"/>
+      <register addr="e000e484" rw_flags="RW" width="4" name="INT33" comment="Interrupt Priority Register"/>
+      <register addr="e000e488" rw_flags="RW" width="4" name="INT34" comment="Interrupt Priority Register"/>
+      <register addr="e000e48c" rw_flags="RW" width="4" name="INT35" comment="Interrupt Priority Register"/>
+      <register addr="e000e490" rw_flags="RW" width="4" name="INT36" comment="Interrupt Priority Register"/>
+      <register addr="e000e494" rw_flags="RW" width="4" name="INT37" comment="Interrupt Priority Register"/>
+      <register addr="e000e498" rw_flags="RW" width="4" name="INT38" comment="Interrupt Priority Register"/>
+      <register addr="e000e49c" rw_flags="RW" width="4" name="INT39" comment="Interrupt Priority Register"/>
+      <register addr="e000e4a0" rw_flags="RW" width="4" name="INT40" comment="Interrupt Priority Register"/>
+      <register addr="e000e4a4" rw_flags="RW" width="4" name="INT41" comment="Interrupt Priority Register"/>
+      <register addr="e000e4a8" rw_flags="RW" width="4" name="INT42" comment="Interrupt Priority Register"/>
+      <register addr="e000e4ac" rw_flags="RW" width="4" name="INT43" comment="Interrupt Priority Register"/>
+      <register addr="e000e4b0" rw_flags="RW" width="4" name="INT44" comment="Interrupt Priority Register"/>
+      <register addr="e000e4b4" rw_flags="RW" width="4" name="INT45" comment="Interrupt Priority Register"/>
+      <register addr="e000e4b8" rw_flags="RW" width="4" name="INT46" comment="Interrupt Priority Register"/>
+      <register addr="e000e4bc" rw_flags="RW" width="4" name="INT47" comment="Interrupt Priority Register"/>
+      <register addr="e000e4c0" rw_flags="RW" width="4" name="INT48" comment="Interrupt Priority Register"/>
+      <register addr="e000e4c4" rw_flags="RW" width="4" name="INT49" comment="Interrupt Priority Register"/>
+      <register addr="e000e4c8" rw_flags="RW" width="4" name="INT50" comment="Interrupt Priority Register"/>
+      <register addr="e000e4cc" rw_flags="RW" width="4" name="INT51" comment="Interrupt Priority Register"/>
+      <register addr="e000e4d0" rw_flags="RW" width="4" name="INT52" comment="Interrupt Priority Register"/>
+      <register addr="e000e4d4" rw_flags="RW" width="4" name="INT53" comment="Interrupt Priority Register"/>
+      <register addr="e000e4d8" rw_flags="RW" width="4" name="INT54" comment="Interrupt Priority Register"/>
+      <register addr="e000e4dc" rw_flags="RW" width="4" name="INT55" comment="Interrupt Priority Register"/>
+      <register addr="e000e4e0" rw_flags="RW" width="4" name="INT56" comment="Interrupt Priority Register"/>
+      <register addr="e000e4e4" rw_flags="RW" width="4" name="INT57" comment="Interrupt Priority Register"/>
+      <register addr="e000e4e8" rw_flags="RW" width="4" name="INT58" comment="Interrupt Priority Register"/>
+      <register addr="e000e4ec" rw_flags="RW" width="4" name="INT59" comment="Interrupt Priority Register"/>
+    </block>
+  </memorymapped>
+
+  <memorymapped name="Floating-point Unit (FPU)" class="S">
+    <register addr="e000ef34" rw_flags="RW" width="4" name="FPCCR" comment="Floating-Point Context Control Register"/>
+    <register addr="e000ef38" rw_flags="RW" width="4" name="FPCAR" comment="Floating-Point Context Address Register"/>
+    <register addr="e000ef3c" rw_flags="RW" width="4" name="FPDSCR" comment="Floating-Point Default Status Control Register"/>
+    <register addr="e000ef40" rw_flags="RW" width="4" name="MVFR0" comment="Media and FP Feature Register 0"/>
+    <register addr="e000ef44" rw_flags="RW" width="4" name="MVFR1" comment="Media and FP Feature Register 1"/>
+  </memorymapped>
+
+  <memorymapped name="Debug" class="D">
+    <register addr="e000edf0" rw_flags="RW" width="4" name="DHCSR" comment="Debug Halting Control and Status Register"/>
+    <register addr="e000edf8" rw_flags="RW" width="4" name="DCRDR" comment="Debug Core Register Data Register"/>
+    <register addr="e000edfc" rw_flags="RW" width="4" name="DEMCR" comment="Debug Exception and Monitor Control Register"/>
+    <block name="Debug components">
+      <register addr="e00ff000" rw_flags="RW" width="4" name="SCS" comment="System Control Space"/>
+      <register addr="e00ff004" rw_flags="RW" width="4" name="DWT" comment="Data Watchpoint and Trace Unit"/>
+      <register addr="e00ff008" rw_flags="RW" width="4" name="FPB" comment="Flash Patch and Breakpoint Unit"/>
+      <register addr="e00ff00c" rw_flags="RW" width="4" name="ITM" comment="Instrumentation Trace Macrocell"/>
+      <register addr="e00ff010" rw_flags="RW" width="4" name="TPIU" comment="Trace Port Interface Unit"/>
+      <register addr="e00ff014" rw_flags="RW" width="4" name="ETM" comment="Embedded Trace Macrocell"/>
+      <register addr="e00ff018" rw_flags="RW" width="4" name="EndMarker" comment="EndMarker"/>
+      <register addr="e00fffcc" rw_flags="RW" width="4" name="SYSTEM_ACCESS" comment="SYSTEM_ACCESS"/>
+    </block>
+    <block name="Coresight identification Registers">
+      <register addr="e00fffd0" rw_flags="RW" width="4" name="PID4" comment="Peripheral Identification Register 4"/>
+      <register addr="e00fffe0" rw_flags="RW" width="4" name="PID0" comment="Peripheral ID0"/>
+      <register addr="e00fffe4" rw_flags="RW" width="4" name="PID1" comment="Peripheral ID1"/>
+      <register addr="e00fffe8" rw_flags="RW" width="4" name="PID2" comment="Peripheral ID2"/>
+      <register addr="e00fffec" rw_flags="RW" width="4" name="PID3" comment="Peripheral ID3"/>
+      <register addr="e00ffff0" rw_flags="RW" width="4" name="CID0" comment="Component ID0 (Preamble)"/>
+      <register addr="e00ffff4" rw_flags="RW" width="4" name="CID1" comment="Component ID1"/>
+      <register addr="e00ffff8" rw_flags="RW" width="4" name="CID2" comment="Component ID2"/>
+      <register addr="e00ffffc" rw_flags="RW" width="4" name="CID3" comment="Component ID3"/>
+    </block>
+    <block name="Flash Patch and Breakpoint Unit (FPB)">
+      <register addr="e0002000" rw_flags="RW" width="4" name="FP_CTRL" comment="Flash Patch Control Register"/>
+      <register addr="e0002004" rw_flags="RW" width="4" name="FP_REMAP" comment="Flash Patch Remap Register"/>
+      <register addr="e0002008" rw_flags="RW" width="4" name="FP_COMP0" comment="Flash Patch Comparator Register 0"/>
+      <register addr="e000200c" rw_flags="RW" width="4" name="FP_COMP1" comment="Flash Patch Comparator Register 1"/>
+      <register addr="e0002010" rw_flags="RW" width="4" name="FP_COMP2" comment="Flash Patch Comparator Register 2"/>
+      <register addr="e0002014" rw_flags="RW" width="4" name="FP_COMP3" comment="Flash Patch Comparator Register 3"/>
+      <register addr="e0002018" rw_flags="RW" width="4" name="FP_COMP4" comment="Flash Patch Comparator Register 4"/>
+      <register addr="e000201c" rw_flags="RW" width="4" name="FP_COMP5" comment="Flash Patch Comparator Register 5"/>
+      <register addr="e0002020" rw_flags="RW" width="4" name="FP_COMP6" comment="Flash Patch Comparator Register 6"/>
+      <register addr="e0002024" rw_flags="RW" width="4" name="FP_COMP7" comment="Flash Patch Comparator Register 7"/>
+    </block>
+    <block name="Coresight Management Registers">
+      <register addr="e0002fd0" rw_flags="RW" width="4" name="PID4" comment="Peripheral Identification Register 4"/>
+      <register addr="e0002fe0" rw_flags="RW" width="4" name="PID0" comment="Peripheral ID0"/>
+      <register addr="e0002fe4" rw_flags="RW" width="4" name="PID1" comment="Peripheral ID1"/>
+      <register addr="e0002fe8" rw_flags="RW" width="4" name="PID2" comment="Peripheral ID2"/>
+      <register addr="e0002fec" rw_flags="RW" width="4" name="PID3" comment="Peripheral ID3"/>
+      <register addr="e0002f10" rw_flags="RW" width="4" name="CID0" comment="Component ID0 (Preamble)"/>
+      <register addr="e0002f14" rw_flags="RW" width="4" name="CID1" comment="Component ID1"/>
+      <register addr="e0002f18" rw_flags="RW" width="4" name="CID2" comment="Component ID2"/>
+      <register addr="e0002f1c" rw_flags="RW" width="4" name="CID3" comment="Component ID3"/>
+    </block>
+  </memorymapped>
+</processor>

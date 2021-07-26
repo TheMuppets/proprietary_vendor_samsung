@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Default Volume Tables included by Audio Policy Configuration file -->
+<!-- Full Default Volume table for all device category -->
+<volumes>
+    <reference name="FULL_SCALE_VOLUME_CURVE">
+    <!-- Full Scale reference Volume Curve -->
+        <point>0,0</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="SILENT_VOLUME_CURVE">
+        <point>0,-9600</point>
+        <point>100,-9600</point>
+    </reference>
+    <reference name="DEFAULT_SYSTEM_VOLUME_CURVE">
+    <!-- Default System reference Volume Curve -->
+        <point>1,-2400</point>
+        <point>33,-1800</point>
+        <point>66,-1200</point>
+        <point>100,-600</point>
+    </reference>
+    <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
+    <!-- Default Media reference Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">
+    <!--Default Volume Curve -->
+        <point>1,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
+    <!-- Default is Speaker Media Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE">
+    <!--Default Volume Curve -->
+        <point>1,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE">
+    <!-- Default is Ext Media System Volume Curve -->
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-2100</point>
+        <point>100,-1000</point>
+    </reference>
+</volumes>

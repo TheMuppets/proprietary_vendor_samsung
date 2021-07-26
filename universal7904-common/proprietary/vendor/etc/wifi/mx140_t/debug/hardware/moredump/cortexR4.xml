@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2016, moredump definitions for Cortex R4 processor
+-->
+
+<processor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.samsung.com Processor.xsd"
+           name="Cortex R4"
+           comment="Cortex R4 Processor/co-processors">
+  <cpuregister name="R0"/>
+  <cpuregister name="R1"/>
+  <cpuregister name="R2"/>
+  <cpuregister name="R3"/>
+  <cpuregister name="R4"/>
+  <cpuregister name="R5"/>
+  <cpuregister name="R6"/>
+  <cpuregister name="R7"/>
+  <cpuregister name="R8"/>
+  <cpuregister name="R9"/>
+  <cpuregister name="R10"/>
+  <cpuregister name="R11"/>
+  <cpuregister name="R12"/>
+  <cpuregister name="R13"/>
+  <cpuregister name="R14"/>
+  <cpuregister name="PC"/>
+  <cpuregister name="SPSR"/>
+  <cpuregister name="CPSR"/>
+  <cpuregister name="R8_USR"/>
+  <cpuregister name="R9_USR"/>
+  <cpuregister name="R10_USR"/>
+  <cpuregister name="R11_USR"/>
+  <cpuregister name="R12_USR"/>
+  <cpuregister name="R13_USR"/>
+  <cpuregister name="R14_USR"/>
+  <cpuregister name="R8_FIQ"/>
+  <cpuregister name="R9_FIQ"/>
+  <cpuregister name="R10_FIQ"/>
+  <cpuregister name="R11_FIQ"/>
+  <cpuregister name="R12_FIQ"/>
+  <cpuregister name="R13_FIQ"/>
+  <cpuregister name="R14_FIQ"/>
+  <cpuregister name="SPSR_FIQ"/>
+  <cpuregister name="R13_SVC"/>
+  <cpuregister name="R14_SVC"/>
+  <cpuregister name="SPSR_SVC"/>
+  <cpuregister name="R13_IRQ"/>
+  <cpuregister name="R14_IRQ"/>
+  <cpuregister name="SPSR_IRQ"/>
+  <cpuregister name="R13_UND"/>
+  <cpuregister name="R14_UND"/>
+  <cpuregister name="SPSR_UND"/>
+  <cpuregister name="R13_ABT"/>
+  <cpuregister name="R14_ABT"/>
+  <cpuregister name="SPSR_ABT"/>
+
+  <coprocessor name="System Control" id="C15">
+    <block name="ID Registers">
+      <register addr="0000" rw_flags="RW" width="4" name="MIDR" comment="Main ID Register"/>
+      <register addr="0100" rw_flags="RW" width="4" name="CTR" comment="Cache Type Register"/>
+      <register addr="0200" rw_flags="RW" width="4" name="TCMTR" comment="Tightly-Coupled Memory Status Register"/>
+      <register addr="0400" rw_flags="RW" width="4" name="MPUIR" comment="MPU type register"/>
+      <register addr="0500" rw_flags="RW" width="4" name="MPIDR" comment="Multiprocessor Affinity Register"/>
+      <register addr="0410" rw_flags="RW" width="4" name="MMFR0" comment="Memory Model Feature Register 0"/>
+      <register addr="0510" rw_flags="RW" width="4" name="MMFR1" comment="Memory Model Feature Register 1"/>
+      <register addr="0610" rw_flags="RW" width="4" name="MMFR2" comment="Memory Model Feature Register 2"/>
+      <register addr="0710" rw_flags="RW" width="4" name="MMFR3" comment="Memory Model Feature Register 3"/>
+      <register addr="0020" rw_flags="RW" width="4" name="ISAR0" comment="Instruction Set Attribute Register 0"/>
+      <register addr="0120" rw_flags="RW" width="4" name="ISAR1" comment="Instruction Set Attribute Register 1"/>
+      <register addr="0220" rw_flags="RW" width="4" name="ISAR2" comment="Instruction Set Attribute Register 2"/>
+      <register addr="0320" rw_flags="RW" width="4" name="ISAR3" comment="Instruction Set Attribute Register 3"/>
+      <register addr="0420" rw_flags="RW" width="4" name="ISAR4" comment="Instruction Set Attribute Register 4"/>
+      <register addr="0520" rw_flags="RW" width="4" name="ISAR5" comment="Instruction Set Attribute Registers 5 (Reserved)"/>
+      <register addr="0620" rw_flags="RW" width="4" name="ISAR6" comment="Instruction Set Attribute Registers 6 (Reserved)"/>
+      <register addr="0720" rw_flags="RW" width="4" name="ISAR7" comment="Instruction Set Attribute Registers 7 (Reserved)"/>
+      <register addr="0010" rw_flags="RW" width="4" name="PFR0" comment="Processor Feature Register 0"/>
+      <register addr="0110" rw_flags="RW" width="4" name="PFR1" comment="Processor Feature Register 1"/>
+      <register addr="0210" rw_flags="RW" width="4" name="DFR0" comment="Debug Feature Register 0"/>
+      <register addr="0310" rw_flags="RW" width="4" name="AFR0" comment="Auxiliary Feature Register 0"/>
+    </block>
+
+    <block name="System Control and Configuration">
+      <register addr="0101" rw_flags="RW" width="4" name="ACTLR" comment="Auxiliary Control Register"/>
+      <register addr="0201" rw_flags="RW" width="4" name="CPACR" comment="Coprocessor Access Control Register"/>
+      <register addr="000b" rw_flags="RW" width="4" name="SPC" comment="Slave Port Control"/>
+    </block>
+
+    <block name="MPU Control and Configuration">
+      <register addr="0005" rw_flags="RW" width="4" name="DFSR" comment="Data Fault Status Register"/>
+      <register addr="0006" rw_flags="RW" width="4" name="DFAR" comment="Data Fault Address Register"/>
+      <register addr="0105" rw_flags="RW" width="4" name="IFSR" comment="Instruction Fault Status Register"/>
+      <register addr="0206" rw_flags="RW" width="4" name="IFAR" comment="Instruction Fault Address Register"/>
+      <register addr="0015" rw_flags="RW" width="4" name="ADFSR" comment="Auxiliary Data Fault Status Register"/>
+      <register addr="0115" rw_flags="RW" width="4" name="AIFSR" comment="Auxiliary Instruction Fault Status Register"/>
+      <register addr="010d" rw_flags="RW" width="4" name="CONTEXTIDR" comment="Context ID Register"/>
+      <table name="MPU Regions">
+        <indexregister addr="0026" rw_flags="RW" width="4" name="MRNR" comment="Memory Region Number Register">
+          <countfrom addr="0400" rw_flags="RW" width="4" name="MPUIR" comment="MPU type register" shift="8" mask="000F"/>
+        </indexregister>
+        <register addr="0016" rw_flags="RW" width="4" name="RBAR" comment="Region Base Address Register"/>
+        <register addr="0216" rw_flags="RW" width="4" name="RSER" comment="Region Size and Enable Register"/>
+        <register addr="0416" rw_flags="RW" width="4" name="RACR" comment="Region Access Control Register"/>
+      </table>
+      <!-- Must restore this after MPU -->
+      <register addr="0001" rw_flags="RW" width="4" name="SCTLR" comment="Control Register"/>
+    </block>
+
+    <block name="Cache Control and Configuration">
+      <register addr="1100" rw_flags="RW" width="4" name="CLIDR" comment="Cache Level ID Register"/>
+      <register addr="1000" rw_flags="RW" width="4" name="CCSIDR" comment="Current Cache Size ID Register"/>
+      <register addr="2000" rw_flags="RW" width="4" name="CSSELR" comment="Cache Size Selection Register"/>
+      <register addr="003f" rw_flags="RW" width="4" name="CFLR" comment="Correctable Fault Location Register"/>
+    </block>
+
+    <block name="TCM Control and Configuration">
+      <register addr="0019" rw_flags="RW" width="4" name="BTCM" comment="Data TCM Region Register"/>
+      <register addr="0119" rw_flags="RW" width="4" name="ATCM" comment="Instruction TCM Region Register"/>
+      <register addr="0029" rw_flags="RW" width="4" name="TCMSEL" comment="TCM Selection Register"/>
+    </block>
+
+    <block name="System Performance Monitor">
+      <register addr="00C9" rw_flags="RW" width="4" name="PMNC" comment="Performance Monitor Control Register"/>
+      <register addr="01C9" rw_flags="RW" width="4" name="CNTENS" comment="Count Enable Set Register"/>
+      <register addr="02C9" rw_flags="RW" width="4" name="CNTENC" comment="Count Enable Clear Register"/>
+      <register addr="03C9" rw_flags="RW" width="4" name="FLAG" comment="Overflow Flag Status Register"/>
+      <register addr="00D9" rw_flags="RW" width="4" name="CCNT" comment="Cycle Count Register"/>
+      <register addr="00E9" rw_flags="RW" width="4" name="USEREN" comment="User Enable Register"/>
+      <register addr="01E9" rw_flags="RW" width="4" name="INTENS" comment="Interrupt Enable Set Register"/>
+      <register addr="02E9" rw_flags="RW" width="4" name="INTENC" comment="Interrupt Enable Clear Register"/>
+      <table name="Performance Counters">
+        <indexregister addr="05C9" rw_flags="RW" width="4" name="PMNXSEL" comment="Performance Counter Selection Register">
+          <count value="3"/>
+        </indexregister>
+        <register addr="01d9" rw_flags="RW" width="4" name="ESR" comment="Event Selection Register"/>
+        <register addr="02d9" rw_flags="RW" width="4" name="PMCR" comment="Performance Monitor Count Register"/>
+      </table>
+    </block>
+  </coprocessor>
+
+  <coprocessor name="Debug Registers" id="C14">
+    <block name="Processor Identifier Registers">
+      <register addr="0340" rw_flags="RW" width="4" name="CPUID" comment="Main ID Register"/>
+      <register addr="0341" rw_flags="RW" width="4" name="CACHETYPE" comment="Cache Type Register"/>
+      <register addr="0343" rw_flags="RW" width="4" name="TLBTYPE" comment="TLB Type Register"/>
+      <register addr="0348" rw_flags="RW" width="4" name="ID_PFR0" comment="Processor Feature Register 0"/>
+      <register addr="0349" rw_flags="RW" width="4" name="ID_PFR1" comment="Processor Feature Register 1"/>
+      <register addr="034a" rw_flags="RW" width="4" name="ID_DFR0" comment="Debug Feature Register 0"/>
+      <register addr="034b" rw_flags="RW" width="4" name="ID_AFR0" comment="Auxiliary Feature Register 0"/>
+      <register addr="034c" rw_flags="RW" width="4" name="ID_MMFR0" comment="Processor Feature Register 0"/>
+      <register addr="034d" rw_flags="RW" width="4" name="ID_MMFR1" comment="Processor Feature Register 1"/>
+      <register addr="034e" rw_flags="RW" width="4" name="ID_MMFR2" comment="Processor Feature Register 2"/>
+      <register addr="034f" rw_flags="RW" width="4" name="ID_MMFR3" comment="Processor Feature Register 3"/>
+      <register addr="0350" rw_flags="RW" width="4" name="ID_ISAR0" comment="ISA Feature Register 0"/>
+      <register addr="0351" rw_flags="RW" width="4" name="ID_ISAR1" comment="ISA Feature Register 1"/>
+      <register addr="0352" rw_flags="RW" width="4" name="ID_ISAR2" comment="ISA Feature Register 2"/>
+      <register addr="0353" rw_flags="RW" width="4" name="ID_ISAR3" comment="ISA Feature Register 3"/>
+      <register addr="0354" rw_flags="RW" width="4" name="ID_ISAR4" comment="ISA Feature Register 4"/>
+      <register addr="0355" rw_flags="RW" width="4" name="ID_ISAR5" comment="ISA Feature Register 5"/>
+    </block>
+
+    <block name="Coresight Management Registers">
+      <register addr="03bf" rw_flags="RW" width="4" name="DBGITMISCIN" comment="Integration Test Input Register"/>
+      <register addr="03c0" rw_flags="RW" width="4" name="DBGITCTRL" comment="Integration Mode Control Register"/>
+      <register addr="03e8" rw_flags="RW" width="4" name="DBGCLAIMSET" comment="Claim Tag Set Register"/>
+      <register addr="03e9" rw_flags="RW" width="4" name="DBGCLAIMCLR" comment="Claim Tag Clear Register"/>
+      <register addr="03ed" rw_flags="RW" width="4" name="DBGLSR" comment="Lock Status Register"/>
+      <register addr="03ee" rw_flags="RW" width="4" name="DBGAUTHSTATUS" comment="Authentication Status Register"/>
+      <register addr="03f2" rw_flags="RW" width="4" name="DBGDEVID" comment="Device Identifier (RESERVED)"/>
+      <register addr="03f3" rw_flags="RW" width="4" name="DBGDEVTYPE" comment="Device Type"/>
+      <register addr="03f8" rw_flags="RW" width="4" name="PID0" comment="Peripheral ID0"/>
+      <register addr="03f9" rw_flags="RW" width="4" name="PID1" comment="Peripheral ID1"/>
+      <register addr="03fa" rw_flags="RW" width="4" name="PID2" comment="Peripheral ID2"/>
+      <register addr="03fb" rw_flags="RW" width="4" name="PID3" comment="Peripheral ID3"/>
+      <register addr="03f4" rw_flags="RW" width="4" name="PID4" comment="Peripheral ID4"/>
+      <register addr="03fc" rw_flags="RW" width="4" name="COMPONENTID0" comment="Component ID0"/>
+      <register addr="03fd" rw_flags="RW" width="4" name="COMPONENTID1" comment="Component ID1"/>
+      <register addr="03fe" rw_flags="RW" width="4" name="COMPONENTID2" comment="Component ID2"/>
+      <register addr="03ff" rw_flags="RW" width="4" name="COMPONENTID3" comment="Component ID3"/>
+      <register addr="0000" rw_flags="RW" width="4" name="DBGDIDR" comment="Debug ID Register"/>
+      <register addr="0022" rw_flags="RW" width="4" name="DBGDSCR" comment="Debug Status and Control Register"/>
+      <register addr="0007" rw_flags="RW" width="4" name="DBGVCR" comment="Vector Catch Register"/>
+      <register addr="0023" rw_flags="RW" width="4" name="DBGDTRTX" comment="Host -> Target Data Transfer Register"/>
+      <register addr="000a" rw_flags="RW" width="4" name="DBGDSCCR" comment="Debug State Cache Control Register"/>
+      <register addr="00c1" rw_flags="RW" width="4" name="DBGOSLSR" comment="Operating System Lock Status Register"/>
+      <register addr="00c4" rw_flags="RW" width="4" name="DBGPRCR" comment="Device Power-Down and Reset Control Register"/>
+    </block>
+
+    <block name="Breakpoint Registers">
+      <register addr="0040" rw_flags="RW" width="4" name="DBGBVR0" comment="Breakpoint Value Register 0"/>
+      <register addr="0050" rw_flags="RW" width="4" name="DBGBCR0" comment="Breakpoint Control Register 0"/>
+      <register addr="0041" rw_flags="RW" width="4" name="DBGBVR1" comment="Breakpoint Value Register 1"/>
+      <register addr="0051" rw_flags="RW" width="4" name="DBGBCR1" comment="Breakpoint Control Register 1"/>
+      <register addr="0042" rw_flags="RW" width="4" name="DBGBVR2" comment="Breakpoint Value Register 2"/>
+      <register addr="0052" rw_flags="RW" width="4" name="DBGBCR2" comment="Breakpoint Control Register 2"/>
+      <register addr="0043" rw_flags="RW" width="4" name="DBGBVR3" comment="Breakpoint Value Register 3"/>
+      <register addr="0053" rw_flags="RW" width="4" name="DBGBCR3" comment="Breakpoint Control Register 3"/>
+      <register addr="0044" rw_flags="RW" width="4" name="DBGBVR4" comment="Breakpoint Value Register 4"/>
+      <register addr="0054" rw_flags="RW" width="4" name="DBGBCR4" comment="Breakpoint Control Register 4"/>
+      <register addr="0045" rw_flags="RW" width="4" name="DBGBVR5" comment="Breakpoint Value Register 5"/>
+      <register addr="0055" rw_flags="RW" width="4" name="DBGBCR5" comment="Breakpoint Control Register 5"/>
+      <register addr="0046" rw_flags="RW" width="4" name="DBGBVR6" comment="Breakpoint Value Register 6"/>
+      <register addr="0056" rw_flags="RW" width="4" name="DBGBCR6" comment="Breakpoint Control Register 6"/>
+      <register addr="0047" rw_flags="RW" width="4" name="DBGBVR7" comment="Breakpoint Value Register 7"/>
+      <register addr="0057" rw_flags="RW" width="4" name="DBGBCR7" comment="Breakpoint Control Register 7"/>
+    </block>
+
+    <block name="Watchpoint Control Registers">
+      <register addr="0060" rw_flags="RW" width="4" name="DBGWVR0" comment="Watchpoint Value Register 0"/>
+      <register addr="0070" rw_flags="RW" width="4" name="DBGWCR0" comment="Watchpoint Control Register 0"/>
+      <register addr="0061" rw_flags="RW" width="4" name="DBGWVR1" comment="Watchpoint Value Register 1"/>
+      <register addr="0071" rw_flags="RW" width="4" name="DBGWCR1" comment="Watchpoint Control Register 1"/>
+      <register addr="0062" rw_flags="RW" width="4" name="DBGWVR2" comment="Watchpoint Value Register 2"/>
+      <register addr="0072" rw_flags="RW" width="4" name="DBGWCR2" comment="Watchpoint Control Register 2"/>
+      <register addr="0063" rw_flags="RW" width="4" name="DBGWVR3" comment="Watchpoint Value Register 3"/>
+      <register addr="0073" rw_flags="RW" width="4" name="DBGWCR3" comment="Watchpoint Control Register 3"/>
+      <register addr="0064" rw_flags="RW" width="4" name="DBGWVR4" comment="Watchpoint Value Register 4"/>
+      <register addr="0074" rw_flags="RW" width="4" name="DBGWCR4" comment="Watchpoint Control Register 4"/>
+      <register addr="0065" rw_flags="RW" width="4" name="DBGWVR5" comment="Watchpoint Value Register 5"/>
+      <register addr="0075" rw_flags="RW" width="4" name="DBGWCR5" comment="Watchpoint Control Register 5"/>
+      <register addr="0066" rw_flags="RW" width="4" name="DBGWVR6" comment="Watchpoint Value Register 6"/>
+      <register addr="0076" rw_flags="RW" width="4" name="DBGWCR6" comment="Watchpoint Control Register 6"/>
+      <register addr="0067" rw_flags="RW" width="4" name="DBGWVR7" comment="Watchpoint Value Register 7"/>
+      <register addr="0077" rw_flags="RW" width="4" name="DBGWCR7" comment="Watchpoint Control Register 7"/>
+      <register addr="0006" rw_flags="RW" width="4" name="DBGWFAR" comment="Watchpoint Fault Address Register"/>
+    </block>
+  </coprocessor>
+</processor>
