@@ -210,9 +210,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
-    camera.device@3.2-impl.exynos9820 \
-    camera.device@3.3-impl.exynos9820 \
-    camera.device@3.4-impl.exynos9820 \
-    camera.device@3.5-impl.exynos9820 \
     libskeymaster4device \
     manifest_android.hardware.drm@1.3-service.widevine
