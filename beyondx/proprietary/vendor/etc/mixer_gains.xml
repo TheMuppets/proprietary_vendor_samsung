@@ -246,6 +246,18 @@
 		<ctl name="Right Digital PCM Volume" value="817" />
 	</path>
 
+	<path name="gain-communication-tv-speaker">
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-tv-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="17" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="17" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
 	<path name="gain-communication-headset">
 		<ctl name="HPOUT2L Impedance Volume" value="103" />
 		<ctl name="HPOUT2R Impedance Volume" value="103" />
@@ -1272,6 +1284,15 @@
 
 	<path name="gain-communication-dex-dual-speaker-mic">
 		<path name="gain-communication-dex-speaker-mic" />
+	</path>
+
+	<path name="gain-communication-tv-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="136" />
+		<ctl name="IN4L Digital Volume" value="136" />
+	</path>
+
+	<path name="gain-communication-tv-dual-speaker-mic">
+		<path name="gain-communication-tv-speaker-mic" />
 	</path>
 
 	<path name="gain-communication-headset-mic">

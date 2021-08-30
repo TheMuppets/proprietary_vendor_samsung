@@ -1,0 +1,4 @@
+service sec_gnss_service /vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
+    class main
+    user system
+    group system gps
