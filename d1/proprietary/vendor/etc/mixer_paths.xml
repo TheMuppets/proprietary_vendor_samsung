@@ -796,6 +796,17 @@
 		<ctl name="Left AMP Mute" value="Unmuted" />
 	</path>
 
+	<!-- Amp mute control -->
+	<path name="spk-amp-mute">
+		<ctl name="Left AMP Mute" value="Muted" />
+		<ctl name="Right AMP Mute" value="Muted" />
+	</path>
+
+	<path name="spk-amp-unmute">
+		<ctl name="Left AMP Mute" value="Unmuted" />
+		<ctl name="Right AMP Mute" value="Unmuted" />
+	</path>
+
 	<!-- MCD Solution mixer settings -->
 	<path name="voip-rxse">
 		<ctl name="ABOX MCD_RXSE_EN" value="On" />
@@ -1066,6 +1077,20 @@
 		<path name="voip-rxse" />
 		<path name="media-dual-speaker" />
 		<ctl name="ABOX Speech Param" value="11" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-tv-speaker">
+		<path name="voip-rxse" />
+		<path name="media-speaker" />
+		<ctl name="ABOX Speech Param" value="4" />
+		<ctl name="ABOX Speech Update Flag" value="1" />
+	</path>
+
+	<path name="communication-tv-dual-speaker">
+		<path name="voip-rxse" />
+		<path name="media-dual-speaker" />
+		<ctl name="ABOX Speech Param" value="4" />
 		<ctl name="ABOX Speech Update Flag" value="1" />
 	</path>
 
@@ -1797,7 +1822,6 @@
 		<path name="acquire-abox-wakelock" />
 	</path>
 
-
 	<!-- call forwarding output -->
 	<path name="call_forwarding_primary">
 		<!-- AP Rx -> CP Tx -->
@@ -1824,7 +1848,6 @@
 		<!-- AP Rx -> CP Tx -->
 		<path name="call_forwarding_primary" />
 	</path>
-
 
 	<!-- Input mixer settings -->
 	<!-- Capture paths -->
@@ -1894,10 +1917,28 @@
 		<ctl name="ABOX MCD_DNN_B" value="REFEXT4CH" />
 	</path>
 
+	<!-- Capture paths with TXSE3-TXSE2 component (ex: VoIP) -->
+	<path name="route-wdma1-to-txse3-txse2">
+		<ctl name="ABOX WDMA1_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE3_EN" value="On" />
+		<ctl name="ABOX MCD_TXSE2_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_EN" value="On" />
+		<ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE2" />
+		<ctl name="ABOX MCD_TXSE2_A" value="MCD_TXSE3" />
+		<ctl name="ABOX MCD_TXSE3_A" value="WDMA1" />
+		<ctl name="ABOX MCD_TXSE3_B" value="REFEXT4CH" />
+	</path>
+
 	<path name="route-ap-record-dnn-txse2">
 		<path name="route-uaif0-to-nsrc0" />
 		<path name="route-nsrc0-to-wdma1" />
 		<path name="route-wdma1-to-dnn-txse2" />
+	</path>
+
+	<path name="route-ap-record-txse3-txse2">
+		<path name="route-uaif0-to-nsrc0" />
+		<path name="route-nsrc0-to-wdma1" />
+		<path name="route-wdma1-to-txse3-txse2" />
 	</path>
 
 	<path name="route-ap-record-bt-dnn-txse2">
@@ -2219,6 +2260,22 @@
 
 	<path name="communication-dex-dual-speaker-mic">
 		<path name="communication-dex-speaker-mic" />
+	</path>
+
+	<path name="communication-tv-speaker-mic">
+		<path name="route-ap-record-txse3-txse2" />
+		<path name="dev-multi-mic" />
+		<ctl name="ABOX OEM_TV AP Call type" value="4" />
+		<ctl name="ABOX DVTx Path Index" value="4" />
+		<ctl name="ABOX OEM_TV GDX Mode" value="1" />
+	</path>
+
+	<path name="communication-tv-dual-speaker-mic">
+		<path name="route-ap-record-txse3-txse2" />
+		<path name="dev-multi-mic" />
+		<ctl name="ABOX OEM_TV AP Call type" value="4" />
+		<ctl name="ABOX DVTx Path Index" value="4" />
+		<ctl name="ABOX OEM_TV GDX Mode" value="1" />
 	</path>
 
 	<path name="communication-headphone-mic">
