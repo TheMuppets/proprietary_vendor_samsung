@@ -15,9 +15,25 @@ on post-fs-data
     rm /data/vendor/gps/sv_cno.info
 
 # GPS daemon
-service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.cfg
+service gpsd /vendor/bin/hw/gps.sh
     class main
     user gps
     group system inet net_raw wakelock
     capabilities BLOCK_SUSPEND
     ioprio be 0
+
+on property:dev.gnss.silentlogging=ON
+    mkdir /data/vendor/gps/silentGnssLogging 0771 system system
+    restart gpsd
+
+on property:dev.gnss.silentlogging=OFF
+    rmdir /data/vendor/gps/silentGnssLogging
+    restart gpsd
+
+on property:dev.gnss.silentloggingIssueTracker=ON
+    mkdir /data/vendor/gps/silentGnssLoggingIssueTracker 0771 system system
+    restart gpsd
+
+on property:dev.gnss.silentloggingIssueTracker=OFF
+    rmdir /data/vendor/gps/silentGnssLoggingIssueTracker
+    restart gpsd

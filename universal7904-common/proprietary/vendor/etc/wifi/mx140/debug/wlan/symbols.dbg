@@ -3929,7 +3929,7 @@ MLME_TXPOWER_NETWORK.envelope_limit Integer8
 MLME_TXPOWER_NETWORK.constraint Boolean
 MLME_TXPOWER_NETWORK.constraint_limit Integer8
 # Generated From mlme_hard/mlme_vifctrl/mlme_vifctrl_debug.xml
-trace_def 97
+trace_def 95
 0008 0000 MLME_VIFCTRL_AP_FAILURE 0002 bssid reason
 0008 0001 MLME_VIFCTRL_ARP_EXTRACT 0004 sndr_hw sndr_ip tgt_ip line
 0008 0002 MLME_VIFCTRL_ARP_FRAME 0002 frame line
@@ -3969,66 +3969,64 @@ trace_def 97
 0008 0024 MLME_VIFCTRL_DFS_ADD_BLACKOUT 0004 blackout_start_reference blackout_period blackout_duration blackout_count
 0008 0025 MLME_VIFCTRL_DFS_DEL_BLACKOUT 0000
 0008 0026 MLME_VIFCTRL_EAPOL_DATA 0001 data
-0008 0027 MLME_VIFCTRL_EAPOL_EAP_CODE_INVALID 0002 code line
-0008 0028 MLME_VIFCTRL_ECSA_COUNT_FINISHED 0003 now channel_switch_count channel_switch_time
-0008 0029 MLME_VIFCTRL_ECSA_INCLUDE_IN_BEACON 0005 now new_primary_channel new_channel_info channel_switch_count channel_switch_mode
-0008 002a MLME_VIFCTRL_ECSA_SEND_ACTION 0005 now bssid new_primary_channel new_channel_info channel_switch_count
-0008 002b MLME_VIFCTRL_ECSA_TIMEOUT 0004 now new_channel_number new_channel_info channel_switch_count
-0008 002c MLME_VIFCTRL_ERP_IE_RECEIVED 0002 pid barker_preamble_flag_set
-0008 002d MLME_VIFCTRL_EVAL_BEACON_FLAGS 0002 current evaluated
-0008 002e MLME_VIFCTRL_FORCE_ACTIVE 0004 pid requester flags active
-0008 002f MLME_VIFCTRL_FRAMETX 0001 status
-0008 0030 MLME_VIFCTRL_FRAME_TOO_SHORT_FOR_EAPOL 0002 frame_length line
-0008 0031 MLME_VIFCTRL_FW_UPDATE_BW 0006 new_bw revised_new_bw channel_centre_freq fw_requested_channel_bw current_channel_info max_operational_bw
-0008 0032 MLME_VIFCTRL_HT_CAP_DOWNGRADE 0004 host_value mib_value downgraded_value field
-0008 0033 MLME_VIFCTRL_HT_CHANNEL_INFO 0004 primary_channel_center_freq centre_freq bw channel_info
-0008 0034 MLME_VIFCTRL_HT_OP 0002 beacon generated
-0008 0035 MLME_VIFCTRL_INACTIVITY 0002 interval now
-0008 0036 MLME_VIFCTRL_INACTIVITY_KICK_DO 0000
-0008 0037 MLME_VIFCTRL_INACTIVITY_KICK_INFO 0003 current_time unicast_rx_time time_since_last_rx
-0008 0038 MLME_VIFCTRL_INACTIVITY_NULL 0003 interval_since_last_null now time_of_last_null
-0008 0039 MLME_VIFCTRL_INACTIVITY_PROCESSING 0003 last_peer_sync last_peer_activity_gap timeout
-0008 003a MLME_VIFCTRL_KEEPALIVE 0002 interval now
-0008 003b MLME_VIFCTRL_LISTEN_OFFLOAD 0001 interval
-0008 003c MLME_VIFCTRL_MANAGEMENT_FRAME 0004 fc DA frame_subtype reason_code
-0008 003d MLME_VIFCTRL_MEMBERSHIP_SELECTOR_NOT_SATISFIED 0003 ht_activated vht_activated all_membership_selector
-0008 003e MLME_VIFCTRL_MFP_STATUS 0003 in_use mfpc mfpr
-0008 003f MLME_VIFCTRL_MIC_FAILURE 0002 peer status
-0008 0040 MLME_VIFCTRL_NAN_FAILURE 0002 reason arg
-0008 0041 MLME_VIFCTRL_NDP_AD 0008 Checksum LL_type LL_addr buf_type addr_lo addr_mid addr_hi line
-0008 0042 MLME_VIFCTRL_NDP_FRAME 0002 frame line
-0008 0043 MLME_VIFCTRL_NDP_OFFLOAD 0007 ICMP_Type Sol_Flg ndp_src1 ndp_src2 ndp_tgt1 ndp_tgt2 line
-0008 0044 MLME_VIFCTRL_OBSS_SCAN_DONE_IND 0003 channels intolerant_40mhz_ap_found cycle_to_send_report
-0008 0045 MLME_VIFCTRL_OBSS_SCAN_IND 0002 channels intolerant_40mhz_ap_found
-0008 0046 MLME_VIFCTRL_OFFLOAD_ACTIVE 0002 flavour active
-0008 0047 MLME_VIFCTRL_OFFLOAD_INTERCEPT 0001 flavour
-0008 0048 MLME_VIFCTRL_OFFLOAD_TIMER 0001 timer_id
-0008 0049 MLME_VIFCTRL_OLBC 0003 rx_beacons bss_ht_protection_flags bss_erp_protection_flags
-0008 004a MLME_VIFCTRL_OPERATING_MODE_NOTIF_SEND_ACTION 0003 now bssid channel_bw
-0008 004b MLME_VIFCTRL_P2P_NOA 0005 duration interval start_time blackout_id position
-0008 004c MLME_VIFCTRL_P2P_NOA_SET_TIMER 0003 time_now early_start position
-0008 004d MLME_VIFCTRL_PLM689_WORKAROUND_IP 0002 static frame_cnt
-0008 004e MLME_VIFCTRL_PLM689_WORKAROUND_ON_CONNECT 0003 plm689_workaround_address req_bssid same
-0008 004f MLME_VIFCTRL_PLM689_WORKAROUND_TIMER_STARTED 0000
-0008 0050 MLME_VIFCTRL_PLM689_WORKAROUND_TRIGGERED 0000
-0008 0051 MLME_VIFCTRL_PROBE_REQ_FILTERED 0003 da sa reason
-0008 0052 MLME_VIFCTRL_QBSS_CU 0004 reported_load_percentage own_load_percentage computed_load_percentage channel_usage_above_threshold
-0008 0053 MLME_VIFCTRL_RATES 0003 all basic value
-0008 0054 MLME_VIFCTRL_ROAM 0004 from_bssid from_freq to_bssid to_freq
-0008 0055 MLME_VIFCTRL_ROAM_FAILURE 0001 result_code
-0008 0056 MLME_VIFCTRL_ROUTER_ADVERTISEMENT_FRAME 0002 frame line
-0008 0057 MLME_VIFCTRL_ROUTER_ADVERTISEMENT_OFFLOAD 0007 sa da checksum router_lifetime valid_lifetime preferred_lifetime line
-0008 0058 MLME_VIFCTRL_SAVE_WMM_FOR_ACM 0000
-0008 0059 MLME_VIFCTRL_SELECTED_SECURITY 0004 type group_cipher pairwise_cipher akm_suite
-0008 005a MLME_VIFCTRL_SET_IP 0004 ip_ver vif_type ip_addr line
-0008 005b MLME_VIFCTRL_SET_TRAFFIC_PARAMETERS 0006 pid priority direction medium_time minimun_data_rate address
-0008 005c MLME_VIFCTRL_SLOW_AP 0001 max_time
-0008 005d MLME_VIFCTRL_WIFISHARING_ALLOWED_CHANNELS 0001 mask
-0008 005e MLME_VIFCTRL_WIFISHARING_LEAVING_DFS 0002 is_dfs move_to_primary_freq
-0008 005f MLME_VIFCTRL_WIFISHARING_LEAVING_DFS_CHANNEL 0002 host_freq recommended_primary_freq
-0008 0060 MLME_VIFCTRL_WIFISHARING_MOVING_AP_TO_CHANNEL 0002 move_to_primary_freq channel_info
+0008 0027 MLME_VIFCTRL_ECSA_COUNT_FINISHED 0003 now channel_switch_count channel_switch_time
+0008 0028 MLME_VIFCTRL_ECSA_INCLUDE_IN_BEACON 0005 now new_primary_channel new_channel_info channel_switch_count channel_switch_mode
+0008 0029 MLME_VIFCTRL_ECSA_SEND_ACTION 0005 now bssid new_primary_channel new_channel_info channel_switch_count
+0008 002a MLME_VIFCTRL_ECSA_TIMEOUT 0004 now new_channel_number new_channel_info channel_switch_count
+0008 002b MLME_VIFCTRL_ERP_IE_RECEIVED 0002 pid barker_preamble_flag_set
+0008 002c MLME_VIFCTRL_EVAL_BEACON_FLAGS 0002 current evaluated
+0008 002d MLME_VIFCTRL_FORCE_ACTIVE 0004 pid requester flags active
+0008 002e MLME_VIFCTRL_FRAMETX 0001 status
+0008 002f MLME_VIFCTRL_FW_UPDATE_BW 0006 new_bw revised_new_bw channel_centre_freq fw_requested_channel_bw current_channel_info max_operational_bw
+0008 0030 MLME_VIFCTRL_HT_CAP_DOWNGRADE 0004 host_value mib_value downgraded_value field
+0008 0031 MLME_VIFCTRL_HT_CHANNEL_INFO 0004 primary_channel_center_freq centre_freq bw channel_info
+0008 0032 MLME_VIFCTRL_HT_OP 0002 beacon generated
+0008 0033 MLME_VIFCTRL_INACTIVITY 0002 interval now
+0008 0034 MLME_VIFCTRL_INACTIVITY_KICK_DO 0000
+0008 0035 MLME_VIFCTRL_INACTIVITY_KICK_INFO 0003 current_time unicast_rx_time time_since_last_rx
+0008 0036 MLME_VIFCTRL_INACTIVITY_NULL 0003 interval_since_last_null now time_of_last_null
+0008 0037 MLME_VIFCTRL_INACTIVITY_PROCESSING 0003 last_peer_sync last_peer_activity_gap timeout
+0008 0038 MLME_VIFCTRL_KEEPALIVE 0002 interval now
+0008 0039 MLME_VIFCTRL_LISTEN_OFFLOAD 0001 interval
+0008 003a MLME_VIFCTRL_MANAGEMENT_FRAME 0004 fc DA frame_subtype reason_code
+0008 003b MLME_VIFCTRL_MEMBERSHIP_SELECTOR_NOT_SATISFIED 0003 ht_activated vht_activated all_membership_selector
+0008 003c MLME_VIFCTRL_MFP_STATUS 0003 in_use mfpc mfpr
+0008 003d MLME_VIFCTRL_MIC_FAILURE 0002 peer status
+0008 003e MLME_VIFCTRL_NAN_FAILURE 0002 reason arg
+0008 003f MLME_VIFCTRL_NDP_AD 0008 Checksum LL_type LL_addr buf_type addr_lo addr_mid addr_hi line
+0008 0040 MLME_VIFCTRL_NDP_FRAME 0002 frame line
+0008 0041 MLME_VIFCTRL_NDP_OFFLOAD 0007 ICMP_Type Sol_Flg ndp_src1 ndp_src2 ndp_tgt1 ndp_tgt2 line
+0008 0042 MLME_VIFCTRL_OBSS_SCAN_DONE_IND 0003 channels intolerant_40mhz_ap_found cycle_to_send_report
+0008 0043 MLME_VIFCTRL_OBSS_SCAN_IND 0002 channels intolerant_40mhz_ap_found
+0008 0044 MLME_VIFCTRL_OFFLOAD_ACTIVE 0002 flavour active
+0008 0045 MLME_VIFCTRL_OFFLOAD_INTERCEPT 0001 flavour
+0008 0046 MLME_VIFCTRL_OFFLOAD_TIMER 0001 timer_id
+0008 0047 MLME_VIFCTRL_OLBC 0003 rx_beacons bss_ht_protection_flags bss_erp_protection_flags
+0008 0048 MLME_VIFCTRL_OPERATING_MODE_NOTIF_SEND_ACTION 0003 now bssid channel_bw
+0008 0049 MLME_VIFCTRL_P2P_NOA 0005 duration interval start_time blackout_id position
+0008 004a MLME_VIFCTRL_P2P_NOA_SET_TIMER 0003 time_now early_start position
+0008 004b MLME_VIFCTRL_PLM689_WORKAROUND_IP 0002 static frame_cnt
+0008 004c MLME_VIFCTRL_PLM689_WORKAROUND_ON_CONNECT 0003 plm689_workaround_address req_bssid same
+0008 004d MLME_VIFCTRL_PLM689_WORKAROUND_TIMER_STARTED 0000
+0008 004e MLME_VIFCTRL_PLM689_WORKAROUND_TRIGGERED 0000
+0008 004f MLME_VIFCTRL_PROBE_REQ_FILTERED 0003 da sa reason
+0008 0050 MLME_VIFCTRL_QBSS_CU 0004 reported_load_percentage own_load_percentage computed_load_percentage channel_usage_above_threshold
+0008 0051 MLME_VIFCTRL_RATES 0003 all basic value
+0008 0052 MLME_VIFCTRL_ROAM 0004 from_bssid from_freq to_bssid to_freq
+0008 0053 MLME_VIFCTRL_ROAM_FAILURE 0001 result_code
+0008 0054 MLME_VIFCTRL_ROUTER_ADVERTISEMENT_FRAME 0002 frame line
+0008 0055 MLME_VIFCTRL_ROUTER_ADVERTISEMENT_OFFLOAD 0007 sa da checksum router_lifetime valid_lifetime preferred_lifetime line
+0008 0056 MLME_VIFCTRL_SAVE_WMM_FOR_ACM 0000
+0008 0057 MLME_VIFCTRL_SELECTED_SECURITY 0004 type group_cipher pairwise_cipher akm_suite
+0008 0058 MLME_VIFCTRL_SET_IP 0004 ip_ver vif_type ip_addr line
+0008 0059 MLME_VIFCTRL_SET_TRAFFIC_PARAMETERS 0006 pid priority direction medium_time minimun_data_rate address
+0008 005a MLME_VIFCTRL_SLOW_AP 0001 max_time
+0008 005b MLME_VIFCTRL_WIFISHARING_ALLOWED_CHANNELS 0001 mask
+0008 005c MLME_VIFCTRL_WIFISHARING_LEAVING_DFS 0002 is_dfs move_to_primary_freq
+0008 005d MLME_VIFCTRL_WIFISHARING_LEAVING_DFS_CHANNEL 0002 host_freq recommended_primary_freq
+0008 005e MLME_VIFCTRL_WIFISHARING_MOVING_AP_TO_CHANNEL 0002 move_to_primary_freq channel_info
 # Generated From mlme_hard/mlme_vifctrl/mlme_vifctrl_debug.xml
-trace_types 170
+trace_types 167
 MLME_VIFCTRL_P2P_NOA_SET_TIMER.time_now Natural32
 MLME_VIFCTRL_P2P_NOA_SET_TIMER.early_start Natural32
 MLME_VIFCTRL_P2P_NOA_SET_TIMER.position Natural32
@@ -4142,9 +4140,6 @@ MLME_VIFCTRL_BEAMFORMEE_DISABLED.num_sounding_dimensions Natural8
 MLME_VIFCTRL_AP_FAILURE.bssid MAC_Address
 MLME_VIFCTRL_AP_FAILURE.reason DEBUG_AP_FAILURE_REASON
 MLME_VIFCTRL_ARP_FRAME.frame MBULK
-MLME_VIFCTRL_EAPOL_EAP_CODE_INVALID.code Natural8
-MLME_VIFCTRL_EAPOL_EAP_CODE_INVALID.line __LINE__
-MLME_VIFCTRL_FRAME_TOO_SHORT_FOR_EAPOL.line __LINE__
 MLME_VIFCTRL_PROBE_REQ_FILTERED.da MAC_Address
 MLME_VIFCTRL_PROBE_REQ_FILTERED.sa MAC_Address
 MLME_VIFCTRL_PROBE_REQ_FILTERED.reason DEBUG_PROBE_REQ_FILTER_REASON

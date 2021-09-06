@@ -1,1 +1,1 @@
-2021-03-10 08:47 lassendXXd05_wlanlite_hardmac_ram_gcc_integrated univ3 498092634 adm-swbld@camspugrd169@9e48f8ae63@HEAD (no branch)
+2020-12-22 13:20 lassendXXd05_wlanlite_hardmac_ram_gcc_integrated univ3 498084020 adm-swbld@camspugrd169@bd71d27c13@HEAD (no branch)
