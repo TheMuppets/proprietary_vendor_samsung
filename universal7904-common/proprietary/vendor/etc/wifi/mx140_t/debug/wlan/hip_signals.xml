@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="SamsungWifiHip.xsl"?>
-<!-- Copyright Samsung Electronics Co. Limited 2021. All Rights Reserved. -->
+<!-- Copyright Samsung Electronics Co. Limited 2020. All Rights Reserved. -->
 <!-- WARNING! Do not directly edit this file. -->
-<!-- This file was generated on 2021-03-10 08:47 by merge_saps.py version 1.5 -->
+<!-- This file was generated on 2020-12-22 13:20 by merge_saps.py version 1.5 -->
 <!-- Field name backward compatibility=True -->
 <!-- Data_References instead of firmware_references=True -->
 <!-- Add additional type definitions=True -->

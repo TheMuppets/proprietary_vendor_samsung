@@ -7,7 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7904-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
-    vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
+    vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
+    vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/gps.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gps.sh \
     vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
     vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/universal7904-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
@@ -22,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
-    vendor/samsung/universal7904-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/samsung/universal7904-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     vendor/samsung/universal7904-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
@@ -119,6 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/universal7904-common/proprietary/vendor/lib/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepicoperator.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libexynosgraphicbuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgraphicbuffer.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgscaler.so \
@@ -173,7 +175,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
-    vendor/samsung/universal7904-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl.so \
+    vendor/samsung/universal7904-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/hw/gralloc.exynos7904.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos7904.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/hw/hwcomposer.exynos7904.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos7904.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/hw/memtrack.exynos7904.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos7904.so \
@@ -185,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacryl.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
+    vendor/samsung/universal7904-common/proprietary/vendor/lib64/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepicoperator.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libexynosgraphicbuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgraphicbuffer.so \
     vendor/samsung/universal7904-common/proprietary/vendor/lib64/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgscaler.so \

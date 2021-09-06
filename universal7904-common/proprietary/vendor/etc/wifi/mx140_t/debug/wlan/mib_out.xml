@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HydraMeta.xsd">
-    <metadata version="498092634" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
+    <metadata version="498084020" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
         <source_control id="$Id$" time="$DateTime$" change="$Change$" author="$Author$" />
         <enum_def enum_name="unifiCSROnlyMIBShield">
             <enum_entry enum_label="open" enum_value="1" />

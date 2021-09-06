@@ -27,7 +27,7 @@ on post-fs-data
     chown wifi wifi /dev/scsc_log_collector_0
     chmod 0666 /dev/scsc_log_collector_0 
     chown wifi wifi /sys/wifi/memdump
-    chmod 0640 /sys/wifi/memdump
+    chmod 0644 /sys/wifi/memdump
 
 on fs
 # scsc daemon

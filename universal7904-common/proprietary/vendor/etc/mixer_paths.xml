@@ -111,12 +111,10 @@
 
 	<!-- SMA1301 default settings -->
 	<ctl name="Volume slope" value="Off" />
-	<ctl name="Attack level control" value="LVL_0.4375FS" />
+	<ctl name="Attack level control" value="LVL_0.25FS" />
 	<ctl name="Trimming of over current limit" value="I_1.93A" />
 	<ctl name="Trimming of boost voltage" value="BST_5.5V" />
 	<ctl name="Filtered VDD gain control" value="VDD_2.75V" />
-	<ctl name="Trimming of loop comp P gain" value="PG_0.25Mohm" />
-	<ctl name="Trimming of loop compensation" value="PI_50pF_0.25Mohm" />
 
 	<!-- Common control configurations -->
 	<path name="route-playback">
@@ -772,32 +770,13 @@
 	</path>
 
 	<!-- call forwarding output -->
-	<path name="call_forwarding_master">
+	<path name="call_forwarding_primary">
 		<!-- AP Rx -> CP Tx -->
 		<ctl name="ABOX UAIF SPK0" value="SIFS0" />
 		<ctl name="ABOX NSRC1" value="UAIF1" />
 		<ctl name="ABOX Sound Type" value="CALLFWD" />
 	</path>
 
-	<path name="call_forwarding_slave-handset">
-		<path name="communication-handset" />
-	</path>
-
-	<path name="call_forwarding_slave-speaker">
-		<path name="communication-speaker" />
-	</path>
-
-	<path name="call_forwarding_slave-headset">
-		<path name="communication-headset" />
-	</path>
-
-	<path name="call_forwarding_slave-headphone">
-		<path name="call_forwarding_slave-headset" />
-	</path>
-
-	<path name="call_forwarding_slave-bt-sco-headset">
-		<path name="communication-bt-sco-headset" />
-	</path>
 
 	<!-- Spectro Scenario -->
 	<path name="call_spectro">
@@ -1659,31 +1638,11 @@
 	</path>
 
 	<!-- call forwarding input -->
-	<path name="call_forwarding_master-mic">
+	<path name="call_forwarding_primary-mic">
 		<!-- CP Rx -> AP Tx -->
 		<ctl name="ABOX SPUS OUT4" value="SIFS2" />
 		<ctl name="ABOX SIFS2" value="SPUS OUT4" />
 		<ctl name="ABOX NSRC0" value="SIFS2" />
-	</path>
-
-	<path name="call_forwarding_slave-handset-mic">
-		<path name="communication-handset-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-speaker-mic">
-		<path name="communication-speaker-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-headset-mic">
-		<path name="communication-headset-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-headphone-mic">
-		<path name="communication-headphone-mic" />
-	</path>
-
-	<path name="call_forwarding_slave-bt-sco-headset-in">
-		<path name="communication-bt-sco-headset-in" />
 	</path>
 
 	<!-- FM Playback/Recording -->
