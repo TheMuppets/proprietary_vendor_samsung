@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HydraMeta.xsd">
-    <metadata version="498084022" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
+    <metadata version="498093789" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
         <source_control id="$Id$" time="$DateTime$" change="$Change$" author="$Author$" />
         <enum_def enum_name="unifiCSROnlyMIBShield">
             <enum_entry enum_label="open" enum_value="1" />
@@ -4115,6 +4115,12 @@
             <default>true</default>
             <nature>software</nature>
         </config_element>
+        <config_element name="unifiIncludePMKIDForPSK" psid="2610">
+          <description_user>Include PMKID in frame if security type WPA2-PSK.</description_user>
+           <type>boolean</type>
+           <default>false</default>
+           <nature>software</nature>
+        </config_element>
         <config_element name="unifiWiFiSharing5GHzChannel" psid="2582">
             <description_user>Applicable 5GHz Primary Channels mask. Defined in a uint64 represented by the octet string.
             First byte of the octet string maps to LSB. Bits 0-13 representing 2.4G channels are always set to 0. Mapping defined in mlme_freq_list[]; i.e. Bit 14 maps to channel 36.</description_user>
@@ -4259,6 +4265,16 @@
             <type>uint16</type>
             <nature>software</nature>
         </config_element>
+        <config_element name="unifiUseHostListenInterval" psid="2476">
+            <description_user>Listen interval of beacons when in single-vif as set by host.</description_user>
+            <range_min>0</range_min><range_max>65535</range_max><default>0</default>
+            <units>DTIM intervals</units>
+            <type>uint16</type>
+            <function_list>
+                <function type="set" function_name="mibuint16set" is_for_vif="false"></function>
+            </function_list>
+            <nature>software</nature>
+        </config_element>
         <config_element name="unifiListenInterval" psid="2519">
             <description_user>Beacon Listen Interval</description_user>
             <range_min>0</range_min><range_max>100</range_max><default>5</default>
@@ -4319,6 +4335,12 @@
             <range_min>0</range_min><range_max>4000</range_max><default>1500</default>
             <units>TU</units>
             <type>uint16</type>
+            <nature>software</nature>
+        </config_element>
+        <config_element name="unifiAssocComebackTimeout" psid="2104">
+            <description_user>Timeout, in TU, for a association comeback limit before giving up.</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>20000</range_max><default>3000</default>
             <nature>software</nature>
         </config_element>
         <config_element name="unifiConnectingProbeTimeout" psid="2082">
@@ -4574,6 +4596,13 @@
             <default>true</default>
             <nature>software</nature>
         </config_element>
+        <config_element name="unifiRoamingLowLatencySoftRoamingAllowed" psid="2282">
+            <description_user>Allow Soft Roaming functionality for some chipsets when the low latency mode is enabled.</description_user>
+            <type>boolean</type>
+            <access_rights>read_only</access_rights>
+            <default>true</default>
+            <nature>software</nature>
+        </config_element>
           <config_element name="unifiRoamingInP2pActivated" psid="2090">
            <description_user>Activate Roaming in P2P.</description_user>
            <type>boolean</type>
@@ -4746,17 +4775,17 @@
             <nature>software</nature>
         </config_element>
         <config_element name="unifiRoamBSSLoadMonitoringFrequency" psid="2309">
-            <description_user>How often should the BSS load be monitored? - used for roaming</description_user>
+            <description_user>How often, in seconds, should the BSS load be monitored? - used for roaming</description_user>
             <type>uint16</type>
-            <units>received beacons</units>
-            <range_min>0</range_min><range_max>100</range_max><default>10</default>
+            <units>second</units>
+            <range_min>0</range_min><range_max>100</range_max><default>1</default>
             <nature>software</nature>
         </config_element>
         <config_element name="unifiRoamBSSCUTriggerFrequency" psid="2641">
-            <description_user>How long, in received beacons, should the BSS load be high before triggering roaming?</description_user>
+            <description_user>How long, in seconds, should the BSS load be high before triggering roaming?</description_user>
             <type>uint16</type>
-            <units>received beacons</units>
-            <range_min>0</range_min><range_max>1000</range_max><default>100</default>
+            <units>second</units>
+            <range_min>0</range_min><range_max>100</range_max><default>10</default>
             <nature>software</nature>
         </config_element>
         <config_element name="unifiRoamOffloaded4wshkTimeout" psid="2314">

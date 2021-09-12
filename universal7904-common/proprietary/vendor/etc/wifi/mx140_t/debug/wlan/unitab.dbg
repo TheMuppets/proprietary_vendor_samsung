@@ -88,6 +88,7 @@
 0 unifiMLMEStationInactivityTimeOut
 0 unifiMLMECliInactivityTimeOut
 0 unifiMLMEStationInitialKickTimeOut
+0 unifiAssocComebackTimeout
 0 unifiUartConfigure
 0 unifiUartPios
 0 unifiClockFrequency
@@ -135,6 +136,7 @@
 0 unifiGoogleMaxSignificantWifiChangeAPs
 0 unifiGoogleMaxBssidHistoryEntries
 0 unifiMacBeaconTimeout
+0 unifiRoamingLowLatencySoftRoamingAllowed
 0 unifiRoamNchoCachedScanPeriod
 0 unifiNchoActivated
 0 unifiBeaconCu
@@ -166,6 +168,7 @@
 0 unifiForceChannelBW
 0 unifiDPDTrainingDuration
 0 unifiCoexDebugOverrideBt
+0 unifiUseHostListenInterval
 0 unifiFastPowerSaveTimeout
 0 unifiFastPowerSaveTimeOutSmall
 0 unifiMLMESTAKeepAliveTimeout
@@ -236,6 +239,7 @@
 0 unifiStaChannelSwitchSlowApMaxTime
 0 unifiStaChannelSwitchSlowApPollInterval
 0 unifiStaChannelSwitchSlowApProcedureTimeoutIncrement
+0 unifiIncludePMKIDForPSK
 0 unifiRoamBSSCUTriggerFrequency
 0 unifiMLMESTAKeepAliveFailure
 0 unifiCSROnlyMIBShield
