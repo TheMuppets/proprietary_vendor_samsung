@@ -88,6 +88,7 @@ Element unifiRoamNchoRssiTriggerHysteresis  BasicType integer  BERType integer  
 Element unifiMLMEStationInactivityTimeOut  BasicType integer  BERType integer  OID 1.2.3.1.2098  Access read_write  PSID 2098  Default 3  BFType uint16  BFAccess RW
 Element unifiMLMECliInactivityTimeOut  BasicType integer  BERType integer  OID 1.2.3.1.2099  Access read_write  PSID 2099  Default 10  BFType uint16  BFAccess RW
 Element unifiMLMEStationInitialKickTimeOut  BasicType integer  BERType integer  OID 1.2.3.1.2100  Access read_write  PSID 2100  Default 50  BFType uint16  BFAccess RW
+Element unifiAssocComebackTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2104  Access read_write  Min 0  Max 20000  PSID 2104  Default 3000  BFType uint16  BFAccess RW
 Element unifiUartConfigure  BasicType integer  BERType integer  OID 1.2.3.1.2110  Access read_write  PSID 2110  Hide   BFType uint16  BFAccess RW
 Element unifiUartPios  BasicType integer  BERType integer  OID 1.2.3.1.2111  Access read_write  NamedValues no_pios:1:tx_rx_only:2:tx_rx_rts_cts:3  NamedValues no_pios:1:tx_rx_only:2:tx_rx_rts_cts:3  PSID 2111  Hide   BFType uint16  BFAccess RW
 Element unifiClockFrequency  BasicType integer  BERType integer  OID 1.2.3.1.2140  Access read_only  PSID 2140  GetFunction mibuint16get  BFType uint16  BFAccess RO
@@ -135,6 +136,7 @@ Element unifiGoogleMaxHotlistAPs  BasicType integer  BERType integer  OID 1.2.3.
 Element unifiGoogleMaxSignificantWifiChangeAPs  BasicType integer  BERType integer  OID 1.2.3.1.2263  Access read_write  PSID 2263  Default 64  BFType uint16  BFAccess RW
 Element unifiGoogleMaxBssidHistoryEntries  BasicType integer  BERType integer  OID 1.2.3.1.2264  Access read_write  PSID 2264  Default 0  BFType uint16  BFAccess RW
 Element unifiMacBeaconTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2270  Access read_write  PSID 2270  Default 128  BFType uint16  BFAccess RW
+Element unifiRoamingLowLatencySoftRoamingAllowed  BasicType integer  BERType string  OID 1.2.3.1.2282  Access read_only  PSID 2282  Default 1  BFType bool  BFAccess RO
 Element unifiRoamNchoCachedScanPeriod  BasicType integer  BERType integer_unsigned32  OID 1.2.3.1.2292  Access read_write  Min 1  PSID 2292  Default 10000000  BFType uint32  BFAccess RW
 Element unifiNchoActivated  BasicType integer  BERType string  OID 1.2.3.1.2293  Access read_only  PSID 2293  Default 1  BFType bool  BFAccess RO
 Element unifiBeaconCu  BasicType integer  BERType integer  OID 1.2.3.1.2296  Access read_only  PSID 2296  BFType int16  BFAccess RO
@@ -144,7 +146,7 @@ Element unifiRoamCUScanNoCandidateDeltaTrigger  BasicType integer  BERType integ
 Element unifiRoamAPSelectDeltaFactor  BasicType integer  BERType integer  OID 1.2.3.1.2302  Access read_write  Min 0  Max 100  PSID 2302  Default 20  BFType uint16  BFAccess RW
 Element unifiRoamCUWeight  BasicType integer  BERType integer  OID 1.2.3.1.2303  Access read_write  Min 0  Max 100  PSID 2303  Default 35  BFType uint16  BFAccess RW
 Element unifiRoamRssiweight  BasicType integer  BERType integer  OID 1.2.3.1.2305  Access read_write  Min 0  Max 100  PSID 2305  Default 65  BFType uint16  BFAccess RW
-Element unifiRoamBSSLoadMonitoringFrequency  BasicType integer  BERType integer  OID 1.2.3.1.2309  Access read_write  Min 0  Max 100  PSID 2309  Default 10  BFType uint16  BFAccess RW
+Element unifiRoamBSSLoadMonitoringFrequency  BasicType integer  BERType integer  OID 1.2.3.1.2309  Access read_write  Min 0  Max 100  PSID 2309  Default 1  BFType uint16  BFAccess RW
 Element unifiRoamBlacklistSize  BasicType integer  BERType integer  OID 1.2.3.1.2310  Access read_write  Min 0  Max 100  PSID 2310  Default 5  BFType uint16  BFAccess RW
 Element unifiCUMeasurementInterval  BasicType integer  BERType integer_unsigned32  OID 1.2.3.1.2311  Access read_write  Min 1  Max 1000  PSID 2311  Default 500  BFType uint32  BFAccess RW
 Element unifiCurrentBssNss  BasicType integer  BERType integer  OID 1.2.3.1.2312  Access read_only  NamedValues SISO:0:MIMO_2x2:1:MIMO_3x3:2:MIMO_4x4:3  PSID 2312  Default 0  BFType uint16  BFAccess RO
@@ -166,6 +168,7 @@ Element unifiHardwarePlatform  BasicType integer  BERType integer  OID 1.2.3.1.2
 Element unifiForceChannelBW  BasicType integer  BERType integer  OID 1.2.3.1.2370  Access read_write  PSID 2370  Default 0  SetFunction mibuint16set  GetFunction mibuint16get  BFType uint16  BFAccess RW
 Element unifiDPDTrainingDuration  BasicType integer  BERType integer  OID 1.2.3.1.2371  Access read_write  PSID 2371  Default 10  BFType uint16  BFAccess RW
 Element unifiCoexDebugOverrideBt  BasicType integer  BERType string  OID 1.2.3.1.2425  Access read_write  PSID 2425  Default 0  BFType bool  BFAccess RW
+Element unifiUseHostListenInterval  BasicType integer  BERType integer  OID 1.2.3.1.2476  Access read_write  Min 0  Max 65535  PSID 2476  Default 0  SetFunction mibuint16set  BFType uint16  BFAccess RW
 Element unifiFastPowerSaveTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2500  Access read_only  Max 2147483647  PSID 2500  Default 400000  BFType uint32  BFAccess RO
 Element unifiFastPowerSaveTimeOutSmall  BasicType integer  BERType integer  OID 1.2.3.1.2501  Access read_only  Max 2147483647  PSID 2501  Default 200000  BFType uint32  BFAccess RO
 Element unifiMLMESTAKeepAliveTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2502  Access read_write  Max 2147  PSID 2502  Default 30  BFType uint16  BFAccess RW
@@ -236,7 +239,8 @@ Element unifiStaChannelSwitchSlowApActivated  BasicType integer  BERType string 
 Element unifiStaChannelSwitchSlowApMaxTime  BasicType integer  BERType integer_unsigned32  OID 1.2.3.1.2604  Access read_write  PSID 2604  Default 70  BFType uint32  BFAccess RW
 Element unifiStaChannelSwitchSlowApPollInterval  BasicType integer  BERType integer  OID 1.2.3.1.2605  Access read_write  PSID 2605  Default 1  BFType uint16  BFAccess RW
 Element unifiStaChannelSwitchSlowApProcedureTimeoutIncrement  BasicType integer  BERType integer  OID 1.2.3.1.2606  Access read_write  PSID 2606  Default 10  BFType uint16  BFAccess RW
-Element unifiRoamBSSCUTriggerFrequency  BasicType integer  BERType integer  OID 1.2.3.1.2641  Access read_write  Min 0  Max 1000  PSID 2641  Default 100  BFType uint16  BFAccess RW
+Element unifiIncludePMKIDForPSK  BasicType integer  BERType string  OID 1.2.3.1.2610  Access read_write  PSID 2610  Default 0  BFType bool  BFAccess RW
+Element unifiRoamBSSCUTriggerFrequency  BasicType integer  BERType integer  OID 1.2.3.1.2641  Access read_write  Min 0  Max 100  PSID 2641  Default 10  BFType uint16  BFAccess RW
 Element unifiMLMESTAKeepAliveFailure  BasicType integer  BERType string  OID 1.2.3.1.2842  Access read_write  PSID 2842  Default 0  BFType bool  BFAccess RW
 Element unifiCSROnlyMIBShield  BasicType integer  BERType integer  OID 1.2.3.1.4001  Access not_accessible  NamedValues open:1:warn:2:guard:3:alarm:4  NamedValues open:1:warn:2:guard:3:alarm:4  PSID 4001  Default 2  Hide   BFType uint16  BFAccess NA
 Element unifiPrivateBbbTxFilterConfig  BasicType integer  BERType integer  OID 1.2.3.1.4071  Access read_write  PSID 4071  Default 0x17  Hide   BFType uint16  BFAccess RW

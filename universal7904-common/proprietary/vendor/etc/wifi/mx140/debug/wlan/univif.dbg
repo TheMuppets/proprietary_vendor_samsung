@@ -88,6 +88,7 @@ z  unifiRoamNchoRssiTriggerHysteresis
 z  unifiMLMEStationInactivityTimeOut
 z  unifiMLMECliInactivityTimeOut
 z  unifiMLMEStationInitialKickTimeOut
+z  unifiAssocComebackTimeout
 z  unifiUartConfigure
 z  unifiUartPios
 z  unifiClockFrequency
@@ -135,6 +136,7 @@ z  unifiGoogleMaxHotlistAPs
 z  unifiGoogleMaxSignificantWifiChangeAPs
 z  unifiGoogleMaxBssidHistoryEntries
 z  unifiMacBeaconTimeout
+z  unifiRoamingLowLatencySoftRoamingAllowed
 z  unifiRoamNchoCachedScanPeriod
 z  unifiNchoActivated
 z  unifiBeaconCu
@@ -166,6 +168,7 @@ z  unifiHardwarePlatform
 z  unifiForceChannelBW
 z  unifiDPDTrainingDuration
 z  unifiCoexDebugOverrideBt
+z  unifiUseHostListenInterval
 z  unifiFastPowerSaveTimeout
 z  unifiFastPowerSaveTimeOutSmall
 z  unifiMLMESTAKeepAliveTimeout
@@ -236,6 +239,7 @@ z  unifiStaChannelSwitchSlowApActivated
 z  unifiStaChannelSwitchSlowApMaxTime
 z  unifiStaChannelSwitchSlowApPollInterval
 z  unifiStaChannelSwitchSlowApProcedureTimeoutIncrement
+z  unifiIncludePMKIDForPSK
 z  unifiRoamBSSCUTriggerFrequency
 z  unifiMLMESTAKeepAliveFailure
 z  unifiCSROnlyMIBShield
