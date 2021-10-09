@@ -36,31 +36,6 @@ on property:ro.radio.noril=yes
 # Disable atfwd for wifi models
 setprop persist.vendor.radio.atfwd.start false
 
-#
-# In case of Qcom modem is used for calibration in wifi only model
-#
-service sec_diag_uart_log /system/bin/sec_diag_uart_log
-    class main
-    user root
-    group radio oem_2901 system
-    disabled
-
-#
-# In case of Qcom, disable modules related with tetheroffload in wifi only model
-#
-service vendor.ipacm /vendor/bin/ipacm-dummy
-    class main
-    user radio
-    group radio inet
-
-service vendor.ipacm-diag /vendor/bin/ipacm-diag-dummy
-    class main
-    user radio
-    group radio inet
-
-on property:ro.radio.needcalibration=yes
-    enable sec_diag_uart_log
-
 on post-fs-data
     mkdir /efs/imei 0775 root radio
     restorecon -R /efs/imei
