@@ -24,15 +24,6 @@ $(EGL_64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /vendor/lib64/egl/libGLES_mali.so $@
 
-LIFEVIBES_LIBS := libLifevibes_lvverx.so libLifevibes_lvvetx.so
-
-LIFEVIBES_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/lib/,$(notdir $(LIFEVIBES_LIBS)))
-$(LIFEVIBES_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "LifeVibes lib link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /vendor/lib/soundfx/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_32_SYMLINKS) $(EGL_64_SYMLINKS) $(LIFEVIBES_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(EGL_32_SYMLINKS) $(EGL_64_SYMLINKS)
 
 endif
