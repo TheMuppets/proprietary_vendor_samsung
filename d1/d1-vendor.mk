@@ -9,7 +9,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
     vendor/samsung/d1/proprietary/vendor/bin/hw/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lhd \
     vendor/samsung/d1/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.1-service \
-    vendor/samsung/d1/proprietary/vendor/bin/secril_config_svc:$(TARGET_COPY_OUT_VENDOR)/bin/secril_config_svc \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_Calibration.dat:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_Calibration.dat \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_Configuration.txt \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_ControlParams.txt:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_ControlParams.txt \
