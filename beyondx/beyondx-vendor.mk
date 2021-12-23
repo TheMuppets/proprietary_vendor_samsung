@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/beyondx
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/beyondx/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/beyondx/proprietary/vendor/bin/hw/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lhd \
-    vendor/samsung/beyondx/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.0-service \
     vendor/samsung/beyondx/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/beyondx/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/beyondx/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
@@ -68,48 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/beyondx/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/beyondx/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/beyondx/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/audio.primary.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/camera.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/gatekeeper.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/gralloc.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/hwcomposer.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/memtrack.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/sensors.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/hw/sound_trigger.primary.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libTOFProc_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTOFProc_interface.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/lib_SamsungRec_07010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07010.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/libiu456_datapath_processor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiu456_datapath_processor.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.bio.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.sensorhub.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/camera.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/gatekeeper.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/gralloc.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/hwcomposer.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/memtrack.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/sensors.exynos9820.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.exynos9820.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libTOFProc_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTOFProc_interface.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libiu456_datapath_processor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiu456_datapath_processor.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.bio.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sensorhub.so \
-    vendor/samsung/beyondx/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
@@ -118,3 +73,35 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-505256544545 \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-657365447276:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365447276 \
     vendor/samsung/beyondx/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
+
+PRODUCT_PACKAGES += \
+    camera.exynos9820 \
+    gatekeeper.exynos9820 \
+    gralloc.exynos9820 \
+    hwcomposer.exynos9820 \
+    memtrack.exynos9820 \
+    sensors.exynos9820 \
+    libTOFProc_interface \
+    libbauthserver \
+    libbauthtzcommon \
+    libexynoscamera3 \
+    libexynosdisplay \
+    libiu456_datapath_processor \
+    sensors.bio \
+    sensors.sensorhub \
+    libaudioeffectoffload \
+    audio.primary.exynos9820 \
+    sound_trigger.primary.exynos9820 \
+    lib_SamsungRec_07010 \
+    libaudio_soundtrigger \
+    libaudioproxy \
+    librecordalive \
+    libswdap \
+    android.hardware.gnss@2.0-impl \
+    gps.default \
+    vendor.samsung.hardware.gnss@2.0-impl \
+    libsec-ril \
+    libwrappergps \
+    gpsd \
+    lhd \
+    vendor.samsung.hardware.gnss@2.0-service

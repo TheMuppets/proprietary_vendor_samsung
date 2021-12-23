@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/d1
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/d1/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/d1/proprietary/vendor/bin/hw/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lhd \
-    vendor/samsung/d1/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.1-service \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_Calibration.dat:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_Calibration.dat \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_Configuration.txt \
     vendor/samsung/d1/proprietary/vendor/etc/LVACFS_ControlParams.txt:$(TARGET_COPY_OUT_VENDOR)/etc/LVACFS_ControlParams.txt \
@@ -85,49 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/d1/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/d1/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/audio.primary.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/camera.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/gatekeeper.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/gralloc.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/hwcomposer.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/memtrack.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/sensors.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/hw/sound_trigger.primary.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib/lib_SamsungRec_08020.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_08020.so \
-    vendor/samsung/d1/proprietary/vendor/lib/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lvacfs.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
-    vendor/samsung/d1/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
-    vendor/samsung/d1/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
-    vendor/samsung/d1/proprietary/vendor/lib/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.bio.so \
-    vendor/samsung/d1/proprietary/vendor/lib/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.sensorhub.so \
-    vendor/samsung/d1/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/d1/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
-    vendor/samsung/d1/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
-    vendor/samsung/d1/proprietary/vendor/lib/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/camera.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/gatekeeper.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/gralloc.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/hwcomposer.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/memtrack.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/sensors.exynos9825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.exynos9825.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/sensors.bio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.bio.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sensorhub.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
-    vendor/samsung/d1/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.1.so \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
@@ -136,3 +90,38 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-505256544545 \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-657365447276:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365447276 \
     vendor/samsung/d1/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
+
+PRODUCT_PACKAGES += \
+    camera.exynos9825 \
+    gatekeeper.exynos9825 \
+    gralloc.exynos9825 \
+    hwcomposer.exynos9825 \
+    memtrack.exynos9825 \
+    sensors.exynos9825 \
+    libbauthserver \
+    libbauthtzcommon \
+    libexynoscamera3 \
+    libexynosdisplay \
+    sensors.bio \
+    sensors.sensorhub \
+    libaudioeffectoffload \
+    audio.primary.exynos9825 \
+    sound_trigger.primary.exynos9825 \
+    lib_SamsungRec_08020 \
+    lib_lvacfs \
+    libaudio_soundtrigger \
+    libaudioproxy \
+    librecordalive \
+    libswdap \
+    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
+    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
+    android.hardware.gnss@2.1-impl \
+    gps.default \
+    vendor.samsung.hardware.gnss@2.0-impl \
+    libsec-ril-dsds \
+    libsec-ril \
+    libwrappergps \
+    vendor.samsung.hardware.gnss@2.1 \
+    gpsd \
+    lhd \
+    vendor.samsung.hardware.gnss@2.1-service
