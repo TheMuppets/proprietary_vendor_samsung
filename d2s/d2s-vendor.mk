@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
     libTOFProc_interface \
     libbauthserver \
     libbauthtzcommon \
+    libc++-v28 \
     libdatazip \
     libexynoscamera3 \
     libexynosdisplay \

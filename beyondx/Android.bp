@@ -192,6 +192,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libc++-v28",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libc++-v28.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libc++-v28.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libexynoscamera3",
 	owner: "samsung",
 	strip: {
