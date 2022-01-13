@@ -948,9 +948,9 @@
 	</path>
 
 	<path name="gain-communication-tv-speaker-mic">
-		<ctl name="IN3R Digital Volume" value="128" />
-		<ctl name="IN4R Digital Volume" value="128" />
-		<ctl name="IN1R Digital Volume" value="128" />
+		<ctl name="IN3R Digital Volume" value="136" />
+		<ctl name="IN4R Digital Volume" value="136" />
+		<ctl name="IN1R Digital Volume" value="136" />
 	</path>
 
 	<path name="gain-communication-tv-dual-speaker-mic">
@@ -1702,15 +1702,15 @@
 
 	<!-- echo(rms) test input volume -->
 	<path name="gain-echo_test-mic">
-		<ctl name="IN3R Digital Volume" value="137" />
+		<ctl name="IN3R Digital Volume" value="135" />
 	</path>
 
 	<path name="gain-echo_test-2nd-mic">
-		<ctl name="IN4R Digital Volume" value="127" />
+		<ctl name="IN4R Digital Volume" value="129" />
 	</path>
 
 	<path name="gain-echo_test-3rd-mic">
-		<ctl name="IN1R Digital Volume" value="150" />
+		<ctl name="IN1R Digital Volume" value="165" />
 	</path>
 
 	<path name="gain-echo_test-dualmic">
@@ -1739,3 +1739,4 @@
 		<ctl name="IN4R Digital Volume" value="130" />
 	</path>
 </mixer>
+

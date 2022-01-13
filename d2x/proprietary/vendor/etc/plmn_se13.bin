@@ -296,6 +296,10 @@ vodafone P"voda P
 26806MEO"MEO
 
 27001POST"POST
+
+27002MTX Connect"MTXC
+
+27005LOL"LOL
 
 27077L TANGO"TANGO
 
@@ -537,12 +541,10 @@ SPM AMERIS"AMERIS
 311270Verizon"Verizon
 
 311370GCI"GCI
-
-311450PTCI"PTCI
 
 311480Verizon"Verizon
-
-311530USANW"USANW
+
+311530PTCI"PTCI
 
 311560USA OTZ"OTZ
 
@@ -551,10 +553,10 @@ SPM AMERIS"AMERIS
 311600Limitless Mobile"LMUSA
 
 311630C Spire"C Spire
+$
+311650United Wireless USA"UWC
 
 311660	Metro PCS"MPCS
-$
-311710Northeast Wireless"NEWN
 
 311740TCI"TCI
 "
@@ -584,6 +586,8 @@ NetGenuity"NetGenui
 313070MNSHub"MNSHub
 
 313380OptimERA"OptimERA
+#
+313790Liberty Mobile"Liberty
 
 330110PR Claro"Claro
 "
@@ -1028,6 +1032,8 @@ Mobily-KSA"Mobily
  
 42203Ooredoo Oman"Ooredoo
 
+42206Vodafone"Vodafone
+
 42402ETISALAT"ETISALAT
 
 42403du"du
@@ -1183,6 +1189,8 @@ $
 45702ETL MOBILE NETWORK"ETLMNW
 
 45703Unitel"UNITEL
+"
+45707Best Telecom Laos"Best
 
 45708TPLUS"TPLUS
 
@@ -1879,4 +1887,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML%Published TS.25 Database 19 July 2021
+90150EchoStar Mobile"EML)Published TS.25 Database 06 December 2021

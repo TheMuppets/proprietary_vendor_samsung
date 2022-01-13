@@ -111,27 +111,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "sensors.exynos9820",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/sensors.exynos9820.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/sensors.exynos9820.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libbauthserver",
 	owner: "samsung",
 	strip: {
@@ -326,23 +305,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_soundtrigger",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_soundtrigger.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libaudioproxy",
 	owner: "samsung",
 	strip: {
@@ -444,23 +406,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsec-ril-dsds",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsec-ril-dsds.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }

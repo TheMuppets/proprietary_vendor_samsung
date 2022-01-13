@@ -9,7 +9,6 @@
 
 on post-fs-data
     mkdir /data/vendor/secradio 0770 radio radio
-    restorecon -R /data/vendor/secradio
 
 on property:ro.vendor.multisim.simslotcount=1
     stop ril-daemon1

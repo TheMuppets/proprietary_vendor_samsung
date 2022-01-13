@@ -11,7 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
@@ -21,11 +21,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/WithLightFixNoBN.SDNNmodel:$(TARGET_COPY_OUT_VENDOR)/firmware/WithLightFixNoBN.SDNNmodel \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/bcmdhd_mfg.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b1 \
@@ -56,12 +54,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/firmware/usbout.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbout.bin \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-000046495645:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000046495645 \
+    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
+    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-0000534b504d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0000534b504d \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-00535453540c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00535453540c \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
+    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-42494f535542 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-474154454b45 \
+    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-5345435f4652:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5345435f4652 \
+    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-53454d655345:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-53454d655345 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-535355504341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-535355504341 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-5354494d4552:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5354494d4552 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
@@ -77,6 +79,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    vulkan.mali \
     libExynosHWCService \
     libExynosOMX_Core \
     libExynosOMX_Resourcemanager \
@@ -85,10 +88,9 @@ PRODUCT_PACKAGES += \
     libacryl.plugin.hdr.exynos9820 \
     libacryl \
     libcsc \
+    libdrmresource \
     libegis_fp_normal_sensor_test \
-    libepicoperator \
     libexynosgraphicbuffer \
-    libexynosgscaler \
     libexynosscaler \
     libexynosutils \
     libexynosv4l2 \
@@ -100,7 +102,6 @@ PRODUCT_PACKAGES += \
     libhwjsqz \
     libion_exynos \
     libqfp_sensortest \
-    libril-samsung \
     libsecaudioinfo \
     libsecnativefeature \
     libsecril-client.exynos9820 \
@@ -114,8 +115,10 @@ PRODUCT_PACKAGES += \
     libuuid \
     libOMX.Exynos.AVC.Decoder \
     libOMX.Exynos.AVC.Encoder \
+    libOMX.Exynos.AVC.WFD.Encoder \
     libOMX.Exynos.HEVC.Decoder \
     libOMX.Exynos.HEVC.Encoder \
+    libOMX.Exynos.HEVC.WFD.Encoder \
     libOMX.Exynos.MPEG4.Decoder \
     libOMX.Exynos.MPEG4.Encoder \
     libOMX.Exynos.VP8.Decoder \
@@ -124,9 +127,6 @@ PRODUCT_PACKAGES += \
     libOMX.Exynos.VP9.Encoder \
     libOMX.Exynos.WMV.Decoder \
     sensors.grip \
-    vendor.samsung.hardware.radio.bridge@2.0 \
-    vendor.samsung.hardware.radio@2.0 \
-    vendor.samsung.hardware.radio@2.1 \
     libSamsungPostProcessConvertor \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
@@ -139,16 +139,23 @@ PRODUCT_PACKAGES += \
     libaudioroute.exynos9820 \
     libtinyalsa.exynos9820 \
     libengmode_client \
+    libflicker_sec \
     libiwt \
     libkeymaster_helper \
+    libril_sem \
     libskeymaster4device \
     libvkmanager_vendor \
     vendor.samsung.hardware.gnss@2.0 \
+    vendor.samsung.hardware.radio.bridge@2.0 \
+    vendor.samsung.hardware.radio.bridge@2.1 \
     vendor.samsung.hardware.radio.channel@2.0 \
+    vendor.samsung.hardware.radio@2.0 \
+    vendor.samsung.hardware.radio@2.1 \
+    vendor.samsung.hardware.radio@2.2 \
     libaptX_encoder \
-    manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_android.hardware.drm@1.4-service.widevine \
     cbd \
-    android.hardware.drm@1.3-service.widevine \
+    android.hardware.drm@1.4-service.widevine \
     rild \
     tzdaemon \
     tzts_daemon

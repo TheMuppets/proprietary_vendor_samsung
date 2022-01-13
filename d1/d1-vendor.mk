@@ -82,7 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/d1/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/d1/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
     vendor/samsung/d1/proprietary/vendor/tee/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-46494e474502 \
@@ -97,7 +96,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos9825 \
     hwcomposer.exynos9825 \
     memtrack.exynos9825 \
-    sensors.exynos9825 \
     libbauthserver \
     libbauthtzcommon \
     libexynoscamera3 \
@@ -109,7 +107,6 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.exynos9825 \
     lib_SamsungRec_08020 \
     lib_lvacfs \
-    libaudio_soundtrigger \
     libaudioproxy \
     librecordalive \
     libswdap \
@@ -118,7 +115,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl \
     gps.default \
     vendor.samsung.hardware.gnss@2.0-impl \
-    libsec-ril-dsds \
     libsec-ril \
     libwrappergps \
     vendor.samsung.hardware.gnss@2.1 \
