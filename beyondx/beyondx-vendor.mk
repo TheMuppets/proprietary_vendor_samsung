@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/beyondx/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/beyondx/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/beyondx/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-0053545354ab:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0053545354ab \
     vendor/samsung/beyondx/proprietary/vendor/tee/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-46494e474502 \
@@ -80,7 +79,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos9820 \
     hwcomposer.exynos9820 \
     memtrack.exynos9820 \
-    sensors.exynos9820 \
     libTOFProc_interface \
     libbauthserver \
     libbauthtzcommon \
@@ -94,7 +92,6 @@ PRODUCT_PACKAGES += \
     audio.primary.exynos9820 \
     sound_trigger.primary.exynos9820 \
     lib_SamsungRec_07010 \
-    libaudio_soundtrigger \
     libaudioproxy \
     librecordalive \
     libswdap \

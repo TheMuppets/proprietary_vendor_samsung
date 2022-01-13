@@ -1,3 +1,6 @@
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules dhd.ko
+
 on post-fs-data
     # for WIFI DONGLE EVENT LOG
     write /data/vendor/conn/.logtrace.info 1
@@ -14,6 +17,8 @@ on post-fs-data
     chmod 0640 /sys/wifi/cid
     chown wifi wifi /sys/wifi/wifiver
     chmod 0640 /sys/wifi/wifiver
+    chown wifi wifi /sys/wifi/otp
+    chmod 0640 /sys/wifi/otp
     chown wifi wifi /sys/wifi/pm
     chmod 0640 /sys/wifi/pm
     chown wifi wifi /sys/wifi/ant
