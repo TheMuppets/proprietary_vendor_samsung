@@ -89,6 +89,13 @@ dex_import {
 	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "samsung",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "samsung",
