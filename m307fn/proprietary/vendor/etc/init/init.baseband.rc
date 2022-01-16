@@ -1,0 +1,53 @@
+on init
+    symlink /dev/block/by-name/radio /dev/mbin0
+    restorecon /dev/mbin0
+    write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 6
+    write /sys/class/net/rmnet1/queues/rx-0/rps_cpus 6
+    write /sys/class/net/rmnet2/queues/rx-0/rps_cpus 6
+    write /sys/class/net/rmnet3/queues/rx-0/rps_cpus 6
+    write /proc/sys/net/core/netdev_max_backlog 100000
+
+on post-fs-data
+    chown radio radio sys/devices/virtual/misc/multipdp/waketime
+    chmod 0660 /sys/devices/virtual/misc/umts_dm0/dm_state
+    chown radio system /sys/devices/virtual/misc/umts_dm0/dm_state
+
+    # /mnt/vendor/efs/factory.prop for Dual / Single SIM settings
+    chown radio radio /mnt/vendor/efs/factory.prop
+    chmod 0600 /mnt/vendor/efs/factory.prop
+
+on property:ril.clatd.v4-rmnet0=up
+    write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 4
+    write /sys/class/net/v4-rmnet0/queues/rx-0/rps_cpus 2
+
+on property:ril.clatd.v4-rmnet1=up
+    write /sys/class/net/rmnet1/queues/rx-0/rps_cpus 4
+    write /sys/class/net/v4-rmnet1/queues/rx-0/rps_cpus 2
+
+on property:ril.clatd.v4-rmnet2=up
+    write /sys/class/net/rmnet2/queues/rx-0/rps_cpus 4
+    write /sys/class/net/v4-rmnet2/queues/rx-0/rps_cpus 2
+
+on property:ril.clatd.v4-rmnet3=up
+    write /sys/class/net/rmnet3/queues/rx-0/rps_cpus 4
+    write /sys/class/net/v4-rmnet3/queues/rx-0/rps_cpus 2
+
+on post-fs-data
+    # For Samsung members
+    chmod 0775 /data/log/err
+    chown radio radio /data/log/err
+
+service cpboot-daemon /vendor/bin/cbd -d -tss310 -bm -mm -P by-name/radio
+    class main
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r shell system
+    seclabel u:r:cbd:s0
+
+on property:ro.vendor.multisim.simslotcount=*
+   write /sys/module/modem_ctrl_ss310ap/parameters/ds_detect ${ro.vendor.multisim.simslotcount}
+
+on property:ro.vendor.multisim.simslotcount=1
+    setprop persist.radio.multisim.config ss
+
+on property:ro.vendor.multisim.simslotcount=2
+    setprop persist.radio.multisim.config dsds
