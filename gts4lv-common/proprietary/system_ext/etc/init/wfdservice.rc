@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -9,8 +9,20 @@ service wfdservice /system_ext/bin/wfdservice
     disabled
     oneshot
 
+service wfdservice64 /system_ext/bin/wfdservice64
+    class main
+    user system
+    disabled
+    oneshot
+
 on property:vendor.wfdservice=enable
     start wfdservice
 
+on property:vendor.wfdservice64=enable
+    start wfdservice64
+
 on property:vendor.wfdservice=disable
     stop wfdservice
+
+on property:vendor.wfdservice64=disable
+    stop wfdservice64
