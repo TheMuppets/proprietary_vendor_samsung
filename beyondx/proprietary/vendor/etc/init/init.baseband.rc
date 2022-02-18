@@ -1,0 +1,45 @@
+on init
+    symlink /dev/block/platform/13d60000.ufs/by-name/radio /dev/mbin0
+    restorecon /dev/mbin0
+    write /proc/sys/net/core/netdev_max_backlog 100000
+
+on post-fs-data
+    chown radio radio /sys/devices/virtual/misc/multipdp/waketime
+    chmod 0660 /sys/devices/virtual/misc/umts_dm0/dm_state
+    chown radio system /sys/devices/virtual/misc/umts_dm0/dm_state
+
+    #For cpefs partition
+    mkdir /mnt/vendor/cpefs 0771 radio system
+    mount ext4 /dev/block/platform/13d60000.ufs/by-name/cpefs /mnt/vendor/cpefs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
+
+    # /mnt/vendor/efs/factory.prop for Dual / Single SIM settings
+    chown radio radio /mnt/vendor/efs/factory.prop
+    chmod 0600 /mnt/vendor/efs/factory.prop
+
+# handle crash reason
+    chown radio system /sys/module/modem_utils/parameters/cp_crash_info
+    chmod 0660 /sys/module/modem_utils/parameters/cp_crash_info
+    chown radio system /sys/module/modem_utils/parameters/cp_crash_link
+    chmod 0660 /sys/module/modem_utils/parameters/cp_crash_link
+
+service cpboot-daemon /vendor/bin/cbd -d -tss310 -bm -mm -P platform/13d60000.ufs/by-name/radio
+    class main
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r shell system
+    seclabel u:r:cbd:s0
+
+service cpboot-daemon5g /vendor/bin/cbd -d -ts5100 -bs -me -P platform/13d60000.ufs/by-name/radio2
+    class main
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r shell system
+    seclabel u:r:cbd:s0
+
+on property:ro.vendor.multisim.simslotcount=*
+   write /sys/module/modem_ctrl_s5000ap/parameters/ds_detect ${ro.vendor.multisim.simslotcount}
+
+on property:ro.vendor.multisim.simslotcount=1
+    setprop persist.radio.multisim.config ss
+
+on property:ro.vendor.multisim.simslotcount=2
+    setprop persist.radio.multisim.config dsds
+
