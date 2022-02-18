@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<TargetConfig>
+
+    <!-- All the target related information goes in TargetInfo tag.
+    Following are the supported fields for  TargetInfo tag.
+        Mandatory Fields
+        * NumClusters, number of clusters
+        * TotalNumCores, total number of cores
+        * SocIds, a comma seperated list of supported socids for this target.
+        Other Fields
+        * Target, target name.
+        * SynCore, default value is "1" implies sync core and change to "0" for async core.
+        * CoreCtlCpu, core_ctl is enabled on which physical core, defalut value is "-1".
+        * MinCoreOnline, minimum number of cores needed to be online, default value is "0"
+        * GovInstanceType, default value "0" which implies "CLUSTER_BASED_GOV_INSTANCE",
+          can be changed to "1" for "SINGLE_GOV_INSTANCE".
+        * CpufreqGov, default value is "0" which implies "INTERACTIVE", can be changed it
+          to "1" for "SCHEDUTIL".
+    -->
+
+    <!-- For each cluster,write a seperate ClustersInfo tag.
+        Following are the supported fields for ClustersInfo tag.
+        Mandatory Fields
+        * Id, cluster number starts with index 0.
+        * NumCores, total number of cores for that cluster.
+        Other Fields
+        * Type, whther a "little" or "big" cluster.
+        (Type is mandatory, If there is more than one cluster.)
+        * MaxFrequency, Any limitations for max frequency for that cluster.
+    -->
+
+    <!-- For targets sharing the same platfrom, we can have seperate config tag for each
+         of those targets with different number in the Config tag and basing on the socId
+         of the target device, we decide which configs to consider. -->
+
+    <Config1>
+
+         <TargetInfo
+             Target="sdm710"
+             NumClusters="2"
+             TotalNumCores="8"
+             SocIds="336,337,360,371,393"
+             SynCore="1"
+             CoreCtlCpu="0"
+             MinCoreOnline="0"
+             CpufreqGov="1" />
+
+         <ClustersInfo Id="0" NumCores="6" Type="little" />
+         <ClustersInfo Id="1" NumCores="2" Type="big" />
+
+    </Config1>
+
+</TargetConfig>

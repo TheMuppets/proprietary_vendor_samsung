@@ -1,0 +1,61 @@
+<!--
+Copyright (c) 2017 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+
+This file is configured by OEM to customize the path used by GP FS listener
+service to save files, and will be located in /vendor/etc on device
+
+"gp_data_path" and "gp_persist_path" are the /data and /persist partition
+path to save files, respectively.
+By default, "gp_data_path" is "/data/vendor/tzstorage/", and
+"gp_persist_path" is "/mnt/vendor/persist/data/".
+
+To replace with different paths, please also create folder in init.qcom.rc
+file and update SEAndroid policy.
+
+Take "/data/vendor/tzstorage/" as an example below,
+
+A) rootdir/etc/init.qcom.rc:
+# Create /data/vendor/tzstorage directory for SFS listener
+mkdir /data/vendor/tzstorage 0770 system system
+
+B) common/file.te:
+# SFS listener data file
+type data_tzstorage_file, file_type, data_file_type;
+
+C) common/file_contexts:
+/data/vendor/tzstorage(/.*)?       u:object_r:data_tzstorage_file:s0
+
+D) common/qseecomd.te:
+# Allow SFS to write to data partition
+allow tee data_tzstorage_file:dir create_dir_perms;
+allow tee data_tzstorage_file:file create_file_perms;
+
+"gp_whitelist_count" and "gp_whitelist_path"
+
+Some paths needs "/data/vendor/tzstorage" appended to it at the beginning
+as they do not have access/permissions on their own.
+Use gp_whitelist_count and gp_whitelist_paths entries to add more such paths.
+By default, we add "/data/system/users" and "/data/misc/qsee" for current use
+cases.
+
+To add an extra path, increment the count in gp_whitelist_count and add a new
+gp_whitelist_path entry. It is very critical that the count matches with the
+number of path entries.
+
+-->
+
+
+<sfs_path>
+    <gp_data_path> /data/vendor/tzstorage/ </gp_data_path>
+    <gp_persist_path> /efs/ </gp_persist_path>
+    <gp_whitelist_count> 4 </gp_whitelist_count>
+    <gp_whitelist_path> /data/system/users/ </gp_whitelist_path>
+    <gp_whitelist_path> /data/misc/qsee/ </gp_whitelist_path>
+    <gp_whitelist_path> /qwes </gp_whitelist_path>
+    <gp_whitelist_path> /qwes/licenses </gp_whitelist_path>
+</sfs_path>

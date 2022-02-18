@@ -1,0 +1,17 @@
+ # Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+ # All Rights Reserved.
+ # Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service vendor.vppservice /vendor/bin/vppservice
+    class hal
+    user media
+    group camera
+
+    # HIDL interfaces
+    interface vendor.qti.hardware.vpp@1.1::IHidlVppService vppService
+
+    # don't auto restart
+    oneshot
+
+    # start only when requested
+    disabled

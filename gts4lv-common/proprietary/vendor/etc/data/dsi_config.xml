@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     DSI Module configuration XML file
+     Copyright (c) 2013, 2015, 2017-2020 Qualcomm Technologies, Inc.
+     All Rights Reserved.
+     Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<list name="dsi_config">
+
+   <!-- Configuration for legacy MSM targets -->
+   <listitem name="msm">
+
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 0 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 0 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet1 </data>
+       <data type="string"> rmnet2 </data>
+       <data type="string"> rmnet3 </data>
+       <data type="string"> rmnet4 </data>
+       <data type="string"> rmnet5 </data>
+       <data type="string"> rmnet6 </data>
+       <data type="string"> rmnet7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet1 </data>
+       <data type="string"> rmnet2 </data>
+       <data type="string"> rmnet3 </data>
+       <data type="string"> rmnet4 </data>
+       <data type="string"> rmnet5 </data>
+       <data type="string"> rmnet6 </data>
+       <data type="string"> rmnet7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for fusion4 -->
+   <listitem name="mdm">
+
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_usb0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 0 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_usb0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_usb0 </data>
+       <data type="string"> rmnet_usb1 </data>
+       <data type="string"> rmnet_usb2 </data>
+       <data type="string"> rmnet_usb3 </data>
+       <data type="string"> rmnet_usb4 </data>
+       <data type="string"> rmnet_usb5 </data>
+       <data type="string"> rmnet_usb6 </data>
+       <data type="string"> rmnet_usb7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for fusion4.5 PCIe -->
+   <listitem name="fusion4_5_pcie">
+
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration of off target testing -->
+   <listitem name="off_target">
+
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8994  -->
+   <listitem name="msm8994">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for dpm_2_0 targets -->
+   <listitem name="dpm_2_0">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for Jolokia -->
+   <listitem name="jolokia">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8992  -->
+   <listitem name="msm8992">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for 9X40/9X45 LE (Tesla)  -->
+   <listitem name="tesla">
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8952/MSM8956  -->
+   <listitem name="tabasco">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+   <!-- Configuration for MSM8976 -->
+   <listitem name="Eldarion">
+
+	 <data name="qos_enabled" type="int"> 1 </data>
+	 <data name="rmnet_data_enabled" type="int"> 1 </data>
+	 <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+	 <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+	 <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+	 <data name="num_dsi_handles" type="int"> 8 </data>
+	 <list name="device_names">
+	   <data type="string"> rmnet_data0 </data>
+	   <data type="string"> rmnet_data1 </data>
+	   <data type="string"> rmnet_data2 </data>
+	   <data type="string"> rmnet_data3 </data>
+	   <data type="string"> rmnet_data4 </data>
+	   <data type="string"> rmnet_data5 </data>
+	   <data type="string"> rmnet_data6 </data>
+	   <data type="string"> rmnet_data7 </data>
+	 </list>
+
+	 <list name="control_port_names">
+	   <data type="string"> rmnet_data0 </data>
+	   <data type="string"> rmnet_data1 </data>
+	   <data type="string"> rmnet_data2 </data>
+	   <data type="string"> rmnet_data3 </data>
+	   <data type="string"> rmnet_data4 </data>
+	   <data type="string"> rmnet_data5 </data>
+	   <data type="string"> rmnet_data6 </data>
+	   <data type="string"> rmnet_data7 </data>
+	 </list>
+
+   </listitem>
+
+   <!-- Configuration for MSM8953  -->
+   <listitem name="jacala">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+ <!-- Configuration for MSM8940  -->
+   <listitem name="feero6">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8920  -->
+   <listitem name="feerolite6">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for SDM660  -->
+   <listitem name="Starlord">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for SDM630  -->
+   <listitem name="Starhawk">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8996  -->
+   <listitem name="msm8996">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+  <!-- Configuration for Fusion 8084 + 9x45 PCIe -->
+  <listitem name="fusion_8084_9x45_pcie">
+    <data name="qos_enabled" type="int"> 0 </data>
+    <data name="rmnet_data_enabled" type="int"> 1 </data>
+    <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+    <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+    <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+    <data name="num_dsi_handles" type="int"> 8 </data>
+    <list name="device_names">
+      <data type="string"> rmnet_data0 </data>
+      <data type="string"> rmnet_data1 </data>
+      <data type="string"> rmnet_data2 </data>
+      <data type="string"> rmnet_data3 </data>
+      <data type="string"> rmnet_data4 </data>
+      <data type="string"> rmnet_data5 </data>
+      <data type="string"> rmnet_data6 </data>
+      <data type="string"> rmnet_data7 </data>
+    </list>
+
+    <list name="control_port_names">
+      <data type="string"> rmnet_data0 </data>
+      <data type="string"> rmnet_data1 </data>
+      <data type="string"> rmnet_data2 </data>
+      <data type="string"> rmnet_data3 </data>
+      <data type="string"> rmnet_data4 </data>
+      <data type="string"> rmnet_data5 </data>
+      <data type="string"> rmnet_data6 </data>
+      <data type="string"> rmnet_data7 </data>
+    </list>
+  </listitem>
+
+   <!-- Configuration for 9X50/9X55 LE (Atlas)  -->
+   <listitem name="atlas">
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for Fusion 8096 + 9x55 PCIe -->
+   <listitem name="fusion_8096_9x55_pcie">
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+   <!-- Configuration for lykan -->
+   <listitem name="lykan">
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+   <!-- Configuration for feero -->
+   <listitem name="feero">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for msm8998  -->
+   <listitem name="msm8998">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for SDM845  -->
+   <listitem name="SDM845">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for msmnile  -->
+   <listitem name="msmnile">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for SDM710  -->
+   <listitem name="Warlock">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+   <!-- Configuration for Fusion sdm845 + sdx24 PCIe -->
+   <listitem name="fusion_sdm845_sdx24_pcie">
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+   <!-- Configuration for Fusion 8998 + SDX50 standalone -->
+   <listitem name="fusion_8998_sdx50_sa">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for DS_TARGET_FUSION_SM8150_SDX50 -->
+   <listitem name="fusion_sm8150_sdx50">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for SM6150(Talos)  -->
+   <listitem name="msmsteppe">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 11 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for DS_TARGET_FUSION_SDA855_SDX55 PCIe -->
+   <listitem name="fusion_sda855_sdx55">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for DS_TARGET_FUSION_SDA865_SDX55 PCIe -->
+   <listitem name="fusion_sda865_sdx55">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for lito -->
+   <listitem name="lito">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for lahaina -->
+   <listitem name="lahaina">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+</list>
+
