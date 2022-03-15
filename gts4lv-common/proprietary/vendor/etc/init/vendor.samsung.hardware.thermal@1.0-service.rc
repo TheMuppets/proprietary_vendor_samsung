@@ -2,3 +2,9 @@ service sec-thermal-1-0 /vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-servi
     class hal
     user system
     group system
+
+on property:init.svc.zygote=restarting
+    restart sec-thermal-1-0
+
+on property:sys.boot_completed=*
+    setprop vendor.thermal.bt_completed ${sys.boot_completed}

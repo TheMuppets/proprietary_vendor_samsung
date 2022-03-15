@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      DSI Module configuration XML file
-     Copyright (c) 2013, 2015, 2017-2020 Qualcomm Technologies, Inc.
+     Copyright (c) 2013, 2015, 2017-2021 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -1208,6 +1208,112 @@
 
    <!-- Configuration for lahaina -->
    <listitem name="lahaina">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for lahaina_pt -->
+   <listitem name="lahaina_pt">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 17 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for monaco-->
+   <listitem name="monaco">
 
      <data name="qos_enabled" type="int"> 1 </data>
      <data name="rmnet_data_enabled" type="int"> 1 </data>

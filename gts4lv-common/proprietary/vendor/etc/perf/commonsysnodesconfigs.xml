@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* Copyright (c) 2021 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<ResourceConfigs>
+    <PerfResources>
+        <SysNode Idx="0x0" Node="/sys/module/msm_performance/parameters/num_clusters" />
+        <SysNode Idx="0x1" Node="/sys/module/msm_performance/parameters/managed_cpus" />
+        <SysNode Idx="0x2" Node="/sys/module/msm_performance/parameters/cpu_max_freq" />
+        <SysNode Idx="0x3" Node="/sys/module/msm_performance/events/cpu_hotplug" />
+        <SysNode Idx="0x4" Node="/sys/module/msm_performance/parameters/max_cpus" />
+        <SysNode Idx="0x5" Node="/sys/module/msm_performance/parameters/inst" />
+        <SysNode Idx="0x6" Node="/sys/module/msm_performance/parameters/splh_notif" />
+        <SysNode Idx="0x7" Node="/sys/module/msm_performance/notify/gfx_evt" />
+        <SysNode Idx="0x8" Node="/sys/module/msm_performance/parameters/evnt_gplaf_pid" />
+    </PerfResources>
+</ResourceConfigs>
