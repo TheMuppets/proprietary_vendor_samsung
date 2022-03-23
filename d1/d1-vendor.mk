@@ -91,14 +91,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
 
 PRODUCT_PACKAGES += \
-    camera.exynos9825 \
     gatekeeper.exynos9825 \
     gralloc.exynos9825 \
     hwcomposer.exynos9825 \
     memtrack.exynos9825 \
     libbauthserver \
     libbauthtzcommon \
-    libexynoscamera3 \
     libexynosdisplay \
     sensors.bio \
     sensors.sensorhub \
@@ -113,8 +111,10 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
     android.hardware.gnss@2.1-impl \
+    camera.exynos9825 \
     gps.default \
-    vendor.samsung.hardware.gnss@2.0-impl \
+    vendor.samsung.hardware.gnss@2.1-impl \
+    libexynoscamera3 \
     libsec-ril \
     libwrappergps \
     vendor.samsung.hardware.gnss@2.1 \

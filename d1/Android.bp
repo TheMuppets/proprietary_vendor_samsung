@@ -6,27 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "camera.exynos9825",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/camera.exynos9825.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/camera.exynos9825.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "gatekeeper.exynos9825",
 	owner: "samsung",
 	strip: {
@@ -142,26 +121,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbauthtzcommon.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libexynoscamera3",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libexynoscamera3.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libexynoscamera3.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -426,6 +385,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "camera.exynos9825",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/camera.exynos9825.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "gps.default",
 	owner: "samsung",
 	strip: {
@@ -444,19 +421,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.gnss@2.0-impl",
+	name: "vendor.samsung.hardware.gnss@2.1-impl",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so"],
+			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so"],
 		},
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
 	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libexynoscamera3",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libexynoscamera3.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }

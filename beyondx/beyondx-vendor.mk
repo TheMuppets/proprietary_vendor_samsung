@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/beyondx/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
 
 PRODUCT_PACKAGES += \
-    camera.exynos9820 \
     gatekeeper.exynos9820 \
     gralloc.exynos9820 \
     hwcomposer.exynos9820 \
@@ -83,7 +82,6 @@ PRODUCT_PACKAGES += \
     libbauthserver \
     libbauthtzcommon \
     libc++-v28 \
-    libexynoscamera3 \
     libexynosdisplay \
     libiu456_datapath_processor \
     sensors.bio \
@@ -96,8 +94,10 @@ PRODUCT_PACKAGES += \
     librecordalive \
     libswdap \
     android.hardware.gnss@2.0-impl \
+    camera.exynos9820 \
     gps.default \
     vendor.samsung.hardware.gnss@2.0-impl \
+    libexynoscamera3 \
     libsec-ril \
     libwrappergps \
     gpsd \

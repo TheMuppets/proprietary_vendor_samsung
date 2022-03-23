@@ -57,7 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-0000534b504d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0000534b504d \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-00535453540c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00535453540c \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-42494f535542 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
@@ -83,8 +82,6 @@ PRODUCT_PACKAGES += \
     libExynosHWCService \
     libExynosOMX_Core \
     libExynosOMX_Resourcemanager \
-    libGrallocWrapper \
-    libSEF.quram \
     libacryl.plugin.hdr.exynos9820 \
     libacryl \
     libcsc \
@@ -99,18 +96,15 @@ PRODUCT_PACKAGES += \
     libgiantmscl \
     libhdr10p_m2l.exynos9820 \
     libhwjpeg \
-    libhwjsqz \
     libion_exynos \
     libqfp_sensortest \
     libsecaudioinfo \
     libsecnativefeature \
     libsecril-client.exynos9820 \
     libsemnativecarrierfeature \
-    libsensorlistener \
     libstagefrighthw \
     libsynaFpSensorTestNwd \
     libteecl \
-    libuniapi \
     libuniplugin \
     libuuid \
     libOMX.Exynos.AVC.Decoder \
@@ -132,18 +126,24 @@ PRODUCT_PACKAGES += \
     lib_soundaliveresampler \
     libalsautils_sec \
     libaudio-ril \
+    libaudio_soundtrigger \
     liboemcrypto \
     libprofileparamstorage \
     libsecaudiocoreutils \
     libwvhidl \
     libaudioroute.exynos9820 \
     libtinyalsa.exynos9820 \
+    libGrallocWrapper \
+    libSEF.quram \
     libengmode_client \
     libflicker_sec \
+    libhwjsqz \
     libiwt \
     libkeymaster_helper \
     libril_sem \
+    libsensorlistener \
     libskeymaster4device \
+    libuniapi \
     libvkmanager_vendor \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0 \
