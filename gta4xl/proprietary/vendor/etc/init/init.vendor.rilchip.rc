@@ -22,3 +22,10 @@ service ril-daemon1 /vendor/bin/hw/rild -c 2
     onrestart restart cpboot-daemon
     onrestart restart DIAG-daemon
 
+# LSI CDMA project daemon support dun function
+service VC-daemon /vendor/bin/vcd
+    class main
+    user root
+    group system
+    disabled
+    seclabel u:r:vcd:s0

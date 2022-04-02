@@ -39,6 +39,9 @@ on post-fs-data
     chown wifi wifi /sys/wifi/mac_addr
     chmod 0640 /sys/wifi/mac_addr
 
+    chown wifi wifi /sys/wifi/dump_in_progress
+    chmod 0640 /sys/wifi/dump_in_progress
+
 on boot
     setprop wifi.interface wlan0
 

@@ -182,7 +182,7 @@
             <!-- measured 90%:295-301 med:296 N=2 -->
             <Limit name="measured-frame-rate-352x288" range="300-600" /> <!-- v90%=1.0 -->
             <!-- measured 90%:196-207 med:196 N=2 -->
-            <Limit name="measured-frame-rate-640x360" range="280-560" /> <!-- v90%=1.0 -->
+            <Limit name="measured-frame-rate-640x360" range="100-300" /> <!-- v90%=1.0 -->
             <!-- measured 90%:177-180 med:178 N=2 -->
             <Limit name="measured-frame-rate-720x480" range="240-480" /> <!-- v90%=1.0 -->
             <!-- measured 90%:81-82 med:82 N=2 -->

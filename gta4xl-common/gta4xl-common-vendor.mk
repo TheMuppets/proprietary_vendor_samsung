@@ -8,7 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
     vendor/samsung/gta4xl-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_DRAM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_DRAM_CODE_FLASH.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_DTCM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_DTCM_CODE_FLASH.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/CC_ITCM_CODE_FLASH.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CC_ITCM_CODE_FLASH.bin \
-    vendor/samsung/gta4xl-common/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/calliope_iva.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_iva.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/dbmd8_va_asrp_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_asrp_fw.bin \
@@ -60,9 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
-    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000046495645:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000046495645 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
-    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00535453540c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00535453540c \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-474154454b45 \
@@ -82,7 +79,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos9611 \
     hwcomposer.exynos9611 \
     memtrack.exynos9611 \
-    sensors.sensorhub \
     libExynosHWCService \
     libExynosOMX_Core \
     libExynosOMX_Resourcemanager \
@@ -91,11 +87,10 @@ PRODUCT_PACKAGES += \
     libacryl \
     libacryl_plugin_slsi_hdr10 \
     libcsc \
-    libepicoperator \
+    libdrmresource \
     libexynoscamera_plugin \
     libexynosdisplay \
     libexynosgraphicbuffer \
-    libexynosgscaler \
     libexynosscaler \
     libexynosutils \
     libexynosv4l2 \
@@ -123,18 +118,17 @@ PRODUCT_PACKAGES += \
     libOMX.Exynos.VP9.Encoder \
     libOMX.Exynos.WMV.Decoder \
     sensors.grip \
+    sensors.sensorhub \
     libaudioeffectoffload \
     sound_trigger.primary.universal9611 \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07001 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
-    libaboxpcmdump \
     libalsautils_sec \
     libaudio-ril \
     libaudio_soundtrigger \
     libaudioproxy \
-    libdatamod \
     libprofileparamstorage \
     librecordalive \
     libsamsungDiamondVoice \
@@ -148,8 +142,8 @@ PRODUCT_PACKAGES += \
     libskeymaster4device \
     vendor.samsung.hardware.gnss@2.0 \
     libaptX_encoder \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    android.hardware.drm@1.3-service.widevine \
+    manifest_android.hardware.drm@1.4-service.widevine \
+    android.hardware.drm@1.4-service.widevine \
     vendor.samsung.hardware.gnss@2.0-service \
     tzdaemon \
     tzts_daemon

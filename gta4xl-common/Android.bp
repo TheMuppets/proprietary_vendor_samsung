@@ -132,27 +132,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "sensors.sensorhub",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/sensors.sensorhub.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/sensors.sensorhub.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libExynosHWCService",
 	owner: "samsung",
 	strip: {
@@ -313,17 +292,17 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libepicoperator",
+	name: "libdrmresource",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libepicoperator.so"],
+			srcs: ["proprietary/vendor/lib/libdrmresource.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libepicoperator.so"],
+			srcs: ["proprietary/vendor/lib64/libdrmresource.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -384,26 +363,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libexynosgraphicbuffer.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libexynosgscaler",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libexynosgscaler.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libexynosgscaler.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -964,6 +923,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "sensors.sensorhub",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.sensorhub.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.sensorhub.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaudioeffectoffload",
 	owner: "samsung",
 	strip: {
@@ -1071,23 +1050,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaboxpcmdump",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaboxpcmdump.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libalsautils_sec",
 	owner: "samsung",
 	strip: {
@@ -1147,23 +1109,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libaudioproxy.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdatamod",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdatamod.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -1399,18 +1344,18 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	name: "manifest_android.hardware.drm@1.4-service.widevine",
 	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.drm@1.3-service.widevine",
+	name: "android.hardware.drm@1.4-service.widevine",
 	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine"],
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine"],
 	check_elf_files: false,
 	strip: {
 		none: true,

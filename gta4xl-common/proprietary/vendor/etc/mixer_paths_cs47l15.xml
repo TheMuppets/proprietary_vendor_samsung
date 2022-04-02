@@ -115,7 +115,7 @@
 	<!-- A-Box Default Configuration for others -->
 	<ctl name="ABOX Audio Mode" value="NORMAL" />
 
-	<!-- CS47L15 Codec -->
+		<!-- CS47L15 Codec -->
 	<ctl name="HPOUT1L Input 1" value="None" />
 	<ctl name="HPOUT1L Input 2" value="None" />
 	<ctl name="HPOUT1R Input 1" value="None" />
@@ -554,13 +554,35 @@
 	</path>
 
 	<path name="media-speaker-bt-sco-headset">
-		<path name="media-speaker" />
-		<path name="media-bt-sco-headphone" />
+		<path name="dev-dual-speaker" />
+		<path name="erap-amp-reference" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-uaif4-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif2-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif2" />
+		<path name="erap-bt-control" />
+		<path name="route-sifs0-to-rsrc0" />
+		<path name="route-rsrc0-to-wdma0" />
+		<ctl name="BT SCO SPK Enable" value="1" />
 	</path>
 
 	<path name="media-dual-speaker-bt-sco-headset">
-		<path name="media-dual-speaker" />
-		<path name="media-bt-sco-headphone" />
+		<path name="dev-dual-speaker" />
+		<path name="erap-amp-reference" />
+		<path name="route-sifs0-to-uaif0" />
+		<path name="route-uaif4-to-nsrc2" />
+		<path name="route-nsrc2-to-wdma3" />
+		<path name="route-uaif2-to-nsrc3" />
+		<path name="route-nsrc3-to-wdma4" />
+		<path name="route-rdma7-to-sifs1" />
+		<path name="route-sifs1-to-uaif2" />
+		<path name="erap-bt-control" />
+		<path name="route-sifs0-to-rsrc0" />
+		<path name="route-rsrc0-to-wdma0" />
+		<ctl name="BT SCO SPK Enable" value="1" />
 	</path>
 
 	<path name="media-usb-headphone">
