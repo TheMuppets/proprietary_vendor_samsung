@@ -120,14 +120,12 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.sensorhub \
     libaudioeffectoffload \
-    sound_trigger.primary.universal9611 \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07001 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     libalsautils_sec \
     libaudio-ril \
-    libaudio_soundtrigger \
     libaudioproxy \
     libprofileparamstorage \
     librecordalive \
