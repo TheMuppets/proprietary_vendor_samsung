@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd30_OLD.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utfbd30_OLD.bin \
     vendor/samsung/universal7880-common/proprietary/etc/firmware/utfbd32.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/utfbd32.bin \
     vendor/samsung/universal7880-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/universal7880-common/proprietary/lib/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.exynos5.so \
+    vendor/samsung/universal7880-common/proprietary/lib/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Resourcemanager.so \
@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7880-common/proprietary/lib/vendor.samsung.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.camera.provider@2.4.so \
     vendor/samsung/universal7880-common/proprietary/lib/vendor.samsung.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.camera.provider@2.5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/universal7880-common/proprietary/lib64/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.exynos5.so \
+    vendor/samsung/universal7880-common/proprietary/lib64/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.vendor.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Core.so \
     vendor/samsung/universal7880-common/proprietary/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libExynosOMX_Resourcemanager.so \
