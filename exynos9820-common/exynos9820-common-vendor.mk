@@ -126,7 +126,6 @@ PRODUCT_PACKAGES += \
     lib_soundaliveresampler \
     libalsautils_sec \
     libaudio-ril \
-    libaudio_soundtrigger \
     liboemcrypto \
     libprofileparamstorage \
     libsecaudiocoreutils \

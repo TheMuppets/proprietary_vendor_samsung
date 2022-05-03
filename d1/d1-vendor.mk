@@ -102,7 +102,6 @@ PRODUCT_PACKAGES += \
     sensors.sensorhub \
     libaudioeffectoffload \
     audio.primary.exynos9825 \
-    sound_trigger.primary.exynos9825 \
     lib_SamsungRec_08020 \
     lib_lvacfs \
     libaudioproxy \

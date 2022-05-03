@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
     sensors.sensorhub \
     libaudioeffectoffload \
     audio.primary.exynos9820 \
-    sound_trigger.primary.exynos9820 \
     lib_SamsungRec_07010 \
     libaudioproxy \
     librecordalive \
