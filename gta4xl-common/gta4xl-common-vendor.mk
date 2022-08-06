@@ -59,10 +59,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xl-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
+    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
+    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-42494f535542:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-42494f535542 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-474154454b45:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-474154454b45 \
+    vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-5345435f4652:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5345435f4652 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
     vendor/samsung/gta4xl-common/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
