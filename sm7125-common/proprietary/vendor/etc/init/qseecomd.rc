@@ -1,0 +1,12 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on init
+    wait /dev/qseecom
+    start vendor.qseecomd
+
+service vendor.qseecomd /vendor/bin/qseecomd
+    class core
+    user root
+    group root

@@ -1,0 +1,16 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+# msm specific files that need to be created on /data
+on post-fs-data
+	#create ipacm-diag log dir
+	mkdir /data/vendor/ipa 0770 radio radio
+	chmod 0770 /data/vendor/ipa
+
+service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
+    class main
+    user radio
+    socket ipacm_log_file dgram 660 radio radio
+    group radio diag oem_2901

@@ -1,0 +1,12 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "IDP"],
+    "soc_id": ["407", "424", "443"]
+  },
+  "sns_hw_revision":{
+    "owner": "sns_hw_revision",
+    "hw_revision":{ "type": "int", "ver": "0",
+      "data": "1"
+    }
+  }
+}

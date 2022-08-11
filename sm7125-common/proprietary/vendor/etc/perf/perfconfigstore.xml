@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2019 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is PerfConfigsStore file which returns the value when a
+particular property name is invoked -->
+
+<!-- This file supports only Prop tag, which has the following fields
+* Name, to identify the name of the property. The names of the
+properties have been classified into Vendor and System property.
+* Value, the new value to be returned as string when respective
+property Name is called. -->
+
+<PerfConfigsStore>
+    <PerfConfigs>
+
+                <!--Vendor Properties -->
+                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.iop.enable_uxe" Value="1" />
+                <Prop Name="vendor.enable.prefetch" Value="false" />
+                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
+                <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
+                <Prop Name="vendor.debug.enable.memperfd" Value="true" />
+
+                <!--System Properties -->
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="300000" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="15" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.use_trim_settings" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.empty_app_percent" Value="50" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_empty_percent" Value="100" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_cache_percent" Value="100" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_enable_memory" Value="4294967296" />
+                <Prop Name="ro.vendor.qti.am.reschedule_service" Value="true" />
+                <Prop Name="ro.vendor.iocgrp.config" Value="1" />
+                <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
+                <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
+                <Prop Name="ro.lmk.enable_userspace_lmk" Value="false" />
+
+    </PerfConfigs>
+</PerfConfigsStore>

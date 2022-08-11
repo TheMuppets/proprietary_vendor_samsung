@@ -1,0 +1,4 @@
+service display-color-hal-1-0 /vendor/bin/hw/vendor.display.color@1.0-service
+    class hal
+    user system
+    group system

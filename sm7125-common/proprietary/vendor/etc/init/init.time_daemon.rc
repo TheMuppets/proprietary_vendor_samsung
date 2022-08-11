@@ -1,0 +1,25 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on post-fs-data && property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    start time_daemon
+
+service time_daemon /vendor/bin/time_daemon
+    class main
+    user system
+    group system readproc
+    capabilities SYS_TIME
+
+    
+service time_client /vendor/bin/time_client
+    class main
+    user system
+    group system
+    oneshot
+    disabled
+
+on property:sys.shutdown.requested=*
+    start time_client

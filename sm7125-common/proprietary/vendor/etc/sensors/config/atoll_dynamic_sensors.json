@@ -1,0 +1,16 @@
+{
+  "config":{
+  },
+
+  "sns_dynamic_sensors":
+  {
+    "owner":"sns_dynamic_sensors",
+
+    "sns_bring_to_ear_register":
+    {
+      "type" : "str",
+      "ver" : "0",
+      "data" : "sns_bring_to_ear.so"
+    }
+  }
+}

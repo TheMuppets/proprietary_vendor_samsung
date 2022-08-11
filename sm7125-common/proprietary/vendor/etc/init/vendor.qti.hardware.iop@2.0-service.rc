@@ -1,0 +1,17 @@
+#   @file    io-p.c
+#   @brief   Defination for iop service
+#
+#   DESCRIPTION
+#    ---------------------------------------------------------------------------
+#        Copyright (c) 2011-2017 Qualcomm Technologies, Inc.
+#        All Rights Reserved.
+#        Confidential and Proprietary - Qualcomm Technologies, Inc.
+#    ---------------------------------------------------------------------------
+
+service iop-hal-2-0 /vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+    interface vendor.qti.hardware.iop@2.0::IIop default
+    oneshot
+    disabled
+    class hal
+    user root
+    group root readproc
