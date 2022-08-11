@@ -1,0 +1,14 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+# Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+#
+
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#<src>                                         <mnt_point>            <type>  <mnt_flags and options>              <fs_mgr_flags>
+/dev/block/bootdevice/by-name/persist          /mnt/vendor/persist    ext4    noatime,nosuid,nodev,barrier=1       wait

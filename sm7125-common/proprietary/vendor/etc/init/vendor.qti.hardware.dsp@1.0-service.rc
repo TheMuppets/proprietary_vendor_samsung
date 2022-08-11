@@ -1,0 +1,13 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service vendor.dspservice /vendor/bin/dspservice
+	class hal
+	user system
+	group system wakelock oem_2908
+	capabilities BLOCK_SUSPEND
+	interface vendor.qti.hardware.dsp@1.0::IDspService dspservice
+
+	# uncomment below to disable service at boot
+	# disabled

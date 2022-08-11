@@ -1,0 +1,15 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "IDP", "QRD"],
+    "soc_id": ["339", "355", "356", "361", "365", "366", "394", "400", "407", "417", "440", "415", "439", "416", "437", "444", "445", "420", "424", "443", "434", "435", "459"]
+  },
+  "sns_mag_cal_config": {
+    "owner": "sns_mag_cal",
+    "anomaly_threshold": {"type": "flt","ver": "0",
+      "data": "400.0"
+    },
+    "sample_rate": { "type": "flt", "ver": "0",
+        "data": "25.0"
+    }
+  }
+}

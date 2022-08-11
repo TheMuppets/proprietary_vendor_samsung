@@ -1,0 +1,17 @@
+#! /bin/sh
+#
+#Copyright (c) 2019 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+#
+
+service thermal-engine /vendor/bin/thermal-engine
+	class main
+	user root
+	group root
+	socket thermal-send-client stream 0660 system oem_2907
+	socket thermal-recv-client stream 0660 system oem_2907
+	socket thermal-recv-passive-client stream 0660 system oem_2907
+	socket thermal-send-rule stream 0660 system oem_2907
