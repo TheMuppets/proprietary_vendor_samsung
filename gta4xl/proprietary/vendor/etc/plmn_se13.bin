@@ -8,8 +8,6 @@ GR COSMOTE"C-OTE
 20209WIND GR"WIND
 
 20210WIND GR"WIND
-
-20217NOVA GR"NOVA GR
 
 20404vodafone NL"voda NL
 
@@ -172,8 +170,8 @@ Telenor DK"TelenoDK
 23820Telia DK"Telia
 "
 23866Telia-Telenor DK"TT DK
-
-24001TELIA S"TELIA
+
+24001Telia SE"Telia
 
 240023 SE"3 SE
 
@@ -190,11 +188,9 @@ Telenor SE"TelenorS
 
 24201	N Telenor"TELENOR
 
-24202N NetCom"NetCom
+24202N Telia"N Telia
 
 24214N ice"ice
-
-24299Tampnet"Tampnet
 
 24403FI DNA"DNA
 
@@ -230,7 +226,7 @@ Telenor SE"TelenorS
 
 25001MTS RUS"MTS RUS
 
-25002MegaFon RUS"MegaFon
+25002MegaFon RUS"Megafon
 
 25020Tele2 RU"Tele2
 
@@ -316,8 +312,6 @@ vodafone P"voda P
 27401	IS SIMINN"SIMINN
 
 27402Vodafone"Vodafone
-
-27404Viking"Viking
 
 27408
 IS OnWaves"OnWaves
@@ -362,9 +356,8 @@ Beeline AM"Beeline
 
 28403
 Vivacom BG"Vivacom
-
-28405
-Telenor BG"Telenor
+
+28405	Yettel BG"Yettel
 
 28601TR TURKCELL"TCELL
 #
@@ -397,8 +390,8 @@ SwisscomFL"Swiss FL
 29502Salt.li"Salt.li
 
 29505FL1"FL1
-
-29701Telenor"Telenor
+
+29701One"One
 
 29702
 Telekom.me"T.me
@@ -584,6 +577,8 @@ NetGenuity"NetGenui
 312870GigSky"GigSky
 
 313070MNSHub"MNSHub
+
+313120	ASM ASTCA"ASTCA
 
 313380OptimERA"OptimERA
 #
@@ -632,8 +627,6 @@ NetGenuity"NetGenui
 348570CCT Boatphone"CCTBVI
 
 350000CELLONE"CELLONE
-
-352030DIGICEL"DIGICEL
 
 352110FLOW"FLOW
 
@@ -644,8 +637,6 @@ NetGenuity"NetGenui
 358050DIGICEL"DIGICEL
 
 358110FLOW"FLOW
-
-360070DIGICEL"DIGICEL
 
 360110FLOW"FLOW
 
@@ -1023,6 +1014,8 @@ stc Kuwait"stc
 Mobily-KSA"Mobily
 
 42004Zain KSA"Zain KSA
+
+42009salam mobile"salam
 
 42101SabaFon"SABAFON
 
@@ -1067,6 +1060,8 @@ Cellcom IL"Cellcom
 42702vodafone"VF-QA
 
 42801	Skytel MN"Skytel
+
+42833ONDO"ONDO
 &
 42888MONGOLIA UNITEL LLC"UNTLMN
 
@@ -1091,8 +1086,6 @@ Beeline UZ"Beeline
 43601TCELL"TCELL
 
 43602TCELL"TCELL
-
-43603MegaFon TJK"MegaFon
 
 43604	Babilon-M"Babilon
 
@@ -1115,6 +1108,8 @@ Beeline KG"Beeline
 44050KDDI"KDDI
 
 44051KDDI"KDDI
+
+44054KDDI"KDDI
 $
 45001Samsung Test Bed"Samsung
 
@@ -1213,6 +1208,8 @@ CHN-UNICOM"UNICOM
 CHN-UNICOM"UNICOM
 
 46011CHN-CT"CT
+
+46015CHINA BROADNET"CBN
 
 46601Far EasTone"FET
 
@@ -1311,12 +1308,6 @@ Banglalink"BL
 52004TRUE-H"TRUE-H
 
 52005dtac TriNet"dtac
-
-52015
-TOT Mobile"TOT
-
-52047
-TOT Mobile"TOT
 
 52099TRUE-H"TRUE-H
 
@@ -1390,6 +1381,8 @@ CK KOKANET"KOKANET
 55001FSM Telecom"FSM Tele
 
 55201PalauCel"PalauCel
+
+55299PLW PMCI"PMCI
 
 55401Teletok"TTOK
 
@@ -1469,8 +1462,9 @@ MALITEL ML"MALITEL
 61403ETISALAT NER"ETISALAT
 
 61404Orange"Orange
-
-61501TG-TOGO CELL"TGCELL
+
+61501
+TG-TOGOCOM"TGCOM
 "
 61503ETISALAT TOGO"ETISALAT
 
@@ -1670,6 +1664,8 @@ TELECEL ZW"TELECEL
 
 65001TNM"TNM
 
+65002Access"Access
+
 65010Airtel"Airtel
 #
 65101Vodacom Lesotho"VODACOM
@@ -1747,8 +1743,8 @@ TelkomSA-R"Telkom-R
 71202I.C.E."I.C.E.
 
 71203CLARO CR"CLARO CR
-
-71204Movistar"Movistar
+
+71204LIBERTY"LIBERTY
 "
 71401+Movil - C&W PAN"PANCW
 
@@ -1887,4 +1883,6 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML(Published TS.25 Database 31 January 2022
+90150EchoStar Mobile"EML
+
+90171Tampnet"Tampnet'Published TS.25 Database 01 August 2022
