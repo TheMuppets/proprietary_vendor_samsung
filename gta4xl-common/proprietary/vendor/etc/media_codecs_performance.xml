@@ -193,6 +193,10 @@
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
             <!-- measured 90%:234-241 med:234 N=2 -->
             <Limit name="measured-frame-rate-176x144" range="350-700" /> <!-- v90%=1.0 -->
+			<!-- measured 90%:54-56 med:55 N=2 -->
+			<Limit name="measured-frame-rate-480x360" range="250-500" /> <!-- v90%=1.0 -->
+            <!-- measured 90%:54-56 med:55 N=2 -->
+            <Limit name="measured-frame-rate-1280x720" range="50-100" /> <!-- v90%=1.0 -->
         </MediaCodec>
         <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <!-- measured 90%:445-623 med:445 SLOW N=2 -->

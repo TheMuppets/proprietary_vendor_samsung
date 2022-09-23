@@ -40,7 +40,9 @@ on post-fs-data
     chmod 0640 /sys/wifi/mac_addr
 
     chown wifi wifi /sys/wifi/dump_in_progress
-    chmod 0640 /sys/wifi/dump_in_progress
+    chmod 0660 /sys/wifi/dump_in_progress
+
+    start macloader
 
 on boot
     setprop wifi.interface wlan0
@@ -59,6 +61,7 @@ service macloader /vendor/bin/hw/macloader
     user wifi
     group wifi inet net_raw net_admin
     capabilities NET_ADMIN NET_RAW SYS_MODULE
+    disabled
     oneshot
 
 service wlandutservice /system/bin/wlandutservice
