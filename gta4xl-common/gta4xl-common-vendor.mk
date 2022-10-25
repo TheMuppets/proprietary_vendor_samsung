@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     libsamsungDiamondVoice \
     libsecaudiocoreutils \
     libsecril-client.exynos9611 \
+    libspatializerparamstorage \
     libwvhidl \
     libaudioroute.exynos9611 \
     libtinyalsa.exynos9611 \
