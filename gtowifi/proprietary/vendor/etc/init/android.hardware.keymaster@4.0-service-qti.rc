@@ -1,0 +1,7 @@
+on init
+    start keymaster-4-0
+
+service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+    class early_hal
+    user system
+    group system drmrpc

@@ -1,0 +1,4 @@
+service qteeconnector-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+    class hal
+    user system
+    group system

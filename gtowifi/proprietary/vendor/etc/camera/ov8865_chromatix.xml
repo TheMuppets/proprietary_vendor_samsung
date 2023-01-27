@@ -1,0 +1,138 @@
+<!--
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+	CommonChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+	ResolutionChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+	Contains the list of chromatix names for all modules.
+	special_mode_mask:
+		It is the bit mask for special modes, which is used for
+			chromatix selection.
+		Special modes can be any mode that needs a special chromatix.
+		Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+		This is applicable for CommonChromatixInfo and
+			ResolutionChromatixInfo.
+		special_mode_mask="0" means none of the special modes are
+			selected.
+	sensor_resolution_index:
+		It is the sensor resolution index for which chromatix libraries
+			will be choosen.
+		It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+	Common tuning library name for ISP
+ISPPreview :
+	Preview tuning library name for ISP
+ISPSnapshot :
+	Snapshot tuning library name for ISP
+CPPCommon :
+	Common tuning library name for CPP
+CPPPreview :
+	Preview tuning library name for CPP
+CPPSnapshot :
+	Snapshot tuning library name for CPP
+CPPLiveshot :
+	Liveshot tuning library name for CPP
+PostProc :
+	Tuning library name for postproc module
+A3Preview :
+	Preview tuning library for 3A
+A3Video :
+	Video tuning library for 3A
+
+Order of Resolution Pick:
+	Assume the current sensor mode is "r" and special mode mask is "s".
+	Chromatix for a module and type is choosen in this order till we find a
+		valid chroamtix file name or else NULL is returned.
+	1) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "s".
+	2) From CommonChromatixInfo node for which special_mode_mask is "s".
+	3) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "0".
+	4) From CommonChromatixInfo node for which special_mode_mask is "0".
+	5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask values:
+	SENSOR_SPECIAL_MODE_NONE = 0,
+	SENSOR_SPECIAL_MODE_FLASH = 1,
+	SENSOR_SPECIAL_MODE_ZOOM_UPSCALE = 2,
+	SENSOR_SPECIAL_MODE_ZOOM_DOWNSCALE = 4,
+	SENSOR_SPECIAL_MODE_OIS_CAPTURE = 8,
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>ov8865_common</ISPCommon>
+      <PostProc>ov8865_postproc</PostProc>
+      <CPPPreview>ov8865_cpp_preview</CPPPreview>
+      <CPPSnapshot>ov8865_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>ov8865_cpp_liveshot</CPPLiveshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ZOOM_UPSCALE">
+      <CPPSnapshot>ov8865_cpp_us_chromatix</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ZOOM_DOWNSCALE">
+      <CPPSnapshot>ov8865_cpp_ds_chromatix</CPPSnapshot>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>ov8865_snapshot</ISPPreview>
+      <ISPSnapshot>ov8865_snapshot</ISPSnapshot>
+      <ISPVideo>ov8865_video_full</ISPVideo>
+      <CPPPreview>ov8865_cpp_snapshot</CPPPreview>
+      <CPPVideo>ov8865_cpp_video_full</CPPVideo>
+      <A3Preview>ov8865_zsl_preview</A3Preview>
+      <A3Video>ov8865_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>ov8865_preview</ISPPreview>
+      <ISPSnapshot>ov8865_snapshot</ISPSnapshot>
+      <ISPVideo>ov8865_default_video</ISPVideo>
+      <CPPVideo>ov8865_cpp_video</CPPVideo>
+      <A3Preview>ov8865_default_preview_dw9714</A3Preview>
+      <A3Video>ov8865_default_video_dw9714</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2">
+      <ISPPreview>ov8865_hfr_60</ISPPreview>
+      <ISPSnapshot>ov8865_hfr_60</ISPSnapshot>
+      <ISPVideo>ov8865_hfr_60</ISPVideo>
+      <CPPVideo>ov8865_cpp_hfr_60</CPPVideo>
+      <A3Preview>ov8865_hfr_60_dw9714</A3Preview>
+      <A3Video>ov8865_hfr_60_dw9714</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3">
+      <ISPPreview>ov8865_hfr_90</ISPPreview>
+      <ISPSnapshot>ov8865_hfr_90</ISPSnapshot>
+      <ISPVideo>ov8865_hfr_90</ISPVideo>
+      <CPPVideo>ov8865_cpp_hfr_90</CPPVideo>
+      <A3Preview>ov8865_hfr_90_dw9714</A3Preview>
+      <A3Video>ov8865_hfr_90_dw9714</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="4">
+      <ISPPreview>ov8865_hfr_120</ISPPreview>
+      <ISPSnapshot>ov8865_hfr_120</ISPSnapshot>
+      <ISPVideo>ov8865_hfr_120</ISPVideo>
+      <CPPVideo>ov8865_cpp_hfr_120</CPPVideo>
+      <A3Preview>ov8865_hfr_120_dw9714</A3Preview>
+      <A3Video>ov8865_hfr_120_dw9714</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>

@@ -1,0 +1,6 @@
+service health-hal-2-1-samsung /vendor/bin/hw/android.hardware.health@2.1-service-samsung
+    class hal charger
+    user system
+    group system
+    capabilities WAKE_ALARM
+    file /dev/kmsg w

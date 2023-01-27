@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <format_version major="3" minor="4" maintenance="0" />
+  <tool_version major="3" minor="3" maintenance="0" />
+  <preset id="ieq_balanced" type="ieq">
+    <data>
+      <ieq-bands>
+        <band_ieq frequency="47" target="157" />
+        <band_ieq frequency="141" target="167" />
+        <band_ieq frequency="234" target="218" />
+        <band_ieq frequency="328" target="218" />
+        <band_ieq frequency="469" target="203" />
+        <band_ieq frequency="656" target="188" />
+        <band_ieq frequency="844" target="192" />
+        <band_ieq frequency="1031" target="192" />
+        <band_ieq frequency="1313" target="205" />
+        <band_ieq frequency="1688" target="213" />
+        <band_ieq frequency="2250" target="218" />
+        <band_ieq frequency="3000" target="209" />
+        <band_ieq frequency="3750" target="193" />
+        <band_ieq frequency="4688" target="159" />
+        <band_ieq frequency="5813" target="134" />
+        <band_ieq frequency="7125" target="97" />
+        <band_ieq frequency="9000" target="71" />
+        <band_ieq frequency="11250" target="22" />
+        <band_ieq frequency="13875" target="-90" />
+        <band_ieq frequency="19688" target="-283" />
+      </ieq-bands>
+    </data>
+  </preset>
+  <profile id="0" name="Dynamic">
+    <data>
+      <ieq-enable value="true" />
+      <ieq-amount value="3" />
+      <mi-dialog-enhancer-steering-enable value="true" />
+      <mi-dv-leveler-steering-enable value="true" />
+      <mi-ieq-steering-enable value="true" />
+      <mi-surround-compressor-steering-enable value="true" />
+      <mi-adaptive-virtualizer-steering-enable value="true" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="80" />
+        <volmax-boost value="3" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="1" name="Movie">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="6" />
+      <mi-dialog-enhancer-steering-enable value="true" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="80" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="-16" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="-16" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="-16" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="-16" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="2" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="2" name="Music">
+    <data>
+      <ieq-enable value="true" />
+      <ieq-amount value="3" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="true" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="3" name="Voice">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="6" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="true" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="16" />
+        <dialog-enhancer-ducking value="6" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="16" />
+        <dialog-enhancer-ducking value="6" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="16" />
+        <dialog-enhancer-ducking value="6" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="16" />
+        <dialog-enhancer-ducking value="6" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="true" />
+        <dialog-enhancer-amount value="16" />
+        <dialog-enhancer-ducking value="6" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="5" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="4" name="Game">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="6" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="6" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="true" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="40" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-192" />
+        <volume-leveler-out-target value="-208" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="6" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="true" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="1" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="6" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="true" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="1" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="6" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="true" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="1" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="6" />
+        <dialog-enhancer-ducking value="2" />
+        <mi-virtualizer-binaural-steering-enable value="true" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="true" />
+        <volume-leveler-amount value="1" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="5" name="Off">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="0" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-272" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-272" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-272" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-272" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <calibration-boost value="0" />
+        <system-gain value ="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value ="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-272" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="6" name="Game1">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="6" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="40" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-192" />
+        <volume-leveler-out-target value="-208" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="true" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <profile id="7" name="Game2">
+    <data>
+      <ieq-enable value="false" />
+      <ieq-amount value="6" />
+      <mi-dialog-enhancer-steering-enable value="false" />
+      <mi-dv-leveler-steering-enable value="false" />
+      <mi-ieq-steering-enable value="false" />
+      <mi-surround-compressor-steering-enable value="false" />
+      <mi-adaptive-virtualizer-steering-enable value="false" />
+      <volume-modeler-enable value="false" />
+      <endpoint_type id="speaker">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="40" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-192" />
+        <volume-leveler-out-target value="-208" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="headphone">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="bluetooth">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="usb">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="remote_submix">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-320" />
+        <volume-leveler-out-target value="-320" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="aux_digital">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="false" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-496" />
+        <volume-leveler-out-target value="-496" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+      <endpoint_type id="default">
+        <system-gain value="0" />
+        <calibration-boost value="0" />
+        <dialog-enhancer-enable value="false" />
+        <dialog-enhancer-amount value="0" />
+        <dialog-enhancer-ducking value="0" />
+        <mi-virtualizer-binaural-steering-enable value="false" />
+        <peak-value value="256" />
+        <surround-decoder-enable value="true" />
+        <surround-boost value="0" />
+        <volmax-boost value="0" />
+        <volume-leveler-enable value="false" />
+        <volume-leveler-amount value="0" />
+        <volume-leveler-in-target value="-256" />
+        <volume-leveler-out-target value="-224" />
+        <graphic-equalizer-enable value="false" />
+        <virtualizer-enable value="false" />
+        <bass-enhancer-enable value="false" />
+        <virtual-bass-process-enable value="false" />
+      </endpoint_type>
+    </data>
+    <include preset="ieq_balanced" />
+  </profile>
+  <tuning name="default" endpoint_type="other" mono_device="false" tuned_rate="48000" orientation="2" output_channels="2">
+    <data>
+      <height-filter-mode value="0" />
+      <output-mode>
+        <mix_matrix>
+          <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384" />
+          <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384" />
+        </mix_matrix>
+      </output-mode>
+      <virtualizer-front-speaker-angle value="10" />
+      <virtualizer-height-speaker-angle value="10" />
+      <virtualizer-surround-speaker-angle value="10" />
+      <audio-optimizer-enable value="false" />
+      <volume-leveler-compressor-enable value="false" />
+      <bass-extraction-enable value="false" />
+      <complex-equalizer-enable value="false" />
+      <regulator-enable value="false" />
+      <regulator-speaker-dist-enable value="false" />
+      <regulator-sibilance-suppress-enable value="false" />
+    </data>
+  </tuning>
+  <authorized_technologies sku_name="DAX3 Android" device="dax3_android" bundle="DAP MOBILE v1.1"/>
+</device_data>

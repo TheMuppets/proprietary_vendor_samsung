@@ -1,0 +1,47 @@
+<!--
+/******************************************************************************
+  @file    AdaptLaunchFeature.xml
+  @brief   Implementation of Android Framework Learning Module
+
+  DESCRIPTION
+      Each feature has an xml file to define the components
+
+  ===========================================================================
+  Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+ -->
+<Feature>
+    <Name>AdaptLaunch</Name>
+    <Libname>libadaptlaunch.so</Libname>
+    <Meters>
+        <SamplesRequired>4</SamplesRequired>
+        <Meter>
+            <Name>VmRss</Name>
+            <Triggers>
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_FIRST_LAUNCH_BOOST</AsyncId>
+                    <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                    <Primary>false</Primary>
+                    <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                </Trigger>
+            </Triggers>
+            <Samples>120</Samples>
+            <Fields>
+                <Field>VmRss:</Field>
+            </Fields>
+        </Meter>
+    </Meters>
+    <IgnoredApps>
+        <App>com.king.candycrushsaga</App>
+        <App>com.tencent.tmgp.sgame</App>
+    </IgnoredApps>
+</Feature>

@@ -1,0 +1,156 @@
+<!--
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+	CommonChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+	ResolutionChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+	Contains the list of chromatix names for all modules.
+	special_mode_mask:
+		It is the bit mask for special modes, which is used for
+			chromatix selection.
+		Special modes can be any mode that needs a special chromatix.
+		Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+		This is applicable for CommonChromatixInfo and
+			ResolutionChromatixInfo.
+		special_mode_mask="0" means none of the special modes are
+			selected.
+	sensor_resolution_index:
+		It is the sensor resolution index for which chromatix libraries
+			will be choosen.
+		It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+	Common tuning library name for ISP
+ISPPreview :
+	Preview tuning library name for ISP
+ISPSnapshot :
+	Snapshot tuning library name for ISP
+CPPCommon :
+	Common tuning library name for CPP
+CPPPreview :
+	Preview tuning library name for CPP
+CPPSnapshot :
+	Snapshot tuning library name for CPP
+CPPLiveshot :
+	Liveshot tuning library name for CPP
+PostProc :
+	Tuning library name for postproc module
+A3Preview :
+	Preview tuning library for 3A
+A3Video :
+	Video tuning library for 3A
+
+Order of Resolution Pick:
+	Assume the current sensor mode is "r" and special mode mask is "s".
+	Chromatix for a module and type is choosen in this order till we find a
+		valid chroamtix file name or else NULL is returned.
+	1) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "s".
+	2) From CommonChromatixInfo node for which special_mode_mask is "s".
+	3) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "0".
+	4) From CommonChromatixInfo node for which special_mode_mask is "0".
+	5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask values:
+	SENSOR_SPECIAL_MODE_NONE = 0,
+	SENSOR_SPECIAL_MODE_FLASH = 1,
+	SENSOR_SPECIAL_MODE_ZOOM_UPSCALE = 2,
+	SENSOR_SPECIAL_MODE_ZOOM_DOWNSCALE = 4,
+	SENSOR_SPECIAL_MODE_OIS_CAPTURE = 8,
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>imx214_common</ISPCommon>
+      <PostProc>imx214_postproc</PostProc>
+      <CPPPreview>imx214_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx214_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>imx214_cpp_liveshot</CPPLiveshot>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>imx214_snapshot</ISPPreview>
+      <ISPSnapshot>imx214_snapshot</ISPSnapshot>
+      <ISPVideo>imx214_default_video</ISPVideo>
+      <CPPVideo>imx214_cpp_video</CPPVideo>
+      <A3Preview>imx214_zsl_preview_lc898122</A3Preview>
+      <A3Video>imx214_zsl_video_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>imx214_preview</ISPPreview>
+      <ISPSnapshot>imx214_preview</ISPSnapshot>
+      <ISPVideo>imx214_default_video</ISPVideo>
+      <CPPVideo>imx214_cpp_video</CPPVideo>
+      <A3Preview>imx214_4k_preview_lc898122</A3Preview>
+      <A3Video>imx214_4k_video_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2">
+      <ISPPreview>imx214_preview</ISPPreview>
+      <ISPSnapshot>imx214_preview</ISPSnapshot>
+      <ISPVideo>imx214_default_video</ISPVideo>
+      <CPPVideo>imx214_cpp_video</CPPVideo>
+      <PostProc>imx214_postproc</PostProc>
+      <A3Preview>imx214_default_preview_lc898122</A3Preview>
+      <A3Video>imx214_default_video_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3">
+      <ISPPreview>imx214_hfr_60</ISPPreview>
+      <ISPSnapshot>imx214_hfr_60</ISPSnapshot>
+      <ISPVideo>imx214_hfr_60</ISPVideo>
+      <CPPVideo>imx214_cpp_hfr_60</CPPVideo>
+      <A3Preview>imx214_hfr_60_lc898122</A3Preview>
+      <A3Video>imx214_hfr_60_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="4">
+      <ISPPreview>imx214_hfr_90</ISPPreview>
+      <ISPSnapshot>imx214_hfr_90</ISPSnapshot>
+      <ISPVideo>imx214_hfr_90</ISPVideo>
+      <CPPVideo>imx214_cpp_hfr_90</CPPVideo>
+      <A3Preview>imx214_hfr_90_lc898122</A3Preview>
+      <A3Video>imx214_hfr_90_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5">
+      <ISPPreview>imx214_hfr_120</ISPPreview>
+      <ISPSnapshot>imx214_hfr_120</ISPSnapshot>
+      <ISPVideo>imx214_hfr_120</ISPVideo>
+      <CPPVideo>imx214_cpp_hfr_120</CPPVideo>
+      <A3Preview>imx214_hfr_120_lc898122</A3Preview>
+      <A3Video>imx214_hfr_120_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="6">
+      <ISPPreview>imx214_video_hdr</ISPPreview>
+      <ISPSnapshot>imx214_video_hdr</ISPSnapshot>
+      <ISPVideo>imx214_video_hdr</ISPVideo>
+      <CPPVideo>imx214_cpp_video_hdr</CPPVideo>
+      <A3Preview>imx214_hdr_video_lc898122</A3Preview>
+      <A3Video>imx214_hdr_video_lc898122</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="7">
+      <ISPPreview>imx214_snapshot_hdr</ISPPreview>
+      <ISPSnapshot>imx214_snapshot_hdr</ISPSnapshot>
+      <ISPVideo>imx214_snapshot_hdr</ISPVideo>
+      <CPPVideo>imx214_cpp_video_hdr</CPPVideo>
+      <A3Preview>imx214_hdr_snapshot_lc898122</A3Preview>
+      <A3Video>imx214_hdr_snapshot_lc898122</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>

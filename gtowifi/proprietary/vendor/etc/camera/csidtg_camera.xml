@@ -1,0 +1,110 @@
+<!--
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<!--
+CameraModuleConfig :
+	This node must be added for each module prosent in the device.
+	It contain all information about the module present.
+	The number of nodes of CameraModuleConfig indicate number of modules
+	to be probed on the device.
+	Maximum number of CameraModuleConfig nodes is 10
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*CameraId :
+	Camera Id is the Slot number in which the mode is plugged.
+	Valid values are 0, 1, 2 and 3.
+*SensorName :
+	Name of the sensor present on the module.
+	The sensor library name should be of the form libmmcamera_<SensorName>.so
+ActuatorName :
+	Name of the actuator on this module.
+	The actuator library name should be of the form libactuator_<ActuatorName>.so.
+	If there is no actuator remove the <ActuatorName> node.
+EepromName :
+	Name of the eeprom on this module.
+	Eeprom lib name should be of the form libmmcamera_<EepromName>_eeprom.so
+	If there is no eeprom remove the <EepromName> node.
+FlashName :
+	Name of the flash on this module.
+	The flash library name should be of the form libflash_<FlashName>.so.
+	If there is no flash remove the <FlashName> node.
+ChromatixName :
+	Name of the tuning xml file.
+	Tuning file contains the list of chromatix library names.
+	If there is no tuning xml file remove the <ChromatixName> node.
+Position :
+	Position of the sensor module. Valid values are:
+	BACK, FRONT and BACK_AUX
+MountAngle :
+	Angle at which the sensor is mounted. Valid values are 0, 90, 180, 270 and 360.
+	To use default mountangle mentioned in kernel use 360.
+
+CsiInfo : This node contains information about the receiver configuration.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*CSIDCore :
+	CSID core to receive the data. Valid values are 0, 1, 2 and 3.
+*LaneMask :
+	Mask to mention which lane is enabled.
+	LaneMask[0] for DL0.
+	LaneMask[1] for CLK.
+	LaneMask[2] for DL1.
+	LaneMask[3] for DL2.
+	LaneMask[4] for DL3
+*LaneAssign :
+	Number which describes the lane mapping between sensor and PHY.
+	LaneAssign[0:3] is sensor lane number connected to data lane 0 of PHY on MSM
+	LaneAssign[4:7] is sensor lane number connected to data lane 2 of PHY on MSM
+	LaneAssign[8:11] is sensor lane number connected to data lane 3 of PHY on MSM
+	LaneAssign[12:15] is sensor lane number connected to data lane 4 of PHY on MSM
+
+	NOTE : Lane 1 is reserved for the clock lane.
+		Wiring and setting it to a data lane is prohibited.
+ComboMode :
+	Flag to enable combo mode.
+	This flag is enabled if multiple sensors are using same CSI-PHY receiver
+
+LensInfo : Information of the lens present in the module.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*FocalLength :
+	FocalLength of the lens in micometers.
+	Distance between the center of curvature to the focal point.
+*FNumber :
+	FNumber of the lens.
+*TotalFocusDistance : The total distance in meters the lens could focus.
+*HorizontalViewAngle : HorizontalViewAngle in degrees
+*VerticalViewAngle : VerticalViewAngle in degrees
+*MinFocusDistance : Minimum distance in meters the lens could focus.
+
+*VARIABLES MARKED WITH ASTRICK (*) ARE MANDATORY.
+
+-->
+
+<CameraConfigurationRoot>
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>csidtg</SensorName>
+    <ChromatixName>csidtg_chromatix</ChromatixName>
+    <ActuatorName>pseudo</ActuatorName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>360</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.82</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.2</TotalFocusDistance>
+      <HorizontalViewAngle>69.6</HorizontalViewAngle>
+      <VerticalViewAngle>43.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+</CameraConfigurationRoot>

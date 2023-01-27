@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        Copyright (c) 2016, 2020 Qualcomm Technologies, Inc.
+        All Rights Reserved.
+        Confidential and Proprietary - Qualcomm Technologies, Inc.
+    -->
+
+<permissions>
+    <library name="com.qualcomm.qti.audiosphere"
+            file="/system_ext/framework/audiosphere.jar" />
+</permissions>
