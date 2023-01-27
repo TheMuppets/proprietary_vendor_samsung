@@ -1,0 +1,258 @@
+<!--
+  Copyright (c) 2015-2016, 2018, Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<!--
+CameraModuleConfig :
+	This node must be added for each module prosent in the device.
+	It contain all information about the module present.
+	The number of nodes of CameraModuleConfig indicate number of modules
+	to be probed on the device.
+	Maximum number of CameraModuleConfig nodes is 10
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*CameraId :
+	Camera Id is the Slot number in which the mode is plugged.
+	Valid values are 0, 1, 2 and 3.
+*SensorName :
+	Name of the sensor present on the module.
+	The sensor library name should be of the form libmmcamera_<SensorName>.so
+ActuatorName :
+	Name of the actuator on this module.
+	The actuator library name should be of the form libactuator_<ActuatorName>.so.
+	If there is no actuator remove the <ActuatorName> node.
+EepromName :
+	Name of the eeprom on this module.
+	Eeprom lib name should be of the form libmmcamera_<EepromName>_eeprom.so
+	If there is no eeprom remove the <EepromName> node.
+FlashName :
+	Name of the flash on this module.
+	The flash library name should be of the form libflash_<FlashName>.so.
+	If there is no flash remove the <FlashName> node.
+ChromatixName :
+	Name of the tuning xml file.
+	Tuning file contains the list of chromatix library names.
+	If there is no tuning xml file remove the <ChromatixName> node.
+Position :
+	Position of the sensor module. Valid values are:
+	BACK, FRONT, BACK_AUX and FRONT_AUX
+MountAngle :
+	Angle at which the sensor is mounted. Valid values are 0, 90, 180, 270 and 360.
+	To use default mountangle mentioned in kernel use 360.
+SensorSlaveAddress:
+    Sensor slave address. Should add this tag when sensor slave address in sensor
+    is different with defalt slave address in sensor driver.
+CsiInfo : This node contains information about the receiver configuration.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*CSIDCore :
+	CSID core to receive the data. Valid values are 0, 1, 2 and 3.
+*LaneMask :
+	Mask to mention which lane is enabled.
+	LaneMask[0] for DL0.
+	LaneMask[1] for CLK.
+	LaneMask[2] for DL1.
+	LaneMask[3] for DL2.
+	LaneMask[4] for DL3
+*LaneAssign :
+	Number which describes the lane mapping between sensor and PHY.
+	LaneAssign[0:3] is sensor lane number connected to data lane 0 of PHY on MSM
+	LaneAssign[4:7] is sensor lane number connected to data lane 2 of PHY on MSM
+	LaneAssign[8:11] is sensor lane number connected to data lane 3 of PHY on MSM
+	LaneAssign[12:15] is sensor lane number connected to data lane 4 of PHY on MSM
+
+	NOTE : Lane 1 is reserved for the clock lane.
+		Wiring and setting it to a data lane is prohibited.
+ComboMode :
+	Flag to enable combo mode.
+	This flag is enabled if multiple sensors are using same CSI-PHY receiver
+
+LensInfo : Information of the lens present in the module.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*FocalLength :
+	FocalLength of the lens in micometers.
+	Distance between the center of curvature to the focal point.
+*FNumber :
+	FNumber of the lens.
+*TotalFocusDistance : The total distance in meters the lens could focus.
+*HorizontalViewAngle : HorizontalViewAngle in degrees
+*VerticalViewAngle : VerticalViewAngle in degrees
+*MinFocusDistance : Minimum distance in meters the lens could focus.
+
+*VARIABLES MARKED WITH ASTRICK (*) ARE MANDATORY.
+
+-->
+
+<CameraConfigurationRoot>
+ <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>hi846</SensorName>
+    <ActuatorName>dw9714</ActuatorName>
+    <EepromName>hi846</EepromName>
+    <ChromatixName>hi846_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>2.85</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>76.9</HorizontalViewAngle>
+      <VerticalViewAngle>56.6</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+<!--bug 601075, jiaozhibin.wt, modify, 2020/1118, modify for p81081 bringup camera-->
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>gc2375h</SensorName>
+    <ChromatixName>gc2375h_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x13</LaneMask>
+      <LaneAssign>0x20</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <!--ExtB P200522-06192,huangguoyong.wt,2020.06.04,modify FocalLength matches the configuration table-->
+      <FocalLength>1.964</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>83.2</HorizontalViewAngle>
+      <VerticalViewAngle>47.9</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+<!--bug 601075, jiaozhibin.wt, modify, 2020/11/18, modify for p81081 bringup camera-->
+<!--bug 601075,jiaozhibin.wt,add, 2020.11.20,P81081DA7 project add for gc2375h_lhyx bring up-->
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>gc2375h_lhyx</SensorName>
+    <ChromatixName>gc2375h_lhyx_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x13</LaneMask>
+      <LaneAssign>0x20</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.964</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>83.2</HorizontalViewAngle>
+      <VerticalViewAngle>47.9</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+<!--bug 601075,jiaozhibin.wt,add, 2020.11.20,P81081DA7 project add for gc2375h_lhyx bring up-->
+  <!--bug 515614,huangguoyong,add, 2020.08.31,N8 project camera driver code for bf2253L bring up-->
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>bf2253L</SensorName>
+    <ChromatixName>bf2253L_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x13</LaneMask>
+      <LaneAssign>0x20</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.964</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>71.9</HorizontalViewAngle>
+      <VerticalViewAngle>57.1</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <!--bug 515614,huangguoyong,add, 2020.08.31,N8 project camera driver code for bf2253L bring up-->
+  <!--bug 601075,huangzheng1.wt, modify,2020/11/20,modify for p81081 bringup camera-->
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>hi259</SensorName>
+    <ChromatixName>hi259_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x13</LaneMask>
+      <LaneAssign>0x20</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.924</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>4.119</TotalFocusDistance>
+      <HorizontalViewAngle>72.4</HorizontalViewAngle>
+      <VerticalViewAngle>57.4</VerticalViewAngle>
+      <MinFocusDistance>0.21</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <!--bug 601075,huangzheng1.wt, modify,2020/11/20,modify for p81081 bringup camera-->
+  <!--bug 601075,huangzheng1.wt, modify,2020/11/23,modify for p81081 bringup camera-->
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>gc8034</SensorName>
+    <EepromName>gc8034_otp</EepromName>
+    <ActuatorName>gt9772</ActuatorName>
+    <ChromatixName>gc8034_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>2.79</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.97</TotalFocusDistance>
+      <HorizontalViewAngle>63.2</HorizontalViewAngle>
+      <VerticalViewAngle>49.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>gc2375a</SensorName>
+    <ChromatixName>gc2375a_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x13</LaneMask>
+      <LaneAssign>0x20</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.928</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>83.2</HorizontalViewAngle>
+      <VerticalViewAngle>47.9</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <!--bug 601075,huangzheng1.wt, modify,2020/11/23,modify for p81081 bringup camera-->
+</CameraConfigurationRoot>

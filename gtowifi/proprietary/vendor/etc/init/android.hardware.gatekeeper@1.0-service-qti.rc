@@ -1,0 +1,8 @@
+on property:vendor.keymaster.strongbox.version=*
+    enable gatekeeper-1-0
+    start gatekeeper-1-0
+
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+    class early_hal
+    user system
+    group system

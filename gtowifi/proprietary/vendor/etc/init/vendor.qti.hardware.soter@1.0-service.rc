@@ -1,0 +1,8 @@
+# Copyright (c) 2018 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+service soter-1-0 /vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+    class hal
+    user system
+    group system drmrpc 

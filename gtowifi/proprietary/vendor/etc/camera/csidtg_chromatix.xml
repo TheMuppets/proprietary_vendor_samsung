@@ -1,0 +1,203 @@
+<!--
+  Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+	CommonChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+	ResolutionChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+	Contains the list of chromatix names for all modules.
+	special_mode_mask:
+		It is the bit mask for special modes, which is used for
+			chromatix selection.
+		Special modes can be any mode that needs a special chromatix.
+		Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+		This is applicable for CommonChromatixInfo and
+			ResolutionChromatixInfo.
+		special_mode_mask="0" means none of the special modes are
+			selected.
+	sensor_resolution_index:
+		It is the sensor resolution index for which chromatix libraries
+			will be choosen.
+		It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+	Common tuning library name for ISP
+ISPPreview :
+	Preview tuning library name for ISP
+ISPSnapshot :
+	Snapshot tuning library name for ISP
+CPPCommon :
+	Common tuning library name for CPP
+CPPPreview :
+	Preview tuning library name for CPP
+CPPSnapshot :
+	Snapshot tuning library name for CPP
+CPPLiveshot :
+	Liveshot tuning library name for CPP
+PostProc :
+	Tuning library name for postproc module
+A3Preview :
+	Preview tuning library for 3A
+A3Video :
+	Video tuning library for 3A
+
+Order of Resolution Pick:
+	Assume the current sensor mode is "r" and special mode mask is "s".
+	Chromatix for a module and type is choosen in this order till we find a
+		valid chroamtix file name or else NULL is returned.
+	1) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "s".
+	2) From CommonChromatixInfo node for which special_mode_mask is "s".
+	3) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "0".
+	4) From CommonChromatixInfo node for which special_mode_mask is "0".
+	5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask has values from this list:
+	"FLASH"
+	"ZOOM_UPSCALE"
+	"ZOOM_DOWNSCALE"
+	"OIS_CAPTURE"
+	"ISO_100"
+	"ISO_200"
+	"ISO_400"
+	"ISO_800"
+	"ISO_1600"
+	"DIM_720P"
+	"DIM_1080P"
+	"DIM_UHD"
+	"SCENE_LANDSCAPE"
+	"SCENE_SNOW"
+	"SCENE_BEACH"
+	"SCENE_SUNSET"
+	"SCENE_NIGHT"
+	"SCENE_PORTRAIT"
+	"SCENE_BACKLIGHT"
+	"SCENE_SPORTS"
+	"SCENE_ANTISHAKE"
+	"SCENE_FLOWERS"
+	"SCENE_CANDLELIGHT"
+	"SCENE_FIREWORKS"
+	"SCENE_PARTY"
+	"SCENE_NIGHT_PORTRAIT"
+	"SCENE_THEATRE"
+	"SCENE_ACTION"
+	"SCENE_AR"
+	"SCENE_FACE_PRIORITY"
+	"SCENE_BARCODE"
+
+special_mode_mask:
+	special_mode_mask is a string or a group of strings from the above list
+		separated by a comma(,) or pipe (|) but not both.
+	Multiple strings in special_mode_mask separated by | share same
+		chromatix name. It picks the chromatix when any one of the
+		modes mentioned in the list ar selected.
+	Multiple strings in special_mode_mask separated by , means to use the
+		chromatix when all the those modes are selected.
+	special_mode_mask can contain any number of special modes delimited by
+		, or | but cannot be both.
+	Valid usecases:
+		"ISO_100|SCENE_BEACH|SCENE_SNOW"
+		"ISO_100,SCENE_BEACH,SCENE_SNOW"
+	Invalid usecases:
+		"ISO_100|SCENE_BEACH,SCENE_SNOW"
+		"ISO_100,SCENE_BEACH|SCENE_SNOW"
+
+Creating special_mode_mask examples:
+	If a special chromatix is required for ISO100 then
+		special_mode_mask="ISO_100"
+	If a special chromatix is required when both ISO100 and BEACH are set
+		special_mode_mask="ISO_100,SCENE_BEACH"
+	If same chromatix is to be used for SPORTS, BEACH, SNOW then
+		special_mode_mask="ISO_100|SCENE_BEACH|SCENE_SNOW"
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>csidtg_common</ISPCommon>
+      <PostProc>csidtg_postproc</PostProc>
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2">
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3">
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="4">
+      <ISPPreview>csidtg_preview</ISPPreview>
+      <ISPSnapshot>csidtg_preview</ISPSnapshot>
+      <ISPVideo>csidtg_preview</ISPVideo>
+      <CPPPreview>csidtg_cpp_preview</CPPPreview>
+      <CPPSnapshot>csidtg_cpp_preview</CPPSnapshot>
+      <CPPVideo>csidtg_cpp_preview</CPPVideo>
+      <CPPLiveshot>csidtg_cpp_preview</CPPLiveshot>
+      <A3Preview>csidtg_zsl_preview</A3Preview>
+      <A3Video>csidtg_zsl_preview</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is a target specific resource config file which can be
+used to overwrite the node paths mentioned in common resources file
+and also to mention the resources which are not supported. -->
+
+<!-- This file supports only Config tag, which has the following fields
+* MajorValue and MinorValue, both are required to uniquely
+identify the resource.
+* Node, the new node path to overwrite the already existing one
+of commonresourceconfigs.xml file.
+* Supported, to indicate whether the resource is supported or not.
+* For each config tag, either of Node or Supported fields need
+to be mentioned. -->
+
+<!-- NOTE - It is not Mandatory to write all the resources which are not supported
+as anyway perflock calls of these resources would fail. -->
+
+<ResourceConfigs>
+    <PerfResources>
+
+        <Config MajorValue="0x1" MinorValue="0x1" Target="msm8937" Supported="yes" /> <!-- l2_pc_idle_enabled -->
+        <Config MajorValue="0x1" MinorValue="0x1" Target="msm8917" Node="/sys/module/lpm_levels/perf/perf-l2-pc/idle_enabled" /> <!-- l2_pc_idle_enabled -->
+        <Config MajorValue="0x1" MinorValue="0x1" Target="qm215" Node="/sys/module/lpm_levels/perf/perf-l2-pc/idle_enabled" /> <!-- l2_pc_idle_enabled -->
+        <Config MajorValue="0x1" MinorValue="0x2" Supported="no" /> <!-- lpm_bias_hyst -->
+        <Config MajorValue="0x1" MinorValue="0x3" Supported="no" /> <!-- lpm_ref_stddev -->
+        <Config MajorValue="0x1" MinorValue="0x4" Supported="no" /> <!-- lpm_tmr_add -->
+
+        <Config MajorValue="0x3" MinorValue="0x1" Node="/sys/devices/system/cpu/cpu0/sched_prefer_idle" /> <!-- sched_prefer_idle -->
+        <Config MajorValue="0x3" MinorValue="0x2" Supported="no" /> <!-- sched_migration_cost_ns -->
+        <Config MajorValue="0x3" MinorValue="0x4" Node="/sys/devices/system/cpu/cpu0/sched_mostly_idle_load" /> <!-- sched_mostly_idle_load -->
+        <Config MajorValue="0x3" MinorValue="0x5" Node="/sys/devices/system/cpu/cpu0/sched_mostly_idle_nr_run" /> <!-- sched_mostly_idle_nr_run -->
+        <Config MajorValue="0x3" MinorValue="0x9" Node="/sys/devices/system/cpu/cpu0/sched_mostly_idle_freq" /> <!-- sched_mostly_idle_freq -->
+        <Config MajorValue="0x3" MinorValue="0xD" Supported="no" /> <!-- sched_restrict_cluster_spill -->
+        <Config MajorValue="0x3" MinorValue="0xF" Supported="no" /> <!-- top-app_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x10" Supported="no" /> <!-- foreground_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x11" Supported="no" /> <!-- system_background_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x12" Supported="no" /> <!-- background_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x13" Supported="no" /> <!-- sched_freq_aggregate -->
+        <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
+        <Config MajorValue="0x3" MinorValue="0x15" Supported="no" /> <!-- sched_group_upmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x15" Target="sdm439" Supported="yes" /> <!-- sched_group_upmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x15" Target="sdm429" Supported="yes" /> <!-- sched_group_upmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x16" Supported="no" /> <!-- sched_group_downmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x16" Target="sdm439" Supported="yes" /> <!-- sched_group_downmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x16" Target="sdm429" Supported="yes" /> <!-- sched_group_downmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggregate_threshold -->
+        <Config MajorValue="0x3" MinorValue="0x18" Supported="no" /> <!-- schedtune.prefer_idle -->
+
+
+        <Config MajorValue="0x4" MinorValue="0x0" Target="msm8937" Supported="yes" /> <!-- min_cpus -->
+        <Config MajorValue="0x4" MinorValue="0x1" Target="msm8937" Supported="yes" /> <!-- max_cpus -->
+
+        <!-- For INTERACTIVE major, all the interactive minors are not supported
+        by default as the recent target moved to schedutil. So, for older targets
+        where interactive minors are supported they need to be enabled and schedutil
+        minors are disabled. -->
+        <Config MajorValue="0x5" MinorValue="0x0" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- above_hispeed_delay -->
+        <Config MajorValue="0x5" MinorValue="0x1" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- boost -->
+        <Config MajorValue="0x5" MinorValue="0x3" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- boostpulse_duration -->
+        <Config MajorValue="0x5" MinorValue="0x4" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- go_hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x5" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0x6" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- io_is_busy -->
+        <Config MajorValue="0x5" MinorValue="0x7" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- min_sample_time -->
+        <Config MajorValue="0x5" MinorValue="0x8" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- target_loads -->
+        <Config MajorValue="0x5" MinorValue="0x9" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- timer_rate -->
+        <Config MajorValue="0x5" MinorValue="0xA" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- timer_slack -->
+        <Config MajorValue="0x5" MinorValue="0xB" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- max_freq_hysteresis -->
+        <Config MajorValue="0x5" MinorValue="0xC" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- use_sched_load -->
+        <Config MajorValue="0x5" MinorValue="0xD" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- use_migration_notif -->
+        <Config MajorValue="0x5" MinorValue="0xE" Target="msm8937" Kernel="3.18" Supported="yes" /> <!-- ignore_hispeed_on_notif -->
+
+        <Config MajorValue="0x5" MinorValue="0x0" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay" /> <!-- above_hispeed_delay -->
+        <Config MajorValue="0x5" MinorValue="0x1" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/boost" /> <!-- boost -->
+        <Config MajorValue="0x5" MinorValue="0x3" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration" /> <!-- boostpulse_duration -->
+        <Config MajorValue="0x5" MinorValue="0x4" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load" /> <!-- go_hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x5" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/hispeed_freq" /> <!-- hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0x6" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/io_is_busy" /> <!-- io_is_busy -->
+        <Config MajorValue="0x5" MinorValue="0x7" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/min_sample_time" /> <!-- min_sample_time -->
+        <Config MajorValue="0x5" MinorValue="0x8" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/target_loads" /> <!-- target_loads -->
+        <Config MajorValue="0x5" MinorValue="0x9" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/timer_rate" /> <!-- timer_rate -->
+        <Config MajorValue="0x5" MinorValue="0xA" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/timer_slack" /> <!-- timer_slack -->
+        <Config MajorValue="0x5" MinorValue="0xB" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis" /> <!-- max_freq_hysteresis -->
+        <Config MajorValue="0x5" MinorValue="0xC" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/use_sched_load" /> <!-- use_sched_load -->
+        <Config MajorValue="0x5" MinorValue="0xD" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/use_migration_notif" /> <!-- use_migration_notif -->
+        <Config MajorValue="0x5" MinorValue="0xE" Target="msm8917" Kernel="3.18" Node="/sys/devices/system/cpu/cpufreq/interactive/ignore_hispeed_on_notif " /> <!-- ignore_hispeed_on_notif -->
+
+        <Config MajorValue="0x5" MinorValue="0xF" Target="sdm439" Supported="yes" /> <!-- schedutil.hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0xF" Target="sdm429" Supported="yes" /> <!-- schedutil.hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0xF" Target="qm215" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq" /> <!-- schedutil.hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0xF" Target="msm8917" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq" /> <!-- schedutil.hispeed_freq -->
+
+        <Config MajorValue="0x5" MinorValue="0x10" Target="sdm439" Supported="yes" /> <!-- schedutil.hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x10" Target="sdm429" Supported="yes" /> <!-- schedutil.hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x10" Target="qm215" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/hispeed_load" /> <!-- schedutil.hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x10" Target="msm8917" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/hispeed_load" /> <!-- schedutil.hispeed_load -->
+
+        <Config MajorValue="0x5" MinorValue="0x11" Target="sdm439" Supported="yes" /> <!-- schedutil.predictive_load -->
+        <Config MajorValue="0x5" MinorValue="0x11" Target="sdm429" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/pl" /> <!-- schedutil.predictive_load -->
+        <Config MajorValue="0x5" MinorValue="0x11" Target="qm215" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/pl" /> <!-- schedutil.predictive_load -->
+        <Config MajorValue="0x5" MinorValue="0x11" Target="msm8917" Supported="yes" Node="/sys/devices/system/cpu/cpufreq/schedutil/pl" /> <!-- schedutil.predictive_load -->
+
+        <Config MajorValue="0x9" MinorValue="0x7" Supported="yes" /> <!-- cpu.notify_on_migrate -->
+
+        <Config MajorValue="0xB" MinorValue="0x2" Supported="no" /> <!-- input_boost_freq -->
+
+        <!-- All the minors of LLCBW_HWMON MAJOR are not supported -->
+        <Config MajorValue="0xC" MinorValue="0x0" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x1" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x2" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x3" Supported="no" />
+
+        <Config MajorValue="0xD" MinorValue="0x0" Supported="no" /> <!--  l3_min_freq -->
+
+    </PerfResources>
+</ResourceConfigs>
